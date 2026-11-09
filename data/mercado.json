@@ -7,30 +7,30 @@
    "valor": 3237.83,
    "unidad": "cop",
    "fecha": "2026-11-09",
-   "detalle": "Vigente del sábado 7 al lunes 9 de noviembre de 2026",
-   "fuente": "Superfinanciera vía Capital Colombia",
-   "url": "https://www.capitalcolombia.com/sec-trm_precio_dolar_en_colombia"
+   "detalle": "Tasa Representativa del Mercado vigente",
+   "fuente": "Banco de la República",
+   "url": "https://www.banrep.gov.co/es/estadisticas/trm"
   },
   {
    "id": "banrep",
    "nombre": "Tasa BanRep",
    "valor": 12.25,
    "unidad": "pct",
-   "fecha": "2026-10-30",
-   "detalle": "Se mantuvo en la junta de octubre, con voto dividido",
-   "fuente": "Portafolio",
-   "url": "https://www.portafolio.co/economia/banco-de-la-republica-mantiene-la-tasa-en-12-25-con-voto-dividido-505819"
+   "fecha": "2026-11-06",
+   "detalle": "Tasa de política monetaria vigente",
+   "fuente": "Banco de la República",
+   "url": "https://www.banrep.gov.co/es/estadisticas/tasas-interes-politica-monetaria"
   },
   {
    "id": "fed",
    "nombre": "Tasa Fed",
-   "texto": "3,75 – 4,00 %",
    "valor": 3.875,
    "unidad": "rango",
-   "fecha": "2026-10-28",
-   "detalle": "Rango objetivo de fondos federales, sin cambios (10 votos contra 2)",
-   "fuente": "Vizaca / FOMC",
-   "url": "https://www.vizaca.com/business/fed-holds-rates-october-2026/"
+   "fecha": "2026-11-08",
+   "detalle": "Rango objetivo de fondos federales",
+   "fuente": "FRED (Fed de San Luis)",
+   "url": "https://fred.stlouisfed.org/series/DFEDTARU",
+   "texto": "3,75 – 4,00 %"
   },
   {
    "id": "desCol",
@@ -48,53 +48,95 @@
    "valor": 4.1,
    "unidad": "pct",
    "fecha": "2026-10-31",
-   "detalle": "Octubre de 2026: se crearon 165.000 empleos (BLS)",
-   "fuente": "ABC7",
-   "url": "https://abc7news.com/story/us-employers-added-surprising-165000-jobs-october-unemployment-rate-dipped-41/20020018/"
+   "detalle": "Tasa de desempleo mensual (BLS)",
+   "fuente": "FRED",
+   "url": "https://fred.stlouisfed.org/series/UNRATE"
   }
  ],
  "noticias": [
   {
-   "titulo": "Banco de la República mantiene la tasa en 12,25 % con voto dividido",
-   "fuente": "Portafolio",
-   "fecha": "2026-10-30",
+   "titulo": "Los factores que muestran hacia dónde va el precio del dólar en Colombia esta semana",
+   "fuente": "El Espectador",
+   "fecha": "2026-11-09",
    "ambito": "Colombia",
-   "url": "https://www.portafolio.co/economia/banco-de-la-republica-mantiene-la-tasa-en-12-25-con-voto-dividido-505819"
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWU05S2tSSGZjaHg5M0lXakpPcnIzbm5TNG9sY0lhaVZMRlhjUVhiZzNMRnBDeUJwQWFpNkhiNThYbXJKeGFiaWhGcTFxeS16SFNvaFFPYUZKTVBSbFNFWlhTNklnMUR4NXRPWjZvT0YxRjEzbWZNSTNjdEFqcl91N1dxeU91b2h6TzRvSWFaaVhMSWNxOTVoV05rcjVyazZKN2VDc2VkTTdkVUxIbjRiWVE3NGZtRzJvUTRkZ1NZN1h0RHFEX3BmUGdUMXJ6RS1QS3lv0gHnAUFVX3lxTE1iWWlOaUZVOXVkakdzMkJKQl9FMGR6MFBOeDFpanVrOE90XzhJQmZ2ZVFjNVQzck5JQUpmQ3djY2RLYTd0WGx1Wld1aTh2UE1mUy1HS0FLQXk2OU9QTmp6S29PRmZJWGRzX0NYbXRhQ0R1Q2h6SmR4QlV5UEFybnE1UWJBZWg1OTRZeHZyR1NING1iSkdPN1d1VWt1RWZvTHZiV2IzWHhMckJqUzFONkZ4R2NuT3JnR2p1aVNxZndWNmRfVHlkRUVyeWZtU3dvbXZOM2Q1cmhkeWZhYklaMjZfbzQ3M0RFOA?oc=5"
   },
   {
-   "titulo": "El dólar en Colombia pegó un salto tras las elecciones de medio tiempo en Estados Unidos",
-   "fuente": "Portafolio",
-   "fecha": "2026-11-04",
+   "titulo": "Los créditos de los bancos seguirán altos debido al aumento del salario mínimo de 2026: el Banco de la República explicó la situación",
+   "fuente": "Infobae",
+   "fecha": "2026-11-09",
    "ambito": "Colombia",
-   "url": "https://www.portafolio.co/economia/finanzas/el-dolar-en-colombia-pego-un-salto-asi-cotiza-la-divisa-tras-las-elecciones-de-medio-tiempo-en-estados-unidos-505683"
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPWUV0MkR2Vnh1NW54d3otc0xDZjVWQ2F3R2dzRUJzcWFxMzNXQXZveGdEanpvUjBDR0J5eThEdEtvSXNOdFdydHNfZGlEWVVfMW9aenpLYmMxMlFCVUtvTDVMRGVXdy1HdW9rYjNrZW9vRmZpTVoxWDdueVNkdDFRLUsyNHBIUEtFazJ6SXJNNHFKNjVJQzNENllPU2dEWkdXUHhOS0NUWnQ4elBpMmI3bW9LNDYzYnI5eTRNZkFRUzFzaUdjUDluaWNOend6eG1QMl9KUFFDLWhpS2hzcjA0RGRqSXMtWGJ4d3g1RUFLQmo3MG13QWZCaDlnQVM2cURaVmtTRkZqdmM?oc=5"
   },
   {
-   "titulo": "Inflación en Colombia subiría al 6,38 % anual en octubre, según analistas",
-   "fuente": "Diario del Sur",
-   "fecha": "2026-11-06",
+   "titulo": "Banco de la República eleva su proyección de inflación para 2026 y el mercado anticipa un posible nuevo aumento de tasas",
+   "fuente": "IFM Noticias",
+   "fecha": "2026-11-08",
    "ambito": "Colombia",
-   "url": "https://diariodelsur.com.co/noticias/inflacion-en-colombia-subiria-al-6-38-anual-en-octubre-segun-analistas"
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcmhLZHRJNmRHSEVuWjVMbkRtOGR4TENFTEI1ODhNRUV5Y3FWSGlibDB1R204b2EwWThKV0E0Y1Vub0p4bzZMMVMyUzBSWDd0QWRfRUxxYXBfV094Q2l6TXVwSFZEMjg4RjRhNkt1c3lTNG9HVlJFemJIUTVvQTB4akJNcHhkZzVIWEN4S3AtYXk5enhhTXI5VERPcHdTQzRTTzdYcmdtZE5rZDZWQXdJMENWcU9oU0E?oc=5"
   },
   {
-   "titulo": "Desempleo en Colombia bajó al 8 % en septiembre de 2026",
-   "fuente": "Noticias RCN",
-   "fecha": "2026-10-30",
+   "titulo": "Precio del dólar en Colombia: qué pasará con la moneda en la segunda semana de noviembre ante la discusión por la reforma tributaria del Gobierno",
+   "fuente": "Infobae",
+   "fecha": "2026-11-08",
    "ambito": "Colombia",
-   "url": "https://www.noticiasrcn.com/economia/desempleo-en-colombia-bajo-al-8-en-septiembre-de-2026-1077092"
+   "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQUHVESW5zcG1CRWxBNzVXM2JLRk5OeFZ2WXFRRnpkbkdyUzhydFNIZDhnWDRpa3dRTmpMZ2VjUmZsb0xGVXlqMU9FTHpINnpzX2JrSDUxMjZRLS0wWVN3ZHZUUTcwM2t6eDgtbUlkYXNzQVBTdVhnSXZkOW5Bc3FnU2RJakNvS0FYM1d0Q0ZWREhXa2dpb0hidWZDQmJDbGtxdUJUTnpZMEpSMWZPaVp4dEJyNVREZEF4MXpWclZBR2EwTzU2SkZxSnZkS2NiNVpmOVp5ZnRVSzhDdmJmVGJoSUNyOXBDZW1LTVJsSlQxZ09GN09pcmF1VmpkYUEwX0NuOEdqcWZHbU1ja3FlTWdKdzZOcUlGOXNS0gGzAkFVX3lxTE1rME5jZW9jc0lPc21HR3hwNjhZcWE5VVFDb1BQaUpZZlNzdW5OV3pOTkZtUDltLVFMeTMxZEluN0JXb09fSnBGX0FUcUsxNVFTaDgzektvSk1kSklPU1lseTZ4WjByei1hUGtJaS1JUzhqWHFpNzFTYUhNRVJ4WnppaGwyYlpMMzVBSVRyNnpnZlR0a2JVUkYyT3h3MWV4UTVXOENYa1g3YklyRWx3WEVVZ09pZ1Q2Q1g3YUlsaFMzSENEbDRpbUxPXzlKR2NId3JqaU1IQkVHOXRySVQ0UndWRjFlcDlxc3czWTlQQnVGR2VvRzdaQUZ2Q0pLbVFOQmZBQ18zOUpwY2dXWmNPd3lfUENfaFdEUFRSNmZ6alVNdjFSRTRBa3p1M3pYd0w0d1lFVzQ?oc=5"
   },
   {
-   "titulo": "La Fed mantiene las tasas entre 3,75 % y 4 %; dos miembros votaron por un alza",
-   "fuente": "Vizaca",
-   "fecha": "2026-10-28",
+   "titulo": "Arriendos en Bogotá le dan un respiro al bolsillo de los hogares y suben menos que la inflación",
+   "fuente": "El Tiempo",
+   "fecha": "2026-11-08",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNTTJpOVlPLWhtUDlWSDA5WHZmcHNqLTJiQTlJeHVlcC1mVW0tY1VnN1dJbVlfWExJZF9LT3B3OTVVeUpoMDJ0YWJkWkE3YURycFF3NjRKUnBJekpuRHBTc1FDTzVsRTEtLTFzMHVYaEpsVlREUjFJZVI3UG9vak1OTExZNU5wUUtlVTAzMkJQRUowWVNFRlp5WHUtUjRlaEZyYjl1WkJ5Q2FXd1kyYVVaZnpNNW52TEJMSTctNU41WEljMnFDYU12eW1vYms0a1kyZjlRQ0x4blpkRWhFMjlB0gHkAUFVX3lxTFBvV0pNWnJmVnF5eTJibS05cl9qZXpCWGY2dzNmcU44aFVuNDN1bjhLVVpyWXpGNmo4dENhSFpxbXIyb1dnUnBqdGY3RjNvRDNpTkxCc2VwNzhVeUJFamMzelZQOTNvaS05NXNBV0hqRmZuUVVTbTBVZUtCZUlicTM5ZHNWX1E4UFRMMzl5MTkwMUQySzdoR2hGcWNHM0FkTFZGY2dMVVJrYmZEX1FkU1lHdnpkaFdGU0Q2VW1XekhsSHVpQkZId1hYVDZVS1FUX284ZlVxR21zWUZ0dU42SU02Y2RYSg?oc=5"
+  },
+  {
+   "titulo": "Arriendos en Bogotá: Menos alza que inflación, alivio hogares",
+   "fuente": "Estrella Digital Colombia",
+   "fecha": "2026-11-08",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE45M2VGWFNtYllwa1FkRklCeUtObVBaOFFWek16VHNTS2RVTjZ4aFRkVDFSMmJvaXdISk1udGYyN3hCXzZfNDdOajZsN3ZKWW8tTFI3MERXdzhSTFBBYjVrSkhPYlBoa1VJeFlTeUc5RVV0dlVydkdsZGhxR1BmZw?oc=5"
+  },
+  {
+   "titulo": "Resumen diario de mercado de TradingKey: Las nóminas no agrícolas superan las expectativas, las acciones de IA rebotan de forma generalizada mientras Nvidia se fortalece, AMD se dispara más del 11%, SpaceX gana más del 8%",
+   "fuente": "TradingKey",
+   "fecha": "2026-11-09",
    "ambito": "Mundo",
-   "url": "https://www.vizaca.com/business/fed-holds-rates-october-2026/"
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOM19lUDJGUUFUemFCWnI2TkJUY05xM0t4MjBlQ0NaSU9URUdIQUl1dWE4S0pyOFVPclNmT2JkOXdTZ3JhV1ZVQTBkcmJDbGdsTmsydWhfbkRDR2pHdXpXMVpJSlpvODNwS2hEeUNDSFBORzNXam1PMGZkcXlSSl92S1JFU3BBdV8tU3FrSzRXR2Y5YVNuVHBRU01UTVFBQk9RVGNMQ3dDV3ZvMTY4eUQ3X2tOcjA5SmpE?oc=5"
   },
   {
-   "titulo": "Estados Unidos sumó 165.000 empleos en octubre y el desempleo bajó a 4,1 %",
-   "fuente": "ABC7",
-   "fecha": "2026-11-06",
+   "titulo": "De mipymes a mercados globales: la apuesta de Colombia con la ONUDI",
+   "fuente": "La FM",
+   "fecha": "2026-11-09",
    "ambito": "Mundo",
-   "url": "https://abc7news.com/story/us-employers-added-surprising-165000-jobs-october-unemployment-rate-dipped-41/20020018/"
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdDRhTXNrSmw2MmhhSHQ4SEtZZzNfVmo1Snd1MENWb1RyWHUwX1UtVXNpRGhDbE9LaVdrWktISmxTbHI2aF9nX1FIUzJBa2ZrbXhaR3NJeEhRTVhLVk1lUVZXbDRKMGhoaFoyTVBCMk5ueDE0X0hEX0dtaEtNMHFqY191R01tSm9PSEU1WnhheDVwSVVZQ0pNS1l3NUtELWliUUJYMnUtV0dWMkJGT0400gGvAUFVX3lxTE5MZkF2bTRRRVFPWmVQZDFHQWVoMUZYd19DQ0hfSHdLQnZtV2U2U3EyQmlyR1B6UG5SVGZkeVRzcnV1cHZ1a21kaVBsbDNuOEp2bng5RzRNTEJ1NGtGa3VPOEpFY05TWDY1WmFYUmJtdTlBTmtzcmMtMU9fSTZfc01nMTlabjl2SGxKZ2x5UndSZ2tTZ3pxTk03YVdFU3NCdDdwbW1YTXY4REhBVWFIcUE?oc=5"
+  },
+  {
+   "titulo": "Tipos de cambio, tipo de cambio USD/VND hoy, 9 de noviembre: el índice de inflación de EE. UU. se convierte en una \"prueba\" para el USD.",
+   "fuente": "Vietnam.vn",
+   "fecha": "2026-11-09",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNb2oyWkFqLXhMak13WWlvTnUta0ZlYUpsMkVHTmkzMVppMzVMNlJLOC14YlZLV09oZzhDaGxISXJRSDFHeXlpSU0ySUdEUTA3eklaUGcxY0M0SUk0bVhvMmdWNlpNNm9OU29hdUg2TGdBLXdCaXlYWHo1bVFra00tbmREMHB0dExlcEhabTlMUzNzYmR5M3dlU1RETHB2Vmw5aUVLZzBzZEY3MlUyMS1Nc1BodVA1YXdHZzVvRg?oc=5"
+  },
+  {
+   "titulo": "FORTALECE EL PESO MEXICANO Y AVANZA LA BOLSA EN UN ENTORNO DE EXPECTATIVAS FINANCIERAS POSITIVAS",
+   "fuente": "5toPoder",
+   "fecha": "2026-11-09",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTUkzNWFPR1lFRzRnT0dHYjRvT2Z5UVc3ZXItVHhlckVLaWhNRTc4emxYRjd0WGhYZnZ1djJLcEF0VjJPZnR5dl96a3F6aDBMZXRTa0ZXeU5iMnVuWGtURmRGTHVCeXFPX1NoWGdCd1hhRWtWNkltUEJpMVYyRUljY1RDTUx0ZHd3RVI1bUwwTmg0bmR2a3FEb3MwVlJLWENSTFhfTHhYX2k3bThOX1Jld2VHTEQyQ0JjSDhXUjJiRkh1emFaSGVxT2N5ZDBjc2xk?oc=5"
+  },
+  {
+   "titulo": "Comenzó la construcción del gasoducto que llevará el gas de Vaca Muerta al mercado global | 8 de noviembre",
+   "fuente": "Hoy Día Córdoba",
+   "fecha": "2026-11-08",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5Uc21yQ1pYamtuWUliMUxyOU51emJRZHlxUmJYR1AwVFZyZHRqR2RUaE05SmVWUzVUNUlyemdyQVBveVlSa2xVVlViR3JVbG4zXzBqalJXcUx6V1FGNzVzeWNCaWRRZnh1bFZwRWt30gFzQVVfeXFMTnBOVUthS2pxMVVhSkdqY3ROcEZwWmpSZDRJTWxScHdQdklnV3c2OFhoSlpmdzZkSUJwSGU5bDVOZEUzcF95VFdpcC10TGN1R0w0Y2JKcWJrZXBoWUVxQl8wa2s0OUhBQ1RoXzJwMEpveTJyRQ?oc=5"
+  },
+  {
+   "titulo": "¿Resultados de las elecciones estadounidenses cambian perspectivas de tasas de interés y precios del petróleo?",
+   "fuente": "IDNFinancials",
+   "fecha": "2026-11-08",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQOVNudWRGWHRGVGRESU01QmQ4NVdIcFYxeGtIRGhNaVRiNEcwNWNSajZvN1FVZjFLZWlicWQzYVF1NXF5ZEF3ZXo5blZtTlpUY01wSkdYREZrZFhGOHAtaGZreHZMWk9wcUJsM0VxaWVfaVRmemNBZC1EUlc0elRTTWtPVUJkNHpLdWh5dDlxTGEzRGo2UjZUc2lUaTkyaDkxR0tTY0U1NFAyUmotY3VJZWNQVEFUU0lmU3o5MUMwZkFOcVQ5dENmcmRyQlNMRDF6WnEyWVdqTE1vU3RsV01EcnE0MUtzX0M3ZnBUWWNVRVl4dm9u?oc=5"
   }
  ]
 }
