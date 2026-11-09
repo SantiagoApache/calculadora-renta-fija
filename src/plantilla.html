@@ -1,0 +1,35 @@
+<header class="top">
+  <div class="top-in">
+    <div class="marca">
+      <svg class="marca-logo" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="6" fill="#0f1a2e" stroke="#2f7bff"/><path d="M6 23c4-1 6-5 9-8s7-5 11-6" fill="none" stroke="#8bb8ff" stroke-width="2.2" stroke-linecap="round"/><circle cx="15" cy="15" r="2.4" fill="#2f7bff"/><path d="M6 26h20" stroke="#24385c" stroke-width="1.4"/></svg>
+      <div><div class="marca-t">Calculadora de Renta Fija</div><div class="marca-s">Universidad Icesi · Renta Fija</div></div>
+    </div>
+    <nav class="calcs" id="nav-calcs" aria-label="Calculadoras"></nav>
+    <div class="acciones">
+      <button class="btn" data-abrir="mercado" title="Indicadores y noticias"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 13l4-5 3 3 5-7"/></svg><span class="txt">Mercado</span></button>
+      <button class="btn" id="btn-datos" data-abrir="datos" title="Bases de IPC, UVR, IBR y curvas"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><ellipse cx="8" cy="4" rx="5" ry="2"/><path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/></svg><span class="txt">Datos</span></button>
+      <button class="btn" id="btn-guia" title="Recorrido guiado"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M6.3 6.2a1.8 1.8 0 1 1 2.5 1.7c-.5.2-.8.6-.8 1.1v.5M8 11.6v.1"/></svg><span class="txt">Guía</span></button>
+    </div>
+  </div>
+</header>
+<div class="cinta" id="cinta" aria-label="Indicadores de mercado"></div>
+<main>
+  <div class="aviso-guia" id="aviso-guia">
+    <p><b>¿Primera vez aquí?</b> Un recorrido de un minuto te muestra dónde está cada cosa.</p>
+    <button class="btn pri" data-guia>Hacer el recorrido</button>
+    <button class="btn" id="cerrar-aviso">Ahora no</button>
+  </div>
+  <div class="cab" id="cab"></div>
+  <div class="grid">
+    <div class="form" id="formulario" role="form" aria-label="Condiciones del bono"></div>
+    <div class="res" id="resultados" aria-live="polite"></div>
+  </div>
+  <footer class="pie"><span>Motores validados contra los ejercicios del curso: 27 de 27 casos iguales a la versión en R.</span><span>Cálculos con fines académicos.</span></footer>
+</main>
+<div class="velo" id="velo" hidden></div>
+<aside class="panel" id="panel" hidden role="dialog" aria-modal="true" aria-labelledby="panel-t">
+  <div class="panel-c"><h2 id="panel-t">Panel</h2><button class="btn mini" data-cerrar>Cerrar</button></div>
+  <div class="panel-b" id="panel-b"></div>
+</aside>
+<div class="foco" id="foco" hidden></div>
+<div class="guia" id="guia" hidden role="dialog" aria-live="polite"></div>

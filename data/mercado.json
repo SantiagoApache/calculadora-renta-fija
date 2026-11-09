@@ -1,0 +1,100 @@
+{
+ "actualizado": "2026-11-08",
+ "indicadores": [
+  {
+   "id": "trm",
+   "nombre": "TRM",
+   "valor": 3237.83,
+   "unidad": "cop",
+   "fecha": "2026-11-09",
+   "detalle": "Vigente del sábado 7 al lunes 9 de noviembre de 2026",
+   "fuente": "Superfinanciera vía Capital Colombia",
+   "url": "https://www.capitalcolombia.com/sec-trm_precio_dolar_en_colombia"
+  },
+  {
+   "id": "banrep",
+   "nombre": "Tasa BanRep",
+   "valor": 12.25,
+   "unidad": "pct",
+   "fecha": "2026-10-30",
+   "detalle": "Se mantuvo en la junta de octubre, con voto dividido",
+   "fuente": "Portafolio",
+   "url": "https://www.portafolio.co/economia/banco-de-la-republica-mantiene-la-tasa-en-12-25-con-voto-dividido-505819"
+  },
+  {
+   "id": "fed",
+   "nombre": "Tasa Fed",
+   "texto": "3,75 – 4,00 %",
+   "valor": 3.875,
+   "unidad": "rango",
+   "fecha": "2026-10-28",
+   "detalle": "Rango objetivo de fondos federales, sin cambios (10 votos contra 2)",
+   "fuente": "Vizaca / FOMC",
+   "url": "https://www.vizaca.com/business/fed-holds-rates-october-2026/"
+  },
+  {
+   "id": "desCol",
+   "nombre": "Desempleo Colombia",
+   "valor": 8,
+   "unidad": "pct",
+   "fecha": "2026-09-30",
+   "detalle": "Tasa nacional de septiembre de 2026 (DANE)",
+   "fuente": "Noticias RCN",
+   "url": "https://www.noticiasrcn.com/economia/desempleo-en-colombia-bajo-al-8-en-septiembre-de-2026-1077092"
+  },
+  {
+   "id": "desUsa",
+   "nombre": "Desempleo EE. UU.",
+   "valor": 4.1,
+   "unidad": "pct",
+   "fecha": "2026-10-31",
+   "detalle": "Octubre de 2026: se crearon 165.000 empleos (BLS)",
+   "fuente": "ABC7",
+   "url": "https://abc7news.com/story/us-employers-added-surprising-165000-jobs-october-unemployment-rate-dipped-41/20020018/"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "Banco de la República mantiene la tasa en 12,25 % con voto dividido",
+   "fuente": "Portafolio",
+   "fecha": "2026-10-30",
+   "ambito": "Colombia",
+   "url": "https://www.portafolio.co/economia/banco-de-la-republica-mantiene-la-tasa-en-12-25-con-voto-dividido-505819"
+  },
+  {
+   "titulo": "El dólar en Colombia pegó un salto tras las elecciones de medio tiempo en Estados Unidos",
+   "fuente": "Portafolio",
+   "fecha": "2026-11-04",
+   "ambito": "Colombia",
+   "url": "https://www.portafolio.co/economia/finanzas/el-dolar-en-colombia-pego-un-salto-asi-cotiza-la-divisa-tras-las-elecciones-de-medio-tiempo-en-estados-unidos-505683"
+  },
+  {
+   "titulo": "Inflación en Colombia subiría al 6,38 % anual en octubre, según analistas",
+   "fuente": "Diario del Sur",
+   "fecha": "2026-11-06",
+   "ambito": "Colombia",
+   "url": "https://diariodelsur.com.co/noticias/inflacion-en-colombia-subiria-al-6-38-anual-en-octubre-segun-analistas"
+  },
+  {
+   "titulo": "Desempleo en Colombia bajó al 8 % en septiembre de 2026",
+   "fuente": "Noticias RCN",
+   "fecha": "2026-10-30",
+   "ambito": "Colombia",
+   "url": "https://www.noticiasrcn.com/economia/desempleo-en-colombia-bajo-al-8-en-septiembre-de-2026-1077092"
+  },
+  {
+   "titulo": "La Fed mantiene las tasas entre 3,75 % y 4 %; dos miembros votaron por un alza",
+   "fuente": "Vizaca",
+   "fecha": "2026-10-28",
+   "ambito": "Mundo",
+   "url": "https://www.vizaca.com/business/fed-holds-rates-october-2026/"
+  },
+  {
+   "titulo": "Estados Unidos sumó 165.000 empleos en octubre y el desempleo bajó a 4,1 %",
+   "fuente": "ABC7",
+   "fecha": "2026-11-06",
+   "ambito": "Mundo",
+   "url": "https://abc7news.com/story/us-employers-added-surprising-165000-jobs-october-unemployment-rate-dipped-41/20020018/"
+  }
+ ]
+}
