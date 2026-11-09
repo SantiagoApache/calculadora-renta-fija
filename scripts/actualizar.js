@@ -133,19 +133,28 @@ async function rss(q) {
     return { titulo, fuente, url: limpiar(g("link") || ""), fecha: isNaN(f) ? hoy : f.toISOString().slice(0, 10), t: +f };
   }).filter(n => n.titulo && /^https:\/\//.test(n.url));
 }
+// Medios financieros y generalistas reconocidos: van primero; los demás solo
+// completan la lista si no alcanza.
+const CONFIABLES = /portafolio|la rep[uú]blica|el tiempo|el espectador|valora analitik|semana|infobae|bloomberg|el colombiano|rcn|caracol|la fm|forbes|reuters|expansi[oó]n|el pa[ií]s|cnn|el economista|bbc|investing|financial times|wall street journal|dinero|blu radio|w radio|cambio|el heraldo|pulzo|france 24|dw|europa press|ámbito|el financiero/i;
+const palabras = t => new Set(t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").split(/[^a-z0-9]+/).filter(w => w.length > 3));
+function parecidas(a, b) { const A = palabras(a), B = palabras(b); let c = 0; A.forEach(w => { if (B.has(w)) c++; }); return c / Math.max(1, Math.min(A.size, B.size)) >= 0.5; }
 async function noticias() {
   const grupos = {
-    Colombia: ["Banco de la República tasas de interés", "dólar en Colombia", "inflación Colombia", "TES deuda pública Colombia"],
-    Mundo: ["Reserva Federal tasas de interés", "bonos del Tesoro Estados Unidos", "mercados globales economía"]
+    Colombia: ["Banco de la República tasas de interés", "dólar en Colombia", "inflación Colombia", "TES deuda pública Colombia", "Ministerio de Hacienda Colombia"],
+    Mundo: ["Reserva Federal tasas de interés", "Wall Street bolsa", "bonos del Tesoro Estados Unidos rendimientos", "Banco Central Europeo tasas", "petróleo precio mercados"]
   };
   const out = [];
   for (const amb in grupos) {
     let lista = [];
     for (const q of grupos[amb]) { try { lista = lista.concat(await rss(q)); } catch (e) { log("  noticias:", q, e.message); } }
-    const vistos = new Set();
-    lista.sort((a, b) => b.t - a.t)
-      .filter(n => { const k = n.titulo.toLowerCase().slice(0, 60); if (vistos.has(k)) return false; vistos.add(k); return true; })
-      .slice(0, 6).forEach(n => out.push({ titulo: n.titulo, fuente: n.fuente, fecha: n.fecha, ambito: amb, url: n.url }));
+    lista.sort((a, b) => (CONFIABLES.test(b.fuente) - CONFIABLES.test(a.fuente)) || (b.t - a.t));
+    const elegidas = [];
+    for (const n of lista) {
+      if (elegidas.length >= 6) break;
+      if (elegidas.some(e => parecidas(e.titulo, n.titulo))) continue;
+      elegidas.push(n);
+    }
+    elegidas.sort((a, b) => b.t - a.t).forEach(n => out.push({ titulo: n.titulo, fuente: n.fuente, fecha: n.fecha, ambito: amb, url: n.url }));
   }
   if (out.length >= 4) { mercado.noticias = out; resumen.push("Noticias: " + out.length + " titulares"); }
   else resumen.push("Noticias: se conservan las anteriores (respuesta incompleta)");
