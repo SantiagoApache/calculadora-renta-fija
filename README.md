@@ -17,7 +17,7 @@ Un proceso automático de GitHub Actions corre todos los días a las 6:37 a. m. 
 
 | Dato | Fuente | Automático |
 |---|---|---|
-| IBR (overnight, 1, 3 y 6 meses) | Banco de la República (servicio SDMX) | Sí |
+| IBR (overnight, 1, 3, 6 y 12 meses) | Banco de la República (servicio SDMX y portal SUAMECA) | Sí |
 | UVR diaria | Banco de la República (servicio SDMX) | Sí |
 | TRM y tasa de política monetaria | Banco de la República (servicio SDMX) | Sí |
 | Tasa de la Fed y desempleo de EE. UU. | FRED (Fed de San Luis) | Sí |

@@ -78,6 +78,29 @@ async function actualizarIBR() {
   resumen.push("IBR: " + nuevas.length + " día(s) nuevo(s); último dato " + datos.ibr.fechas[datos.ibr.fechas.length - 1]);
 }
 
+// ---------- IBR a 12 meses (portal SUAMECA, serie 241) ----------
+// El servicio SDMX no trae el plazo de 12 meses; SUAMECA sí. Llena los días
+// que quedaron sin ese dato, después de comprobar que coincide con la base.
+async function actualizarIBR12() {
+  const url = "https://suameca.banrep.gov.co/estadisticas-economicas-back/rest/estadisticaEconomicaRestService/consultaMenuXId?idMenu=241";
+  const j = JSON.parse(await traer(url, { Referer: "https://suameca.banrep.gov.co/estadisticas-economicas/", Accept: "application/json" }));
+  const series = (j && j.SERIES) || [];
+  log("  IBR 12m: series", series.map(x => x.nombre + " [" + (x.unidad || "") + "] (" + (x.data || []).length + ")").join(" | "));
+  const candidatas = series.filter(x => /12\s*mes/i.test(x.nombre + " " + (x.descripcion || "")));
+  const s = candidatas.find(x => /nominal/i.test(x.nombre + " " + (x.unidad || ""))) || (candidatas.length === 1 ? candidatas[0] : null);
+  if (!s) throw new Error("no se identificó la serie nominal a 12 meses");
+  const m = new Map();
+  s.data.forEach(p => { const v = Number(p[1]); if (isFinite(v)) m.set(aTexto(Math.floor(Number(p[0]) / DIA)), v); });
+  const ibr = datos.ibr;
+  let comparados = 0, distintos = 0;
+  ibr.fechas.forEach((f, i) => { if (ibr.m12[i] != null && m.has(f)) { comparados++; if (Math.abs(m.get(f) - ibr.m12[i]) > 0.0011) distintos++; } });
+  log("  IBR 12m: días comparados", comparados, "distintos", distintos, "· serie usada:", s.nombre);
+  if (comparados < 20 || distintos / comparados > 0.02) throw new Error("no coincide con la base actual (" + distintos + " de " + comparados + ")");
+  let n = 0;
+  ibr.fechas.forEach((f, i) => { if (ibr.m12[i] == null && m.has(f)) { ibr.m12[i] = m.get(f); n++; } });
+  resumen.push("IBR 12 meses: " + n + " día(s) completado(s)");
+}
+
 // ---------- UVR diaria ----------
 async function actualizarUVR() {
   const m = serieDe(await sdmx("DF_UVR_DAILY_HIST"), "RVU", "CRVU");
@@ -190,7 +213,7 @@ async function noticias() {
 }
 
 (async () => {
-  const pasos = [["IPC", actualizarIPC], ["IBR", actualizarIBR], ["UVR", actualizarUVR], ["Indicadores del Banco de la República", indicadoresBanRep],
+  const pasos = [["IPC", actualizarIPC], ["IBR", actualizarIBR], ["IBR 12 meses", actualizarIBR12], ["UVR", actualizarUVR], ["Indicadores del Banco de la República", indicadoresBanRep],
                  ["Indicadores de EE. UU.", indicadoresEEUU], ["Noticias", noticias]];
   let fallas = 0;
   for (const [n, f] of pasos) {
