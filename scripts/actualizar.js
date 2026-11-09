@@ -1,6 +1,7 @@
 // =============================================================
 // ROBOT DE ACTUALIZACIÓN (corre en GitHub Actions)
-// Trae IBR, UVR, TRM y tasa de política del Banco de la República (SDMX),
+// Trae IPC (portal SUAMECA), IBR, UVR, TRM y tasa de política del Banco de la
+// República (SDMX),
 // tasa de la Fed y desempleo de EE. UU. (FRED) y titulares (Google Noticias).
 // Reglas: solo AGREGA datos nuevos, nunca borra; si una fuente falla o sus
 // datos no coinciden con los que ya teníamos, se conserva lo anterior.
@@ -91,6 +92,34 @@ async function actualizarUVR() {
   resumen.push("UVR: " + n + " día(s) nuevo(s); último dato " + aTexto(u0 + v.length - 1));
 }
 
+// ---------- IPC: inflación total anual (portal SUAMECA del Banco, serie 100001) ----------
+// El servidor del Banco no envía el certificado intermedio; el flujo de trabajo
+// lo agrega con NODE_EXTRA_CA_CERTS (scripts/certificados/banrep-cadena.pem,
+// certificados públicos de DigiCert), así que la verificación sigue activa.
+async function actualizarIPC() {
+  const url = "https://suameca.banrep.gov.co/estadisticas-economicas-back/rest/estadisticaEconomicaRestService/consultaMenuXId?idMenu=100001";
+  const j = JSON.parse(await traer(url, { Referer: "https://suameca.banrep.gov.co/estadisticas-economicas/", Accept: "application/json" }));
+  const series = (j && j.SERIES) || [];
+  log("  IPC: series", series.map(x => x.nombre + " [" + (x.data || []).length + "]").join(" | "));
+  const s = series.find(x => /inflaci[oó]n total/i.test(x.nombre)) || series.find(x => !/meta/i.test(x.nombre));
+  if (!s || !s.data || !s.data.length) throw new Error("la respuesta no trae la inflación total anual");
+  // Fechas en milisegundos a medianoche de Bogotá; se agrupan por año-mes
+  const porMes = new Map();
+  s.data.forEach(p => { const v = Number(p[1]); if (isFinite(v)) porMes.set(aTexto(Math.floor(Number(p[0]) / DIA)).slice(0, 7), v); });
+  const ipc = datos.ipc;
+  let comparados = 0, distintos = 0;
+  ipc.fechas.forEach((f, i) => { const v = porMes.get(f.slice(0, 7)); if (v != null) { comparados++; if (Math.abs(v - ipc.inflacion[i]) > 0.0051) distintos++; } });
+  log("  IPC: meses comparados", comparados, "distintos", distintos);
+  if (comparados < 12 || distintos > 0) throw new Error("no coincide con la base actual (" + distintos + " de " + comparados + " meses)");
+  const ultimoMes = ipc.fechas[ipc.fechas.length - 1].slice(0, 7);
+  const nuevos = [...porMes.keys()].filter(m => m > ultimoMes).sort();
+  nuevos.forEach(m => {   // la base del curso usa el último día del mes
+    const fin = aTexto(Math.round(Date.UTC(+m.slice(0, 4), +m.slice(5, 7), 0) / DIA));
+    ipc.fechas.push(fin); ipc.inflacion.push(porMes.get(m));
+  });
+  resumen.push("IPC: " + nuevos.length + " mes(es) nuevo(s); último dato " + ipc.fechas[ipc.fechas.length - 1] + " = " + ipc.inflacion[ipc.inflacion.length - 1] + " %");
+}
+
 // ---------- Indicadores ----------
 function fijar(id, campos) {
   const x = mercado.indicadores.find(i => i.id === id);
@@ -161,7 +190,7 @@ async function noticias() {
 }
 
 (async () => {
-  const pasos = [["IBR", actualizarIBR], ["UVR", actualizarUVR], ["Indicadores del Banco de la República", indicadoresBanRep],
+  const pasos = [["IPC", actualizarIPC], ["IBR", actualizarIBR], ["UVR", actualizarUVR], ["Indicadores del Banco de la República", indicadoresBanRep],
                  ["Indicadores de EE. UU.", indicadoresEEUU], ["Noticias", noticias]];
   let fallas = 0;
   for (const [n, f] of pasos) {

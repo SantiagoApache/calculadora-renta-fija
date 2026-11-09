@@ -27,6 +27,8 @@ jobs:
           node-version: 20
       - name: Traer datos nuevos
         if: github.event_name != 'push'
+        env:
+          NODE_EXTRA_CA_CERTS: scripts/certificados/banrep-cadena.pem
         run: node scripts/actualizar.js
       - name: Construir la página
         run: node scripts/build.js

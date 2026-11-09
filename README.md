@@ -22,7 +22,7 @@ Un proceso automático de GitHub Actions corre todos los días a las 6:37 a. m. 
 | TRM y tasa de política monetaria | Banco de la República (servicio SDMX) | Sí |
 | Tasa de la Fed y desempleo de EE. UU. | FRED (Fed de San Luis) | Sí |
 | Noticias de Colombia y del mundo | Google Noticias (solo titular y enlace) | Sí |
-| IPC mensual | Excel del Banco de la República | No: se sube en el botón «Datos» o en `data/datos.json` |
+| IPC (inflación total anual) | Banco de la República (portal SUAMECA, serie «Inflación y meta») | Sí |
 | Desempleo de Colombia | DANE | No: se edita en `data/mercado.json` |
 | Curvas FR, curva CC y pronóstico de IPC | Archivos del curso | No: se suben en el botón «Datos» |
 
