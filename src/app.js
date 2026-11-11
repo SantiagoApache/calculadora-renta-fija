@@ -387,27 +387,44 @@
     return { titulo: "Precio frente a la tasa", sub: "Movimientos de ±400 pb" + (o.tasas ? " sobre toda la curva" : ""), svg,
       leyenda: [["var(--accent)", "Precio exacto"], ["var(--dim)", "Solo duración"], ["var(--warn)", "Duración + convexidad"]] };
   }
-  // Barras de flujos de una operación (en pesos)
-  function graficoFlujos(filas, titulo) {
+  // Barras de flujos de una operación (en pesos). Cuando los cupones son muy
+  // pequeños frente a la compra y la venta, se dibujan dos paneles: arriba todos
+  // los flujos a escala real y abajo solo los cupones con su propia escala.
+  function panelBarras(filas, n, y0, alto, color, fechas) {
     const vals = filas.map(f => f.valor);
     let ymin = Math.min(0, Math.min.apply(null, vals)), ymax = Math.max(0, Math.max.apply(null, vals));
-    const pad = (ymax - ymin) * 0.08; ymax += pad; if (ymin < 0) ymin -= pad;
-    const n = filas.length, bw = Math.max(3, Math.min(34, (W - ML - MR) / n * 0.62));
+    const pad = (ymax - ymin) * 0.08 || 1; ymax += pad; if (ymin < 0) ymin -= pad;
+    const bw = Math.max(3, Math.min(34, (W - ML - MR) / n * 0.62));
     const sx = i => ML + (i + 0.5) * (W - ML - MR) / n;
-    const sy = y => H - MB - (y - ymin) / (ymax - ymin || 1) * (H - MT - MB);
-    const ys = ticks(ymin, ymax, 5);
-    let s = ys.map(y => '<line x1="' + ML + '" x2="' + (W - MR) + '" y1="' + sy(y) + '" y2="' + sy(y) + '" stroke="var(--line)"/>' +
+    const sy = y => y0 + alto - (y - ymin) / (ymax - ymin || 1) * alto;
+    let s = ticks(ymin, ymax, alto > 150 ? 5 : 3).map(y => '<line x1="' + ML + '" x2="' + (W - MR) + '" y1="' + sy(y) + '" y2="' + sy(y) + '" stroke="var(--line)"/>' +
       '<text x="' + (ML - 8) + '" y="' + (sy(y) + 4) + '" text-anchor="end">' + esc(compactoCorto(y)) + "</text>").join("");
     const cadaN = Math.ceil(n / 7);
-    filas.forEach((f, i) => {
+    filas.forEach(f => {
       const y1 = sy(Math.max(0, f.valor)), y2 = sy(Math.min(0, f.valor));
-      const col = f.valor < 0 ? "var(--neg)" : (i === n - 1 ? "var(--accent-2)" : "var(--accent)");
-      s += '<rect x="' + (sx(i) - bw / 2) + '" y="' + y1 + '" width="' + bw + '" height="' + Math.max(1, y2 - y1) + '" fill="' + col + '" rx="2"><title>' + esc(f.concepto + " · " + fF(f.fecha) + " · " + fPesos(f.valor)) + "</title></rect>";
-      if (i % cadaN === 0 || i === n - 1) s += '<text x="' + sx(i) + '" y="' + (H - MB + 18) + '" text-anchor="middle">' + esc(fFcorta(f.fecha)) + "</text>";
+      s += '<rect x="' + (sx(f.i) - bw / 2) + '" y="' + y1 + '" width="' + bw + '" height="' + Math.max(1, y2 - y1) + '" fill="' + color(f) + '" rx="2"><title>' + esc(f.concepto + " · " + fF(f.fecha) + " · " + fPesos(f.valor)) + "</title></rect>";
     });
-    s += '<line x1="' + ML + '" x2="' + (W - MR) + '" y1="' + sy(0) + '" y2="' + sy(0) + '" stroke="var(--muted)"/>';
-    return { titulo: titulo || "Flujos de la operación", sub: "En pesos; pasa el cursor sobre cada barra", svg: '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Flujos de caja">' + s + "</svg>",
-      leyenda: [["var(--neg)", "Compra"], ["var(--accent)", "Cupones"], ["var(--accent-2)", "Venta o vencimiento"]] };
+    (fechas || []).forEach(f => { if (f.i % cadaN === 0 || f.i === n - 1) s += '<text x="' + sx(f.i) + '" y="' + (y0 + alto + 18) + '" text-anchor="middle">' + esc(fFcorta(f.fecha)) + "</text>"; });
+    return s + '<line x1="' + ML + '" x2="' + (W - MR) + '" y1="' + sy(0) + '" y2="' + sy(0) + '" stroke="var(--muted)"/>';
+  }
+  function graficoFlujos(filas0, titulo) {
+    const n = filas0.length, filas = filas0.map((f, i) => Object.assign({ i }, f));
+    const color = f => f.valor < 0 ? "var(--neg)" : (f.i === n - 1 ? "var(--accent-2)" : "var(--accent)");
+    const cupones = filas.filter(f => f.i > 0 && f.i < n - 1);
+    const maxTodo = Math.max.apply(null, filas.map(f => Math.abs(f.valor)));
+    const maxCup = cupones.length ? Math.max.apply(null, cupones.map(f => Math.abs(f.valor))) : 0;
+    const dos = cupones.length > 0 && maxCup < 0.2 * maxTodo;
+    const leyenda = [["var(--neg)", "Compra"], ["var(--accent)", "Cupones"], ["var(--accent-2)", "Venta o vencimiento"]];
+    if (!dos) {
+      return { titulo: titulo || "Flujos de la operación", sub: "En pesos; pasa el cursor sobre cada barra", leyenda,
+        svg: '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Flujos de caja">' + panelBarras(filas, n, MT, H - MT - MB, color, filas) + "</svg>" };
+    }
+    const a1 = 150, sep = 46, a2 = 130, alto = MT + 14 + a1 + sep + a2 + MB;
+    const rot = (y, t) => '<text x="' + ML + '" y="' + y + '" style="fill:var(--fg);font-family:var(--f-body);font-size:12px">' + esc(t) + "</text>";
+    const svg = '<svg viewBox="0 0 ' + W + " " + alto + '" role="img" aria-label="Flujos de caja: todos los flujos y detalle de cupones">' +
+      rot(MT + 2, "Todos los flujos, a escala real") + panelBarras(filas, n, MT + 14, a1, color, null) +
+      rot(MT + 14 + a1 + sep - 12, "Solo los cupones, ampliados (escala propia)") + panelBarras(cupones, n, MT + 14 + a1 + sep, a2, color, filas) + "</svg>";
+    return { titulo: titulo || "Flujos de la operación", sub: "En pesos. El panel de abajo amplía los cupones con su propia escala", svg, leyenda };
   }
   function compactoCorto(v) {
     const a = Math.abs(v);
