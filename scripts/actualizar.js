@@ -150,9 +150,9 @@ function fijar(id, campos) {
 }
 async function indicadoresBanRep() {
   const trm = ultimo(serieDe(await sdmx("DF_TRM_DAILY_LATEST"), "CCSP"));
-  if (trm) fijar("trm", { nombre: "TRM", valor: trm[1], unidad: "cop", fecha: trm[0], detalle: "Tasa Representativa del Mercado vigente", fuente: "Banco de la República", url: "https://www.banrep.gov.co/es/estadisticas/trm" });
+  if (trm) fijar("trm", { nombre: "TRM", valor: trm[1], unidad: "cop", fecha: trm[0], detalle: "Tasa Representativa del Mercado vigente", fuente: "Banco de la República", url: "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/1/tasa_cambio_peso_colombiano_trm_dolar_usd" });
   const tpm = ultimo(serieDe(await sdmx("DF_CBR_DAILY_LATEST"), "IRCBRM01"));
-  if (tpm) fijar("banrep", { nombre: "Tasa BanRep", valor: tpm[1], unidad: "pct", fecha: tpm[0], detalle: "Tasa de política monetaria vigente", fuente: "Banco de la República", url: "https://www.banrep.gov.co/es/estadisticas/tasas-interes-politica-monetaria" });
+  if (tpm) fijar("banrep", { nombre: "Tasa BanRep", valor: tpm[1], unidad: "pct", fecha: tpm[0], detalle: "Tasa de política monetaria vigente", fuente: "Banco de la República", url: "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/59/tasas_interes_politica_monetaria" });
   resumen.push("TRM: " + (trm ? trm[1] + " (" + trm[0] + ")" : "sin dato") + " · Tasa BanRep: " + (tpm ? tpm[1] + " %" : "sin dato"));
 }
 async function fred(id) {
@@ -169,6 +169,21 @@ async function indicadoresEEUU() {
     fijar("desUsa", { nombre: "Desempleo EE. UU.", valor: un[1], unidad: "pct", fecha: fin, detalle: "Tasa de desempleo mensual (BLS)", fuente: "FRED", url: "https://fred.stlouisfed.org/series/UNRATE" });
   }
   resumen.push("Fed: " + (lo && hi ? coma(lo[1]) + "–" + coma(hi[1]) + " %" : "sin dato") + " · Desempleo EE. UU.: " + (un ? un[1] + " % (" + un[0].slice(0, 7) + ")" : "sin dato"));
+}
+
+// ---------- Desempleo de Colombia: solo de la página oficial del DANE ----------
+const URL_DANE = "https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo";
+const MESES_ES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+async function desempleoColombia() {
+  const html = await traer(URL_DANE, { "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36", "Accept-Language": "es-CO,es" });
+  const texto = html.replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&aacute;/g, "á").replace(/&oacute;/g, "ó").replace(/\s+/g, " ");
+  const m = texto.match(/mes de (\w+) de (\d{4}), la tasa de desocupaci[oó]n del total nacional fue\s*(\d{1,2}[,.]\d)\s*%/i);
+  if (!m) throw new Error("no se encontró la frase de la tasa de desocupación nacional en la página del DANE");
+  const mes = MESES_ES.indexOf(m[1].toLowerCase()), valor = Number(m[3].replace(",", "."));
+  if (mes < 0 || !(valor > 2 && valor < 30)) throw new Error("dato del DANE fuera de lo esperado: " + m[0]);
+  const fin = aTexto(Math.round(Date.UTC(+m[2], mes + 1, 0) / DIA));
+  fijar("desCol", { nombre: "Desempleo Colombia", valor, unidad: "pct", fecha: fin, detalle: "Tasa de desocupación del total nacional, " + MESES_ES[mes] + " de " + m[2], fuente: "DANE", url: URL_DANE });
+  resumen.push("Desempleo Colombia (DANE): " + valor + " % (" + MESES_ES[mes] + " de " + m[2] + ")");
 }
 
 // ---------- Noticias: solo titular, fuente, fecha y enlace ----------
@@ -214,7 +229,7 @@ async function noticias() {
 
 (async () => {
   const pasos = [["IPC", actualizarIPC], ["IBR", actualizarIBR], ["IBR 12 meses", actualizarIBR12], ["UVR", actualizarUVR], ["Indicadores del Banco de la República", indicadoresBanRep],
-                 ["Indicadores de EE. UU.", indicadoresEEUU], ["Noticias", noticias]];
+                 ["Indicadores de EE. UU.", indicadoresEEUU], ["Desempleo de Colombia (DANE)", desempleoColombia], ["Noticias", noticias]];
   let fallas = 0;
   for (const [n, f] of pasos) {
     log("→", n);

@@ -227,8 +227,7 @@
         { id: "precioVenta", l: "Precio sucio de venta", tipo: "num", v: "100", suf: "%", si: si("modoVenta", "precio") }] },
       { t: "Cálculo", c: [
         { id: "monto", l: "Valor nominal", tipo: "dinero", v: "10.000.000.000", ancho: true },
-        { id: "base", l: "Base de los cupones", tipo: "sel", op: [["365", "Días reales / 365"], ["30_360", "30/360"]], v: "365" },
-        { id: "diasTir", l: "Días para la TIR", tipo: "sel", op: [["reales", "Reales"], ["sin_feb29", "365 sin 29 feb."]], v: "reales" }] }
+        { id: "base", l: "Base de los cupones", tipo: "sel", op: [["365", "Días reales / 365"], ["30_360", "30/360"]], v: "365", ancho: true }] }
     ],
     ibr: [
       { t: "Escenario", c: [
@@ -461,6 +460,8 @@
   // =============================================================
   // CÁLCULOS POR CALCULADORA (devuelven el modelo de la vista)
   // =============================================================
+  // TIR de comprar hoy al precio de giro (sucio truncado) y mantener hasta el vencimiento
+  const intento = f => { try { const x = f(); return isFinite(x) ? x : null; } catch (e) { return null; } };
   const CALC = {};
   const req = (v, id, k) => { const c = campoDef(k, id); return falta(c.tipo === "pct" ? pPct(v[id]) : c.tipo === "dinero" ? pDinero(v[id]) : c.tipo === "num" ? pNum(v[id]) : v[id], c.l); };
 
@@ -479,6 +480,9 @@
       kpi("Valor de giro", fPesos(giro), compacto(giro) + " de pesos")
     ];
     if (curva) kp.push(kpi("TIR equivalente", fPct(y, 4), "Tasa única que da el mismo precio"));
+    const tirV = intento(() => M.operacionTasaFija({ emision: v.emision, vencimiento: v.vencimiento, tasaCupon: pPct(v.tasaCupon), periodo: per, fechaCompra: v.fecha, modoCompra: "precio",
+      precioCompra: r.precioSucioTruncado, fechaVenta: v.vencimiento, modoVenta: "precio", precioVenta: 100, montoPesos: nominal }).tir);
+    if (tirV != null) kp.push(kpi("TIR al vencimiento", fPct(tirV, 4), "Comprando al precio de giro y manteniendo"));
     const idF = "flujos-tf";
     const filas = r.fechas.map((f, i) => ({ fecha: f, dias: r.dias[i], t: r.t[i], tasa: r.tasas ? r.tasas[i] : y, flujo: r.flujos[i], vp: r.vp[i] }));
     const tf = tabla(idF, "Flujos por cada 100 de nominal", [
@@ -533,6 +537,10 @@
       fechaNegociacion: req(v, "fecha", k), serieUVR: S.uvr, nominal: req(v, "nominal", k), nominalEn: v.nominalEn });
     const rg = M.riesgo({ flujos: r.flujos, t: r.t, tasa, periodo: per, precioActual: r.precioSucioTruncado, factor: r.nominalUVR / 100 });
     const dvPesos = rg.modificadaTrunc / 1e4 * r.valorGiro;
+    let tirVto = null;
+    try { tirVto = M.rentabilidadUVR({ tipo: "estimada", emision: v.emision, vencimiento: v.vencimiento, tasaCupon: pPct(v.tasaCupon), periodo: per, fechaCompra: v.fecha, modoCompra: "precio",
+      precioCompra: r.precioSucioTruncado, fechaVenta: v.vencimiento, modoVenta: "precio", precioVenta: 100, serieUVR: S.uvr, serieIPC: S.ipc, nominal: pDinero(v.nominal), nominalEn: v.nominalEn, diasTir: "reales" });
+      if (!isFinite(tirVto.tirPesos) || !isFinite(tirVto.tirUVR)) tirVto = null; } catch (e) { tirVto = null; }
     const idF = "flujos-uvr";
     const filas = r.fechas.map((f, i) => ({ fecha: f, dias: r.dias[i], flujo: r.flujos[i], vp: r.vp[i], flujoUVR: r.flujos[i] / 100 * r.nominalUVR }));
     const tf = tabla(idF, "Flujos (por 100 y de la posición en UVR)", [
@@ -545,8 +553,9 @@
         kpi("UVR del día", fN(r.uvr, 4), fF(M.aDia(v.fecha))),
         kpi("Valor de giro en pesos", fPesos(r.valorGiro), compacto(r.valorGiro) + " de pesos"),
         kpi("Valor de giro en UVR", fUVR(r.valorGiroUVR), "Nominal: " + fUVR(r.nominalUVR))
-      ],
-      avisos: [],
+      ].concat(tirVto ? [kpi("TIR al vencimiento en UVR", fPct(tirVto.tirUVR, 4), "Comprando al precio de giro y manteniendo"),
+        kpi("TIR al vencimiento en pesos", fPct(tirVto.tirPesos, 4), "Estimada con IPC de " + fPct(tirVto.inflacionSupuesta, 2))] : []),
+      avisos: tirVto ? [{ tipo: "info", html: "La TIR en pesos al vencimiento es una estimación: proyecta la UVR con el IPC vigente a la negociación (" + fPct(tirVto.inflacionSupuesta, 2) + " anual)." }] : [],
       graf: graficoPrecioTasa({ flujos: r.flujos, t: r.t, tasa, precioActual: r.precioSucioTruncado, dmod: rg.modificada, conv: rg.convexidad }),
       tabs: [{ id: "flujos", n: "Flujos", html: conTabla(idF, tf) },
              { id: "riesgo", n: "Riesgo y sensibilidad", html: bloqueRiesgo(rg, { uvr: true, uvrPesos: r.uvr, dv01PesosRegla: dvPesos, etiquetaTasa: "Tasa UVR" }) }]
@@ -581,6 +590,9 @@
     const r = M.precioIPC({ emision: req(v, "emision", k), vencimiento: req(v, "vencimiento", k), periodo: per, spread: req(v, "spread", k), modoIPC: v.modoIPC,
       tasaMercado: req(v, "tasa", k), tipoTasa: v.tipoTasa, fechaNegociacion: req(v, "fecha", k), serie: S.ipc, montoPesos: monto });
     const rg = M.riesgo({ flujos: r.flujos, t: r.t, tasa: r.tasaDescuento, periodo: per, precioActual: r.precioSucioTruncado, factor: monto / 100 });
+    const tirVI = intento(() => M.rentabilidadIPC({ tipo: "estimada", emision: v.emision, vencimiento: v.vencimiento, periodo: per, spread: pPct(v.spread), modoIPC: v.modoIPC,
+      fechaCompra: v.fecha, modoCompra: "precio", precioCompra: r.precioSucioTruncado, fechaVenta: v.vencimiento, modoVenta: "precio", precioVenta: 100,
+      serie: S.ipc, montoPesos: monto, diasTir: "reales", base: "365", pronostico: null }).tir);
     const filas = r.filas.map((x, i) => ({ fecha: x.fecha, dias: r.dias[i], ipc: x.ipc, fechaIpc: x.fechaIpc, tasa: x.tasa, flujo: r.flujos[i], vp: r.vp[i] }));
     const id = "flujos-ipc";
     const tf = tabla(id, "Flujos por cada 100 de nominal", [
@@ -594,12 +606,28 @@
         kpi("Interés corrido", fN(r.interesCorrido, 6), "Por cada 100 de nominal"),
         kpi("Valor de giro", fPesos(r.valorGiro), compacto(r.valorGiro) + " de pesos"),
         kpi("Tasa de descuento", fPct(r.tasaDescuento, 4), "IPC vigente " + fPct(r.ipcNegociacion.valor, 2) + " (" + fFcorta(r.ipcNegociacion.fecha) + ")")
-      ],
+      ].concat(tirVI != null ? [kpi("TIR al vencimiento", fPct(tirVI, 4), "Estimada: el IPC vigente no cambia")] : []),
       avisos: [{ tipo: "info", html: "Los cupones futuros usan el IPC vigente a la negociación (" + fPct(r.ipcNegociacion.valor, 2) + "). Último IPC en la base: " + fF(r.ultimoIPC) + "." }],
       graf: graficoPrecioTasa({ flujos: r.flujos, t: r.t, tasa: r.tasaDescuento, precioActual: r.precioSucioTruncado, dmod: rg.modificada, conv: rg.convexidad }),
       tabs: [{ id: "flujos", n: "Flujos", html: conTabla(id, tf) }, { id: "riesgo", n: "Riesgo y sensibilidad", html: bloqueRiesgo(rg, { etiquetaTasa: "Tasa EA" }) }]
     };
   };
+
+  // Riesgo del bono IPC a la fecha de compra: flujos con el IPC vigente ese día,
+  // descontados con la tasa de compra (o con la TIR implícita si se compró por precio).
+  function riesgoCompraIPC(v, r) {
+    try {
+      const per = +v.periodo, monto = pDinero(v.monto), porTasa = v.modoCompra === "tasa";
+      const b = M.precioIPC({ emision: v.emision, vencimiento: v.vencimiento, periodo: per, spread: pPct(v.spread), modoIPC: v.modoIPC,
+        tasaMercado: porTasa ? pPct(v.tasaCompra) : 0.1, tipoTasa: porTasa ? v.tipoTasaCompra : "total", fechaNegociacion: v.fechaCompra, serie: S.ipc, montoPesos: monto });
+      const y = porTasa ? b.tasaDescuento : M.raiz(x => b.flujos.reduce((s, c, i) => s + c / Math.pow(1 + x, b.t[i]), 0) - r.precioCompra, -0.5, 2, 1e-13);
+      if (!isFinite(y)) return [];
+      const rg = M.riesgo({ flujos: b.flujos, t: b.t, tasa: y, periodo: per, precioActual: M.truncar(r.precioCompra, 3), factor: monto / 100 });
+      return [{ id: "riesgo", n: "Riesgo y sensibilidad", html: bloqueRiesgo(rg, { etiquetaTasa: "Tasa EA" }) +
+        '<div class="tarjeta-b"><p class="nota" style="margin:0">Riesgo a la fecha de compra: los cupones futuros usan el IPC vigente ese día y se descuentan con ' +
+        (porTasa ? "la tasa de compra (" : "la TIR implícita en el precio de compra (") + esc(fPct(y, 4)) + ").</p></div>" }];
+    } catch (e) { return []; }
+  }
 
   CALC.ipc_rent = v => {
     const k = "ipc_rent";
@@ -608,7 +636,7 @@
       precioCompra: v.modoCompra === "precio" ? req(v, "precioCompra", k) : NaN,
       fechaVenta: req(v, "fechaVenta", k), modoVenta: v.modoVenta, tasaVenta: v.modoVenta === "tasa" ? req(v, "tasaVenta", k) : NaN, tipoTasaVenta: v.tipoTasaVenta,
       precioVenta: v.modoVenta === "precio" ? req(v, "precioVenta", k) : NaN,
-      serie: S.ipc, montoPesos: req(v, "monto", k), diasTir: v.diasTir, base: v.base,
+      serie: S.ipc, montoPesos: req(v, "monto", k), diasTir: "reales", base: v.base,
       pronostico: v.tipo === "estimada" && v.usarPron ? S.pron : null });
     const filas = r.tabla.map((x, i) => ({ concepto: x.concepto, fecha: x.fecha, fechaRef: x.fechaRef, ipc: x.ipc, tasa: i > 0 && i < r.tabla.length - 1 ? r.cupones[i - 1].tasa : NaN, valor: x.valor }));
     const id = "op-ipc";
@@ -622,6 +650,7 @@
         mini("IPC a la compra", fPct(r.ipcCompra.valor, 2), fF(r.ipcCompra.fecha)) + mini("IPC a la venta", fPct(r.ipcVenta.valor, 2), fF(r.ipcVenta.fecha)) + "</div>",
       graf: graficoFlujos(filas),
       tabs: [{ id: "flujos", n: "Flujos", html: conTabla(id, tablaOperacion(id, filas, [{ n: "Fecha del IPC", k: "fechaRef", f: fF, esFecha: true }, { n: "IPC", k: "ipc", f: x => fPct(x, 2) }, { n: "Tasa cupón", k: "tasa", f: x => fPct(x, 4) }])) }]
+        .concat(riesgoCompraIPC(v, r))
     };
   };
 
@@ -650,6 +679,7 @@
 
   CALC.ibr_rent = v => {
     const a = argsIBR(v), r = M.rentabilidadIBR(a);
+    const tirVtoIBR = r.alVencimiento ? null : intento(() => M.rentabilidadIBR(Object.assign({}, a, { fechaVenta: null, modoVenta: "precio", precioVenta: NaN, tirVenta: NaN, spreadVenta: NaN })).tir);
     const avisos = [];
     if (r.mensajeTir) avisos.push({ tipo: "err", html: esc(r.mensajeTir) });
     if (r.sinBaseIBR) avisos.push({ tipo: "warn", html: "No hay base de IBR publicada: el primer cupón sale de la curva FR. Carga la base en Datos." });
@@ -678,7 +708,7 @@
           kpi("Valor de la venta", fPesos(r.valorVenta), "Precio " + fN(r.precioVenta, 3) + " · limpio " + fN(r.limpioVenta, 3)),
         kpi("Cupones recibidos", fPesos(r.cuponesPesos), compacto(r.cuponesPesos)),
         kpi("Pérdidas y ganancias", fPesos(r.pygPesos), compacto(r.pygPesos), { cls: r.pygPesos >= 0 ? "pos" : "neg" })
-      ],
+      ].concat(tirVtoIBR != null ? [kpi("TIR al vencimiento", fPct(tirVtoIBR, 4), "Si no vendes y mantienes el bono")] : []),
       avisos, graf, tabs
     };
   };
@@ -875,9 +905,8 @@
     const b = S.ibr, m = b.fechas.length;
     if (m) {
       const ult = c => { for (let i = m - 1; i >= 0; i--) if (b[c][i] != null) return [b[c][i], b.fechas[i]]; return [NaN, NaN]; };
-      const on = ult("overnight"), t3 = ult("m3");
+      const on = ult("overnight");
       out.push({ id: "ibr", nombre: "IBR overnight", texto: fN(on[0], 3) + " %", fecha: M.aTexto(on[1]), detalle: "Nominal anual · último dato en la base", fuente: S.origen.ibr });
-      out.push({ id: "ibr3", nombre: "IBR 3 meses", texto: fN(t3[0], 3) + " %", fecha: M.aTexto(t3[1]), detalle: "Nominal anual · último dato en la base", fuente: S.origen.ibr });
     }
     return out;
   }

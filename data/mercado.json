@@ -9,7 +9,7 @@
    "fecha": "2026-11-12",
    "detalle": "Tasa Representativa del Mercado vigente",
    "fuente": "Banco de la República",
-   "url": "https://www.banrep.gov.co/es/estadisticas/trm"
+   "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/1/tasa_cambio_peso_colombiano_trm_dolar_usd"
   },
   {
    "id": "banrep",
@@ -19,7 +19,7 @@
    "fecha": "2026-11-10",
    "detalle": "Tasa de política monetaria vigente",
    "fuente": "Banco de la República",
-   "url": "https://www.banrep.gov.co/es/estadisticas/tasas-interes-politica-monetaria"
+   "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/59/tasas_interes_politica_monetaria"
   },
   {
    "id": "fed",
@@ -38,9 +38,9 @@
    "valor": 8,
    "unidad": "pct",
    "fecha": "2026-09-30",
-   "detalle": "Tasa nacional de septiembre de 2026 (DANE)",
-   "fuente": "Noticias RCN",
-   "url": "https://www.noticiasrcn.com/economia/desempleo-en-colombia-bajo-al-8-en-septiembre-de-2026-1077092"
+   "detalle": "Tasa de desocupación del total nacional, septiembre de 2026",
+   "fuente": "DANE",
+   "url": "https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo"
   },
   {
    "id": "desUsa",

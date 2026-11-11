@@ -23,7 +23,7 @@ Un proceso automático de GitHub Actions corre todos los días a las 6:37 a. m. 
 | Tasa de la Fed y desempleo de EE. UU. | FRED (Fed de San Luis) | Sí |
 | Noticias de Colombia y del mundo | Google Noticias (solo titular y enlace) | Sí |
 | IPC (inflación total anual) | Banco de la República (portal SUAMECA, serie «Inflación y meta») | Sí |
-| Desempleo de Colombia | DANE | No: se edita en `data/mercado.json` |
+| Desempleo de Colombia | Página oficial del DANE (empleo y desempleo) | Sí |
 | Curvas FR, curva CC y pronóstico de IPC | Archivos del curso | No: se suben en el botón «Datos» |
 
 Reglas del proceso:
