@@ -171,16 +171,17 @@ async function indicadoresEEUU() {
   // Inflación anual de EE. UU.: variación a 12 meses del IPC (CPI-U, serie CPIAUCNS, sin desestacionalizar)
   const cpi = (await traer("https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS")).trim().split("\n").slice(1)
     .map(l => l.split(",")).filter(p => p[1] && p[1] !== "." && isFinite(+p[1]));
-  let inf = null;
-  if (cpi.length > 12) {
-    const u = cpi[cpi.length - 1], previo = cpi.find(p => p[0] === (Number(u[0].slice(0, 4)) - 1) + u[0].slice(4));
-    if (previo) {
-      inf = Math.round((+u[1] / +previo[1] - 1) * 1000) / 10;
-      const q = u[0].split("-").map(Number), finMes = aTexto(Math.round(Date.UTC(q[0], q[1], 0) / DIA));
-      fijar("infUsa", { nombre: "Inflación EE. UU.", valor: inf, unidad: "pct1", fecha: finMes, detalle: "Variación anual del IPC (CPI-U, BLS)", fuente: "FRED", url: "https://fred.stlouisfed.org/series/CPIAUCNS" });
-    }
+  let inf = null, mesInf = "";
+  log("  CPI: filas", cpi.length, "· últimas", cpi.slice(-3).map(p => p.join("=")).join(" "));
+  // Último mes que tenga también el dato de 12 meses antes (el BLS no publicó algunos meses)
+  for (let k = cpi.length - 1; k >= 0 && k >= cpi.length - 6 && inf == null; k--) {
+    const u = cpi[k], f = u[0].trim(), previo = cpi.find(p => p[0].trim() === (Number(f.slice(0, 4)) - 1) + f.slice(4));
+    if (!previo) continue;
+    inf = Math.round((+u[1] / +previo[1] - 1) * 1000) / 10; mesInf = f.slice(0, 7);
+    const q = f.split("-").map(Number), finMes = aTexto(Math.round(Date.UTC(q[0], q[1], 0) / DIA));
+    fijar("infUsa", { nombre: "Inflación EE. UU.", valor: inf, unidad: "pct1", fecha: finMes, detalle: "Variación anual del IPC (CPI-U, BLS)", fuente: "FRED", url: "https://fred.stlouisfed.org/series/CPIAUCNS" });
   }
-  resumen.push("Inflación EE. UU.: " + (inf != null ? inf + " % (" + cpi[cpi.length - 1][0].slice(0, 7) + ")" : "sin dato"));
+  resumen.push("Inflación EE. UU.: " + (inf != null ? inf + " % (" + mesInf + ")" : "sin dato"));
   resumen.push("Fed: " + (lo && hi ? coma(lo[1]) + "–" + coma(hi[1]) + " %" : "sin dato") + " · Desempleo EE. UU.: " + (un ? un[1] + " % (" + un[0].slice(0, 7) + ")" : "sin dato"));
 }
 
