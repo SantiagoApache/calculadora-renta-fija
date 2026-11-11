@@ -4,9 +4,9 @@
   {
    "id": "trm",
    "nombre": "TRM",
-   "valor": 3269.88,
+   "valor": 3297.07,
    "unidad": "cop",
-   "fecha": "2026-11-10",
+   "fecha": "2026-11-12",
    "detalle": "Tasa Representativa del Mercado vigente",
    "fuente": "Banco de la República",
    "url": "https://www.banrep.gov.co/es/estadisticas/trm"
@@ -55,53 +55,81 @@
  ],
  "noticias": [
   {
-   "titulo": "Dólar roza la barrera de los 3.300 pesos y cierra la jornada más caro",
-   "fuente": "Revista Semana",
-   "fecha": "2026-11-10",
+   "titulo": "Mesada de $4 millones: este sería el incremento para los pensionados en 2027",
+   "fuente": "La FM",
+   "fecha": "2026-11-11",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNLU5mVy1pT0s5eVhUVF9CVC1hTkRKLTRlQVhQWTNQaEpXXzU5LWJyUi1QZ3hvWTJRbFlSVU1jQXlfYzlUcTFhSmxhY2xNd1pldUJvZmJkenA3REwtY3ZGOGxCcUFqd2RnZUJBb1dFYndhd1l6Y2dBb1pZTENYbXphQ3VFTXhvbXlHTWxUOXhrVGdaX1VmVlBRZUUzaEVoZ3NoRUdGcFdVaVd4Z3RNYkZHQWZ5YzhSZG5SbDYta0VpdkpTUnhleWNYb1ZBa9IB0AFBVV95cUxQdV9QS25MblpzMW1aTVhTOVhCdHR1c3hPVFRUQllDQzk2cDRPRDlWSG96Rmh5SlVXSmtYNFBCY1ZWLXZVNWZoNlNLYzFvVlNtMjhXbi10RDRuTFdQdENDazYwNXplNUwxbDQ5XzFLeVJza0hiMUdyZnQ1d05CNF9GRllkN3RZb3NkS3JtS1hEMzdSVU1qUkNqV0V3SW1fdHBtNGRMbjA0VXp1TnQ2MmJ5SFNsN20zbVB1RGFSR3BNel9TVXZsdEI3eHZLeHVzMkpD?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUDRabXg0TXVPVTJCRmpXczJ6X2hYWWlLaUlHTFVtakFWMGVwMDVIc2F3VkkybWNXVlA1aU1ZOC1aOExtbU1URFpWS2NuTkx3ekpJdi1mYlZaWUN6enNPTEwtbzB4UVA5MWVvVHlGcERsR3pqS1ZfWXFQTjhTSUM1VHhwMG1wN1VVMjVmZ2lkdFJRZ1JUeE83V1lHR1dsdmplOVBORFFnUjNyM0tvZnIyN0ZTdzZBWV83N3Myb1Jlb9IBvwFBVV95cUxNRk1qX1l4c3dSamNoSkRWU1h5T1BXdjlITU53RWl3b005emVTdC1OeHhaU3VXc3pLWWVDTnFVNXpDTkRmcThudUhma0haZGNIcTF4TjdFek1tOXFQOHhZZTI2RkR1SUc1dlRzV0pYNUI2TGZZdFU5b2dGeHJxclUzRFhwRFNsM2JqLTFkWDRBZjZST2tLVmVVNWxDUXIyeGZObUY3MWpTcFQ1MVlEWVpzQ0s3WmlscHVUVGxqUEN3MA?oc=5"
   },
   {
-   "titulo": "Colombia tendrá su Navidad más cara desde 2023: inflación subiría a más de 6,7% | El Colombiano",
-   "fuente": "El Colombiano",
+   "titulo": "Los precios de los alimentos aceleran la inflación: ¿a qué se debe?",
+   "fuente": "El Espectador",
    "fecha": "2026-11-10",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcU9TWUhTNmVubjVQZTFuaWlEM1lfcGRva1RTNjF4Z2RaSS1iblo5WDJ6cDVQUThHa2RSa2hWX3J1QkVMYWlUa3FmamctRDBmMXRBNGNCRTNYU1N4djU4OGxRTmUzNVRxQU5XbUM4R2g3WXR4S294bWh0X2Nrc2JZc2RQNEtlZWhyUmZHaWVQSFJLblJrTlpYQnlTc1hXOGo2d1dJQ1JJWXRUVDdwdmRJYXhxQ2lZbUnSAbwBQVVfeXFMT0hlUkNxTjhrcjZvSnBMNGtVOWx3Vzl2bE5wTlBlSS1JNC0yd3E5bjhWSVBUN0xBTklJWUNGeEhYTlhnV1Rfb2JTelB6dWZlMzhQUHk4a2kyYkpLUkFYTHlKU3lQOHQzb3paZnJSS3pfLWF2UEotRXh3Z01kMVBibDNWa094NWJtZmpJNTNRSEdzMzhzZl9rcktzdHY5ZzV3VlRhZkVmR21IeVgxZ1dWOFU2SzBjYlA1MmhrczA?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMlRMZ3BWLTAyUkNndHZQQkR4Uk1iVXFtZmQwUmdVSHY1ekc2U2RGaUUyaFR2OEZGbDJRZE40anVncTBGRHhCSXVtc190SUNTS3dOQjhheXE3RExieXdqTmRPZi1vbkV4a1drMmlja3JTOVh2bTNTcHQ0LVJyWVVDZ2QzNE9zc2E3ZUIweGE2Nzl0OWd0VnNfc2dtYWo5OUlfU1lOQUJxZ0I0UmVvQjU3bk1GWVZYeW1WWGs0RUl0RTjSAdQBQVVfeXFMTUNlY2hWcW5idURxSW8yUUpNTmdtSXdBbjNCRzVOQVBRMmptdnBpSzNqVDRlRjRDUFRmZlA1NVJzSjdZUG04aE1sSEVzOEFSUEtBSnBTVm15Y0ZMVkZvbjNIRUlqUTFSUzk0dEpTNkVYOEUzU2t5VjI1a3F0Q0s0R2UwQTZNT2J6a056UzRrbDV4U052UFpRZHktek1rUjk2a1VMcVhqY1ZoVDZfa0taODBpci1pVHdyS29jR21odV9vLVB3LW13MEYyN0tBMDdXUDREYk4?oc=5"
   },
   {
-   "titulo": "Estabilidad de la inflación en Colombia, a octubre, habría sido transitoria",
-   "fuente": "Valora Analitik",
+   "titulo": "Colombia busca US$41.900 millones entre extranjeros para desarrollar 250 proyectos",
+   "fuente": "Bloomberg Línea",
    "fecha": "2026-11-10",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOblpSNVE1emp3WUFFa25kZ0RwTGMtTEFKTk5fTVVWU3NPRUFMZjRmckpkTmw1N1ZmZ3FrbjBSdEJqQUNpWW9sVmhuX3ZwWWliVHRlVDVFR1ctdlJwQjNIWTdOSEJHZ1MyajZhR1ZQc0UxMVRCNkRTMXpZckxmMFp0bmVJXzBPMVA3cmJjdUZab0hvdkVIOVFSN01oUzRncUE2M25VNnJvN1LSAa4BQVVfeXFMTWlQQ1FDWDlRZ3dwbUFXOVBJM19zUnUzUmFsM0RCRktqbjRKSFpkNXVTRlJYX1MwUzdmVkZSMWx2WTFfLWhRdWZKSkdJQVV1WEhQTy1LbWdQUzByN0JRQ2JzYk1TdjhQUFRDZV9VTTdSWlJwcVNtRUcwVVhZbk8zbE1JVGdlNUp4NzNBQ2huY0FJMHpsWVdCRVJsOXlxczJjNHdjVGsxNlUzT2lSNGZB?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRHRBU011aGlFSGZZQUM0LVFCa3I5QmEzenY2QURlVjhJc3dhTlpiRktJNWYyaTNiSjE3TUYxbDZxcGdiVkNlTzZzU3pVZHNTWXhXNk8zNFplNGNfQTN4Y2NQM3lhN1FmbXl3X29iRXNvQXZTZGJTZFZNRmVDNk1wMGRpVk9saFNkY3B2aXByV3NzVkJVT2drd0wzVVZkR3BFRzhtd0pRbXloZXYwZ1NCcHJTU3Q4a0NNbVNyTU52aXRLdmdsUXZZVExKOGptWEZx0gHkAUFVX3lxTE9haHVxaG0tU3NBOFNMelJPRURieU00Xy0wR21JSUZEamZndFZKcXBZRS1qaDI3MWpQdFRSNEhrbUNldE5EbklrSDJWM0FZRFVhNzRUWEZ4MU14RkhFaWdBMTc2Ui1xZjdYRFFiQXN1UDBGMm5mS18xa0JnX1AzWndBT3Q4bkpIbk9NSGl6WllBNy14Um9ZT28xS2pVTnR2Vm1XcEt6WUpfZU1majBxOHRpNW5fcmFGZG4zOHl5UklJbk9sN3ZpWW5rMUdDSm9xSnJaeVBnTXNRSEJhRW9qNV9Sc2FFeg?oc=5"
   },
   {
-   "titulo": "Dólar en Colombia coquetea con volver a $ 3.300: así impacto la inflación de octubre",
-   "fuente": "Pulzo",
+   "titulo": "Así sería el aumento del salario mínimo de 2027 en Colombia con la cifra de inflación de octubre de 2026 que reveló el Dane",
+   "fuente": "Infobae",
    "fecha": "2026-11-10",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT2ZzNnVtVTZjQmVNekZyeFlyYXV2T1IwdmpKYURBZ2VESnJWRTJLcmR0VkY0ckZXNXlOdzFoc1J5TUZUX2RvZnJPTENUXzVxY3hsYWt0ZG1XY19MVU1zYmctQWF1VVRGcllwMUo4cEF4NlU5VXFibHJ2ZzdGdmM4QU83VlUtbTV1NHdONHJIV3lWMVNwUmZIYTY5RmZ4VWN2a0RadXdrY9IBrAFBVV95cUxNQmo1QzB5NzVndE1tOGV2Y0lPOXdlNl90ckZSYlh6dmYyMVNwNW81M1BQdW9lR2JtcTRRNTYwQ0VHZzNMMmEyZ3F5MHEzRlEtYms3MlIxWVl4dDdJdHh3ZHRzZk4wWEctcG95MHdJOFp5R3dLZTNOZUw1aTVuN1hSaEYtMXBRVGEybGQyRk5ZamRGaHhycjFPVnRGWmFHS1NZb1N4QXlqX3l0S2pJ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPSDIydURjdThxUVlkZUZNN21uOHVVREx2MEg2VUtJWTlWbGlKWXl0MWt2d3Jlc1pBS09VRTlxeGRaVXBKMGxHQk05LVplNVNacTEtV1dqaWd4WERNb2o2NEwyV01rSjdEX29tRVBnalFKMWhFMm9Pb2xpLWZ5MG0yY1hXT1pHX2ZpTGp6QWs0ZWJ5aXNzQ0pTc0V6NkgzUGhtbGw1eXpiNEdEWlJqdlZPYzlheDlKT3I2dEJnbzFXNnY5UXZNQm1LUDZRenRvTDQ2OVlrWHpZTGE1eVJnRjFsWXRNWi1xVVlJWU4wenprOGtNMTl4cmxod1dvVlPSAZcCQVVfeXFMTXlRNHdydDJKNFZvNTE4VGJ1dlcyYkxzUHQ4MTJ5b0R6bUY2QlEwNVkya2JfWkY2U1ZrT0pfaTVFYUd2Q3dXWnJva19FMjlXamZrNWZLenRST253b09pdUQtVDFPeE1yME9iay02Z3J4NXpMS1VjTlR3SHFNUDJYLXgxZUpzWmxibnhCRkFvVkNoaTZRcWZSVlhIcFpZN1hua2pKTGlBOXkwZ3AtQ1U4NnoxZVoyU2JVV3hvN3VxVzJFZ1BsSVpzZl9VcnJFRjhMWlJ1Y3NiRUNWUlZrTmtxajRyUDNlSWU1dXZmWVVBU3dHV1FSZXJtbkFMTG1PajBrUm5uWUlsVkFKNFFlWVJyTVNRNDJkel9Z?oc=5"
   },
   {
-   "titulo": "MinHacienda recibiría un préstamo de 15.000 millones de dólares del FMI tras negociaciones para contener situación fiscal",
-   "fuente": "El País",
+   "titulo": "Proyección del salario mínimo 2027: expertos anticipan cuánto debería subir frente a la inflación",
+   "fuente": "Caracol Radio",
    "fecha": "2026-11-10",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOdWtyU3p6MF9QYU5ldTB0cW1tZ3VoR3R4RUYzLVJFSlB4N2VQcUoyWU9yeVd3a0VodzZxeWtZaWVtdWFoMFVIRUlpMEtlbTRCa1kyTi1BbVZWdXdvZVdPbkZ2NEtuUXBUbE00VjRrLWRHTDQ5MmxvNnAzN1kxekYxMFk4Z2JfR1hsdE53WGxMYzBuY00ydF9iR1diNE9tcWFDWXRIQjA2d1BkSVh2VEtZVk1FX0lzcDNDbkFMQ2hKWHB1anRjaW9hWlNXb3NqOGtVWk8tSU5kNkRvajN2bUF4aUpjUFdZcHVMQzNvTkd1aGc4UTBlcHJuVNIB_gFBVV95cUxNVUVLNXBiZ0lBY1NXb3JocG1CbmFLdEpMWDlPcGM1NHRkTmtudnhWeWtHOEVvUll5aUswQTRidU5HUWNveFdMR0lNTmUxdThqVXJlYXlXLUc5ZDltY2dVTEs2bTRKd1hicWR3d05peVdaVWtLcURTZjJwOWVEZlZvWVhkemRDRC13b2ZPRDdEOFRiS0daS29say1wV2JlX05aX1l3T2E4T25FTDEyM2FCY2VuVjFGZTAzSTFCbGt6Y0dRdUxnVGRmeUV0emFlakhoZkNxTW1vdUlRUTBtRDVpaVAxcW5FajFjcUNsODF4NFU0dy1pcTVhN2I4NzBfZw?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQT19Sd3dEQXJaUEU1Mmg2VnNlYTJZaXBFZkt5N0VYdnZ2VU4xOHFTdjZUT2Fmd1pDd3kxd1hCUFZSRno5RWpKdXI3eDBfa3p2QUJ6MEJLck9SRVcwVlZHQVAtWkVJVWdyVm1wR2RoY3ZoeEFhMkdNSUxweUNBU04zSnhYNWRLSVdCOHVJWThESjE4SjFEbU13Q0YxSE5kNXp2Vmpsa2s3Tkljd01XaU9uLTlUTUFGbEw0ZW5KcTE4QlVhUGxzNkVtLWV6WdIB3wFBVV95cUxOR1o5T25hM01MLTg2cmJPRk5xck9YNlB6OENIazZ4RTZ6eGxabnhnM1NZN3BkWkdKN0NaVzMyX2lWOTJxV2todlgybWpmV0tyM3E2bDBiekZkZHllVmlTWE83R2RFNktXRjRSTUlUbjBQalpZNlJKaXlmUTNJbHpnWjc4TG5ZRHZraWdNNDd2ZkJsTGY1NWNLVW5lWXYxY0E1MDlleFlTU1VzdTBvcF9UU3ZSQlMwUWFDTGdZTHl5aUgzYTM2bTU4ekx0emJQTjhvZGUyNFR2Q25HOEFHWjVr?oc=5"
   },
   {
-   "titulo": "Precio del dólar en Colombia podría disparase esta semana por estos factores: así se mueve el mercado",
-   "fuente": "Portafolio.co",
+   "titulo": "Dólar en Colombia sigue al alza y cierra en $3.297: estas son las razones detrás de su aumento",
+   "fuente": "La FM",
    "fecha": "2026-11-10",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOS3dxOGJPaHh2c3NmZE9SM2NSVWJyUHo0Z0hMRXBtM2o2SjVCVC1MT3pMWFhFRVlFV0Npbmd3VnMyZ1JiYmFMTHVjalRPRGdMNnRURWF6eTZlV1pLTFZsM20xYUZIS3EzM29fTG5JNU5MWmctWXh0NUczR0xDRzA4MWZ2XzZONkdORzRRSFVTMDFPemFBR2JDYWs3SThYa0REM3puSzJXRzdWTlhieXV1enM2MmxzRGdSQ3ktbTVvU2RjRDMycjlwRTh6MUwxVkxtZUpKdWJpenVTREc0blBJbncxMjFsd9IB6wFBVV95cUxPVDVKMXF1X0s5eUN0bHlhc0haMUtITDVSRjdJb24yZ1JhUTRlM2NMbVp2RkhPMU5DZ1VzRmk3Z1RHRnhjLVdEdEVzRE8xeXdBSWk5LTZNRnFEeWtyUmdCMHFCTExwZ1hnWTNaRU1MS1ktNjZ5dC1xMTJtX1dHT3FqSmpVU0VUWnE2cjNCWnRhZTBwN0JOVktjRjl0WXZXdTV1SHFNZzlsc19naU1QcFFsNy1rNEJ6Y2FJak1EQjZEQWN5U09tMm1TM0htSmI3eC1oXzd2d0dYajdtR0E1Tlk1RW9ZQ19SbDNWWmU4?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcmJOTTg3Z2dHVmtpTEZieHR3X2lBazR0TDZsTnE0R0JiN3A2T09UV3o5cVo0cFVpQ3lWZk1hZXFfUUFIZTdhNElZZVphS1k4dTNzd21XZ2tRMG91TTBTYkhuZUZ6czdkWUFEVUtsT1M3TlFWbnF0NGQ4WlM3NDd2eHpBZmFMbG5pTlRDU3lPRkRyTWFfOXpNNGhBZGNtWVpO0gGgAUFVX3lxTE9zOEtBQWNoQ2xId2owemNFV1Z0cXdTRFQ0WFVMOVlKT0U5LV85UU5vWXhUaDhNOGNyaWF1elEzeHlhV0dDblRGT3A1TEJianNJWTVLa3NYdnNYR3NHLUhrdk90a1U1Mjc3RVNzS0ZIU19QODFkN09iclZrcjBvdGowbjM1TmZUeS1wREIxRWk5azk5RGhidTdOTUE4V2ZnYmM?oc=5"
   },
   {
-   "titulo": "Anthropic apunta a hacer historia en Wall Street: Busca valor de mercado de 1.4 bdd con OPI",
+   "titulo": "Wall Street está dominado por inversores a corto plazo",
+   "fuente": "Expansión",
+   "fecha": "2026-11-11",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZUFIVEU1T0JTMG1ZVVZKUURmZDNhMEdsTGNJdGRZQ3MzLVF2dkRXN0FTcHdYcHNHZ1BfcjJaaHFyeTlKcnJmdnpNVjEtUnNQWWQtZmJuMXE5Uzc5RlF3ckZLQUlWZHBmWUNoRTlia2dfS3J5bndTcGtaQ2dkX3Bwb005SmM5OGtMRmh4TEdKZEFhaGN4MF80QkdDNXhWaFdEbkHSAaIBQVVfeXFMTmJza2Rnd1YzUEdyZTd0UlpmTGZCbFZnTERfMExLX0FPTmpsdi1PUHNYTWRvbWZuLXE0VXFMQ2tkSjVHQ1VHWkNCRlhBd2J2OVJLbWR3eXBjOXhFbUUwc191cjRRMXphb2ktaTdRbHdWUm1aVTZhVTU3eUtGelFneWZUQ2lROWN5QVhFVktxal9DS2FReEdoSm9YSDUtYlFISWVn?oc=5"
+  },
+  {
+   "titulo": "Wall Street cierra en rojo por alza de precios en EU; BMV anota máximo histórico",
    "fuente": "El Financiero",
    "fecha": "2026-11-10",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZ1FtaEhKc3pvbjhKU2Y2RllXb1lGT0JhUXdBa19FY2JsakpGU3l5eDR0dzFKV1R6eTE0cG1uZlVrQzF0TEpJT2VwUU1NTENpajB1M21LekFsaWpTcWVqWjNBSjAyT0xQTEIxckttd0tFWllXUDRDN2RWMnNyUU41LUIwR2pEdFRYQ01TS2ZUTFNxMnFWaTg5Y1RJYXlTaS1FaGRzallHVjBzNTNfdlphQTdmS3Eyc1hsV0ZiUDB0bVVBQmhqdjRfYzlTLWVjd1VyUkRSZQ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRjdtaGV3NGF4R3Q5Y2NFbDl4YVlVUU80bGpKQlVEaGNlYk5SYU1GYlBpNDNrZ0wtUE81WHJGYXF0WHl0aW1KX0xiUEphX09vMVZTWTFIbENMZ0pHWFBrOFZJT2lnaGpJa0ltNFZDTHhSRldiaks2b0pCc3VGVTZPTU5XNnBJUnJIdnVQYVYwbVpPbk15ZTNXaGR4UkFjd18xMEpSMXpBYVk5VEdiYXdadi1UY3BMczVPNGlpZUZYaThBd2JXcThoVg?oc=5"
+  },
+  {
+   "titulo": "Wall Street cerró en rojo tras el dato de inflación en Estados Unidos que reforzó las expectativas de una suba de tasas",
+   "fuente": "Infobae",
+   "fecha": "2026-11-10",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNRWFGYUtDcEJFOWJhbWl0MTlyeTJBSG1uVkhXQXVUb2k3bkRSd1ZjOFpETklHQy1tSlBoV3pWelZhNXlldWh1dlZTdnM2aUswV3ZOY1NsYkZ3UTgwNkd0dHJYYzVNVEh5cU83WVZzclJPdTAyVXpaeHNWTXJnZDJna3lDSlluRjViblVPd0JGaFdBcUVhb2JXTmg1NFYtVXZOTWFhMXF3OElNRHRTdnV5c2ZmZTFPZGV4RzRXT1dYeDdmM2l6NkNCb3VJOU5ObmlqVTEySlRCN05ZaVg4d2FfbHBMaWNUaVY1VS14WUFPYnpyZmxPcWhXbHd0SlViTjjSAZoCQVVfeXFMTUVjY3F4MTdobjBlak9EcURlcTJ2SnJQZ3h5YVo0ZWc2M19oOVRHSm14bkdDc1F3a1RnQWp3dnZfeFVZaEwxNUdlQ2NrV29aWmhWS0hlR090c2NCdmo0STBMV1BlVkNic3Uxb2ZzanM0US0tcVI2bmdxZktqZV9tRExqOEpPTS1IWHVjcDNkLUw5dTFtU3drS1hBTlZWRGQxSE5wTjc5SUduanpmVEQwRVlvTENoeFhfNGFTWkY0UW50ajZ6bFBJWlZkM3ZZeml3NFkwMVlGQXlFOHV6V25CaGtEVkZPeUI3OGZWQmc4a0RfQVFMR3U2QlFSdlVlVlBnb1ZkZlJiVndqTlhBOFE1VlNXeTIycERNZ1Fn?oc=5"
+  },
+  {
+   "titulo": "Precios del petróleo amplían caídas con atención a diálogo entre Washington y Teherán",
+   "fuente": "El Economista",
+   "fecha": "2026-11-10",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMTZ6cUV5d0NreFdCQk5Wc1dHSkFlUERGNm9Ec2FjV3JDU3dXbDgwc2kxa1F0akdPUV9BaWdxWFZxWHh4Mk9ZWldwN0Z1TnE3S2FzMTdqOHRzcFlGVGZidkNGWC12NEdtTTBrN2ZrNXlOZl9FT3hDbmItWjh4YVNrTmNJSE00N2NwbkpJVmJDRlViY1FHUlpuX0xDTFVVWmR1dUxIbUhUZXIzcVB3TTREQ0dtS1Q4MjRXTTBfRzhmZl9kd0twVDVOUNIBzgFBVV95cUxPVHlXdDZLQmFPZTRSTC1JSVpsbjBoZzVnOWNTX08xemszNk5OT1FlN3ZmN3pETVoyMkR4bUpRa3BnMl9PcFlwS1h6eGNmaVNNemQzcFQ0Rmo4TE8xYWtwempOQm5senVsN29FUGdtT19sOHp2WXBSVVgtalFxLWNsdFpReDBiMWxlbk1PWGRCeGxwQXVBbVBLZ01PTF8xV1ROdFc3a1BIbzNmZFNKd2ZvRk1vWGJoQ0E5RFhTSXBTR1BJZzNRbHptUkRab0VLUQ?oc=5"
+  },
+  {
+   "titulo": "Wall Street cae ante apuestas a que la Fed subirá las tasas de interés más de lo previsto en diciembre",
+   "fuente": "Bloomberg Línea",
+   "fecha": "2026-11-10",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZUFVWTBmaE9EbmRsUGhrc3pFZWhtUXdUNFZPTVh0YWlwdFZkWDJXTVNTdDM4ejZUVFpjWWN0TWdKOXJDU0ZvbDh6eEQ5ZDFhcjlXbkdqMl93SDh2cDhNVF9UYlZwUGxIbS1yUHJNd2xGWEhQdkRIblU0bGVjTDRiMkt6U1hxNk5lelBxVHRwbEdQdmt0WHg5WUNJd1RkMjB3aDFrRURZSENpU0hnbGh6aXVSQmRBWDg1akFrUEJ5LWo3V2RNSHRYQm9n0gHeAUFVX3lxTE81ZXdkU20xeVk3aUJ5UGp0elFScnRkd2hTUE85RE4tNGNBd3F1aWpzYUpVbXNscHd4bHpwV1J4TzBuSy1vOW1kdll1VGppUkZFNXdmMTRUR3lXY0xzMVlWLXdzME0tdkpvd044MFNSTkhmREpscW03MS0wNDJDdWNMZVBNVDE2aVpqSUlHSGVoSERtUlZRTUJSNEV1RjhnUEE5RTdMWHJHOW9YaXBkNzZwSVNvSV9MQXhIaHhxaTg2TGdOZXVKQkVTRlVpZzFTWDhQRHdnWDhSMHJpVVJNdw?oc=5"
   },
   {
    "titulo": "Lane del BCE: tasas dependen de salarios y precios secundarios",
@@ -109,34 +137,6 @@
    "fecha": "2026-11-10",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORExmZDFaQndUSmtpX3FTdXlYUmRRVmZXZ2lsNjNDNGxNenJTZkp1RDhYanFKMkNybnJhTkhqdGJRb2VvbkR2MHFnS2p6UU9uQzRJQ29IRmdqaUtyMU85OVc4UllDM2ZrZGRKTlEtTGZ5MDJYUElHWC1mcFpPZnlKXzNlT3hBQnROSkN1dkJCZnRDVzE2bTNhSW1YLS12Q0FURlhWLU9yNHpkSFk0YkNnbVR3?oc=5"
-  },
-  {
-   "titulo": "Bonos del Tesoro caen y rendimientos a dos años registran su mayor alza diaria desde abril de 2025",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-10",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPM0ZsUzNhM1BHV3dfVkhidnNXVHNBR3llTWptYUJtOUV1dTBKdVFBM0tqNjhiMUFfWXRvV2ZrTUNtZDlkUWk1ckg4X0FIa2UxSlVCNmdYUFBUYzRIaGQ1MmdJV2pra244RUg0enpsUzBJcDZ4Z0dmVXN2QTBTS0ZXZkdUTkIzRVNsWXkwSkRDakRHUzRUNVlIc2lnb0NlWXRzOEs4M0FqbElMclY5aHVGOGJ0dzVaeTZQSU1JUjlpd2hydnp1N0FSVVZWOXFkNVhSRlRoSUFn0gHqAUFVX3lxTFBvZTIybE9UQ1VGbVlETGd5X09nS3Y2SGxJNUtOWEYwdkRrZi04UDI3N1BYa3d0UTdRT0ZEZnNKS05FTU9LZjhGMHBSRU4teUFxUUIwZjQxcUprWjFQYm9QWk9LNnNsaTczZGFpby1IOHhSOHZSZXBxOWF6ZUg3eWprTWhCQlNJREdMb2FaYVZacW5ueUxWbEk3QmJiNjFZQ3hwbkgtdkxLal9lbExUWFk4M3MwMkRjbEJlNUxxb0huZmZic1lHRDNoNWt1VjY4bUdnZ3QzOU9JUWJLN3I1Yk9yNFJGZmVMekQtZw?oc=5"
-  },
-  {
-   "titulo": "Wall Street HOY: Nasdaq cae tras advertencia de la Fed sobre tasas de interés",
-   "fuente": "El Financiero",
-   "fecha": "2026-11-10",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRjdtaGV3NGF4R3Q5Y2NFbDl4YVlVUU80bGpKQlVEaGNlYk5SYU1GYlBpNDNrZ0wtUE81WHJGYXF0WHl0aW1KX0xiUEphX09vMVZTWTFIbENMZ0pHWFBrOFZJT2lnaGpJa0ltNFZDTHhSRldiaks2b0pCc3VGVTZPTU5XNnBJUnJIdnVQYVYwbVpPbk15ZTNXaGR4UkFjd18xMEpSMXpBYVk5VEdiYXdadi1UY3BMczVPNGlpZUZYaThBd2JXcThoVg?oc=5"
-  },
-  {
-   "titulo": "Subió la inflación en Estados Unidos y la Reserva Federal evalúa una alza de tasas por encima de lo esperado",
-   "fuente": "Infobae",
-   "fecha": "2026-11-10",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPOUFnV0tXY0dPNFhDWmhwMkJvUHN0UGMtLVZjNlVrVElNNDNNYndzSC1laS1pLURvdlprT0E0RnMtellDRHZqNlR3Q08zdzBLbGJHbzBJNm40Zmg4c3NfMThIaldPOXdiSGpKY3FBSkxmYWdrQ1l3TWtlVlI5TmY2X3JxM1JJWG8waXQ2SWE0ckVBSWZuQWpQUjlTaGRmMFVHb0VzYmsxVnlBc1lKbHZ4YkUwSVE2Qmx6NlU1bThoekxITE1ONExHeTdtQWhLR2RZSkxFVnlXMHM4bWYwQUhqS3lXdm43R0FIYlJXWmdzNFbSAYsCQVVfeXFMTVVaVVBpN3RULXFrTWVRRExyTXh3dTJHUjBlM2ZXWnA4TGdBMGJ5WTBNakx3LTY1d2xvLUhqclFGMFpCbkZuaU9ROGlYOUZORTIxckVaUEFDTjVndmM3T05feWUyRWRIVkRYbmRrX0NybFQ4bXZOeTg0eGlOcjlxWV9mb1NWazQzdmNrbG43THlsTVpTaVlNemUxZ1V6bUtPZU9ieVRCdFdfTWtTZ215Mm9qdmU4OVVDeldrWW13eW5rOG9ncVhMWVpGSXE5elJsX1phWm9BTmRIWW9PeWlPR3pBeDRLRDFpTHdtSFRaakp0ME1JbzRJSmcxLXA5MEk0T1NWVUNweFZxeUFr?oc=5"
-  },
-  {
-   "titulo": "Cinco razones por las que Wall Street puede seguir subiendo en los últimos meses de 2026",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-10",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZnVEMjJSbUR0WkhZcTJVSEJicXpOTVdrbnpPLV94NDZzQkJ3S2xlanQtaHZrT2VQS3JrM1lwNnczaDRSMkcxRlgxOWVhTUM1c1ZBTFJ2a2VfTjF0dzR4am45eU41cU9zdWNFRkI2TVRneEFsSGFjbDdCUE4tbkdIWlM2VTJoclVSdHViVVJ3NVRkM1YzYmxxc19JYXdGM1FzSXR0Y1hFNk1VQTNtRWpOWkFycUJreF8yOThGN3BMemhqaGRFSW5tWdIB3AFBVV95cUxQMjVxN0EtbXFLSmtXSVpRUWFuWUd5ZzhpekdmYm5KYzBKOWc2TjhjQTdqLUJzYU1yOHZnZ1dNckJhTU1fdUQ1VEtDb0RnWXB3aTlrS1F0YUlucXVzRVZuS2otS2w0M1RIZkxLVTdGaDZwdS1vckk2d3p5N2tOTHppN0RKa2NIZnZEWTUtMDhtbFMwdW5KZ3RuaExVMklhdXJ2aDRHZmk3Z3lEeEIwZF94aG1JdTBKVHYyZGJGS0p1UmE2a2dmaURweTQ5MFVuZXZpY0VrdkthdWM1YXc4?oc=5"
   }
  ]
 }
