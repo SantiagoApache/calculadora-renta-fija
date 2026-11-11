@@ -55,46 +55,81 @@
  ],
  "noticias": [
   {
-   "titulo": "Dólar cerró a la baja y finalizó la jornada del miércoles 11 de noviembre más barato",
-   "fuente": "Revista Semana",
+   "titulo": "Dólar en Colombia cerró a la baja por debajo de $3.300 tras jornada Next Day por festivo en EE. UU.",
+   "fuente": "Valora Analitik",
    "fecha": "2026-11-11",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWUVHMXp3MG1WUFhxVzg0VVpPOUpMWlVSM3lpMFJYcXNUUW9LTDZtblFnVGJ6aG03RDhOc0lwQ2thZFE0V3M5RThHU0ZkbTNqSUs0NmgyZnY5Y3lhQnBjeXYtU1oyM0U0VFlmbENCdUYzUE8wczNtNWhzbVh4RzlySVFmcGhUd0JQRDBPQzgyRXBQVWUwaEdpMlNoQTVOekZZS1FsWW5HT2VocUl5dU1tUmpvNjRLcU5Qb0xyaDFmOHRpOHYtSkZ1amVmQWx6X1ZPOGhmcnE3NFZpNzJSYnBOUtIB5gFBVV95cUxNMFh2eVl5VkNXLVFxRmlVN2E3cG5URXcxcGVKeVBkLWNXU2VBZVhZQWUwRVR1V19LRVplMml6eWhHT3VxbUlwUXZzOUdvai1zc3pSeFEwY2tDdFZmSUpMcjg2a3p0SXdYSlBMdE5BcWYzT3o3Y2xucGFBNGtnXzBCbDF1ZXlXdmY4MlZjTXg0ZC1YUHM1VmVMcENQX1dYZ1dxaVM2Z3lYQzItaXJCUTVxbFNwcHFKV0I4dm9NQlppbHVRNWxIUW9wR3g5TnRqbWlWWjRmRDVULUs5U2pPdFdHMEFOLTQtdw?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPSDNhWXM5VE8wOHJHZzczMzZCSnQzU0pGYlZwMjBGTE5hcXRtOWRVdFgzbVNXb3p5OGRCcnJyX0x1NVptTXhrR3c1dmRRVmVwZWVMczg0R2RPdFUtV25tU3VxNnpXT2ZiT01NcGRPU0REZXpKTlB5Vmt0YjhPQ05GTlhJcnE5LWs3bi1Ia3R1UkljVVByMnhPM25xcUZzSWtSZk9tYUg5RmNUUjVFSGJCZENrZ2FUeUItLVlHM2hwc19lQmJoWFlLbXEyVW83bUxkQ3JfbU1FeF9UdFRS0gHcAUFVX3lxTE9IM2FZczlUTzA4ckdnNzMzNkJKdDNTSkZiVnAyMEZMTmFxdG05ZFV0WDNtU1dvenk4ZEJycnJfTHU1Wm1NeGtHdzV2ZFFWZXBlZUxzODRHZE90VS1Xbm1TdXE2eldPZmJPTU1wZE9TRERlekpOUHlWa3RiOE9DTkZOWElycTktazduLUhrdHVSSWNVUHIyeE8zbnFxRnNJa1JmT21hSDlGY1RSNUVIYkJkQ2tnYVR5Qi0tWUczaHBzX2VCYmhYWUttcTJVbzdtTGRDcl9tTUV4X1R0VFI?oc=5"
   },
   {
-   "titulo": "Vender apartamentos, Ferraris y centros comerciales de la SAE para pagar deuda pública, propone MinHacienda | El Colombiano",
-   "fuente": "El Colombiano",
+   "titulo": "MinHacienda estudia otro préstamo y se desmarca de la reconstrucción tras el terremoto: “Esa no es la función del Ministerio”",
+   "fuente": "El País",
    "fecha": "2026-11-11",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVXFGMEpKWWp5UmNNNV95MmwwWTZrTGVtQktnTW85M2tHZ3R6anJJQTA5N2xNd0xHQUdoYzNpRDJ3R1cyVXBYRlY1UkdtSlFBc05jMl95UEpVR2NFd1ZhV0tkREpGZkZBMGJvU0V3LU5sS0ZPZGw3bGFGY0p3bFFXZS1obHhWRFI5UjJ5ZWNxTlZlbnFLdmtBNU53a01PRy1aTm9zZG5DNW9nZEXSAbABQVVfeXFMT0VlMXlNQUpDS1ZOQjFaRzBYRUI2azZNSEF5VUFwdmo4N0pCc2V4WFU2M3FPN2dSZjFVRmJQTnR3TE1KY0JFaUdub0hDMG4xMjVUSlBWWWJ4bE9aX0N3Y1BweWJhV1ExaDRCX285VHFjZmFINTI2OFhKSjZfOUYxTC1HVHBlRGE2WV90dEtXQ19PLThMVndPM056UTNZSk9TTkU5bGtWaURHVFlsOTVtU3Q?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNRWNsb1RCQ0JDTWF2SUFjdjFNSEtQMElmQjJJNGhsWDBOaTJkNWpIUE92a3gyLXM2bWR4SlgwckFaMUpCUWFaNnhpaUNfMUNkWm5OVlFhZWNDdkY0eWljakVFVlBOcU9RTVV1U0hsNkZYcnM1T09xRXd3U3R2Tl9ERmNYLUtaX2dtVjQ2X2hOSFdZSEZWRVd1N05pRmFrRXRPMmhqR3RXN1pFN0tTbTlneEdyVU83M0MzRU1MZzNzWS1VdXlkZ2pKcExYb2RXcWRReTR6WHN0cW1fWEhsZDJkZTd2Mkw4SmlaQ0s1YnJqdXZNWDU2Uko2MmJqMnlrRVVC0gGAAkFVX3lxTE1FY2xvVEJDQkNNYXZJQWN2MU1IS1AwSWZCMkk0aGxYME5pMmQ1akhQT3ZreDItczZtZHhKWDByQVoxSkJRYVo2eGlpQ18xQ2Rabk5WUWFlY0N2RjR5aWNqRUVWUE5xT1FNVXVTSGw2RlhyczVPT3FFd3dTdHZOX0RGY1gtS1pfZ21WNDZfaE5IV1lIRlZFV3U3TmlGYWtFdE8yaGpHdFc3WkU3S1NtOWd4R3JVTzczQzNFTUxnM3NZLVV1eWRnakpwTFhvZFdxZFF5NHpYc3RxbV9YSGxkMmRlN3YyTDhKaVpDSzVicmp1dk1YNTZSSjYyYmoyeWtFVUI?oc=5"
   },
   {
-   "titulo": "“El ajuste se hará ordenado si seguimos la propuesta o se hará por el mercado de manera desordenada”: Minhacienda",
+   "titulo": "MinHacienda quiere vender activos de la SAE para prepagar deuda",
+   "fuente": "Valora Analitik",
+   "fecha": "2026-11-11",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUldiZ0ZTSl8ydkZtSmFEcTZxTG5uR205Yl9nR0dIQ1NBcDhVRExpVWFOVjVJT3pDNzlETzR0UWhFYW4ta1lRWTBvdGlKNV91U1RxZ0VVenlMalpaY1IwYTdsYzJTUGFURXhpWmtUZmxJa3lleWpzay1WeG5IZ1I3TW5QR2NGMUlGaVN6bFdPOTZSNmVkaG5YQW9Sc9IBoAFBVV95cUxQdFk4S3l1UDZvcVpxMUp4eTRpYjVmNk1MTDVldS1taXVwM19uRmpfcmczUl9XTXVRek5PaXA1WjhLMHZDTE8yM3ZlSjU3RzhBZGVEWWJ4QWNpM0NlWjBKdEFZRWFXdHV3dHlrem50YXVianZxbkpQX1lXcWpSeVN4NFRfZlZ6S3Bkel9GX01tcWdEQkx1WGFyMFdVZDFhVzQ3?oc=5"
+  },
+  {
+   "titulo": "Precio del euro hoy en Colombia: cotización de cierre del 11 de noviembre",
+   "fuente": "Infobae",
+   "fecha": "2026-11-11",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUC16ek9jSG5Fa0lQcFlEQnA4WXNWYTdLMjF2S0ZvM3d6N3RpcXNlRXhvREY5NjJ2Q215NVhDbVhIeGswODNNVXpRUmMtRUoyZHNzcW5taFZMMXhfdTJVMmFGUmZnRjJUSkhneEMxWnJMVHl2eDNudTZNVjNtR2p6VkdXMGE2QWQ4UFpPY3JLQnpRMGpBbk1UdTNnbHlOR0tUMHp4Wm9TbUZHdUExSy14cFBNUnJuV1Rf0gHTAUFVX3lxTE1FbWVxYmpuRmZ3b0UyTHZ3TlI2dmNNcmJpclViOTVnSTFGb1llRmhfRGFjbUt0SEZub0RybTJtNTh6c1NCNUxkWThQRS1NYlQtbjJhd3kxS19BRldvZlB5cEZOcWFxdWRsT2h2LWxwYkxEbkk2T1EzQ1RlaFJMTWZ1SjM5dkJONlo0VjBnVUF4OVQxMC1zdk5Wa0J2QXVTTDZYSzhSQUNOcnFVX0tWZE0tQU9YNkFJNjdSbW1kUVNpc3MwRVhodGNucG9neE5PdE5IYUE?oc=5"
+  },
+  {
+   "titulo": "¡Bajó el precio del dólar! Así cerró HOY 11 de noviembre de 2026",
+   "fuente": "Noticias RCN",
+   "fecha": "2026-11-11",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZGlVNW91RTZ1djVmY0xZc3cwcjR1eG1wNjVfaW9GYXllOUFuSlEtZ3VxZ3FmdDljYlhNcE1lcXg0UC16SG1ZMUNrcHR3Y0hpZkxuajBlMVllWkRrbXd1dnRNb1FTOUdGRXFjNllYXzJ0RmY0aUd1NXVlX2RqbXVFQmtLbGpYQXhoVnpQQVFnWmktN1k3MFc2VFZ2bXFnYXdhUE1TdHRDemNZcjNFWW1iV05VVVFWeXNl0gG4AUFVX3lxTE9SWEY3UzBWN01xbTFUM3ZrWkpGdV9zYlZtQTlReG92VVp0WDBVYlNwd1ZYVWJkLUpQUndZQllnWURKUF9xcmtnajV0XzM1Y2xKVHk2TGNrTDQyMXZFdzNXZ0xnQTVhUVMtSmhuZVpCazF6WW54a3gySUxKVi1udW5wR3dlaTMyTUxkNWZCVnN0bHQ1c1JGcXdNa3NOOVh1dW53WVJLZnRwZ0xkRDhDdXFta3ppMHZ4M3A?oc=5"
+  },
+  {
+   "titulo": "'El ajuste se hará ordenado si seguimos la propuesta o se hará por el mercado de manera desordenada': Minhacienda",
    "fuente": "Portafolio.co",
    "fecha": "2026-11-11",
    "ambito": "Colombia",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxObEw3b045VHduVUdIQ0k2VndOWnFqdGFFdWtieVZST09Wdk9ETFh3bW5PYUJRNW5EaU1tRHhRYjF0TUhFWHl0SExZS2NSOWpYY1VTTEJ1N1hNUUwwZUI5NmZ4MWhTT3RtZUJ5Q0J3VkttMDJQaHJwM2I0RzN1ODMwbkpMQW1Fd2Z6bnZfSlYycnNzZWx2T2lIdG43OExpNEVQeXg5SEVvZVZpZnZNQ1dLWGJGWk9TRUl0UWRTSi1KRVJyNDg5UkxoMHlyNjgwbHNJdFBtN1dFTWkwVUdnZjRJYzZ3RE92TU3SAewBQVVfeXFMT2tET2VNWTVlZFlUOGtZbmFIVGpvem1YNG5EZXkwR0haV19NeGNQRHhHS3cwLUN1X3RoY0JMMzVKUVYybGpBbm5JSm5XWEx2MzZHaEJzVjYwTFBTbTlGMXNCVG5HMVFkTTd2NFFSTTZnRkpPd2JPVkt0VlZ4UnlXYkZvV0lrdmUzdFp6TWFXaDZfQTJHSkN6THJPQTY0aWprOWdRRmxDMHMyQ0kwTzkyeFBsNEZ2cVJzQmRKQ2N4OWotZGRINXBHWGROQzk0dDdUZjhjZk1lYWFVbmVpWUJvRzVTLTVOdG5JR0tUakE?oc=5"
   },
   {
-   "titulo": "Colombia enfrenta una deuda de $1.200 billones y necesita un ajuste fiscal, advierte MinHacienda | El Colombiano",
-   "fuente": "El Colombiano",
+   "titulo": "La Bolsa porteña cayó por cuarta rueda seguida y se mantiene la cautela sobre las acciones y los bonos argentinos",
+   "fuente": "Infobae",
    "fecha": "2026-11-11",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORHdTUWszZExEYWV4RjJ5cGt6VzZlNUhEVE1aNTNzS19LaExRX2lnMElMSE5fQ21SZDQ4RWRLUVNfVVlPZ2RORDEtUWFjWnZpVENGZXN3QW5BQlJpd0NHNFNZZjNhU2pWWnB0cjBIeXBTTE1CUzhLM21tTHBoWTVfMmFKOUFkczlJMjQ5MU81SDdGQ0c5Qnh4dC12UFJzb2F3MlBTUkR6aTFHVlN50gGyAUFVX3lxTFBzc3B4blN5VUVyREZ3a3QtMVp1WXE5dkJZdjlQaHo2Nll6Q01LcVprQ05UWGJDWFE2VFZRYUg5N0dsX1BWdDgzc24ydzVhVHpZOURaWUgtd3ZuUFo4U3RPS2MtMEdGTmVxNk5YNGU1RmJhVzZVNHZ3ZmJOUkZDWlF1OUJUeXFlS1BCTFFGb1VBRGliOXZtaXBlMTJ2Mko5Mm9ZVjVjZkNnVW1hblNOMXZKZXc?oc=5"
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNM0RlLVh3NWNBSVVGcEVuUEpGSk5UV0FSYXVMdFI5NDlicFQzdm9UMWJqODRTbDlxNG1SM2FHNmRscnpPTExlYlpjQ2ZmVnUwVXdtVUtMNDFjbkhOazFTak5PWmxJLTRObkl0ZVdQZFpocFBnSFpCb0JOWWxYa01MSlhxUXFRQWtZUmJYMEV1d0NqNE1ZZ0tUOGdVX2FzY3AwaWZYTkVhcHBMeENaT3psaFBJR295aFdXOTJxUDQ3cnJkbE5ZWDdRNDhhSzZlMDNtUHNCRzMxVG15MTRDVkQ0cG13OTRUZTNJUkZzNjJUONIBigJBVV95cUxOVzZ2RFhfZnBUMGdlXzRMNjJ6ZEs3aW9iN1ZDQTEzdTdaYW1WbkF4dVBKVGVPaUhaQXlmbllqUEdfWkgtbHJ4MUpUWVA2Z1lLLUlMbVJramZTQzBZVm41bXlKQVE0c1hZSU54anJfRHROU0tDaUUxTUd5Y3BFWFZtR1R0QWZtNmZxOHBFZHVveUM3S1F6aEtpdVQ2STJfaTR6aV9oWFBfMndPUmFoQmdRci1ybTZaMlpXWTZvcVZxandxMHdwV0ZtTnFyZG5lcmdsYWhyVk5fMnNvOWZZbDEzc2xoTXc3NWpHUldvdC1ReDRveTh5MFE2T0Z2ZEt5cXMtb0lwR29LOE83QQ?oc=5"
   },
   {
-   "titulo": "MinHacienda revela que tributaria recaudaría en promedio $100 billones al año; confirma nueva vista del FMI",
-   "fuente": "Valora Analitik",
+   "titulo": "Precios del petróleo subieron ante falta de avances en diálogo entre EU e Irán",
+   "fuente": "El Economista",
    "fecha": "2026-11-11",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVHJDV1ZrXzB2MUxNb1FZd1JyTTRGVjZyeU80MUZGdUl5RUVWZUdmSHV3bmJ2Vm5PVWN3RWRzeWtQWWhXYWJZelNDSVhZVVBtaTExd1J6ZS1PSG4zQlZfellualVZQmNkUEtvX3R0SVhTRFNTTzg0alJXWk51ckNGY2xiVFVYSXFNT2RwZHFOZnVZdy1uR1hMZHhJOUJOaXNYaHFPTy0yOVF5Y0MwQ1l1Mk1ZU2VsMU5haXFLNlA4X2ROUHZtOFZGR0VsaDVEcUhuWFBr0gHYAUFVX3lxTE54a2I2SUFlV0hFSWFxTFhJS0hxUW84VzVTcVpIVmNJWmJ5OVhHYTVQUzV5bWZiekxtUTVtWnFYY1JuM3VMTHlzSWpSTWlTeVZVTXFPNHYxZzMzLVU2OUh3Q0ZKLVUzdHhyLVVpOG9EaDdNczM1WGthN1k0aE51VW9OMlRyMkRzTnMzRjZYRGJHemV2Q2dCdG1ZSDZQUDJJSnd5RXA2MC1TX09sZ01oVXBWTXExcG9HQnR2RlotSng3SkpNdnFjRU0tejNxWWh5T09BRTVkU3hQVg?oc=5"
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZjVkWVJLOE14dl9pd0VrVy14WGhOLWUxYzlVN1F5VjZSa2x2clJrU0ZRTGFUcHlodWR1YTl0M1NuT2FpR2p1c1hpMFVQQUZFSjdkVlpHb3F5WXpVRkttazdHUElGSktCaG81bWFrNDlidDh5ZGY3eWdidk1WZi1Jd3FkRkgxbXRtMnVfSDhEZ1Jud3RaeVVUS3h4bllzME1BSXBITS1XRDBWTlVTdEJFVWZTNDNfTi1EclhN0gHAAUFVX3lxTE1QTFVFbGRSY0xMVnc3bXJDWk5XME1xVHNZMlp3TnVjN1p5WWswMlBhUjdKMFMzRGJPYkF4UWNJcnB0TTNNdXJRR1VlVTFZWmlsbndIbnR0VzFmeUFBVkRnR2xvN245UllJMDVuTU5UZ0pLN1piU0NNM3VnV1NfT0Y0bFR3MTl6TndZVHNDeUpSYWpRcHdxZm9UN2dXUFJOdGlZR0JhRjFFTWI3bFRfNFR6NlI0QVI3TGJhalcwM3p4aQ?oc=5"
   },
   {
-   "titulo": "Inflación en el Caribe: Cartagena registró la mayor alza mensual del país y Santa Marta lideró el encarecimiento anual, según reporte oficial del DANE",
-   "fuente": "El Tiempo",
+   "titulo": "Mercados: las acciones argentinas operaron dispares en una jornada con actividad limitada en Wall Street",
+   "fuente": "Infobae",
    "fecha": "2026-11-11",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxQYTUxVkxqM2cxb2N0YVVXRXVRT3RjdmlFc3lad2Y0OFRTTVNTZXFCbUdKbHJJa0pKRW5aUzlJSm9NSWtXbzF0RmhYZ1N5LW9VSzFCTUhIbWsyS092S2hpN3NKeTRTdlNzbE1RWHRHMW1waGNUbWNUeDZjUVI0QUQzUUNQQzYwVDRaYXBubm5wRzZwM0hSYVhmOERDVFByZEY1MGtNUWJrS19yVHppT3laTTFHUjJCeG9udTctVkJSbTk0TjFaSUs4cEp6aXpJX3M3N25WZVQ2alI0cy13dmZqTjE4Z0phSGx0bXBnbVY4a1lyWXdEN1VXamRYMThrc1A1eTl2RGRmWjJ6eVdTTlpFc1A4c2pzTzZRQzdDZHBiRVVESmhXY0F6YjBZVUprQdIBswJBVV95cUxNdDhGeVlzMDJVRDBmdHVqSVFaYnNVMld4WnNqYjhLd3g0blNTOC02RzdJYnZQc1dFR1lzazBIUU5veXhwa1FwZGh4dXY5WWtxTlEyNzZnemJ3X3o3WXhrdmliZ2FUZzJqRnZIanlSaGF3OWt5eS15VWZtcFA4bTJNWl93OS02YndOOXBFSDNWeEJ1RTNRVmxjSUQ0TnozX21xeDZCbjctMzNKSGlfRjVrMmxWZnBJRDdXQXVJa0tOdGFRclJDZ29ydDlTUC1iOVFMNFc2WWNqTHZCTnFleDFNMUl3Ni1ZY1BjMFNSdzBLMmN2MldqOGVfNjQwNXVZdjFKaDcyeUdvbDZIcTZnZTAwT3BzLTNDRnNrcE13djNGRE42MUV1X3k0bFZsbXJiN3JwQ09N?oc=5"
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPd1VPbXBHejBNQ2JQbG9OQzFWWGlvTWpfbE5Fd2xmWjV5VURPM3JWcGZlSkpjbFliQUNPQldTcDN5RzBmWXpPNGhpLVFqTW00OXlpYk0tUHVkbVFGZk82elhzTXQxZVJNekJXUU1HdVV0em5zN0lqXzgyTU1fcUpKVlotLVZOdjVKUGFyb1pLZm9xQnd5OWQxOTd0Y19ZTGRxRzA4ZVd4Z1o0c0hQd3lOQXZPUW9udTluWXl1Xy1INS1XamRzaVNVaTJoMVdLdS1EdkJrWWFwRDdZVTBNSXp1M24wVdIB_gFBVV95cUxPOUt6X1FZN1Biem5tRmZaN3pwaVFseDF6bEdQLXZ0WU1XUGF3RnVld3c5UkZySEJXRUFJa2ZlbmpiUVBFOXNMVjlnUGVSUlp1NGdDTlpuZ2lrUHZiVmF1SldXZm5aWG0tVzJveVEzSDU0NnN2UVVHLUEzeVFvbDh5RHlBN2hLTmJpd2FiNzJKbmoydmpWWWd6NWdvYmRBVlhIOEtxOHB5c3g4SkJ6OGJ0YTJKQTVZa3JIWE1qQ0YwT3ZJNFNoa1JNdTlheGN0aDBQZWJlTGxTbVk1S0k5cC1hTnFhcTdES0RKdVM0OE42VnA2TnBUYXZVMjkyRndjQQ?oc=5"
+  },
+  {
+   "titulo": "Tipo de cambio HOY: Peso pierde ‘una ligera pluma’ frente al dólar por diferencial de tasas",
+   "fuente": "El Financiero",
+   "fecha": "2026-11-11",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYkRuVHlXdGtHVTY1bDgxaHp0bGhXVEVkMWpqWThjcktMVy1tUEZwVG5IYjZQUko2akU2RHpuYWdtZEVmMkp0RG90cDdpVUZJc1pjblJIaC1rT1p3Q1hYdjdWZFZFemgwbngySnNMUnFka0NyVVdreHNlS0ZsWkNkYkJPUWFUTHpvOGNJVmJKczFQc1JwM294U1RKY1pTcTAxMkxXWWE4WEgxeFRTd3VfTmZYUQ?oc=5"
+  },
+  {
+   "titulo": "El petróleo se adentra en un nuevo régimen marcado por el exceso de crudo, pero sin caídas de precios intensas en diésel y gasolina a corto plazo",
+   "fuente": "El Economista",
+   "fecha": "2026-11-11",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxNWnQ5d2RJWjE2V0JBM2huZFdxQkJuWFhZbjBnRkgzb0c4aEJuNEtGbTFuTkloX25la0dLczZVR3VhWFFnUFVtU3dQc1NzVGNPNzU0QTVrNHdHODAwNXRJSFBlYnI2QWZJUGNnX1VOcHlYTnFsUENqTlNldmdmVnhwYkRtTFBjVnRFbDRzTzd4b1BtaDVDSHF3WEJrQkVXVW16R1Bqd3NNcTd3QlhZSUVPcUJybUpCWlVZUDdkOVZEaDVVWkpnZzBmMS04VGpiWDYyMThLTy1Pc0NyUXVfbUtNOFk0ajZQNkZLYmJ5VkZ5YlNxSVVDclhuV3djNGVHdFh6VTlweldaa21nVkdDQlNKMUlkdzZVaFlpVmtOVmFjNV9oX0hEZkRKSGd4UmJQOTVjbHBLRndFWHJKWjJSZWRfSV9OYXIwUdIBsAJBVV95cUxNSVhvWEJkSXgwWUZGeXppa3VhT1c4YVc5RS1iWTNTaUNQVnFCeUhwYzZ3TzdnUERGbUpuU3hFd3puUFNQcnZzR2tfbXBkS2pfeU5EbmdMRXZCaWlHbDlYUllMcVd1TndfUXNiMk01T0hRRUFhVzJyX0w4TnFSLWk0MG1jTHlSQnItRHh0MmREd1VTazVhMkNNMG1hRkNFRjNWdlRYRUNRRkJqNDdXRXlPd19JWGNqTXBaeEJEWm9HdjNleXNaM01mUmtDRTBOYURockd2dUFYenFFTWJNZ0djZjNkVmxWSFFreVpxeHBMSmhlYUw1emhFMjQzd19RbWlBQVJtMjBEMlBZa0p6WDlxTFZlOWlrSTZGaGxTVzdRcnZhZGtTcFQ1NWFlV1lvY1I4?oc=5"
   },
   {
    "titulo": "Wall Street ‘se emociona’ por próxima OPI de Anthropic; Nasdaq avanza 1.11%",
@@ -102,41 +137,6 @@
    "fecha": "2026-11-11",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRUJDdXNnOVVEM1NXLVFCbTNrS1BmcDRVT0dXZHdvYTUwZFI1dThzTWdxUlp0M2U2X1l2OXpBeDczN2tMbjI0MDRTMl81Um40VnFuR0NERW9HZWRSYnI5TFladHR2WjBqdGt4Sk9DNmxsZHBIOV9CWjlTQlZaTWNVeUN0eVAzLVd5OGVQSk1ZLTdRRGhmSkM2ME1IcFE?oc=5"
-  },
-  {
-   "titulo": "Mercados: las acciones argentinas operan sin cambios en una jornada con actividad limitada en Wall Street",
-   "fuente": "Infobae",
-   "fecha": "2026-11-11",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPd1VPbXBHejBNQ2JQbG9OQzFWWGlvTWpfbE5Fd2xmWjV5VURPM3JWcGZlSkpjbFliQUNPQldTcDN5RzBmWXpPNGhpLVFqTW00OXlpYk0tUHVkbVFGZk82elhzTXQxZVJNekJXUU1HdVV0em5zN0lqXzgyTU1fcUpKVlotLVZOdjVKUGFyb1pLZm9xQnd5OWQxOTd0Y19ZTGRxRzA4ZVd4Z1o0c0hQd3lOQXZPUW9udTluWXl1Xy1INS1XamRzaVNVaTJoMVdLdS1EdkJrWWFwRDdZVTBNSXp1M24wVdIB_gFBVV95cUxPOUt6X1FZN1Biem5tRmZaN3pwaVFseDF6bEdQLXZ0WU1XUGF3RnVld3c5UkZySEJXRUFJa2ZlbmpiUVBFOXNMVjlnUGVSUlp1NGdDTlpuZ2lrUHZiVmF1SldXZm5aWG0tVzJveVEzSDU0NnN2UVVHLUEzeVFvbDh5RHlBN2hLTmJpd2FiNzJKbmoydmpWWWd6NWdvYmRBVlhIOEtxOHB5c3g4SkJ6OGJ0YTJKQTVZa3JIWE1qQ0YwT3ZJNFNoa1JNdTlheGN0aDBQZWJlTGxTbVk1S0k5cC1hTnFhcTdES0RKdVM0OE42VnA2TnBUYXZVMjkyRndjQQ?oc=5"
-  },
-  {
-   "titulo": "Tipo de cambio HOY: Peso pierde ante el dólar por probable aumento a tasa de la Fed en diciembre",
-   "fuente": "El Financiero",
-   "fecha": "2026-11-11",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYkRuVHlXdGtHVTY1bDgxaHp0bGhXVEVkMWpqWThjcktMVy1tUEZwVG5IYjZQUko2akU2RHpuYWdtZEVmMkp0RG90cDdpVUZJc1pjblJIaC1rT1p3Q1hYdjdWZFZFemgwbngySnNMUnFka0NyVVdreHNlS0ZsWkNkYkJPUWFUTHpvOGNJVmJKczFQc1JwM294U1RKY1pTcTAxMkxXWWE4WEgxeFRTd3VfTmZYUQ?oc=5"
-  },
-  {
-   "titulo": "Las finanzas de Ecopetrol comenzarían a repuntar de la mano de los precios del petróleo",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-11",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdnlDM250N18zdGo2ZFdHZTV4MWdFNnJJNzNDekkwUmRtY3VlcHFaWUhnOU1PaVZxTkFucTlZeHBsU1R3cnFJR0o3by1JM3BGd0hhV2o2WS1GNGY3aHFyZm5CbTVuNWtGdjU4cWdDejcycm8ydU14UFBrZXFMcXQ4eVU5VnVKLTlid1VVUlh5N2NiSEZMdVhnaGJnT21zRUozUGZiR2QwQ3RTVEdkUWhqUlVUbFc5RXFoM0h0Wm9XWjdleVhwVENNS09vOHI3RmFhak1xVjcwUE9qZ9IB7gFBVV95cUxNbGR1UE1HbFdfZTlmR3F3U1MtcU5YUC1VQmtNNEM0VGUtODg3Nmx3MFdxOENQa3ZXSG5ua2tqY2xzUE96T3JhcFVoWXJubmRiRnF6MTY3aWp4ckcxeHB0alUtam1adU1kRGNvWURkOHNGb0J5MmFlbFZtTllqbFZQdDFCSVRhdGRVc1VpdWF4cTNfUldkWGFfM0Nnc3JmekxKeUx1OVNBQ2dlTzlsc3VHaUNqNlJ3X0dIS2lzTmktTXRjaTQ1UkZqMlFaLWNNZnhtOXZKSVBYM09McnlyLUZtV2p6b0dnUE56b0YzUnpn?oc=5"
-  },
-  {
-   "titulo": "Inflación en EU aviva apuestas de aumento de tasas de interés de la Fed: ¿Cómo afectaría al peso mexicano?",
-   "fuente": "El Financiero",
-   "fecha": "2026-11-11",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOWklGZDgxTzMwbGVuTkh4bjBVdVdSRUVvNXk1VWJSSTNpa0tteUI3eDR1ZElZRmFIUVdaUzJ2Zno5TWRwU25DVHEtQnVxMC1JRHdJaEQxcXhlSlBIQjRfOUNncHEwNG1SU1VwdXNNMTFQYWpIN1I5ZFpFaThRVHJiTzJkUWxucFhIa3VaUWd3YS1xWndISFpHX19vdm1tYkxFeExSVWRXS2R6TGJvWVhiLVA4Vk1IclBCMHR3VVlxQ0xlakVnTVRQT0xmTnpVcjA4OVRWTkR5dklPY2x3TmdXd1I0a3A3WWwyaFJZag?oc=5"
-  },
-  {
-   "titulo": "Wall Street está dominado por inversores a corto plazo",
-   "fuente": "Expansión",
-   "fecha": "2026-11-11",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYnNrZGd3VjNQR3JlN3RSWmZMZkJsVmdMRF8wTEtfQU9Oamx2LU9Qc1hNZG9tZm4tcTRVcUxDa2RKNUdDVUdaQ0JGWEF3YnY5UkttZHd5cGM5eEVtRTBzX3VyNFExemFvaS1pN1Fsd1ZSbVpVNmFVNTd5S0Z6UWd5ZlRDaVE5Y3lBWEVWS3FqX0NLYVF4R2hKb1hINS1iUUhJZWfSAaIBQVVfeXFMTmJza2Rnd1YzUEdyZTd0UlpmTGZCbFZnTERfMExLX0FPTmpsdi1PUHNYTWRvbWZuLXE0VXFMQ2tkSjVHQ1VHWkNCRlhBd2J2OVJLbWR3eXBjOXhFbUUwc191cjRRMXphb2ktaTdRbHdWUm1aVTZhVTU3eUtGelFneWZUQ2lROWN5QVhFVktxal9DS2FReEdoSm9YSDUtYlFISWVn?oc=5"
   }
  ]
 }
