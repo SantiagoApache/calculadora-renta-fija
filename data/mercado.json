@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-10",
+ "actualizado": "2026-11-11",
  "indicadores": [
   {
    "id": "trm",
@@ -16,7 +16,7 @@
    "nombre": "Tasa BanRep",
    "valor": 12.25,
    "unidad": "pct",
-   "fecha": "2026-11-10",
+   "fecha": "2026-11-11",
    "detalle": "Tasa de política monetaria vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/59/tasas_interes_politica_monetaria"
@@ -26,7 +26,7 @@
    "nombre": "Tasa Fed",
    "valor": 3.875,
    "unidad": "rango",
-   "fecha": "2026-11-10",
+   "fecha": "2026-11-11",
    "detalle": "Rango objetivo de fondos federales",
    "fuente": "FRED (Fed de San Luis)",
    "url": "https://fred.stlouisfed.org/series/DFEDTARU",
@@ -55,88 +55,88 @@
  ],
  "noticias": [
   {
-   "titulo": "Mesada de $4 millones: este sería el incremento para los pensionados en 2027",
-   "fuente": "La FM",
+   "titulo": "Colombia enfrenta una deuda de $1.200 billones y necesita un ajuste fiscal, advierte MinHacienda | El Colombiano",
+   "fuente": "El Colombiano",
    "fecha": "2026-11-11",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUDRabXg0TXVPVTJCRmpXczJ6X2hYWWlLaUlHTFVtakFWMGVwMDVIc2F3VkkybWNXVlA1aU1ZOC1aOExtbU1URFpWS2NuTkx3ekpJdi1mYlZaWUN6enNPTEwtbzB4UVA5MWVvVHlGcERsR3pqS1ZfWXFQTjhTSUM1VHhwMG1wN1VVMjVmZ2lkdFJRZ1JUeE83V1lHR1dsdmplOVBORFFnUjNyM0tvZnIyN0ZTdzZBWV83N3Myb1Jlb9IBvwFBVV95cUxNRk1qX1l4c3dSamNoSkRWU1h5T1BXdjlITU53RWl3b005emVTdC1OeHhaU3VXc3pLWWVDTnFVNXpDTkRmcThudUhma0haZGNIcTF4TjdFek1tOXFQOHhZZTI2RkR1SUc1dlRzV0pYNUI2TGZZdFU5b2dGeHJxclUzRFhwRFNsM2JqLTFkWDRBZjZST2tLVmVVNWxDUXIyeGZObUY3MWpTcFQ1MVlEWVpzQ0s3WmlscHVUVGxqUEN3MA?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORHdTUWszZExEYWV4RjJ5cGt6VzZlNUhEVE1aNTNzS19LaExRX2lnMElMSE5fQ21SZDQ4RWRLUVNfVVlPZ2RORDEtUWFjWnZpVENGZXN3QW5BQlJpd0NHNFNZZjNhU2pWWnB0cjBIeXBTTE1CUzhLM21tTHBoWTVfMmFKOUFkczlJMjQ5MU81SDdGQ0c5Qnh4dC12UFJzb2F3MlBTUkR6aTFHVlN50gGyAUFVX3lxTFBzc3B4blN5VUVyREZ3a3QtMVp1WXE5dkJZdjlQaHo2Nll6Q01LcVprQ05UWGJDWFE2VFZRYUg5N0dsX1BWdDgzc24ydzVhVHpZOURaWUgtd3ZuUFo4U3RPS2MtMEdGTmVxNk5YNGU1RmJhVzZVNHZ3ZmJOUkZDWlF1OUJUeXFlS1BCTFFGb1VBRGliOXZtaXBlMTJ2Mko5Mm9ZVjVjZkNnVW1hblNOMXZKZXc?oc=5"
   },
   {
-   "titulo": "Los precios de los alimentos aceleran la inflación: ¿a qué se debe?",
-   "fuente": "El Espectador",
-   "fecha": "2026-11-10",
+   "titulo": "MinHacienda revela que tributaria recaudaría en promedio $100 billones al año; confirma nueva vista del FMI",
+   "fuente": "Valora Analitik",
+   "fecha": "2026-11-11",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMlRMZ3BWLTAyUkNndHZQQkR4Uk1iVXFtZmQwUmdVSHY1ekc2U2RGaUUyaFR2OEZGbDJRZE40anVncTBGRHhCSXVtc190SUNTS3dOQjhheXE3RExieXdqTmRPZi1vbkV4a1drMmlja3JTOVh2bTNTcHQ0LVJyWVVDZ2QzNE9zc2E3ZUIweGE2Nzl0OWd0VnNfc2dtYWo5OUlfU1lOQUJxZ0I0UmVvQjU3bk1GWVZYeW1WWGs0RUl0RTjSAdQBQVVfeXFMTUNlY2hWcW5idURxSW8yUUpNTmdtSXdBbjNCRzVOQVBRMmptdnBpSzNqVDRlRjRDUFRmZlA1NVJzSjdZUG04aE1sSEVzOEFSUEtBSnBTVm15Y0ZMVkZvbjNIRUlqUTFSUzk0dEpTNkVYOEUzU2t5VjI1a3F0Q0s0R2UwQTZNT2J6a056UzRrbDV4U052UFpRZHktek1rUjk2a1VMcVhqY1ZoVDZfa0taODBpci1pVHdyS29jR21odV9vLVB3LW13MEYyN0tBMDdXUDREYk4?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVHJDV1ZrXzB2MUxNb1FZd1JyTTRGVjZyeU80MUZGdUl5RUVWZUdmSHV3bmJ2Vm5PVWN3RWRzeWtQWWhXYWJZelNDSVhZVVBtaTExd1J6ZS1PSG4zQlZfellualVZQmNkUEtvX3R0SVhTRFNTTzg0alJXWk51ckNGY2xiVFVYSXFNT2RwZHFOZnVZdy1uR1hMZHhJOUJOaXNYaHFPTy0yOVF5Y0MwQ1l1Mk1ZU2VsMU5haXFLNlA4X2ROUHZtOFZGR0VsaDVEcUhuWFBr0gHYAUFVX3lxTE54a2I2SUFlV0hFSWFxTFhJS0hxUW84VzVTcVpIVmNJWmJ5OVhHYTVQUzV5bWZiekxtUTVtWnFYY1JuM3VMTHlzSWpSTWlTeVZVTXFPNHYxZzMzLVU2OUh3Q0ZKLVUzdHhyLVVpOG9EaDdNczM1WGthN1k0aE51VW9OMlRyMkRzTnMzRjZYRGJHemV2Q2dCdG1ZSDZQUDJJSnd5RXA2MC1TX09sZ01oVXBWTXExcG9HQnR2RlotSng3SkpNdnFjRU0tejNxWWh5T09BRTVkU3hQVg?oc=5"
   },
   {
-   "titulo": "Colombia busca US$41.900 millones entre extranjeros para desarrollar 250 proyectos",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-10",
+   "titulo": "Inflación en el Caribe: Cartagena registró la mayor alza mensual del país y Santa Marta lideró el encarecimiento anual, según reporte oficial del DANE",
+   "fuente": "El Tiempo",
+   "fecha": "2026-11-11",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRHRBU011aGlFSGZZQUM0LVFCa3I5QmEzenY2QURlVjhJc3dhTlpiRktJNWYyaTNiSjE3TUYxbDZxcGdiVkNlTzZzU3pVZHNTWXhXNk8zNFplNGNfQTN4Y2NQM3lhN1FmbXl3X29iRXNvQXZTZGJTZFZNRmVDNk1wMGRpVk9saFNkY3B2aXByV3NzVkJVT2drd0wzVVZkR3BFRzhtd0pRbXloZXYwZ1NCcHJTU3Q4a0NNbVNyTU52aXRLdmdsUXZZVExKOGptWEZx0gHkAUFVX3lxTE9haHVxaG0tU3NBOFNMelJPRURieU00Xy0wR21JSUZEamZndFZKcXBZRS1qaDI3MWpQdFRSNEhrbUNldE5EbklrSDJWM0FZRFVhNzRUWEZ4MU14RkhFaWdBMTc2Ui1xZjdYRFFiQXN1UDBGMm5mS18xa0JnX1AzWndBT3Q4bkpIbk9NSGl6WllBNy14Um9ZT28xS2pVTnR2Vm1XcEt6WUpfZU1majBxOHRpNW5fcmFGZG4zOHl5UklJbk9sN3ZpWW5rMUdDSm9xSnJaeVBnTXNRSEJhRW9qNV9Sc2FFeg?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxQYTUxVkxqM2cxb2N0YVVXRXVRT3RjdmlFc3lad2Y0OFRTTVNTZXFCbUdKbHJJa0pKRW5aUzlJSm9NSWtXbzF0RmhYZ1N5LW9VSzFCTUhIbWsyS092S2hpN3NKeTRTdlNzbE1RWHRHMW1waGNUbWNUeDZjUVI0QUQzUUNQQzYwVDRaYXBubm5wRzZwM0hSYVhmOERDVFByZEY1MGtNUWJrS19yVHppT3laTTFHUjJCeG9udTctVkJSbTk0TjFaSUs4cEp6aXpJX3M3N25WZVQ2alI0cy13dmZqTjE4Z0phSGx0bXBnbVY4a1lyWXdEN1VXamRYMThrc1A1eTl2RGRmWjJ6eVdTTlpFc1A4c2pzTzZRQzdDZHBiRVVESmhXY0F6YjBZVUprQdIBswJBVV95cUxNdDhGeVlzMDJVRDBmdHVqSVFaYnNVMld4WnNqYjhLd3g0blNTOC02RzdJYnZQc1dFR1lzazBIUU5veXhwa1FwZGh4dXY5WWtxTlEyNzZnemJ3X3o3WXhrdmliZ2FUZzJqRnZIanlSaGF3OWt5eS15VWZtcFA4bTJNWl93OS02YndOOXBFSDNWeEJ1RTNRVmxjSUQ0TnozX21xeDZCbjctMzNKSGlfRjVrMmxWZnBJRDdXQXVJa0tOdGFRclJDZ29ydDlTUC1iOVFMNFc2WWNqTHZCTnFleDFNMUl3Ni1ZY1BjMFNSdzBLMmN2MldqOGVfNjQwNXVZdjFKaDcyeUdvbDZIcTZnZTAwT3BzLTNDRnNrcE13djNGRE42MUV1X3k0bFZsbXJiN3JwQ09N?oc=5"
   },
   {
-   "titulo": "Así sería el aumento del salario mínimo de 2027 en Colombia con la cifra de inflación de octubre de 2026 que reveló el Dane",
+   "titulo": "Precio del dólar hoy 11 de noviembre de 2026 en Colombia: volvió a subir la TRM",
+   "fuente": "Noticias Caracol",
+   "fecha": "2026-11-11",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONmJpQ1I1Y25qUUpBWkFDVHhHTjgzNGtSQTRKVmE1T2pGYVRoLW9NNGttSWVFVFowMjJYTXFpOERuNGJDbWVlaWN2V1ljUk9DdzJCS3ZZcGZlb2hManJOR04zSmItaGo3R3dMWUZoZ2doYWF3dGw2NVd2MnUyRnV4SHlZQkw2TnpNWVREZFB5TmZ1UlQxbGZoMUh2QjN1dE1YRDJwc0tOQ3hDbXJHN2ptMEdsUGNnZkliRVNOeGZNN0ZWQQ?oc=5"
+  },
+  {
+   "titulo": "Dólar a la baja: la moneda inicia el miércoles 11 de noviembre más barata",
+   "fuente": "Revista Semana",
+   "fecha": "2026-11-11",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcFV5aFZFeDNzUWE5Skp5VTNTTzV2WmZwQTdWZ2xsR3FSb2lOOXgzSTAtNFU0MGZWRjRpRmRJTVRReDJqVERIeE9ubnVocnlNVTdscUhmMmNhaExNakM3OE8yS21EekNuR0lsREFIM3oyQkhXdktPbjVtczJyVGZIVUtGUzBOYWE1X21rampJcERCTWcxclRIbktvaWVqcVFxZ3lReDRmU2tNZVUwdW53d2ZCOUNLbFFCbzZ1aUhINkVNWkZiT2paUTIxLThSVzd50gHWAUFVX3lxTFBVWVBkcXNqcFpaNkl3cTVteWhJZTFGLU9ZX1ZUb0VPa2w3M0RFdmUtWmd1MEZZd1BKX1BFbXhrd3RFUmJiaGpHWHlnQ3FnZDNPemh1UTZ1Sjc0QzZ6U1dGbTAzekI3YU5ULWMweEJHQTVYYUw1NDVyREpXNGZ1UWpxSkR6ZnpsemFYTmZvclIyZXkzczRrUWQ1QkdHa3Zkd1RZVDU3VXZ6RENhS0YtTzN5VkFxbnNZNUNKM2VabFZ5QmI4SWpOQ1J6RXZneldwSzlFRDRfZ0E?oc=5"
+  },
+  {
+   "titulo": "Dólar en Colombia llegó a máximos de $3.300 tras dato de inflación de Estados Unidos | El Colombiano",
+   "fuente": "El Colombiano",
+   "fecha": "2026-11-11",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYkwzQjc0dFFQWExaUWF2OWpMVDBMdnBsRTVNMjJ1c2k4dlRlVjJlcWRxaTU4NjZzN0c3YUFtUFFvbGJLRTRnQXlmb3NaRmxVSk5FYjA1Y2djMEtDZVJIaE93ZnVoYVFnT2E2cnQxNW1RcUxJOGw3TkVHbUxGTzkxUXBQNEt6VlJ6b0RJWmxWLTFmZkJvN3RzWWhWWTF6YVZmMmtCZ1h3eGdzd9IBrwFBVV95cUxQRDUyQkhvMm43YzJQMkVGMVc1NFVKTXIwdU83WVhjSm5SRktrSWNBSHRCSE1kQTJIMFl3Umd5V2wzT3h3NzMyTXlWaHdDM2d3MFQyREctaHEtdlZGX05obWJ1cUUwUzE5R3R6ZE9pYmdGUXJiel9GM2huaU5aeFlsNkVLY3doZXJOTHlWVlZPOU5hQmtneVlYbnQ1cU5UWHlMMG90LXhsd0FFOTAxNDY0?oc=5"
+  },
+  {
+   "titulo": "Mercados: las acciones argentinas operan sin cambios en una jornada con actividad limitada en Wall Street",
    "fuente": "Infobae",
-   "fecha": "2026-11-10",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPSDIydURjdThxUVlkZUZNN21uOHVVREx2MEg2VUtJWTlWbGlKWXl0MWt2d3Jlc1pBS09VRTlxeGRaVXBKMGxHQk05LVplNVNacTEtV1dqaWd4WERNb2o2NEwyV01rSjdEX29tRVBnalFKMWhFMm9Pb2xpLWZ5MG0yY1hXT1pHX2ZpTGp6QWs0ZWJ5aXNzQ0pTc0V6NkgzUGhtbGw1eXpiNEdEWlJqdlZPYzlheDlKT3I2dEJnbzFXNnY5UXZNQm1LUDZRenRvTDQ2OVlrWHpZTGE1eVJnRjFsWXRNWi1xVVlJWU4wenprOGtNMTl4cmxod1dvVlPSAZcCQVVfeXFMTXlRNHdydDJKNFZvNTE4VGJ1dlcyYkxzUHQ4MTJ5b0R6bUY2QlEwNVkya2JfWkY2U1ZrT0pfaTVFYUd2Q3dXWnJva19FMjlXamZrNWZLenRST253b09pdUQtVDFPeE1yME9iay02Z3J4NXpMS1VjTlR3SHFNUDJYLXgxZUpzWmxibnhCRkFvVkNoaTZRcWZSVlhIcFpZN1hua2pKTGlBOXkwZ3AtQ1U4NnoxZVoyU2JVV3hvN3VxVzJFZ1BsSVpzZl9VcnJFRjhMWlJ1Y3NiRUNWUlZrTmtxajRyUDNlSWU1dXZmWVVBU3dHV1FSZXJtbkFMTG1PajBrUm5uWUlsVkFKNFFlWVJyTVNRNDJkel9Z?oc=5"
+   "fecha": "2026-11-11",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPd1VPbXBHejBNQ2JQbG9OQzFWWGlvTWpfbE5Fd2xmWjV5VURPM3JWcGZlSkpjbFliQUNPQldTcDN5RzBmWXpPNGhpLVFqTW00OXlpYk0tUHVkbVFGZk82elhzTXQxZVJNekJXUU1HdVV0em5zN0lqXzgyTU1fcUpKVlotLVZOdjVKUGFyb1pLZm9xQnd5OWQxOTd0Y19ZTGRxRzA4ZVd4Z1o0c0hQd3lOQXZPUW9udTluWXl1Xy1INS1XamRzaVNVaTJoMVdLdS1EdkJrWWFwRDdZVTBNSXp1M24wVdIB_gFBVV95cUxPOUt6X1FZN1Biem5tRmZaN3pwaVFseDF6bEdQLXZ0WU1XUGF3RnVld3c5UkZySEJXRUFJa2ZlbmpiUVBFOXNMVjlnUGVSUlp1NGdDTlpuZ2lrUHZiVmF1SldXZm5aWG0tVzJveVEzSDU0NnN2UVVHLUEzeVFvbDh5RHlBN2hLTmJpd2FiNzJKbmoydmpWWWd6NWdvYmRBVlhIOEtxOHB5c3g4SkJ6OGJ0YTJKQTVZa3JIWE1qQ0YwT3ZJNFNoa1JNdTlheGN0aDBQZWJlTGxTbVk1S0k5cC1hTnFhcTdES0RKdVM0OE42VnA2TnBUYXZVMjkyRndjQQ?oc=5"
   },
   {
-   "titulo": "Proyección del salario mínimo 2027: expertos anticipan cuánto debería subir frente a la inflación",
-   "fuente": "Caracol Radio",
-   "fecha": "2026-11-10",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQT19Sd3dEQXJaUEU1Mmg2VnNlYTJZaXBFZkt5N0VYdnZ2VU4xOHFTdjZUT2Fmd1pDd3kxd1hCUFZSRno5RWpKdXI3eDBfa3p2QUJ6MEJLck9SRVcwVlZHQVAtWkVJVWdyVm1wR2RoY3ZoeEFhMkdNSUxweUNBU04zSnhYNWRLSVdCOHVJWThESjE4SjFEbU13Q0YxSE5kNXp2Vmpsa2s3Tkljd01XaU9uLTlUTUFGbEw0ZW5KcTE4QlVhUGxzNkVtLWV6WdIB3wFBVV95cUxOR1o5T25hM01MLTg2cmJPRk5xck9YNlB6OENIazZ4RTZ6eGxabnhnM1NZN3BkWkdKN0NaVzMyX2lWOTJxV2todlgybWpmV0tyM3E2bDBiekZkZHllVmlTWE83R2RFNktXRjRSTUlUbjBQalpZNlJKaXlmUTNJbHpnWjc4TG5ZRHZraWdNNDd2ZkJsTGY1NWNLVW5lWXYxY0E1MDlleFlTU1VzdTBvcF9UU3ZSQlMwUWFDTGdZTHl5aUgzYTM2bTU4ekx0emJQTjhvZGUyNFR2Q25HOEFHWjVr?oc=5"
+   "titulo": "Tipo de cambio HOY: Peso pierde ante el dólar por probable aumento a tasa de la Fed en diciembre",
+   "fuente": "El Financiero",
+   "fecha": "2026-11-11",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYkRuVHlXdGtHVTY1bDgxaHp0bGhXVEVkMWpqWThjcktMVy1tUEZwVG5IYjZQUko2akU2RHpuYWdtZEVmMkp0RG90cDdpVUZJc1pjblJIaC1rT1p3Q1hYdjdWZFZFemgwbngySnNMUnFka0NyVVdreHNlS0ZsWkNkYkJPUWFUTHpvOGNJVmJKczFQc1JwM294U1RKY1pTcTAxMkxXWWE4WEgxeFRTd3VfTmZYUQ?oc=5"
   },
   {
-   "titulo": "Dólar en Colombia sigue al alza y cierra en $3.297: estas son las razones detrás de su aumento",
-   "fuente": "La FM",
-   "fecha": "2026-11-10",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcmJOTTg3Z2dHVmtpTEZieHR3X2lBazR0TDZsTnE0R0JiN3A2T09UV3o5cVo0cFVpQ3lWZk1hZXFfUUFIZTdhNElZZVphS1k4dTNzd21XZ2tRMG91TTBTYkhuZUZ6czdkWUFEVUtsT1M3TlFWbnF0NGQ4WlM3NDd2eHpBZmFMbG5pTlRDU3lPRkRyTWFfOXpNNGhBZGNtWVpO0gGgAUFVX3lxTE9zOEtBQWNoQ2xId2owemNFV1Z0cXdTRFQ0WFVMOVlKT0U5LV85UU5vWXhUaDhNOGNyaWF1elEzeHlhV0dDblRGT3A1TEJianNJWTVLa3NYdnNYR3NHLUhrdk90a1U1Mjc3RVNzS0ZIU19QODFkN09iclZrcjBvdGowbjM1TmZUeS1wREIxRWk5azk5RGhidTdOTUE4V2ZnYmM?oc=5"
+   "titulo": "Las finanzas de Ecopetrol comenzarían a repuntar de la mano de los precios del petróleo",
+   "fuente": "Bloomberg Línea",
+   "fecha": "2026-11-11",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdnlDM250N18zdGo2ZFdHZTV4MWdFNnJJNzNDekkwUmRtY3VlcHFaWUhnOU1PaVZxTkFucTlZeHBsU1R3cnFJR0o3by1JM3BGd0hhV2o2WS1GNGY3aHFyZm5CbTVuNWtGdjU4cWdDejcycm8ydU14UFBrZXFMcXQ4eVU5VnVKLTlid1VVUlh5N2NiSEZMdVhnaGJnT21zRUozUGZiR2QwQ3RTVEdkUWhqUlVUbFc5RXFoM0h0Wm9XWjdleVhwVENNS09vOHI3RmFhak1xVjcwUE9qZ9IB7gFBVV95cUxNbGR1UE1HbFdfZTlmR3F3U1MtcU5YUC1VQmtNNEM0VGUtODg3Nmx3MFdxOENQa3ZXSG5ua2tqY2xzUE96T3JhcFVoWXJubmRiRnF6MTY3aWp4ckcxeHB0alUtam1adU1kRGNvWURkOHNGb0J5MmFlbFZtTllqbFZQdDFCSVRhdGRVc1VpdWF4cTNfUldkWGFfM0Nnc3JmekxKeUx1OVNBQ2dlTzlsc3VHaUNqNlJ3X0dIS2lzTmktTXRjaTQ1UkZqMlFaLWNNZnhtOXZKSVBYM09McnlyLUZtV2p6b0dnUE56b0YzUnpn?oc=5"
+  },
+  {
+   "titulo": "La bolsa europea toma el relevo: ¿Batirá a Wall Street este año?",
+   "fuente": "Investing.com España",
+   "fecha": "2026-11-11",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSWVRSjdSWFdSNFUweWZaMzRvQnE3RW1oUU4zcUVqWDNUSDZwMFYxQjQzOC1aOTZPTllxU2ZfYm9UeUZJVkJfRHRBTTVWT0QyclJrR1hkV1ZNcWVDX1JVNzktSmc4VVFUSEV0UjEzdjVZU0hxbElLck9rQXVmZWtjajBBdF9kbVZuMDZUZHVCRlF5bFlfNFpweVU4YUctbHhzWFFrNm5IcU9XYWZLU05TVC1Eb1F6bUh5?oc=5"
+  },
+  {
+   "titulo": "Inflación en EU aviva apuestas de aumento de tasas de interés de la Fed: ¿Cómo afectaría al peso mexicano?",
+   "fuente": "El Financiero",
+   "fecha": "2026-11-11",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOWklGZDgxTzMwbGVuTkh4bjBVdVdSRUVvNXk1VWJSSTNpa0tteUI3eDR1ZElZRmFIUVdaUzJ2Zno5TWRwU25DVHEtQnVxMC1JRHdJaEQxcXhlSlBIQjRfOUNncHEwNG1SU1VwdXNNMTFQYWpIN1I5ZFpFaThRVHJiTzJkUWxucFhIa3VaUWd3YS1xWndISFpHX19vdm1tYkxFeExSVWRXS2R6TGJvWVhiLVA4Vk1IclBCMHR3VVlxQ0xlakVnTVRQT0xmTnpVcjA4OVRWTkR5dklPY2x3TmdXd1I0a3A3WWwyaFJZag?oc=5"
   },
   {
    "titulo": "Wall Street está dominado por inversores a corto plazo",
    "fuente": "Expansión",
    "fecha": "2026-11-11",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZUFIVEU1T0JTMG1ZVVZKUURmZDNhMEdsTGNJdGRZQ3MzLVF2dkRXN0FTcHdYcHNHZ1BfcjJaaHFyeTlKcnJmdnpNVjEtUnNQWWQtZmJuMXE5Uzc5RlF3ckZLQUlWZHBmWUNoRTlia2dfS3J5bndTcGtaQ2dkX3Bwb005SmM5OGtMRmh4TEdKZEFhaGN4MF80QkdDNXhWaFdEbkHSAaIBQVVfeXFMTmJza2Rnd1YzUEdyZTd0UlpmTGZCbFZnTERfMExLX0FPTmpsdi1PUHNYTWRvbWZuLXE0VXFMQ2tkSjVHQ1VHWkNCRlhBd2J2OVJLbWR3eXBjOXhFbUUwc191cjRRMXphb2ktaTdRbHdWUm1aVTZhVTU3eUtGelFneWZUQ2lROWN5QVhFVktxal9DS2FReEdoSm9YSDUtYlFISWVn?oc=5"
-  },
-  {
-   "titulo": "Wall Street cierra en rojo por alza de precios en EU; BMV anota máximo histórico",
-   "fuente": "El Financiero",
-   "fecha": "2026-11-10",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRjdtaGV3NGF4R3Q5Y2NFbDl4YVlVUU80bGpKQlVEaGNlYk5SYU1GYlBpNDNrZ0wtUE81WHJGYXF0WHl0aW1KX0xiUEphX09vMVZTWTFIbENMZ0pHWFBrOFZJT2lnaGpJa0ltNFZDTHhSRldiaks2b0pCc3VGVTZPTU5XNnBJUnJIdnVQYVYwbVpPbk15ZTNXaGR4UkFjd18xMEpSMXpBYVk5VEdiYXdadi1UY3BMczVPNGlpZUZYaThBd2JXcThoVg?oc=5"
-  },
-  {
-   "titulo": "Wall Street cerró en rojo tras el dato de inflación en Estados Unidos que reforzó las expectativas de una suba de tasas",
-   "fuente": "Infobae",
-   "fecha": "2026-11-10",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNRWFGYUtDcEJFOWJhbWl0MTlyeTJBSG1uVkhXQXVUb2k3bkRSd1ZjOFpETklHQy1tSlBoV3pWelZhNXlldWh1dlZTdnM2aUswV3ZOY1NsYkZ3UTgwNkd0dHJYYzVNVEh5cU83WVZzclJPdTAyVXpaeHNWTXJnZDJna3lDSlluRjViblVPd0JGaFdBcUVhb2JXTmg1NFYtVXZOTWFhMXF3OElNRHRTdnV5c2ZmZTFPZGV4RzRXT1dYeDdmM2l6NkNCb3VJOU5ObmlqVTEySlRCN05ZaVg4d2FfbHBMaWNUaVY1VS14WUFPYnpyZmxPcWhXbHd0SlViTjjSAZoCQVVfeXFMTUVjY3F4MTdobjBlak9EcURlcTJ2SnJQZ3h5YVo0ZWc2M19oOVRHSm14bkdDc1F3a1RnQWp3dnZfeFVZaEwxNUdlQ2NrV29aWmhWS0hlR090c2NCdmo0STBMV1BlVkNic3Uxb2ZzanM0US0tcVI2bmdxZktqZV9tRExqOEpPTS1IWHVjcDNkLUw5dTFtU3drS1hBTlZWRGQxSE5wTjc5SUduanpmVEQwRVlvTENoeFhfNGFTWkY0UW50ajZ6bFBJWlZkM3ZZeml3NFkwMVlGQXlFOHV6V25CaGtEVkZPeUI3OGZWQmc4a0RfQVFMR3U2QlFSdlVlVlBnb1ZkZlJiVndqTlhBOFE1VlNXeTIycERNZ1Fn?oc=5"
-  },
-  {
-   "titulo": "Precios del petróleo amplían caídas con atención a diálogo entre Washington y Teherán",
-   "fuente": "El Economista",
-   "fecha": "2026-11-10",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMTZ6cUV5d0NreFdCQk5Wc1dHSkFlUERGNm9Ec2FjV3JDU3dXbDgwc2kxa1F0akdPUV9BaWdxWFZxWHh4Mk9ZWldwN0Z1TnE3S2FzMTdqOHRzcFlGVGZidkNGWC12NEdtTTBrN2ZrNXlOZl9FT3hDbmItWjh4YVNrTmNJSE00N2NwbkpJVmJDRlViY1FHUlpuX0xDTFVVWmR1dUxIbUhUZXIzcVB3TTREQ0dtS1Q4MjRXTTBfRzhmZl9kd0twVDVOUNIBzgFBVV95cUxPVHlXdDZLQmFPZTRSTC1JSVpsbjBoZzVnOWNTX08xemszNk5OT1FlN3ZmN3pETVoyMkR4bUpRa3BnMl9PcFlwS1h6eGNmaVNNemQzcFQ0Rmo4TE8xYWtwempOQm5senVsN29FUGdtT19sOHp2WXBSVVgtalFxLWNsdFpReDBiMWxlbk1PWGRCeGxwQXVBbVBLZ01PTF8xV1ROdFc3a1BIbzNmZFNKd2ZvRk1vWGJoQ0E5RFhTSXBTR1BJZzNRbHptUkRab0VLUQ?oc=5"
-  },
-  {
-   "titulo": "Wall Street cae ante apuestas a que la Fed subirá las tasas de interés más de lo previsto en diciembre",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-10",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZUFVWTBmaE9EbmRsUGhrc3pFZWhtUXdUNFZPTVh0YWlwdFZkWDJXTVNTdDM4ejZUVFpjWWN0TWdKOXJDU0ZvbDh6eEQ5ZDFhcjlXbkdqMl93SDh2cDhNVF9UYlZwUGxIbS1yUHJNd2xGWEhQdkRIblU0bGVjTDRiMkt6U1hxNk5lelBxVHRwbEdQdmt0WHg5WUNJd1RkMjB3aDFrRURZSENpU0hnbGh6aXVSQmRBWDg1akFrUEJ5LWo3V2RNSHRYQm9n0gHeAUFVX3lxTE81ZXdkU20xeVk3aUJ5UGp0elFScnRkd2hTUE85RE4tNGNBd3F1aWpzYUpVbXNscHd4bHpwV1J4TzBuSy1vOW1kdll1VGppUkZFNXdmMTRUR3lXY0xzMVlWLXdzME0tdkpvd044MFNSTkhmREpscW03MS0wNDJDdWNMZVBNVDE2aVpqSUlHSGVoSERtUlZRTUJSNEV1RjhnUEE5RTdMWHJHOW9YaXBkNzZwSVNvSV9MQXhIaHhxaTg2TGdOZXVKQkVTRlVpZzFTWDhQRHdnWDhSMHJpVVJNdw?oc=5"
-  },
-  {
-   "titulo": "Lane del BCE: tasas dependen de salarios y precios secundarios",
-   "fuente": "Investing.com México - Finanzas, Bolsa y Forex",
-   "fecha": "2026-11-10",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORExmZDFaQndUSmtpX3FTdXlYUmRRVmZXZ2lsNjNDNGxNenJTZkp1RDhYanFKMkNybnJhTkhqdGJRb2VvbkR2MHFnS2p6UU9uQzRJQ29IRmdqaUtyMU85OVc4UllDM2ZrZGRKTlEtTGZ5MDJYUElHWC1mcFpPZnlKXzNlT3hBQnROSkN1dkJCZnRDVzE2bTNhSW1YLS12Q0FURlhWLU9yNHpkSFk0YkNnbVR3?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYnNrZGd3VjNQR3JlN3RSWmZMZkJsVmdMRF8wTEtfQU9Oamx2LU9Qc1hNZG9tZm4tcTRVcUxDa2RKNUdDVUdaQ0JGWEF3YnY5UkttZHd5cGM5eEVtRTBzX3VyNFExemFvaS1pN1Fsd1ZSbVpVNmFVNTd5S0Z6UWd5ZlRDaVE5Y3lBWEVWS3FqX0NLYVF4R2hKb1hINS1iUUhJZWfSAaIBQVVfeXFMTmJza2Rnd1YzUEdyZTd0UlpmTGZCbFZnTERfMExLX0FPTmpsdi1PUHNYTWRvbWZuLXE0VXFMQ2tkSjVHQ1VHWkNCRlhBd2J2OVJLbWR3eXBjOXhFbUUwc191cjRRMXphb2ktaTdRbHdWUm1aVTZhVTU3eUtGelFneWZUQ2lROWN5QVhFVktxal9DS2FReEdoSm9YSDUtYlFISWVn?oc=5"
   }
  ]
 }
