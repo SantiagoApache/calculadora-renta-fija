@@ -20,7 +20,7 @@ Un proceso automático de GitHub Actions corre todos los días a las 6:37 a. m. 
 | IBR (overnight, 1, 3, 6 y 12 meses) | Banco de la República (servicio SDMX y portal SUAMECA) | Sí |
 | UVR diaria | Banco de la República (servicio SDMX) | Sí |
 | TRM y tasa de política monetaria | Banco de la República (servicio SDMX) | Sí |
-| Tasa de la Fed y desempleo de EE. UU. | FRED (Fed de San Luis) | Sí |
+| Tasa de la Fed, inflación y desempleo de EE. UU. | FRED (Fed de San Luis) | Sí |
 | Noticias de Colombia y del mundo | Google Noticias (solo titular y enlace) | Sí |
 | IPC (inflación total anual) | Banco de la República (portal SUAMECA, serie «Inflación y meta») | Sí |
 | Desempleo de Colombia | Página oficial del DANE (empleo y desempleo) | Sí |

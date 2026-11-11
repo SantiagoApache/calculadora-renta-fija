@@ -1853,12 +1853,15 @@ window.MERCADO={"actualizado":"2026-11-11","indicadores":[{"id":"trm","nombre":"
     if (x.texto) return x.texto;
     if (x.unidad === "cop") return "$ " + fN(x.valor, 2);
     if (x.unidad === "pct") return fN(x.valor, 2) + " %";
+    if (x.unidad === "pct1") return fN(x.valor, 1) + " %";
     return fN(x.valor, 2);
   }
   function todosIndicadores() {
     const ext = (MERC && MERC.indicadores) || [];
     const orden = ["trm", "banrep", "fed"];
-    return ext.filter(x => orden.includes(x.id)).concat(indicadoresSeries(), ext.filter(x => !orden.includes(x.id)));
+    const resto = ext.filter(x => !orden.includes(x.id)), fin = ["desCol", "infUsa", "desUsa"];
+    resto.sort((a, b) => (fin.indexOf(a.id) + 99) % 99 - (fin.indexOf(b.id) + 99) % 99);
+    return ext.filter(x => orden.includes(x.id)).concat(indicadoresSeries(), resto);
   }
   function pintarCinta() {
     $("#cinta").innerHTML = '<div class="cinta-in">' + todosIndicadores().map(x => '<button class="tick" data-tick title="' + esc(x.detalle || "") + '"><span class="tick-l">' + esc(x.nombre) +

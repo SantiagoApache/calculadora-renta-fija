@@ -168,6 +168,19 @@ async function indicadoresEEUU() {
     const p = un[0].split("-").map(Number), fin = aTexto(Math.round(Date.UTC(p[0], p[1], 0) / DIA));
     fijar("desUsa", { nombre: "Desempleo EE. UU.", valor: un[1], unidad: "pct", fecha: fin, detalle: "Tasa de desempleo mensual (BLS)", fuente: "FRED", url: "https://fred.stlouisfed.org/series/UNRATE" });
   }
+  // Inflación anual de EE. UU.: variación a 12 meses del IPC (CPI-U, serie CPIAUCNS, sin desestacionalizar)
+  const cpi = (await traer("https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS")).trim().split("\n").slice(1)
+    .map(l => l.split(",")).filter(p => p[1] && p[1] !== "." && isFinite(+p[1]));
+  let inf = null;
+  if (cpi.length > 12) {
+    const u = cpi[cpi.length - 1], previo = cpi.find(p => p[0] === (Number(u[0].slice(0, 4)) - 1) + u[0].slice(4));
+    if (previo) {
+      inf = Math.round((+u[1] / +previo[1] - 1) * 1000) / 10;
+      const q = u[0].split("-").map(Number), finMes = aTexto(Math.round(Date.UTC(q[0], q[1], 0) / DIA));
+      fijar("infUsa", { nombre: "Inflación EE. UU.", valor: inf, unidad: "pct1", fecha: finMes, detalle: "Variación anual del IPC (CPI-U, BLS)", fuente: "FRED", url: "https://fred.stlouisfed.org/series/CPIAUCNS" });
+    }
+  }
+  resumen.push("Inflación EE. UU.: " + (inf != null ? inf + " % (" + cpi[cpi.length - 1][0].slice(0, 7) + ")" : "sin dato"));
   resumen.push("Fed: " + (lo && hi ? coma(lo[1]) + "–" + coma(hi[1]) + " %" : "sin dato") + " · Desempleo EE. UU.: " + (un ? un[1] + " % (" + un[0].slice(0, 7) + ")" : "sin dato"));
 }
 
