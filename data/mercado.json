@@ -4,9 +4,9 @@
   {
    "id": "trm",
    "nombre": "TRM",
-   "valor": 3297.07,
+   "valor": 3301.91,
    "unidad": "cop",
-   "fecha": "2026-11-12",
+   "fecha": "2026-11-13",
    "detalle": "Tasa Representativa del Mercado vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/1/tasa_cambio_peso_colombiano_trm_dolar_usd"
@@ -65,60 +65,74 @@
  ],
  "noticias": [
   {
-   "titulo": "Su aumento de sueldo en 2027 apenas mejoraría la inflación si no gana el mínimo: los sectores que más subirían",
-   "fuente": "Bloomberg Línea",
+   "titulo": "Inflación en Colombia seguiría lejos de la meta del Banco de la República y cerraría 2026 en 6,6%, advierte Anif",
+   "fuente": "Infobae",
+   "fecha": "2026-11-13",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQOGd4RGV6OURXNVF3OHBnOTl0TklCQ01DcHljelM4UXcwU1JPR1g2Q3c4UWcyN3pjd05KX2JhS2FTS09UcG9haU5sQjRoMUhwUmhzN1FLU3JvcnJLOUMzTTdlTXJHUDlFMkJsY1VNTGpVTGI3Y0FacFRvQmszcFp0MGVYLWV3cks2aDFLSjRIRmk0bE1nTlh5MGg0VUptOTNwUVlLeGNkZW11RnN1cWFfa3l0UXhUTUdwczJ3cHR6LXNuSndnQS15Y015VXFKcmVRSF9zZ2tJem9JWnJlX1lVM3BmRklJNXJlZUHSAYQCQVVfeXFMTUpibnRrcUlkcTBubEdjM0NOY0ZXSzNhWkVSVHgxeXZoU2pwdGY4YjJKWWdGLWhBLWQ5NEdUX3FfTzVWeFJPMi03aHhURzcwREhEM2dWQjBjcVRJZU1GdFZWakpISGJNVWxUV2tLNjFOSDZ4bVhfUHF4LWp0bmpmUnB2UVVReFpaak5wUVNmdkdkOVByS3o0TWZZSExQYzJxRzlXVTFnUkd1RV8wYlFkWGdCclM4dUpsSEpUUFRuc0tmbThMc0ROUnZLLTdBQlVob1JGTmE5RDNMVTNpRldqSU9hZkVTdVgxS0FrMDdaeC1GQUE1NFZQNk1lamNjS3FUTW5TcU0?oc=5"
+  },
+  {
+   "titulo": "Tras reunión con MinHacienda, Consejo Gremial respaldó la tributaria, pero planteó propuestas",
+   "fuente": "Caracol Radio",
+   "fecha": "2026-11-13",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQR1E0WkRsbm40allDb25PTk9Vc3hTUWlhVTVNYTZIWVRFYWI0V1ROU0NqNDJsd1c0MkxtWHdCV0p5akIzOXZUTC1wbjhnTlJwMFptRDVJNnZMcGZOUlNmTXJwRHZSblo1b1VPMDVEVERvN244NkY5SUFrZnNPZmZFdjFrSDRHWm9ZR2pWMXRrOVpUcktYZG5SbmhHcGpCN1Q0M3d4TDFzS2ZFZlItWEVuRUpzeEN1VXhQZ0xZOGZNQk5PbUVl0gHYAUFVX3lxTE5wRnNna3paQUxWNHhaSUlMenRfbEVYWHRNeHRjcnVYbzBZd2xuNHZYbGhKVi1IQjU1NVFaU0pWNnlvVXlCOGozSEdQYk9iQ3hyS05lcnZJX2tZYWRrQjRmWjN1Nnd1M0xEVG1oOTZES3prN2gydGo0amJKcVNFa01CamFlM1lGcFFESnBGSmFoTzhtY1JQcWpWYVl5VUo1VHRHd1dPbUNIMTBsN0NMamJSUEdFdnhlUUN6UWNadFliX2ZnZEIwcnZZQXR2UngwVHZUd05tcHdIRg?oc=5"
+  },
+  {
+   "titulo": "Precio del dólar en Colombia: hay malas noticias debido a nueva subida y así de caro se compra y vende el 12 de noviembre en las casas de cambio",
+   "fuente": "Infobae",
+   "fecha": "2026-11-13",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQzBLdXc1cWwxcFNUSVBmeGhKVl9vYVhMRFYzRGhkUGJjc1lQX1pqeC1NNXl6R0twNldEcE5kSUx2ckxvZnBldkRjb1lBYmozcXVUQ2x1UmJuSThTOHdySzNDU2Z1RWZmVTM3UlhlNmFkREdqQ2UyRkNlN3dZeVU1eHhIVEtNQzFPTzJ3SmJmNk1VdU5ESjFORFp3SFRrSzhFOTVJLVA5OUI5N3I2UmF4dnVmUnZQTXVDRHfSAdQBQVVfeXFMTkx5WmZZX01yWl82dmMzZkl0XzhiMjYzT2I1eVEtQVUtcUdDREduV21oaVRkd1Q1ODhvU19lZUtfMkttNm5pT1RFTnRCZUNWMWRYWmthMkVWMlhBUDRpZFlCSkFqMXhFbHVZT2dRZ0pFWTU0S19JMzNnalJRUGY0RXFodlkxRWlkWU9mV0V2aGNnck10N3E0UGtNR3dGSUE5Z1JScHdpUmx5N1FLcThiaWF2N0RyTkM2MTJQaTVudHpPeFAxRnNXTEFvdzVLYUFxUFplQ0c?oc=5"
+  },
+  {
+   "titulo": "Consejo Gremial se reunió con Minhacienda por la Ley de Rescate: esto dijo Natalia Gutiérrez",
+   "fuente": "Portafolio.co",
+   "fecha": "2026-11-13",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQd3dxZ3BOc244ZGNRUWVMTmpjbGxyeFNqM0R6b1BRUGVkcGRPOUtPRGMxdzl2QlIxbjZhRExZMjRYX2V3eGhwdVkyMEEyNFdNUF9ETEpUZ0VYZExTTURnTWtmNU5uY1o0Wno2RjJYYmR4WExSbEoxYUEtbjdkSTYtVXhrX2l5QXNGbWt0ZFZpZ2JvaTRDNF9qQlhaTjBsd1dBd2xuSWl1WVdjVnVqanNfVDVJOVJuWVdad1dWLUNqdkNYZ2tYdzRWNlVKbmxGcFFQZ2FMdFFYT282Z2VGcnBZ0gHfAUFVX3lxTFB3d3FncE5zbjhkY1FRZUxOamNsbHJ4U2ozRHpvUFFQZWRwZE85S09EYzF3OXZCUjFuNmFETFkyNFhfZXd4aHB1WTIwQTI0V01QX0RMSlRnRVhkTFNNRGdNa2Y1Tm5jWjRaejZGMlhiZHhYTFJsSjFhQS1uN2RJNi1VeGtfaXlBc0Zta3RkVmlnYm9pNEM0X2pCWFpOMGx3V0F3bG5JaXVZV2NWdWpqc19UNUk5Um5ZV1p3V1YtQ2p2Q1hna1h3NFY2VUpubEZwUVBnYUx0UVhPbzZnZUZycFk?oc=5"
+  },
+  {
+   "titulo": "El precio de los alimentos en Colombia en octubre de 2026 llegó al nivel más alto desde 2023: hay preocupación por la inflación del país",
+   "fuente": "Infobae",
+   "fecha": "2026-11-13",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPUGg2TG5KVWV1Wk40MEFDd3Zka1R0amxuUEtIQS1pcUdabDc1QWxCdjR4U01OY0RrdW9zalVyZHNBMG5JSW1aNmwzQzhoZThDUlp4NmhWY1dxX3JSUEFPTVl2OGNWcHY0ZDB3M0lyNHZkWUlQVEUtT1pmaEJ5WUx0bElHY3doYXB1dFhLN2dYaGRaaXdLaUZJV01WZXg3NlZZdjZZT2lleV95aEVEUmZmanZBYWg0Z2tvZDFUU2VEM05XbzAyem5aT2JjaGxnaDh2Vnpsdk81MTlvSE5GeHV5S2o1bzZMcXBuRWdxRnlZLWgtbF9uQTJISlVHY2xNLVI3bUg0eEs1T0hYN2hK0gGnAkFVX3lxTE83Rm95NjQtcjhCbDM1TkVubF92R1hFOHd3LVVISzI1NV9RbFF2MjRmR2ZBYjd0UmZxclRIRlhVVWk0S2NCUFVHMXpta1RJdnVNWGgyaS1PQk1pdnM2cEZhYks2SGQ2QWQzUVlaZnVNb29ZaVBrSU1renBocDlBUHBaYklHZTdYTzFMVUM2NngxQm14SHFzQnluaTVFOV8wdlRTWUdtYlAzbldNQ0NWdzlzdTBqUU9QWEFZTVRCY1IxX1hDcDZaQm1ycVVISzhBN0wtenZqWFRGVkdVNU9jN0dCeGtUSGFuTlg1ZE10VHhENDVzQWVpcTAwdnNDcWxGZlR0cXg2WWpDZ005YndUcHdadldyY0JBcGRNOTA0S1dwRHlZTS1fdlU?oc=5"
+  },
+  {
+   "titulo": "Dólar vuelve a superar los $3.300 en Colombia: ¿qué está impulsando su repunte y qué puede pasar con la divisa?",
+   "fuente": "La FM",
    "fecha": "2026-11-12",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNYUo3LVE4Y1NkSkpVZGctV292YnJtMi13NjlQQlMzOTJ1SXhNc09rVUhpNVF0WlBGYUxJQ1lSTmk3UTlnekRQRUpGdjZJRjlxNnJCUUdsaGgxaC1Sd3o1MkxNQV9ldnhTdzh1dWZ4R1JsNnlNc2NmbFI2Si0yZmFldXlSVUFWYmQwc0J6YzlsRUczUUlUM1E2YUFra1lZNXkyYlZtM3Y2NUlJRGhrVzBlQlVteDBlbkhmTTUzWFAtMUJwLTJnMEVfTGN0eE5Yd1BPVWk4R2VfaEREUThEajZYUkk0ZlBRU0tHVGhRV3ZEVXh5UHdNNjhv0gGLAkFVX3lxTE5DX29kTHVRQ1JSX2p3ZmNtSUtPUDVVZm9LQ0VvaTNIZDloMHZENWNVZ3dsNTVNMmJsTmU3WnUtY2dhamJsV0V5UHZVaTVJRHdrd0lkbmYxb2pTTDBCUDJpRVZ3T3dDSHpnV3Q1NG5Cazk2VXA2QUNZX1AtSWltQkc3QmgwSFh3UnFHY2NaSkdIcjUxcVc1VjNyQldRSEhXOF8xdDNDTXVHLU1ha0RiZEFSTG1jRnFJZ3JZdEU4MkFwS2RkMXdibUxVeHBCMWV0N3BXZnJtLWxKN0lpMDJKRzE0OVY5QTgyNTh2UXZrLU9Od2Z5V0hjY2xIVW1VUFJBV3pienJmRW9RWkNQQQ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRGlTMDBOSFh5dnczUm1HYi1ZeWFnMm9LSVJpMEVEbldLLTNXN0RqaVUzTDhodS1GNmREVTg1NGNhb2VKM08wdGJqUnkxejJ0c3oyVzlXYnpFNXJ2dDRVUDh5OFBuOUJiakJmbUNPa0Zwd1VINlJOTGxKbnZfOXg5YUVJZXNQY19MQldRWFloSlo0SElvaGd5OTZNWjBFWkRqYkstbtIBpAFBVV95cUxNNk5PQ0lNNlpnOXJ6MWhILXpmejYwYXhRWnVhSVlOR1ppMHRMSGpyTzdHbzJ4OGI4cV9SRl9KOVBlTWtGTkNPQUVVX2tnUEFlUWNSR2RUSW5fU0s4TE4tSGJYdEE0SFRGRk11dEtkRFVXWFBteEhkY09fbk43ZlJlOFdvRFE0Z3Q4R2FmOWYtcXREOXdWTHk4U3hQdVFkanZVUEtySA?oc=5"
   },
   {
-   "titulo": "Dólar en Colombia se consolida sobre los $3.300 luego de más de un mes sin cerrar en ese valor",
-   "fuente": "Valora Analitik",
-   "fecha": "2026-11-12",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNc0Y5MkZiWEl2NmZYbXFDLWQwN2xUUm5WQnhMc1kzZzM3b0pqaFZwVElSbUdmeldqcEh5NUtMaVk5aEhidFFaSXVMLUpaU0RocVpoRjVrQTZKS1YxaW1ySGxRd3BBWEQ0VEZoQm83SDZVM0RjTGMwRVQybnA3NWlYMnZqSFJDVU14b1hBSEp6THRDa2gxSFRGQWNibWcxaG1PMXNhOVRneU9lS1dPTE1iVXNUdDRScWJCdjVjZG01a1VLMm_SAcgBQVVfeXFMT2Jia09VR1lFOGx5TE9aSW1xUURHcUJkcU5WVjRGUFh4TGlmQnRNV2diSE1scTAyOC1fVlE2aVluV0Rlamw0c0NnQTRuaDAwQ2lTdGhvTUZ3UTlTVmlUbVowZ1lQdUk3WlNGOU9KaWhoSDdWbDlxTndReDZHWThhdThxZ3Y0emRoSjVrZGkybHpkWmxpUGZObEVJaTJLYXNXY3hfbHRGQ2RoanN2aTE5N3pWQ1d5S1FXM21BcHNONldrckxuZy1WNlA?oc=5"
-  },
-  {
-   "titulo": "Dólar superó la barrera de los 3.300 pesos; la moneda cerró la jornada del jueves 12 de noviembre más cara",
-   "fuente": "Revista Semana",
-   "fecha": "2026-11-12",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOVDczNS0xa0dzNXJQV2s3eUE4T2ctczluVjRMd3Y3UUxlUllMYm1uZzJqUjkwTUY1YmpNa203cmhhek5Tb29JS3RUYm1FZWd4VDFYWXM2ZGJsWDFxcnBpYjVyOEpiMDMzaUZFVGpEOW5ZSl9TT3dLaDBKMVFualktT01sUWNMaVJiYlY1dU9vQm43OEh4TkpZM0dJWlpzRkRuekFrTGExa2VQbXlrQjRsMWVrY3IxRndZU1ExSGJaTUhsbTFvQkJPZjRHdkduekFQSng1UUJjcjlyWVhEa3RtMjlrUDdPcEg0Rm81dGplaElXc1dYUDFMaGJrb9IBgAJBVV95cUxQaFA0QjMxQ3JTY05tY1k3WVBSYmwtQ1BiTHVsSFdabzZkN3FjZ096MEFJQkZwZmllUm9Qd2dIa0VLd2l0R3hqSk9IY2ZFRExJa0NwSUZBcDdVTjlzS0twN2thQVBmSVJ1ay1JU0FpZnFCQWtFNmRrT1l5LTBia1dOdFRDRDRDWEtmYjB4b3pXdV9pZ1NkRUhEYVlBZE1Ub08xc3JEZWk1c0xUbXkwbjQ5dG5uWHEwRFlfbUNQTC1nQ0NlUm4zdWE3aFpzanNTb3JfVFJoNGVFc2Y2cTJXZ2hvWkJzS2xudms3ZzJSUE5tM1B0b0hPRjRSb2I3YVBNbjhC?oc=5"
-  },
-  {
-   "titulo": "Fondos extranjeros marcan récord de compras de TES en medio de canjes de deuda en octubre",
-   "fuente": "Valora Analitik",
-   "fecha": "2026-11-12",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNLTZBaHVOT2pPSkpTVmowaWRvOWdyd2tsN0l1OE5ockh5Yzd5Um5QTlNjOU9QNmIzUmgtVVFiMXZBTWc5Mkp0Y0ZndTdmMnZwRDBISldUTDFPTXhzdXdIcEp5bDhEc2twRzVPSG5UZ1dtNE83S3laWVVZOHJUMnByNWg5dU9QbTVyQWJVcEdmVDY3V2daWmF5SHBDLTJiLW9YbTh4WWFaU3B5UjVqVWxVbzZiRzI1VkN5ZGFsQW5n0gHDAUFVX3lxTE9LZF85REczLVNBQXRHTU93VnhJVVBIM3NCdUM4SjBvMEt0ZnBRU3dFd1JBWWE3MDNNSDFFbm14S1lHNENyLVZDMmczTkxLNEtZZXNMYVc4WEh2bkRBNWs1S1JlNDZTQW0tbjFHTGtuSEFNMG1rVGk3TlhOOHZCZDFEdVlfMkpsZTJzRHpGaDhCZ0lNUzQ5cU42VlNzelFNYTJaOWlBc2l3aXR3UWp1Ulp5eE95Mm5HTXFiOWxlUGY0enQ4cw?oc=5"
-  },
-  {
-   "titulo": "Colombia entraría en estanflación en 2027: qué es, cuánto afecta a la economía y cómo salir de ahí",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-12",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNb3QtTWppUFA1WF8xQzEyZmVFc2FCb052dnc0ci1rWTQwUUFpbTZYNjIxTGlKblAzWlUzdjlWWTVya3dMYzU4N0lxYVBfSm9hMVBPeUt1WUFvcm81MWZxaTc5SUUyQUktQUxxeFpkRmdzZTc2MFhteUhreUs1aFBGY2g0amptMi1zbFFqeTNXZl9OSlVPaXVTQVF3b3piczc3cVNYeVhHbHA1Y0ctWmtQWkVCcE1TSXJIb0o3S283OUJlalNEQkMyVjdjYmZsR3AxcC1LS0l2eFg5RVVUR3dVLWM4N29SVk9Od0FKT3lpNjBKX3hwc3RORlJB0gH6AUFVX3lxTE1vdC1NamlQUDVYXzFDMTJmZUVzYUJvTnZ2dzRyLWtZNDBRQWltNlg2MjFMaUpuUDNaVTN2OVZZNXJrd0xjNTg3SXFhUF9Kb2ExUE95S3VZQW9ybzUxZnFpNzlJRTJBSS1BTHF4WmRGZ3NlNzYwWG15SGt5SzVoUEZjaDRqam0yLXNsUWp5M1dmX05KVU9pdVNBUXdvemJzNzdxU1h5WEdscDVjRy1aa1BaRUJwTVNJckhvSjdLbzc5QmVqU0RCQzJWN2NiZmxHcDFwLUtLSXZ4WDlFVVRHd1UtYzg3b1JWT053QUpPeWk2MEpfeHBzdE5GUkE?oc=5"
-  },
-  {
-   "titulo": "Precio del dólar en Colombia: por qué sigue cerca de COP$3.300 y qué esperan los analistas para diciembre",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-12",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPTy1Qc0kzSWV6WUtnZkFEM1VXQ194OFRDbW5obHRieThIQWQ1cDJwYzhpT3l6LVFSc1lnTXlYVEFpa2xJb2tPUTRoNmNZRHFFRTdMNHdFNzBVaFZmM1hWZDRRQk80UDlGUnZIdy04TTF2QVJxSHBWS284bDg0di12SzBOVXdqcTRPbWxSMTcxb3lHR3hPNDQ2Q1UycW96Vm1temkycjloSzB5cWZNSFMwUkd2QXlZMEx4MnBVenhUMFJfUjRYQVJ1OE1xaDFKUHJ4RlBzVTJuMVVrdFVTRWZiWVUxN1M5NmtlajBpeXJR0gGCAkFVX3lxTE1lQUhDZnFPSm1HMTQwWERtTWR4S3huVjFqdDVsbzktRldnUks5MDRCMF96Y0FlbmhxSHJMd2Noblc5MW9FTWZlN3BSNEJqYURSaDl1YjZrSk43YVVScTNPTy1leERoeXQ5ay14aVhaTjFCUnE0aVc1NllPWUJxRVhCR0E0TDZLQXFaUjdOUVJkbmJHOEpaUk5Tb3dNdWZNUVdMQXQwRnB1NTNxczljQzlnUnRaY2E2Wi1VTmM0ZTgwWTRocVJzZENfanVLQnh3dklSaExHRk5FWE5OYnBaVlNDdEdVdXJSMXh3YTNYVHdfMXBLcVlpcXdJUVQyY01yMzI2Zw?oc=5"
-  },
-  {
-   "titulo": "El 'affair Huang' le cuesta a Nvidia más de medio billón de dólares en Bolsa",
-   "fuente": "Expansión",
-   "fecha": "2026-11-12",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMGIyVjNpdy1tbFJ5MkNXR01RMmN2alhvZXNCV3llLWlZQTFGZnZQLUtqaDUzQVhSbGU3Q0RWUWF1YUs2M1pRS3h2ZVdJRXlWWVhMbkZuTUM0eXhFRTNYYnBXemhGOV9Lb092cHFsQ3Y4TW4wUk91dnM2M1Y3YkN6UDhvR1JfVmVKTDh2X0wxWkJLWDJxbWlQMHA4RVFzaWlJd25acFBWOGlQU1nSAasBQVVfeXFMUEdTemJPX2VGU2FRb2hnQXJWWnJwald4aEpxaTBiVGRqQ1ZTTzdRZ24tSnF3a083c3BwdG5wS211NjZnMGpPaERvVHNteGhSVExzNFVxMjlzQkV5dk9yenp0SFpweENBbTZDb2o5S3JLNkpOUWRJMl9zSE9Wd1IxSk9hX1dTOUt6UGRnVUk4aDVIUnhFOHBPR3hMejN3MFJnbFo1aUlHdXJSdnFN?oc=5"
-  },
-  {
-   "titulo": "Renuncia de Jensen Huang ‘sacude’ Wall Street: ¿Cuánto caen las acciones de Nvidia HOY?",
+   "titulo": "Wall Street ‘se tambalea’ por renuncia de Jensen Huang a Nvidia; BMV retrocede 0.27%",
    "fuente": "El Financiero",
    "fecha": "2026-11-12",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcmZZODEwRWpVd3F3bWtaWW53Q0pMTGRWX2dudy1KRWhtMDZYcFZkRFMtTEM0LUxJc3RmSksxTGNoU0pYdG9Ta1FjZEZEdjJDUnNmandic2ZiUWRjRjJvXzVVTE5qSHhRYkY2c29DNWVMWWNkT01FQUdKVDZjSmN5WTZ5WjVUMTNIVFFEeGVXbmU4Uk1wa29yN3R1UnA?oc=5"
+  },
+  {
+   "titulo": "Qué ventajas tiene para las empresas cotizar en Europa en vez de Wall Street",
+   "fuente": "Expansión",
+   "fecha": "2026-11-12",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOHU4WllNXzdDSXB2VXdCQ1FVUmFCQVRSYmpwUUJmeGJ5alpCNkRlM3YzZVN0eExiRDRpWU5LZTVaU3NDYmZHNVRJQ29LRWZiUnhta3pSQmlEdHZxc2I1THExMlFFU0NaaWtWSi1Hei1HR1Qxb2ljblhEQVZqWXNTbFA3MlNNdTIzYk9oRHgzZWFObW9jb0NIeVBwZFpkMEFj0gGgAUFVX3lxTFB0aUZZclhtRFhoekJGeFZXd1BiNWpHYnVRZ3VidnRBSkJqQ2RCeTBUR2hjQXhUOXlMSTE4c2hTSkhraGcwMk1tZkRZUHdsc3ZqYVpCckdISUxDVFZPOGVLS3liZmduNG42bzVNR0N2YVhhS0FSdm9PY3ZTSFBPbXpLM1pqbVQxTlRtQ09URUZkVTZHQzAyM25hWTNKbmNlYUQ?oc=5"
+  },
+  {
+   "titulo": "Los precios del petróleo suben tras las declaraciones de Trump sobre Irán",
+   "fuente": "El Economista",
+   "fecha": "2026-11-12",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbXY1dHctMUZXR1FYdTN3SEVVMXBEUGhkTW43WWxjRkpTTkwzN0IxOTRXMzAtbndNRG1xNndSOXp5cGhJX3ZkS1BGbHhZUTl0aWNTSjc3clA5NU5XSjFURk9Rbnp2UTRWVnp1b0N6YTZkWlFwdDhXVkE2NlZCQ0tUcWpkbU5kNXJzdEhCOFR2b2E0M2xfX1U2MEdrVTlCNWcwLTN0VmRSOUQwZ0xETzlGVGQxQ3BrQdIBuwFBVV95cUxPZEJNY29MQlJrZHQtU201bGplQ25TUGVWdFpCRXlZazQxSFJ6UEFreTl2MEJYZk1RVW9FV2VGa0pXRmFMenB0SUljZVp3Y3J3VVJ6TlFKVEVXSWgzNWJjSlltOElDOEpBMndjNXF6MmRFTUNBRWpkZnQtRnlKTm5yQzlMSDdYa3Q2YTNKbkE1TWNTUUpuYko5T1VWSWpuSno1QVpmY2dxWndFT0kydHRfc1REcEk4WDEwbnhF?oc=5"
+  },
+  {
+   "titulo": "Recorte de tasa de Banxico envía mensaje equivocado: subgobernador Heath • Economía y finanzas",
+   "fuente": "Forbes México",
+   "fecha": "2026-11-12",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTWZNTmJMOG95QzN5SXVzQ0ctNXdfT2FyTWFsVHgxc1dvM1RaV3hNcHFmZE5tLWxwTUtPaklkYU5hM2NTekI3Mm85b2MyS3lDOHZXaWcwYXN3cERHRV92X1lndUtzNjY2YkZUQVpFMC0yeHJjQUxTdm9POFpyc0V1dXZfMl96bnNDakJDZ3F6VlpFUU9hRmxfd293?oc=5"
   },
   {
    "titulo": "Nvidia se desploma en Bolsa tras salida de su CEO: borra 600 mil millones de dólares | El Colombiano",
@@ -133,20 +147,6 @@
    "fecha": "2026-11-12",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWkhkOXFNQVo1LVdHdUpQbnAxMEZBc2t5V0lKSEV4UkdQaUZuUmJteDJvYWJNLVE1NnNKUzdUSF9mbU5VR1FYRzEydkxvelg3M1dMODlKSDZMTElTQ2VhUHZ2NDE3a1RCV1NWaVpHNE5RUW5pZUF2M0xscUY5UmR0VVZHMHUzTDNmbEdOTHZQZkxqM25pNGxwZDdXUVVrZ2NUZUVhOUViX1hnbHVMbk1NMWNXbEhDbHNDS0RsTEZGVjV4MDdGb2JR0gHMAUFVX3lxTFB3TVBuT080RVhmQ083TmdISDZRZVJHc2dzOXl4NkIyWENGbDBIeDA3dl9QXy1GdUluR2VHVjRaRm1IR2Q3Ty1jQlRBS1did0NjMEZCRGxlOHNLLTJNUndMNFUyUUtHQWpQc3VtdnlhWjZiZU5PcV9lWC00X3piS2c2V1RxZjZ1SVRBbjVhZlRKdVctdnYwS0JRQVlQR1daXzliYXZqTVlsaHlfemh5NW1ROFhFT1h0Z00tZ0tyVmpIdXV3MllxTXJ5V2ZNWg?oc=5"
-  },
-  {
-   "titulo": "Precios del petróleo bajan levemente; aumento de la producción contrarresta riesgos geopolíticos",
-   "fuente": "El Economista",
-   "fecha": "2026-11-12",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeTRTcTZSb2wzRmx1V3R5d1VTLTFPZTRidDY4bmZJM1otOWhrbUNjVUIwUm5TcWdxVFNCb0ZMbTM2bHBOTUtjWXNHRlh2eXg4cWFZLVI5ZlFHUFVtcGtjeVhzSzVXQldEejV6RURZY25vQ0I0R180NmRybHZ2ckR1Y0oyTk1YTnpDSEtqYnJZdERBOEtyNnktZ21sQmdzdzhGYmZ5SXdvWmJURDctYXRnTVhYX3F6TG5UY3I0ZkxVY05BNGlsTm1UcGtsX3lCUUl5cWplTTdweElqN2VGdVZTZ9IB5gFBVV95cUxNRndvZjRSY3FuRG9QemQxQURaWnNNeDYzUnh1emNDN2U5OWpoMEtkYmJ0SnI3WEFMSllaajhIMkNoR09wdTB2eGIyYUZTQWdPTzhIYUVwRU0ydkwzaFBoMHlfODkxNEQxS0pORVBac3I2QjdSdkw0OTI0dUdxcWZpd0xlaUpmRjJxa2F0V0otbXVEd2Y5dVl1Qm0tLVBUSlF2MnBVdTlDeEVwX3hXNS1CRmc4LS1ITzN1eHdkaGZIYkg2cTRsekNjRGZJRkhOOXhWampFRzdBa0J4bi12clktQTM0MFdrQQ?oc=5"
-  },
-  {
-   "titulo": "OpenAI eligió a la argentina Aleph para vender publicidad en ChatGPT: negocio millonario y Wall Street",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-12",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOa2J3MmpTa3hxNmJFLXhiZFVnNVctaFhxdnhMTzVqOTJ4amN2UHdGZnZoaXZvOGw0MGxXd0owdHJ5S2tPdnlBOXNTeDl6bTcxem8yVi1icnpReDN3dXFwWVZXQlZNdEpEQkpaMFR0V3h4RlZKUzliVXBRMGRMZ2N1Rk1QWGRBOWtYM0d4bmQ3ZHJ0R282Rl9yaXdaTmZ0RDdjdzZpeTJTemNhSUtqQmRZRUpLT0pqWDdyU1dlbjBNSkN2b19mMWlpYUF3bmJvMkpqQklEOW5jbGhJZ3lFWVRRRXRiMHdOcGMtWl9ZeFZB0gGCAkFVX3lxTFAzZXM1TjJpUFh6ZlBFTkxMeHhmOGJDaDVPM08yQjNSZHNnLWVlZUZpU2g3T2RqWUhSVVpaemhKeXpjcFdEZjJndU9MUVdIaDRDZjhhWjIwdGIwcFc3M0pReldSOWtLWm5hRkVRUGtnMUdKNUt0ZVZtc3I3Rkx4Z0tUc0JYbXJ3RVlvS1lkR2N4STJKT3hYY1JuNEdvajYxMnNTYmRkU3Z3bURvd1owa2o4YkpOTFBHS2VILVQ0SVZTSVA4M2JKMi15aVZnZG9HM084YTgzejl1cEZCZUdTSjBkMWpoR19OUmNfQlZSb1JKS2dIWFZJX1Byd1lrdWI3U2lZZw?oc=5"
   }
  ]
 }
