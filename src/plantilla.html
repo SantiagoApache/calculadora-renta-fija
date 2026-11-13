@@ -20,16 +20,23 @@
     <button class="btn" id="cerrar-aviso">Ahora no</button>
   </div>
   <div class="cab" id="cab"></div>
-  <div class="grid">
+  <div class="grid" id="zona-calc">
     <div class="form" id="formulario" role="form" aria-label="Condiciones del bono"></div>
     <div class="res" id="resultados" aria-live="polite"></div>
   </div>
-  <footer class="pie"><span>Motores validados contra los ejercicios del curso: 27 de 27 casos iguales a la versión en R.</span><span>Cálculos con fines académicos.</span></footer>
+  <section class="res" id="portafolio" hidden aria-label="Portafolio"></section>
+  <footer class="pie"><span>Cálculos verificados con 27 casos de prueba contra una versión independiente en R.</span><span>Herramienta con fines académicos; no es asesoría de inversión.</span></footer>
 </main>
 <div class="velo" id="velo" hidden></div>
 <aside class="panel" id="panel" hidden role="dialog" aria-modal="true" aria-labelledby="panel-t">
   <div class="panel-c"><h2 id="panel-t">Panel</h2><button class="btn mini" data-cerrar>Cerrar</button></div>
   <div class="panel-b" id="panel-b"></div>
 </aside>
+<div class="modal" id="modal" hidden>
+  <div class="modal-c" role="dialog" aria-modal="true" aria-labelledby="modal-t">
+    <div class="modal-h"><div><h2 id="modal-t">Detalle</h2><p id="modal-s"></p></div><button class="btn mini" data-cerrar-modal>Cerrar</button></div>
+    <div class="modal-b" id="modal-b"></div>
+  </div>
+</div>
 <div class="foco" id="foco" hidden></div>
 <div class="guia" id="guia" hidden role="dialog" aria-live="polite"></div>

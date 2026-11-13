@@ -61,6 +61,26 @@
    "detalle": "Variación anual del IPC (CPI-U, BLS)",
    "fuente": "FRED",
    "url": "https://fred.stlouisfed.org/series/CPIAUCNS"
+  },
+  {
+   "id": "tes10",
+   "nombre": "TES 10 años",
+   "valor": 13.12,
+   "unidad": "pct",
+   "fecha": "2026-11-06",
+   "detalle": "Tasa cero cupón de los TES en pesos a 10 años",
+   "fuente": "Banco de la República",
+   "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/640001/deuda_publica_tasas_cero_cupon_tes"
+  },
+  {
+   "id": "usdcop",
+   "nombre": "USD/COP spot",
+   "valor": 3316.99,
+   "unidad": "cop",
+   "fecha": "2026-11-13",
+   "detalle": "Precio del dólar en el mercado (último dato)",
+   "fuente": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
@@ -148,5 +168,34 @@
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTWZNTmJMOG95QzN5SXVzQ0ctNXdfT2FyTWFsVHgxc1dvM1RaV3hNcHFmZE5tLWxwTUtPaklkYU5hM2NTekI3Mm85b2MyS3lDOHZXaWcwYXN3cERHRV92X1lndUtzNjY2YkZUQVpFMC0yeHJjQUxTdm9POFpyc0V1dXZfMl96bnNDakJDZ3F6VlpFUU9hRmxfd293?oc=5"
   }
- ]
+ ],
+ "tes": {
+  "fecha": "2026-11-06",
+  "pesos": [
+   12.42,
+   12.76,
+   13.12
+  ],
+  "uvr": [
+   4.47,
+   6.8,
+   7.06
+  ],
+  "plazos": [
+   1,
+   5,
+   10
+  ],
+  "mes": null,
+  "anio": null,
+  "historia": [],
+  "fuente": "Banco de la República",
+  "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/640001/deuda_publica_tasas_cero_cupon_tes",
+  "bidask": {
+   "fecha": "2026-11-06",
+   "pesos": 5.59,
+   "uvr": 4,
+   "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/640002/deuda_publica_bid-ask_spread"
+  }
+ }
 }

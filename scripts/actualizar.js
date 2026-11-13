@@ -136,7 +136,7 @@ async function actualizarIPC() {
   if (comparados < 12 || distintos > 0) throw new Error("no coincide con la base actual (" + distintos + " de " + comparados + " meses)");
   const ultimoMes = ipc.fechas[ipc.fechas.length - 1].slice(0, 7);
   const nuevos = [...porMes.keys()].filter(m => m > ultimoMes).sort();
-  nuevos.forEach(m => {   // la base del curso usa el último día del mes
+  nuevos.forEach(m => {   // la base usa el último día del mes
     const fin = aTexto(Math.round(Date.UTC(+m.slice(0, 4), +m.slice(5, 7), 0) / DIA));
     ipc.fechas.push(fin); ipc.inflacion.push(porMes.get(m));
   });
@@ -183,6 +183,65 @@ async function indicadoresEEUU() {
   }
   resumen.push("Inflación EE. UU.: " + (inf != null ? inf + " % (" + mesInf + ")" : "sin dato"));
   resumen.push("Fed: " + (lo && hi ? coma(lo[1]) + "–" + coma(hi[1]) + " %" : "sin dato") + " · Desempleo EE. UU.: " + (un ? un[1] + " % (" + un[0].slice(0, 7) + ")" : "sin dato"));
+}
+
+// ---------- Deuda pública local: tasas cero cupón de los TES (portal SUAMECA) ----------
+const SUAMECA = "https://suameca.banrep.gov.co/estadisticas-economicas-back/rest/estadisticaEconomicaRestService/consultaMenuXId?idMenu=";
+const PAG_SUAMECA = "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/";
+async function seriesSuameca(idMenu) {
+  const j = JSON.parse(await traer(SUAMECA + idMenu, { Referer: "https://suameca.banrep.gov.co/estadisticas-economicas/", Accept: "application/json" }));
+  const out = {};
+  ((j && j.SERIES) || []).forEach(q => {
+    out[q.id] = (q.data || []).map(p => [aTexto(Math.floor(Number(p[0]) / DIA)), Number(p[1])]).filter(p => isFinite(p[1])).sort((a, b) => a[0] < b[0] ? -1 : 1);
+  });
+  return out;
+}
+async function deudaPublica() {
+  const s = await seriesSuameca("640001");
+  const ids = { pesos: [15272, 15273, 15274], uvr: [15275, 15276, 15277] };   // 1, 5 y 10 años
+  const todas = ids.pesos.concat(ids.uvr);
+  if (todas.some(id => !s[id] || !s[id].length)) throw new Error("la respuesta no trae las seis tasas cero cupón de los TES");
+  const fecha = todas.map(id => s[id][s[id].length - 1][0]).sort()[0];      // última fecha común
+  const en = (id, f) => { let v = null; for (const p of s[id]) { if (p[0] <= f) v = p[1]; else break; } return v; };
+  const corte = f => ({ fecha: f, pesos: ids.pesos.map(id => en(id, f)), uvr: ids.uvr.map(id => en(id, f)) });
+  const hace = dias => { const f = aTexto(aDia(fecha) - dias); const ult = s[15274].filter(p => p[0] <= f); return ult.length ? corte(ult[ult.length - 1][0]) : null; };
+  const hoyTes = corte(fecha);
+  if (hoyTes.pesos.concat(hoyTes.uvr).some(v => !(v > -5 && v < 60))) throw new Error("tasas de TES fuera de lo esperado");
+  // Historia corta (un dato por semana, un año) para ver hacia dónde se ha movido la curva
+  const desde = aTexto(aDia(fecha) - 365), historia = [];
+  s[15274].filter(p => p[0] >= desde).forEach((p, i, a) => { if (i % 5 === 0 || i === a.length - 1) historia.push([p[0], en(15272, p[0]), en(15273, p[0]), p[1]]); });
+  mercado.tes = Object.assign(hoyTes, { plazos: [1, 5, 10], mes: hace(30), anio: hace(365), historia,
+    fuente: "Banco de la República", url: PAG_SUAMECA + "640001/deuda_publica_tasas_cero_cupon_tes" });
+  try {
+    const b = await seriesSuameca("640002"), u = id => b[id] && b[id].length ? b[id][b[id].length - 1] : null;
+    const bp = u(16720), bu = u(16721);
+    if (bp && bu) mercado.tes.bidask = { fecha: bp[0], pesos: bp[1], uvr: bu[1], url: PAG_SUAMECA + "640002/deuda_publica_bid-ask_spread" };
+  } catch (e) { log("  bid-ask:", e.message); }
+  fijar("tes10", { nombre: "TES 10 años", valor: hoyTes.pesos[2], unidad: "pct", fecha, detalle: "Tasa cero cupón de los TES en pesos a 10 años", fuente: "Banco de la República", url: mercado.tes.url });
+  resumen.push("TES cero cupón (" + fecha + "): pesos " + hoyTes.pesos.join(" / ") + " · UVR " + hoyTes.uvr.join(" / "));
+}
+
+// ---------- Dólar en el mercado (USD/COP spot) ----------
+// La TRM es el promedio oficial del día anterior; el spot es el precio al que se
+// está negociando. Fuente principal: Yahoo Finance; respaldo: open.er-api.com.
+async function dolarSpot() {
+  let dato = null;
+  try {
+    const j = JSON.parse(await traer("https://query1.finance.yahoo.com/v8/finance/chart/COP=X?interval=1d&range=5d", { Accept: "application/json" }, 2));
+    const m = j.chart.result[0].meta;
+    if (m && m.regularMarketPrice > 500) dato = { valor: Math.round(m.regularMarketPrice * 100) / 100, fecha: aTexto(Math.floor((m.regularMarketTime * 1000 - 5 * 3600000) / DIA)),
+      previo: m.chartPreviousClose || m.previousClose || null, fuente: "Yahoo Finance", url: "https://finance.yahoo.com/quote/COP=X/" };
+  } catch (e) { log("  Yahoo:", e.message); }
+  if (!dato) {
+    const j = JSON.parse(await traer("https://open.er-api.com/v6/latest/USD", { Accept: "application/json" }, 2));
+    if (!(j && j.rates && j.rates.COP > 500)) throw new Error("ninguna fuente entregó el precio del dólar");
+    dato = { valor: Math.round(j.rates.COP * 100) / 100, fecha: aTexto(Math.floor((j.time_last_update_unix * 1000 - 5 * 3600000) / DIA)), previo: null, fuente: "ExchangeRate-API", url: "https://www.exchangerate-api.com" };
+  }
+  const trm = mercado.indicadores.find(i => i.id === "trm");
+  const dif = trm ? dato.valor - trm.valor : null;
+  fijar("usdcop", { nombre: "USD/COP spot", valor: dato.valor, unidad: "cop", fecha: dato.fecha,
+    detalle: "Precio del dólar en el mercado (último dato)" + (dif != null ? "; " + (dif >= 0 ? "+" : "−") + coma(Math.abs(dif)) + " frente a la TRM" : ""), fuente: dato.fuente, url: dato.url });
+  resumen.push("USD/COP spot: " + dato.valor + " (" + dato.fuente + ")");
 }
 
 // ---------- Desempleo de Colombia: solo de la página oficial del DANE ----------
@@ -243,7 +302,7 @@ async function noticias() {
 
 (async () => {
   const pasos = [["IPC", actualizarIPC], ["IBR", actualizarIBR], ["IBR 12 meses", actualizarIBR12], ["UVR", actualizarUVR], ["Indicadores del Banco de la República", indicadoresBanRep],
-                 ["Indicadores de EE. UU.", indicadoresEEUU], ["Desempleo de Colombia (DANE)", desempleoColombia], ["Noticias", noticias]];
+                 ["Dólar spot", dolarSpot], ["Deuda pública (TES)", deudaPublica], ["Indicadores de EE. UU.", indicadoresEEUU], ["Desempleo de Colombia (DANE)", desempleoColombia], ["Noticias", noticias]];
   let fallas = 0;
   for (const [n, f] of pasos) {
     log("→", n);

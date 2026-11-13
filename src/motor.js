@@ -1,6 +1,6 @@
 /* =============================================================
  * MOTOR DE RENTA FIJA — traducción a JavaScript de los motores en R
- * validados contra los ejercicios del profesor.
+ * validados contra una versión independiente en R.
  * Fechas: números de día (días desde 1970-01-01, UTC) para evitar
  * problemas de zona horaria. Tasas en decimal (0.1385 = 13,85%).
  * Funciona en el navegador (window.Motor) y en Node (module.exports).
