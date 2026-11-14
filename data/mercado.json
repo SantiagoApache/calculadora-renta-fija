@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13",
+ "actualizado": "2026-11-14",
  "indicadores": [
   {
    "id": "trm",
@@ -26,7 +26,7 @@
    "nombre": "Tasa Fed",
    "valor": 3.875,
    "unidad": "rango",
-   "fecha": "2026-11-13",
+   "fecha": "2026-11-14",
    "detalle": "Rango objetivo de fondos federales",
    "fuente": "FRED (Fed de San Luis)",
    "url": "https://fred.stlouisfed.org/series/DFEDTARU",
@@ -85,6 +85,20 @@
  ],
  "noticias": [
   {
+   "titulo": "Inflación prolongada y presión fiscal: las grandes alarmas que enciende el salario mínimo de cara a 2027",
+   "fuente": "Infobae",
+   "fecha": "2026-11-14",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPbmlpOTRkVXl6Qkp3UDgyVmVCTm9fZHZQZlJ0SGV6WXFqMXBYclYxTVlMQktDUFNsa2VQN2pnaExNNUllWFZhT00xeUVOSTB6YUxMazNaaTl0Z19LTW5JOFlkUmdBSUVWV3ZhQUQxX2k1VFNoc2t2NDNyMldyRGxRQUJnVjdnZG5xY0JYN1VvVzNqZWVOS1ZIRlJ3UmY3M1AxdkR0RUVVa25FMDMzeTkzal9UV3RFM2RXWG1NNnlNMENEaERaM0hoZFl4MGpPYldKUEp2WThabDhwaDE5WlpoX2JB0gH8AUFVX3lxTFB4MkppZEtKNFZpcUdwbUU0N0s2VkdvUW5OOWVLakpCVVNlZWhiZmpiUEVSNWxzLU9PNWlvajRCZkhLc0RzSVBrdWNmNktqenQtUGVTT0VCWnhPWWtUNDFXc0E5SG1xamRYbnVDUllVYW4zc0dnWnF4a3VMQUpzYVRWbElPVVpjZWx3OHNzVjRBdkh0eUl1d2s1SnpPQ1lVQThNd1lUV25UcFVMQUY0X0JadzVqRmp0a0c2bmxmR1VudUhCMXpnV3ZiMUtxMVhyNXhGTmY4eTM0QmNoS2p1WS02Q29yRE9qdUhoVkVEalBlamJhZnRvVXl2QVI4dQ?oc=5"
+  },
+  {
+   "titulo": "Colombia viviría un 2027 de estancamiento económico y alta inflación",
+   "fuente": "Valora Analitik",
+   "fecha": "2026-11-14",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeTdhTTIybUhpYjFyRGRqd2t5czlDV1Z6RDl4SkxzTmhFZkxHLW1jRDN3UGFUb2RYb19DVGF6aUxpaHQ0cVRldTlEVDVfa1lhOWFxcWswajNIRlc1cUNVR0hzeXVwa0RscXVmUUVObGFNNHMxU01NMXR3Qi1OdzZxSTJYZUpTc3Q0aFdWWHNqOWNnZ3AwWkRN0gGcAUFVX3lxTFBFLTFYNFAyVUlCdjhoa0J0a2dLUXA0UmVQYy1WcUpnOFRMLVA0SXRTQ1dOcTdpSzJVb3d5emNIVVVSYlFQNWRnVnBiVFZPQl9wY3BxWmg0RTlDZmQxaFFkWjBESFlNVENTR3dZYjVXX2F5NzQ2NW8yZkk3d1kyUTJQaEc2TlhKMzM4RGlJZzluQXRoanl3LVVqWWtyXw?oc=5"
+  },
+  {
    "titulo": "Detener alzas en tasas de interés dependerá de la Ley de Rescate fiscal y el alza del salario mínimo",
    "fuente": "Revista Semana",
    "fecha": "2026-11-14",
@@ -113,18 +127,18 @@
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNWRFUW93Rk1pbDlvQzBpOEZjcFo2LWpBTlVZOWUzTU00Z052MXZKUlRmSXEtTURpNVY1V0JaWjdJMUpBVi1acWpDTFpJRlF2OTNfNFhUblhQX2oxNkhnengxRUxfRXlqT0s1Z2Y5UFg2eU56NThKQnV2Vlc3aWpScFltUHpuMEdxdFdPTFZ4UC1VWUd2WjdJRDJB0gGaAUFVX3lxTE05c1B0QjlmWWkyMGN6Vm9BbEVPODlpSVVOb1YxMGdpYnM0UWI3c1dFbllHcnozTC11TXpESFR1QUNTbnp1Wnc2SnFYMjltZ2RlbzBZZjg3Nm4xU1F3V2hsUTVZc2FUS3o0b1RGdnJaWk9yVjBPdEFpV1VhM09scVYyS0pqUk0zNlRkWFZyNW1oMEc2TW93NHV5M2c?oc=5"
   },
   {
-   "titulo": "Precio del euro hoy en Colombia: cotización de cierre del 13 de noviembre",
-   "fuente": "Infobae",
-   "fecha": "2026-11-13",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSjg3WDhhZTNxdE5NN2R2X25RZEFMVFJSeU1xaGFVaGxpcXAyUGlKSGNOZVpNWnl6a00zeTVQdHh4VF9mNzFnWFp5ZHVtZFNHSDNSZTVsS1FFbW1PZzFuZ3d4MWRndGlxY1lxNVFKY295YlNJTnZVdkdjdW5ja3otVy1WbUlobktCU0l4YmhaYTh2bTZXbmNPWXE0NjJWVmk0T1lkaWNFSndXRlhnbm4tdk9tdUx5cmh50gHTAUFVX3lxTE1Nc3hIb2tsREhvREQ4MHR1ZUpUMVh4bVRlMWxwek1fTmdqRTZpNmhzT3MzTUhlYXNUZnh3TVEzWHBGSUctcmNZY0hEakFZNFZmcnlGSlNwanVTSDhTT1ZXeU9mbjZKZjhaX3JrekI2OS1aUWU4dHAyRHFGNF9KTkcxTGZrQVZqVlNOSzlILUNrUllpcU1uaFlFSzZZU2tXaEdoYV9WLWlXVkpNVzl3LVZBSHlXb05yVFc1MzdDMXhwNGRNT01kV1RNX2ViekRTT05OUVU?oc=5"
+   "titulo": "Anthropic: la madre de todas las salidas a Bolsa (que puede poner en riesgo a la humanidad con su IA) donde hay más en juego que mucho dinero",
+   "fuente": "EL PAÍS",
+   "fecha": "2026-11-14",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxQc21pSVZWeXVJSmJ6aU9UZXhhNkYzdUVGMGxqMDVESC1BZnRkZ3lMV1d5ZXJIUjJqdUs5Ni1HN2pkS0tkXzhEdnZkaGRXZUxkZXdCemt1WEo5VXNyeDJnUU5OcGtTNDZFaVE2Tm1ZRnBDR25sYVFRLXVPM0xIY2IxdVNwakZsSkNrTnl0R0k4WlozNEJ6V0ZzdjNEU09EWmFEYnNEeVNleTI4OW12UlVlc3JxaWR4U015bFNOSWxlVS1KeG9odGxMYmF2UEh0bldLT2Ezb09xeG4yNzFDbV9qU3EwREpSaHdHUm53eHVSZGp4VWNqSUEzdFlKM2VCUEoxSDFDaXRlR2plNTVrZENnN3M2MHVmZUxlM0YtNnhxZHgzMlB0Z19Qdy1hSTAtOHIy0gHEAkFVX3lxTE9CUHdfOFg2bUlia1VLTGp5M3plc3VzUHp5LU5fV3dWaG8tVV9wdGpPYVQ4UEliNzZwamxtME1QbFlXakozeldkSmpxN3laZmlSN2pJQnJPZkdoQWV3cUt5RDdBb2l6T19VeWY3SUVPNUUzWVNnMGRwYWJNTF9NbVpzeE5PaU1aNHNoYjBmSGVvNlNWRGdoVXI4Z1VfSWNrYktkYlVQd3pNLWJSWUIwVGI3RHVwYnd4RHBib2l6a0V1R1RRbU5RQmRxUG4xUm15MFdWZ3ROWEVJN0NodTU2ZF9uRnpUVUY0YVJrTERHR3ZjV1lUeG1SbkpkMlRJb3hvTmpwVkQyVzhNMGFWenA3bTNoOEpvMWhudWhia0txdzFuWG9NUzhSc0NkX1ZpVzN5Q3BkeEp2MUJuT29WYUplbVluNVMzcQ?oc=5"
   },
   {
-   "titulo": "Dólar en Colombia cierra por encima de la barrera de $3.300; Brent se mantiene sobre los US$96",
-   "fuente": "Valora Analitik",
-   "fecha": "2026-11-13",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMUxqbXpoa1k3SGt1cEE3ejItUVdIemNhQ2pUdGFjM00tRDM5b3YybFNnWE05clQ2d3lqWk1mUm1pSlg0MGlPSjRoYmxNVzBmVmEyVmxobzN1LTB3SXJzRkFWLXJMYWNnOGZlWWduQmNzdWhDSU9wWXpfSDBYU0hHSmpScTN5TnkzdTRTc0w3dUFQZGpiSFdJSWlqOFlqbFF5cnF0TWN3RFV1U1VRUkJkOUEtUzZ5WXp5cU5lOTZteVnSAcYBQVVfeXFMUG1Sci1vYmswVU9ySDlaNl9FaUduM3pwc08xUzhJa0hQYlVpQkFsNVltMTB4NTlTZ2I1YnlXUHlmZXc1WHJHN0ZQejdoLXVVUVBZOUtiVEV5ejJSTHdOQmdYS0FvVUtPbzEzSGRUWXRhbk9EV0RIbGJxX09penhqTFZtYU5wUlF5TjN3cEEzWExwTkU0T1RST3pOcVpTQUtnT3pmSUp6ejl4empnUnczUWl0TldzOVFvYmVlNXU5bHdVT3RWUXdR?oc=5"
+   "titulo": "El futuro de Banxico y un relevo en puerta",
+   "fuente": "El Financiero",
+   "fecha": "2026-11-14",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOczl0UEJpTjYxdTJIdFB2V1V4cXFZSFhwLXFmdW5OTlp1MDY1SGJuTm9NRjNBWnB6RXZNMnI1Q25MZy0wQ1dfS19jSzdMY2VQSWN3WG16R1Y5N090XzZnSVF0d1dxYUwzOW1mc24wUVl2Ymc5R3NXVWNFcllZbEFuMjJjVWpneWZ0Snl1cEY0czVvSGNVQkJFRGdheFV3Q2twb09Uc0lMWFY?oc=5"
   },
   {
    "titulo": "Monedas retroceden en medio de expectativas de alzas en las tasas de la Fed",
@@ -134,13 +148,6 @@
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOc3lENlZFcW5ONWNrLTF1M1pueFNrT3JDdnhBSTU1V2V0TkpOeHU1OVFRWnEwTDhUTDZrMFhQd1dXbUhkUGNIV3hMRTY0a3pFMGFWOEk4N2ROYlNTbjBwdTB1OW4yb0lxOXpyVzRaOFNNdTBIamZTbU9WTDNKME5BYTFyd2dLQlRTRHR5Z1FmX1JYUGIxRTJKeG53SEtXei1oN1ZlS3ZDNWdXUlYteVVZU1V6UV9mUdIBuwFBVV95cUxNNnloSEU2VV96ZXRyMUZnb19oWE1NYkkwMC1CcVlSdWs1WlVjNEstYklPYXFmVmNxaHZrX1N6LTdxMWNxaDNOSU9wZ2J2ZE5rV0xVeHJ0RFllV1I5Snc5ekpQVHQtOGgybGZ0dHA0MVhvTU1iQ2c2VlVJc09vN2RkSEFBYjFQMjhkNVRKYk93Zk1BcTh2UmhpQWx6TkJRWWd2MGFMakhJWVFWdDBCV01YNjBxWG15TEdVUnlR?oc=5"
   },
   {
-   "titulo": "La Fed no debería subir tasas por shock energético ligado a Irán: Tesoro • Internacional",
-   "fuente": "Forbes México",
-   "fecha": "2026-11-13",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUHJrRmwyS3o1Ql9zOWItX3VCZS0yNmtIUUh2QjdhRFNlTzU2Y1VPNWJBZVVFa0JncG5sOFNiY0JMdW1FY24wVThzWmNzRVhhdU83N2htME9FOHJGU2h0MDdpcEhzZUFMaXRKUG94eVlHbUdubmVGSHdrc0REUUpjSjB1TVRzUFhTQVR5REZqS1ZaWG5oRzRUb1lB?oc=5"
-  },
-  {
    "titulo": "Mercados: Wall Street retomó las pérdidas, pero se recuperan las acciones argentinas",
    "fuente": "Infobae",
    "fecha": "2026-11-13",
@@ -148,25 +155,18 @@
    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNTZ5SW1CcXpRS2lQNUlJQ0lyMWZ4NTJOTF8yWF9XMWw2Z0w1STh0V01qT0RUV1E5WnV4LV8zeTI2Q05GWnFIYjludXFldmlGNXE0eHBnTVBpNFI5VVdJVUh1bXExVkxRUlFfbWdtU2VZR1ROVUozVEpRYUxCdVdTNjhEUEZkQ3JTaEEzdzZvR1N4YzVFTDFreGt2MVBsOVpfQUJIX0Zqc2dTZXpGYWw4STBQMHRSVktzR0s1T2RJbHJHNjY0RlN1aEtjUlUzNk1HQ3FMUDdUTzVyS3FXY2VzNktRY9IB_gFBVV95cUxPQjVKVHNfNmFtUVVxMTNGYVdDczJFS19iVTNfVUs3UnExU1JoQVpYdHFfVFZUSFhNT1NfQ0ZkVWNKenlaR1Q2bVhNTC01d2VDZm9uS0RmRWdRSjIxT2ZxYWZsU2RKeEZ5YVByS09UUEw5eloxamNlUC1BOTJQRkx4cnJDeXhPSGt4RERtSDMtd0N4bk85Q3k3MU9KTGFuNmo0MmxNVDBkSWN2di1GM0YyT0l4X25KS0JnNnBMalBXZFNKMUgxVXAtalBIWWVlZzlQaEJpM2k3SnItVnBQblI2dk9xTVNXZUhSLWVQT2N5UFNXREhELUhlbUJKQ1V4UQ?oc=5"
   },
   {
+   "titulo": "Rendimientos de bonos del Tesoro tienen mayor alza semanal en dos años • Mercados",
+   "fuente": "Forbes México",
+   "fecha": "2026-11-13",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxON3k0bXNVenBCWElEbENweXRVRUl2ZktzR1p3N1lqYldNNm9JNnE1TVh0cjU3cWZfZmdKLTFyandCRllVbDdhQ0Ryd1NtY014Z1RZaVVwSlpCLWlEVmRjcGw1OGI3UEE2aDJoZVQ1OXYtTldRLVZtWC1KUkx0MEJQSGNIbDNVUmdLNWRfSG1jbXBabW4waHF6ag?oc=5"
+  },
+  {
    "titulo": "Dólar hoy en Colombia: la divisa abrió al alza, supera los $3.318,19 este viernes 13 de noviembre: \" El mensaje es claro: el mercado sigue nervioso\"",
    "fuente": "Infobae",
    "fecha": "2026-11-13",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaXl3eGR6Z3AtV1R3LURheEQ0dE5kTFMxRUNBakZrYURvRTRvaFVBWWxHWm9TRFdGaEY0Ym5QRjVWbnJWMzUyRkRnUXhHOEFBc1BwMF9iNzBUNXV3TlNWTXBIMmVobnFtZDVLWEtkcGxGN2V5TVVrM2RGOXVLLWtybXpGeDNlZVB5MEZQbmhkRjIxbVBZaENOMS1pcUg0M3NlbUFsX0laanNoQjZMakHSAcgBQVVfeXFMT2d6ZmkwM3lTZ2dIOUpBUGl0VVNhUnRuVDdzOVJfcmNvdEZWbU9PaEc3akdCNjJyNFlaMDZFZlFUVWJSTnZfMXMxVVkteE1pbFJBMldVSWFlRFREeUxmUFRKMlJGdXBTQWxCSVlQS2NVR3Q4NVhFZmtGdU53dFJYZkcwVFFvRUlzV1V5M0t4V0VyUGx4RXhZaXk4YzU1SXBFVHBadFQ2cnFyU1pwRWdaQUVSVDJkT1hZRjA0NmswTHllOVM1cGNvNUk?oc=5"
-  },
-  {
-   "titulo": "Microsoft cae en bolsa tras apagón mundial de Outlook y Teams que dejó a millones de usuarios sin servicio: crece la incertidumbre en Wall Street",
-   "fuente": "El Tiempo",
-   "fecha": "2026-11-13",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOeGEyME00SnF3ZmtENGlDcUVBNGt2ZHNPX1U1eHlnNEQxRVBMUzV0TWNjZzFFMUNFbENOQUtzVzVZcmR1V0ZzQ09yRG5ESHFKMExsUHgzblRpby1XSnVucmZ6a1VfMXBpNG81R2FDQ1hvNk9JTGVsVHMzRkxXME1JQ3d5dm9sb0NScXI1WDR3VW1SWEVCLVk1RGxETHkzbkV6RVRubmd3WXpXQjYzS3B3b0doVDg5dmJ2bkNKRWRIMnpObFpyUUJUTWhjaWJKWndyQ2JVV0pqeXhaRnFhdEQ5RDFCTkdkZnRyRktMak5NNHNJU1FlMER1RUtJWkNiY3NqSlVUcVdIRzJJVkc3VUprbXhZbkJ2NzRSSmZqTUh30gGjAkFVX3lxTE1YTXRtaW0zT2tuY2hYc1h3TlNxaWoyOGprdVFsT1Y3RWF0azNNbXU2RTBQVk8yUF84aWxZYWxBNGtpVlR4V1RiZFN1M1RWMFVCUzNsdkVnSTJzTEhSaWdVdDR3RHhaeGFXRDJVSGJGSWhKYk9QOEprUG1aYlA4MkRWejhUOXVsSko3eUtQekptLVczQlBUY0ZYWVBxNVZMall3YzNVSFNKdTgweVJYM2laLTViZjJ2NEJXVWx5cFJTOGNjU0FTS19sY1NxWlBaU3FZTERxTTV3aVlOcVpEaGxWSTlxV1ZxQktPWUVxM0NpQUV3RVdETUhGMmRicnZLbnpaclo1V2F2SEtsMEJaY3VBQW40YVVzeUtjSTRZS3NNdGZCMA?oc=5"
-  },
-  {
-   "titulo": "Economía de la zona euro resiste la guerra en Irán y abre la puerta a más alzas de tasas",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-13",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPRUhvR1pSRlJra0x2dDJVSmhZVXhZUXIwQ3gzclBRckJCeEp3cVpZWjFTZzBIWHRzSm1zeXNrOWc5aEczXzFrWXJtcXhfOFprdGpIWkNEU3M2b0p0aHEwNnBENkJqRHFvRWNJNFR5TEowRjJIcG9zT0ZibU1SYlFMVm83cFZzR19jYk1ldzJFU3ZMeWx5QVA4M1dPMmFBUTEzRGlmVmhGN1JEVGQ4MXNMWUMyTUh1S0w0RnN2UlRjdS1GdzlX0gHYAUFVX3lxTE5wTlU3azFhZ0xOdndPQnUzSTV5RG8wRnRzWTBndDNfbi1IME53XzhsajU0cDh2YWZ2bm9oWVcxUS1VNGdYdWxWOGJKcVFGdVc3Tkp3b2Y4V1k2NkE5U2U5dGx0OVZVWEFteTBVbFRMMjVrbC01MzNCN2FaWDk5NFdGSTdtR1RxQUpBNE9Mb2VHQ2xMYU5HOGF0LVR1V1hEcms3SmlJQjJyVVpHM1JBMnliNUZJbEZsZmdtalVqbUJrcThqcEFjYTJFLXJqWW1Eb0k3Vkt6QXNjUg?oc=5"
   }
  ],
  "tes": {
