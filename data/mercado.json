@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-14",
+ "actualizado": "2026-11-15",
  "indicadores": [
   {
    "id": "trm",
@@ -26,7 +26,7 @@
    "nombre": "Tasa Fed",
    "valor": 3.875,
    "unidad": "rango",
-   "fecha": "2026-11-14",
+   "fecha": "2026-11-15",
    "detalle": "Rango objetivo de fondos federales",
    "fuente": "FRED (Fed de San Luis)",
    "url": "https://fred.stlouisfed.org/series/DFEDTARU",
@@ -75,15 +75,29 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3302.49,
+   "valor": 3302.5,
    "unidad": "cop",
-   "fecha": "2026-11-13",
-   "detalle": "Precio del dólar en el mercado (último dato); −14,21 frente a la TRM",
+   "fecha": "2026-11-15",
+   "detalle": "Precio del dólar en el mercado (último dato); −14,20 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
+  {
+   "titulo": "En esto le daría la mesada de 3.500.000 si la inflación cierra en 6% en 2026",
+   "fuente": "Noticias RCN",
+   "fecha": "2026-11-15",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONHBvbVhMZ1UxejdDZVVwU29fRnhaZVNzMEhnVWNTM2FTTlFIVy1xX3dHLU0xSFBvVlgtUjBSUDBLUGloXzUwQzNwanpDLWRnQUQ3cUphRmM3MTh6cUFpdUwwVDVEaHMzU0hKYkxnZEp5bFBDTE9pVmNqWWJTZG1mY1pRNXlTLU1wdEx3VFFKSWN3Mmt5T2J6U0tJZmQ0Sm50M2VVOWZnOU55T3PSAasBQVVfeXFMTV9FYjlzVk5LcFFjb2hQTldaMUw3UGN2VWdINUxaMnB4elRPSVlwcHBMcUxlMlRGU2owd3A3VzhfQWY1SDk2UXo4cUVGZVl2WEw2SWNoOHFpSXNkUWhHVXlOMjlXVGI3cjZWQ044S3dfNEhUWkdJNXdFX2lxdXN3d213YWJrOTNpcG1Uams3Mjl6YkJETDQxM3VRTGE2bUoxUUR6YzJ6ZG1NblNF?oc=5"
+  },
+  {
+   "titulo": "Trabajadores pedirán que aumento del salario mínimo en Colombia sea mayor con base en esta variable",
+   "fuente": "Valora Analitik",
+   "fecha": "2026-11-15",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxON0dJcHhjOGRTUnRfOVBUcExmRW9YMmVjWllBSXNRSGE0YlAwYXF6Z3V3cmx5TUNOcGljMFpqLXA3cmx5MVd0STdSRnhnX2psOWRUZjl3YUFYOFB5dlY4TWFBOW9vNllWcGVySWZsUmU0YUZCaUtUVEVqWmxoYURkdXYyZ1pGYVFpNFlYUTBPQmpCaENfcEk2dEdqaDlRUTh4TjlGQ1V5MjZHeDVwbXM4Z2tIdlJ4Q1FFa21FWno3OEZTMG5iTE9yQnR1Z9IB0AFBVV95cUxNNzN6SF9PanlBaW9nemxmWEhjMjJ0RGpnNkhvRW1XYVhKYVI3YVFvcWRIYl9USGlFbHhxcThoWnJiUHd5aE5nZUVBQU0zOG9vNmdnM1N2NzZ0Z1YtZVUtVjdqbG5yVDhTMGZWVERaSkYzd1M0b3poYUVCWHBtTzFIalcxTXEzOHh4dHVORWw2S0lWYjJPbFhxRHprdDRpdlFuV08tVXFqZDJ0TnNHX0Ffb0RhZEgtcUZCOTctUDJvTklZVkhBbTVHWm9JSDVaUzg2?oc=5"
+  },
   {
    "titulo": "Dólar en casas de cambio para el sábado 14 de noviembre de 2026",
    "fuente": "Revista Semana",
@@ -113,18 +127,11 @@
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVWZLZWF4NUhGZjVFY1hlWXc4bzBQUkhFVmlBUHZGVHNqTW93VUlYZmtBbVpzV2lKdVloOWYzU3o3NFdpT2FNQVFSTGtISFY4R19xakNTUzNWMDhWSXE3cXE4VlRrWG91dEw5N2ROUFN3Z19rb3pxQWZZdVhUUmVRaVc2bzUzLU1pX24wdHZnM2VCLWtZeEFwc0t2eGROQzlURGZJakpMUHpLc1VtUFEtc1c0ZHFUbU9xY0E0SzljUmJYb3BMcmN3ck05N3VxdWw5d0hmT1J3d0tVcFFnQmQ5MTBoZE7SAf8BQVVfeXFMTUFqQTV4Y2Rmb3c1X245RFV0UzUwNlA5MEFEWUlITzViRjVaT2JhR2hEOHZJcGIyREJxM184OU8wZVl4S0JuOVBYb1VyUWlmbElsVG9FeVZfeGpINUt6R2Fydlc3VUlpUGV3QmMzMFlwRWt5ZkNMM3lnaUUzeVJxZnE1dHZvbU1wcU5paF9lNHRXR29SWW1MMmxVZXFYR1Q0RmNUSlQxeHJGaFp5ZkpDZXFJaXgyLTBpbVNUMVEwX0RJbjN2M0NDUlo5elZCR2pZRVh2RlhUdHBQb054RUNIREJiYmpud0h0QlZnaWNDYlhlS1VjeW5DVl92bElrTFJF?oc=5"
   },
   {
-   "titulo": "Inflación prolongada y presión fiscal: las grandes alarmas que enciende el salario mínimo de cara a 2027",
-   "fuente": "Infobae",
-   "fecha": "2026-11-14",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPbmlpOTRkVXl6Qkp3UDgyVmVCTm9fZHZQZlJ0SGV6WXFqMXBYclYxTVlMQktDUFNsa2VQN2pnaExNNUllWFZhT00xeUVOSTB6YUxMazNaaTl0Z19LTW5JOFlkUmdBSUVWV3ZhQUQxX2k1VFNoc2t2NDNyMldyRGxRQUJnVjdnZG5xY0JYN1VvVzNqZWVOS1ZIRlJ3UmY3M1AxdkR0RUVVa25FMDMzeTkzal9UV3RFM2RXWG1NNnlNMENEaERaM0hoZFl4MGpPYldKUEp2WThabDhwaDE5WlpoX2JB0gH8AUFVX3lxTFB4MkppZEtKNFZpcUdwbUU0N0s2VkdvUW5OOWVLakpCVVNlZWhiZmpiUEVSNWxzLU9PNWlvajRCZkhLc0RzSVBrdWNmNktqenQtUGVTT0VCWnhPWWtUNDFXc0E5SG1xamRYbnVDUllVYW4zc0dnWnF4a3VMQUpzYVRWbElPVVpjZWx3OHNzVjRBdkh0eUl1d2s1SnpPQ1lVQThNd1lUV25UcFVMQUY0X0JadzVqRmp0a0c2bmxmR1VudUhCMXpnV3ZiMUtxMVhyNXhGTmY4eTM0QmNoS2p1WS02Q29yRE9qdUhoVkVEalBlamJhZnRvVXl2QVI4dQ?oc=5"
-  },
-  {
-   "titulo": "Colombia viviría un 2027 de estancamiento económico y alta inflación",
-   "fuente": "Valora Analitik",
-   "fecha": "2026-11-14",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeTdhTTIybUhpYjFyRGRqd2t5czlDV1Z6RDl4SkxzTmhFZkxHLW1jRDN3UGFUb2RYb19DVGF6aUxpaHQ0cVRldTlEVDVfa1lhOWFxcWswajNIRlc1cUNVR0hzeXVwa0RscXVmUUVObGFNNHMxU01NMXR3Qi1OdzZxSTJYZUpTc3Q0aFdWWHNqOWNnZ3AwWkRN0gGcAUFVX3lxTFBFLTFYNFAyVUlCdjhoa0J0a2dLUXA0UmVQYy1WcUpnOFRMLVA0SXRTQ1dOcTdpSzJVb3d5emNIVVVSYlFQNWRnVnBiVFZPQl9wY3BxWmg0RTlDZmQxaFFkWjBESFlNVENTR3dZYjVXX2F5NzQ2NW8yZkk3d1kyUTJQaEc2TlhKMzM4RGlJZzluQXRoanl3LVVqWWtyXw?oc=5"
+   "titulo": "Dónde devorar los ocho valores favoritos del mercado si llegan sesiones de miedo",
+   "fuente": "El Economista",
+   "fecha": "2026-11-15",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNOGxmanBILV84ZTJBMlNKblVVOU84N2ZtMEdLUU9nZVd2ekwtX1ZkUTluemZkVXFPallmTGF1UG1pOXlBNlJVQ0dfSnVMdXhmdWNnYmdyV1pHaHpSV09WeUdaSTQzUVlyUmpTQ0FDcnB3blB3azVuWUtUd2VUaXlpeUtIZEk1Sm13RHRKNVota1hrbjBHTTZId3lBZkUtaGUzcExRZmRHc09hQ2c5S1gzamlyQzE0dUdaVkhwYVZ5SklDMXdXemp0aURZZGdyaEZPNVRwdkZIdElBcHlCblFQaHZPZkVFQlo4dW1vR3dxMEPSAdsBQVVfeXFMT1hIWXAxVTd4Z2xXMzRnbkhzbUtfQmFfME1VaEgyU21Ha040RjJQbG9lekV3SXUtODNMRGNGTnRhazdBUS1BS0JKOWRvTXFwQUVRWmxnRFIzR0Q5UHJiTG82QlhvalQ5Q185QVV6b0YzQkJFWnBUWVRWeUtXOFIxSDhWT0MzclN4bGdlazJMb0xUWUhvaE02bS1OaVFSRG9RWVh0ZmpuS2pSTGFscnZrcjhhbkJ3QlFzUlM0MmZYUGF3blFCRW1vMkJERUVYRXh2QUF0LTJCbmI2Zms0?oc=5"
   },
   {
    "titulo": "La Fed se encamina a subir las tasas en diciembre: el mercado ya anticipa otro aumento en enero",
@@ -153,13 +160,6 @@
    "fecha": "2026-11-14",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOczl0UEJpTjYxdTJIdFB2V1V4cXFZSFhwLXFmdW5OTlp1MDY1SGJuTm9NRjNBWnB6RXZNMnI1Q25MZy0wQ1dfS19jSzdMY2VQSWN3WG16R1Y5N090XzZnSVF0d1dxYUwzOW1mc24wUVl2Ymc5R3NXVWNFcllZbEFuMjJjVWpneWZ0Snl1cEY0czVvSGNVQkJFRGdheFV3Q2twb09Uc0lMWFY?oc=5"
-  },
-  {
-   "titulo": "Monedas retroceden en medio de expectativas de alzas en las tasas de la Fed",
-   "fuente": "El Economista",
-   "fecha": "2026-11-14",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOc3lENlZFcW5ONWNrLTF1M1pueFNrT3JDdnhBSTU1V2V0TkpOeHU1OVFRWnEwTDhUTDZrMFhQd1dXbUhkUGNIV3hMRTY0a3pFMGFWOEk4N2ROYlNTbjBwdTB1OW4yb0lxOXpyVzRaOFNNdTBIamZTbU9WTDNKME5BYTFyd2dLQlRTRHR5Z1FmX1JYUGIxRTJKeG53SEtXei1oN1ZlS3ZDNWdXUlYteVVZU1V6UV9mUdIBuwFBVV95cUxNNnloSEU2VV96ZXRyMUZnb19oWE1NYkkwMC1CcVlSdWs1WlVjNEstYklPYXFmVmNxaHZrX1N6LTdxMWNxaDNOSU9wZ2J2ZE5rV0xVeHJ0RFllV1I5Snc5ekpQVHQtOGgybGZ0dHA0MVhvTU1iQ2c2VlVJc09vN2RkSEFBYjFQMjhkNVRKYk93Zk1BcTh2UmhpQWx6TkJRWWd2MGFMakhJWVFWdDBCV01YNjBxWG15TEdVUnlR?oc=5"
   },
   {
    "titulo": "Mercados: Wall Street retomó las pérdidas, pero se recuperan las acciones argentinas",
