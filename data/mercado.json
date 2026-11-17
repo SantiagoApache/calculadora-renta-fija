@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16",
+ "actualizado": "2026-11-17",
  "indicadores": [
   {
    "id": "trm",
@@ -16,7 +16,7 @@
    "nombre": "Tasa BanRep",
    "valor": 12.25,
    "unidad": "pct",
-   "fecha": "2026-11-13",
+   "fecha": "2026-11-14",
    "detalle": "Tasa de política monetaria vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/59/tasas_interes_politica_monetaria"
@@ -75,98 +75,98 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3310.8,
+   "valor": 3315.99,
    "unidad": "cop",
    "fecha": "2026-11-16",
-   "detalle": "Precio del dólar en el mercado (último dato); −5,90 frente a la TRM",
+   "detalle": "Precio del dólar en el mercado (último dato); −0,71 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
   {
-   "titulo": "Precio del euro hoy en Colombia: cotización de cierre del 16 de noviembre",
+   "titulo": "Ley de Rescate Fiscal: esta es la lista de coordinadores y ponentes en Senado y Cámara",
+   "fuente": "La FM",
+   "fecha": "2026-11-17",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSHJWeG00NG5iWkdUWkp5aXl4cC10OGRidnpVclpHU2x3VUo2Z1hrUTNfMEYzRDdhb0RYbjdWcUhaX3diSUdxOVhQSE1SY2VxZGNqQjR3NG01SFVwUHR6akV0X2pYVFVXN1Y2YWZEMmFOakpRdHVYZ3ZYa0hxaDd0V2VaSXNZVG9hYnB1elE2d0Jsbkx4YnJJQ3lWTTJRSmdTeXROWmxMRTLSAagBQVVfeXFMTW9KSFVwaEhBNU1aR3FZckNMUnI4Rl85eEVhTGRQTE5ZWkVHam82SWQwLWk5ZW15TjlkMlZsZE1sLVJtNnRNOHlOaHpCTm5FVFYwb05BcFJkc1NEcjlSUHVRem9NSk83V3VMZzBnQUo5VXIyTzhJSU5fYWVodmVHczVVMi1kZGxzZzcydmJSR2ozbVhnX2dNZ3NFM001eVZieWJIdy1IQUNJ?oc=5"
+  },
+  {
+   "titulo": "Aumento en el pago de las pensiones está a punto de ser definido: cómo influyen el salario mínimo y la inflación para un millón de personas",
    "fuente": "Infobae",
-   "fecha": "2026-11-16",
+   "fecha": "2026-11-17",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMUk2cDdaQ0RFcVRLbzJiNjJRcFNmNXRDMV9vSUI5WXQwVUlHaTUtZlN3aXczZ2dSOURicEtKcHhPTW4zTHhoUTFsZTZQRkZFME9lWEc5dE9IX2xSZ0prWm5Ma1MwVXMtbW1ZdFVnZzZFeUExT3BZc096RXcwWm42aXQ5OERvcGZPMl9ETFdNM2otV3RvSmRZbnFKRjFldDlJYTgzVkJnWkpWRVFlUlYzOHFKVG9WYWxT0gHTAUFVX3lxTE53ZzFCZzRMRDMwMTRHbzE1MGZDbTlDb0FJQnlfTWtQTnVHQS1vX210TFpRVVZteHNyb25hbndUbm1zSjhWQmVBUHRjbXdydVBuZjYtTjlYZ1BMdkFEM09mSnVWOVJleWI5U2NGandNNUQ5Rkw4azdxRDc0ZThMMGZ3ajdVNVRIX1c3WnVZTzdsMGhFejQ4OTVGSEFhOEJLTUVEWUtlZmdsMDR4NnVYaWMyREhuUE0ycUlsRXFkVHFiYTU2WHY3QVVYaVlMd1BoZ3ZSZkE?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOWUwxckJCV2FjZ1BKRHRVLU5YTjhoVW84TUxabkhXOXNDbTdJRk1zVUFMbmxIcFR1a2Q5SWJBWkphSnZWZUItR3BWem9aS0lCR3otbW1CSEY3cHZpMHNSS29uQ0NlRkdWb2JzR2gwR1Z4bHVPMWJwYkQzWUsxUThqTmROc3VKcHM1ODhMY1dzY3k0NDU1eHI3Y3d6ZTdXWE9YWElicS0wQnJUbmJOa2tHMjIxSzdNc0ZLMTlBVEN0NW1ETVQyNDBHVkVKZC10Y203NUFYQTdVTk9RbDlnRGFtdTVUcG5FejM2UHpTS2huWGQwUDhJdExFdDlEbnV4dUJMUlFHb1RVdUptV1lfZndEdNIBqwJBVV95cUxNY3lmS0o4aHpCdjhMNE9uaHNUMlpYTzhfQ1l1bVVReXcyelM3c3lQM3EzT2g1eTMyQk9rRm9mWEt3eXMwSEpqS0UzY1ZTWVRMT1J1RXp3V3liM3MwTXU2NmlVTnQ5N1ptSGNFZUtMS0UwSXR2Z29Ccm5iMDNfbE9SU05jeF85QWxDUWpobVNEZ3VJb1VDMXNuNjc2anktcG10MGxfZXl3WkZvYXdGNlZiT19lSDB4T0EwVVFubEZwd1hpVkNZczg1WmxPelJOa1RJR0dpd3Qyangxd0hMaTNmdkFWMGhhUmhCWm1ydzVTNWIxbHMtbUhtSHNLOVBZVEJ6MzBNeTMwdUVTeFZjYS1ZeU0zMFd4MFE5R2VLanB4S1B5RDUwazhyYlZqMA?oc=5"
   },
   {
-   "titulo": "Personería abrió investigación por presunta corrupción en Secretaría de Hacienda de Medellín",
-   "fuente": "Blu Radio",
-   "fecha": "2026-11-16",
+   "titulo": "Colombia promete recortes de gastos y disciplina fiscal para recuperar la confianza de inversionistas",
+   "fuente": "Bloomberg Línea",
+   "fecha": "2026-11-17",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaUtMOUtKQWJLMmlYSUxwaWxvcUdiVFhkRmFwbkNteGFJM3FuV0tPNTJQSXZfamJ1N2ZRb3gzbjJocGFXcHZVWFM2T3NZRENUcTQwTktURjY3aVVJNVpNSUNLOTMyR1lwS0s5OXNOSHJiZTdVTEUtaGVZQ3JzSmdPbllkQXpmcWlWelRnWUlOY2ZSS0dtcE5XaEMzU29nRjJ1Y00xQW5fX0phNC1BLXBRWXJaTlJvUVJuQWtoZDhsVEV0UkJqZ2IwUDNqOEpJaC1UdE5NY2d6RW7SAeYBQVVfeXFMT3F4djdOOGtVcjVta29FRVp5aVJNb2g1V2owclVhRHUwMWFBU0dVQ3lWMEdvQ241TEYzek1WQTYxUUhkZDVNaFI4UWxFVjZZZXJlSDBkc2x6VmY4ZzY4ZDVOU1FFMV9xaXRXWTRoQVFEbVJqNHA1aVVHWE5zWUpobURwZ0pMTkEwaDBpVXhOdEFhUFBxM183dEJGM0VBcU4xbVV6LWtIZHlseVpsalZHUDN0NXpwZnhoV1lxMmJWYW00bTNsSmZrbzhzVFU1emRwMzM3R3dFRE9SXzRVM1dvLWVOTjh0ZWc?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPN0ZzOXB4NzRxdmNVaFR2d2U4eDN2LVhrRkxkVGFYdUc5aUJKOEdQaVZZdGFiRkRwc3V5Yi1lekhkSE1TSXdIVHQ2b0dFRVIwLVVuQ0NJUDdDdmVHN0RhODdrREMwQWh4LVliTzBUVk95R0ctR2FjdkFZWWNmbHltLUJ1cEZqT25JTlBXNzFLbmFJQjNqakFvSDZ6REJ6NW9XS1JfRXFic2s4eWJSN3NjdU03MlVhQjNfTmtOc1JGU3NJWUN6Z1N6RGRCZ05HYmZHNEZvWF9kV3RaaXZWRDNMVF9lamliM1l6QmRsatIBgAJBVV95cUxNNUh3RWpvc1JlME1hcVcyb1NWNjExRjF5bk5lT0VOZHU3S0R6ODBGTFFaRlk3SEVUNm5VSkdYeFdORVFqU1ZSV25FVDMxZ3dpbGMtcV9sejVSbTg2d3NVaGFKa1Z5ZkNSQlhxLW43ZUJwbnNoenZkNm8zRndFaXpaNjRBbWZIWndNU0RTTmpseW9HUnpvSlp3eFljbnZJVDB3UHVkOXNSNzVETktSb2U4T3I4WHk3X2pGVzRIdGF5V004UWd3dklSdmx6RGlxc2Q2RXh6d21IZEsxOGtJSllRZU00YXZuZC1tNVliVDlKQUt0MmZyS2V3Wl9TeVFnTktB?oc=5"
   },
   {
-   "titulo": "El precio de la papa aumentó un 98% en Colombia: el fenómeno de El Niño y la inflación son la causa",
-   "fuente": "Caracol Radio",
+   "titulo": "El dólar rompe los COP 3.300: ¿hasta dónde puede subir en los próximos días?",
+   "fuente": "El Espectador",
    "fecha": "2026-11-16",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQT0hyVXZEQmtfWDctc2FHUTE0QlhneGRxTFNfY2x2cGllWC1oWlJabmhmMXJPbUNUajQzdGs3NkF5S1pPc2RmTzhpcjlNNmZTa05nUXhnaTFyTl9GVXBjc2F1RDF3UlcxdVd4RV94QmVlYVJMNHhOcFRLOTZ2LUpaYS1LdXRzTTJMU3RsREtuWmpHSVhPQ3ZCY2pCNzdlb0tuQ3d1a2Z0STdmSHk5VXlTbVgzYVR0NHRrYkFPNnAzemViYWFSQUVUWVp0ZzPSAeABQVVfeXFMTlEzNGlMQ2FDTEQ5NEFldVVkbHVJYWNFYVRFamctbHdlaUdXWjhiSXNfNUtZRGFWTl81QnZWVGE0VEU0RGNkMWlMNmZuU3huSWYzODczOW9fZ25Fd3ZHQzB2bHV4dWVIYUdQeXF1Y2dBV3NpNEhkUkRlbjFNa1FDaWEzdmdpR2MwVHduVUMzRmpXZVl5UTllSkVzNEd0ZHRiMktDbjNadElSdXdXWkxqN283MU1mNnhoc0RrTW9GWjRtdk9IYUNPWFhiTE50dGxPdUsyR2UyRklRR3BrOTM3RFA?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNOG1wUDd4RU91TnRrUlc1M29pT1NmNnhNQ1RCd25BWm44SFBvRFNFUWxmeU1feERFbVVLV3Q5bXhEeWJBN0FKT253UFdpV0Q0MlRIT2oxUW56QjMwUVQyUHdBdDZmbzBjanRwWXI4WXpKdkEwOUVHQ3ItZXJqNk0wMUdSUjZNQ21OTC1FeXEyZzJKSHI5eXE1Y2x4Zl9ZVlZIcVo0d1FFQjNldUIwU0JSNzJ1UVM1ZVgwbnpPRGFjUlFZM0xwYTlsM0UzSkLSAeABQVVfeXFMTWJkQ3dxRmRRTGRFYndKQkw3X2Zib1VlWTRQc3RmMm96a291Y1U2YVBiRE0walI2REZEakNvaTNGTzFEbUItc2RYY2Y5NjJrR2dfcTZzR1l1WDVEODJaS19NcUxCdHgxTmZNenhPY1ZxbXlMaDV3SUdpdmFBM2VuY21GcEZwTTRMM0FMU0pOckVNVkJRVklqWlZjN2FFXzQwcTJ4V2t1RjVBSFJPcXNaenMwNzA1Qm5DenlFeTNfVnBsR3RZWmVxeDN6TFNwMHhLTEE1NmdydEppOHpBXzByUzQ?oc=5"
   },
   {
-   "titulo": "¿En cuánto quedaría el arriendo para 2027? Colombianos, atentos si IPC sube 5 % o 6 %",
-   "fuente": "Pulzo",
-   "fecha": "2026-11-16",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUWtNcTZHQ0lwSF9xbjYwY1FuRDYwOWFRY3hCaG9La3VTWERaNkY5SXItSURsVGVHNEJLR3U5Yzc0WGlNbDRCNlkyekZNQ1poV2NyNU9JY1R5d1hiM3R3YlRRSkdNMVY5SlhVRHlQaWJmMU9RX0tFNXo3VnJMYVJfVnJnUUt4YldGNVZiejloVFRHZjAtT28wRWFfekhqRV9VUVHSAacBQVVfeXFMUEJaM2FtRloxYmtvUzdPUUVKR2s3bkxTcDI2MmpIVlgwRi10WkxlWU9WNllmR3BKN0JueGZjYTVwcmtLTlh3dmdWenUwZUxOQjRmd3h3WXhLOWFfYnluLVdrUjNFYm1tSkJVUXJ3ZU14elQ2VmlDcDJmNU14Z3Z5VHR4alNWOFZ5TXhfa1pXTWFkMWR5QWlBTG5aVWU3Q2VNR0tVTEZSa1k?oc=5"
-  },
-  {
-   "titulo": "Colombia inicia gira en Nueva York que busca más de US$50.000 millones en inversión",
+   "titulo": "Colombia aumenta su deuda externa con emisiones récord mientras crece el déficit fiscal",
    "fuente": "Bloomberg Línea",
    "fecha": "2026-11-16",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZ2FWNFV6T0ZHYUFtQk1FcjBidDllb05aalN1VXNWam9rd3hSdkc4LUw0RGdoWHFTejZWc1JLREozcVFDM201RnBoYkdPTVptT3c2T0I4V1VwY3FXbERXRklQV1hmVEpiRW9fdVh1cTc2N1M5cEo4czB1eEJGNUUzRUNXUlFTR1JrVEhUbW1hdXhQdGZIZlNQanJSX3BjWDNEX0tIZHBKM2ltYm5Nbm1rb01ZTWwyeGRDZk84enk1WXA4YW1lRkVObUp0NlpWMXdaSUHSAeYBQVVfeXFMT2p0dEJpZVBiT29sYXRfMVVTdzA1aDZZd1ZUb09tM0NVVVZBcGVtakpJdlptZHJyUWJvZ3NGT1gwSzlnRkpyUWJyc29KaUhwbk1seUhpbU4weGozQjRLZm4zNmFIbjg3Z3Y4ODMybEJzSHhBN2NfRkk3S0lYbk5zbHNvV2pNbEVQVWZESWgzc1VHMVRMVFJGSlJncWNKSmxFOGl3bk9WMFJ2cjN1M2FmZFlRd3Q1YWM2M1VLb0dNMDdncm94Z01MYVkwZ281d1AxT25lMVc2Y0lqa2Z3elZPb3dpd3BWcGc?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTmxfZF9QdU13REVISlFfU1VCMnF0MHNUbTJXRXZtU0xzcXNjN3pFZ25IN0V1UDkxcEJnNUtWY21ReE5DTkRyQkM4MnB6ZHppV2h2VjJua19NcU93dmtnV09QNC05WUptY3hhd0oxblg5dnY4VHNFM3dxSkNiRVhjclBLeFZ4cjgtT3VaWmI1R0MtV05UTURsU2lKZVU1VUQzNmlROFRsT0lEZFkxNmJMRGRMWWRKM2VqNmhST0Z6MG8xS3Q5R0s0WmQ3NDE1Nzgtekk0RFROYkduZ9IB7gFBVV95cUxNaG4tN3RIVTMyM0ZJS1UzcV9UdDNtSlE2TkU0d1pzTWVLS1lMaVhWdjdXX2E3b3BCWVhCNGhtUFkzNXdIQnNUV01zRGV5ZHFCeVBQUHh6ZEN0M21fNmhURkFFaXNIRHhlemljVHlIR1c4aDFWSTFKWjZpLVdpRXBFRHhzbC1KdUE3ZVV6UGYtX1Rmd2puUHk1c3YyVlhwX1R0eW05SGVXVU5NT0tTN183QUZNRU5PR1VreV9KOXZOS3BBWlM4ak95cDhSclE2UHFmbkxnaGN0Y29waEt5ZGx0Wlkxdm84aDI4aWQ3T09n?oc=5"
   },
   {
-   "titulo": "“Asumimos rescatar la economía y destapar cuentas falsas del Gobierno anterior”: MinHacienda tras balance de los 100 primeros días",
-   "fuente": "Revista Semana",
-   "fecha": "2026-11-15",
+   "titulo": "Aumenta 98 % el precio de la papa en Colombia y golpea el bolsillo de los hogares: Dane revela qué otros alimentos se encarecieron",
+   "fuente": "El Tiempo",
+   "fecha": "2026-11-16",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPUGMzWlEzMWkyUG1ON3RfX1hiem1OZTdZV1JlZUpROUxNeWYwdlJsRllIUHVJaTAtbnB0d1NiblZ5MENBQW5fdlU4NnUtS3VId1Y0dXdkYnFDRlNHTDJ1V2Voajc0ZDZGZTk4QkNlUG1IRVU3UXd4dC00Wlh5MzJLMGdHSnlPdFQzMnZWb3dQSUV6Y3JPYUhSLWN4ZkhUaVpCQzlybnBuZHpMb18tcmI5RGlkZnhQNTYyenNNVnhsY2NPX0picTZDMkRrekI2c2NCemdieDQ1TE9wSHpmS2xBbTJmMkR4b2lrWmN3TXRGMGNtaVVNaWtsNDgzZ0JQOGN1ZURoMXVkZ9IBjAJBVV95cUxQUlYwdFNjZHM1N05NYXVSazFYWVJzVW1kQkRkcDdPdmRmNWg2c2FUZjBBR3liMFZLbm1zUzltOF9CNmlEWEplWkdXb0hSRXM3NjhnOFp0RWIyZUFUQmZzb01wUzNTbm1DX2pMaDh5ZXVkTkN4WG9FXy1MUHJkUGZkQ1dzd0RYdUNBTkxZVXdOMS0yY19TdmR0WkM3cU0xaW9wblJkLXNfMEtIS3N1S21RM05qdXBGMnQxaXNqUm9ucEZEOExyZVFkREt3MjJObnR0ZXpMYk5hLWYtZ3EyX0hUMm9fVnc3b1VXVk1OckN0OWt1c1A0QlhYOUZXTDZZSHc4V3d2NjJXSC1Hb0x4?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQTXYwUVpvdU1lemNHUlM1VFRnZlJPanRCcHNBWWZvYWdJelJJdTBkNkkyaVhxYWNmRHB2eEFadG9CVWhnZUp3Z1ZuakhCMWx3UVpoRU9aUjJBSkF0MU9QUlEzNThIQlZJdWdLaFJHQmU5VVRlTVVUb2w3NlB5bkF6aFB0YmFUcFhRcXp6R3FEdHBoVzI4MV96ck8zTmFoZ2d6UlZvOUE3SlgzTFo2amVod2lLemVCUEFiODM2Z2xWQ0VoaGtxS2QwRUY2UU54UWRkVXBHSUdteGVCX0RuekRneHBrbVVOWDJ0bVVWbHhtUEJKa215YWJQcUJBWkV1Ti15VTB1RHNvMHY5VkJSN2JiQVpaNmw2bTJV0gGeAkFVX3lxTE5HM1RIX0VvaS1wSlV5YWo5UGxMclhkSW0zdkZKNXZidnhvdzVqNlplM2lDY1hnbW1IOEYyckprUUV4WmNpVkRnTl9VZXZqODFlRXNtQkFEdnVDUm13STdwVXYycUFBbC1BYkpNMUxjejI3ajBKSERNVEtVRVdHSVVQVWN3UXNwS2xwSkN4aTd4S3haTnpZWGVUN0N0SXBrdGxMVXRTRDQzclJiMXBGU0RSSXduUEpNNVlMajc1WTF0MndxMGY3TlNOSHBsN21IT08yMXREa3F4NW5wM3FfZjZCRnI2NU52UVpZUy1zWXJKUl9yZTBaOEVXSldIbElrQW9oSFE2dTNrVzRKd3laRHpsUHJQNmR3dER5T3p6Tmc?oc=5"
   },
   {
-   "titulo": "Bonos del Tesoro sufren una semana de pérdidas y operadores buscan pistas sobre nuevas alzas de la Fed",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-16",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQSkFvTWVodXQ0eHJORFNwV1lac1BWSm0yYmQzX3dhZ2RKeU55eHd0c1RwQXViOW94Y0Q5STdXVWpmVEZweFpRNXdrWEhFRUYtY1RWYjdtLXkwMS11OVJacmdhVjhkWG1xbkc0NklHVG45QU9meF85VGU1RXltbVNSYUpBaElZYTVfWk0zV2N3UkxWeGZwTGh3V2NNMElLREpETXpFSUlkU0tDQWZ0b2FzYkVVbGdEbHdlUEx2RGdwbk9aTlBETXFLOU5RcG5KeXROVGJUZDFHU2o4d0dkM25IZjhlQ2RKSjZuZEJmS2hoY9IB7wFBVV95cUxQSkFvTWVodXQ0eHJORFNwV1lac1BWSm0yYmQzX3dhZ2RKeU55eHd0c1RwQXViOW94Y0Q5STdXVWpmVEZweFpRNXdrWEhFRUYtY1RWYjdtLXkwMS11OVJacmdhVjhkWG1xbkc0NklHVG45QU9meF85VGU1RXltbVNSYUpBaElZYTVfWk0zV2N3UkxWeGZwTGh3V2NNMElLREpETXpFSUlkU0tDQWZ0b2FzYkVVbGdEbHdlUEx2RGdwbk9aTlBETXFLOU5RcG5KeXROVGJUZDFHU2o4d0dkM25IZjhlQ2RKSjZuZEJmS2hoYw?oc=5"
-  },
-  {
-   "titulo": "Wall Street cae mientras incertidumbre en torno a Nvidia empaña ánimo de inversores antes de resultados",
-   "fuente": "Forbes México",
-   "fecha": "2026-11-16",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUk9PcnljeGNVSEFjSjdOcHlXRXppdlBWQl9yTzVqaWN3bjFiel92QTdrcHBTSUJBa3VKS05oU1Y2dEw5M0xjVFNjbzRHTEVOckJqWWU5YU9iTEpTWU5Hb3ZMOHJmU185RC1aX1FTTTc4X0Zlcm1RbVJmbERMY1p6NmhZc2I3VUtVdjlNbE9ubzBCcXYxSG9Sa1ZDek9IUmhhWEtXQnh3UVR1OHFELUo5aDQ3LVRvOExIRUUwZDA2QmVLWm1H?oc=5"
-  },
-  {
-   "titulo": "Las acciones y los bonos argentinos cotizan en baja y vuelve a subir el riesgo país",
-   "fuente": "Infobae",
-   "fecha": "2026-11-16",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPY1N1Z3Myb29HRjlvRW9wdHZxM29oNFMxMmJMekhVODNxLWVaSVNJd1A0dmZub3RwX19iR0pYZXp1N0J6MnhiS1ZuYXlDZm82RVpfd1U0V29vZlVoTTNiUDFCaHotTmRkbFo0UVgtOVZ3ZXQ1b0lOeU5yZHhMVkRmUkdfcFpvS0FFbThNMHdCeHExQ3hobHdtNnlnRzg0WnZOMnNjOWtidWMzT3BCMDI0bmFDYW5sZnpFb2poblo1RVVRUUJ6Vmdn0gHiAUFVX3lxTFBWcjA1YV9yNEFHU1VOTUhRVVJJc0x3Qnc3WFhSTFF0OGRYT3VLUkt0a1EtQ2w1NXJSazRmLWdnSW5MeElJWGplbHltdjNVb2FFVFVIMjVYdjdPc0c4M1pzMFRvVUIxWGxfb0JPSXV6Y3ZlVFg2TFFoOXFCTnFGRHpGVllOOWl6LUVHWm5yQXZiZ0o3bHNiTlVYTXNjY2s0UVBQSFBwWWhIX1lUWTBoMlE2b0FCVDN5bkx0Z0pvN1ZoSHZDdy1KLTVjdmdFemtHY052RXhKcFBfUGdNNGp1b3FaNmc?oc=5"
-  },
-  {
-   "titulo": "Acciones tecnológicas caen mientras Wall Street espera resultados de Nvidia y salida a bolsa de Anthropic",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-16",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPNmVQZmRWUTJKYjNoMXpWc1MyRHkyc3NsTXFVWDdIeGtMV1p3SVZhTXFyS25ZRlVyWDFHTmFPU1JUZ0liVEE3b3dpLXFUQlVtUjlwTEx4aVh5cUxHV0tWaXRIUWU5VVhDZ1NyQ29GRVNBNG5XcjIzV0tfX0JLV1Qxajh0WHp0YmVRVlo4ODhqRkR5VGl4MUxta1VoTFBjdXdHektvcThLNWd3VWQ5RnVZV3VaQzcwM3dIcEE1RnFzODNPZTV1TVFYR2k3dFdfNGZQUHh4OUpaNFN6ZjBDQ2c40gHzAUFVX3lxTE90UHNPbmZ5b0o1NGtBbklSMHhLYjdkbzZDTWc0RVpFNVNIZzlBV3FOX3hmNENIYmVWSkZPaE1LMFlJWnpicnduaUdJUmRBcUZBdThlRXZoUmV0czdtQWdULXk0TzFQTjR2RmdZNWRkc2lFVHlqQ01XdjJ5VXpYaTdreWtraDVDZ2pYSm9FQ0VIY3ZLeTc0UmRCWTR1bWZyTnRqRTI0eER0Y1lub3V0OXJwVkVQTUZLWVJQbXVFb05WdHdYZDVUTkdiZGtodGR3SVkta1FMSzBsNF9CU3REUG9vWm1CTEhQanNXYmszR3pHam4tNA?oc=5"
-  },
-  {
-   "titulo": "Todo lo que debe saber sobre la salida a bolsa de Anthropic",
-   "fuente": "Bloomberg.com",
-   "fecha": "2026-11-16",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbThWcG1VMWVmeWp5ZGdwMFJoWVJ0Q1RrVnlWdEl4ZDgzQUdhUmx4OV9CajJOcVJ2UlMzX0N6YmVYNU05SE5qLUh6UFMzUTRiS0ViUUhzM3FLaXJvNmViakNxc2h3TnVaMzFLNG5JVmlmVU5idFpBLTRqcUlJVTVXbHV2VGtzeHYzOEVFeTZBcUVCWHpnSjN1d3FVX3JkZzNHYi15V0pzRE1aaEpTSEdkZmNsRndqQTJkT1lz?oc=5"
-  },
-  {
-   "titulo": "Goldman Sachs confirma que sobrará mucho petróleo en 2027, aunque Europa se enfrentará a la escasez de combustible por el mantenimiento de sus refinerías",
+   "titulo": "El oro en su nivel más bajo en más de un año",
    "fuente": "El Economista",
+   "fecha": "2026-11-17",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZ2xTek16cXVIY1lZeTJ3VzlmUU41eF9McUhYZjZ1czF4cmhyX1JxdkJzeGRIWDJnX0FwdTBGTWRia0JuOU1sZWdYRW9fWVB6RHJpWDRGbEwzLVRXYnF6cDZzZHZnY3BuZDdwcmdZd2c5dEhlYlNkRTg0US1XSFNkVdIBhgFBVV95cUxOR2ZHR1FBMDV0VHhGSi1ZMzQ2S1pXYXc1NVVKSjV6cDVMVkxwZjl2SzctMnVrdW15ZWt0MVU5ak9DemdOMkg0ZXJBOEJYVlZTX2lucV9yZElFeVc4bW9tcks0c0lKWmZVTVhSQU9QN25QOWFLWVM4QldNWmd2NWd5bjd0aThwdw?oc=5"
+  },
+  {
+   "titulo": "Mercados asiáticos extienden las pérdidas tecnológicas de Wall Street antes de los resultados de Nvidia",
+   "fuente": "Bloomberg Línea",
+   "fecha": "2026-11-17",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNSlRzOXB5MklsdTNsNXhmUkpJVGpNaFlaOWxTYTJKN2U5UV9PRmI4VVVrLW8xajZXVlNGZVJsNGJuOElCZXRLZEx4XzV2cGFKT3lMRFdnSFYwUnllNzEwYU8wdlJXWFU3ZlVINDhhU1lnTHJHTXRzMVJFWUNESm9udGNsdzdrbjJDbHhYR0o2d19kbGhDa1AtdkIwQVZ3YWhJcnBES3VFZkY5TWNjQ3hVbHhhWFRvMm8xOGFzS3hwWkY3d01TU0tMSUV0U2lXWjRCTjA1NlJTUV9QSFlx0gHwAUFVX3lxTE15QmNhdllLNXp5OTBGRWJxSlRHNV9pVkdyZ2ozTGIyUElEOEFfNnYtdjRXRG9BSk9CUGlkWGY3bzEwZjJHZ3REbmVHNWJEQTFpNkpmcGpvUlBwRW9PNVJqNThIZ2JrbDZXX0s0bkE2U29rU3hMYWdnbjJxNjJ3dkJxS1B2dEV6bWt6ckc0bkhGWGpJQ2oxTl9XODF1alVVYURrSGNFVmlwbkR4X19HZlJObUt0VEhQdXROdW5TQnZsaGdOdENkaHY5cnRDUkVadDNPdEhvb3lENFE5cVctcUZhVzFqMU41QnpXNTVTM3RRMw?oc=5"
+  },
+  {
+   "titulo": "Fuerte caída de los mercados de la Bolsa de Nueva York por nuevos temores con las firmas de inteligencia artificial",
+   "fuente": "Portafolio.co",
    "fecha": "2026-11-16",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPSndHY2NtT0RYT2k0XzQ3V3FCVjVfNllNdnpJRmpaSXFGZndYcjNodWNmcWZYcjR4c2xTakc0S0JQSVcxN2p6VUg2Z19MWEFEelVjOThqekJkaFM5d1VBTm5ZbFliakNoa3RtbWhSUjQyU01veEFkeG9sd0VxMG9sM0FiNmpycWhZTXEybkZIVURqekltYUFwM2Y5dmh0M2RkZzN3MjA3Z1R0a09uRjNKdENlRy1yTjRUQnppN2VyYUdlQWtaY2dISXhZYXVLMV9SR1N5MURCNDlFT0FqNUE1b2pOVDZMdS0tX1R6NFc4cEtzYk9tcmttSkhOOTRleURrRW93c0V1aWV4Q1FSX05NUFl5M05HUC1qcF9jeC1HR19vMlB4OEVKNUZLblk3RlY5bExuSDZTcjZUdnVYbXY0RWU3d19PWC1ZY2V0NmZGa3PSAbsCQVVfeXFMTlNiS3o4Z2RzajRqWnQ3SDJuaTd3V2syYVQ5cnZDSWNGMmpTX0I1MXB4XzVGTEZvb2dVc1Q5VmhqMHlYY2lzVk45VUNXZnk1S2IxWF9aV3RtcXZPNDNua3BNS05BNUl2RXF6OGZRelJZSzdqMmVxTU5kRHdYYXcxQUVYUTlLSmJQRHg4R1ZoakVVM0VPUEQzR0gya0d6RXJaWE1zTTZfMk5INEVBNFVUdE9LcDVyOUhaVW1sQnVsZWs3eDFiQTFLSV9RS0lJdTdlWGRyNVNVVEFlNEY5b0x1TEt6QXBvNEJvWUZqSll4NGRIekdtc0FCRE1rZUIyeGwwSUpHVlNEaDRlYzdxdlloRUsxTmdrYzVJZGRiQUVKVUl1VjFCMEIwTDJSMWRoMlNnMGtSbmp2UGhvMmxN?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOcjg3WmI2ZTFraXBhNDdfa1NvZENVTmZDcUhMaDhyY1B6T29qT0FoaE1UMnJxNUV4QzZfeGo2djNxMm8xMmpqLTNaV1g1SFFFT2dwbjItNnpPOGo4YzVuZFdmUFA2b1BsU3dnRUJVU3J4TE1KUTIyWlYzRS1fdTFUTlFFWlJiczRxVWtFczNsV3RPZjJaOHItUV9WbHFjaThHYVdPdmtWQTJoeG5xcWg5SVRIbHVCZEZoczZXcVp0U2o3djdqelgyWWM2bW5HZzdkaWJiYzdwU1E2cTN1bGxlZGd1alp2bHJLQ2NjQnJmcHVHQjdl0gH6AUFVX3lxTE1MZ0xtUnhUQXFuT2ZRZmZYNnhYMXd1QmtGMVdURDIxaWg0Ml85cW1ELTQ0dVJGcTRkZkZGUTYxZXFtYjZrOXMwc1BEbDBmU1NnUDNJRGQ4ZUJhVUNQN0k2dG9iM1V3ekhJS3pOcUR3R1NVNnZ5NHZnQXZuQVFQSUpzOFZCLW9LMEltdzk2WmNobmk2U1lYZ2JSdkg3VTVqQlFFenBrVi1hdUo5TVN1MVlkVDdSaUN5cnZpV2FVMVdmSUgwWG9UeFlkRlplaE9NRGg3OHowYXlPSU1qV1R5cG9SbVl2dDNJSXRKTWZ3aUh0Rjh1Y1lPdXhmcmc?oc=5"
+  },
+  {
+   "titulo": "‘Si el peso se fuera con otro’: ¿En cuánto cerró el tipo de cambio en el feriado de la Revolución?",
+   "fuente": "El Financiero",
+   "fecha": "2026-11-16",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTVhidHoxNXdTZ0w3MHVRdXFSOXRvdmNuRkRSYjJXbHh4dlNXRUhPbVZQOThDcnJBQWlIbklpay1IWWF3clo5X1o4RnJiUzZscnpZaGthVjlMcUMybnNrV2hETEN2djA3d25kU0VMZDYyUmlyS0NFOHRoTk00a2I5M1FWWlJIOFZjaXBtV2UzWEtQRlVFZENyNGNoWXlJM3p5TW41bWE0VXpKaTM3X0FzSXhfdw?oc=5"
+  },
+  {
+   "titulo": "Se desploman las acciones de grandes bancos en Wall Street tras fallas en sus plataformas digitales en Estados Unidos",
+   "fuente": "El Tiempo",
+   "fecha": "2026-11-16",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPM190R1FranBKTkNRcG5peUdaaGpnTmc3RWdYQ2tZMGRIUnY2TDFyQWhxYS1LeVV6V3haeGUzNFRvT2lTb0JrdVlkMktFTEVGQnppR05zTEJZcWNqUGpJX01KcFJQWGJSYjJicVp1NFZ6b25zRWI3UGRuQkNybVJUN29RNDBVbU91UTlUbExhbGxqZUxDaXktMjdCRng1QnE3RXJvM1ZQMF9EZkJQOThHTTA5TjZnbkJmcTZjaFBqOXN4dmN1OE1uVGU4aWFPZC00XzJtTjc0THl4V2JENUZiRGVReng5U1F0dWFscnpueFFzSlJYYlVYVFZsZGY3d2fSAYQCQVVfeXFMUDVKQkhCUkRqSGF3aHVOaHNqelBOanl5dExHSVpTTko4aFNhZHNZallSNDdwNDJqSTB5X3JVU3hTS1djbDRxdXM1TXl5LW9JM3BMRTNnV2RacWdOTjA0TzB6RDNKR0gxRTVBeF90LVdNXzBjMnhHd2pBSFFDSk05NXFOcWlVT3RvV2dNWDlXUjRiOHVjOEx2RF84cmxjMlFOSlpvVG5wMWNLVFhlNU5NTU5mRG1rb3lGYkp5Vm5wYjN2TEN2Vi03aTFHbE1pNHR0MVJQN25Zc3IwQ0FVU0xGZzhieER1RnRKV05DQk1XalVUNXFmWktKUWR1UmQxY29lMG9fRG0?oc=5"
+  },
+  {
+   "titulo": "Una ola de ventas hunde a los tres principales índices de Wall Street tras la dimisión de Jensen Huang como CEO de Nvidia",
+   "fuente": "Infobae",
+   "fecha": "2026-11-16",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNbVBNYXQxcmc1bXNSWXBqdlh2OGJuQ3Y3a1FHdGtOd2xBUjJGQzJGR3R4VHBvSHF4Y0N2aHBSbU5TNVVxVFljNi1HbFBFcXJGWTRHQ2ozVzFfTWlTUm9hV19CbkI3NlR2SFhaV0lWOTVxYTVnUlZzUEpQRHJncW4wNTBGM3NPbWJHcUFrTkVaTG5wMklhU3JkZm9yQmYza2JEV2otUFBxS3NFWWcyaFJiTTJBeGR4MEtLaEVFRW14VGc4d1Y2UzB0LUxwNnBiSm15aWgzXzhFd1lGMVRPUkplR3ZRNjVOS2tERTFZdHhqT0g1RWZ1SWp3ckljNmVfZkpUMWfSAZwCQVVfeXFMT19fVGxZcUR1eFg1LTNKZG5RQ1NfVWdWeHk3MzZsbzlreFVZT3Q5Q050YWdBNFFvWXNKYjFRQXBXaWFNaExGc0V2UWRxM2ZuM25CQlBQd0Y2aF82SF8tMmN3VHFxNVdxQTM2NDFETnRiWkFocUE1cTJJMEkxTWZHamctM2RXaHJ4ZEYzSDVrUGdlQm1BVl9WXzEzdkNjV3lFcmpRMG14di1rMUVpQTNqY2VIdnItMVR3ZnVCNm41R2l3T003aTlfZlZPQ2ZKWkJnOVBUM2d6UmNydUpaRW5GczJFbnVoTW12X202U19iSlRGNzZCbDVvOENwdjJEUHA0M1pwYlhKajFJV2ZZLU41blJaUHVob3pzdDNyU2U?oc=5"
   }
  ],
  "tes": {
