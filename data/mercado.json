@@ -4,9 +4,9 @@
   {
    "id": "trm",
    "nombre": "TRM",
-   "valor": 3316.7,
+   "valor": 3309.55,
    "unidad": "cop",
-   "fecha": "2026-11-17",
+   "fecha": "2026-11-18",
    "detalle": "Tasa Representativa del Mercado vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/1/tasa_cambio_peso_colombiano_trm_dolar_usd"
@@ -65,9 +65,9 @@
   {
    "id": "tes10",
    "nombre": "TES 10 años",
-   "valor": 13.12,
+   "valor": 12.94,
    "unidad": "pct",
-   "fecha": "2026-11-06",
+   "fecha": "2026-11-13",
    "detalle": "Tasa cero cupón de los TES en pesos a 10 años",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/640001/deuda_publica_tasas_cero_cupon_tes"
@@ -75,111 +75,111 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3301.49,
+   "valor": 3304.37,
    "unidad": "cop",
    "fecha": "2026-11-17",
-   "detalle": "Precio del dólar en el mercado (último dato); −15,21 frente a la TRM",
+   "detalle": "Precio del dólar en el mercado (último dato); −5,18 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
   {
-   "titulo": "Dólar en Colombia cierra a la baja en $3.303,40 tras conocerse débil crecimiento del PIB en Colombia",
-   "fuente": "Valora Analitik",
-   "fecha": "2026-11-17",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRjV3d04yMDYxaWhsN3VsRURCYXoyVUd6MWtLa1hWc05XZDJlTFVXenNFY25nbk1INE5vcWhUcy13TG4taDdKUzJ3R1ZjbUVXSjN5VlplSTNfNWQ3M01nRjVFMXl4ZHM4NFZoekFvSnpTVmlVR0ZmU3ppTWQxekJ0VE9ydDhnYTlCN2hwSWZESjJaSmNNWnlwRHhudV9OSXRFQlBDMlRhMExZVlBmTUpaNTMxTVFIN2VCaExuY1ZWNnFBRW5TSUFjaHpB0gHPAUFVX3lxTFB5SXI5enlCQW9WcEN1YzQwNFdONDNGRWJxTlZyd2U0QTg1RzktNEFvb3I4SE5hSzdjWUJBWF9rcnFuX1g0UFA5Nk16a29YXzEySTVOSWFhbzJlamlSWmtuU2RkbGpTR0lqT25oWWlxYlhxQ0s0QWRVMmp6WmxzME9tMzJxLXZ4N29YREJkTVlZSXpLWnlaeGdJMGMyOWs2WG5mR2gtcEpMWnJvZ3ladHdPcFJSbmZ5X3RRb3J5LXV3TnpudURjcktHcnU3d0tyMA?oc=5"
-  },
-  {
    "titulo": "¿Cuándo se publica el último IPC de 2026 y qué servicios subirán en 2027?",
    "fuente": "Newsroom RCN Radio",
-   "fecha": "2026-11-17",
+   "fecha": "2026-11-18",
    "ambito": "Colombia",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbkZrMFBQSlNzMDRTa1JPNUh3QUNjc1JLUTJPQnFEQlRKZnA3ODN3SGJUbF91NlF2OGZtYlJFMWRuUDV1Uzgxa1RHbkFuN0RySzFoZzR0dkZId0Y4MDBSM01CU1lrbG9IWEEzSVM1VHZMTVFQel9WbFlTQlRDeW9NQ3lEU1FDdldMdEVNZWxKcHgxbWRIRzNLQUMzM0ZUVUpmSlhYazRDNW5lRWhHU2pJ?oc=5"
   },
   {
-   "titulo": "Fondo Monetario Internacional advirtió sobre los retos fiscales de Colombia y se pronunció sobre la Ley de Rescate Económico",
-   "fuente": "El País",
-   "fecha": "2026-11-17",
+   "titulo": "Gobierno nacional no incrementará el IVA a los alimentos para los animales de compañía: “No vamos a encarecer”",
+   "fuente": "Infobae",
+   "fecha": "2026-11-18",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOeFljRzVuR2lPS1EtWVhVNFhtWU1KMVcxVFdCYkNGcXhTeHlnMDByV3Vqdlg0azRqS0hibmFLRDNheGo3SGNjRVpTcnFOUkk0SkV3ZzdPV1dialBPM2laR3RCNEFtWTVFU1FveVI3cFR6Z213ZDNOU1M3QzktWVl6b1BfbzNtX0t5OW04MWxweEhHYUw2SnBhN0ltN3NuZTRMcEdiRVVmWGtlY3hRaVBqVTR2SjF0YTlDdElHVmZNclJWTFotTGJMQVJjNkxuLXVkR1JZZ0dIUjdxZ2hmUXJXOGdDdng4U3JwMVp4T2lkaTkyaWJZc01XV2NzZm95UdIBgwJBVV95cUxQdlZKN1ZLM0hUQVFRaEllTWM4S0FwZGJGd2MxWDRVMURELWl4a2k5THlvWWg0LXRVZ1BHTFpYdjZ1ZFA1ZzdZWVlBX25lVHZsSy1JRlZ5c0JKUVZYb3Zib0tKaVkxeXhQdXlyRHkxbDZHUW1jOTd0aTJRR1lRc2FNdEFmS2Y4OG9lUWNOakpQUC1LOUp4Uzdzc0gwbFpMRjUzajIyX0VCVXE4V3RXMEhodzhQOHVnSWxKZ3RGYnBTclM3WXBpVDd2TWo1SHhYN3d4bG9obzNhcUN6S2ZFWlNOWE1SZkQtWmRDRXV2RTBsMWZWX18yOVcyWXdYV1V1ckJGUE1N?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPQllfdU9kNDYtbDlGeFlBdTRDenUwMDVHMnFuRlNUaXZmeWg1aTN6QjJ2eEhkdUw3dnVBSHE3RWVuUDJqZFNRXzZYTWlSdzBHTUttdmJlNE9EU2Z1aTdKSy1oNUpEY04wMG11QXl0NmktbHQ4cXF1ODNGX0lLR2k4dVgwM01haElOM2FYSjZPQnlSdGV0N2RXTXpMeTBKbVltd1RsbWtSeFhsc011NjhDV1NZR18wUGxuTFJ0NUI5elZvWW1ZemZUMDVmdWNobFdsclU1YWwyLUlTUzNUWkZyZTlMOW1XWkE?oc=5"
   },
   {
-   "titulo": "Salario mínimo 2027: Colombia podría tener el segundo más alto de la región si se aprueba la propuesta de la CUT",
+   "titulo": "Gobierno De la Espriella confirmó que no habrá IVA a la canasta familiar en la nueva ley y detalló cómo se reemplazaría el cobro del impuesto",
+   "fuente": "Infobae",
+   "fecha": "2026-11-18",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNYXJEUHdGV2VpNDNxaEM2OUtHS1F1dlhTY2oyc2Vlb0taeXhsYUx5SDFZLXotNkZENU41NjhXQjN0cVQzSEdQcEJDSERrN2RxLTNnQjBEQ0N5LVQ1eFNZWWpRU3BXSnlabmgyazNYV0VHV0Z1M0d5ZjhvdXl2Nkt2TG5lam9xaUFXNDJYMDJGQTVyTkFieEVGcWk4MGRxU09zRkFmY1pWTFBKMTNGMzZDQUVoN0VGOEtJYjJVMlQ0eEZOMXpBNExzZVh6dng1RDFwZnRvQldfVGFhQUpmVTNVQnVjMk1tLVpQdV9FQ1c2Vjl6ZW1DUnZOZzVkMmJfRlBOT05fTHIxVkthS3JVMXlVY1ZGQXfSAa8CQVVfeXFMT3V0ZkNjQ3hrcVNxOHlNUnpYVzBoQVJOVVBzMGlCTGhGdm9Va2ZCZ3FNSTlPUXlpODZnQlg1VUpfLXZhMnVfa0NvSU9PNEZaSjBFejY4SU1fSlhWWFBNTm5GUUJJUkowVXJnV2dZTU03enFualFjWnpEYThHdHVDZmpxUEt6RjRHMThKcEYwUVpqZlFWRDM1WlU1dnhVYmdNbHlKaGZwUWl2S2dkbmJZQ2hYSmtiUW9RSks2RFU4WDhOaERLMjZKVjdmcVFraFVCNXVuT1dLcEJ4YnQwTU1VMUo5bXZ1a1REcERBb3BOY2xtM3VVMXhaZ1ctTTE0aGtKbFNnMi1FZFFXSkNyRkxubHVoNzlBLWxQTzJGVzR5Q0ppOVpKZjVUVlpNeXhYc3dJ?oc=5"
+  },
+  {
+   "titulo": "Precio del dólar en Colombia: bajó de precio ante expectativas por las tasas de interés de los bancos, pero sigue caro y así cerró el 17 de noviembre",
+   "fuente": "Infobae",
+   "fecha": "2026-11-18",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPSW0wandyUmtMSTFrSk9tMkt1d1JtbmxwQVFQV19kTk1DMThoeEhXQ0wxdW5pOU1kTjAtTThwYVlnTHlyZHRpWkFJNV9uSnNhdmxLQndmT09ra0t4TkRFb0xnc1d2M3pFd1hjdU40U21oaDZDYms3a2kzQWpTTVN2WTBnNXI1LXpnVFppbV8yNnlrbVJzM19ta0NVQjhLSXZ2UlVycFhQeTdkYkRFaTRBY19zaGlUVkNtT01BRUFLNnlpYzJoTk5FLWtGbGx5QWJUaUxBM29NQ3JjOHYyUk9KT0xDZVUwb2dGVldieGVBRjZ3emJMZnhtdkt2VjVFdEJqRU9jUnU0ZGRHY2Nfb1ZVNjlJZDJnd0liV0xpatIBtwJBVV95cUxPSUF2cldmMzF3VzhpM2lBQ0xIakJXSEQ5dTBnUUdBbl8ycEpxTlVSalJnZzl0WnpWOS00S3JZWkpXWlNfSlBuei1Dcm5BZUEwUU5iVXBHd09hbEgyVEdFVFlRMURYQ1VCQmNtTUY4TENGUk54bDkwQWxOVjFxS3JHNkR6UkVRZTVNOVhVSTV6dXhtc2loVThXdWcyQXJwQXNqeGF5cU1YellaVFhuamUxLTdXZE41TnNRUEY0MEpKZDR0YlpLZGFHT1RGb0xxcnNVQkl6YlpONmFDTm1aU19WRTRYNFlsQi1QN2tUekRtM2lfZzU1NzRzdHBndFpiNXFCaThzVnNRZXJlSXBjQXNWMDlqRnZfcHZBbHRJTE1TM2FmMkxVMWQ3WXRTdHVVMFhHeC1UY2d2RQ?oc=5"
+  },
+  {
+   "titulo": "Aumento del salario mínimo de 2026 habría sido uno de los grandes culpables de la estanflación en la que está la economía de Colombia",
    "fuente": "Infobae",
    "fecha": "2026-11-17",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQQXlCazN6XzhfTENYTmpRcWZHZ2NUXzhhZGZjaHZEVFhtdEx2ZklCamR3a1hrTURWVzRSdUZvTTgzMTV4emxiVTJSWjQzRE1hWVhLUTI3akttT0o1WUZaYk5hNWwza25GVjVDMTlGYVFHRkJ3UlB2RkZna2w4UWRBMlhaNzBGVTdhbmttTDdOUkJhZjlLa1U2TVFRcGhmMTlLaHRkU3pLelI2QnlwRGVHUTNwT29TMXJTd1VWQjBaUmYwR1dyckRwMC1iNG1adno2emhqcXFtc0JIOUFfTlhZSlFtemMzZmdLUjhkZdIBhwJBVV95cUxNSlFGOVpicDFjbC1IdmZBMmhQM0tpMExNeXJVa0d0WVpKZEpIV2xjV09SeHVheGRJOUlZRS1kZGEyR1NtZWk2NXkzQVFwWlFPZGdxQkVySW8zWVRiMklvdFl4THZzSWtpQV9SZmk5d0t2NGswNGVJa0NVczhIRGFFSVROMjkzRkN2SHh4MkRRUkJMcXcyemMwTm5kNG1TSVZtMFhhVkJxWDhzSmlQZHRVT1hrU0k2SW5xRWZWWXFKaFdnZTJmWkRGVURRMkhJX1RIUmF1TjZDZXpneElBclBxSzBoM2ZTVS0xMWdxOEx3dTJUMm1GNVl2QTVfU2J4akdRQmpLcnVZVQ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPUllCSm1Ma0VDdVlMUnlGd0FhZjU5QlB3NXJQSWFjc1RmWVlEcF9WOHVQRmNDY2VRTHhob2VRNlR2a1ZXdW9MTklyWGdvYTdnNTFFRWhYNDhJTEJYMGVveTFEWlVabWQ0NUhSTVdWbmNZRkhURFVoYW8ySXJKVVpkdV9qWk1CQXA4NjFIOF91UGRJcWtlVXI2SklNNHQ4ckU2b185aXR6S3NuX080azQyNDdMY3FGSHQ3YzEtYnRibTdxbnRNdlR4eU1FbThmN1dfRnpuWjF0YXBpLWhNOGo1eWstM3FGX3huaVRlTWRKUzJ5bkItSTZTc29Na0d4cDhtRkNKdXFzYXlaZ9IBpAJBVV95cUxPSXpjTmhDOUt2Q0xzcFU2YlN3UVhJU1hmWHZwakc5ckJEQjVnNndTdUJZalMzYWpoTEFIZ1Q0aHZEWWhWdElIR1pRbjRUSFlzN0dpd2g2eVh5Q0F1a1VjOUtiMDBYZlc5ekJ2WW9Oekl6WjhUazI2TGtxQ2gtV0NZeVBqd0pHMFpHd0pvMGNiYmlsV2xHUkFPeDJJRjZmTE1GY2pNaUs2Qk9zNzJHalAteURldU51cUFEYi03YmZNUWRQNFNYMjR4LWhWY1dNYTNfNnlKVUpZQVJCV1FyQ2FRMTdQQUdIQVE2WW1uNVpSa0plV0V4eFhJLTlJSGV0QTJ0a19QYlpkcmREa0lYa3ItTlpDZ2p6bG9PVndJTG5mVU1YdjNU?oc=5"
   },
   {
-   "titulo": "“Nuestro presidente derrotó a un gobierno corrupto”: cuestionan el uso de cuentas oficiales para criticar a la oposición | El Colombiano",
+   "titulo": "Colombia ya enfrenta el fantasma de la estanflación con precios altos y economía casi frenada: Banco de Bogotá",
    "fuente": "El Colombiano",
    "fecha": "2026-11-17",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNV29mb1VmOVVWRUVVQ2llN3JYcEZNdjd4aGlLTkRfRDh6cVN6VU1jbkZxQUFYTEJpX2tfcUNHZUo4cGpBNWRYQVdpeXF5NUh6OWJCYm5LdTJPQWlLWEZSZ3ZwRG5POF9fU0E1QkNuVWp3c2ZnY2swSy1mbUNwak5vR3hlVTVFQU42UDh6TjF3NGlGc2Z3MjRoZVVIaTZZSXVfUDNlWDZkekRmck1Qd1HSAbMBQVVfeXFMTmtPc2ZJTnNSUFdycGYxU3JJeU1uT0VjZUxtcFpEWVVhQ1pPNDlZSC02SjhfeWJaaXJsVWJLN2lqc051OUlhdjdLUlQ3b1JCdThfUkloV0liUFhKSjBwQWN0a3Q3aHM3TmppNFVRSlFlTEpETzBzWEdzS3RjZnlzSVQ5LWl0VjJEajdVX2lLcjAycDNpM1Y5SFlKOXJCMlNENS1nNGNMZXRzTlNSSWpWNWVBUXc?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaWMxLWRfQ2hzaXZQRV9zekFINEx1WWk2V2dUOXVnaWxNYWFUQmhvQkRXMi1uY3A4OGxnMW5wdHc1NVl4dkxVbTlueUJ1Z3RUTFBGQ1p1a1hGLWw2bVdCbnJCbmk2NURyVVI3eXJ2WjJ0cUxpSUZEZnlraFFGNGVqRV9zRkFOOFpUMDY1cG9uMER6X3gxaTZaZGFSam9xd19OeWtpLUc3N2VEZw?oc=5"
   },
   {
-   "titulo": "FMI prevé menor crecimiento en Colombia y alerta sobre ajuste desordenado si no se corrigen cuentas fiscales",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-17",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOQzRhbVNXam1CVWp4WlB4dlZJTjNmNTM4UmJjYldPOUsxMDEwb2k1d0dReUtic0VxZG40ekxrSWxQc08ySXhmQTY0bG5tT25iSXNEbzcyZXhSSjNTbVlsUVBsVGpVSklXY1Y4VDZ6d2VqbEhPVlAzUkJvZFN0MGJDWVpBSFpReDU2d25Rb0tUejhSZTFpOXY0cW5yeFNma2VEangzZjQwVUx3VG1pV0RITGpiTmEtcFFmY3RyOVhhTWJQdldrY29iRDktSzlhN2VreFU0ekU4dzlFN0R2THNPNGRvVdIB9wFBVV95cUxNYWw4bXhnUFFKaXFheVRWN2pkUGdSZkV3Qk1XUjRmMkZvd0lfOTV4LUkyWS1NeWtwaXpLQUE0Mkg0VHNseTItNWtnem1nSFJ1RUQycWlRVjlOdnptQU9GcC12ZF9RcldDYkVZQUt4VUdMZEU3UlhaN0NYNHNHanBwRjFrVHMtUVhvUHNJdDBham5oZ2h5ZVlPSHZYMkx4VHp5Si1MRVdnQzhQenQyWlhXWEd6akhwMm9JSjdYZ3dXVTZLVEN0WnNvSWU0cTRtcnh6bVdGazZMbzFLbkpDN003NlpHUlM5Nm1sRDFMTU13bExuQXFvTDBn?oc=5"
-  },
-  {
-   "titulo": "La Reserva Federal probablemente necesitará subir más los tipos de interés",
-   "fuente": "Investing.com España",
-   "fecha": "2026-11-17",
+   "titulo": "Musalem, de la Fed: Es probable que EU necesite varios aumentos de tasas",
+   "fuente": "El Economista",
+   "fecha": "2026-11-18",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOV0FsaEpGdVlnUzNhTzJlSks4YTN3QmUzR2plaTFMLXVCd2cyemR1VG9iSzA2dHh0dXU2aFBoWVZWWXJkLTExX2RkdnRiMlVVNjNpdUg5V2QwY3NXbk9rY0I5azRBN1J0STdERTRTTDRVak4wS05aRTJhV091WUtEZ0JTcHZuOEFwWlBYQmdqb3NXN3JicW1EUzZqZ1RtRmQyTkVMOWc1Z2Z2cjFfNC1YWkgtQVQ4N0ZOOEFIbnZkR2pMOG8?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNlZxVkVCczhUVlBXV3cwcjRjd0trNmVUdXJaeGc4Ujk1TlhPckNKaVNFT1AzbFRhd1VxTERURGlDRFZqRmNta2R4dlJIblFvSUdfY1BiQTdqdXMtcU9VOU02YzI0Q2tncWhDVUxFVkVRNmVjSWtXVmRhV19aZzdNQldlUTh6VTNfUVpYRVBlcVVFaUNEVTRCaVhmVExRREZjanI3NWlhN3Q3dVpxUUHSAbMBQVVfeXFMTlRIYzR3RjNqNmJ2NWdwMndYNXdtME40MmNkbUc4QnljaW9DYVZnaVpsS3lrWG1ZTElUcVVmZVpsbldpODZsQWlaMk5JWlkyQzMtcVZFMTlXWVJZWVllX2NpNjFzZzVPV1VUemI0d2p3eGR3MS1ZZzhmMjBxUTQtNmltTFI4blRhX0liNTJuWmZXQk42V21fOU1jekVQWWMya2dyVmVGNFF0aldCMjcwOFZ0dlU?oc=5"
   },
   {
-   "titulo": "Suben las acciones argentinas a pesar de la tendencia negativa de Wall Street",
+   "titulo": "Suben los dólares financieros y se amplía la brecha, mientras un indicador global enciende las alarmas en el mercado",
+   "fuente": "Infobae",
+   "fecha": "2026-11-18",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPSVdIUUlPZnJuQkRwSEQyRS15X3RaZGtVNmNkdWhMa2VzbWE0ZkhoOXA2T0Nrck5LWjBVbnloendTejZ0X21EYTdXRVcyRXJGX3A0TG9Pd1VDdXRtc1lNRWpIYmVqT0hORkNzSGk5RXBHOEp2My0zc1A4R0l2dkw4MVROUHRLUVN6NzVKa3daVHJBenlvRy15MjIzTVVFNV94OGpDcUVxYjNxY1lfb1BQN1Y4ZDVBM0dtMm1URkRmN1dleU4xb2pxeTJkQlJTVmoyczd3Q2VfR1FyOUR1eFJfcnNTZmxqZmVmbVhlQW1Fb1ROd9IBjAJBVV95cUxOVmNlckctWmhkdnhtMmVmZTBGU21hdDJaUVB0Q3dKcXlld21qNXBnOElILU0xR0h2dHlnY3Z6QzF0YW9BcjZOLUZ0V0tLYm1lblliSXNGd0ZlOF95QzdGN3VwYWJPTWRRb2dpN3VUVTJLa0ZETXhBM1ZKVGZMaG91WFU2eXpDVHFvbjE2T0FJQTBTRDZQaEZORFVqRXl0SHFrelBZVy1LdzZKaERPbnJ5LTVkS2o1V2lkTVdnMDg2OEFVVDA3OVRUQWpuSHJxVGZ5ejZ2TGhKdEVxNEVQVzc0XzZ4VjBYVV9VNzNFS3h5bFZXcENvOXlKeC11LXRTLUM2Y2w3RFJsNzlBUnls?oc=5"
+  },
+  {
+   "titulo": "Futuros de Wall Street suben tras resultados de Nvidia y acciones asiáticas frenan sus pérdidas",
+   "fuente": "Bloomberg Línea",
+   "fecha": "2026-11-18",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQTXRmM1FpT01rQU9EWi1DaHZzSUJsYlpPNy1UWXJ5ckZSOFlGbElyamx2TlVLZ3F3a3BtZnBDU2ZPVWpfWVpyVHhLd1NKc0NFempKVnhpWEl5WmxLOVRDamdFVE1MUnlwMktjLTQ3NExILXYxcTZRRUhYRWxjblZuOFd5X3NhQ1pRV1RkRTAyb0hDOUczZmtzdVB6ZndsemJTa3oydEgySlp6aHM2Ym1KOG9EaFR3dHk4MGFpMWV3RzQtT3VLZEVyQUNENHJzZHBVdXfSAeYBQVVfeXFMTzRyak83M1lySGlZZmIxNzA0REp5RkhSNnpLdFBKYTU5Q21VS0YxdWJPRFdGUkN5cEhSOWNJZGNabUJiSklfajlEdDV0NjBodzN0WlFySjhneTRrWDdsRndDbE04VDBoRVQwMXlTd1dDck5oeGxCcG80REFfYlNFWFhXUDBIUjJnVTkxR2UyVldGS19paURpb3AwXzdPYjNRdG5DTnJTWVh1NmpHSHpkSUtSV2VreDJTUEM1R2lyY2wxTVp4UmpqMm55NnhoOGxnN2pUVHBVZFZzZW94aXJ5M093RzdWTmc?oc=5"
+  },
+  {
+   "titulo": "Precio de la mezcla mexicana de petróleo de este martes 17 de noviembre",
+   "fuente": "Infobae",
+   "fecha": "2026-11-18",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUWw0VVlhMVNjTThZWUdTdVZEV21STHVhWG16UnBXbWo4R1lFY2FtTG5XSVFvOHkyZ0lhQmNZSFAwVDdJTFlvWHJpdmhtWm9QWGVUQVlGQUdmWm1MdHZhRGtRd3hfSVJkUllPN2hDTWZrYkJYWmlSdHNZN0hQanlPamlCNy1wbHk0UkxBbWZqSExKX2pYSmZISzVkdnNMMV9rVTRydzQ5Q0tyU1l1Vjg0akszRTnSAc8BQVVfeXFMTnFiZFlzcm42TVlNWVRqMFQ1SVRELTc0NllRbjFrejBIUjNIOG5UenZDcThyV1RnbXN6YmxKb2xIcTZCeGM0Y04yYi0zZWRNNjBJQW9WX3VQdmdNLS1sZ3NHeF9ONzlBcWcyMHRyRTBSckNESV9BRnJhYndNSGhrNWxNbGhMcWVQQ01IanlQNXpCbkdnRnNjaDNHRWxzbnEzaGVMTTE0WjRoRkh1eV9NMnJwcFBZaEVmbjVUbE4zS0EtaVpQOTl6NGNpRm1sSmxN?oc=5"
+  },
+  {
+   "titulo": "El triángulo IA-Bolsa-dólar pone en alerta al mercado",
+   "fuente": "Expansión",
+   "fecha": "2026-11-18",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPekxWTmJvckRLWnJnWldSZUVlbHAtcEZ4M3VQT1Q1eWlfTkl0N0kzVU9ncDk4aWoxaWMza2hGX1VydTRfLV9uNU5RQUVMZE5VSFE2TlNqaWt5MTJlNy1IbFl3YVdqYzk5S3lkUFNFd3E0X2E1VTNwdFJISWRfMzNCTHRNMzRrQUJEY1BuY2Y3SHMwS2hmUGFqMW5pMNIBmwFBVV95cUxQZDlhS0RsX1c0eUk0ckQzc1Nyd0dnQ1pHaDJkYi1Fd2gyZU4zYmdKTFB6N09US0hJZVh5aVdVb3VXeXVKb3pyS1lwV0ZYODZPcVdHb2N5MFhEM3hSMlNkbkI0YjdPLXdkQVVxZnZheDB5VlVheEdZMWVXU2ZzaW96UjMtN2RGZDFMTWtJMVFLRG1HU000eE1MSF9TYw?oc=5"
+  },
+  {
+   "titulo": "Subieron las acciones argentinas a pesar de la tendencia negativa de Wall Street",
    "fuente": "Infobae",
    "fecha": "2026-11-17",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQeHpMa2xiOElhSHhfT0JHMFM5eXhNWkllc2d5UnZUSlh5S3doUnJMWmhVYmwxcmI1OVA2dkgtZWZiRWxNMW5OajlwU2w0Q09qdXdBYnJOWTF2UUowSnFVNHU2SDlVbWV0NEdabW5JdWlLV0FZeHQxckh1SVNsV2I3aW80Z1VMeHNneGJ4VUZUUUZMTl90N3BKaFJEMS1FNzFjWG5QYTFiV214cVFaeDFOd2h1QnRIbTRMZk5RLTZyWC1DcG9lVFhvUDFpUVNfZGvSAeoBQVVfeXFMTWVsYU1GTC1QZXlXeTdtUjVpUjdJanN0cDlaemxZTmUzc3VBREN0TERHMnZmeFBvbmJrTzhwU2FKbEo2MWtHLXMzbTVCbV9NdWdXMmdnMi1MLTNuSE9oUWpTNXFKbHpBUUFGU01Wc3ZtQjk2QXdTcmo0UnpkZUlGa2tMazJ1UlhxV0J2UGdSdlZPZEd4NVlUd1RnZ3Bsc1l2QmtPRFRReUwteTFxVmtPUG56M2tjaTRuRUtQT1Z3djNuYjZ6YUpWcHlBMEtSdE9MWURWWlh5eGtRUDl3VHlNTU5XTTZpUlBXbS1R?oc=5"
-  },
-  {
-   "titulo": "Wall Street retrocede en espera de resultados de Nvidia y salida a bolsa de Anthropic",
-   "fuente": "Forbes México",
-   "fecha": "2026-11-17",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQd0pZRVpaVmZkTlMzZU8tdjQwb0ZZX1VjX3dtQUEyV2hWeDB4VzNfVDhxX2VaSUgyVTcwQXE0Qk5USFJrbjRac3FuUTFmajFDLWpENWpxamJtbmhpQkpwMl8xdFJmUng4UHphLVM2TmtNY2NGMFd0ZkNWZlZ4T3puaU5iazNQUmswNUhvbkZVNGhURkNNeWFBTktMVXRqMmlwaXNjNUpOX0owQTJD?oc=5"
-  },
-  {
-   "titulo": "El oro y la plata alcanzan sus precios más bajos en un año ante la inminente subida de los tipos de interés",
-   "fuente": "Forbes Perú",
-   "fecha": "2026-11-17",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNcFJielUtRUZxUkJwVzkyQVdNNWZKN1Y0YWZ1aGEwcFJTMTlWRW9HeFBZenI2enRoc0lMMTdNNTM5XzdURW50Tl9JQzNVeW5xc1BSRzZpYV9HdkRpSGlzUnJfNnJqVGdnR0ZJWC1LREV0YjVsZmxaSGM5aDUya2FKajNXZHZhSTBkUjVuanVWTWhxUjlncXhNQUk4Vl9SS2IzZmxLamNIaWF2MmN3WWJOX2dKY0drUGg1TldFTXd2bEFQZm9nSTBZekNQSE9rbGlKV3VLdWVvdm5EaEZPcktEYjIxTTBRQndvR3ljcklR?oc=5"
-  },
-  {
-   "titulo": "El Nasdaq, ansioso por conocer los resultados de Nvidia",
-   "fuente": "Expansión",
-   "fecha": "2026-11-17",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZGFkT01JcDF0S2lMelJ3QlhsSWRIbVA3YzAxUzVOUTJZNHBDellmX0loOExHOVFRc3lCUjI2WkcwaThlTHdMQXB1dy0xUFZzLTVTT1NPN3ppRTRKVm9HUzdyNklJS1VsbXVlRllQVkl3MllDSmhaR0pSMHA0cHBEVVEwZDY5OURRRzJFSERZTG5YcUIyWlHSAZYBQVVfeXFMTnpwQUlQd1dtSTFObXRqVWI4bmU2RjdWTmQyU3B2M0RlN3MzbVJLMzB1Rm16TUhTNk9QZnI3QjhlSGczQXlsS01HS1F3NVdqcUtXbXlDVHMyZUdlQUl6M3lyUGdnSThWRGdfT1B5ZXRTU0luMzlSZVZHVlU5Zk1JSDR2QWNLRm9FVmwyNjRiTk9CQ1hIZzd3?oc=5"
-  },
-  {
-   "titulo": "La UE estima que la economía de la eurozona resiste pese a conflicto en Oriente Medio",
-   "fuente": "France 24",
-   "fecha": "2026-11-17",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMzlSUy1FR3Y1Tk1DM0dSNThCdjV4b29hbnU0d09YajZvMFBkSVczZnoxaC1BR3VYUXMtczktQXltSVUxWllxYTVOWkpubDViczdlbk9vY21XRGhtS0pBdVk0V0I0bjRJdXB3QXg1MnpLTi10VndmdHVnaE1iMFhxTHhWMEpXX2tLMU14cDliRGJxMjNXdXFSX2NyU0ptRy11TEprYnVYRWxvSTlyVW1zcHg1dGkzbHZPR1lZTkJnTkFFRklfWkw0b3ozSnR2Rnl3VENfOHFBc20xM2c?oc=5"
   }
  ],
  "tes": {
-  "fecha": "2026-11-06",
+  "fecha": "2026-11-13",
   "pesos": [
-   12.42,
-   12.76,
-   13.12
+   12.61,
+   12.65,
+   12.94
   ],
   "uvr": [
-   4.47,
-   6.8,
-   7.06
+   4.99,
+   6.93,
+   7.08
   ],
   "plazos": [
    1,
@@ -187,38 +187,32 @@
    10
   ],
   "mes": {
-   "fecha": "2026-10-07",
+   "fecha": "2026-10-14",
    "pesos": [
-    12.49,
-    13.09,
-    13.29
+    12.39,
+    13.06,
+    13.27
    ],
    "uvr": [
-    4.75,
-    6.68,
-    6.89
+    4.87,
+    6.63,
+    6.8
    ]
   },
   "anio": {
-   "fecha": "2025-11-06",
+   "fecha": "2025-11-13",
    "pesos": [
-    9.44,
-    11.5,
-    12.17
+    9.65,
+    11.88,
+    12.47
    ],
    "uvr": [
-    4.49,
-    5.92,
-    5.95
+    4.43,
+    5.77,
+    5.85
    ]
   },
   "historia": [
-   [
-    "2025-11-06",
-    9.44,
-    11.5,
-    12.17
-   ],
    [
     "2025-11-13",
     9.65,
@@ -508,18 +502,24 @@
     13.15
    ],
    [
-    "2026-11-06",
-    12.42,
-    12.76,
-    13.12
+    "2026-11-12",
+    12.51,
+    12.54,
+    12.9
+   ],
+   [
+    "2026-11-13",
+    12.61,
+    12.65,
+    12.94
    ]
   ],
   "fuente": "Banco de la República",
   "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/640001/deuda_publica_tasas_cero_cupon_tes",
   "bidask": {
-   "fecha": "2026-11-06",
-   "pesos": 5.59,
-   "uvr": 4,
+   "fecha": "2026-11-13",
+   "pesos": 6.33,
+   "uvr": 6.63,
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/640002/deuda_publica_bid-ask_spread"
   }
  }
