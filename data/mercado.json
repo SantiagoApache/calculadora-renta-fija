@@ -4,9 +4,9 @@
   {
    "id": "trm",
    "nombre": "TRM",
-   "valor": 3309.55,
+   "valor": 3326.96,
    "unidad": "cop",
-   "fecha": "2026-11-18",
+   "fecha": "2026-11-19",
    "detalle": "Tasa Representativa del Mercado vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/1/tasa_cambio_peso_colombiano_trm_dolar_usd"
@@ -75,98 +75,98 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3355.49,
+   "valor": 3346.99,
    "unidad": "cop",
    "fecha": "2026-11-18",
-   "detalle": "Precio del dólar en el mercado (último dato); +45,94 frente a la TRM",
+   "detalle": "Precio del dólar en el mercado (último dato); +20,03 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
   {
-   "titulo": "Dólar en Colombia se dispara más de $50 y cierra en $3.356 impulsado por fuerte volumen comprador",
-   "fuente": "Valora Analitik",
-   "fecha": "2026-11-18",
+   "titulo": "Sebastián Caicedo cuestionó llamado a marchar de Gustavo Petro y lo culpó por la inflación en Colombia: “Él mismo lo provocó”",
+   "fuente": "Revista Semana",
+   "fecha": "2026-11-19",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMW9FbEdHWTVkVnY2UldDcVNiX1hySWlYX3V6ZmxBbWl4SGE2NE4tY1JGUmQtZkZCUnJ5eXE3TkI3dVRqTFd5TGNNd2ZjU3pNYzdZUGI5MDRMTk9iWFM1blpnSHhpWkVwUVE2aXAzQTRlRjRtWXdUZmctTUZzZElMSDZzWmprRWdTaldteUc3VzFmakxubTZZNDA4b2hOZlYyTEhOdFVHYWF5V3dyXzQxbDVtN1lzWWVUdG5PQ0lnRlZlNjJLVUHSAcsBQVVfeXFMTTZNM3JrSDNvX3QwM1JPU3hFaFQ4YUtuaU5WUlhya0NKczNrUGUxanpPNWV6MWo0QU5TbzZLZ19jRmw4UHN6MURoNFNUb3FOd0U1a0VnNnR5TjBZN0hjZTdqQW5QX3FHSXVZWUVUTlNNeVJZNW1QdC1vMlpRRl9JcXo0M3lLZGJZdjduZGVqQ0JhajhoZG1hLWpDbXJOczZ4UFdUQlM5M3VUcTQzQktzTFhaYTFwSU9nRmdvWVZndTJTaC00cFJyeTBfN1k?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNUUFKTDE0SDkyLXFPdkZ5b014dlpTcGhlQXhrTkhvS3lqeU5xOGhiU1NPblZ5U0tIQ3RVMnBsQnNTM0FCQWRHYVcwWVJCVXY5SGJDNURoT2lkOFd2LUdkSjh6WUpVbWhpV3kwSjhEdmNYY3F4b3dJXzRHdS1wQ2haWlVRQUR5N2pteXphb2R4MlU5N1Q0TWtBa19DWGJuZFJad04yOEZtNTJNOFhLRUZvVThZZkU4dkRaWXp6NVpwMEcyZ1B4a0xOc2xBMG9ZM0dqR0o2SDlsUTV3OVFSM3g2NlhFZ1o3M2d0NkQ2S0lkLW1ja05DZFVUSDVtZ1XSAYICQVVfeXFMTVowX2IzcktpNTVwVHhmYXltS25NbE9ocU5rT0d5SXl3ZlJFRHNPQlRyYlF5djBkOG5pZ2F1UG1tSkJoOVBFQ192cUx5S0N1UU5jQ0hzNHRNTzMtejJ4LXZ4WjZRYTU0T29JRm5yNzlVbEtoNGpFMzFHVlN4QmVRS3pEYXpIU1lQLVRPSkVNX2dnTlZFZkRfdHVaWWZHOUtsa2JuUGp2amRWUlRRZURnYnFLQ3UwNzJEemlpMzBnZHdKX2d1ZzRtMjh4U3dXaFBrd3ZTeW1wRzJDOW5DaUdZOVZtdW9vUXE0c2FnRHFXNDlOd1JsRzNrYmU5Ry02RkxWRHlR?oc=5"
   },
   {
-   "titulo": "Ya hay fecha para la instalación de la mesa de concertación del salario mínimo 2027",
-   "fuente": "Noticias RCN",
-   "fecha": "2026-11-18",
+   "titulo": "Debate en Colombia por posibles recortes al presupuesto educativo tras declaraciones del ministro de Hacienda",
+   "fuente": "Pulzo",
+   "fecha": "2026-11-19",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSm9HdVRSODBrbEtFb252TXJjQ1ZsTUZtZEU0QlNMQzk4cWc4b3QxcGpsUFJOcGxCVUJaLTJLMXF1ZVBhR2xwOHZWVExZYjFNNDBZcmQ4cWp1NDhWbGRrYXMxdDlYRVdzOWF5V3VkRHg4OEVEZXUzcldkMFJyZTN2NVRwM3c2UDRZX2lJMl9QU2RJTE9JNmVSUUJ6N0F0alJ4dm9kbENfWG9tT2JRRTMwcDRhRmZsemx6OTA3SVBHQzc1UU85ZGtz0gHHAUFVX3lxTE1rSURfWlo0dFQ5RWEtYXZqZFJKT2h5WTRtcVAtQms3NU55SE9kdGVQNmVNUWpKUF9NYWdtaG9HQjdYNFgzZDRvSnVZemVNODMySG5JRUhHS0tpdFppNE1yOWRRcTNSQmNPVlJGRXZZYXhUVmZGYXpzNWtwSFVjYUVmQzkydUNmTmp2cjRnMVRhM1JtMVlzWXVoeHlWbzFOLUd5bTRINDkxZ3FjdlFVUmdqT2k0bC1KcWpyT0dnMkxrVUlvRV9oa0k?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQektoX2E0dTVmMVMzLXhHZ2JLSDVpcmJvb0Rwam0tZjBfT0pBYTlUaFN0cGJFMXVhT0ZZaExVSGtkb0Nod2ZpWmVEWUlmX2NaMUc0V3hFOXp5ZlpsdU9aRmFqb2w0ZUw3UDM2dVNoNzhsUUxrQmc1SW0waUdDSWt2VFJ3MXhWOFpSNkswRlVGa0Q3TkNmR0dBMnZLWU5BOGcwLUJBa3dJNF9WOFBWNGlNWHFKLTMtOXhXLWFjanUteXJydlk3MzcwVnFURkNxMDY1M0k0QnVn0gHbAUFVX3lxTE9FcEo2cVYtQkNocl9wcDNUY3lha29XUFFrSjNsdGdsQzhjblo4U20yeUFwU2E2QUV5Q1JqWnQ5eHVRQk8xazl3enhBWExVR3o1a2gtbTVMa2JPdG4wZ05ndlk2R0s5c0pwX0NfczB0MjBXV0JrQVgyVDRvVGItbEpyWlpHUmFMSE44UnRPQlZyNjM0V1hzRHI3ZVRwMDNpSjFSVEYzbUhuQW9Pa0dCaGNacTFfQ19zUkhPcTVOZXVjVEc3SWt2UlBBVGdKbU9GYW1QMDNKNHd0cUNVTQ?oc=5"
   },
   {
-   "titulo": "Dólar HOY 18 de noviembre de 2026 en Colombia: la divisa inicia la jornada al alza",
-   "fuente": "Caracol Radio",
-   "fecha": "2026-11-18",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQmVtYkF1dS13MlpZRlFPczVNalhZT1N1d2d6N2w3TWtISmhBblhqbkdvUERKeUkzWU9pdjBLalZ5TldJZXVwZ1Vpa3d4cF9fN0VvM1l3NTdOdXZkcDU1R0JoUEhaejlTS05HN2ZzV3RvbUNyZVlLTEloWjR3NVltaUJzalhoMVQ5N2t6X1RZNW1PNXJmSlFhYXNkVi1hdXh3SWlfUEJmOEZYejlHemVTMkR2NGlZN3fSAcsBQVVfeXFMTTA1aVM4ZFVqdWVHZy1raVhzRGI1RHM3SzltTVc3SmdwV2xaSWVrR1VnT2MxUlJhWER2a0FUWHI4T2ZNdUktdjJxa1BkN2MwdlZjZW4tRFhjUnBwS2F1VzBSM1VRR1FFSGE2THo4Rm9KaEY1YjFETTh5Qmc3a2o0NmQ1V2s1RHBqb2NsMi1WSDlHMi1EcC1SYnFWSjBKT0hFVVZvT2ZUbXoyazdSdEtpR1hEdUxXeG5ENll4QjNmSlFHTmVQSTl2RVZSWUU?oc=5"
-  },
-  {
-   "titulo": "Ley de Rescate Fiscal cambia de rumbo: estos son los impuestos que el Gobierno decidió mantener y modificar",
-   "fuente": "Portafolio.co",
-   "fecha": "2026-11-18",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPaG1VUVN1aUZ4US1PcUpPWHY3UmpRNEdiem0yLUo2bzNGZHFmSDA4c3BSeFVrUEFQemNWRUlPYmtLSTREODdUWGJBY29zbDEySVlKakFNcUl4M0U2dzNnZ1prSkstNXd0WDB0VktsNzhqelZpNmVuRjdETkZraFl0NnpBbFZsSEp0aWF4Uk9raERIcmZJSGljbGtkSmVnWGxwY21aaWZxcGJoNHQ2bVotN2VTczZ1V3JSOElNTnVfNUpodWZNV2hrWGdZSGlqRXN0cHhYbks4dHdUZEh5MUpGUmlR0gHnAUFVX3lxTE5aRURLT1JrbktjQk9KNmZibzM3aVJjZ0JfUHBMN3B4RC01TVZ4ZktNLXVWdURCM0lMWWtSazV3M0l1NkhVY1h3dU5ZVi05bzByRW42OUhxMmpWT240czRIR2R0ZXowdFJUX1N4dTloYV91VkJ4bDNObUVtOURNc2lZUTY1emxzY3pDY3VVam1oMUxjUDFVbGdiTnFQMllzQ2ltb0FoVzR1M0EzTGc3YW84TExRWWRac3UyUmVzMl81LUE0RDd3R1BCd2dhRzZNR3NYTFJYNmR6SlNPbFFJcXI2ams4UXZSSQ?oc=5"
-  },
-  {
-   "titulo": "Ministro de Hacienda de Abelardo de la Espriella explicó cómo queda la reforma tributaria tras echar para atrás el aumento del IVA en productos de la canasta familiar, alimentos para mascotas y medicina prepagada",
+   "titulo": "Precio del dólar en Colombia: volvió a subir en medio de la discusión por nuevos impuestos; así cerró el 18 de noviembre de 2026",
    "fuente": "Infobae",
    "fecha": "2026-11-18",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMijANBVV95cUxQRHQxd0NRczQ2cmJRMlZBUS1vX2FIcEFadGVlRXBvZ2JoR3NIN19YdjdyZXVhaVdDMjdLRlR6SG5LaDNWRV9ZMWtwb3RXZk1uU2dlNU1UZE85U25LbTF6Zno0aDJzTHNEcW1XNkFSU0l5UkJfbVVNOGxaWnBwT3RXbnphNThGVTFFa3BEa25FMmY0N1hxZWpDd0dvWjgyYzJzWmZfV0ZMVUluU3AwSU5PNTA2YzBUTTJwS0Z5RVZKQ25RVF9qTFB0Q2d3UEhsbWVGSnJCUEpRWFhNckc5UEgycnczZlAyUmg0TEhzNDdLWkJCTjdtYUtJNEdEUWR0ZWNPMl93QWRJdGJDbmZ5akRfXzBUX3hrQnBYNE43N2hFb0Rqd1F2dElkTkVZMnNRTHdKazl0QllldWUwRVRUTFpRV2tSZ1RuWWl2ZlZVYnE2bjhienlrYVJ2X1hFbl8wSjZ0b0k5Zmw0NFJablNDSnc1eDFVOWhEeFRXdy1uQXMyOENtSS1GS2ZnbVpsaC3SAYwDQVVfeXFMUER0MXdDUXM0NnJiUTJWQVEtb19hSHBBWnRlZUVwb2diaEdzSDdfWHY3cmV1YWlXQzI3S0ZUekhuS2gzVkVfWTFrcG90V2ZNblNnZTVNVGRPOVNuS20xemZ6NGgyc0xzRHFtVzZBUlNJeVJCX21VTThsWlpwcE90V256YTU4RlUxRWtwRGtuRTJmNDdYcWVqQ3dHb1o4MmMyc1pmX1dGTFVJblNwMElOTzUwNmMwVE0ycEtGeUVWSkNuUVRfakxQdENnd1BIbG1lRkpyQlBKUVhYTXJHOVBIMnJ3M2ZQMlJoNExIczQ3S1pCQk43bWFLSTRHRFFkdGVjTzJfd0FkSXRiQ25meWpEX18wVF94a0JwWDRONzdoRW9EandRdnRJZE5FWTJzUUx3Sms5dEJZZXVlMEVUVExaUVdrUmdUbllpdmZWVWJxNm44Ynp5a2FSdl9YRW5fMEo2dG9JOWZsNDRSWm5TQ0p3NXgxVTloRHhUV3ctbkFzMjhDbUktRktmZ21abGgt?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNajk4ZWlqWDVhLXEtdFV4QXNaY2FYc2hCWFMxQ3hyOHNjSmg2ZDRvZjhVUUsxb1NPRXpUdmd5a2p5RTlEd1J5WFA2TUFKWGZxTmVvYzd5dF95SHJoeHZLQzN4NV9fYkR3OTRpNHZOMHpxeEZfdXBTd0lqd2ZUS19FTHNNZnI2MlF0bHpIZFJJNlVTZjRsSkVjWUFkRF94OWNYODgwbmhtLTh2OEdDNTI5dHBYR3pCVy1NMzRHbDRzdnF5UlBDYUZ1eG1DYldGdU9UclVsUDZmbXhGMFVYNjBxR01MeC1fSkxEeWdFM3puZnhjdUwzTEc3WTlwbE9XVm1f0gGbAkFVX3lxTE9pZWZoeDVHRURRSUx6WkpGOFB3cWZMQ2F5OHluTnk2UEJ1V21Eemk5aUVkZUhfa0VKYVFKbnpWbXRZQ0NNRUhUQzgtNFlsYS1vNXBOdHFXVkZHTEszSzFIZU0xVG9zVVQtaXZXaUxLMWE5U3NUR1Z5ZE92N0Q5ZmVfa3pVSUo4RjNwbUl0VzlpUk43WFFZZFBaYmp2bDlkRzhNSUdXYmMwa0t3ckliNUtfSkR4RkJWMi1PNHNZbkhYeUFXU2JLNFRjTEl4WEZQa2pFUzRKTzhRV2VYbXJTbmN4bmtUTlBQUTYtOGtjTHN5ZUs3YnRxSF9La1pNSkJKcThQcmd1U0c4VVN1ckZpSnNxS1htZndkaFJCdEU?oc=5"
   },
   {
-   "titulo": "Dólar en Colombia podría subir hasta $3.400 o bajar a $3.250 esta semana: las dos señales definirían su precio",
-   "fuente": "Portafolio.co",
+   "titulo": "No atender la crisis fiscal generará graves consecuencias para Colombia, según el ministro de Hacienda: habrá un aumento acelerado del desempleo y la pobreza",
+   "fuente": "Infobae",
    "fecha": "2026-11-18",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPMnh2QVB0MXY3SDE2czM2UVdsUEVBWUotbUJEZ2NTakppcEh6am9aTE9Wc09qWHJSMGVTSS1YVkhCdFZtVkZNdTBUeFQ5ekpYdjZ1WUpBOWMtZTVNVXdrQldYSWQxaklmbTlHWHNUVElnVkZLTUJfc3pYYnNkZ2FhOXNnYkdXUGk3Z3NJaEhrdzVxZVJpcnZYRHlPTldBN3NUY2EzNXJFMDdPM0JrZnRnVmdYQ2VmeV9vWnVmM3d6VmRMS0dCd0dRQVJmbVg3eEZiTHY5UjdVWm1IY2l3dVhXaWlIV1pYb01ncU9IZG1nc9IB9AFBVV95cUxPYmpuZy1yYkNCN2RWVDRtcjNaMmJxZURVOHBqdGtnSFo5WENiaTVhbFpJbGdIU3N0Wi1YbXVWWWxmWXB4SUoxWUdOcHZDUnNfMGMtQWZjZ21MUUYyb2NyTUVMdlBWd1ExQ0NEVmx0SE12TDRvNWJxSndLY1hqbG9ZZVhhV3ZFaFVhRlZ5Q2tjcDZrNlc2eEt2MV9ZdnhlYldja0RfMkdlVFVIRUNoNmM1d3N0MXhsVHRrYS1sTUFNQVVQcjU0Nm9JRURuRUhpTUc4WUdXZmR2cDlNMUM2b01sdWdKVEtIeHVfaFZOSks5NlBNSVJM?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPZmRMcnNNWFF4QnFFMGtaZGZlQ2szem9STHV4SDRnczBkQWVHQThHVlhaRWV2bXNIcHYyLWQyeTVKRS1tYUhBLXZYVWhLelQ3Y2RTY3BuVFpXQVBuUUt1ZW5CUk9xbGwxa29SdDY2VGlRMzdIRFJfemUtdUNBTzcxdEkyVE9OSndKbXN3R3lKV1VzLWJVYnphTWJzc0U2VlhlZEpsVVpXZy0zM3F6M3pleHh6SUZWN05UQTBiS1FadHAtVUNsajhiSWlGYmRJdzRHU2JicWhCZjFyd0NoMGNsY29jSXd2ZVFOTVVkRHI5ZGczM3MxMVFLcXNEMUpwSlpMR1JOSXdOQ25MLWFRM3VkM3JKT2RIY2s3STBVZEx6QXhpVWJldjhn0gHCAkFVX3lxTE90Zjl6TU9PanlXajdkM0FPQzhrU1g4QnI2OC00YVZjNHE3eXVVVGV3UmdGWmJiWk02WmFTa2dyY2VQTml1SEtqTS00ZUtjaWc5U0pEWVM1QWx6TFBVbVZsSVI5cUpudmszYUVkODI4YTJ6clFSR09YWHR2aERLRVN3UmpRVjY1MGFHRG5zbEtEdzFyVGNueWE0VWNNTmI1eVR6djFFMnN5cVVrUG5XM1RnWWJxUDd0dk5hTTU2VzlHaFp0S0NpY2F6TF9NQjEtZVNiSlE5bi1XZ3JGLUotb0dESktMZFV4R1E3WnFobFhscTFoSWhUNDRBeV93OEVUTXhsSGh1c1pKelpQRjg2RXQ3WV80MUh2Z05BUWw2X1BuZHpURWExUmI0R0ZtdE1qcFpselFiU1dkVjBFdWIxVVRLdVE?oc=5"
   },
   {
-   "titulo": "Autoridades de la Fed se enfocaron en la inflación en octubre: Minutas",
+   "titulo": "¿Qué es la estanflación y qué tan cerca estaría la economía colombiana?",
+   "fuente": "La FM",
+   "fecha": "2026-11-18",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNam03NFpaM1J4LS1nUUJiWEw1UGViR3ZoY3VFQ0NFd1FmdEVNLUxMdFItYTN2MjhQR0ppUVRNYU9SV2VvenJPVGFDYXRra2oyY2YwbUpQd3MyNkwyMjRHUlVCOVI1azJYNXNPd09jeDhwOXFRWVdXOXZ3WEhKVXB0Z0JTWXpzRlJaX3VXNXFkbTlZRWFaYkRXOXFiSUZDUdIBngFBVV95cUxQYXBNQkJyV1BVYThxclY2UG8tMy0tQjE1OWt6ZWlmVFdnVWhKZjhGSHNPZFNHU3RZV1d3TDk1RDVGTDJwcEZGOTVkQmlJc2ZsdVVLR3hGYVJzcS11eElVUUt5WGRKUm9uUEZielJKWFU5SkFjb005b2p3b2ZkWEQ2dWpreER6VUYzUGZwMHVxQmJRSXktbVhHNnNGaG5xUQ?oc=5"
+  },
+  {
+   "titulo": "Ministro de Hacienda lanzó una dura advertencia sobre el déficit fiscal que enfrentaría Colombia al finalizar 2026: “No es un cuento chino”",
+   "fuente": "Infobae",
+   "fecha": "2026-11-18",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQRGp3UTgycDNfUVdRX1g5VllndWVpemhaTmRyZV9ucXBPdzdSaS1kQzAtSGMybm1YZWdGcjZMN0tJc29UamxGZzktRndsNENmS1R6Q2VrZlhDT3o0UVBqc2tkNEVJLU9POWsyZGZ4U0NSblNsVmF4MUM1ME8wMTJ4aHJ0Y2F2Q3hiZDdCUzBHbGlUdEZ0dV9HNThKUm1FOUpUWUQzdHZ4aEhtZGxWVERQU0lGdjhZSnV4N2NCaTF2NkFsRm84VW1zUzJRY3NvU1ZEZDNyLXVKOE1yUUZvRENYYi1uWUdSRUdVX3l1dVljNjBaX0lzVHhkQ1VuUkMxN3V2UXJkT0xtVXVYa2M0emfSAagCQVVfeXFMTXlnS1NhUTJBZ0t2X1ZsbWhoRFhiZE0zSmN4cnNiNzc2MkVZYzg3N1RvcG0xbzN1aGZUQ1EzbTBqODhfcTVSWWoySzJvOXAtNG9BQmlvSFZ6Q2F3bkwzNTNpWURuWGd5X3htVUhZcDRBWlRFa2NDYnd2QW9hV1VnTTU4c29XWVdVTHAwa3VwazhoM2Ftb1BJcDZGWDlqc040SE9kS1B4ejNaU1BsbXBJN2hlNmVRSVdtXzR1cEtYVFNIVW92amVIc3dQMkp5RUNYRWFTX0RkNHFvUkZZVi1MMHNzY0FDRHFOWmxHaUdQeE8wUkcxSllIdjBlRGl3YUNZWjdSbGw5Y01wRXZjdkF2dXBSOWsydmlCcjdlaVhMQnZzaU5LbTlhc00?oc=5"
+  },
+  {
+   "titulo": "El oro cayó a su nivel más bajo en 14 meses",
    "fuente": "El Economista",
-   "fecha": "2026-11-18",
+   "fecha": "2026-11-19",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVC0xamxsUU9xY0dXWExKdW5BRkFGQ1lkRTd4T2tvLVZRcE92dTlWOWxQSnRQV0lOUVBVLWhuS2NCeGxPemp0TWpoZXJJTmwwVHpJTTZNX3ZGMFVfQW14ZEhMTHNDODd0WVkzanVySHdrTWpvUGVhYlNZYUVsQTdkdmk4UHVjVWUzNXAwS1l4V19WcEt3TElUay1NUlRKaklXR1pXZTBjUVhMckxtekN4NTNtc1Q1RHdPZmRMTE130gHDAUFVX3lxTFBnNU5ISTJWYTZUMWtIWEVQMktWWGRUdGV2bVUtVTdOcjc5amlOV2Z3blRlRC1rYU5MeXRvWUs4T1ZKTVFIOGk4OTRTNGkzenhuRURDUFdSQnJ3WVFoWXdCbV9saGpJZmIyYkkzMzBjbGl1ZGlRcmJ2cDVXUkRHOTRTc0Rjak5XWFY5Q1RDcXh2Y0doVzdKMlNYQmN2SkN1UnM5cWZEMDEybVF2eU5oS1ZxVjRqQkZ5cVByWjZBeHA1MzA4aw?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNanR0ZUhDWHNqc3p4X0RUUWZHakpYaE9NdFNaZWRaQVp4cHBGQ0VuVUVTNzdYTEprSTc5bFJCUi01QnVabVcyUFFXX2N5ajJIbE5kc2N1SlFkMzhXMHFtUHJuM2x5bDk3ZXZnV1VqME81aHVMZkhmdHkzajJ1MEdIM0FrVHE5TEJhd1BpeF9n0gGTAUFVX3lxTE1NQzNQeDI5VVVOYzlDbmg1ZkpkNVBGY2Z5cXQyNTFmMUxfOVdORDJ1TXFUMkhKMlQyVVI1cG9XWUp0WmZsbHdpV0s2MVB2LWJEUzRwYnhsNi1TRXgxTUZwcGE4a2lsWkgwMEN0a3hWUzdJR0FpZ0NOOHhQNUVuUWJadlVnR25hX0wtd1R1eTA0SkZybw?oc=5"
   },
   {
-   "titulo": "‘Sorprende’ a Wall Street reporte de Nvidia tras ser mejor a lo esperado: ¿Cómo operan sus acciones HOY?",
-   "fuente": "El Financiero",
-   "fecha": "2026-11-18",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa3lHa0EtLUZKSUVIQXRVc0g2OFpadnUwQ0N1ZVp3SHF5d2lsU1hWTm50NVVMTndmeWpJOW9aZEVkaDZyWkYwSkV6VnV4d2JYQjV5eXZTUEVLTmhsVGxaU0NIWEZVMnlwYjdxQjAyWEZtbHVBeHUwUVpXQUVsU1NCZk9EdFZhWFJBczZkUUpTRGgySTZSZ3RLUllSWU0?oc=5"
-  },
-  {
-   "titulo": "Al peso le da la ‘chiripiorca’ por minutas de la Fed: ¿Cuánto pierde ante el dólar?",
-   "fuente": "El Financiero",
-   "fecha": "2026-11-18",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbGNHdXkwZzBLSHRTSDU0dzZOeWR6OUdLT3RnTkphdUxXRlhrSThtd1RXNVI3Z1I0NjhfOS1WYXlkWmVhdDVhRWRqT0JBT1BrXzJwckpIdll3d1Q2cUxoNlFidG5NRGdYVzEzTUtjTkNaQlV0TGhnS3RWek1XUXJwWVZ1ckZCbEVfR2pKTGZkeVJhbTFqRy1tUmphQm1MbnhvRmZ4WVFINDlXak1WTVNRRzB3bw?oc=5"
-  },
-  {
-   "titulo": "Oro cae por debajo de US$3.800 por primera vez desde 2025 ante expectativa de alzas de tasas",
+   "titulo": "Futuros de Wall Street avanzan tras la histórica OPI de Anthropic; el cobre y el oro caen",
    "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-18",
+   "fecha": "2026-11-19",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQdHp4VVpIbENNMWlGTklLY2ZnaFc4MjFRZHlqQU1sejN5LWpTVGJ4ZXoxc2dwTjNvbEZIaXZzbXc4b0sxa3dMbWZHRWNtQ3FRVThUMFpVS3NZU3pDNW5nRldQUkxNSXV6MTJTclk4TjNMWDNhVVZLR2w3TGozbVRMdVVZa1E2OEVqUm53OXJBMkJqeVhkb3Fyc2tqbDQ2Z2hQT3htTTh1blQ3cEl0eTA5cWZ6Q1paR19teHczNms1ckdoaEd3LXlSYW9VMVRzY0xyanJsNjlGT1JPelBVdy1v0gHfAUFVX3lxTFB0enhVWkhsQ00xaUZOSUtjZmdoVzgyMVFkeWpBTWx6M3ktalNUYnhlejFzZ3BOM29sRkhpdnNtdzhvSzFrd0xtZkdFY21DcVFVOFQwWlVLc1lTekM1bmdGV1BSTE1JdXoxMlNyWThOM0xYM2FVVktHbDdMajNtVEx1VVlrUTY4RWpSbnc5ckEyQmp5WGRvcXJza2psNDZnaFBPeG1NOHVuVDdwSXR5MDlxZnpDWlpHX214dzM2azVyR2hoR3cteVJhb1UxVHNjTHJqcmw2OUZPUk96UFV3LW8?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNaEItczZackhzeGRiYi1lNWQwblpISWVjcXJmMDBhdjZiS0l2N1FjaHE0bVJXRlU2bTR3R0hiYjhzaXc1YVRmVTZjQmEwYVZPaFpZSFdjYzFPZTdpMXRXOFh5d0lNSjFYRGNJNkJHN1JHN0UzdGV5enNIbzFLVV9fMTlOUm00NDR1cV9LLXdNUkc4TWpXS3pvcm1HWDI5bDRFd0U4c0c4UVZIVFJHV2RwbkV5MWVBRFJxUHhkcFN0REJ0dHVzczFLenBPa3hFR1pldWVacl9wbTFSRWo40gHcAUFVX3lxTE1oQi1zNlpySHN4ZGJiLWU1ZDBuWkhJZWNxcmYwMGF2NmJLSXY3UWNocTRtUldGVTZtNHdHSGJiOHNpdzVhVGZVNmNCYTBhVk9oWllIV2NjMU9lN2kxdFc4WHl3SU1KMVhEY0k2Qkc3Ukc3RTN0ZXl6c0hvMUtVX18xOU5SbTQ0NHVxX0std01SRzhNaldLem9ybUdYMjlsNEV3RThzRzhRVkhUUkdXZHBuRXkxZUFEUnFQeGRwU3REQnR0dXNzMUt6cE9reEVHWmV1ZVpyX3BtMVJFajg?oc=5"
   },
   {
-   "titulo": "Wall Street se prepara para la euforia de las OPV de Anthropic, a pesar del desplome generalizado de acciones de IA",
-   "fuente": "Forbes México",
-   "fecha": "2026-11-18",
+   "titulo": "Anthropic vence a Elon Musk: Rompe récord de SpaceX con salida a bolsa tras recaudar 107 mil 300 mdd",
+   "fuente": "El Financiero",
+   "fecha": "2026-11-19",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWkJza1NJYlByRjBVLTVFaTJkVjhuWU1uS05qUzFTWEc5UXNjTmhjeHZ4RUxWLWJleW5uc3pqanpleTAzWjVIajlrUmpjd1c5MGp2NDUwRGUwc0VpNHNPaDVBMGtScUhHYkl4cFR3VnpZSk1INzh2WWNQQ0JJd3pfbzRSeGxUVnVxY1NYall6QXJjZ1ExTUt4UkpJWDVmbTl1MUFtOTZKazZjYVAxeHRvcWNvakV6ZElFRS11VTMwaFBEUmN1TjJmUWtRLWQ2dkMtYjlv?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVWFybnAyalk2Q3lfbUZhdzRDaDRlQWstcVo2T2trWFd0Si1jTXBtaHFvckp3SV8yOE9FZTROUk9CQ0pEdmJmUW8tc2ZjanBXV0l3Wkx5UENYMVFSRU52TFJkdFRCbjJBMWtfOG9ucmtHVGJoUmhPWjg5UzhjMmdvSWs2eG1oclZXVlB5ZEVPOTA4WGZuVnhvSlR4WlZ2ZmpXMlFmRlJWNGFVVGxXR2FiRWF5anFBRWtDOW1sRTlEVVpHeVJfZHNkMDljU3JKcUQ3cUU4b0R0T1VucWltdVJSVUZaX0VsNFE?oc=5"
   },
   {
-   "titulo": "Todo lo que hay que saber sobre la salida a la Bolsa de Anthropic, el nuevo gigante de la IA en Wall Street",
+   "titulo": "Cierre de la mezcla mexicana de petróleo de este miércoles 18 de noviembre",
    "fuente": "Infobae",
+   "fecha": "2026-11-19",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaGJJcmVPYUtkR1FHN242MlYxZHk0Tm1DbENITGNOZ2lPSFVldHZVaHM0TGVGQkoxalhJYkdDQ1MwVVNqSHVVbkFqWlhkS0haZUFJRUs1ZFpkaTY2ZmF3VTZ2SmJIWXhCSU1BVXljZ25ZVUtqNUQ1VURtcF90ckxKZ1RNS0Fma1BkRnp2bnFBOG4xSkZ4UWd1cHI0bV9MVFp6TkhTb1VMWU9FWmpQUk8xLUVDU19DRnhC0gHTAUFVX3lxTFBxbDAtUnJreUM1eURVMEpzTVFycHRMLVh2dERSZDJFSG1YMm96TnJiRWhPMHpsbjd1N0NhU3ZlNFlGaXFIUHl0RE9EbVZjZWV0d0ZLbnJUMENZdHNTY0ZNc0hRN1R2US1WX0x2ZzdCYzMtSjl4MVRiWkZwRXNfRkFjWFdMcHpMLV9jSFYxNTUzN3pRYmdKMkpVbnVvTjktb2dpRzB2LTRPOHlWR0dvb2JOU19TU1JyVXpmOFc2UmJuYjVEdlNHMHJGeDZWM2ZieU1Dc1k?oc=5"
+  },
+  {
+   "titulo": "De rival de OpenAI a gigante de Wall Street: Anthropic prepara su salida a bolsa",
+   "fuente": "Forbes Centroamérica",
+   "fecha": "2026-11-19",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNV2lxRDlRWkMxWUtuQ01DcmFTdkdZbWhXRUw0LTEwWWEtaW1wbUtITERrT3BPWFZXbmNCWk5kNkctMzNLSnhwTWQ0dTlwQklMNDMxUnpmS09FaWZMNzI3Y1Y4TG40SkF2Ymg5eG5aSzkzMTU1amtZV0R6RWZKSU5ha0NiZmJzUk1NMGUtcF9PeldmMXc0YzBPR1FwZzZ2blI1aXZNYnRvcEwwYVVNWnVlbmR2emdobDMtdkJhUnROaUU?oc=5"
+  },
+  {
+   "titulo": "Mayoría de miembros de la Reserva Federal de EE.UU ven necesario subir las tasas de interés en diciembre",
+   "fuente": "El Financiero Costa Rica",
    "fecha": "2026-11-18",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPX3l4dy1jNC05dXJURGdKYzFzeWxacVFRYm9SSjY5TkpkSmk5NlIzUUExNHBoT1g2SzNDd1c5WmZHMVcwOEdUVUoxUVdkR2NFRzJpTVJVSWRxSDFlSWNhazBmSU45b0NmS2Z3RV9pRmFhLVdvV2k4amJGdzR2RXBBY1RTM28zLWQ2Y3lGSUIyOEpPTE1nVnBXSlc5d2hOYTAzMkpYN3QwQmtiSG9GbC1va0xhdWhTUnF2WEFPaHhmRjN2TmhZNUJrbDdlYkdjeTl3VTdvbjROcGVmTThsR0lBdjFVVnNJUdIBgAJBVV95cUxNVzJjSHVrbGhkY091eDVCeEh0V2tuZ2RTSXZEWmFNMnJPUW1Wc2R2Y2g3YUxZTGRadmREYV9JV243emZLdXFZTmVBNHhIdWtLUWFicEdfT0NZeXBCeThiaFB4d1lTMFEtaWNkQ0ExUzdBNlV5NEJRa1NqbkpEUFduNkMtT2tDRFFLWVZpMFloeGhzT2d4RWtEY0xhUF9sdGp3MmZXR3BmOHVTclBGdDhQcGVUajF5OHR6MVpKbVhGMlNMWEJUbWpZT29wdndUQVk4NERQY3Q0REpIemtaNE1ueUd1RjVRdWhSRWU1aEJ1M0FZQXVfT1ZNMmlSTDNSbWdK?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTnA5NEVndXllT05jOHV2S01DS1Y2UnlYT1JYRlN1TVFOUXBoOG9mQ0ljVEMyNW9pY0lNTGhXd3prSXNOV0tpZk9MSlFhaHo3X2hHY3h5YzIxc2hORWVUalpnZE1IVTU5Vkc3Z1lXM3dwQXBzYnkzWVJpb3liSWdyQlY1RDk0WkJZRl9CdXp2akotbjZtMlA2YjRKdXlweXo3Y3dodlQ2SHQwbzNWak1JaHpEangxTzl4MUJLcEpfeTc0YzJqOUFoNWRR?oc=5"
   }
  ],
  "tes": {
