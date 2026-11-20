@@ -4,9 +4,9 @@
   {
    "id": "trm",
    "nombre": "TRM",
-   "valor": 3326.96,
+   "valor": 3415.1,
    "unidad": "cop",
-   "fecha": "2026-11-19",
+   "fecha": "2026-11-20",
    "detalle": "Tasa Representativa del Mercado vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/1/tasa_cambio_peso_colombiano_trm_dolar_usd"
@@ -75,98 +75,98 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3415.49,
+   "valor": 3426.74,
    "unidad": "cop",
    "fecha": "2026-11-19",
-   "detalle": "Precio del dólar en el mercado (último dato); +88,53 frente a la TRM",
+   "detalle": "Precio del dólar en el mercado (último dato); +11,64 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
   {
-   "titulo": "Dólar hoy pegó brinco y rompió barrera de $ 3.400 en Colombia: hace varios meses no sucedía",
-   "fuente": "Pulzo",
+   "titulo": "Exministro de Hacienda colombiano: “RD llega con fortaleza al actual contexto de crisis internacional”",
+   "fuente": "Periódico elDinero",
    "fecha": "2026-11-19",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQjM5TVBubXdZdnhmYUJtVEY5SVhDU013TTFTdW42N2JJWW5scDQ0S1ppLTVHNFVmbjBqWU9LY01rNFZFWnZQYURmS0VkR2h2OWE3UmpLSkRram5BQVRsRFBaMjJjTjk0LThJNkNQZWMzNi14ZlZSOTMtcVVITTBOVXJ1UkNZbU1sTlE3U2NESThqdUpXbGMwWG1EWHk4OXc?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWHhIU3k4M0JOVHNfMzhXOGxnVktvMmdmN1lwYjMteXoxVXpVQmNwT0phOEg4bWR6M3JjUmxvRFNNZkZST3RnQ0xsRWFVQTBFcEhSSS1FOFl2a2E2Nm11RG0tZjFCcnhJQ0F5eF9rQ2t2R3dOTmtwX3FMWWdkNXVpSjJoNVBHQ0Y5dHhWZER1ZThLUjMzY0ZXYXcxODlVV3ZPMHg2UVVCbkFuQ3cwZ1luWk9YX3ZMSXpXcUF1YTJtcF85NXlrYUhmbmd4RG40dw?oc=5"
   },
   {
-   "titulo": "Dólar en Colombia se dispara $88 y registra su mayor subida desde agosto | El Colombiano",
-   "fuente": "El Colombiano",
-   "fecha": "2026-11-19",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcnBuUkF1UjlGcWpLYURoUDJheUhXWkEtWWFpTlUzdUdBRTZKam14TS1ycUdlTUFleW4xZDFUUkxqc1c1T3ppT3BYaW5LMzRsWE0wRXdKSmJ0N3hzYWNSRzFsN2hrVGV0ZUhqWDRKSGVIQndmODR3VXE1VUFDWHNUY3J4RVktYkxMQm10TjE5UUtoTk8xSG9oWWxyTVg3ZV9TbXfSAacBQVVfeXFMT3dSbXhJeVBhNDZjTE42dnZPdjBXQmNWXzFSNDRNd1NubzFJOTEtUXFUOXJLc0VodG55NG5KQVROcEdYYkk5NmkzdVFNUDIycm9DR0hmTll0V2k3bnJSUjAzUzExZl9xb1Q4aVBoSmM4Sm1qM2loTXFwWktnTU5JeFhDOEJIbTRVbm5EYkxkcU5nT3pvQnd0T192ZTc3LVpFY0pCODFyMzg?oc=5"
-  },
-  {
-   "titulo": "Dólar hoy en Colombia: este es el precio de cierre para el 19 de noviembre",
-   "fuente": "El Espectador",
-   "fecha": "2026-11-19",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeW1nWmtUdEJMbGN5UGltQVgxbFY2Tm9xa2VqX21ZZzNlTE1vZ3V1Yy1Ub3NKUE9QR2hLRno0aFludzlNb2lfa2l3WHhoUDJDV29qVnZuZi03b0xrVXhNdW80bzMyRWk0VGN1Z2hodGduOHhfcHZGU3VNVXZjaHVVMWc4SzE5S0VyV19EbkJXRGVkczJuNHNJUWxKNE1zSjh0eTVmS015UHhjS1Npa3pBNENXMUxIazNUSEHSAc4BQVVfeXFMUG5kcGMtRVZac3MxaFUxMTM4OVJic05TWmRXTm9CMHdSVXhxaVg4TzB5WHpEWEpNdkVvRE1QQVljcmhicU1VaHhSRC16WmVRTkRKV3A0dmNmMzh6MDVEUS1WcDlSZ1d3bVY4VGNiMVkydV9MWmpFQUN6bGJJTFlfa1hVVjY4bzNBQjRDbkU2VjNuV1Zqd3hMRVBLYVppNlh4ZjRGYllLY2RzTWdBYkpfQ2pjX1QxVEFlNmFIdVBKbHBqU0JNc1FMLXpwYl95X1E?oc=5"
-  },
-  {
-   "titulo": "Dólar más caro tras aumento de 100 pesos en su valor; la moneda superó la barrera de los 3.400 pesos este 19 de noviembre",
+   "titulo": "Estas son las apuestas del MinHacienda para modernizar el mercado de deuda pública",
    "fuente": "Revista Semana",
    "fecha": "2026-11-19",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxObk9Jb09yWHk4dzdSUlk5VzFQRENaS2VFcTI2VUtYeXNNWERJYm44UkRkbFM3MnJRZ3V1RnhuZ1A0OTJBSGhrdndOcXVCaEZWTVdVNERCc2E4aFFqaXp3MDExUzR1NElFcHNoeS1iekxwaUc2TzR1SEkxX0lxeERpbF9kOWc0c3Y4VlhGTEMtTVpGNWRKRE5WUmgzNFhSZWJyNkVOdGdDc3NBNzNZNjVQbG51aFQ5d1Z2MTJtcWJKMWdFUkRBX2M5U0dndDZkazMxZGZrcFRXS3BmWEVXaUc2M2hfbERwSnl1TVFtOHF4aWNnM0FLMmszc05PQUxvZWowS0F2enBGa1l0QlQ4dzBB0gGUAkFVX3lxTE04WGkxMERjamhxWkVYNjVDZ1pBZ01hT2JZYlU0VkdoQW1sbXZnM0I5VzlkekRSa1F6cnVNVXNsbjljd0tUVWtPMFh3NGJ0dTdfbGt1SUdxVHZtX3JFb0x0a2oyTjZJcHFzdHJzM2NGMVBCdm9sUUN5QjdUYjgzQklkUElfVmwwRmU5c2R1RTVoMmU3eGxFUHpSS1NlMUNTQjBBd1MtS0NuTXBnQkNtQ1BSX3NkRGZfTlNGVEhYcDFtbkVvMFhTVEZYZU43ZTBpcTFnY2FoMmxCNjFwVms3YzBHQnA4Xy10S201WkM0ay1qY21ZTjJhREhBSnNBNWVMUU13WHoxSF9CYWlTZDVxbEsxeVRPRQ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPanhEaUplcExtM2p5RmQwdllza3JyRDFocnJnOWo2S1Brc0ZBcGwtaVFIcGF6WGdvXy1CdWNnUmRZX0QwR3RDSW5GR19JMWMwUzd0Y0Vua05HczM4akhaTm1EZV9tb0pRTFE3anBQd19Qb2JnOHFnOF9pclpCNTZyN19DUDlfOG11VnhMSVJyWjhHZ1pwbURxd2x4MW5jVVdZQWFRUTBKZmcyOGlrNE1mV1VJTnY5UWkyVWpXb1UzQXZOSlFrbXpFQ3pld2VzZUdHUXhaZGplY0ZvUjkzV0FmWDZaONIB4wFBVV95cUxPanhEaUplcExtM2p5RmQwdllza3JyRDFocnJnOWo2S1Brc0ZBcGwtaVFIcGF6WGdvXy1CdWNnUmRZX0QwR3RDSW5GR19JMWMwUzd0Y0Vua05HczM4akhaTm1EZV9tb0pRTFE3anBQd19Qb2JnOHFnOF9pclpCNTZyN19DUDlfOG11VnhMSVJyWjhHZ1pwbURxd2x4MW5jVVdZQWFRUTBKZmcyOGlrNE1mV1VJTnY5UWkyVWpXb1UzQXZOSlFrbXpFQ3pld2VzZUdHUXhaZGplY0ZvUjkzV0FmWDZaOA?oc=5"
   },
   {
-   "titulo": "MinHacienda busca modernizar el mercado de deuda pública en Colombia con bonos tokenizados",
+   "titulo": "Precio del dólar en Colombia: no deja de subir y así de caro se compra y vende el 19 de noviembre de 2026 en las casas de cambio",
+   "fuente": "Infobae",
+   "fecha": "2026-11-19",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNzJQNHRRNHctUzNaTUpEODNkMWlGM1JtYlNoNDhOQzVRbDVDMXN5cWRTTGtyaHAtYlRqN21QR0tMRlg3Z0ZjRVJtNVFxZFJmTFNaSW5XcFN2ZDVCQkJyRWxYd3RFY1U2UUZ3cFJtS0RiazlSX0JMUlZoLVZYQWp5S2RYR0x5UzNrUkxuM1JJSnpsQkFtNk1Oc0FlVEdoQS1fZHppVTVsTjN0SDNQaVR3Qi01Q1p0Rk0tTWfSAdQBQVVfeXFMUGtxMUstRnhHNHo4QUFsSmVCekkwZmltS3VZTGNQbjRNbmJOcTBUSFhyZE9kZFJySktsaUc3ckJFNVY4bnk0endKRzd5X1FnOGlWYzhMb0xvV0NrODFMcUN4aEtyRzJmdFdlaUdLT1RJU3VKYlFtd08wZkVpTVU2SjVZRnVHdElJUVJ5RkRGVEVtZjZZajctT3BCblUwS0xLMkZSRmR1bkstbG9EdWJFRmQwWXYzdjZobTNMazhxa1ZsaFU3NE1vbjNtbk41dWNkVGlNTG0?oc=5"
+  },
+  {
+   "titulo": "Menor expectativa de inflación en Colombia permitiría que las tasas de interés se mantengan en 12,25 %",
    "fuente": "Valora Analitik",
    "fecha": "2026-11-19",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQRlVQbWpydFhYZnBlT1lTdUZhVUY1T2dkZUJwQ3RLZmFvRHR4TXA0NU9wX0xhb1lnbGc5bHgtU2twd181bFhFakxfU2cwc1NtVmhla1AzY0JnVF9nUmJjNjhaMzRGZTcyUDRtNW90NHlSX1M0TTl6Vi1SZy1aX0FXVzltSzhSWXNQQS1jcmpOdmJMaGk1Y0haRTRLVi1UU0dPaENKT1ZTcl9NdG1XY202MUhIMURiMldGQXNEVDY1WFphaU1SZzVQb1dGMGprNmJTWGNKaXdUOGQyVEx4bm84S1RCVl93N2ZaY0xzVmlWTHFmX3NhUjEzZjFQSWJlZ1BkS1VRRmpqeUxpdHUxVlJyaGZFa1FBczU3SDd5aEVqTHB6UDBQaUJIetIBrgJBVV95cUxOdzhDX1E5LW9IaWxYcmtHVzU2a1Zlb0hSMmJJeXBoY1M0OUd6R3UyY1NkTWRCZDctUTFmNEpwUDhwbTRkVE9leFVrcHd3ODJ5NXZfdGNpMDAwZktCVXZPbzAyWjN5Q3EtVFh6Y1ZFb01nN2hOV0JkM2wtOGZ0RVNCWHN3MURDQXoyOGJSN0lCZHJTN194MDFEeV90QlBSR1laeGNuSkxpM2hUZ0lyWG4wam5mZnpQcFRCTTFrYk5tNS1GQ1VWN3MwWF92MmlHRENndE5oamhWTWFfdWNFbHZ0SG50UENHLThpNWVJelBCRTBBUHhVZUhCQmRNUHFYazV0TExkVEg3YUVpSHUzX3dsMTR5aDhjNUlNSnZBZkFMaXBvTllyRGNfaFgwa3NtUQ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZllyN2lpYmdsRjl2M2xTTjRlb2ZiNlRnTzFfdXkxblZhLWYyYThaek4tay1MM1FhbUxKbE9pcTR6aXlMV1o4ZUpOY2wzYjNKT1FGRS05ZzF5OGpRN2l2RzJfMXZBV21KdWpZRzlScXp3b3ZzbE5VeWhsRVo3QloxSF9mUENzUXJ4OFQzU05JRlN6WWFKQ0N5SjhhMS1CcXRiUDlNVlNzNVRIOWFKQmpoSllUdUJHcTBlMXNtYXpIcEl3cU1DanRKUWI5ekY4VHR00gHQAUFVX3lxTFBmWXI3aWliZ2xGOXYzbFNONGVvZmI2VGdPMV91eTFuVmEtZjJhOFp6Ti1rLUwzUWFtTEpsT2lxNHppeUxXWjhlSk5jbDNiM0pPUUZFLTlnMXk4alE3aXZHMl8xdkFXbUp1allHOVJxendvdnNsTlV5aGxFWjdCWjFIX2ZQQ3NRcng4VDNTTklGU3pZYUpDQ3lKOGExLUJxdGJQOU1WU3M1VEg5YUpCamhKWVR1QkdxMGUxc21hekhwSXdxTUNqdEpRYjl6RjhUdHQ?oc=5"
   },
   {
-   "titulo": "Dólar en Colombia volvió a tocar los $3.400: ¿hasta cuándo seguirá barato y qué prevén los analistas?",
-   "fuente": "La FM",
+   "titulo": "Precio de la factura de energía en Colombia le pega con fuerza a los hogares: Inflación sube con fuerza",
+   "fuente": "Valora Analitik",
    "fecha": "2026-11-19",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeXhZYTlGYnBKNC0yY3g2NlprSlRZc0dQLW5vcE5kN2ladVAweEc4bGF0eXFEdkp6cEg4VDlhNlZXVTJNMXA3enFHc016eVR4N1piakNWSE1NeHN0b3hNemhON0JUZW1OZmhueFBSY0dEMWMzelNjSFNzQnIxNFBtQ2xIVkNJX2FxN3h4clEybnA2bi1XWkkzatIBmAFBVV95cUxPTFVTWHVPWFVjeWhDQ3drNDl0ellPTGhfOGI2aExmS2xKOGM4V19FNkdpc1NpWFQ0LUhPUDN1QWY4aXhDRlZwMGs2X2Fna2Z5Mjhpei15Zm84eHN1S3QzZERzRG44R0ZkRWRPd1UyRWdXaDVXbmgwV1NsZnJCZ2tXYmxpdUViSHhURXptVFprc2E1T0ZUZ0J1Xw?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPaXppU0xOT3BPU3FZMG1hQlZFRnI5RlZMOTIwakRlNzNVaU5QOG15MGZPMDl5cURLd25Fd2U5dXNVTmlLUW1tZ3owazU2YUhIcFEtRmZoOWRHYUhLUkNucWdEbG5RM1JhS1VxNWRiUE5weTQ0UjljT0dqTWFkc1ZhM0JUMHVranVlMmhQZ3RXNExuTjVBWnFrTE9qZTJKMWxfWTljcnBCWDFlTGduTXFoVFVueGJNQWl2NlJBQk1tenV0WmY1dHV4eW9wWGxBcm_SAdQBQVVfeXFMTmRsUlpadkp5Rl9QZGV2VTJUT2x0X24yNjRaMVI2MDRMYlBmUUtsVE1EdFljMWZDNVlEMnpLYUhJRnYwWXJsdko2X2RHN3NFWnpUeGFJa1BOeHFJbUdDSUxsYVVrMFlfclFxYXRlVHFtdGV5N3ZQbVdYeUR3NUQteF9EemQwaGZfY2tQdmh0YVk5V3QzMUh5SG9ET3NMcVlDb05ucWZlSU1rQ2xmMVpxOEFFWWNTMUdmcHlBbFRnMXVEYjlnaWMtTFFiTjFlRVJxUHgyODU?oc=5"
   },
   {
-   "titulo": "Anthropic, compañía creadora de Claude, debuta en la bolsa de Wall Street con cifras récord: acciones suben un 34 % y se fijan en más de 110 dólares",
-   "fuente": "El Tiempo",
-   "fecha": "2026-11-19",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOalhJODMzbDZSemd2d0RSbUZHRGZ4UmZkWWVSc21fb2VrSm1Qc3NXWFJrV3oxUkltNkZ1a3MxSHhacTNwZVZHbFFBbkV1aERJdVhnYTB3ZGxGUjJaTnM2VmhJTDNERmxrbFRHVHRmQ0VjQnlCYUtLZkxCMm5WZ0NoMWl5cks2cnRyUF9QZUxSYjlheXRXalBiWS1oeXhRb05iYjUxXzhKZk1kOFY2UFBtRGZ2cGJUQWQwdWxMQ3VscGlwbHZiTlhSaWl6VW9hYWJpNkNIdXFVYzIyNWNsWnhvTHEzVVlnWkZiSTVndklHODAxUGZCSXFMeG42cVhVaDd4cGFyTjYzd3BndWUyeGlxNFQ4VGUtZzBtbVlEUHkySElydw?oc=5"
-  },
-  {
-   "titulo": "El 'efecto champán': las tecnológicas que debutan en Wall Street este año se disparan un 50% el primer día para luego perder toda su fuerza",
-   "fuente": "El Economista",
-   "fecha": "2026-11-19",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxQdHFVWmNkSFlldlY3Y20waUVvWi1NaWNSbVRzTGN0QW9XMWJiS1c1cS15bUt1WTZkb2tia0xCVW5uQVY1WUxhOGVuV3ZONWhCSlhuX3NwQ3VOdzZLTTN1RWd5U203Yy1pbWt6dlh1QkQ5Y01mZjJ0SXJtNFJST0NXRGdtOWZQWUVqWlpyYzhYeGphcG1nM2Z1aVVGV2FETWh0dGUyZ2lHei0zNnVBa0h0a05fRVFTQ29sUmFjdGVERF9VOURFeGJrUHdiUEJjeG9pNHo0Z1hBbmtiLWxsX29JaUhkbzdta1dZeXlMMUhVZUJLX3hBZmlsYUwySFd3bU9ZTjMwV3RWT3RmNU9VUVUyRmIweS1RWkx6cVluVnh6Wld0cXY4djdmWEMwaDF6a3hnNW5Gc0VSWDJEZ9IBpAJBVV95cUxPSG9Vb2tZT0dqZngtX25qcjR5WGxITUJKZHRDVkhnOF92dy1pdnduZmdVVzFhUERCOG5hck5oWFU5YzUwS1hTUG02QzhXUXBRZ2tpVmpaMWRDX25yeDRtRkgyNGF1WEVqU1pYU2JHdWpfQTVqVGRmNjFITWEzanYxY1JuOFc5bHFyQXZuUUJhemMxaklvU1J2eEtKQVQwUkc0NFdwSE9URkNQVlF0ckZQSkt2aFB6TXdydVZfT3JBWVZSY08xNFRoTy1kWnh3YXJZZDV2eUg4cjJDYkhuN0NqaEt2ZjJRR3ZSRjFMQWVOdEFHOGwta1c3SkxZb0lSNFk2ZGF5eFNiZlpPc01aRVd1RU9CU0VFWk9DVU9XMDJlVmJWcnJB?oc=5"
-  },
-  {
-   "titulo": "Dólar en Colombia volvió a tocar los $3.400: ¿hasta cuándo seguirá barato y qué prevén los analistas?",
-   "fuente": "La FM",
-   "fecha": "2026-11-19",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeXhZYTlGYnBKNC0yY3g2NlprSlRZc0dQLW5vcE5kN2ladVAweEc4bGF0eXFEdkp6cEg4VDlhNlZXVTJNMXA3enFHc016eVR4N1piakNWSE1NeHN0b3hNemhON0JUZW1OZmhueFBSY0dEMWMzelNjSFNzQnIxNFBtQ2xIVkNJX2FxN3h4clEybnA2bi1XWkkzatIBmAFBVV95cUxPTFVTWHVPWFVjeWhDQ3drNDl0ellPTGhfOGI2aExmS2xKOGM4V19FNkdpc1NpWFQ0LUhPUDN1QWY4aXhDRlZwMGs2X2Fna2Z5Mjhpei15Zm84eHN1S3QzZERzRG44R0ZkRWRPd1UyRWdXaDVXbmgwV1NsZnJCZ2tXYmxpdUViSHhURXptVFprc2E1T0ZUZ0J1Xw?oc=5"
-  },
-  {
-   "titulo": "Precio del oro cae 3%, la plata también se desploma: los metales alcanzan su nivel más bajo en 14 meses",
-   "fuente": "Forbes Colombia",
-   "fecha": "2026-11-19",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNUzRTRzFKQkNQMFhyRE14bFduSmNSRmtPOU5KWUw3Z3oxMG41YzdQMjloLWN3SGt2X1BKX05vTU1nY0owcXVJdmtRVDhlc1kwVFdGSUVUbFQ3VUpzRWF1aVl3d3h1YWlONjJpVlB1aU5yd0VBV1FWQjhOX1RKLVBhRkliZHJ5bTRtc05qYnhXdU1yUkdQczN0eHF6bkRtU3FLOEhtb1NvQ1h4el9jTzFmekhBM205RHFJeVZqSGM1LU10NFdPZ21vaEN5bDZWbmoyTzFHazYwaWc0ZlJ2OXVPOVI4cmY?oc=5"
-  },
-  {
-   "titulo": "La IA se estrena en Wall Street: Anthropic protagoniza la mayor salida a Bolsa de la historia",
-   "fuente": "Expansión",
-   "fecha": "2026-11-19",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMGRsanZyMzk3UmFJRmg4UkNCdGlPSl9lVXhiaHItQlR1eTZSYkRnMXFheFhwR1lDWTA5SnBZSFctNmhKczFES0VoVHR6S0hLdHhqRVZmeXV4MHlTby1LanAwcEJiN0tMcWxrRFVESmpZaWZuVThSV3VCclFIa0taTTZZM1lRM3lVMkxraEI3RGlmaHhaTEo0dzh3Wndpa1NOOFJLTmxEczFodTh2UDI1ZXlkck0wbl9aYTZDSHFNdzjSAcABQVVfeXFMUGQ0SVhKTzVCSHRJNjhqbUF2SXlqSWpvbllMeVZ6Q1J3ZjZtNDBaNlhWamJoNFFIaDUxYkhKc0pxREJTV1ZaMVp2SGdiREwtWDJmUV9lZFR5SEtrQjhqV0tGRTRseVBSenhWS1cyNnRHa1VxdEdKWUJZelNTVUwza2VjYnFLUHlidmd0VUpLaHZhc3o1QXNGamVER2lNSGI5SnhfU3R1dk4tLWZNNkhQc1ZYZG4xMGJ3S2x3ajQxVUNS?oc=5"
-  },
-  {
-   "titulo": "Mientras Nvidia caía en Wall Street, colombianos redoblaron su apuesta por la acción y compraron US$5,5 millones",
+   "titulo": "Colombia alista un piloto de deuda pública tokenizada que busca agilizar la emisión, compraventa y pago de bonos",
    "fuente": "Portafolio.co",
    "fecha": "2026-11-19",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOLXdJMHIxTHdpOThFeUhyVDdBN1hsUXJWUThBSVVndG1Ba2pMaDU0THRQMDVENHVnRy1kWmVMcUtUbEwxTVFSYTFlUkpGTFNReXpoYXVkOGlkbXd4UjhEUkk0UWo2bHpidG1Fb0s0UDcyZ3EtaVRhZlljb2tuVGdjYXlLbmhuZ0t4blhHUnFXN25uQTRYZ0xJcU1jNWdvMnhRM3R3RnhxakxFNkZMckJkWUJ1VVR0TjZ4U2l4aFd5NDgyQ0dBbVpEaV90XzNVMmhfcVNfb0d0OUx1cGY4M1dZX201eWFJYTVo0gHuAUFVX3lxTFBjaW1sWlFfMVBRSnN6UmFybG40RHg1ZXpkYlI5bHN5b0hHcnNHV3I5SmFTaHpUQ2dtOEo5MG9yVFI5WWMyMDZNdFg2dHhpaVM1VmdyTXBQNS12SF95RnZzQlQ5bmp6bS1PdWVsdGw2ZmZSWkJOV1JQLTdnZ1J2UFNtQ0tvaWJ0enVPRWU2djljX0xvTDgwUE5CTW9tcU01dk9USmZYTzFaRWV2dU9kNTZHNTRKa051dk96Mnd4MUVfeE9GMVBKZTJfMExyb0Rsb3NORUYxZGpicmNWN2w0OEs2aGdyV3lLYnRnQzEzOXc?oc=5"
+  },
+  {
+   "titulo": "Economía - Anthropic debuta en Wall Street y alcanza una valoración bursátil de USD 2 billones",
+   "fuente": "France 24",
+   "fecha": "2026-11-20",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQT3lRZkhmM0o4UTZlbTJ0QVh5UGhDdk9LQVM3R2lLZnhFX3BHMm5WV1ZHRmxmZ0UxSmI2eVN3X1Q4ZXFpVllQcnZCQUd3Q1RaNG1tU0FsaXg3U1A5dXdBNmRXQ1p4YndSX09TcHNrVEVIblRyT1g3emRWZmotcjgzdXlQNUU5ZVdMdUpKSEFBQ1RjYzBaeVZfb2V2WXdvUGNoYnNmNUtXbFMteW5mdUE5bDUwZXRxcWdjaDI3eE9rUEJ0NF9FcWlMeDVhVUJselh6bTExYmpGeGo2MWFJbXdORG16ZHhjTjRieVdMYnYyX3dha04ycWfSAfsBQVVfeXFMTlo1bkx0aHRkYWJfd2NKaTFlM2xpd196cWJ1dk5tOWNfWEpRWWVZVXhLMC10elFjTmc0Wl9QcndnMU9QSEp5cDFybzQtcURfWEFveGE4TzcwNUFESWw5MkZreUxhcnd2czNNODN0SHIxQ0RhTnEzMlQ2ZmhPd1p2bXVmNTgxZTBrdjVlNnA2OURkRWN4Vk1BaGlfMjFPRzgxb3hHY3pUamMtNEw4QXRDZGMyWjJzMnBEZjNzdG1tb3pXRlVXeHVTOUdfSjNsMEZzZUUycmV5X1FFVDVIR2gtWmxqdmZxUG5XNHdKa2JqSlZHUUhUR216TTF1MjA?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPQVNPZFpmRjdZeDVEdlBXRmpXOHRVUUs0TjZLYXV2Tk5GeVo1VlNjcWhxcHRsaTkyU2FTQ0FITzhicmlJQ1BzLVEtTDVPMHlvdTA4dDA5dVF2dnhmN3Uxa1FlRDRGNzFhU29hLVRQbDd2UVhyYmlfQlBheDFUZWVmbHU3SnNwUFlqN1FTZGNNNUxNS1FRTkkxR24xakhtYWpGNGNRMlRVaVdOd3FNVUhxWHpHSlBNcGl6bXZ0clZWQXEtT2Q4cWhRTElRWTZIRDdsMzYydVJScXZvTVhRY29UMDZlX0pCMWRfemc?oc=5"
+  },
+  {
+   "titulo": "¿Banxico ajustará sus decisiones por diferencial de tasas con la Fed? Esto dijeron las minutas",
+   "fuente": "El Financiero",
+   "fecha": "2026-11-20",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNOF9JU3BueGQxR1RncU1ORVNZRXZuSUxMbnFTNWZUZDhPcVZHN3lDNW5xb2JxVmEwS29Eb1pZNmpsdEwwemF2ekszX1hNc3czRTNpdDQ2X2R3bTlDaFI2SkFrdWI1SFYtbGR3aG9LUkhMQ01Rd2paOUdFeVE0WTNIQTdiOWJYTUlTaWF3R0JWVE1YWXVRb1hEWEVURHozOXZoeS1RTEFMdzhtVVdiZ0Q2UE8wdlhGcmtUQndsN253dDlhLWFWZE43VEtoMTcwVHlYa1FXclZ0SnE2UXZSN2c?oc=5"
+  },
+  {
+   "titulo": "Los futuros de Wall Street caen tras el debut de Anthropic en bolsa",
+   "fuente": "Investing.com España",
+   "fecha": "2026-11-20",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVFdSR2pfSWxjQ0tWb0VSVXZlLWRBWDJhZ1FBeVRfMHpydktBSFd4ZU5DZkJDQm1lY1c0eEpsOGxKWHZsZHNCNkdWSGpfdmVCWS1oSDA3Snp1RDF1ZWZFMWlYcVltdi1oaDhxRDFhX3RPUU9Cb25JZ0tMbTRVNnNJNnJpdGRDS29YVXlQdDJUT2NZZG9uQ0lWMHd4S3pNM1d4LWZGVW1zcWE5MmNfX2FZblRKaE9MLXVnUXJ4ejJlekY?oc=5"
+  },
+  {
+   "titulo": "Anthropic debuta en Wall Street con la mayor oferta pública inicial de la historia",
+   "fuente": "Infobae",
+   "fecha": "2026-11-19",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOXo4TGxxczUxSW9QcktzSHZ0dWNPZUpUelRDOFZ3Rng2OGc0YXN4UldmMmJVdHVDOXdlYlVob3R5UktBeV92NE9TQ0pzc3VnaTg3QWZlV3JIVE1wcWs0V1NLVy1GMDAycVZWSTl2dFAxa0JHMUd1OUF1VE5RQlF4MTYzekFKbzJyWXRNclF3eGRDV1kwZ3AyMllUaEVhcDZqdFZtNGRNRXZNUHRDN2R6bGlVbktfNUpSMmxYY2Z4cDhiTk1UazV5d0V0MzdId9IB6AFBVV95cUxNQWZHNHdBMFAyaTBNZXY0cjRzLUc1WFZMZG8tYUY3NXcyY2xOY2ZrbTh2OGNaN05MZzJIejctTzhmWkRraG9Hd2RCSHdDVmlBOGM1dEo5Y3gwTGktTjg2S044N2hKSmw5LVh1RG5VMFVBUTB1MjdNMFBBQ2trUVpOMi1nOXByV1AxMGwxUUJRX3piLXRxQzFGSlBQTmhGWW51Z3JyRTU2SS1GWlp5czh5YWJnbC1pa3RMRHdvYnlQblBEQXFlVjRoR015SnlkRkp5TVNvdkJJZEpUWWxUdmVMb0tpeDhUWUFu?oc=5"
+  },
+  {
+   "titulo": "Fuerte cambio de tendencia en Wall Street: las acciones tecnológicas arrastraron a los principales índices",
+   "fuente": "Forbes Argentina",
+   "fecha": "2026-11-19",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRjgyYTduZnRJeWs1R28wVXlNNTE5cnRWaVpZSDlVWDR6bS1iSFRQMm1PeGlpcDhfcmZqSEl2QzlvYnp4SWRnQ0hZa3ZLVkF3SmNNOG5USlp0azdBb1BibW1ZZ3V0VlJTMlJTUmRtRDdYTm53QXh5aUdqUE0zaHZfSDJfQUFoaHQwQkszMTRzeEdieG00U19nUG9lZ1Fac3Z5N0RCc0lsM3dBRWpVaUIzYXlCbUdENWZndjlMUDVURUNDQ1RUWXBKdHNMMEV5bXoz0gHWAUFVX3lxTE5MMjI5Z0hrYmtVY09RNnV1eVN4Y0d6TTFNWkJGcVB3aFNSS0h0UUFIOEJydnRwUnljN2RfSk1TZHp3ZE5qb0l4VG1ickpnRWZYVXpObGJVVVdOb2FYREFZR0sxN3RHVmtOMzZIM3RIdUFDdjF5U25KNENGTE1ZMjB0LXh5VTYxY2RIcTBXOWR1NlpsWGhFSmF6RG9VQU9TenRnMkpLMldqVlEzT2l5U2VFdFlxbXRVTTB3YmdMWFczWE1PTC14RUx3b3hRUUxjS2d4STNqTGc?oc=5"
+  },
+  {
+   "titulo": "El peso mexicano cae por debajo de las 19 unidades por dólar, su peor nivel desde junio de 2025",
+   "fuente": "EL PAÍS",
+   "fecha": "2026-11-19",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOZGpSZTNUZnplbkJVc21rWklzUGNRVkI1dzloR0MxaS1lS01RbUNsNThJSWI3bGtNZHJlV0liamtieXZROEQyUnVRRnlQaXltZWJxcnFGT1ZiWFBIa1pZVE92bVlJcExZZnlNLTNxa080OXNDQ19hdXF1UnEyM1ZCUXFoRmd0bTdseFltaXN4OGhyZDJxMnNocndWaDNER3hydUxZSTFPUkxlZFJqX2U4NmNVNVp3dW9SLUNJQWpQajRaT0VZY1ZlRzdVMnFEX2J4ZmZnME00R3poTDFaT3hPZ2lLSDdiMUtDY3lRcktMVkZfQdIB8gFBVV95cUxOZGpSZTNUZnplbkJVc21rWklzUGNRVkI1dzloR0MxaS1lS01RbUNsNThJSWI3bGtNZHJlV0liamtieXZROEQyUnVRRnlQaXltZWJxcnFGT1ZiWFBIa1pZVE92bVlJcExZZnlNLTNxa080OXNDQ19hdXF1UnEyM1ZCUXFoRmd0bTdseFltaXN4OGhyZDJxMnNocndWaDNER3hydUxZSTFPUkxlZFJqX2U4NmNVNVp3dW9SLUNJQWpQajRaT0VZY1ZlRzdVMnFEX2J4ZmZnME00R3poTDFaT3hPZ2lLSDdiMUtDY3lRcktMVkZfQQ?oc=5"
   }
  ],
  "tes": {
