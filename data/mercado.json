@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20",
+ "actualizado": "2026-11-21",
  "indicadores": [
   {
    "id": "trm",
@@ -26,7 +26,7 @@
    "nombre": "Tasa Fed",
    "valor": 3.875,
    "unidad": "rango",
-   "fecha": "2026-11-20",
+   "fecha": "2026-11-21",
    "detalle": "Rango objetivo de fondos federales",
    "fuente": "FRED (Fed de San Luis)",
    "url": "https://fred.stlouisfed.org/series/DFEDTARU",
@@ -75,98 +75,98 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3345.39,
+   "valor": 3483.34,
    "unidad": "cop",
-   "fecha": "2026-11-19",
-   "detalle": "Precio del dólar en el mercado (último dato); −116,53 frente a la TRM",
-   "fuente": "ExchangeRate-API",
-   "url": "https://www.exchangerate-api.com"
+   "fecha": "2026-11-20",
+   "detalle": "Precio del dólar en el mercado (último dato); +21,42 frente a la TRM",
+   "fuente": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
   {
-   "titulo": "Rival de Nubank en Colombia tomó decisión de peso con tasas de interés para CTD desde noviembre",
-   "fuente": "Pulzo",
-   "fecha": "2026-11-20",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd242ZXllWTMzeFVGMDYwRm9tbm8zWW14RGtPWl9SamtqcFR1cXJsTlRiczFjS2laSjNBb0oyUW44cXVKa0wxRE4yREFxQlphUnBSUjA1ZFhpcURiSWg5RmhDZWVTM2tyUkM0ZVcxN2VsN1F2QWxZZTRrTUF5MXJuOWFnMDNxUDE4REF5bEtHU2lQb2RpSTB6c1N3bi11TWFDUUhwTE93?oc=5"
-  },
-  {
-   "titulo": "El dólar se dispara; la divisa cierra 45 pesos más cara la jornada del viernes",
-   "fuente": "Revista Semana",
-   "fecha": "2026-11-20",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNWXVtVWpXZWJIQnozNWxtcjJLckxlRmk4Vjl0VEFybU4yWm9CVTFDYjVETFdid3BkeTcxbzZsVUVybHZUQTl4eEIzak1NMVhEN2VSdlo3MUlpSHhBR29xcWw0aVJGeDlpY3ktUGl5VEwyYWxlY09xalRUaVIwTWd4UXV6ZTk0UGZ1MmMtUHNtTVdZdU1pS3ZBTkZaVUQ5dDlvU1cxbnV2c01sMW5FeHJpQ19KYTZqeHAwVURMYllIb2ptUFVMb1RlUzdST1RYbGREXzNkel9uUdIB3AFBVV95cUxNb05FZUxKaXdQeTI3S2JRWGdHZ2FYOG9WWUM2RThpWjZNR2xpV0FhWWp1NTZFMXBia0pOWWRPc0h2V0dDNGZ1NWhVTGJMYlI1WVN2cTI0ZF9xVkM5WlpuWXhicTNCZVlIQktBWi1rTS1JeThlWXl1SUhUdjdhSFphQmdXVVR5eWZLOEFNUmRkRXlSN3dpS29sN05WMF9CQWx1QTZzVkotM1BRdGkxLXJqYmJHNUJkRVNFYzlOY0c0YnJWWm5DdU02MkVzVHhheXN5QUlRbUJVdUtuWjJm?oc=5"
-  },
-  {
-   "titulo": "El dólar en Colombia ya tocó COP$3.469, su nivel más alto desde junio, y encarece los viajes de diciembre",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-20",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPblN2ZnBMMENSWnhZWF92VThFcUhJVXotM0JFWGRRQU14WlZSN09JSzA3Mm0yTm44N3FMRjIyQUV0Z09PTUNGeURoTGtCTjk0NHNxdi1vdW5KZDIzZUFLTVh0T2xIM2lHMUNoZWtRazhfZEwtTm45TWt4OU5EZWI4WnhVWE5xaWRmMWRwOS1OaTFpejk1aUVORkN6ZVZHeEdDWDFQX05SX2h4cXo4eWsydWxzejlQOWVGTm1IZ2p6UkFoYlVVSzJ1YW85anJXbFRsNnd1SUFsZW9lRkVxQ19PWdIB9AFBVV95cUxPWGtsSVF4ZUQ2aHRhVEtGaE5jSDRxUFJPU0d1VDh4VndGZVVDZnVpN1hXc2l4d3UxOEN0MW1oTTd4S2l3eVBzM3dyRmxXYVVLWEYweG5Jb3hsU3hzb25QVXhpLVk4Y28weDM1SU81Y3MwWERJUFRtZUZtOEtzRndTRk1tSkZMV1Bmd1BLVnNHZXpZZXptdDllazFlXzdadlJEdXZYajZfcnRSTVNkQnExNjJWMTNqREJvdllwbTh0bGxRb0VRYmRnZzVFZTczLUtia0tmOWUwOENidDNEQjNzdmZsVUJMaV9HWnpxS2JCX2FOSFpS?oc=5"
-  },
-  {
-   "titulo": "OCDE presenta duro diagnóstico de la economía de Colombia y traza ambiciosa ruta",
-   "fuente": "Revista Semana",
-   "fecha": "2026-11-20",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUmRyQThKSmlPX3VlQmpaRDZQdzRnYVgwN3RyNXphcXN2QW81ZnFROHpPQlZWNVdJa21HWU1QNTRsdno3Vnczak5ORGlLdlpZR3ZvMTJDMWRLTUliclNVX1ZESjEtTE5fUkRGc3E2X1lQbmtieGxEUlNVaWNYVV9nUG51VEdPa01uMERwS1o4M3R1OEtIeksxOXNFRkUzaVF3cHhZUk1UOEFfRkFOaEE0NDVPVkoyamFlS0pCX3F3VkNDQlloS3VnekNOZV9KbVItdW9DNTNsbXN6N2_SAeABQVVfeXFMT3VZcDlmWk5rZHBLR09GUFRORmY1NmJsbkdJS2VaU3lGcU1qYlJnNWloTFJCWlNlZGZLMFRwQVoycHpSbXNUSUp5NlJlLXlmRi1FTl9zMVBpb2FhWkhJUktXODJ6OFdPTjFvaHFhQ3pESFdkME5NbWRoVjlDaFR3dEdqRnNhMTluOUExdWpqM25nMVRwaF8xRC1jdWloanhMdDJsekJJX1RBR0c0ZmFpMjBnRGx3YXJLOVllRkNmZndnWXY4Vmg3WnZpR0w2alE0cEFQNjNsM3drazhwREVJdHA?oc=5"
-  },
-  {
-   "titulo": "OCDE proyecta un 2027 para Colombia con desaceleración económica, alta inflación y más deuda",
+   "titulo": "Bre-B del Banco de la República gana el máximo premio en los Best Branding Awards Colombia",
    "fuente": "Valora Analitik",
-   "fecha": "2026-11-20",
+   "fecha": "2026-11-21",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOczE5S1YtcGU1TUR5SlVJd2pkU0lnU05MWnRBYWdZcmU3T3FPWDQ1WkcxSUhmb0tfX25kd08tWjR5QmFaODNCOVB6NG5WQ01VSHc1eV84cmEtRDlMT3l4djFwOHRkR2R5Vlh2VmYzcGVQWGo2VGxBcVRPRTB4MGhVaWp3OHkzdzcxVzZaZUZyNHpoaUl1bktOT3Y4MTBidkIyWGlhYXhvMTU5OXRDcE5tWkhFWWtZRWZhLWZ1NERpMHPSAcYBQVVfeXFMTUdoZkRlNWV1QnZjS1F5Y0JxM1RRc3RWcncyWjN5Z1FjdnB6QktOakR1U2MzVllncWNabUZGVUxQYmt3UlJGZ05YZjM3NDRibUZib3IwTWo5UFJDdjdYUFc3VFY4Nno2dEdveU15X2FYdHU1akgxNnhVbmZkdVB1ZTc4SnJfYnlVNUdIcVdHYndvSmstTmJ0aUliWklWYVFBMGNKdXB5eHhFLXBwdW5oUGFNS3N3dEVkWXBXNUpXQng5ZUp2cUZR?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTTBNSU9lOWFQaW45LU01NG5USTRMRHlXOXBUcTctcklBcWN4a0lZalVyaXpvdGdSaXpnMjNpVVZUdHdGZmk5eUlucDhkVlRMYmJSVnZ2bmZ0MzlwcjhPUmw5ck5NUHlRLTJzOUNzZVc2Y0VndFRuZ0dFNDlfNXpPeG1obDNtbFRzdWIxcHFjNm9UbDZ3RmFwM3BNOVZXT3U1MkFqVFdDZVU2NlZGMmN1OWdiSWg1ZXE3djE2cDRvd9IBxAFBVV95cUxPTHRVR0tUbnM5SFdFX3NhNDBrTXJYMjdobnl1VWVqVkxNdDFyWW9fWG84UXhQNnZQTnNnS1dDOTduOGtNYjllTXN6dG9KRktkcmo2NVpEVUk4dU1SSGxWQS1WNHhDa2M4Nmt4ZVNCZG4zLWY2VUdDTkhlelpRRUxrajIzZ1BJdDZuVVpjVVlmVlVZSGc1ZkhHTzZEanFqUGNLa3ZrQjdIc2M3VjQ4OVdYTU9GLW9uSmNlajVjUDBRNjVGTGo0?oc=5"
   },
   {
-   "titulo": "JPMorgan escoge a los bonos de Colombia entre sus principales apuestas emergentes para 2027",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-20",
+   "titulo": "El dólar en Colombia subió casi 150 pesos durante la semana: así cotiza la divisa este sábado 21 de noviembre",
+   "fuente": "Portafolio.co",
+   "fecha": "2026-11-21",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNOGNWYnp0RXBqZVhmbGJtQUxjVzdYQUo4ckRTNzRhdzNVdEJTRlFEZ3RVbk93Zmkyc0FlTXRJNmxVYWhxRU91S3VyUThGb1JVMTI4UUk3WU84UWdtb21YbHJzd1AxMk9HV0lLOXFmWXUwX2JWV3dwTkpJY3NrNDZrMDBFT1BUTmdpY2pXelhlYmNVT0czLTZUWFRySFVCNjlyT21hcjl0WVlyMXJReEtqVjdIOV81Z3loQWVhZFUtMW5NMGpDY0ZVb18zc3E1Wks0YmttLXFjalVWeGUyWEhQTdIB4AFBVV95cUxNOGNWYnp0RXBqZVhmbGJtQUxjVzdYQUo4ckRTNzRhdzNVdEJTRlFEZ3RVbk93Zmkyc0FlTXRJNmxVYWhxRU91S3VyUThGb1JVMTI4UUk3WU84UWdtb21YbHJzd1AxMk9HV0lLOXFmWXUwX2JWV3dwTkpJY3NrNDZrMDBFT1BUTmdpY2pXelhlYmNVT0czLTZUWFRySFVCNjlyT21hcjl0WVlyMXJReEtqVjdIOV81Z3loQWVhZFUtMW5NMGpDY0ZVb18zc3E1Wks0YmttLXFjalVWeGUyWEhQTQ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPaEU5M3Z4WXZSWDJFeXBNYjJtNWo1RUhLY2NFNG83bktDaHVWVXhzSmZQZG1XU1hoMjZmOTgwTDdSZXc2N19NeDg2RDZKT2t2NTdnZjZnXzB6V0UzMUNTQ21OTGx3NEZ2RFpxSGxxX0poSWhSTFdsVHZNVTh6T3N4c3RqaWFqWVR0NmRzUnNoTThvbmhVWk1BWGlDZWpIN2lWOGNQakVfb0cxMzJMM05YRFNqdUdseFl3SkxSeVM2OEcwYWJ3VzlTWXpLUDRGdWxjZV9TVnhsNzltWU51eVZmRHNGcTFobUNKdk9BazdoTTjSAfYBQVVfeXFMTWR0bTF1OWRYYTVXZVpQODZFWHZfQTR4eEJqQmFSTi16TGU4Z2pDZ0laWVZTaGNoa0pjQnBRdHJFYkl5N2ZWcDhWRk1nalg5Q3RmeDlSWU85clpicnFEU1RYVlg2N1FqcEtQQWYzaGpDVW9SR002YjF3bDRZcHZVMkMwN1NlUm9pQzhpLThZcXYzakhOU2szQ1NTYkY2UEQzbzl3cDhLU1RLaXdCQ0E2T1N6OXJXUG9sbmVwaFdUSG0zU29oVUlMQi0xdnFlTEZva1A2QUdBcmNZTzVMUlFFWWgzYi1SU0d4T2FVOVhwTGVKYngtSTVn?oc=5"
   },
   {
-   "titulo": "¿Por qué el exitoso debut de Anthropic en la bolsa no disipó los temores de Wall Street sobre la IA?",
-   "fuente": "CNN en Español",
+   "titulo": "Para la Ocde, la economía colombiana está pasando por “una situación difícil”, por el déficit fiscal, la inflación y la poca inversión",
+   "fuente": "Infobae",
+   "fecha": "2026-11-21",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPWmtzdFlzcmdsaXJENmlkUmIzYWFxRFF5M3BfWW14N2lBd3dxMVQ3OHNuTnFlZ00yS1hPbmhibHVLM3p6aFVKT1hqUEprNjhtbWJPLUNPUFBxcmtBdnlzRkhuUC1LRFJ4bGpCMFRxR2VIOTBQaXlJU0FWZ0tHdjQwbkd4MjVWb2c3TDQyTnpKbWF1N0g3SWNvQ2hXUl9zVnlmSWJsT3ltUWY2SzVPNWNScGk4WUhCNktlMElZM2kwcUxSNTdRZE9UUE45cV9DS0pFc2ZQVW5RZEhnTDBJd2tUTFppQXVONzJ1VUEtNWE1WmRoMW1TLTNHN0lMRjdid3J2aTd6RtIBnwJBVV95cUxNMXBjUnRGSVc4bXB5Y2p0NTNFWVRRU20xTkpGWlNlSUN5dF9rQnlUS19qaEFtdHNyXzhGSTVvem9venlwUllTZVIwOXBxWWtHNzlmUnJPRnVlVUxiRVBpcXBxc29FSVJzUThZVzJRYUFvZ2Qzc1E5bkY3M0MwN3hTZzBCeHFSMUc2c1lHYl83ZVMxa0t3NGN5XzNWbzVjc1ktY2RKT1JyWFVRZlUwSFlaanpTam50TFpXbVhPVEhtWGdLZnZCQVJteWpKQkVQMDVYUnVZMEl5QU8ybWF4ZktfVXF5SGJRbzBWZjhhM3ZsZzEwYjFueWZRZ21NZXRLUkpkN1FEOTc1TUgwUEF0djhxRjhwcUJkUGVYMXVrcUJQQQ?oc=5"
+  },
+  {
+   "titulo": "Aumento del salario mínimo: la alerta de un experto sobre lo que podría pasar con el empleo formal en Colombia",
+   "fuente": "Revista Semana",
+   "fecha": "2026-11-21",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPVUdySUhENjhhNHlxY3RlT1k0WVBYMUdLaXhUdXZuT2I5YXpFNHIwSkZxYXJnM1F0aElqNzFRb0xmR1QxRG9Nc2k4S2hwcG5sbGdyQmxsMkN6VWpxblAxazZNTkVBSWZCOHZ6aHlIcjFaeEN5Wk9hTlREdVZoY01sQXl4eDRtLW5mVzQ0T2hSWUFCc2lRTWdSNGFneThxVFE0c0tzZjZBVFNEa0VJeU5uS2cya1pRVVgzYkQ0Rkx6VzlJQW5sSlFGblZFcHpINjl4cGtTU2hKTjRDbklvOGFDeUE0M214VGFqVWxBMjEyZXNNS19uOVp4TXNvaXBST0QtN2fSAYcCQVVfeXFMTkdidUVOMnVjaXJTalVzdTZnWE96RkVVWXI4RjZ2RjdUSzhiRWtZYkprUkdZd19OSERIR1VacEFGcnF3NGNXNEpjclJOZW1SOVdhaF9DOE9rV3M5NjhiV282eE1tMUpkWXM1YVJfdXFSN1JSUVFTQW9NRUw4dUJ5U0Z0MnE5QTNSUnppelRfQW9CRnFLNXVKN3ljN2pvZG4xQk4yZ2ctcnRqc3l3WXgyREs1dDk2b3VTcGpxRXRrMXBPWmVwVlJBbWFQeTJLSGhhUHF4RXgzcGtBRzlQN3pUR2YtQmxGRzZQanpNTEVIN2dITGc5anBzVVdjU21uZ3dvTXBEd3dlOVk?oc=5"
+  },
+  {
+   "titulo": "Precio del dólar golpea a América Latina en Colombia: peso y otras monedas se ven golpeadas por aumento de la cotización",
+   "fuente": "El Tiempo",
+   "fecha": "2026-11-21",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOYUdMU3ZaNkpJR2d2NTFyc0Nva29nalNnb2c3NF9jRXptcUpRWGVKWllhV1hjQm1EbGI4VldwNEk0eEU0U3NVX2hCUURGakRLVElQVHRlQ0t4Q3pmaW1RTEJzWWIwaXpUd0FaTk5HMVVEOUx4TkNNVXRZS3NrUHJkTmhjV0ZrY212c3pKWEMxVUtneFFOQUVjb0NsbkR2QmNPVjExWEdDY0ZFMXh1RUI3LWpxdWE1cjg5UFFWSWg0OXJzRDU5WlFsYjllUXdaWVJmSDZNYXRXdmFCb0lBYjg3Wk5ZVWZKZERXTXVadG9ZbmVNR2fSAfgBQVVfeXFMTXd2dmdGWkw5bkVxVm9VVXlNQXdadjZHek9ReDh6Ym9FUVJqQTdKQS1wUk1mOV9FVjZtV1o4dVJEbnQ2VGl0N29NVTJMa1ZKTF8wdXdqUDZjSi1FbWtrU3RwYW5PcUtCbHh6MWtoTmdnSFd3ZEJ4bVRCelRSc2d5V2ZVVFBTaXA5emhtY1ZveGVJVnNRTWVzLTJtSjJRdnlqcGwyRmZ4eVlFNnNPVDhGZThqMjcwTUpFaUdTbHpzdkZ1cW5aa3ljZHpNZ0Z3bmYxeVg1ekxUM3FEYTF0ZGtBRDNNdDYwUWdhNjBfOFFaY0ZNZjZyODRfRUk?oc=5"
+  },
+  {
+   "titulo": "Colombia encara un 2027 de bajo crecimiento: el PIB se frena y la inversión aún no toma impulso",
+   "fuente": "Revista Semana",
+   "fecha": "2026-11-21",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNLWtmMWs5VTgxZF9LbmY2aTBWMXFFQ0V3TWQ4ZG42YVVWXzJmdm0zU1UtU0NkbXJCZzRjbEotcHNqbGlnbmw0d1BocGxIRk1vaWs2VEhpdTJ0aUVuVlMzRlVsemlzZWFzSVFKdXpuYzdsbUJTMkxVcU5oaUtuYzZTc2hCNHdiXy1NYnVoak9nZ0hwWFI0YnJPdk16WFFHZlVTTUxENUhxM01mRzRVcHJXanNKSkltR0IwQ1FZdFl0d0pXY1FQT19VVmVoYkxicFJkeHJZd0ozUm5qYktPZ3pNZzR5a252azJBMFVYdXZn0gHzAUFVX3lxTE9IV3FIbHNHWG1uc3NfVDlrRFNFSVRqU1R5d19seGlkVlMtZ3R2a05TMXVyM3k0SDJhUEVlTEtpVFdOSHJfZmJFc1FnbXpLR1NMVzUybDRqWkVRNGhyOFQ4d3Mzc1FSWG5KSVJWaF9vTWJ5YkJNMW1OOURha2FNRWhTX01VWEhMVjNqbFU0d1FBRkpYOGdWekZTNTB1eEE5TFIzRW5QWWFuMDRfSUE2QWVma1lkaGs3bjdCUmp6aUsxX25FU0FMUi1rUjNoUDVMX2dYVnlYRENJbnZUMVJaa2xoeXJfNkNnOVEtQ1BJYUdLMzlGMA?oc=5"
+  },
+  {
+   "titulo": "Pánico en Wall Street: Nvidia cayó 14 %, Anthropic 8,5 % y el Nasdaq borró sus ganancias del año",
+   "fuente": "La FM",
+   "fecha": "2026-11-21",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdDR0UjBvbTZPV2FCbEdSNlU1eUpXY0VNQW0zM2l4QllBSkVyRXpfVXJNMWE2RENxbjhmSjNtdWx3TTE5b2c5QnhWbUROR3EtV0JUd3ZROV9IbVFfUDAxZUF0T3g0blVwdDNXZ0w0LVg0NUs5ZGwzTmhSa0ZZSWx2UGpyeHZhTWtaYlJYZldrNjVhT0hScFpPRkJn0gGaAUFVX3lxTE90Zm1PUm1ZdUtYTEkzQ3RTWXdtSmxla21sN1Noc3Facl9HVTIxVU1nVW53YUZuVDdhMldvaVRUaWlUSkd6bWVIckJ1alRzNTFvQkFTcUJkZ19TVFBXd2I2b1d3My10cFBjbEtjUk0yeDRUUlNCZkQzekRnZWJBMEtxWk5JbndCd2d2cjhMRXY4WHhmQlFlTl9QbVE?oc=5"
+  },
+  {
+   "titulo": "Precio de la mezcla mexicana de petróleo de este viernes 20 de noviembre",
+   "fuente": "Infobae",
+   "fecha": "2026-11-21",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZ19mMUE5Qzh4UXQ4Q2thVlFwcks4aXctcVl3eC0xTzdQalpvSm8wQzVNNTJBMDdOUGowX1F1eC1EUGF0Z3FRdkY5dkhONnZKbG03RnBqZVJFTjhoUHhXeXJBazVWMzd3NWtnWHJHZzBBbnJON21wTzFpOEZvc2oybkZ1WUkxdXVfU29hNEx5bWVWaDhZWkhReExTdXRBT3FyYlF5a0ZCYlp6RUhKdFdOTTFMeU1pZ9IB0AFBVV95cUxOdVI5aGMwcldmRzhWemFaYmhSMFBOTGxneEFXUUZlN0k0YnF0YVNoQTFFYnZDMUdXZEtqTl9HenFFck11MHJCbTVTV3pURGkyd09SYnQtMlF3Z21BcjRtbDRMbnRjRkttSWpuQ05wZTVNQ19odndmd0drcUpzQkdmYmVxTVByN09TMjRMZ0tnc0Vma0xRNzZqVVFJZW02c0lzOEUwWG1aOHdJYWcyRWZpWkw5a2djMElZLUViZlVMLWJFLWh2QUxYLVF6M1p6Rld2?oc=5"
+  },
+  {
+   "titulo": "La bolsa de Wall Street cae con fuerza en medio del desplome de las acciones de las tecnológicas y registra su peor semana desde la pandemia",
+   "fuente": "BBC",
    "fecha": "2026-11-20",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdElkS1ZZekIyaERBaEs5aGd0SmtnVE5nRzRFc1dlc3l6YVNMd0RVVzdYUzRkY3BoNmk0ZWtaV3lIOTE0bWR4Q3RSMVdodnFRUV93Y0RsandxNDZ5cWJ0YmJ2UFhLWGhxMXRoZkwtb1NRaTNNOVBEcXNvVnFUejFoMkt1ZnBLNG1RcTNLZ3puZlo2ZFJV?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBPOTlBSXdxakpsNC11eXM3bm5IczMwUzZRTE1MdEZ5bFNJanE5TG9VWFR1RlNia3QyTzJJQ0dTWUFJeXdTeFdyaEhKUllBU1d6eVE4bXN2THFqYmFC0gFiQVVfeXFMTW5fa2lXa0lNSDJETWJMMVZLTjVtd2VUSkpXT0RraDREUDExbnprQ29WVTNQLVJoWlFUQWFOaFJBSk1FUU9ubFNMdUhwX3dsdFpGRDdsUG5WU2pMcFFUMFhGeUE?oc=5"
   },
   {
-   "titulo": "Desplome tecnológico lleva al S&P 500 a corrección y golpea mercados globales",
-   "fuente": "Bloomberg.com",
-   "fecha": "2026-11-20",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYzA1Zmtkb1NvbHBkdjRFLTN5N1EzT2NZTm14UlZNRFhjdkRER0t6UFZYTElfUTFhUGswOGdyeERNZElkVXZsZFZxbjE5ek1kTTNvNkg0MXhGcUtHbzVmaEsxd0F1X21CV2lZbjJ1bnd5ZEVPN2dGVWJfZHUxUXBCOTNEdmcxRThnakhJSThaZy1vX2tyWGV0ZUJBQ1VRcEVoaXk4RVZPb0lSaWZMWXp4dy1yczM?oc=5"
-  },
-  {
-   "titulo": "Acciones de Anthropic caen casi 11%: ¿Cómo abren los mercados en Wall Street HOY 20 de noviembre?",
+   "titulo": "Wall Street tiene su peor sesión desde abril de 2025; Nasdaq se desploma más de 5%",
    "fuente": "El Financiero",
    "fecha": "2026-11-20",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaGZfWHM4OUx6S1hnV2JGOEh2engtTnZUZUJTQUNCR3dEY1M0NjBtSC1xaTdNQy1qRkdyV1pmX2FpM2dwNURYYjM4U0lobVRUWG5PT2FyVGpzNWlJZnFMdTFReGVZeU81Vjk1OEpwT24zSlZGa0I4QmVCdkZyZE42ejF6czdFdjBTTl9NRm95VmFjNkZfTTFwVzZUS3Q?oc=5"
   },
   {
-   "titulo": "Lagarde dice que el BCE refuerza el papel internacional del euro",
+   "titulo": "La euforia por la IA da paso al miedo y a una “volatilidad extrema”",
    "fuente": "Infobae",
    "fecha": "2026-11-20",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOc3lVdmI1ZTh4UG9XRF85ZWpiNkhDVlcyNXgycVRpbFdIaVpwc08zMUhabUFaRlRNZll6MXdXTm9jMUxGNmhNcS1zSEhIQjlJa3dJdHVIdkVkYnNVNWZCcHh3U1FiYmRTdGRkcGIyenF2MDlmRVNpQ1VsREc3MUVfVy1YcXZham9kMHluSG80NExtOFNuSUk0ZFdCdW8xZ0huaUNDVDFOY21DazdtM2FqMm9HUzhQZVox0gHTAUFVX3lxTE1TU1JEY2xseS1VcUFsSUdjSzcxZTU2dmVIU0hRV1FhZ29zMEZsbzZpanpLM0RjbHQ1UHFrZWhSV1p3bkZWdmNIVnp4eU9GZ05LNTlvc2pjNXM3REpNd2wySnlJVG4wSy1VX19fRGVLeG0wMHFsaURxRDdiaWJuQXQ1cHJULW52eFpfWGpEQ09iZVZxQ0ZkMGFpRWJqaFFQZjU1RVREY0tVNEtZTlJXT1Y1c3FXUjNVVWUzcjVNLS1jbE5LSmdkNVkwQVJqTldLV0s3RFU?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSTZEN3pVX0RSTzJ4VGlRc2l1WTR5VDR5Tm9qY25xcmg1Z3lKUTZYVEdvUTFTWXlzb1pyWjdqMFgwblk2LWwta2VRQmplaGt2QVJqNl9JTWdQdk00emlPZmlPRVdiUDU0LU1rOFI5V2JpMDZrN1lFMGlDdy1tZm5QR1paRTg5UGZmcGJydjJWRDRXMDRNTFZCampMM0QtSHV1QmdjUGMxUjVuSEUtdFdSa2dpVm95Y3F4VDJqcmFsdVJIcDR2b1JQVWM5WkRYQXNvZEgtdHRfNWpsT2_SAfYBQVVfeXFMT1ZXb1h3ZXI1ZERqU3NVc3ctNDZTTWhVT21aTlJJNS1MX182SWVKYk56bXlEVzc0TlVPd0VKbmIzTTduRV9EY3dIRlRkdXk1bkU2a0tZNkFab05XcGZIZFdXNVBlSzBtNGdyc0w2Z3h2V3cwTXJpNm9aREgxbVRmNTlTVXczZzFVSzFRb0haSVMtRUdRRkpLQ0dFOXBNcTRoRzdfbDE5TmhEc0NuYVlXVEl6VUZhQ3JfclF0QlE1RXpKMFFlX1Vib0MtNFZIUlpLMnVWWC12WTZ5YlluZzRvNTlERlFYZEFiQ0E0R2VpUElQVU5xTEp3?oc=5"
   },
   {
-   "titulo": "Wall Street cambia de gurú, pero no de burbuja",
-   "fuente": "Investing.com España",
+   "titulo": "Los precios del petróleo suben entre tensiones en Oriente Medio y expectativas de mayor oferta",
+   "fuente": "El Economista",
    "fecha": "2026-11-20",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZ0VQV3VPbG9RUWhENTNPTVI1N211ZUYzRnZmeXVLZFVCWWRsQ0ZPUlJDX2w4U1R1TDE0YUtqN2MzOGNla0NuRHNVZTZrNzJOUHVlTmJLdGlvSk1RR1JYY2xBUm9jRGRVeVVDX05DX043dF9KVmJFV1A4eTBNQmVrNVpzLTFSZmdYZDlwVzZmdDRhSjg?oc=5"
-  },
-  {
-   "titulo": "Anthropic en Wall Street: Amazon, Google, Nvidia, Ashton Kutcher y más inversionistas detrás de ese negocio",
-   "fuente": "Infobae",
-   "fecha": "2026-11-20",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQMFF5dE1GX3hqOEVxc05JZTUxTll3VGFvaGVjUTFDWU1fSE55OXhKMTh3QUN5b29xZzh3VEtzQm1GeFlXc2hzdzRDTGYwY3F5b1BZSnFKbXpxOTgxQ1A5eFNXQjBxaGl1Ti1vTXNWRlZhS09TQUZoY0x3VlBRMU1tVVZwUEZGeUVMU09ScjdDaGhaNzMwZ1hqbEtSUmVJOGJzYzF2YktiUVhGZktZVFNUTW1CdFZjOUpJRmZPajZMWGtrSDNVZmtiMzdBWFVGR0dfdzdQa19uWV8wdU9pNkHSAfgBQVVfeXFMTkx3Qzc3dHBLaHphRTFTNlVNaGxmQ0V0bmV5WFUxNjZlcVM1UWZ2cjRNMTkzUUtZdnhDTi0tVjZhNWVMam5wZHpGSXFsVnVKYkpJOXI0VE9WMDhjLW5Sb1JYbzdOWHY5MXNyRWZfaFBQWExPdkJXMVE5QUlpdV9qUkk3QkxRSmVSNkJpQVlkU0ZfOUt4dG8zZEdJTGVYR1VlWVYyUklNbVJNYXNDUlo5QjRqdk80cElYLTc0TjhMU2s2blZiTVFMX044Q3BHVC1oNjZ6LURCUXFJaGVBNE5KZWh2Q3FHZFF5ZUpONk9yMEIzaHg2RWRnNkE?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPb1F6T2NubWdjS0JCeXdNaWl4RjVEb3Rkd1hjdUNVTE9WVmctZVh2UUZDUVg0bE53Y3VORnpPMmR1S3F4cS1fRzRyWm5lWlBwN1FfZnpwOFNnYkY3cFVIZjEwd25ZOGJpNGVkN3F3QmFkSHRoMDJzeHNHTVBnUmVfMTlQZXNBQThCR3VqOFNVanNPRjZaRVBtaHF0M3M4M0NuOVVBLUJuLXJfRFNjNERsRHNoaWNmcFlybWRXTUljcG1KZGVZeHBCMG01LW41UmfSAdQBQVVfeXFMTXk1Q2h2cGZNNVVGblRVSC1JVGdhWGt0bVlweW5jZTJoMjB1UTZ1M0ota2VXUjNxOVZjSU1BWF9VQWNxejlROXNRNHY2dlQ2Q0J3dGdjOU8wNFlYUC0zSlQ2RGhTV1Byc2JmQjZwNlpFYzRNeTB1LWFUMS1rWVdQWFpCaHVrOWZMVXJYaEY4RjBVM3QweXY3NUEtc1ZoTkl5clJRcVBBS28tQ3dlQ25ISlh1UUExQmxBRVoxeFNmcVBhenFTWXdTcXN5Z09Hb3hld3hWV0s?oc=5"
   }
  ],
  "tes": {
