@@ -4,9 +4,9 @@
   {
    "id": "trm",
    "nombre": "TRM",
-   "valor": 3415.1,
+   "valor": 3461.92,
    "unidad": "cop",
-   "fecha": "2026-11-20",
+   "fecha": "2026-11-23",
    "detalle": "Tasa Representativa del Mercado vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/1/tasa_cambio_peso_colombiano_trm_dolar_usd"
@@ -75,12 +75,12 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3502.49,
+   "valor": 3345.39,
    "unidad": "cop",
-   "fecha": "2026-11-20",
-   "detalle": "Precio del dólar en el mercado (último dato); +87,39 frente a la TRM",
-   "fuente": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/COP=X/"
+   "fecha": "2026-11-19",
+   "detalle": "Precio del dólar en el mercado (último dato); −116,53 frente a la TRM",
+   "fuente": "ExchangeRate-API",
+   "url": "https://www.exchangerate-api.com"
   }
  ],
  "noticias": [
