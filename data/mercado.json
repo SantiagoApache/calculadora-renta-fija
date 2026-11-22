@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-21",
+ "actualizado": "2026-11-22",
  "indicadores": [
   {
    "id": "trm",
@@ -26,7 +26,7 @@
    "nombre": "Tasa Fed",
    "valor": 3.875,
    "unidad": "rango",
-   "fecha": "2026-11-21",
+   "fecha": "2026-11-22",
    "detalle": "Rango objetivo de fondos federales",
    "fuente": "FRED (Fed de San Luis)",
    "url": "https://fred.stlouisfed.org/series/DFEDTARU",
@@ -75,15 +75,22 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3483.34,
+   "valor": 3483.35,
    "unidad": "cop",
-   "fecha": "2026-11-20",
-   "detalle": "Precio del dólar en el mercado (último dato); +21,42 frente a la TRM",
+   "fecha": "2026-11-22",
+   "detalle": "Precio del dólar en el mercado (último dato); +21,43 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
+  {
+   "titulo": "Aviso en Colombia por tasas de CDT superiores al 13 %: ponen la lupa en fórmula para invertir",
+   "fuente": "Pulzo",
+   "fecha": "2026-11-22",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQTZRRmVWZ3A4VTlxRGlDRm9VaEREUHRvZFVRYjZXTHdwMVhUY2g5ZWU4ZXB6RnRqdUFBVTJwcXI1R0R3MXJxa01WaElqbnVBSVZidHlrUmxtdzVIWGVMV0FHckVhYmxqZ3o3Mmd0dl9FNGxnclBVRHEzZDQ2cTl4YVhEMkQtRk42d3BqVzU5VTdnSkZiVFRXMGZPX3E5NG9ka0pfam1CWQ?oc=5"
+  },
   {
    "titulo": "Dólar en colombia podría acercarse a los $3.540 en los próximos días: ley de rescate incidiría en el mercado",
    "fuente": "Portafolio.co",
@@ -99,11 +106,18 @@
    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOT2pQcXlPYjNBMU90NjBBTnFRUk9CN3VHWlVQa1NqWlR6Zmd6bWZZXzJvS00tdEQzSUp3aVVCVGNVZnhJSFVUb3E3SXdNY2FUbnYxS0EzeUZUbEhSeTh1ckFkRWZjMWt0N3JxY2k1OFBpMUNfOWM2eXhqRnFPTU81Sl83amY1Umkwc1BBNzhfcGdmYnA1QnlxVHc4VFY5Nm1fWGl4Z2FxN2l0WVQzZVk4dmdrcVhSbVRSTDV2QThXcEdFUllXUG01VXo2Q1FydlJNZDBaQ0tvcHJPQ1IzRWRvY2pPZEJuZ1R6OGN4bXNYRdIBigJBVV95cUxNbm5idm1qQ1V5Y1hockp1bi0yQ2tuNVNBWC1CV21rVUpxdEU5NS1HNkk4eDV6ZjRkdHlfd2p4a1A0S0hYU3VZWTJUdEM1UTdZTkxVanFwbG5UcDlCUk52aTJINVhwN2x0cEJLQklnVV9Ya0hVTm5OM2VLek5mT0FMMHNfNW1rS0d6QkNGd2lpM3VlVk1NU0cwWVE4MXVOYVJITGl3dGxfY2xtd19lZW92VmhzYnotazJ1NjMtZUxmbE9GQUJpbmgzWWRLU21ieDVpTnRFZ1lzMEZhazZ3bThENEFUbndTR2h4MjNYQ05WWXk3U2t6eXVpTk9hYy1VU05BZ2xFWUZZQTlXQQ?oc=5"
   },
   {
-   "titulo": "¿Cuándo se publica el último IPC de 2026 y qué servicios subirán en 2027?",
-   "fuente": "Newsroom RCN Radio",
+   "titulo": "Ocde sugiere a Colombia subir gradualmente la edad de pensión e igualarla entre hombres y mujeres",
+   "fuente": "El Tiempo",
    "fecha": "2026-11-21",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbkZrMFBQSlNzMDRTa1JPNUh3QUNjc1JLUTJPQnFEQlRKZnA3ODN3SGJUbF91NlF2OGZtYlJFMWRuUDV1Uzgxa1RHbkFuN0RySzFoZzR0dkZId0Y4MDBSM01CU1lrbG9IWEEzSVM1VHZMTVFQel9WbFlTQlRDeW9NQ3lEU1FDdldMdEVNZWxKcHgxbWRIRzNLQUMzM0ZUVUpmSlhYazRDNW5lRWhHU2pJ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOY2tVUzVUa09NVmtlSzdYdDlaSnEtaFB1Wjg2TXVvbjYyd0dkY1IyUU1NXzl6U1Jvam0xTWNucUpHY24zRjBYTkZIdjIwUGVObDN2R3F0UmpNckVNSnRPLWpwWklyd2t3d2stTWowUGYza2JOSGp6YWNWdXVCXy1kdlBEMVRUMmZhYk5MR3FkM210a0NGaUZJOExLRFZEaGdjNEIwaENsRVhoandKS01yV1JDbVd2TzhtWkZjMzBsdDRZQ0JodkIwcmR6SVo4SGo0eS1FQkxaQjg2aWNNUG9BNXZn0gHnAUFVX3lxTE5FZUN2Q2VJVkJCYzhraS1BaFMzYjdaWVk1VUs1T3YtV3NtNmVlUThseUlBTEFPUHUyMlpwcTBzdDFWTmhzSXI0U2p5LVhNcmdEV0kzNjVhT3M0U0o5VnhNWGVsNjdsWG9KQmhIeEtQNXlZT3daLVoxLXRSRDBZbmNfOFREbGt3MXh3MUxvSElycE8yWVdxQkhmSjNQNnd1VXUzbkdZWFNZam5DZ3VzRG1ocEo4T2Faajk4NEtCOC1KSEpQSDlkSVhMUmc2V0FQQm0xODF3RFRrWWdCUXM5WkxhcHZvdjNiMA?oc=5"
+  },
+  {
+   "titulo": "Dólar inicia al alza en Colombia y alcanza nuevos valores tras variaciones en mercados internacionales y flujos de capital",
+   "fuente": "Pulzo",
+   "fecha": "2026-11-21",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQa0NnLVY1Z2M1Z2VQcDhTdWJzYnVBc1FhNHdQSXo2aHp0S3EtVTBmVWVuMXJlTm96eF9lN2JyVVlBdEg2SmtraEVMNlV6QXVDY1NaNUlKS0tjTzJNVWhRbGpUcllpMEdXOUtja25laUF3ZHhFQ2drZ1VRdVN4bGtPWE8tcTI0RWpfRTBENDR4amNjdHVBQ3U0SUhCYS05Mk4yVTRrQ3lWSE50aXFDYmw5Qmpn0gG3AUFVX3lxTE90MjFhSFhXTlNDM0lIUHM0UUhUUHRXclZqVWJwZzdMU1lmeDdXUkh2cEo1UmJoaGstZnhuLXh5M25rOXNJZlU3V2xDUFFqcmR1TmJ0WDAtZm1XZlZRRk1KR0V2UlBhcmVGb045X2RwVXQ4RDNDQXNxRXhrT3BBSzZMVG1kTHpzYnUzcmpUejBjSUVMRkt0MnlJZkY0M1pjLW9DanlEX2ZRamZaajR5MlBZakc0ZVRNdw?oc=5"
   },
   {
    "titulo": "El dólar en Colombia subió casi 150 pesos durante la semana: así cotiza la divisa este sábado 21 de noviembre",
@@ -113,25 +127,25 @@
    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPaEU5M3Z4WXZSWDJFeXBNYjJtNWo1RUhLY2NFNG83bktDaHVWVXhzSmZQZG1XU1hoMjZmOTgwTDdSZXc2N19NeDg2RDZKT2t2NTdnZjZnXzB6V0UzMUNTQ21OTGx3NEZ2RFpxSGxxX0poSWhSTFdsVHZNVTh6T3N4c3RqaWFqWVR0NmRzUnNoTThvbmhVWk1BWGlDZWpIN2lWOGNQakVfb0cxMzJMM05YRFNqdUdseFl3SkxSeVM2OEcwYWJ3VzlTWXpLUDRGdWxjZV9TVnhsNzltWU51eVZmRHNGcTFobUNKdk9BazdoTTjSAfYBQVVfeXFMTWR0bTF1OWRYYTVXZVpQODZFWHZfQTR4eEJqQmFSTi16TGU4Z2pDZ0laWVZTaGNoa0pjQnBRdHJFYkl5N2ZWcDhWRk1nalg5Q3RmeDlSWU85clpicnFEU1RYVlg2N1FqcEtQQWYzaGpDVW9SR002YjF3bDRZcHZVMkMwN1NlUm9pQzhpLThZcXYzakhOU2szQ1NTYkY2UEQzbzl3cDhLU1RLaXdCQ0E2T1N6OXJXUG9sbmVwaFdUSG0zU29oVUlMQi0xdnFlTEZva1A2QUdBcmNZTzVMUlFFWWgzYi1SU0d4T2FVOVhwTGVKYngtSTVn?oc=5"
   },
   {
-   "titulo": "Para la Ocde, la economía colombiana está pasando por “una situación difícil”, por el déficit fiscal, la inflación y la poca inversión",
-   "fuente": "Infobae",
-   "fecha": "2026-11-21",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPWmtzdFlzcmdsaXJENmlkUmIzYWFxRFF5M3BfWW14N2lBd3dxMVQ3OHNuTnFlZ00yS1hPbmhibHVLM3p6aFVKT1hqUEprNjhtbWJPLUNPUFBxcmtBdnlzRkhuUC1LRFJ4bGpCMFRxR2VIOTBQaXlJU0FWZ0tHdjQwbkd4MjVWb2c3TDQyTnpKbWF1N0g3SWNvQ2hXUl9zVnlmSWJsT3ltUWY2SzVPNWNScGk4WUhCNktlMElZM2kwcUxSNTdRZE9UUE45cV9DS0pFc2ZQVW5RZEhnTDBJd2tUTFppQXVONzJ1VUEtNWE1WmRoMW1TLTNHN0lMRjdid3J2aTd6RtIBnwJBVV95cUxNMXBjUnRGSVc4bXB5Y2p0NTNFWVRRU20xTkpGWlNlSUN5dF9rQnlUS19qaEFtdHNyXzhGSTVvem9venlwUllTZVIwOXBxWWtHNzlmUnJPRnVlVUxiRVBpcXBxc29FSVJzUThZVzJRYUFvZ2Qzc1E5bkY3M0MwN3hTZzBCeHFSMUc2c1lHYl83ZVMxa0t3NGN5XzNWbzVjc1ktY2RKT1JyWFVRZlUwSFlaanpTam50TFpXbVhPVEhtWGdLZnZCQVJteWpKQkVQMDVYUnVZMEl5QU8ybWF4ZktfVXF5SGJRbzBWZjhhM3ZsZzEwYjFueWZRZ21NZXRLUkpkN1FEOTc1TUgwUEF0djhxRjhwcUJkUGVYMXVrcUJQQQ?oc=5"
-  },
-  {
-   "titulo": "Aumento del salario mínimo: la alerta de un experto sobre lo que podría pasar con el empleo formal en Colombia",
-   "fuente": "Revista Semana",
-   "fecha": "2026-11-21",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPVUdySUhENjhhNHlxY3RlT1k0WVBYMUdLaXhUdXZuT2I5YXpFNHIwSkZxYXJnM1F0aElqNzFRb0xmR1QxRG9Nc2k4S2hwcG5sbGdyQmxsMkN6VWpxblAxazZNTkVBSWZCOHZ6aHlIcjFaeEN5Wk9hTlREdVZoY01sQXl4eDRtLW5mVzQ0T2hSWUFCc2lRTWdSNGFneThxVFE0c0tzZjZBVFNEa0VJeU5uS2cya1pRVVgzYkQ0Rkx6VzlJQW5sSlFGblZFcHpINjl4cGtTU2hKTjRDbklvOGFDeUE0M214VGFqVWxBMjEyZXNNS19uOVp4TXNvaXBST0QtN2fSAYcCQVVfeXFMTkdidUVOMnVjaXJTalVzdTZnWE96RkVVWXI4RjZ2RjdUSzhiRWtZYkprUkdZd19OSERIR1VacEFGcnF3NGNXNEpjclJOZW1SOVdhaF9DOE9rV3M5NjhiV282eE1tMUpkWXM1YVJfdXFSN1JSUVFTQW9NRUw4dUJ5U0Z0MnE5QTNSUnppelRfQW9CRnFLNXVKN3ljN2pvZG4xQk4yZ2ctcnRqc3l3WXgyREs1dDk2b3VTcGpxRXRrMXBPWmVwVlJBbWFQeTJLSGhhUHF4RXgzcGtBRzlQN3pUR2YtQmxGRzZQanpNTEVIN2dITGc5anBzVVdjU21uZ3dvTXBEd3dlOVk?oc=5"
-  },
-  {
    "titulo": "Pánico en Wall Street: Nvidia cayó 14 %, Anthropic 8,5 % y el Nasdaq borró sus ganancias del año",
    "fuente": "La FM",
    "fecha": "2026-11-21",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdDR0UjBvbTZPV2FCbEdSNlU1eUpXY0VNQW0zM2l4QllBSkVyRXpfVXJNMWE2RENxbjhmSjNtdWx3TTE5b2c5QnhWbUROR3EtV0JUd3ZROV9IbVFfUDAxZUF0T3g0blVwdDNXZ0w0LVg0NUs5ZGwzTmhSa0ZZSWx2UGpyeHZhTWtaYlJYZldrNjVhT0hScFpPRkJn0gGaAUFVX3lxTE90Zm1PUm1ZdUtYTEkzQ3RTWXdtSmxla21sN1Noc3Facl9HVTIxVU1nVW53YUZuVDdhMldvaVRUaWlUSkd6bWVIckJ1alRzNTFvQkFTcUJkZ19TVFBXd2I2b1d3My10cFBjbEtjUk0yeDRUUlNCZkQzekRnZWJBMEtxWk5JbndCd2d2cjhMRXY4WHhmQlFlTl9QbVE?oc=5"
+  },
+  {
+   "titulo": "Goldman publica su previsión para el precio del petróleo Brent en 2027",
+   "fuente": "Investing.com España",
+   "fecha": "2026-11-21",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNamktSlB1NUlITlB5eFRPcDY0cGlkaExBNmZrSGQ2WThGek1zd1lTT1YzbjNYcjYzaUFwVjZCYXpGVDNuR3RIb0J3QXBhQ0d6d0JRWmEwbTYtb2p3YTYwSWZSZEg2emVPbzZyVklQYXVvSU1WUkNUMXhrbzVQTGtMTFZVVnNWeThUYk1JLTV3RG5LUHBPLXo4Rk95bHpNUjVTbUhIMnd6b0VBdlZiVVhEbWluaWpBdWNIVDZycm1XNGowYXM?oc=5"
+  },
+  {
+   "titulo": "Precio de la mezcla mexicana de petróleo de este viernes 20 de noviembre",
+   "fuente": "Infobae",
+   "fecha": "2026-11-21",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZ19mMUE5Qzh4UXQ4Q2thVlFwcks4aXctcVl3eC0xTzdQalpvSm8wQzVNNTJBMDdOUGowX1F1eC1EUGF0Z3FRdkY5dkhONnZKbG03RnBqZVJFTjhoUHhXeXJBazVWMzd3NWtnWHJHZzBBbnJON21wTzFpOEZvc2oybkZ1WUkxdXVfU29hNEx5bWVWaDhZWkhReExTdXRBT3FyYlF5a0ZCYlp6RUhKdFdOTTFMeU1pZ9IB0AFBVV95cUxOdVI5aGMwcldmRzhWemFaYmhSMFBOTGxneEFXUUZlN0k0YnF0YVNoQTFFYnZDMUdXZEtqTl9HenFFck11MHJCbTVTV3pURGkyd09SYnQtMlF3Z21BcjRtbDRMbnRjRkttSWpuQ05wZTVNQ19odndmd0drcUpzQkdmYmVxTVByN09TMjRMZ0tnc0Vma0xRNzZqVVFJZW02c0lzOEUwWG1aOHdJYWcyRWZpWkw5a2djMElZLUViZlVMLWJFLWh2QUxYLVF6M1p6Rld2?oc=5"
   },
   {
    "titulo": "La bolsa de Wall Street cae con fuerza en medio del desplome de las acciones de las tecnológicas y registra su peor semana desde la pandemia",
@@ -153,20 +167,6 @@
    "fecha": "2026-11-20",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSTZEN3pVX0RSTzJ4VGlRc2l1WTR5VDR5Tm9qY25xcmg1Z3lKUTZYVEdvUTFTWXlzb1pyWjdqMFgwblk2LWwta2VRQmplaGt2QVJqNl9JTWdQdk00emlPZmlPRVdiUDU0LU1rOFI5V2JpMDZrN1lFMGlDdy1tZm5QR1paRTg5UGZmcGJydjJWRDRXMDRNTFZCampMM0QtSHV1QmdjUGMxUjVuSEUtdFdSa2dpVm95Y3F4VDJqcmFsdVJIcDR2b1JQVWM5WkRYQXNvZEgtdHRfNWpsT2_SAfYBQVVfeXFMT1ZXb1h3ZXI1ZERqU3NVc3ctNDZTTWhVT21aTlJJNS1MX182SWVKYk56bXlEVzc0TlVPd0VKbmIzTTduRV9EY3dIRlRkdXk1bkU2a0tZNkFab05XcGZIZFdXNVBlSzBtNGdyc0w2Z3h2V3cwTXJpNm9aREgxbVRmNTlTVXczZzFVSzFRb0haSVMtRUdRRkpLQ0dFOXBNcTRoRzdfbDE5TmhEc0NuYVlXVEl6VUZhQ3JfclF0QlE1RXpKMFFlX1Vib0MtNFZIUlpLMnVWWC12WTZ5YlluZzRvNTlERlFYZEFiQ0E0R2VpUElQVU5xTEp3?oc=5"
-  },
-  {
-   "titulo": "Los precios del petróleo suben entre tensiones en Oriente Medio y expectativas de mayor oferta",
-   "fuente": "El Economista",
-   "fecha": "2026-11-20",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPb1F6T2NubWdjS0JCeXdNaWl4RjVEb3Rkd1hjdUNVTE9WVmctZVh2UUZDUVg0bE53Y3VORnpPMmR1S3F4cS1fRzRyWm5lWlBwN1FfZnpwOFNnYkY3cFVIZjEwd25ZOGJpNGVkN3F3QmFkSHRoMDJzeHNHTVBnUmVfMTlQZXNBQThCR3VqOFNVanNPRjZaRVBtaHF0M3M4M0NuOVVBLUJuLXJfRFNjNERsRHNoaWNmcFlybWRXTUljcG1KZGVZeHBCMG01LW41UmfSAdQBQVVfeXFMTXk1Q2h2cGZNNVVGblRVSC1JVGdhWGt0bVlweW5jZTJoMjB1UTZ1M0ota2VXUjNxOVZjSU1BWF9VQWNxejlROXNRNHY2dlQ2Q0J3dGdjOU8wNFlYUC0zSlQ2RGhTV1Byc2JmQjZwNlpFYzRNeTB1LWFUMS1rWVdQWFpCaHVrOWZMVXJYaEY4RjBVM3QweXY3NUEtc1ZoTkl5clJRcVBBS28tQ3dlQ25ISlh1UUExQmxBRVoxeFNmcVBhenFTWXdTcXN5Z09Hb3hld3hWV0s?oc=5"
-  },
-  {
-   "titulo": "Wall Street sufre ola de ventas: S&P 500 y Dow Jones entran en corrección y Nasdaq se desploma",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-20",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSUJ3RTJKdmFlNVBoS2ZoWmxhWlltQ041S01XSHVPMzUwTnJpUl9NX21BMmZycGpEU2tuU3hqMEptNmFJaW5kQmhDUTktaUxxWi1IR3hhbzgtVVJaUHdBcWxNZnFkd05JaGhfM3ctMkFxbDItS0hncVFjVTc4Yk51QU5xSEoyNnF3MWJQeWQtaU5XM2Y0WUx6Z0VEM1NHclJBdTNYc0hiVmJBXy13VE1yYkF1SmlzMXBhSFRzaERCUmJXWlo5R2dvalZmc9IB3wFBVV95cUxNTDhFT3draE5xNkZTdDJITVdxcGtlNGVNV1c5WTgxRXh4Zl9UdUN6ZmNMeXNOU3RFWm9JMmVpQ3g3eHBtTDNKaWpEcERLLXFUMVVIbHlKWTVwa0RrRWpNWTlMODdqOHBVbG1mYm44WmtuTnJrQm9FNWIzdFhEbWJRaTZCMFRoSmNvUHZaRllCRllTUE9oNnRqeFBFd2pycF92d2J0NS1zQzBEd0FhYlM5S09BMGxPZG9YTGxtYlZFbUVuYVNBTHNUSUtqd0MxOHdMaVhhcWFDYzR1by1mS2N3?oc=5"
   }
  ],
  "tes": {
