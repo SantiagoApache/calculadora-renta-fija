@@ -75,56 +75,70 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3483.35,
+   "valor": 3483.34,
    "unidad": "cop",
    "fecha": "2026-11-22",
-   "detalle": "Precio del dólar en el mercado (último dato); +21,43 frente a la TRM",
+   "detalle": "Precio del dólar en el mercado (último dato); +21,42 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
   {
-   "titulo": "Aviso en Colombia por tasas de CDT superiores al 13 %: ponen la lupa en fórmula para invertir",
-   "fuente": "Pulzo",
+   "titulo": "Restaurantes y tiendas de barrio podrían ir a la quiebra por impuestos que busca el Gobierno De la Espriella: hay alerta por el licor adulterado",
+   "fuente": "Infobae",
    "fecha": "2026-11-22",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQTZRRmVWZ3A4VTlxRGlDRm9VaEREUHRvZFVRYjZXTHdwMVhUY2g5ZWU4ZXB6RnRqdUFBVTJwcXI1R0R3MXJxa01WaElqbnVBSVZidHlrUmxtdzVIWGVMV0FHckVhYmxqZ3o3Mmd0dl9FNGxnclBVRHEzZDQ2cTl4YVhEMkQtRk42d3BqVzU5VTdnSkZiVFRXMGZPX3E5NG9ka0pfam1CWQ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOWk1ncmswZWNvb1E3dDAyWUNHMzNaS1BkQ29xcWpCU0IzTFI0NzlWVEFIR24tRzlKRE5Cby13TkNleXFjYmU3NlNJWGVhcUUtYlQ1MEcyOUt6MjZCeTFVSUNMRmRDOWVvYnJKS0p0bFBleGp1ZS0xcFVoWGRUVENLSHRfQm5aQWJoR2swZGhsejNYajFoajR1VkItSWxXMF91WXRONDc3OFQ5N2ZaOWE5UW5uaXBOcmMycXN6bTl6cGJGY0EzbjV3NnpHRHVNNFFIOGJqS0FIMXVNVWt2NC1QeXBBWTVsdzJSOXM1Tm5oZW5uWUpTb3RxS3dLXzB1NGJ4U2Y5eFhkMXhobFRFV0o3TUJzUU9hNEHSAbICQVVfeXFMT0JJaXFSVlY5U2l6MWFjTTlJTUFqQlVpMVg3bGRQbnlJTGZFMVlkWnJXc3NCd3U4RjRsa1FUQ3NBNnFTZTNfWDhmVjJ0SlA5Si1JVC1LY29NRkxVRlB2Wm1hZmItTHFQa2VXckstOEtpd1FvR3NmeGNzazhhWEdKQmMtdUdVc0dOay10dndqTWktVTVESzNqQVNoYmtoYUpzUGF4bzZwanpseXNBSTl3XzdDMENMQnc4UXNLQlJUMVNnLVl6V1dDM0h0Mm1Vc3c3MkhFUmpRTFhQRWU2R3h3T19DNTdzY0RoNUxXWUpqemxraVlvdEY5NW1VV0VOTVZNalZMWVVjZUEyYURWN1hhVTRNbl9YckNNbl9HZUpCdVBUSkRJakQ3Ym5DTXZsNG41WXlB?oc=5"
   },
   {
-   "titulo": "Dólar en colombia podría acercarse a los $3.540 en los próximos días: ley de rescate incidiría en el mercado",
-   "fuente": "Portafolio.co",
-   "fecha": "2026-11-21",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPdkFpNWtnc2dfNHBSQnRGaDV3eWhMYWtKNUF3SEpjbG5yaVBxTVJvVzRVS2xPMlNmeXNUV0NfeVl0WDN6SEZkTmN0Qkc0WjYwcV9qZzNVWmJ0NlJTWHdiT0RTR3QxbndPNnVwMGlpRmRRUXlkYk1Bek5ybWk5V1h6eUE2ZlFXWUpyTFhhclVUaUhoaDhFSUYyZmhaejJSekg1TzVRNlhvcEJpczhBR1ZJWTR0cG1ycGx3UWkzcm9JUHpudmVqb3VaQVdlbVdjcVFDQnR1SXpGMVpoMDNWWjNSeklPWWNwcFJaS054aTV30gHzAUFVX3lxTFBaS21jQXJhUXdHbWprclY4dGxxNk44NEtDNV82SXF6eXU0OWFySVU4OGpfeWhiZUhkZHVoMGh2WWxJaThpd1R5OENXUDRyYUNHVGh3RnVmSnFzSEd6dENPTVdLellUQVNPZy1HZzRaQUxLX1RaSURaSWVQbkg2Z0ItajM3RzhEZXBYekdoVk9VSjBzNndKU2hCbm9tbWpHdWk4Z2xMbTZ4OFo0aGJSclNZNWVrcVNZYzZyVGN0ODY3Y1BxTGd4RHdSRlFPdGpCdUQxSTRTLV94cktJUTZxNGFzX1lrOU5MaDI5WDBabnNaeGNxcw?oc=5"
-  },
-  {
-   "titulo": "Gobernador de Antioquia aclaró su posicion sobre IVA a licores y explicó su reunión con el Ministerio de Hacienda",
+   "titulo": "Así cerraría la inflación de Colombia en noviembre y diciembre de 2026: el indicador es clave para el salario mínimo, pensiones y arriendos",
    "fuente": "Infobae",
-   "fecha": "2026-11-21",
+   "fecha": "2026-11-22",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOT2pQcXlPYjNBMU90NjBBTnFRUk9CN3VHWlVQa1NqWlR6Zmd6bWZZXzJvS00tdEQzSUp3aVVCVGNVZnhJSFVUb3E3SXdNY2FUbnYxS0EzeUZUbEhSeTh1ckFkRWZjMWt0N3JxY2k1OFBpMUNfOWM2eXhqRnFPTU81Sl83amY1Umkwc1BBNzhfcGdmYnA1QnlxVHc4VFY5Nm1fWGl4Z2FxN2l0WVQzZVk4dmdrcVhSbVRSTDV2QThXcEdFUllXUG01VXo2Q1FydlJNZDBaQ0tvcHJPQ1IzRWRvY2pPZEJuZ1R6OGN4bXNYRdIBigJBVV95cUxNbm5idm1qQ1V5Y1hockp1bi0yQ2tuNVNBWC1CV21rVUpxdEU5NS1HNkk4eDV6ZjRkdHlfd2p4a1A0S0hYU3VZWTJUdEM1UTdZTkxVanFwbG5UcDlCUk52aTJINVhwN2x0cEJLQklnVV9Ya0hVTm5OM2VLek5mT0FMMHNfNW1rS0d6QkNGd2lpM3VlVk1NU0cwWVE4MXVOYVJITGl3dGxfY2xtd19lZW92VmhzYnotazJ1NjMtZUxmbE9GQUJpbmgzWWRLU21ieDVpTnRFZ1lzMEZhazZ3bThENEFUbndTR2h4MjNYQ05WWXk3U2t6eXVpTk9hYy1VU05BZ2xFWUZZQTlXQQ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOTm9uZGE4akk0ekl3ekotbjYySnVhWGk4QUw4eDFuNjZYQUd5Q1EtdGtwU1pFTFVGMGE4NUs3SC1xRzI1SWV3d0R5NjJKcUF6V005NlQ0RUtKRlhjdEtsVEYxTFRSVThnWkZLX0wwclBFZUdFNFo5Z2JXUDB1TE5iZmZrc2hfbmZQQ0J1VUJ6aDZqTzVHdDdRRm1QbjY0OUZLQlozOXdSdDl1bTRWNU1YVkU5TjdxLUdEN2VLTG5hMHg5N1drYm1hbXlZTl94YmMzdWVfX0J0ZTB4Yi1RY2NPbks4OFFjbDhrc2ZzVFhMTjB2MmttQ2pDT04tTE5CN0VfWkRla0h3ampPaXBLZ3dj0gGqAkFVX3lxTE40dmtiZnV0V0JyYlJxMm1xN0Z1c0labElTd09ZQVVPd25yTWt2WDlnbjI3eG1UYVFvNUVuV2tEbTVGRElQdThfd1VmTjRLaFF1TXQwV1RYRWVPdThvMGpzTi1sRDU3aEtpVjFXOEtfQTY0bVAzYlFhTy1YcUVjRkk4RmFxQU1rUk9oX0VKdWdHWkdhTlJOckRvQkdLLXliWGtiRlZDU2gxMk5aOENsM1VYVHczQ083Y3hzTnRQOHFHTy1HTEFCWXRROFJ4c1RRRHZxaDhtSlN3X0dJcDIwb21xamZua0VVUTNaLUhnNlVUZTl0WnpzV3QzZndiX3JDcmdRcl8tTTZvdTRQMmp2Sk1pT1BMWjZ6QjM2RnNneVNkVFV1UC1YTFE0aHc?oc=5"
   },
   {
-   "titulo": "Ocde sugiere a Colombia subir gradualmente la edad de pensión e igualarla entre hombres y mujeres",
-   "fuente": "El Tiempo",
-   "fecha": "2026-11-21",
+   "titulo": "Precio del dólar en Colombia: no para de subir y así cerraría noviembre de 2026 debido a la ley de rescate del Gobierno y del valor del petróleo",
+   "fuente": "Infobae",
+   "fecha": "2026-11-22",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOY2tVUzVUa09NVmtlSzdYdDlaSnEtaFB1Wjg2TXVvbjYyd0dkY1IyUU1NXzl6U1Jvam0xTWNucUpHY24zRjBYTkZIdjIwUGVObDN2R3F0UmpNckVNSnRPLWpwWklyd2t3d2stTWowUGYza2JOSGp6YWNWdXVCXy1kdlBEMVRUMmZhYk5MR3FkM210a0NGaUZJOExLRFZEaGdjNEIwaENsRVhoandKS01yV1JDbVd2TzhtWkZjMzBsdDRZQ0JodkIwcmR6SVo4SGo0eS1FQkxaQjg2aWNNUG9BNXZn0gHnAUFVX3lxTE5FZUN2Q2VJVkJCYzhraS1BaFMzYjdaWVk1VUs1T3YtV3NtNmVlUThseUlBTEFPUHUyMlpwcTBzdDFWTmhzSXI0U2p5LVhNcmdEV0kzNjVhT3M0U0o5VnhNWGVsNjdsWG9KQmhIeEtQNXlZT3daLVoxLXRSRDBZbmNfOFREbGt3MXh3MUxvSElycE8yWVdxQkhmSjNQNnd1VXUzbkdZWFNZam5DZ3VzRG1ocEo4T2Faajk4NEtCOC1KSEpQSDlkSVhMUmc2V0FQQm0xODF3RFRrWWdCUXM5WkxhcHZvdjNiMA?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQTllLRzJkTEp6a3F3ODYxOTdvUjV2S2U0ZUhVMGlRdWxDclFzRjE4NWhnRnB1cjZ4dThOdmJNMlpGdFhqVjZmbXhzb0VhaHFkMlo4VVh0ZFBnSl9rMk96UXBzT2JPQXhpaG1GbVdKZDFMQjlzc1JUTEYtM0dsOTBrcVAxWnM0RGZHWVIwRnRWR2M0RWc3Qy1XbklobzYyUjluYkVMS0xSOF9Fa2xNbVg2ZmVOZXY4V25wM3UzVUlJVzNpRUF3bEVTMGRHSjU4U3Byb0pJRXhSaVJpR3RXUEtTZXl1MjZ0TUdKTTQyLUtGdjlCSEp2WEk4VEVQYmtrYWUtTVpBZ21uYjNNdjd0Y0pwWmpPYWhvZjTSAbICQVVfeXFMT0o2ZVFwR2NDZHRfbHY5eGFtY213dEhDYzRDaS1XZkVUYjFtUHl0Qk1jd2dTX0FBLVVoejlLa21SUjhPZzBuRlNaQTJhOW8wMW1BVDlfcWI0aktub3QxN1dhVnFVc2ZBRDljdzhiN1V2WGVuQVpST01IUDYzU1JnLXNfT29IY3pmdllwWlJwM3pwVWFLNnd5RW5GdUU5cFVMYTgtaHJwdDdBaTAzbFFjVmN4bGRzZ1hqLXp3U2k2V1lNT2FJM19ialNWSHRoSEc0M1ZIcFJYMGtiUS1YR00waUw4N1o4eUkzaHhTMmVpMlAwN3EwR1lSN3I1aldEQ2JDOUNHcG9QX0JYeVU4ZzduZHdmVk8teWk2QWFWVGRfS2tTeTNvdnF2Z1lIRTd3TEJnQ1pn?oc=5"
   },
   {
-   "titulo": "Dólar inicia al alza en Colombia y alcanza nuevos valores tras variaciones en mercados internacionales y flujos de capital",
-   "fuente": "Pulzo",
-   "fecha": "2026-11-21",
+   "titulo": "Salario mínimo de 2027: Hay nueva advertencia del Banco de la República para los trabajadores y las empresas; este sería el aumento necesario",
+   "fuente": "Infobae",
+   "fecha": "2026-11-22",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQa0NnLVY1Z2M1Z2VQcDhTdWJzYnVBc1FhNHdQSXo2aHp0S3EtVTBmVWVuMXJlTm96eF9lN2JyVVlBdEg2SmtraEVMNlV6QXVDY1NaNUlKS0tjTzJNVWhRbGpUcllpMEdXOUtja25laUF3ZHhFQ2drZ1VRdVN4bGtPWE8tcTI0RWpfRTBENDR4amNjdHVBQ3U0SUhCYS05Mk4yVTRrQ3lWSE50aXFDYmw5Qmpn0gG3AUFVX3lxTE90MjFhSFhXTlNDM0lIUHM0UUhUUHRXclZqVWJwZzdMU1lmeDdXUkh2cEo1UmJoaGstZnhuLXh5M25rOXNJZlU3V2xDUFFqcmR1TmJ0WDAtZm1XZlZRRk1KR0V2UlBhcmVGb045X2RwVXQ4RDNDQXNxRXhrT3BBSzZMVG1kTHpzYnUzcmpUejBjSUVMRkt0MnlJZkY0M1pjLW9DanlEX2ZRamZaajR5MlBZakc0ZVRNdw?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPaWRoUU9JcGtaRFVfbENhRFI2OS1ULVpxTGRIeC1MOTNHZ0tVbVZFX0ZLa0hXUWp3U1RmaG8wb3BlTGRQZWZiTUZCX0hfbnNZakp1OUwtblJOSlRVTnB5VW9rM29zbkIxZTZFS00zS3ByY19NQ2E3QUoxXzN0UzBTbEt2aFY3Z1Ffc1BuWnp3Snk4d01NcXNFTU1sek9DMkp6LWx6Mjc1bGkxVWxQREZqSGhjeXUycXlSUVYtbjFWNVN2WDJhbEpRX3VTbkJhZGhBVDRJMXRQenJVOWw1YXFkT1B0Rjhjdkdxa3M1c01yc2hkZ0tRZkxfWXRRdWFoNWV3ZnZNM2E2VDJzaXJMMkhvbTdB0gGsAkFVX3lxTE4xWUtMRVRqTnNKdzZxZGxTVTNVSDFpQmFIeWtSQnY2a1BCSXBYVF9zSmxqSEJ1U0l5OERlRWxralJhb2UyOGpVQXhodmlWR2Y1bEpsdDRyR2hmby1lMXczMGpzb3ZqYUdELW4yZmNJN0drZ1ZUdi1Ud0UteXQtWWFPQzVGb3Z0RFhVV29PeUZ2SUZoLTRDMWJmWEw0MklZWXR2ZUdkbWk1RkVTTGZxYjFJMGZpeE5LS1FQRHBYYlNaZHFwZ3BSaVNkR2gyak5Kb2J4YXBUOXFsbS1sQWJRUGpzQmwtVGItdHhFQ09XUTVzZE5sREEwcWVRT0JsSDZkaFRIcHFOZi1NVnBzZ3JucG5UamFJNUNMUUdxdFoxS203WVBLcERuWTd0UGc1cQ?oc=5"
   },
   {
-   "titulo": "El dólar en Colombia subió casi 150 pesos durante la semana: así cotiza la divisa este sábado 21 de noviembre",
+   "titulo": "DTF: luego de cuatro décadas como tasa de referencia, a final de año se apagará",
    "fuente": "Portafolio.co",
-   "fecha": "2026-11-21",
+   "fecha": "2026-11-22",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPaEU5M3Z4WXZSWDJFeXBNYjJtNWo1RUhLY2NFNG83bktDaHVWVXhzSmZQZG1XU1hoMjZmOTgwTDdSZXc2N19NeDg2RDZKT2t2NTdnZjZnXzB6V0UzMUNTQ21OTGx3NEZ2RFpxSGxxX0poSWhSTFdsVHZNVTh6T3N4c3RqaWFqWVR0NmRzUnNoTThvbmhVWk1BWGlDZWpIN2lWOGNQakVfb0cxMzJMM05YRFNqdUdseFl3SkxSeVM2OEcwYWJ3VzlTWXpLUDRGdWxjZV9TVnhsNzltWU51eVZmRHNGcTFobUNKdk9BazdoTTjSAfYBQVVfeXFMTWR0bTF1OWRYYTVXZVpQODZFWHZfQTR4eEJqQmFSTi16TGU4Z2pDZ0laWVZTaGNoa0pjQnBRdHJFYkl5N2ZWcDhWRk1nalg5Q3RmeDlSWU85clpicnFEU1RYVlg2N1FqcEtQQWYzaGpDVW9SR002YjF3bDRZcHZVMkMwN1NlUm9pQzhpLThZcXYzakhOU2szQ1NTYkY2UEQzbzl3cDhLU1RLaXdCQ0E2T1N6OXJXUG9sbmVwaFdUSG0zU29oVUlMQi0xdnFlTEZva1A2QUdBcmNZTzVMUlFFWWgzYi1SU0d4T2FVOVhwTGVKYngtSTVn?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPeXhGcXY2U1lsOENzcG16dUZUXzhnUXdtbU85SWV1azNaY2xtYzM5SHM5RzZON0tKVTIxVVpTNURBanVrd3Q2Qjg2WDhPdVh3RDBPdUtJZTktamFkdXQwdHNEaWZZS1NoOE8zZHZWMU9jQVh6RVJ6dzB4WWJPUzlyd3lkZTJFc1pfejRXN09KMGpGSnp2X3g0MG5lWXg1S1FWZ0lGZEtrZUVjVDU3eHV0S2VDNXFJYVltVDg5dzFHYTBKQ05KUFpXNGxUWUfSAcwBQVVfeXFMT3l4RnF2NlNZbDhDc3BtenVGVF84Z1F3bW1POUlldWszWmNsbWMzOUhzOUc2TjdLSlUyMVVaUzVEQWp1a3d0NkI4Nlg4T3VYd0QwT3VLSWU5LWphZHV0MHRzRGlmWUtTaDhPM2R2VjFPY0FYekVSencweFliT1M5cnd5ZGUyRXNaX3o0VzdPSjBqRkp6dl94NDBuZVl4NUtRVmdJRmRLa2VFY1Q1N3h1dEtlQzVxSWFZbVQ4OXcxR2EwSkNOSlBaVzRsVFlH?oc=5"
+  },
+  {
+   "titulo": "Peso colombiano fue una de las monedas más devaluadas en la última semana",
+   "fuente": "Portafolio.co",
+   "fecha": "2026-11-22",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcnVPUVo2ODZMRnpQeGtBMnQ4YUxMOHRyM1BaVFZ6YUQ4THdSME81Y3FEX3ZyUkdZdFRMeGRuZ3pqRmEwby1UbXRxV0dadS1kZGZtNjY0WjVXNl9qdDNtX0dLaHZXNG5lc1ZBa1RFR0xpWVI2WkhScWVyQnJJQ0ZyTUlTZjFRTmRyWWpoY2pma18xdjVWUFZBN3RnLXJBOTN5ZUE2YUJzbUtyb01CZF96MjFnQmFqd29qTlhhVEVkcUhxd9IBxwFBVV95cUxPUHFDUE5uMlVNZUd6UGtINGRBaW1jY21BYzhKYWVSQkJod21rb3JKR2tEcW5Hb1I5WENBa1d5U082YWlSS0g5SXR1cFBYcFo4YXhPcmpmOGo3d0lqOVNaNXZpOU9jbVdRajdSNEZkMVgzNk40QmliSXlUcllvNE41TUF1WHVUREZ2N3BFNGFvY0VyQi1oeW0wdWZFcWo5MmNzUFM2dVBxR2Y2Qkw3WGZ6SVJ6N2pVSnZfVUoyeDVtOE95QWFhZ1VV?oc=5"
+  },
+  {
+   "titulo": "Lisa Cook afirma que son necesarios aumentos de tasas de interés",
+   "fuente": "El Economista",
+   "fecha": "2026-11-23",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQblY0RklhVUU4SWhzZHlvTHA4b1UyUkZqMWpCczJPV2twVDYzbEhHUGNLb25GUUR6Tm5OdnNnSUFzOVhsckltN2NGQmRvRmo2Z01scjJfTWVQLWtOSFk0SFFzNUVOQ0RRUmpJNERxVV9UUEV5TjFuUVEwWDZQcHpsakFjUnFDWndGTkZsYU5oX2ptVmRCeGVkenBGWldUVlFfeGd4cTFRbk9iX1RMYXpUOWhWX0pOVV9ZZ1BrSkpUdUlyQdIBxwFBVV95cUxPTkZjXzdudU5XbEhXRElLaW1VdEEzamNMM1Nfd0V6b2M5Z29ZSy1aWW8xcGEyVHl2UHI3NkY1djIzamc5bmN4dExNVG0tMWkzMUI1SlhGbHBxQTFITWJzNi13RWhOMlprV3hvUlJudFE1dHpCSzB6NVhvN05yaUFlX0NEZ09GV3NCTEktX1JGX0QtbnNrNlR0X0JyTWVNdkZVTlRyQmNBb2hXODBzRzkzTEhUVGZ4emU3SThmX1Nma0JoWXpLS2g0?oc=5"
+  },
+  {
+   "titulo": "Precios del petróleo cayeron fuerte durante la semana",
+   "fuente": "El Economista",
+   "fecha": "2026-11-23",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUkd5S21qdVZLaXd3ZmU1N2hoMk5RQjVMeXlHczlqSFJQSjZhMWkwY2dEamdHR1E2MEVMZ3B1T2VsZnNmZ0FPY1BtdWJ3M0JVNDBucFl6ZUkwTlZOQVNoM1lDQmM2V3d1UFNZX1A3ZHRlWEhtX1BfM1ZrNGFqWWJrNE1POTlwSlJ3eWdfWHJ3SmJyajZ0WmtBbmhwQklJZmFBS3fSAacBQVVfeXFMTnBZcGIxUTB0YmpnT2l6T1VSR0ktdWRtLVd4NTlhSW5XTm5DR2V2MWpyM1V4LUM2b3I1bXBHenYwdEFDRlR3cDAzSk1QQ09SUmpmaHVGanZSdE9mU3RfLXZCYy1VNjRjWXc5ekd4Uk1BX2NjdjdoNG1yc1FCX1hHY3UyU3NwYWZCRmZhQjQ4bUlNSmg4ODVzU20xMEpPZVVtYzE1RXNhdVE?oc=5"
   },
   {
    "titulo": "Pánico en Wall Street: Nvidia cayó 14 %, Anthropic 8,5 % y el Nasdaq borró sus ganancias del año",
@@ -153,20 +167,6 @@
    "fecha": "2026-11-20",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBPOTlBSXdxakpsNC11eXM3bm5IczMwUzZRTE1MdEZ5bFNJanE5TG9VWFR1RlNia3QyTzJJQ0dTWUFJeXdTeFdyaEhKUllBU1d6eVE4bXN2THFqYmFC0gFiQVVfeXFMTW5fa2lXa0lNSDJETWJMMVZLTjVtd2VUSkpXT0RraDREUDExbnprQ29WVTNQLVJoWlFUQWFOaFJBSk1FUU9ubFNMdUhwX3dsdFpGRDdsUG5WU2pMcFFUMFhGeUE?oc=5"
-  },
-  {
-   "titulo": "Wall Street tiene su peor sesión desde abril de 2025; Nasdaq se desploma más de 5%",
-   "fuente": "El Financiero",
-   "fecha": "2026-11-20",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaGZfWHM4OUx6S1hnV2JGOEh2engtTnZUZUJTQUNCR3dEY1M0NjBtSC1xaTdNQy1qRkdyV1pmX2FpM2dwNURYYjM4U0lobVRUWG5PT2FyVGpzNWlJZnFMdTFReGVZeU81Vjk1OEpwT24zSlZGa0I4QmVCdkZyZE42ejF6czdFdjBTTl9NRm95VmFjNkZfTTFwVzZUS3Q?oc=5"
-  },
-  {
-   "titulo": "La euforia por la IA da paso al miedo y a una “volatilidad extrema”",
-   "fuente": "Infobae",
-   "fecha": "2026-11-20",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSTZEN3pVX0RSTzJ4VGlRc2l1WTR5VDR5Tm9qY25xcmg1Z3lKUTZYVEdvUTFTWXlzb1pyWjdqMFgwblk2LWwta2VRQmplaGt2QVJqNl9JTWdQdk00emlPZmlPRVdiUDU0LU1rOFI5V2JpMDZrN1lFMGlDdy1tZm5QR1paRTg5UGZmcGJydjJWRDRXMDRNTFZCampMM0QtSHV1QmdjUGMxUjVuSEUtdFdSa2dpVm95Y3F4VDJqcmFsdVJIcDR2b1JQVWM5WkRYQXNvZEgtdHRfNWpsT2_SAfYBQVVfeXFMT1ZXb1h3ZXI1ZERqU3NVc3ctNDZTTWhVT21aTlJJNS1MX182SWVKYk56bXlEVzc0TlVPd0VKbmIzTTduRV9EY3dIRlRkdXk1bkU2a0tZNkFab05XcGZIZFdXNVBlSzBtNGdyc0w2Z3h2V3cwTXJpNm9aREgxbVRmNTlTVXczZzFVSzFRb0haSVMtRUdRRkpLQ0dFOXBNcTRoRzdfbDE5TmhEc0NuYVlXVEl6VUZhQ3JfclF0QlE1RXpKMFFlX1Vib0MtNFZIUlpLMnVWWC12WTZ5YlluZzRvNTlERlFYZEFiQ0E0R2VpUElQVU5xTEp3?oc=5"
   }
  ],
  "tes": {
