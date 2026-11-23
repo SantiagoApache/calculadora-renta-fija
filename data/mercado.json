@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-22",
+ "actualizado": "2026-11-23",
  "indicadores": [
   {
    "id": "trm",
    "nombre": "TRM",
-   "valor": 3461.92,
+   "valor": 3505.92,
    "unidad": "cop",
-   "fecha": "2026-11-23",
+   "fecha": "2026-11-24",
    "detalle": "Tasa Representativa del Mercado vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/1/tasa_cambio_peso_colombiano_trm_dolar_usd"
@@ -16,7 +16,7 @@
    "nombre": "Tasa BanRep",
    "valor": 12.25,
    "unidad": "pct",
-   "fecha": "2026-11-20",
+   "fecha": "2026-11-23",
    "detalle": "Tasa de política monetaria vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/59/tasas_interes_politica_monetaria"
@@ -26,7 +26,7 @@
    "nombre": "Tasa Fed",
    "valor": 3.875,
    "unidad": "rango",
-   "fecha": "2026-11-22",
+   "fecha": "2026-11-23",
    "detalle": "Rango objetivo de fondos federales",
    "fuente": "FRED (Fed de San Luis)",
    "url": "https://fred.stlouisfed.org/series/DFEDTARU",
@@ -65,9 +65,9 @@
   {
    "id": "tes10",
    "nombre": "TES 10 años",
-   "valor": 12.94,
+   "valor": 13.15,
    "unidad": "pct",
-   "fecha": "2026-11-13",
+   "fecha": "2026-11-20",
    "detalle": "Tasa cero cupón de los TES en pesos a 10 años",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/640001/deuda_publica_tasas_cero_cupon_tes"
@@ -75,111 +75,111 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3483.34,
+   "valor": 3505.49,
    "unidad": "cop",
-   "fecha": "2026-11-22",
-   "detalle": "Precio del dólar en el mercado (último dato); +21,42 frente a la TRM",
+   "fecha": "2026-11-23",
+   "detalle": "Precio del dólar en el mercado (último dato); −0,43 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
   {
-   "titulo": "Restaurantes y tiendas de barrio podrían ir a la quiebra por impuestos que busca el Gobierno De la Espriella: hay alerta por el licor adulterado",
+   "titulo": "El dólar pasó los COP$3.500 antes del Black Friday y así sabrá si todavía le conviene comprar en Amazon",
+   "fuente": "Bloomberg Línea",
+   "fecha": "2026-11-23",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQY2F2aXFXem1IaV82MDBFQzVwYVJDVVpSYVVCc05SeUVmZm1mTVpEQ0tJMTdxX09MXzM1R1lnRDFNRmhZaEExMnBnbzN4OVljVUNnVGY5OGFJZjAxM094WWdiMWhEcXVyclpIWE5zemFvQm1TNVF4aGduYmhsOTM3em9xYUV4d1M2WmZyX3g3NzdaNy03Q2RqR3FwbEc3NVNLX1ZwQ3RYdjRqRG1kWTdUWmZKaE52RzE1bmoxeWJPdGlUSm9QNS1SNlVPMWJ4d09mTndPVXBrZnZtWkNYZnN2alk0Nm5pS0YtSWlDNtIBgAJBVV95cUxPNXdGVjhWZ3MtR3JUeG5MNTVZd3A5SFhIMUhRVTVTY1JtbjR3ZDBCdDd3VXUyajRjRkFxdjlxaGxyTFQ0dVZtc1JUYjlMbG9mTGFMSmNmV2R2WFNiQVpKQjQ2akV6MldQOUhkXy1RWG5ZUXhZd0FYWkZiYmItdThGUzAycHVtTnJ5RmdYRjhrWi1kejVod3U4cGpCSWNjekptRG5aVTVETEkyV2V0MEtzdkdnT3FQSXRoMHhiSTZ6ajRtaXF6WUdLOTY2YURsZWJrbklvekprMS1ubHNKeFdMLURpN2M5cmdkVnJQZTV2Q2NSME9qTVlEM0FQMTRvQTlF?oc=5"
+  },
+  {
+   "titulo": "Aumento del salario mínimo de 2027 debería rondar esta cifra de un dígito: empresa de Sarmiento Angulo hizo esta propuesta para evitar subida de precios",
    "fuente": "Infobae",
-   "fecha": "2026-11-22",
+   "fecha": "2026-11-23",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOWk1ncmswZWNvb1E3dDAyWUNHMzNaS1BkQ29xcWpCU0IzTFI0NzlWVEFIR24tRzlKRE5Cby13TkNleXFjYmU3NlNJWGVhcUUtYlQ1MEcyOUt6MjZCeTFVSUNMRmRDOWVvYnJKS0p0bFBleGp1ZS0xcFVoWGRUVENLSHRfQm5aQWJoR2swZGhsejNYajFoajR1VkItSWxXMF91WXRONDc3OFQ5N2ZaOWE5UW5uaXBOcmMycXN6bTl6cGJGY0EzbjV3NnpHRHVNNFFIOGJqS0FIMXVNVWt2NC1QeXBBWTVsdzJSOXM1Tm5oZW5uWUpTb3RxS3dLXzB1NGJ4U2Y5eFhkMXhobFRFV0o3TUJzUU9hNEHSAbICQVVfeXFMT0JJaXFSVlY5U2l6MWFjTTlJTUFqQlVpMVg3bGRQbnlJTGZFMVlkWnJXc3NCd3U4RjRsa1FUQ3NBNnFTZTNfWDhmVjJ0SlA5Si1JVC1LY29NRkxVRlB2Wm1hZmItTHFQa2VXckstOEtpd1FvR3NmeGNzazhhWEdKQmMtdUdVc0dOay10dndqTWktVTVESzNqQVNoYmtoYUpzUGF4bzZwanpseXNBSTl3XzdDMENMQnc4UXNLQlJUMVNnLVl6V1dDM0h0Mm1Vc3c3MkhFUmpRTFhQRWU2R3h3T19DNTdzY0RoNUxXWUpqemxraVlvdEY5NW1VV0VOTVZNalZMWVVjZUEyYURWN1hhVTRNbl9YckNNbl9HZUpCdVBUSkRJakQ3Ym5DTXZsNG41WXlB?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQNG9SY1ZRSlVnN1c1SzJZOWFZMGhVMmppUWNVdXA4MEF4QzllYVJLQVQ3NFBnYUJYdGtDRnRuM0Izcm9Xa2daUF9JY0hGdUVHcU1VWGZ6Rm8tVUtLZnE3emc1aFhVR0REOGZLZFZ3YXhuQkpQV01GRGppQkFoa1UyWndBWnBtcXVwQnlQNGdNc3ZhV1RJVndkakNCVGxSaHBpXzU5cGVTb25hRkNDT3pKZ3VRMmpqR0dQTXBHMENDY3ZXVEZ3emVXTzBVbkdDeVZGWU5ycnFKT09UeGMzeEktbHB1UHJpSTlHYjlHQTY4am1nRVRubGZVZVBxVkpfdG9ZeFQ0MDNUY3EtYXRTZ3p4V2JnN1NsSWZTT3VUUnlKTVhNd9IBvAJBVV95cUxPOGF3RHpiSW92UUJhMHJHaEREaDZGWHhHR1VETjkwZG5HaTdEN190MEZDczl6WkJzTW05dUlMNkJCZklIeVN6TGVyQjBHblk0M2poVlNGWURwbnZaWTUzNVRYYkdIZ2w3V29wenU2STF6VUNzbC1xZ3VEbElvVXNMQ29HRzZ1RWFTbUFyM2tCeU1BNFRuN25VUzVJc1poNzYxTURWM0oyVURjZXlRY3MwcDBKM3RJUE11VUJoNW5waS1ySExGaUhFcmEtTktncTBTOWJKN2dMelN6eGZWbmlKMU1nelk4cDJVZGNrVHJzbzc5c3VMY2dGNklmUWI2azV2QlJNODZxc05yRFhqWGtaNDEteE5TSmtTMERVNTc5MUJlUnZ6dE51Tm9zSGRObXg5bHNsb0xSWVg2X2Y3?oc=5"
   },
   {
-   "titulo": "Así cerraría la inflación de Colombia en noviembre y diciembre de 2026: el indicador es clave para el salario mínimo, pensiones y arriendos",
+   "titulo": "Con JP Morgan a la cabeza, extranjeros se abalanzan sobre deuda colombiana",
+   "fuente": "Bloomberg Línea",
+   "fecha": "2026-11-23",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMWswNHBrR2YwSWNtX04ybnZmV2ZTaGNEUHJFRDBvNmdsTDRZeC1fN2dMT1Ffd1VFT2V6U1I3MEFDbkxDSUZHemhPb2JBMm1RUU1JaWVPcHEyR2xXSmpmRUs0Q29OcXBWVmNVTWx5SU4xUHpJVW5adUlxZWZvdlhzcE5YYUYxTXdoaTlWZ0M2TDBUWl9lYl9SeGRFMzkyRFJWaXlEQUhRdTlVckZxTkZ4SkFGTTg1R1pjRVY1QllBZ1Fvdk5ZTk9V0gHbAUFVX3lxTE01MUktS29yVjFURk81cmdCZUdTN3dkMDNWblVGWVZDdTZZX1pPR09Cc250Ti1GaVBQc0JBYUwzenZQeWMtaDRWYjd0YXRIUmE3OS1kR2V6UEVHWks3MExTRE5zVHVveG5lYkJ1UTdYUWNZejVyTDhLSmxyOWNjUlZQSlBhcWpNMTBaRjZpamE0dUtDbDZzMXpnVm9GMm5LLUpaRHNTLWdmODF4TWZ3UVJtTklkUzZYLVJZTnRYVVQ1cllCTnZNekdEWExtMVdoVkFrZUZ3MFFSdGNZTQ?oc=5"
+  },
+  {
+   "titulo": "Banqueros ven ajuste fiscal como condición para que baje la tasa de interés en 2027 y se reactive el crédito",
+   "fuente": "Valora Analitik",
+   "fecha": "2026-11-23",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16Nm1FVXFjeUZFMXVPOG5MVThGdEsyMU96czd6WWFjc3QxMlVuY3E1enlhMGxXaG1QdUhaOFB1RWdwOE1FckEtSV9sZHB1NDVmVTc2eWxSanNadDlrWmJIRW1tMGlib0g2RTNpaVlCUlZmNkdVZ0tCR9IBfkFVX3lxTE1ZdHU4aFJLaG1sdkpEMnNfRWVzY2l6ZWFpcmljOUhMZDVIeTRYRFUwSWFGc1NWOTZ3QjhSRVV5cnFUV09DR2dUdTlvVUEyQzk0N05yODdKcmRDaGM0bnNXU296ajBDbUwtWjl0aUZyRVFnME1yZGI0ckFLYTBrZw?oc=5"
+  },
+  {
+   "titulo": "Dólar hoy en Colombia: cotización de cierre del 23 de noviembre",
    "fuente": "Infobae",
-   "fecha": "2026-11-22",
+   "fecha": "2026-11-23",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOTm9uZGE4akk0ekl3ekotbjYySnVhWGk4QUw4eDFuNjZYQUd5Q1EtdGtwU1pFTFVGMGE4NUs3SC1xRzI1SWV3d0R5NjJKcUF6V005NlQ0RUtKRlhjdEtsVEYxTFRSVThnWkZLX0wwclBFZUdFNFo5Z2JXUDB1TE5iZmZrc2hfbmZQQ0J1VUJ6aDZqTzVHdDdRRm1QbjY0OUZLQlozOXdSdDl1bTRWNU1YVkU5TjdxLUdEN2VLTG5hMHg5N1drYm1hbXlZTl94YmMzdWVfX0J0ZTB4Yi1RY2NPbks4OFFjbDhrc2ZzVFhMTjB2MmttQ2pDT04tTE5CN0VfWkRla0h3ampPaXBLZ3dj0gGqAkFVX3lxTE40dmtiZnV0V0JyYlJxMm1xN0Z1c0labElTd09ZQVVPd25yTWt2WDlnbjI3eG1UYVFvNUVuV2tEbTVGRElQdThfd1VmTjRLaFF1TXQwV1RYRWVPdThvMGpzTi1sRDU3aEtpVjFXOEtfQTY0bVAzYlFhTy1YcUVjRkk4RmFxQU1rUk9oX0VKdWdHWkdhTlJOckRvQkdLLXliWGtiRlZDU2gxMk5aOENsM1VYVHczQ083Y3hzTnRQOHFHTy1HTEFCWXRROFJ4c1RRRHZxaDhtSlN3X0dJcDIwb21xamZua0VVUTNaLUhnNlVUZTl0WnpzV3QzZndiX3JDcmdRcl8tTTZvdTRQMmp2Sk1pT1BMWjZ6QjM2RnNneVNkVFV1UC1YTFE0aHc?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNkNwRE1PbDI4X1ItRnRXYXZzb25OVmpxODVZRjdOd19WeDZNSnhKcEhWel9pZ1lZc1FBWDJjOG1GeUw5MjNGTU1YdERCMFY5SjFQWm9QdXozQ2MxZi01eExtZ3FRRHBhdUktY01KMl9aSDFXdFNOY2M2NTVXcVRsaFU4WjlMWUdhTnlyY0ZRbHVYUlR2ZEkxRFVxVUtuYktSUVE0TU5LS1gzUVXSAcYBQVVfeXFMUDV6bHpHcGEtUnJoWFM3R194d2ZKYjhPaVJnNnpNNk1nT1pWVDgybFRJNGNISXh5SzBnMWhMaHlxTWdiUTc4d2FIcUdQSVlwQVBiU0RjSFFxRkRKc2NBREQ1ZFdDWWZESGE3aTVFNEhNNWRJdDBmX2s2bzBfQkdiWkRBdWlJdVRtVi1ONjdWWGZpejRSNUpjQ2JWVDRzNGQ4TzY4VmxJcXFZUm1FVm90dnV5QUR3RUJ3MHlEQlE1YVJlMXhTc2FB?oc=5"
   },
   {
-   "titulo": "Precio del dólar en Colombia: no para de subir y así cerraría noviembre de 2026 debido a la ley de rescate del Gobierno y del valor del petróleo",
-   "fuente": "Infobae",
-   "fecha": "2026-11-22",
+   "titulo": "Dólar en Colombia cierra con nueva alza y se acerca a la barrera de $3.550, en medio de repunte global de la",
+   "fuente": "Valora Analitik",
+   "fecha": "2026-11-23",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQTllLRzJkTEp6a3F3ODYxOTdvUjV2S2U0ZUhVMGlRdWxDclFzRjE4NWhnRnB1cjZ4dThOdmJNMlpGdFhqVjZmbXhzb0VhaHFkMlo4VVh0ZFBnSl9rMk96UXBzT2JPQXhpaG1GbVdKZDFMQjlzc1JUTEYtM0dsOTBrcVAxWnM0RGZHWVIwRnRWR2M0RWc3Qy1XbklobzYyUjluYkVMS0xSOF9Fa2xNbVg2ZmVOZXY4V25wM3UzVUlJVzNpRUF3bEVTMGRHSjU4U3Byb0pJRXhSaVJpR3RXUEtTZXl1MjZ0TUdKTTQyLUtGdjlCSEp2WEk4VEVQYmtrYWUtTVpBZ21uYjNNdjd0Y0pwWmpPYWhvZjTSAbICQVVfeXFMT0o2ZVFwR2NDZHRfbHY5eGFtY213dEhDYzRDaS1XZkVUYjFtUHl0Qk1jd2dTX0FBLVVoejlLa21SUjhPZzBuRlNaQTJhOW8wMW1BVDlfcWI0aktub3QxN1dhVnFVc2ZBRDljdzhiN1V2WGVuQVpST01IUDYzU1JnLXNfT29IY3pmdllwWlJwM3pwVWFLNnd5RW5GdUU5cFVMYTgtaHJwdDdBaTAzbFFjVmN4bGRzZ1hqLXp3U2k2V1lNT2FJM19ialNWSHRoSEc0M1ZIcFJYMGtiUS1YR00waUw4N1o4eUkzaHhTMmVpMlAwN3EwR1lSN3I1aldEQ2JDOUNHcG9QX0JYeVU4ZzduZHdmVk8teWk2QWFWVGRfS2tTeTNvdnF2Z1lIRTd3TEJnQ1pn?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNaHZYMzRMMFJTSVozUVJqZ2tlc0dSSWVaR2xtOGRrZGVtZ01OdHB6b0U2aHNnbXZZdnFPaWp5ekJudlB4WVNOSl9vRDdCQUtRYWU1MWtNd3lfWXZRY0RBNkh4cEZGNlYzc05FeDRSLWE1WXMzS2NRLVRBV0o0bWdpUWtKbHRfdXJTNEJhSldlMF8xSFkxVm16TV96RmYxUlRnUXZoZHZmM0FUa0pFTGoyLWUyYllsYkVGNHRENEdOUGgwYUY5bUtsU2hKRUVJbUV1ckx5THZZMFRrbmxjcUHSAeMBQVVfeXFMTXVVYU5lTENxMGlxYWxPWDdIQlRTZEs1V0tiX3dBOFB0X2RMbHFrbUtFbjFoMDQ0bnk2SjVjdnZrR3ZjWDFMR2wyNVBKem1xWXZzSkRkYjZZLTEzVzlIbVRCbTVlWTZLRUNaOXZIWlF3LXVhcUJDRTdkM2JBWjQ0Y1ZOWWQtVFlKcFhNRlo2eVIwMUxON1FiV2Y0VEFtdVhPZ2duN1BsZFQ2LVJ6ZnNCX1EweEc2ODlQWVZQcWx5alBreHhVcjJtLUxWS1JaRkRZVXN6VkRYa1d3R0xDZVlrOEN4VVE?oc=5"
   },
   {
-   "titulo": "Salario mínimo de 2027: Hay nueva advertencia del Banco de la República para los trabajadores y las empresas; este sería el aumento necesario",
-   "fuente": "Infobae",
-   "fecha": "2026-11-22",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPaWRoUU9JcGtaRFVfbENhRFI2OS1ULVpxTGRIeC1MOTNHZ0tVbVZFX0ZLa0hXUWp3U1RmaG8wb3BlTGRQZWZiTUZCX0hfbnNZakp1OUwtblJOSlRVTnB5VW9rM29zbkIxZTZFS00zS3ByY19NQ2E3QUoxXzN0UzBTbEt2aFY3Z1Ffc1BuWnp3Snk4d01NcXNFTU1sek9DMkp6LWx6Mjc1bGkxVWxQREZqSGhjeXUycXlSUVYtbjFWNVN2WDJhbEpRX3VTbkJhZGhBVDRJMXRQenJVOWw1YXFkT1B0Rjhjdkdxa3M1c01yc2hkZ0tRZkxfWXRRdWFoNWV3ZnZNM2E2VDJzaXJMMkhvbTdB0gGsAkFVX3lxTE4xWUtMRVRqTnNKdzZxZGxTVTNVSDFpQmFIeWtSQnY2a1BCSXBYVF9zSmxqSEJ1U0l5OERlRWxralJhb2UyOGpVQXhodmlWR2Y1bEpsdDRyR2hmby1lMXczMGpzb3ZqYUdELW4yZmNJN0drZ1ZUdi1Ud0UteXQtWWFPQzVGb3Z0RFhVV29PeUZ2SUZoLTRDMWJmWEw0MklZWXR2ZUdkbWk1RkVTTGZxYjFJMGZpeE5LS1FQRHBYYlNaZHFwZ3BSaVNkR2gyak5Kb2J4YXBUOXFsbS1sQWJRUGpzQmwtVGItdHhFQ09XUTVzZE5sREEwcWVRT0JsSDZkaFRIcHFOZi1NVnBzZ3JucG5UamFJNUNMUUdxdFoxS203WVBLcERuWTd0UGc1cQ?oc=5"
+   "titulo": "Bolsa canadiense sube mientras Wall Street repunta con regreso de Huang a Nvidia",
+   "fuente": "Investing.com México - Finanzas, Bolsa y Forex",
+   "fecha": "2026-11-23",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOendCZDZ6SFdTSW5samRiRi13cUJRS2gzUlNsU3A4RW5idFFVX182eXYzX0VwSzhVcVpBZEtlYnNpVS1kaENEZm1EZV9ZakVQd0w3eHhHc19rNmxWUmVBMDBuQ2ppbDM1R1U5OVZtWXVDblVBcXUwMHZ1aFA2MTNJUFJpVG5CcmQtZzljc2l1NFRialpKX200SmhFWFdaN0IwRTdfdUpOeGVKVlRoV19OTWF2WHY1eEgzS01SQQ?oc=5"
   },
   {
-   "titulo": "DTF: luego de cuatro décadas como tasa de referencia, a final de año se apagará",
-   "fuente": "Portafolio.co",
-   "fecha": "2026-11-22",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPeXhGcXY2U1lsOENzcG16dUZUXzhnUXdtbU85SWV1azNaY2xtYzM5SHM5RzZON0tKVTIxVVpTNURBanVrd3Q2Qjg2WDhPdVh3RDBPdUtJZTktamFkdXQwdHNEaWZZS1NoOE8zZHZWMU9jQVh6RVJ6dzB4WWJPUzlyd3lkZTJFc1pfejRXN09KMGpGSnp2X3g0MG5lWXg1S1FWZ0lGZEtrZUVjVDU3eHV0S2VDNXFJYVltVDg5dzFHYTBKQ05KUFpXNGxUWUfSAcwBQVVfeXFMT3l4RnF2NlNZbDhDc3BtenVGVF84Z1F3bW1POUlldWszWmNsbWMzOUhzOUc2TjdLSlUyMVVaUzVEQWp1a3d0NkI4Nlg4T3VYd0QwT3VLSWU5LWphZHV0MHRzRGlmWUtTaDhPM2R2VjFPY0FYekVSencweFliT1M5cnd5ZGUyRXNaX3o0VzdPSjBqRkp6dl94NDBuZVl4NUtRVmdJRmRLa2VFY1Q1N3h1dEtlQzVxSWFZbVQ4OXcxR2EwSkNOSlBaVzRsVFlH?oc=5"
+   "titulo": "Citi detecta señales de alerta en Wall Street similares a las de la burbuja puntocom",
+   "fuente": "Bloomberg Línea",
+   "fecha": "2026-11-23",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOX0ZQcU9zckx0TnFSeGpmVlRUSUYxNXNlOGx3UHQ0VFJkUUNPeVdiNEQ1dWZCSTRlb2dTZFl4dmF6cVlkekZNSkdIdlQxY1ZEQVA0MjZOVXdhNlBNclFTZThrbnZaakNBLXZOVU5hZk44Z25PVXVCWTJYRXFaNGNGN1E4dEplQW9NUVNIeVhDX29aSUlEMW5PUWNtZFkxekU3NDdxZ1U0VkE4aTV3My1UV2dDMmg2TDJUb3NfVG5SV2s2TzA?oc=5"
   },
   {
-   "titulo": "Peso colombiano fue una de las monedas más devaluadas en la última semana",
-   "fuente": "Portafolio.co",
-   "fecha": "2026-11-22",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcnVPUVo2ODZMRnpQeGtBMnQ4YUxMOHRyM1BaVFZ6YUQ4THdSME81Y3FEX3ZyUkdZdFRMeGRuZ3pqRmEwby1UbXRxV0dadS1kZGZtNjY0WjVXNl9qdDNtX0dLaHZXNG5lc1ZBa1RFR0xpWVI2WkhScWVyQnJJQ0ZyTUlTZjFRTmRyWWpoY2pma18xdjVWUFZBN3RnLXJBOTN5ZUE2YUJzbUtyb01CZF96MjFnQmFqd29qTlhhVEVkcUhxd9IBxwFBVV95cUxPUHFDUE5uMlVNZUd6UGtINGRBaW1jY21BYzhKYWVSQkJod21rb3JKR2tEcW5Hb1I5WENBa1d5U082YWlSS0g5SXR1cFBYcFo4YXhPcmpmOGo3d0lqOVNaNXZpOU9jbVdRajdSNEZkMVgzNk40QmliSXlUcllvNE41TUF1WHVUREZ2N3BFNGFvY0VyQi1oeW0wdWZFcWo5MmNzUFM2dVBxR2Y2Qkw3WGZ6SVJ6N2pVSnZfVUoyeDVtOE95QWFhZ1VV?oc=5"
+   "titulo": "Wall Street se dispara y Nvidia impulsa un rally que no se veía desde abril de 2025",
+   "fuente": "Bloomberg Línea",
+   "fecha": "2026-11-23",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPcWMzUTBkUUtKejZ0UzBFMzlIaUhLZ3N3MnloMkRaUXpJVHJYVHlCd1JHbmEtOFVpd2lMdGFaZVVncmVHLTZxUTk1Z3JmUHpZdE04YThEWnhnSV9rLUM2RzlmZkJoRWtvODhaQkZNVkNSNzlHN3FmSjVyemlWR2dWVjNuLVBPRlc5bDFfMlZqSWx5QkN1aVBQMEIwRVRoLWFOTlVjUTVkSDdiMHpZQ0cxZFlMOGVINFNmTWc3MWE1c2xXWG42cGRCWUZQUXJFaFdxajFBSDQyTEU2VWdX0gHwAUFVX3lxTFBXRS1TUU1GUjNQTi1tM2hrQkdIa0Z0REJZRkpPYXoxWjhOdjBHVmhHRDdWejNibENHbTRNR1RyZ1ZYMDNPSm95ZTdKbW11YXVaZmRaZ3ZYaG1zNldpdmxfeGczdmphSkVOaVZ1QzJrZVFCeDhibG92RGo2bGVoNUZhbHk4eG1PdERWLTdzdzdNeW5HWTVvMFZzWnU5cHFOblNHclZ5MDF3ZEI4aVg5RGhsWGxRbGJSR1h5QVJVeFZsZEx4TmMwUmtSbHlHWWtjbkhBRWFUeUdPbjk2R3dOZzJZVjlQRmtDdFhPY0ViM2w0aw?oc=5"
   },
   {
-   "titulo": "Lisa Cook afirma que son necesarios aumentos de tasas de interés",
+   "titulo": "Petróleo abre la semana a la baja mientras la atención se centra en flujos de Oriente Medio",
    "fuente": "El Economista",
    "fecha": "2026-11-23",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQblY0RklhVUU4SWhzZHlvTHA4b1UyUkZqMWpCczJPV2twVDYzbEhHUGNLb25GUUR6Tm5OdnNnSUFzOVhsckltN2NGQmRvRmo2Z01scjJfTWVQLWtOSFk0SFFzNUVOQ0RRUmpJNERxVV9UUEV5TjFuUVEwWDZQcHpsakFjUnFDWndGTkZsYU5oX2ptVmRCeGVkenBGWldUVlFfeGd4cTFRbk9iX1RMYXpUOWhWX0pOVV9ZZ1BrSkpUdUlyQdIBxwFBVV95cUxPTkZjXzdudU5XbEhXRElLaW1VdEEzamNMM1Nfd0V6b2M5Z29ZSy1aWW8xcGEyVHl2UHI3NkY1djIzamc5bmN4dExNVG0tMWkzMUI1SlhGbHBxQTFITWJzNi13RWhOMlprV3hvUlJudFE1dHpCSzB6NVhvN05yaUFlX0NEZ09GV3NCTEktX1JGX0QtbnNrNlR0X0JyTWVNdkZVTlRyQmNBb2hXODBzRzkzTEhUVGZ4emU3SThmX1Nma0JoWXpLS2g0?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNUFOVlJIVDB5MmZvZlpxeWhLMXV1UEg4cG42SnVZdElSNEpVamx1R1hUSS1FQWZBREljdHpGSFdUNGREeThCZFJjMC11NHZvMUhUSzh6b0x6eFc2bWwzaGU2Z3FKczVhYVpsWDd1VjBKZ0xjdVVVQnJKalVDUlZHVzh6MDNLRS1wVDc5VW9tT0d1MmxJLUpPc3RJckhNZXRoTy03ME1HTU5DN1p0RmwzenF2Z3ltSW5iSWdvZVlTMVVHd9IBxwFBVV95cUxQUG91LTRnWERqNjFxUmhFeVZUTzBvdW1lM2p4Wl8wdlpJRllsV3VHZWNKOHJmSWgwdVZ0UTU0OU9hRVJDa1pRWjFXaFg2ekdjY2dab2JIVXhMcU5nZ2FGcG4zV1FJSEFRLXR5LTZySjBNRGc1YVBiMUotbUg5WUlWYUUwaXBaT1M0cE5hU18tUldpNlUwV1c4NXZneWVWZHlIOVhmU3NQQWtJRVhLZzZZQVNQS3lfZUFxU3hHZTlTUnV3VW1rWGlj?oc=5"
   },
   {
-   "titulo": "Precios del petróleo cayeron fuerte durante la semana",
+   "titulo": "Premercado | Wall Street se recupera y centra atención en publicación de PCE esta semana: petróleo cae",
+   "fuente": "Valora Analitik",
+   "fecha": "2026-11-23",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOSm5ESHpZcWlKYjQ5Qm5ta0pFSHZaSlRVOGJPYjVJdTNPVmxBOWxmTGk5dnNXX1Y1TXBNYndCV3IxTEtlOU1qNkhDSXJPY05rWndfbGFpQk93Ny1GZXhKeDlxVURDWVFPXzgxNE5vbUdLUlFfRjFnam9fcXNuNG1ZNE05bFR5MVAwS0MzaFBZdTRPWEVFNC1jS2d3dW9namdxNFA1dm1fRkstd3RzXy1MTm9pM25yNDZ3SHVMQ1laQ3NfMV9uTXUxZXJpa9IB0AFBVV95cUxPVklOU0dxc09kMWp0Nklhb2NSZkZpbk01bnZiWDNCUVZ4Uk9tUHhhdkR2aXlRRzBETDk3QlR6SlFNVlVmdWF5LWpCdU56aUFIWHJYQ2puLXRrbVQ3XzRXdFlSU0k5MXNCMHFScXozaUJjeGJ4MXlXakZjR094WlVZM1FhWXJXb0dxblFLQ3IybXV6MnpFU1RLN3ptYW9RejFLNU44Y05pdWdIY0VsOTdpRHV0ZFNYcnM1U19IY2x1UFFTYkFGc2JwVjU5dmtNWExn?oc=5"
+  },
+  {
+   "titulo": "El petróleo se adentra en un nuevo ciclo marcado por grandes superávits: \"Sobrará crudo en el mercado hasta finales de la década\"",
    "fuente": "El Economista",
    "fecha": "2026-11-23",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUkd5S21qdVZLaXd3ZmU1N2hoMk5RQjVMeXlHczlqSFJQSjZhMWkwY2dEamdHR1E2MEVMZ3B1T2VsZnNmZ0FPY1BtdWJ3M0JVNDBucFl6ZUkwTlZOQVNoM1lDQmM2V3d1UFNZX1A3ZHRlWEhtX1BfM1ZrNGFqWWJrNE1POTlwSlJ3eWdfWHJ3SmJyajZ0WmtBbmhwQklJZmFBS3fSAacBQVVfeXFMTnBZcGIxUTB0YmpnT2l6T1VSR0ktdWRtLVd4NTlhSW5XTm5DR2V2MWpyM1V4LUM2b3I1bXBHenYwdEFDRlR3cDAzSk1QQ09SUmpmaHVGanZSdE9mU3RfLXZCYy1VNjRjWXc5ekd4Uk1BX2NjdjdoNG1yc1FCX1hHY3UyU3NwYWZCRmZhQjQ4bUlNSmg4ODVzU20xMEpPZVVtYzE1RXNhdVE?oc=5"
-  },
-  {
-   "titulo": "Pánico en Wall Street: Nvidia cayó 14 %, Anthropic 8,5 % y el Nasdaq borró sus ganancias del año",
-   "fuente": "La FM",
-   "fecha": "2026-11-21",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdDR0UjBvbTZPV2FCbEdSNlU1eUpXY0VNQW0zM2l4QllBSkVyRXpfVXJNMWE2RENxbjhmSjNtdWx3TTE5b2c5QnhWbUROR3EtV0JUd3ZROV9IbVFfUDAxZUF0T3g0blVwdDNXZ0w0LVg0NUs5ZGwzTmhSa0ZZSWx2UGpyeHZhTWtaYlJYZldrNjVhT0hScFpPRkJn0gGaAUFVX3lxTE90Zm1PUm1ZdUtYTEkzQ3RTWXdtSmxla21sN1Noc3Facl9HVTIxVU1nVW53YUZuVDdhMldvaVRUaWlUSkd6bWVIckJ1alRzNTFvQkFTcUJkZ19TVFBXd2I2b1d3My10cFBjbEtjUk0yeDRUUlNCZkQzekRnZWJBMEtxWk5JbndCd2d2cjhMRXY4WHhmQlFlTl9QbVE?oc=5"
-  },
-  {
-   "titulo": "Goldman publica su previsión para el precio del petróleo Brent en 2027",
-   "fuente": "Investing.com España",
-   "fecha": "2026-11-21",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNamktSlB1NUlITlB5eFRPcDY0cGlkaExBNmZrSGQ2WThGek1zd1lTT1YzbjNYcjYzaUFwVjZCYXpGVDNuR3RIb0J3QXBhQ0d6d0JRWmEwbTYtb2p3YTYwSWZSZEg2emVPbzZyVklQYXVvSU1WUkNUMXhrbzVQTGtMTFZVVnNWeThUYk1JLTV3RG5LUHBPLXo4Rk95bHpNUjVTbUhIMnd6b0VBdlZiVVhEbWluaWpBdWNIVDZycm1XNGowYXM?oc=5"
-  },
-  {
-   "titulo": "Precio de la mezcla mexicana de petróleo de este viernes 20 de noviembre",
-   "fuente": "Infobae",
-   "fecha": "2026-11-21",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZ19mMUE5Qzh4UXQ4Q2thVlFwcks4aXctcVl3eC0xTzdQalpvSm8wQzVNNTJBMDdOUGowX1F1eC1EUGF0Z3FRdkY5dkhONnZKbG03RnBqZVJFTjhoUHhXeXJBazVWMzd3NWtnWHJHZzBBbnJON21wTzFpOEZvc2oybkZ1WUkxdXVfU29hNEx5bWVWaDhZWkhReExTdXRBT3FyYlF5a0ZCYlp6RUhKdFdOTTFMeU1pZ9IB0AFBVV95cUxOdVI5aGMwcldmRzhWemFaYmhSMFBOTGxneEFXUUZlN0k0YnF0YVNoQTFFYnZDMUdXZEtqTl9HenFFck11MHJCbTVTV3pURGkyd09SYnQtMlF3Z21BcjRtbDRMbnRjRkttSWpuQ05wZTVNQ19odndmd0drcUpzQkdmYmVxTVByN09TMjRMZ0tnc0Vma0xRNzZqVVFJZW02c0lzOEUwWG1aOHdJYWcyRWZpWkw5a2djMElZLUViZlVMLWJFLWh2QUxYLVF6M1p6Rld2?oc=5"
-  },
-  {
-   "titulo": "La bolsa de Wall Street cae con fuerza en medio del desplome de las acciones de las tecnológicas y registra su peor semana desde la pandemia",
-   "fuente": "BBC",
-   "fecha": "2026-11-20",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBPOTlBSXdxakpsNC11eXM3bm5IczMwUzZRTE1MdEZ5bFNJanE5TG9VWFR1RlNia3QyTzJJQ0dTWUFJeXdTeFdyaEhKUllBU1d6eVE4bXN2THFqYmFC0gFiQVVfeXFMTW5fa2lXa0lNSDJETWJMMVZLTjVtd2VUSkpXT0RraDREUDExbnprQ29WVTNQLVJoWlFUQWFOaFJBSk1FUU9ubFNMdUhwX3dsdFpGRDdsUG5WU2pMcFFUMFhGeUE?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxQU25fMGhBVmZjZGlVcExjNllwb3Y2WWhrd1BTNFZyU2VldXJiaTlGRV9MUVQxeGF4V2tEdHF4YU9KRFJXWElfb1RBUHVDOE90WVdHMnViZmVUcnhJMTZHUmxWcTI0VGQzMnEwRFFUaDQ4YnNlU2pKTFFyd1NwYnQwN1NLMHpOSTRFeTNYUHVpdm9UNmlPbjlRQks0ZWxFbVJ2endIdGY2eU4xN0JVQUhJeFU1cVlyTFFNTTN5aEtQV2FMTFB4RzhYMHQxNGdMZExVQWpzOW9adnlYOW1tT211NjQzVVdfNEFld1ZGbm5PU2FvbE1BbzRCU2hSaFBVaDdJMDVxODMtUGU5RjhiZGlhQkhxYl9UMFFrejQ5MmFnTXd3R2l4cjVScks2bWwtZ9IBmAJBVV95cUxOMVJIVVV0MWFuYnhDMHhqS2N5S3BJQjVFWjkwekh4eTVselNWZ3VkSTNQQUl5ejYybUVJMVBHQVFxYjJ4MHQ4OWhDcjYxaDU2VERjWTFUakZteDVPR3dNRXJ4ekdNMFRlOUFLeXdJUFo2N1J5dkg1a1JLY1Zma2wtR1F3QnFmNlo5TXV2ajFva19ZelBlUjV4ZnRtMG1ZZXVKeHN5TDdyeUNuT0E4akVHbzJKcHZlSS1DaGVZMjdBWFZSMFJRdUxfWU1sVVd0Ui1xUmVXQnVobjFtWEp5SzJ3bGZ5cU5paF9odkFxck02eTdKVmNSMTJZMFJGcU9TV2l0Q0NuV0szejM4VDRHRlF5RmhRUkhzSGda?oc=5"
   }
  ],
  "tes": {
-  "fecha": "2026-11-13",
+  "fecha": "2026-11-20",
   "pesos": [
-   12.61,
-   12.65,
-   12.94
+   12.59,
+   12.8,
+   13.15
   ],
   "uvr": [
-   4.99,
-   6.93,
-   7.08
+   5.01,
+   6.87,
+   7.05
   ],
   "plazos": [
    1,
@@ -187,339 +187,339 @@
    10
   ],
   "mes": {
-   "fecha": "2026-10-14",
+   "fecha": "2026-10-21",
    "pesos": [
-    12.39,
-    13.06,
-    13.27
-   ],
-   "uvr": [
-    4.87,
-    6.63,
-    6.8
-   ]
-  },
-  "anio": {
-   "fecha": "2025-11-13",
-   "pesos": [
-    9.65,
-    11.88,
-    12.47
-   ],
-   "uvr": [
-    4.43,
-    5.77,
-    5.85
-   ]
-  },
-  "historia": [
-   [
-    "2025-11-13",
-    9.65,
-    11.88,
-    12.47
-   ],
-   [
-    "2025-11-21",
-    10.31,
-    12.21,
-    12.7
-   ],
-   [
-    "2025-11-28",
-    10.09,
-    12.33,
-    13.01
-   ],
-   [
-    "2025-12-05",
-    10.18,
-    12.03,
-    12.5
-   ],
-   [
-    "2025-12-15",
-    10.54,
-    12.29,
-    12.84
-   ],
-   [
-    "2025-12-22",
-    10.31,
-    12.07,
-    12.42
-   ],
-   [
-    "2025-12-30",
-    11.3,
-    12.84,
-    13.13
-   ],
-   [
-    "2026-01-08",
-    11.13,
-    12.81,
-    13.06
-   ],
-   [
-    "2026-01-16",
-    10.9,
-    12.24,
-    12.35
-   ],
-   [
-    "2026-01-23",
-    11.4,
-    12.45,
-    12.57
-   ],
-   [
-    "2026-01-30",
-    11.65,
-    12.68,
-    12.7
-   ],
-   [
-    "2026-02-06",
-    12.41,
-    12.97,
-    12.92
-   ],
-   [
-    "2026-02-13",
-    12.37,
-    12.89,
-    12.87
-   ],
-   [
-    "2026-02-20",
-    12.54,
-    13.29,
-    13.49
-   ],
-   [
-    "2026-02-27",
-    13.33,
-    13.89,
-    13.83
-   ],
-   [
-    "2026-03-06",
-    13.39,
-    13.99,
-    13.77
-   ],
-   [
-    "2026-03-13",
-    13.28,
-    13.78,
-    13.6
-   ],
-   [
-    "2026-03-20",
-    13.34,
-    13.8,
-    13.67
-   ],
-   [
-    "2026-03-30",
-    13.42,
-    13.52,
-    13.21
-   ],
-   [
-    "2026-04-08",
-    13.25,
-    13.52,
-    13.4
-   ],
-   [
-    "2026-04-15",
-    13.1,
-    13.24,
-    12.99
-   ],
-   [
-    "2026-04-22",
-    13.09,
-    13.29,
-    13.05
-   ],
-   [
-    "2026-04-29",
-    13.57,
-    13.77,
-    13.45
-   ],
-   [
-    "2026-05-07",
-    13.42,
-    14.02,
-    13.87
-   ],
-   [
-    "2026-05-14",
-    13.39,
-    14.22,
-    14.11
-   ],
-   [
-    "2026-05-22",
-    13.54,
-    14.28,
-    14.08
-   ],
-   [
-    "2026-05-29",
-    13.43,
-    13.78,
-    13.51
-   ],
-   [
-    "2026-06-05",
-    12.48,
-    12.77,
-    12.71
-   ],
-   [
-    "2026-06-16",
-    12.26,
-    12.18,
-    12.04
-   ],
-   [
-    "2026-06-23",
-    12.3,
-    12.19,
-    12.04
-   ],
-   [
-    "2026-07-01",
-    12.21,
-    12.03,
-    11.9
-   ],
-   [
-    "2026-07-08",
-    12.18,
-    12.09,
-    11.99
-   ],
-   [
-    "2026-07-16",
-    12.2,
-    11.96,
-    11.83
-   ],
-   [
-    "2026-07-24",
-    12.5,
-    12.42,
-    12.37
-   ],
-   [
-    "2026-07-31",
-    12.43,
-    12.29,
-    12.24
-   ],
-   [
-    "2026-08-10",
-    12.26,
-    12.17,
-    12.13
-   ],
-   [
-    "2026-08-18",
-    12.17,
-    12.17,
-    12.17
-   ],
-   [
-    "2026-08-25",
-    12.12,
-    12.2,
-    12.22
-   ],
-   [
-    "2026-09-01",
-    12.27,
-    12.73,
-    12.88
-   ],
-   [
-    "2026-09-08",
-    12.22,
-    12.42,
-    12.47
-   ],
-   [
-    "2026-09-15",
-    12.37,
-    12.71,
-    12.8
-   ],
-   [
-    "2026-09-22",
-    12.34,
-    12.72,
-    12.83
-   ],
-   [
-    "2026-09-29",
-    12.42,
-    12.9,
-    13.07
-   ],
-   [
-    "2026-10-06",
-    12.44,
-    13.09,
-    13.3
-   ],
-   [
-    "2026-10-14",
-    12.39,
-    13.06,
-    13.27
-   ],
-   [
-    "2026-10-21",
     12.04,
     12.98,
     13.28
    ],
+   "uvr": [
+    4.21,
+    6.8,
+    7.01
+   ]
+  },
+  "anio": {
+   "fecha": "2025-11-20",
+   "pesos": [
+    10.17,
+    12.08,
+    12.61
+   ],
+   "uvr": [
+    4.95,
+    6.1,
+    6.15
+   ]
+  },
+  "historia": [
    [
-    "2026-10-28",
-    12.36,
-    13,
-    13.24
+    "2025-11-20",
+    10.17,
+    12.08,
+    12.61
    ],
    [
-    "2026-11-05",
-    12.34,
-    12.85,
-    13.15
+    "2025-11-27",
+    10.17,
+    12.4,
+    13.06
    ],
    [
-    "2026-11-12",
-    12.51,
-    12.54,
+    "2025-12-04",
+    10.14,
+    12.12,
+    12.62
+   ],
+   [
+    "2025-12-12",
+    10.51,
+    12.42,
     12.9
    ],
    [
-    "2026-11-13",
-    12.61,
-    12.65,
+    "2025-12-19",
+    10.55,
+    12.83,
+    13.1
+   ],
+   [
+    "2025-12-29",
+    10.82,
+    12.5,
+    12.82
+   ],
+   [
+    "2026-01-07",
+    11,
+    12.74,
+    13.01
+   ],
+   [
+    "2026-01-15",
+    10.91,
+    12.3,
+    12.41
+   ],
+   [
+    "2026-01-22",
+    11.13,
+    12.41,
+    12.58
+   ],
+   [
+    "2026-01-29",
+    11.56,
+    12.64,
+    12.67
+   ],
+   [
+    "2026-02-05",
+    12.29,
+    12.93,
+    12.95
+   ],
+   [
+    "2026-02-12",
+    12.59,
+    12.99,
+    12.96
+   ],
+   [
+    "2026-02-19",
+    12.64,
+    13.22,
+    13.33
+   ],
+   [
+    "2026-02-26",
+    13.36,
+    14.06,
+    14.07
+   ],
+   [
+    "2026-03-05",
+    13.32,
+    13.81,
+    13.58
+   ],
+   [
+    "2026-03-12",
+    13.34,
+    13.91,
+    13.71
+   ],
+   [
+    "2026-03-19",
+    13.34,
+    13.73,
+    13.55
+   ],
+   [
+    "2026-03-27",
+    13.46,
+    13.56,
+    13.27
+   ],
+   [
+    "2026-04-07",
+    13.35,
+    13.6,
+    13.44
+   ],
+   [
+    "2026-04-14",
+    13.06,
+    13.3,
+    13.05
+   ],
+   [
+    "2026-04-21",
+    13.09,
+    13.21,
     12.94
+   ],
+   [
+    "2026-04-28",
+    13.49,
+    13.65,
+    13.37
+   ],
+   [
+    "2026-05-06",
+    13.48,
+    14.03,
+    13.86
+   ],
+   [
+    "2026-05-13",
+    13.49,
+    14.26,
+    14.17
+   ],
+   [
+    "2026-05-21",
+    13.57,
+    14.51,
+    14.33
+   ],
+   [
+    "2026-05-28",
+    13.36,
+    13.94,
+    13.74
+   ],
+   [
+    "2026-06-04",
+    12.48,
+    12.75,
+    12.68
+   ],
+   [
+    "2026-06-12",
+    12.36,
+    12.38,
+    12.24
+   ],
+   [
+    "2026-06-22",
+    12.22,
+    12.04,
+    11.86
+   ],
+   [
+    "2026-06-30",
+    12.18,
+    12.05,
+    11.94
+   ],
+   [
+    "2026-07-07",
+    12.15,
+    12,
+    11.89
+   ],
+   [
+    "2026-07-15",
+    12.12,
+    11.9,
+    11.78
+   ],
+   [
+    "2026-07-23",
+    12.62,
+    12.51,
+    12.45
+   ],
+   [
+    "2026-07-30",
+    12.45,
+    12.28,
+    12.22
+   ],
+   [
+    "2026-08-06",
+    12.26,
+    12.08,
+    12.02
+   ],
+   [
+    "2026-08-14",
+    12.17,
+    12.03,
+    11.98
+   ],
+   [
+    "2026-08-24",
+    12.11,
+    12.17,
+    12.18
+   ],
+   [
+    "2026-08-31",
+    12.27,
+    12.71,
+    12.84
+   ],
+   [
+    "2026-09-07",
+    12.16,
+    12.36,
+    12.41
+   ],
+   [
+    "2026-09-14",
+    12.3,
+    12.62,
+    12.71
+   ],
+   [
+    "2026-09-21",
+    12.38,
+    12.78,
+    12.89
+   ],
+   [
+    "2026-09-28",
+    12.45,
+    12.94,
+    13.1
+   ],
+   [
+    "2026-10-05",
+    12.49,
+    13.22,
+    13.47
+   ],
+   [
+    "2026-10-13",
+    12.42,
+    12.98,
+    13.15
+   ],
+   [
+    "2026-10-20",
+    12.15,
+    12.97,
+    13.24
+   ],
+   [
+    "2026-10-27",
+    12.08,
+    13,
+    13.31
+   ],
+   [
+    "2026-11-04",
+    12.34,
+    12.89,
+    13.22
+   ],
+   [
+    "2026-11-11",
+    12.48,
+    12.63,
+    13.06
+   ],
+   [
+    "2026-11-19",
+    12.67,
+    12.67,
+    13.05
+   ],
+   [
+    "2026-11-20",
+    12.59,
+    12.8,
+    13.15
    ]
   ],
   "fuente": "Banco de la República",
   "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/640001/deuda_publica_tasas_cero_cupon_tes",
   "bidask": {
-   "fecha": "2026-11-13",
-   "pesos": 6.33,
-   "uvr": 6.63,
+   "fecha": "2026-11-20",
+   "pesos": 6.24,
+   "uvr": 12.01,
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/640002/deuda_publica_bid-ask_spread"
   }
  }
