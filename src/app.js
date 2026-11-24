@@ -78,11 +78,12 @@
     ibr: () => ({ fechas: RAW.ibr.fechas.map(M.aDia), overnight: RAW.ibr.overnight, m1: RAW.ibr.m1, m3: RAW.ibr.m3, m6: RAW.ibr.m6, m12: RAW.ibr.m12 }),
     curvas: () => RAW.curvas.map(c => { const i0 = M.aDia(c.inicio); return { nombre: c.nombre, fechas: c.offsets.map(o => i0 + o), tasas: c.tasas }; }),
     pron: () => ({ fechas: RAW.pronostico.fechas.map(M.aDia), inflacion: RAW.pronostico.inflacion.slice() }),
-    cc: () => ({ tipo: "plazo", x: RAW.curvaCC.x.slice(), tasa: RAW.curvaCC.tasa.slice() })
+    cc: () => ({ tipo: "plazo", x: RAW.curvaCC.x.slice(), tasa: RAW.curvaCC.tasa.slice() }),
+    senda: () => ({ fechas: RAW.senda.fechas.map(M.aDia), anual: RAW.senda.anual.slice(), mensual: RAW.senda.mensual.slice() })
   };
   const ETIQUETA_ORIGINAL = {
     ipc: "Banco de la República", uvr: "Banco de la República · " + (RAW.generado || ""),
-    ibr: "Banco de la República · " + (RAW.generado || ""), curvas: "Curvas de ejemplo", pron: "Pronóstico de ejemplo", cc: "Curva de ejemplo"
+    ibr: "Banco de la República · " + (RAW.generado || ""), curvas: "Curvas de ejemplo", pron: "Pronóstico de ejemplo", cc: "Curva de ejemplo", senda: RAW.senda.nombre
   };
   function restaurar(k) { S[k] = ORIGINAL[k](); S.origen[k] = ETIQUETA_ORIGINAL[k]; }
   Object.keys(ORIGINAL).forEach(restaurar);
@@ -104,21 +105,23 @@
       nombre: "UVR", corto: "TES en unidades UVR",
       modos: [
         { id: "valorar", nombre: "Valorar", form: "uvr_valorar", desc: "Precio del TES UVR, valor de giro en pesos y en UVR con la UVR del día, y su riesgo en ambas unidades." },
-        { id: "rent", nombre: "Rentabilidad", form: "uvr_rent", desc: "TIR de la operación en pesos y en UVR. La estimada proyecta la UVR con el IPC vigente a la compra; la real usa la UVR publicada." }
+        { id: "rent", nombre: "Rentabilidad", form: "uvr_rent", desc: "TIR de la operación en pesos y en UVR. La estimada proyecta la UVR con el IPC vigente a la compra o con la senda de IPC estimado; la real usa la UVR publicada." }
       ]
     },
     ipc: {
       nombre: "IPC", corto: "Bonos IPC + spread",
       modos: [
         { id: "valorar", nombre: "Valorar", form: "ipc_valorar", desc: "Precio de un bono indexado al IPC: cupón (1 + IPC)(1 + spread) − 1, descontado con tasa total o con spread sobre el IPC." },
-        { id: "rent", nombre: "Rentabilidad", form: "ipc_rent", desc: "TIR de la operación. La estimada usa solo el IPC conocido a la compra (y, si quieres, un pronóstico); la real usa el IPC publicado." }
+        { id: "rent", nombre: "Rentabilidad", form: "ipc_rent", desc: "TIR de la operación. La estimada usa el IPC conocido a la compra y, para lo que falta, un pronóstico o la senda de IPC estimado; la real usa el IPC publicado." },
+        { id: "spread", nombre: "Spread por TIR", form: "ipc_spread", desc: "Spread sobre el IPC con el que un bono que se emite hoy a la par rinde la TIR que quieres, con el IPC vigente o con la senda de IPC estimado." }
       ]
     },
     ibr: {
       nombre: "IBR", corto: "Bonos IBR + spread",
       modos: [
         { id: "rent", nombre: "Rentabilidad", form: "ibr", desc: "Flujos, precio y TIR de un bono IBR + spread. La proyectada usa la curva FR vigente a la compra; la real usa el IBR publicado y estima con la curva lo que aún no se conoce." },
-        { id: "sendas", nombre: "Sendas de TIR", form: "ibr", desc: "TIR que obtendrías vendiendo en cada fecha de cupón con la tasa de venta y con ±25 y ±50 pb, frente a mantener el bono al vencimiento." }
+        { id: "sendas", nombre: "Sendas de TIR", form: "ibr", desc: "TIR que obtendrías vendiendo en cada fecha de cupón con la tasa de venta y con ±25 y ±50 pb, frente a mantener el bono al vencimiento." },
+        { id: "spread", nombre: "Spread por TIR", form: "ibr_spread", desc: "Spread sobre el IBR con el que un bono que se emite hoy a la par rinde la TIR que quieres, si el IBR sigue la curva FR. Sirve para compararlo con una tasa fija." }
       ]
     }
   };
@@ -149,10 +152,11 @@
         { id: "tasaCompra", l: "TIR de compra", tipo: "pct", v: "8", suf: "% EA", si: si("modoCompra", "tasa") },
         { id: "precioCompra", l: "Precio sucio de compra", tipo: "num", v: "100", suf: "%", si: si("modoCompra", "precio") }] },
       { t: "Venta", c: [
-        { id: "fechaVenta", l: "Fecha de venta", tipo: "fecha", v: "2026-06-15", ayuda: "Si es el vencimiento, recibes el 100 %." },
-        { id: "modoVenta", l: "Venta", tipo: "sel", op: MODO_PT, v: "tasa" },
-        { id: "tasaVenta", l: "TIR de venta", tipo: "pct", v: "9", suf: "% EA", si: si("modoVenta", "tasa") },
-        { id: "precioVenta", l: "Precio sucio de venta", tipo: "num", v: "100", suf: "%", si: si("modoVenta", "precio") },
+        { id: "vender", l: "Vender antes del vencimiento", tipo: "check", v: true, ancho: true },
+        { id: "fechaVenta", l: "Fecha de venta", tipo: "fecha", v: "2026-06-15", si: v => v.vender },
+        { id: "modoVenta", l: "Venta", tipo: "sel", op: MODO_PT, v: "tasa", si: v => v.vender },
+        { id: "tasaVenta", l: "TIR de venta", tipo: "pct", v: "9", suf: "% EA", si: v => v.vender && v.modoVenta === "tasa" },
+        { id: "precioVenta", l: "Precio sucio de venta", tipo: "num", v: "100", suf: "%", si: v => v.vender && v.modoVenta === "precio" },
         { id: "monto", l: "Valor nominal", tipo: "dinero", v: "10.000.000.000", ancho: true }] }
     ],
     uvr_valorar: [
@@ -169,7 +173,8 @@
     ],
     uvr_rent: [
       { t: "Escenario", c: [
-        { id: "tipo", l: "Rentabilidad", tipo: "seg", op: [["estimada", "Estimada"], ["real", "Real"]], v: "real", ancho: true }] },
+        { id: "tipo", l: "Rentabilidad", tipo: "seg", op: [["estimada", "Estimada"], ["real", "Real"]], v: "real", ancho: true },
+        { id: "proyUVR", l: "Proyección de la UVR", tipo: "sel", op: [["vigente", "Con el IPC vigente fijo"], ["senda", "Con la senda de IPC (variación mensual)"]], v: "vigente", ancho: true, si: si("tipo", "estimada") }] },
       { t: "Bono", c: [
         { id: "emision", l: "Emisión", tipo: "fecha", v: "2023-03-10" },
         { id: "vencimiento", l: "Vencimiento", tipo: "fecha", v: "2028-03-10" },
@@ -181,10 +186,11 @@
         { id: "tasaCompra", l: "Tasa de compra (UVR)", tipo: "pct", v: "5,1", suf: "% EA", si: si("modoCompra", "tasa") },
         { id: "precioCompra", l: "Precio sucio de compra", tipo: "num", v: "100", suf: "%", si: si("modoCompra", "precio") }] },
       { t: "Venta", c: [
-        { id: "fechaVenta", l: "Fecha de venta", tipo: "fecha", v: "2026-09-30" },
-        { id: "modoVenta", l: "Venta", tipo: "sel", op: MODO_PT, v: "tasa" },
-        { id: "tasaVenta", l: "Tasa de venta (UVR)", tipo: "pct", v: "4,6", suf: "% EA", si: si("modoVenta", "tasa") },
-        { id: "precioVenta", l: "Precio sucio de venta", tipo: "num", v: "100", suf: "%", si: si("modoVenta", "precio") }] },
+        { id: "vender", l: "Vender antes del vencimiento", tipo: "check", v: true, ancho: true },
+        { id: "fechaVenta", l: "Fecha de venta", tipo: "fecha", v: "2026-09-30", si: v => v.vender },
+        { id: "modoVenta", l: "Venta", tipo: "sel", op: MODO_PT, v: "tasa", si: v => v.vender },
+        { id: "tasaVenta", l: "Tasa de venta (UVR)", tipo: "pct", v: "4,6", suf: "% EA", si: v => v.vender && v.modoVenta === "tasa" },
+        { id: "precioVenta", l: "Precio sucio de venta", tipo: "num", v: "100", suf: "%", si: v => v.vender && v.modoVenta === "precio" }] },
       { t: "Monto", c: [
         { id: "nominalEn", l: "Nominal expresado en", tipo: "seg", op: [["pesos", "Pesos"], ["uvr", "UVR"]], v: "pesos", ancho: true },
         { id: "nominal", l: "Valor nominal", tipo: "dinero", v: "10.000.000.000", ancho: true, unidad: v => v.nominalEn === "uvr" ? "UVR" : "$" },
@@ -200,13 +206,35 @@
       { t: "Negociación", c: [
         { id: "fecha", l: "Fecha de negociación", tipo: "fecha", v: "2026-11-04" },
         { id: "monto", l: "Valor nominal", tipo: "dinero", v: "10.000.000.000" },
+        { id: "ipcFuturo", l: "IPC de los cupones futuros", tipo: "seg", op: [["vigente", "IPC vigente"], ["senda", "Senda de IPC estimado"]], v: "vigente", ancho: true },
         { id: "tipoTasa", l: "Tasa de negociación", tipo: "seg", op: [["spread_ipc", "Spread sobre IPC"], ["total", "Tasa total EA"]], v: "spread_ipc", ancho: true },
         { id: "tasa", l: "Tasa", tipo: "pct", v: "7,5", suf: "% EA", ancho: true }] }
+    ],
+    ipc_spread: [
+      { t: "Bono que se emite", c: [
+        { id: "emision", l: "Emisión", tipo: "fecha", v: "2026-11-18" },
+        { id: "vencimiento", l: "Vencimiento", tipo: "fecha", v: "2028-05-18" },
+        { id: "periodo", l: "Pago del cupón", tipo: "sel", op: PER, v: "4" },
+        { id: "modoIPC", l: "IPC del cupón", tipo: "sel", op: [["inicio", "Inicio del periodo"], ["final", "Final del periodo"]], v: "inicio" }] },
+      { t: "Objetivo", c: [
+        { id: "tir", l: "TIR que quieres", tipo: "pct", v: "13", suf: "% EA" },
+        { id: "monto", l: "Valor nominal", tipo: "dinero", v: "10.000.000.000" },
+        { id: "ipcFuturo", l: "IPC de los cupones", tipo: "seg", op: [["senda", "Senda de IPC estimado"], ["vigente", "IPC vigente fijo"]], v: "senda", ancho: true }] }
+    ],
+    ibr_spread: [
+      { t: "Bono que se emite", c: [
+        { id: "emision", l: "Emisión", tipo: "fecha", v: "2026-11-18" },
+        { id: "vencimiento", l: "Vencimiento", tipo: "fecha", v: "2028-05-18" },
+        { id: "periodo", l: "Pago del cupón", tipo: "sel", op: PER, v: "12" },
+        { id: "tenor", l: "Plazo del IBR", tipo: "sel", op: [["auto", "Según el pago"], ["overnight", "Overnight"], ["1m", "1 mes"], ["3m", "3 meses"], ["6m", "6 meses"], ["12m", "12 meses"]], v: "auto" }] },
+      { t: "Objetivo", c: [
+        { id: "tir", l: "TIR que quieres", tipo: "pct", v: "13", suf: "% EA", ayuda: "La tasa de un bono de tasa fija comparable" },
+        { id: "monto", l: "Valor nominal", tipo: "dinero", v: "10.000.000.000" }] }
     ],
     ipc_rent: [
       { t: "Escenario", c: [
         { id: "tipo", l: "Rentabilidad", tipo: "seg", op: [["estimada", "Estimada"], ["real", "Real"]], v: "real", ancho: true },
-        { id: "usarPron", l: "Completar con el pronóstico de IPC", tipo: "check", v: true, ancho: true, si: si("tipo", "estimada"), ayuda: "Se cambia en Datos." }] },
+        { id: "ipcFuturo", l: "IPC después de la compra", tipo: "sel", op: [["pron", "Pronóstico de IPC"], ["senda", "Senda de IPC estimado"], ["vigente", "IPC vigente fijo"]], v: "pron", ancho: true, si: si("tipo", "estimada"), ayuda: "El pronóstico y la senda se cambian en Datos." }] },
       { t: "Bono", c: [
         { id: "emision", l: "Emisión", tipo: "fecha", v: "2024-01-15" },
         { id: "vencimiento", l: "Vencimiento", tipo: "fecha", v: "2025-01-15" },
@@ -220,11 +248,12 @@
         { id: "tasaCompra", l: "Tasa de compra", tipo: "pct", v: "14,58008", suf: "% EA", si: si("modoCompra", "tasa") },
         { id: "precioCompra", l: "Precio sucio de compra", tipo: "num", v: "100", suf: "%", si: si("modoCompra", "precio") }] },
       { t: "Venta", c: [
-        { id: "fechaVenta", l: "Fecha de venta", tipo: "fecha", v: "2025-01-14" },
-        { id: "modoVenta", l: "Venta", tipo: "sel", op: MODO_PT, v: "tasa" },
-        { id: "tipoTasaVenta", l: "Tipo de tasa", tipo: "sel", op: [["total", "Total EA"], ["spread_ipc", "Spread sobre IPC"]], v: "total", si: si("modoVenta", "tasa") },
-        { id: "tasaVenta", l: "Tasa de venta", tipo: "pct", v: "10,3022", suf: "% EA", si: si("modoVenta", "tasa") },
-        { id: "precioVenta", l: "Precio sucio de venta", tipo: "num", v: "100", suf: "%", si: si("modoVenta", "precio") }] },
+        { id: "vender", l: "Vender antes del vencimiento", tipo: "check", v: true, ancho: true },
+        { id: "fechaVenta", l: "Fecha de venta", tipo: "fecha", v: "2025-01-14", si: v => v.vender },
+        { id: "modoVenta", l: "Venta", tipo: "sel", op: MODO_PT, v: "tasa", si: v => v.vender },
+        { id: "tipoTasaVenta", l: "Tipo de tasa", tipo: "sel", op: [["total", "Total EA"], ["spread_ipc", "Spread sobre IPC"]], v: "total", si: v => v.vender && v.modoVenta === "tasa" },
+        { id: "tasaVenta", l: "Tasa de venta", tipo: "pct", v: "10,3022", suf: "% EA", si: v => v.vender && v.modoVenta === "tasa" },
+        { id: "precioVenta", l: "Precio sucio de venta", tipo: "num", v: "100", suf: "%", si: v => v.vender && v.modoVenta === "precio" }] },
       { t: "Cálculo", c: [
         { id: "monto", l: "Valor nominal", tipo: "dinero", v: "10.000.000.000", ancho: true },
         { id: "base", l: "Base de los cupones", tipo: "sel", op: [["365", "Días reales / 365"], ["30_360", "30/360"]], v: "365", ancho: true }] }
@@ -298,7 +327,7 @@
   }
   function pintarForm() {
     const md = modoActual(), k = md.form, v = ST.v[k];
-    $("#formulario").innerHTML = FORMS[k].map(g => {
+    $("#formulario").innerHTML = htmlCopiar(k) + FORMS[k].map(g => {
       const campos = g.c.filter(c => !c.si || c.si(v));
       if (!campos.length) return "";
       return '<div class="grupo"><p class="grupo-t">' + esc(g.t) + "</p>" + campos.map(c => htmlCampo(k, c, v)).join("") + "</div>";
@@ -615,8 +644,8 @@
     const k = "tf_operacion", monto = req(v, "monto", k);
     const bono = { emision: req(v, "emision", k), vencimiento: req(v, "vencimiento", k), tasaCupon: req(v, "tasaCupon", k), periodo: +v.periodo };
     const r = M.operacionTasaFija(Object.assign({ fechaCompra: req(v, "fechaCompra", k), modoCompra: v.modoCompra, tasaCompra: v.modoCompra === "tasa" ? req(v, "tasaCompra", k) : NaN,
-      precioCompra: v.modoCompra === "precio" ? req(v, "precioCompra", k) : NaN, fechaVenta: req(v, "fechaVenta", k), modoVenta: v.modoVenta,
-      tasaVenta: v.modoVenta === "tasa" ? req(v, "tasaVenta", k) : NaN, precioVenta: v.modoVenta === "precio" ? req(v, "precioVenta", k) : NaN, montoPesos: monto }, bono));
+      precioCompra: v.modoCompra === "precio" ? req(v, "precioCompra", k) : NaN, fechaVenta: v.vender ? req(v, "fechaVenta", k) : req(v, "vencimiento", k), modoVenta: v.vender ? v.modoVenta : "precio",
+      tasaVenta: v.vender && v.modoVenta === "tasa" ? req(v, "tasaVenta", k) : NaN, precioVenta: v.vender && v.modoVenta === "precio" ? req(v, "precioVenta", k) : 100, montoPesos: monto }, bono));
     const f = monto / 100, n = r.flujos.length;
     r.alVencimiento = !!r.venta.vencimiento;
     const filas = r.flujos.map((x, i) => ({ concepto: i === 0 ? "Compra" : i === n - 1 ? (r.alVencimiento ? "Vencimiento" : "Venta") : "Cupón " + i, fecha: x.fecha, dias: x.dias, valor: x.monto * f }));
@@ -696,15 +725,16 @@
     const k = "uvr_rent";
     const bono = { emision: req(v, "emision", k), vencimiento: req(v, "vencimiento", k), tasaCupon: req(v, "tasaCupon", k), periodo: +v.periodo };
     const r = M.rentabilidadUVR(Object.assign({ tipo: v.tipo, fechaCompra: req(v, "fechaCompra", k), modoCompra: v.modoCompra, tasaCompra: v.modoCompra === "tasa" ? req(v, "tasaCompra", k) : NaN,
-      precioCompra: v.modoCompra === "precio" ? req(v, "precioCompra", k) : NaN, fechaVenta: req(v, "fechaVenta", k), modoVenta: v.modoVenta,
-      tasaVenta: v.modoVenta === "tasa" ? req(v, "tasaVenta", k) : NaN, precioVenta: v.modoVenta === "precio" ? req(v, "precioVenta", k) : NaN,
-      serieUVR: S.uvr, serieIPC: S.ipc, nominal: req(v, "nominal", k), nominalEn: v.nominalEn, diasTir: v.diasTir }, bono));
+      precioCompra: v.modoCompra === "precio" ? req(v, "precioCompra", k) : NaN, fechaVenta: v.vender ? req(v, "fechaVenta", k) : req(v, "vencimiento", k), modoVenta: v.vender ? v.modoVenta : "precio",
+      tasaVenta: v.vender && v.modoVenta === "tasa" ? req(v, "tasaVenta", k) : NaN, precioVenta: v.vender && v.modoVenta === "precio" ? req(v, "precioVenta", k) : 100,
+      serieUVR: S.uvr, serieIPC: S.ipc, nominal: req(v, "nominal", k), nominalEn: v.nominalEn, diasTir: v.diasTir, senda: v.tipo === "estimada" && v.proyUVR === "senda" ? S.senda : null }, bono));
     const filas = r.tabla.map(x => ({ concepto: x.concepto, fecha: x.fecha, uvr: x.uvr, valorUVR: x.valorUVR, valor: x.valorPesos }));
     const id = "op-uvr";
     const kp = kpisOperacion(r.tirPesos, r, "TIR en pesos", v.tipo === "real" ? "Con la UVR publicada" : "Con la UVR proyectada", filas);
     kp.splice(1, 0, kpi("TIR en UVR", fPct(r.tirUVR, 4), "Sin el efecto de la inflación"));
     const avisos = [];
-    if (v.tipo === "estimada") avisos.push({ tipo: "info", html: "La UVR después de la compra se proyecta con el IPC vigente a la compra: <b>" + fPct(r.inflacionSupuesta, 2) + "</b> anual." });
+    if (v.tipo === "estimada") avisos.push({ tipo: "info", html: r.conSenda ? "La UVR después de la compra se proyecta con la variación mensual de la senda de IPC (" + esc(S.origen.senda) + "): entre el 16 de un mes y el 15 del siguiente crece con el IPC mensual que la senda trae para el día 16." :
+      "La UVR después de la compra se proyecta con el IPC vigente a la compra: <b>" + fPct(r.inflacionSupuesta, 2) + "</b> anual." });
     const ultUVR = S.uvr.fechas[S.uvr.fechas.length - 1];
     if (v.tipo === "real" && M.aDia(v.fechaVenta) > ultUVR) avisos.push({ tipo: "warn", html: "La serie de UVR llega al " + fF(ultUVR) + "; actualízala en Datos." });
     let posicion = null;
@@ -728,17 +758,18 @@
   CALC.ipc_valorar = v => {
     const k = "ipc_valorar", per = +v.periodo, monto = req(v, "monto", k), tasaNeg = req(v, "tasa", k), spread = req(v, "spread", k);
     const bono = { emision: req(v, "emision", k), vencimiento: req(v, "vencimiento", k), periodo: per, spread, modoIPC: v.modoIPC };
-    const r = M.precioIPC(Object.assign({ tasaMercado: tasaNeg, tipoTasa: v.tipoTasa, fechaNegociacion: req(v, "fecha", k), serie: S.ipc, montoPesos: monto }, bono));
+    const senda = v.ipcFuturo === "senda" ? S.senda : null;
+    const r = M.precioIPC(Object.assign({ tasaMercado: tasaNeg, tipoTasa: v.tipoTasa, fechaNegociacion: req(v, "fecha", k), serie: S.ipc, montoPesos: monto, senda }, bono));
     const rg = M.riesgo({ flujos: r.flujos, t: r.t, tasa: r.tasaDescuento, periodo: per, precioActual: r.precioSucioTruncado, factor: monto / 100 });
     const fc = M.aDia(v.fecha), ve = M.aDia(v.vencimiento);
-    const compra = Object.assign({ tipo: "estimada", fechaCompra: fc, modoCompra: "precio", precioCompra: r.precioSucioTruncado, serie: S.ipc, montoPesos: monto, diasTir: "reales", base: "365", pronostico: null }, bono);
+    const compra = Object.assign({ tipo: "estimada", fechaCompra: fc, modoCompra: "precio", precioCompra: r.precioSucioTruncado, serie: S.ipc, montoPesos: monto, diasTir: "reales", base: "365", pronostico: null, senda }, bono);
     const tirVI = intento(() => M.rentabilidadIPC(Object.assign({ fechaVenta: ve, modoVenta: "precio", precioVenta: 100 }, compra)).tir);
-    const filas = r.filas.map((x, i) => ({ fecha: x.fecha, dias: r.dias[i], ipc: x.ipc, fechaIpc: x.fechaIpc, tasa: x.tasa, flujo: r.flujos[i], vp: r.vp[i] }));
+    const filas = r.filas.map((x, i) => ({ fecha: x.fecha, dias: r.dias[i], ipc: x.ipc, fechaIpc: x.fechaIpc, proy: x.proyectado, tasa: x.tasa, flujo: r.flujos[i], vp: r.vp[i] }));
     const prox = { fecha: r.filas[0].fecha, valor: r.filas[0].cupon / 100 * monto, texto: fPesos(r.filas[0].cupon / 100 * monto, 0) + " · con IPC de " + fPct(r.filas[0].ipc, 2) };
     const id = "flujos-ipc";
     const tf = tabla(id, "Flujos por cada 100 de nominal", [
       { n: "Fecha", k: "fecha", f: fF, t: true, esFecha: true }, { n: "Días", k: "dias", f: x => fN(x, 0) },
-      { n: "IPC usado", k: "ipc", f: x => fPct(x, 2) }, { n: "Dato del", k: "fechaIpc", f: fF, esFecha: true },
+      { n: "IPC usado", k: "ipc", h: f => esc(fPct(f.ipc, 2)) + (f.proy ? ' <span class="chip est">Estimado</span>' : ""), csv: f => f.ipc }, { n: "Dato del", k: "fechaIpc", f: fF, esFecha: true },
       { n: "Tasa cupón", k: "tasa", f: x => fPct(x, 4) }, { n: "Flujo", k: "flujo", f: x => fN(x, 6) }, { n: "Valor presente", k: "vp", f: x => fN(x, 6) }, colEstado], filas);
     const porSpread = v.tipoTasa === "spread_ipc";
     const serieCompra = { fechas: S.ipc.fechas.filter(d => d <= fc), inflacion: S.ipc.inflacion.filter((x, i) => S.ipc.fechas[i] <= fc) };
@@ -748,9 +779,11 @@
         kpi("Precio limpio", fN(r.precioLimpio, 3), r.clasificacion),
         kpi("Cupón corrido", fN(r.interesCorrido, 6), "Por cada 100 de nominal"),
         kpi("Valor de giro", fPesos(r.valorGiro), compacto(r.valorGiro) + " de pesos"),
-        kpi("Tasa de descuento", fPct(r.tasaDescuento, 4), "IPC vigente " + fPct(r.ipcNegociacion.valor, 2) + " (" + fFcorta(r.ipcNegociacion.fecha) + ")")
-      ].concat(tirVI != null ? [kpi("TIR al vencimiento", fPct(tirVI, 4), "Estimada: el IPC vigente no cambia")] : [], [kpiProx(prox)]),
-      avisos: [{ tipo: "info", html: "Los cupones futuros usan el IPC vigente a la negociación (" + fPct(r.ipcNegociacion.valor, 2) + "). Último IPC en la base: " + fF(r.ultimoIPC) + "." }],
+        kpi("Tasa de descuento", fPct(r.tasaDescuento, 4), senda && v.tipoTasa === "spread_ipc" ? "IPC promedio de los flujos " + fPct(r.ipcPromedio, 3) + " + spread" : "IPC vigente " + fPct(r.ipcNegociacion.valor, 2) + " (" + fFcorta(r.ipcNegociacion.fecha) + ")")
+      ].concat(tirVI != null ? [kpi("TIR al vencimiento", fPct(tirVI, 4), senda ? "Estimada con la senda de IPC" : "Estimada: el IPC vigente no cambia")] : [], [kpiProx(prox)]),
+      avisos: [{ tipo: "info", html: senda ? "Los cupones que aún no se conocen usan el IPC de la senda (" + esc(S.origen.senda) + ") para la fecha de cada periodo. " +
+        (v.tipoTasa === "spread_ipc" ? "La tasa de descuento es (1 + IPC promedio de los flujos que faltan, " + fPct(r.ipcPromedio, 3) + ") × (1 + spread) − 1." : "") :
+        "Los cupones futuros usan el IPC vigente a la negociación (" + fPct(r.ipcNegociacion.valor, 2) + "). Último IPC en la base: " + fF(r.ultimoIPC) + "." }],
       graf: graficoPrecioTasa({ flujos: r.flujos, t: r.t, tasa: r.tasaDescuento, precioActual: r.precioSucioTruncado, dmod: rg.modificada, conv: rg.convexidad }),
       tabs: [{ id: "flujos", n: "Flujos", html: conTabla(id, tf) }, { id: "riesgo", n: "Riesgo", html: bloqueRiesgo(rg, { etiquetaTasa: "Tasa EA" }) }],
       marcaTES: { x: r.t[r.t.length - 1], y: r.tasaDescuento, texto: "Este bono IPC: " + fPct(r.tasaDescuento, 2) },
@@ -766,7 +799,7 @@
             giro: o.giroCompra, pyg: o.pygPesos, tir: o.tir, extra: porSpread ? [["Spread sobre el IPC ese día", fPct(tasaNeg + s / 1e4, 4)], ["IPC supuesto", fPct(o.ipcVenta.valor, 2)]] : [] };
         },
         riesgoEn: (d, s) => {
-          const pv = M.precioIPC(Object.assign({ tasaMercado: tasaNeg + s / 1e4, tipoTasa: v.tipoTasa, fechaNegociacion: d, serie: serieCompra, montoPesos: monto }, bono));
+          const pv = M.precioIPC(Object.assign({ tasaMercado: tasaNeg + s / 1e4, tipoTasa: v.tipoTasa, fechaNegociacion: d, serie: serieCompra, montoPesos: monto, senda }, bono));
           const g = M.riesgo({ flujos: pv.flujos, t: pv.t, tasa: pv.tasaDescuento, periodo: per, precioActual: pv.precioSucioTruncado, factor: monto / 100 });
           return { dmod: g.modificada, dv01: fPesos(g.dv01Pesos, 0) };
         }
@@ -795,15 +828,15 @@
     const r = M.rentabilidadIPC({ tipo: v.tipo, emision: req(v, "emision", k), vencimiento: req(v, "vencimiento", k), periodo: +v.periodo, spread: req(v, "spread", k), modoIPC: v.modoIPC,
       fechaCompra: req(v, "fechaCompra", k), modoCompra: v.modoCompra, tasaCompra: v.modoCompra === "tasa" ? req(v, "tasaCompra", k) : NaN, tipoTasaCompra: v.tipoTasaCompra,
       precioCompra: v.modoCompra === "precio" ? req(v, "precioCompra", k) : NaN,
-      fechaVenta: req(v, "fechaVenta", k), modoVenta: v.modoVenta, tasaVenta: v.modoVenta === "tasa" ? req(v, "tasaVenta", k) : NaN, tipoTasaVenta: v.tipoTasaVenta,
-      precioVenta: v.modoVenta === "precio" ? req(v, "precioVenta", k) : NaN,
+      fechaVenta: v.vender ? req(v, "fechaVenta", k) : req(v, "vencimiento", k), modoVenta: v.vender ? v.modoVenta : "precio", tasaVenta: v.vender && v.modoVenta === "tasa" ? req(v, "tasaVenta", k) : NaN, tipoTasaVenta: v.tipoTasaVenta,
+      precioVenta: v.vender && v.modoVenta === "precio" ? req(v, "precioVenta", k) : 100,
       serie: S.ipc, montoPesos: monto, diasTir: "reales", base: v.base,
-      pronostico: v.tipo === "estimada" && v.usarPron ? S.pron : null });
+      pronostico: v.tipo === "estimada" && v.ipcFuturo === "pron" ? S.pron : null, senda: v.tipo === "estimada" && v.ipcFuturo === "senda" ? S.senda : null });
     const filas = r.tabla.map((x, i) => ({ concepto: x.concepto, fecha: x.fecha, fechaRef: x.fechaRef, ipc: x.ipc, tasa: i > 0 && i < r.tabla.length - 1 ? r.cupones[i - 1].tasa : NaN, valor: x.valor }));
     const id = "op-ipc";
     const avisos = [];
     if (r.mensajeTir) avisos.push({ tipo: "err", html: esc(r.mensajeTir) });
-    if (v.tipo === "estimada") avisos.push({ tipo: "info", html: r.conPronostico ? "IPC conocido hasta la compra y, después del último dato, el pronóstico cargado (" + esc(S.origen.pron) + ")." : "Solo se usa el IPC conocido a la fecha de compra: los cupones siguientes repiten el IPC vigente." });
+    if (v.tipo === "estimada") avisos.push({ tipo: "info", html: r.conSenda ? "IPC conocido hasta la compra y, para los cupones siguientes, la senda de IPC estimado (" + esc(S.origen.senda) + ")." : r.conPronostico ? "IPC conocido hasta la compra y, después del último dato, el pronóstico cargado (" + esc(S.origen.pron) + ")." : "Solo se usa el IPC conocido a la fecha de compra: los cupones siguientes repiten el IPC vigente." });
     const rc = riesgoCompraIPC(v, r), kp = kpisOperacion(r.tir, r, "TIR de la operación", (v.tipo === "real" ? "Real" : "Estimada") + " · efectiva anual", filas);
     let posicion = null;
     if (r.cupones.length) kp.push(kpiProx({ fecha: r.cupones[0].fecha, texto: fPesos(r.cupones[0].monto / 100 * monto, 0) + " · con IPC de " + fPct(r.cupones[0].ipc, 2) }));
@@ -1106,6 +1139,118 @@
   }
 
   // =============================================================
+  // SPREAD POR TIR OBJETIVO (bonos IBR e IPC que se emiten a la par)
+  // =============================================================
+  CALC.ibr_spread = v => {
+    const k = "ibr_spread", per = +v.periodo, tir = req(v, "tir", k), monto = req(v, "monto", k);
+    const r = M.spreadObjetivoIBR({ emision: req(v, "emision", k), vencimiento: req(v, "vencimiento", k), periodo: per, tenor: v.tenor, tir, serieIBR: S.ibr, curvas: S.curvas, montoPesos: monto });
+    if (!isFinite(r.spread)) { const e = new Error("No hay un spread entre −20 % y 50 % que dé esa TIR con la curva cargada."); e.esValidacion = true; throw e; }
+    const val = r.valoracion, ibrs = val.tabla.map(x => x.ibr).filter(isFinite), prom = ibrs.reduce((a, b) => a + b, 0) / ibrs.length;
+    const fijaEq = Math.pow(1 + tir, 1 / per) - 1;
+    const filas = val.tabla.map((x, i) => ({ concepto: i === val.tabla.length - 1 ? "Cupón y capital" : "Cupón " + (i + 1), fecha: x.fecha, ibr: x.ibr, fuente: x.fuente, cupon: x.flujo - (i === val.tabla.length - 1 ? 100 : 0), flujo: x.flujo, vp: x.vp, valor: x.flujo / 100 * monto }));
+    const id = "spread-ibr";
+    const t = tabla(id, "Flujos proyectados por cada 100 (y en pesos)", [
+      { n: "Concepto", k: "concepto", t: true }, { n: "Fecha", k: "fecha", f: fF, t: true, esFecha: true }, { n: "IBR proyectado", k: "ibr", f: x => fPct(x, 4) },
+      { n: "Fuente", k: "fuente", h: f => chipFuente(f.fuente), t: true }, { n: "Cupón", k: "cupon", f: x => fN(x, 6) }, { n: "Valor presente", k: "vp", f: x => fN(x, 6) }, { n: "Flujo en pesos", k: "valor", f: x => fPesos(x, 0) }], filas);
+    return {
+      kpis: [
+        kpi("Spread facial", "IBR + " + fPct(r.spread, 4), "Nominal anual, pagadero " + PER.find(p => p[0] === v.periodo)[1].toLowerCase(), { prin: true }),
+        kpi("TIR objetivo", fPct(tir, 4), "Efectiva anual"),
+        kpi("Precio de emisión", fN(r.precioExacto, 6), "A la par: 100"),
+        kpi("IBR promedio proyectado", fPct(prom, 4), "Curva " + (val.curva || "FR")),
+        kpi("Cupón de una tasa fija igual", fPct(fijaEq * per, 4) + " NA", fPct(tir, 2) + " EA pagadero igual")
+      ],
+      avisos: [{ tipo: "info", html: "Los cupones se proyectan con el IBR que espera el mercado según la curva <b>" + esc(val.curva || "FR") + "</b> y se descuentan a la TIR objetivo. " +
+        "Si el IBR sigue esa curva, este bono rinde lo mismo que uno de tasa fija al " + esc(fPct(tir, 2)) + " EA." }],
+      graf: graficoFlujos([{ concepto: "Emisión", fecha: M.aDia(v.emision), valor: -monto }].concat(filas.map(f => ({ concepto: f.concepto, fecha: f.fecha, valor: f.valor })))),
+      grafs: [graficoCurvaFR()],
+      tabs: [{ id: "flujos", n: "Flujos", html: conTabla(id, t) }]
+    };
+  };
+  CALC.ipc_spread = v => {
+    const k = "ipc_spread", per = +v.periodo, tir = req(v, "tir", k), monto = req(v, "monto", k), conSenda = v.ipcFuturo === "senda";
+    const r = M.spreadObjetivoIPC({ emision: req(v, "emision", k), vencimiento: req(v, "vencimiento", k), periodo: per, modoIPC: v.modoIPC, tir, serie: S.ipc, senda: conSenda ? S.senda : null, montoPesos: monto });
+    if (!isFinite(r.spread)) { const e = new Error("No hay un spread entre −50 % y 200 % que dé esa TIR."); e.esValidacion = true; throw e; }
+    const filas = r.filas.map((x, i) => ({ concepto: i === r.filas.length - 1 ? "Cupón y capital" : "Cupón " + (i + 1), fecha: x.fecha, ipc: x.ipc, proy: x.proyectado, tasa: x.tasa, cupon: x.cupon, vp: r.vp[i], valor: r.flujos[i] / 100 * monto }));
+    const id = "spread-ipc";
+    const t = tabla(id, "Flujos proyectados por cada 100 (y en pesos)", [
+      { n: "Concepto", k: "concepto", t: true }, { n: "Fecha", k: "fecha", f: fF, t: true, esFecha: true },
+      { n: "IPC usado", k: "ipc", h: f => esc(fPct(f.ipc, 2)) + (f.proy ? ' <span class="chip est">Estimado</span>' : ' <span class="chip pub">Publicado</span>'), csv: f => f.ipc },
+      { n: "Tasa cupón", k: "tasa", f: x => fPct(x, 4) }, { n: "Cupón", k: "cupon", f: x => fN(x, 6) }, { n: "Valor presente", k: "vp", f: x => fN(x, 6) }, { n: "Flujo en pesos", k: "valor", f: x => fPesos(x, 0) }], filas);
+    return {
+      kpis: [
+        kpi("Spread facial", "IPC + " + fPct(r.spread, 4), "Efectivo anual, pagadero " + PER.find(p => p[0] === v.periodo)[1].toLowerCase(), { prin: true }),
+        kpi("TIR objetivo", fPct(tir, 4), "Efectiva anual"),
+        kpi("Precio de emisión", fN(r.precioSucio, 6), "A la par: 100"),
+        kpi(conSenda ? "IPC promedio de la senda" : "IPC vigente", fPct(conSenda ? r.ipcPromedio : r.ipcNegociacion.valor, 4), conSenda ? S.origen.senda : "Se repite en todos los cupones")
+      ],
+      avisos: [{ tipo: "info", html: conSenda ? "Cada cupón usa el IPC que espera la senda (" + esc(S.origen.senda) + ") para su fecha y se descuenta a la TIR objetivo." :
+        "Todos los cupones usan el IPC vigente a la emisión. Para usar la inflación esperada, elige «Senda de IPC estimado» y carga la senda en Datos." }],
+      graf: graficoFlujos([{ concepto: "Emisión", fecha: M.aDia(v.emision), valor: -monto }].concat(filas.map(f => ({ concepto: f.concepto, fecha: f.fecha, valor: f.valor })))),
+      tabs: [{ id: "flujos", n: "Flujos", html: conTabla(id, t) }]
+    };
+  };
+
+  // =============================================================
+  // AUTORRELLENO: traer los datos faciales de otro bono
+  // =============================================================
+  const FACIALES = ["emision", "vencimiento", "periodo", "tasaCupon", "spread", "modoIPC", "tenor"];
+  const NOMBRE_FORM = { tf_valorar: "Tasa Fija · Valorar", tf_operacion: "Tasa Fija · Comprar y vender", uvr_valorar: "UVR · Valorar", uvr_rent: "UVR · Rentabilidad",
+    ipc_valorar: "IPC · Valorar", ipc_rent: "IPC · Rentabilidad", ipc_spread: "IPC · Spread por TIR", ibr: "IBR · Rentabilidad", ibr_spread: "IBR · Spread por TIR" };
+  function htmlCopiar(k) {
+    const otros = Object.keys(FORMS).filter(f => f !== k && FACIALES.some(id => campoDef(k, id) && campoDef(f, id)));
+    const pos = PORT.pos.filter(p => FORMS[p.form]);
+    if (!otros.length && !pos.length) return "";
+    return '<div class="grupo copiar"><div class="campo ancho"><label for="copiar-de">Traer los datos del bono desde…</label><select id="copiar-de"><option value="">Elige un bono</option>' +
+      '<optgroup label="Otras pantallas">' + otros.map(f => '<option value="f:' + f + '">' + esc(NOMBRE_FORM[f] || f) + "</option>").join("") + "</optgroup>" +
+      (pos.length ? '<optgroup label="Portafolio">' + pos.map(p => '<option value="p:' + p.id + '">' + esc((NOMBRE_FORM[p.form] || p.form).split(" · ")[0] + " · " + (p.v.emision || "") + " a " + (p.v.vencimiento || "")) + "</option>").join("") + "</optgroup>" : "") +
+      '</select><span class="ayuda">Copia emisión, vencimiento, cupón o spread y periodicidad; las condiciones de compra y venta no cambian.</span></div></div>';
+  }
+  function copiarDesde(val) {
+    const k = modoActual().form, src = val.startsWith("f:") ? ST.v[val.slice(2)] : ((PORT.pos.find(p => p.id === val.slice(2)) || {}).v);
+    if (!src) return;
+    const n = FACIALES.filter(id => campoDef(k, id) && src[id] != null && src[id] !== "").map(id => { ST.v[k][id] = src[id]; return id; }).length;
+    pintarForm(); calcular(); toast(n ? "Datos del bono copiados" : "Ese bono no tiene datos que se puedan copiar aquí");
+  }
+
+  // =============================================================
+  // COMPARADOR DE TIR (portafolio): al vencimiento y vendiendo antes
+  // =============================================================
+  const COMP = { fecha: "", pb: "0" };
+  function htmlComparador() {
+    if (!PORT.pos.length) return "";
+    if (!COMP.fecha) COMP.fecha = M.aTexto(hoy + 180);
+    const fv = M.aDia(COMP.fecha), pb = pNum(COMP.pb);
+    const filas = PORT.pos.map(p => {
+      const d = DESTINO[p.form];
+      try {
+        const vista = calcularSilencioso(d[2], p.v), r = vista.resumen, e = vista.escenarios;
+        let venta = null, nota = "";
+        if (!e) nota = "Sin escenarios para este bono";
+        else if (fv <= e.fc) nota = "La fecha es anterior a la compra";
+        else if (fv >= e.ve) nota = "Vence antes de esa fecha";
+        else if (!isFinite(pb)) nota = "Revisa el cambio de tasa";
+        else { const q = e.punto(fv, pb); venta = q; }
+        return { tipo: r.tipo, bono: r.bono, tirV: r.tir, tirS: venta ? venta.tir : null, pyg: venta ? venta.pyg : null, precio: venta ? venta.precio : null, nota };
+      } catch (err) { return { tipo: d ? CALCS[d[0]].nombre : "—", bono: "No se pudo calcular: " + err.message, tirV: null, tirS: null, pyg: null, precio: null, nota: "" }; }
+    });
+    const mejorV = filas.reduce((m, f) => f.tirV != null && (m == null || f.tirV > m) ? f.tirV : m, null);
+    const mejorS = filas.reduce((m, f) => f.tirS != null && (m == null || f.tirS > m) ? f.tirS : m, null);
+    const nd = (x, fn) => x == null || !isFinite(x) ? "—" : fn(x);
+    const marca = (x, m) => x != null && m != null && Math.abs(x - m) < 1e-12 ? ' <span class="chip pub">Mejor</span>' : "";
+    const t = tabla("comparador", "Comparación de TIR", [
+      { n: "Tipo", k: "tipo", t: true }, { n: "Bono", k: "bono", t: true, h: f => dosLineas(f.bono) },
+      { n: "TIR al vencimiento", k: "tirV", h: f => esc(nd(f.tirV, y => fPct(y, 3))) + marca(f.tirV, mejorV), csv: f => f.tirV },
+      { n: "TIR vendiendo el " + fF(fv), k: "tirS", h: f => f.tirS != null ? esc(fPct(f.tirS, 3)) + marca(f.tirS, mejorS) : '<span class="nota">' + esc(f.nota) + "</span>", csv: f => f.tirS },
+      { n: "Precio de venta", k: "precio", f: x => nd(x, y => fN(y, 3)) },
+      { n: "P&G vendiendo", k: "pyg", h: f => f.pyg == null ? "—" : '<span class="' + (f.pyg >= 0 ? "pos" : "neg") + '">' + esc(fPesos(f.pyg, 0)) + "</span>", csv: f => f.pyg }], filas);
+    return '<section class="tarjeta" id="comparador"><div class="tarjeta-c"><div><h3>Comparar por TIR</h3><div class="sub">La TIR de mantener cada bono hasta el vencimiento frente a la de venderlo en una fecha, con la tasa de mercado igual a la de compra o movida en puntos básicos.</div></div>' +
+      (DESCARGAS !== false ? '<button class="btn mini" data-csv="comparador">' + ICON.bajar + " CSV</button>" : "") + "</div>" +
+      '<div class="tarjeta-b comp-f"><div class="campo"><label for="comp-fecha">Vender el</label><input type="date" id="comp-fecha" data-comp="fecha" value="' + esc(COMP.fecha) + '"></div>' +
+      '<div class="campo"><label for="comp-pb">Cambio de la tasa de mercado</label><div class="sufijo"><input type="text" inputmode="decimal" id="comp-pb" data-comp="pb" value="' + esc(COMP.pb) + '"><span>pb</span></div><span class="ayuda">Positivo: las tasas suben</span></div></div>' + t + "</section>";
+  }
+
+  // =============================================================
   // PINTAR RESULTADOS
   // =============================================================
   let ULTIMO = null, PEST = [];
@@ -1243,6 +1388,7 @@
     if (el.tagName === "SELECT" || el.type === "checkbox") { pintarForm(); calcular(); } else programar();
   });
   document.addEventListener("change", e => {
+    if (e.target.id === "copiar-de" && e.target.value) { copiarDesde(e.target.value); return; }
     const el = e.target; if (!form().contains(el) || el.dataset.tipo !== "dinero") return;
     el.value = formatoDinero(el.value); ST.v[modoActual().form][el.dataset.k] = el.value;
   });
@@ -1358,8 +1504,14 @@
     ], filas, f => f.total ? "total" : "");
     html += '<section class="tarjeta"><div class="tarjeta-c"><div><h3>Posiciones</h3><div class="sub">Las cifras se recalculan con los datos vigentes. «Abrir» lleva la compra de vuelta a su calculadora.</div></div>' +
       '<div class="fila-b" style="display:flex;gap:8px;flex-wrap:wrap">' + (DESCARGAS !== false ? '<button class="btn mini" data-csv="portafolio">' + ICON.bajar + " CSV</button>" : "") + '<button class="btn mini" data-port-vaciar>Vaciar portafolio</button></div></div>' + t + "</section>";
-    P.innerHTML = html;
+    P.innerHTML = html + htmlComparador();
   }
+  let tComp = null;
+  document.addEventListener("input", e => {
+    const el = e.target; if (!el.dataset || !el.dataset.comp) return;
+    COMP[el.dataset.comp] = el.value; clearTimeout(tComp);
+    tComp = setTimeout(() => { const c = $("#comparador"); if (c) { const id = document.activeElement && document.activeElement.id; c.outerHTML = htmlComparador(); if (id) { const x = $("#" + id); if (x) { x.focus(); try { x.setSelectionRange(x.value.length, x.value.length); } catch (er) {} } } } }, 350);
+  });
   document.addEventListener("input", e => {
     const el = e.target; if (!el.dataset || !el.dataset.port) return;
     PORT[el.dataset.port] = el.value; guardarPort();
@@ -1639,6 +1791,7 @@
       if (k === "ibr") { const n = S.ibr.fechas.length; return n + " días · último " + fF(S.ibr.fechas[n - 1]); }
       if (k === "curvas") return S.curvas.map(c => c.nombre + " (" + fF(c.fechas[0]) + " a " + fF(c.fechas[c.fechas.length - 1]) + ")").join(" · ");
       if (k === "pron") { const n = S.pron.fechas.length; return n ? n + " meses · " + fFcorta(S.pron.fechas[0]) + " a " + fFcorta(S.pron.fechas[n - 1]) : "Vacío"; }
+      if (k === "senda") { const n = S.senda.fechas.length; return n + " tramos · desde el " + fF(S.senda.fechas[0]) + " · primer IPC anual " + fN(S.senda.anual[0] * 100, 2) + " %"; }
       if (k === "cc") return S.cc.x.length + " puntos · " + (S.cc.tipo === "plazo" ? "plazos " + fN(S.cc.x[0], 2) + " a " + fN(S.cc.x[S.cc.x.length - 1], 2) + " años" : "por fecha");
     } catch (e) { return "Sin datos"; }
   }
@@ -1647,6 +1800,7 @@
     ["uvr", "UVR", "Excel del Banco de la República con la hoja «Datos»: Fecha y valor diario de la UVR."],
     ["ibr", "IBR", "Excel del Banco de la República con la hoja «Datos»: Fecha, overnight, 1, 3, 6 y 12 meses."],
     ["curvas", "Curvas FR", "IBR que el mercado espera para cada fecha futura; se usa para proyectar los cupones de los bonos IBR. Una curva por hoja: Fecha y Tasa nominal anual. El nombre de la hoja es el nombre de la curva."],
+    ["senda", "Senda de IPC estimado", "Inflación esperada para cada fecha futura: IPC anual y variación mensual. Se usa para valorar bonos IPC con IPC proyectado, proyectar la UVR y calcular spreads. Columnas: Fecha, IPC anual, IPC mensual (diarias o mensuales)."],
     ["pron", "Pronóstico de IPC", "Inflación anual esperada para los meses que aún no se publican; se usa en la rentabilidad estimada de IPC. Primera hoja: Fecha (cualquier día del mes) e IPC anual."],
     ["cc", "Curva cero cupón", "Tasa de descuento para cada plazo; se usa en Tasa Fija al descontar con «Curva CC + spread». Primera hoja: Plazo en años (o Fecha) y Tasa EA."]
   ];
@@ -1725,6 +1879,12 @@
       });
       exigir(out.length > 0, "Ninguna hoja tiene el formato de curva (Fecha, Tasa).");
       S.curvas = out.sort((a, b) => a.fechas[0] - b.fechas[0]);
+    },
+    senda(wb) {
+      const nombre = wb.SheetNames.find(n => /ipc|inflaci|senda/i.test(n + " " + (filasHoja(wb.Sheets[n])[0] || []).join(" "))) || wb.SheetNames[0];
+      const fs = filasValidas(wb.Sheets[nombre], 2).map(x => ({ fecha: x.f, anual: celdaNum(x.r[1]), mensual: celdaNum(x.r[2]) })).filter(x => isFinite(x.anual));
+      exigir(fs.length > 0, "La senda no tiene el formato esperado (Fecha, IPC anual, IPC mensual).");
+      S.senda = M.construirSenda(fs);
     },
     pron(wb) {
       const fs = filasValidas(wb.Sheets[wb.SheetNames[0]], 2).map(x => ({ fecha: x.f, valor: celdaNum(x.r[1]) })).filter(x => isFinite(x.valor));

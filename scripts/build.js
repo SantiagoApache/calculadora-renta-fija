@@ -6,6 +6,7 @@ const R = p => fs.readFileSync(path.join(RAIZ, p), "utf8");
 const datos = JSON.parse(R("data/datos.json"));
 datos.pronostico = JSON.parse(R("data/pronostico.json"));
 datos.curvaCC = JSON.parse(R("data/curva_cc.json"));
+datos.senda = JSON.parse(R("data/senda_ipc.json"));
 const mercado = JSON.parse(R("data/mercado.json"));
 const agenda = JSON.parse(R("data/agenda.json"));
 const js = s => s.replace(/<\/script/gi, "<\\/script");

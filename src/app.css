@@ -342,3 +342,5 @@ th { border-bottom-color: var(--neon); }
 .not-g h4 { color: var(--verde) !important; }
 @media (max-width: 900px) { .not-g { grid-template-columns: minmax(0, 1fr); } }
 .formula b { color: var(--fg); font-weight: 500; }
+.comp-f { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 260px)); gap: 10px 14px; }
+.grupo.copiar { background: rgba(64, 140, 255, .05); }

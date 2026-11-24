@@ -4,9 +4,10 @@ Calculadora de bonos colombianos de renta fija. Tiene cuatro calculadoras y un p
 
 - **Tasa Fija (TES):** valoración con TIR o con curva cero cupón + spread, y rentabilidad de compra y venta.
 - **UVR:** precio, valor de giro en pesos y en UVR, y TIR en pesos y en UVR (estimada o real).
-- **IPC:** bonos IPC + spread, valoración y rentabilidad estimada o real (con pronóstico opcional).
-- **IBR:** bonos IBR + spread, rentabilidad proyectada o real, venta antes del vencimiento y sendas de TIR.
-- **Portafolio:** las compras guardadas desde las calculadoras, con valor total, TIR, duración, DV01, próximos cupones y carry neto (con o sin fondos prestados).
+- **IPC:** bonos IPC + spread, valoración con IPC vigente o con senda de IPC estimado, rentabilidad estimada o real y spread para una TIR objetivo.
+- **IBR:** bonos IBR + spread, rentabilidad proyectada o real, venta antes del vencimiento, sendas de TIR y spread para una TIR objetivo.
+- **Portafolio:** las compras guardadas desde las calculadoras, con valor total, TIR, duración, DV01, próximos cupones, carry neto (con o sin fondos prestados) y comparación de TIR al vencimiento y vendiendo antes.
+- **Gráficos de mercado:** curvas de TES en pesos y UVR, inflación implícita, IBR por plazo y la evolución de tasas e inflación.
 
 Cada calculadora muestra el próximo cupón y organiza el detalle en pestañas:
 
@@ -32,7 +33,7 @@ Un proceso automático de GitHub Actions corre todos los días a las 6:37 a. m. 
 | Tasa de la Fed, inflación y desempleo de EE. UU. | FRED (Fed de San Luis) | Sí |
 | Desempleo de Colombia | Página oficial del DANE (empleo y desempleo) | Sí |
 | Noticias de Colombia y del mundo | Google Noticias (solo titular y enlace) | Sí |
-| Curvas FR, curva cero cupón y pronóstico de IPC | Archivos de ejemplo incluidos | No: se suben en el botón «Datos» |
+| Curvas FR, curva cero cupón, pronóstico y senda de IPC estimado | Archivos de ejemplo incluidos | No: se suben en el botón «Datos» |
 
 Reglas del proceso:
 

@@ -236,8 +236,30 @@
     return { valor: serie.inflacion[k] / 100, fecha: serie.fechas[k] };
   }
   const combinarIPC = (ipc, spread) => (1 + ipc) * (1 + spread) - 1;
+  // Senda de IPC estimado (curva de inflación esperada): tramos con la fecha
+  // desde la que rige cada valor. senda = {fechas: [día], anual: [decimal], mensual: [decimal]}
+  function sendaEn(f, senda) {
+    f = aDia(f);
+    let k = -1;
+    for (let i = 0; i < senda.fechas.length; i++) { if (senda.fechas[i] <= f) k = i; else break; }
+    return k < 0 ? null : { anual: senda.anual[k], mensual: senda.mensual[k], fecha: f };
+  }
+  // Filas [{fecha, anual, mensual}] (diarias o mensuales, en % o decimal) -> senda por tramos
+  function construirSenda(filas) {
+    const ord = filas.filter(r => isFinite(r.anual)).map(r => ({ fecha: aDia(r.fecha), anual: r.anual, mensual: r.mensual })).sort((a, b) => a.fecha - b.fecha);
+    if (!ord.length) error("La senda de IPC no tiene datos.");
+    const pct = Math.max.apply(null, ord.map(r => Math.abs(r.anual))) > 1;
+    const out = { fechas: [], anual: [], mensual: [] };
+    ord.forEach(r => {
+      const a = pct ? r.anual / 100 : r.anual, m0 = isFinite(r.mensual) ? (pct ? r.mensual / 100 : r.mensual) : Math.pow(1 + a, 1 / 12) - 1;
+      const n = out.fechas.length;
+      if (n && out.anual[n - 1] === a && out.mensual[n - 1] === m0) return;
+      out.fechas.push(r.fecha); out.anual.push(a); out.mensual.push(m0);
+    });
+    return out;
+  }
 
-  function tablaFlujosIPC(em, ve, m, spread, vn, fneg, modoIPC, serie) {
+  function tablaFlujosIPC(em, ve, m, spread, vn, fneg, modoIPC, serie, senda) {
     em = aDia(em); fneg = aDia(fneg);
     const cal = calendario(em, ve, m);
     const ini = cal.map((x, k) => k === 0 ? em : cal[k - 1]);
@@ -245,13 +267,16 @@
     if (idx < 0) error("La fecha de negociación debe estar entre la emisión y el vencimiento.");
     const ipcNeg = ipcVigente(fneg, serie);
     const ref = modoIPC === "inicio" ? ini[idx] : cal[idx];
-    const ipcPrimer = ipcVigente(Math.min(ref, fneg), serie);
+    let ipcPrimer = ipcVigente(Math.min(ref, fneg), serie);
+    // Con senda: el IPC que aún no se conoce sale de la curva de inflación esperada
+    const deSenda = d => { const v = senda && sendaEn(d, senda); return v ? { valor: v.anual, fecha: d, proyectado: true } : null; };
+    if (senda && ref > fneg) ipcPrimer = deSenda(ref) || ipcPrimer;
     return cal.map((fin, k) => {
       const dias = dias365(ini[k], fin);
       if (k < idx) return { inicio: ini[k], fecha: fin, dias, ipc: NaN, fechaIpc: NaN, tasa: NaN, cupon: NaN };
-      const src = k === idx ? ipcPrimer : ipcNeg;
+      const src = k === idx ? ipcPrimer : (senda ? deSenda(modoIPC === "inicio" ? ini[k] : fin) || ipcNeg : ipcNeg);
       const tasa = combinarIPC(src.valor, spread);
-      return { inicio: ini[k], fecha: fin, dias, ipc: src.valor, fechaIpc: src.fecha, tasa, cupon: vn * (Math.pow(1 + tasa, dias / 365) - 1) };
+      return { inicio: ini[k], fecha: fin, dias, ipc: src.valor, fechaIpc: src.fecha, proyectado: !!src.proyectado, tasa, cupon: vn * (Math.pow(1 + tasa, dias / 365) - 1) };
     });
   }
   // tipoTasa: "total" (EA) o "spread_ipc" (spread EA sobre el IPC vigente)
@@ -260,18 +285,21 @@
     const f = aDia(o.fechaNegociacion), em = aDia(o.emision), ve = aDia(o.vencimiento);
     if (ve <= em) error("La fecha de vencimiento debe ser posterior a la emisión.");
     if (f < em || f >= ve) error("La fecha de negociación debe estar entre la emisión y el vencimiento (sin incluirlo).");
-    const tabla = tablaFlujosIPC(em, ve, o.periodo, o.spread, vn, f, o.modoIPC, o.serie);
+    const tabla = tablaFlujosIPC(em, ve, o.periodo, o.spread, vn, f, o.modoIPC, o.serie, o.senda || null);
     const ic = interesCorrido(tabla, f);
     const fut = tabla.filter(r => r.fecha > f);
     const flujos = fut.map(r => r.cupon); flujos[flujos.length - 1] += vn;
     const dias = fut.map(r => dias365(f, r.fecha)), t = dias.map(d => d / 365);
     const ipcNeg = ipcVigente(f, o.serie);
-    const tasaDesc = o.tipoTasa === "spread_ipc" ? combinarIPC(ipcNeg.valor, o.tasaMercado) : o.tasaMercado;
+    // Con senda, el spread de negociación se suma al IPC promedio de los flujos que faltan
+    const ipcPromedio = suma(fut.map(r => r.ipc)) / fut.length;
+    const ipcDesc = o.senda ? ipcPromedio : ipcNeg.valor;
+    const tasaDesc = o.tipoTasa === "spread_ipc" ? combinarIPC(ipcDesc, o.tasaMercado) : o.tasaMercado;
     const vp = flujos.map((c, k) => c / Math.pow(1 + tasaDesc, t[k]));
     const sucio = suma(vp), sucioT = truncar(sucio, 3), limpio = sucioT - ic.valor;
     const giro = o.montoPesos ? sucioT / vn * o.montoPesos : NaN;
     return {
-      tabla, filas: fut, fechas: fut.map(r => r.fecha), flujos, dias, t, vp, tasaDescuento: tasaDesc, ipcNegociacion: ipcNeg,
+      tabla, filas: fut, fechas: fut.map(r => r.fecha), flujos, dias, t, vp, tasaDescuento: tasaDesc, ipcNegociacion: ipcNeg, ipcPromedio, conSenda: !!o.senda,
       interesCorrido: ic.valor, precioSucio: sucio, precioSucioTruncado: sucioT, precioLimpio: limpio,
       clasificacion: clasificar(limpio, vn), valorGiro: giro,
       ultimoIPC: o.serie.fechas[o.serie.fechas.length - 1]
@@ -313,6 +341,7 @@
       } else serie = { fechas: f, inflacion: v };
     }
     if (!serie.fechas.length) error("No hay IPC publicado en o antes de la fecha de compra.");
+    const usaSenda = o.tipo === "estimada" && !!o.senda;
 
     const valorar = (fecha, modo, tasa, tipoTasa, precio) => {
       if (base === "30_360") {
@@ -325,7 +354,7 @@
         return { precio, limpio: precio - ic, ic, motor: null };
       }
       const r = precioIPC({ emision: em, vencimiento: ve, periodo: o.periodo, spread: o.spread, modoIPC: o.modoIPC,
-        tasaMercado: modo === "tasa" ? tasa : 0, fechaNegociacion: fecha, serie, tipoTasa, valorNominal: vn });
+        tasaMercado: modo === "tasa" ? tasa : 0, fechaNegociacion: fecha, serie, tipoTasa, valorNominal: vn, senda: usaSenda ? o.senda : null });
       const p = modo === "tasa" ? r.precioSucioTruncado : precio;
       return { precio: p, limpio: p - r.interesCorrido, ic: r.interesCorrido, motor: r };
     };
@@ -338,7 +367,8 @@
     cal.forEach((fin, k) => {
       if (fin > fc && fin <= fv) {
         const ref = o.modoIPC === "inicio" ? ini[k] : fin;
-        const ip = ipcVigente(ref, serie);
+        const sv = usaSenda && ref > fc ? sendaEn(ref, o.senda) : null;
+        const ip = sv ? { valor: sv.anual, fecha: ref } : ipcVigente(ref, serie);
         const tasa = combinarIPC(ip.valor, o.spread);
         const dp = diasFn(ini[k], fin);
         cupones.push({ fecha: fin, inicio: ini[k], fechaRef: ref, ipc: ip.valor, fechaIpc: ip.fecha, tasa,
@@ -361,8 +391,16 @@
       tabla: fechas.map((d, k) => ({ concepto: conceptos[k], fecha: d, valor: montos[k] * factor,
         fechaRef: k === 0 ? fc : k === fechas.length - 1 ? fv : cupones[k - 1].fechaRef,
         ipc: k === 0 ? ipcCompra.valor : k === fechas.length - 1 ? ipcVenta.valor : cupones[k - 1].ipc })),
-      conPronostico: o.tipo === "estimada" && !!(o.pronostico && o.pronostico.fechas.length)
+      conPronostico: o.tipo === "estimada" && !!(o.pronostico && o.pronostico.fechas.length), conSenda: usaSenda
     };
+  }
+
+  // Spread facial con el que un bono IPC emitido a la par rinde la TIR objetivo
+  function spreadObjetivoIPC(o) {
+    const p = s => precioIPC({ emision: o.emision, vencimiento: o.vencimiento, periodo: o.periodo, spread: s, modoIPC: o.modoIPC, tasaMercado: o.tir,
+      tipoTasa: "total", fechaNegociacion: o.emision, serie: o.serie, senda: o.senda || null, montoPesos: o.montoPesos });
+    const s = raiz(x => p(x).precioSucio - 100, -0.5, 2, 1e-13);
+    return Object.assign({ spread: s }, p(s));
   }
 
   // ---------------------------------------------------------------
@@ -388,7 +426,9 @@
     });
   }
   // UVR proyectada (UVR_t = UVR_15 (1+i)^(t/d)); conocida: serie hasta la compra
-  function uvrProyectada(fechas, conocida, inflacionAnual) {
+  // mensualEn (opcional): s -> variación mensual del IPC para el ciclo que empieza el 15 s
+  // (la senda se lee el día 16, como en la hoja de cálculo); sin ella se usa la inflación anual fija.
+  function uvrProyectada(fechas, conocida, inflacionAnual, mensualEn) {
     const L = conocida.fechas[conocida.fechas.length - 1];
     const iProj = Math.pow(1 + inflacionAnual, 1 / 12) - 1;
     const valor = f => { const v = conocida.mapa.get(f); if (v == null) error("No hay valor de UVR publicado para el " + aTexto(f) + "."); return v; };
@@ -396,6 +436,7 @@
     const inicioCiclo = D => { const [y, m] = ymd(D); const d15 = aDia(y + "-" + String(m).padStart(2, "0") + "-15"); return D <= d15 ? ant15(d15) : d15; };
     const iCiclo = s => {
       if (s + 1 <= L) { const e = sig15(s), d = e - s, mm = Math.min(L, e); return Math.pow(valor(mm) / valor(s), d / (mm - s)) - 1; }
+      if (mensualEn) { const v = mensualEn(s); if (v != null && isFinite(v)) return v; }
       return iProj;
     };
     const u15 = s => s <= L ? valor(s) : u15(ant15(s)) * (1 + iCiclo(ant15(s)));
@@ -423,7 +464,8 @@
       const conocida = { fechas: f, valores: v, mapa };
       uvrEnFecha(fc, conocida);
       inflacion = ipcVigente(fc, o.serieIPC).valor;
-      uvrEn = fs => uvrProyectada(fs, conocida, inflacion);
+      const mensualEn = o.senda ? (s => { const v = sendaEn(s + 1, o.senda); return v ? v.mensual : null; }) : null;
+      uvrEn = fs => uvrProyectada(fs, conocida, inflacion, mensualEn);
     }
     const tabla = tablaFlujos(em, ve, o.periodo, o.tasaCupon, vn);
     const valorar = (fecha, modo, tasa, precio) => {
@@ -453,7 +495,7 @@
       tipo: o.tipo, alVencimiento: alVenc, precioCompra: compra.precio, limpioCompra: compra.limpio,
       precioVenta: venta.precio, limpioVenta: venta.limpio, nominalUVR, uvrCompra, uvrVenta: uvrF[n - 1],
       giroCompra: -fPesos[0], valorVenta: fPesos[n - 1], cuponesPesos: suma(fPesos.slice(1, n - 1)), pygPesos: suma(fPesos),
-      tirPesos: tirDe(fPesos), tirUVR: tirDe(fUVR), inflacionSupuesta: inflacion,
+      tirPesos: tirDe(fPesos), tirUVR: tirDe(fUVR), inflacionSupuesta: inflacion, conSenda: o.tipo !== "real" && !!o.senda,
       tabla: fechas.map((d, k) => ({ concepto: conceptos[k], fecha: d, uvr: uvrF[k], valorUVR: fUVR[k], valorPesos: fPesos[k] }))
     };
   }
@@ -664,10 +706,20 @@
     return { filas, pasos, tirVencimiento: tirMant, modo, valorBase: modo === "tasa" ? s0 : t0, ventaElegida: hayVenta ? aDia(args.fechaVenta) : null };
   }
 
+  // Spread facial con el que un bono IBR emitido a la par rinde la TIR objetivo
+  // (cupones proyectados con la curva FR vigente a la emisión, descontados a la TIR)
+  function spreadObjetivoIBR(o) {
+    const r = x => rentabilidadIBR({ tipo: "estimada", emision: o.emision, vencimiento: o.vencimiento, periodo: o.periodo, spread: x, tenor: o.tenor || "auto",
+      fechaCompra: o.emision, modoCompra: "tir", tirCompra: o.tir, fechaVenta: null, modoVenta: "precio", serieIBR: o.serieIBR, curvas: o.curvas, montoPesos: o.montoPesos || 100 });
+    const pv = x => suma(r(x).valoracion.tabla.map(f => f.vp));
+    const s = raiz(x => pv(x) - 100, -0.2, 0.5, 1e-13);
+    return Object.assign({ spread: s, precioExacto: pv(s) }, r(s));
+  }
+
   const Motor = {
     aDia, aTexto, ymd, sumarMeses, finDeMes, dias365, dias30360, truncar, redondear, tirOperacion, raiz,
     calendario, tablaFlujos, interesCorrido, precioTasaFija, tasaCC, operacionTasaFija, riesgo,
-    ipcVigente, precioIPC, rentabilidadIPC, seriePronostico,
+    ipcVigente, precioIPC, rentabilidadIPC, seriePronostico, sendaEn, construirSenda, spreadObjetivoIPC, spreadObjetivoIBR,
     uvrEnFecha, precioUVR, uvrProyectada, rentabilidadUVR,
     festivos, esHabil, fechaIbrAplicable, ibrReal, ibrCurva, rentabilidadIBR, sendaTirIBR
   };
