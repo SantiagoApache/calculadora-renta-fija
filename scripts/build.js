@@ -7,6 +7,7 @@ const datos = JSON.parse(R("data/datos.json"));
 datos.pronostico = JSON.parse(R("data/pronostico.json"));
 datos.curvaCC = JSON.parse(R("data/curva_cc.json"));
 const mercado = JSON.parse(R("data/mercado.json"));
+const agenda = JSON.parse(R("data/agenda.json"));
 const js = s => s.replace(/<\/script/gi, "<\\/script");
 const json = o => JSON.stringify(o).replace(/</g, "\\u003c");
 const cabeza = '<title>Calculadora de Renta Fija</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n' +
@@ -16,7 +17,7 @@ const cabeza = '<title>Calculadora de Renta Fija</title>\n<meta name="claude:vie
   "<style>\n" + R("src/app.css") + "\n</style>\n";
 const cuerpo = R("src/plantilla.html") +
   '<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>\n' +
-  "<script>window.DATOS=" + json(datos) + ";\nwindow.MERCADO=" + json(mercado) + ";</script>\n" +
+  "<script>window.DATOS=" + json(datos) + ";\nwindow.MERCADO=" + json(mercado) + ";\nwindow.AGENDA=" + json(agenda) + ";</script>\n" +
   "<script>\n" + js(R("src/motor.js")) + "\n</script>\n<script>\n" + js(R("src/app.js")) + "\n</script>\n";
 fs.mkdirSync(path.join(RAIZ, "dist"), { recursive: true });
 fs.writeFileSync(path.join(RAIZ, "dist/pagina.html"), cabeza + cuerpo);

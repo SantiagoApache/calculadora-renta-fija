@@ -1,0 +1,17 @@
+{
+ "nota": "Fechas oficiales del Banco de la República, la Reserva Federal y el DANE. Se actualiza a mano cuando cada entidad publica su calendario.",
+ "eventos": [
+  { "fecha": "2026-12-07", "tipo": "ipc", "titulo": "IPC de noviembre (DANE)", "detalle": "Quinto día hábil del mes, según la regla de publicación del DANE.", "url": "https://www.dane.gov.co/index.php/estadisticas-por-tema/precios-y-costos/indice-de-precios-al-consumidor-ipc" },
+  { "fecha": "2026-12-09", "tipo": "fed", "titulo": "Decisión de tasas de la Fed", "detalle": "Reunión del FOMC del 8 y 9 de diciembre, con proyecciones económicas.", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+  { "fecha": "2026-12-18", "tipo": "banrep", "titulo": "Decisión de tasas del Banco de la República", "detalle": "Junta Directiva de diciembre.", "url": "https://www.banrep.gov.co/es/noticias/calendario-actividades-junta-directiva/reunion-diciembre-2026" },
+  { "fecha": "2027-01-08", "tipo": "ipc", "titulo": "IPC de diciembre y del año 2026 (DANE)", "detalle": "Define el reajuste de muchos precios y la inflación con que arranca 2027.", "url": "https://www.dane.gov.co/index.php/estadisticas-por-tema/precios-y-costos/indice-de-precios-al-consumidor-ipc" },
+  { "fecha": "2027-01-27", "tipo": "fed", "titulo": "Decisión de tasas de la Fed", "detalle": "Reunión del FOMC del 26 y 27 de enero.", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+  { "fecha": "2027-03-17", "tipo": "fed", "titulo": "Decisión de tasas de la Fed", "detalle": "Reunión del FOMC del 16 y 17 de marzo.", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+  { "fecha": "2027-04-28", "tipo": "fed", "titulo": "Decisión de tasas de la Fed", "detalle": "Reunión del FOMC del 27 y 28 de abril.", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+  { "fecha": "2027-06-09", "tipo": "fed", "titulo": "Decisión de tasas de la Fed", "detalle": "Reunión del FOMC del 8 y 9 de junio.", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+  { "fecha": "2027-07-28", "tipo": "fed", "titulo": "Decisión de tasas de la Fed", "detalle": "Reunión del FOMC del 27 y 28 de julio.", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+  { "fecha": "2027-09-15", "tipo": "fed", "titulo": "Decisión de tasas de la Fed", "detalle": "Reunión del FOMC del 14 y 15 de septiembre.", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+  { "fecha": "2027-10-27", "tipo": "fed", "titulo": "Reunión de estrategia de la Fed", "detalle": "Reunión del FOMC del 26 y 27 de octubre, dedicada a la estrategia de política monetaria.", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+  { "fecha": "2027-11-17", "tipo": "fed", "titulo": "Decisión de tasas de la Fed", "detalle": "Reunión del FOMC del 16 y 17 de noviembre.", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" }
+ ]
+}

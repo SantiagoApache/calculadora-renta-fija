@@ -96,7 +96,7 @@
     tf: {
       nombre: "Tasa Fija", corto: "TES · cupón fijo",
       modos: [
-        { id: "valorar", nombre: "Valorar", form: "tf_valorar", desc: "Precio sucio, limpio, interés corrido y riesgo de un bono de cupón fijo, descontado con una TIR o con una curva cero cupón más un spread." },
+        { id: "valorar", nombre: "Valorar", form: "tf_valorar", desc: "Precio sucio, limpio, cupón corrido y riesgo de un bono de cupón fijo, descontado con una TIR o con una curva cero cupón más un spread." },
         { id: "operacion", nombre: "Comprar y vender", form: "tf_operacion", desc: "Rentabilidad (TIR) de comprar el bono en una fecha y venderlo en otra o mantenerlo hasta el vencimiento." }
       ]
     },
@@ -510,22 +510,22 @@
       mini("DV01 de la posición", dvPos, u ? "En pesos: " + fPesos(op.dv01PesosRegla, 0) : "Por 100: " + fN(rg.dv01, 6)) +
       "</div>" +
       '<p class="nota">DV01 = duración modificada truncada a 3 decimales ÷ 10.000 × valor de giro: lo que cambia el valor de la posición por cada punto básico. ' +
-      "Las aproximaciones parten del precio sucio truncado (" + fN(rg.precioActual, 3) + "). Los movimientos de −400 a +400 pb están en la pestaña Escenarios.</p></div>";
-    const pb = rg.cambioPb;
-    const filas100 = [
-      { esc: "Tasa +" + pb + " pb", ex: rg.sube.exacto, d: rg.sube.duracion, dc: rg.sube.durConv },
-      { esc: "Tasa −" + pb + " pb", ex: rg.baja.exacto, d: rg.baja.duracion, dc: rg.baja.durConv }
-    ];
-    const idA = "riesgo100-" + ST.calc;
-    const hA = tabla(idA, "Precio con ±" + pb + " pb", [
-      { n: "Escenario", k: "esc", t: true }, { n: "Precio exacto", k: "ex", f: x => fN(x, 4) },
-      { n: "Solo duración", k: "d", f: x => fN(x, 4) }, { n: "Duración + convexidad", k: "dc", f: x => fN(x, 4) }], filas100);
-    html += barraTabla(idA) + hA;
+      "Los movimientos de la tasa de −400 a +400 pb están en la pestaña Escenarios.</p></div>";
     return html;
   }
   const mini = (l, v, s) => '<div class="mini"><div class="kpi-l">' + esc(l) + '</div><div class="kpi-v">' + esc(v) + "</div>" + (s ? '<div class="kpi-s">' + esc(s) + "</div>" : "") + "</div>";
   const kpi = (l, v, s, extra) => Object.assign({ l, v, s }, extra || {});
   const conTabla = (id, html) => barraTabla(id) + html;
+  // Estado de un pago frente a la fecha de hoy
+  const pagado = f => f <= hoy;
+  const chipEstado = (f, compra) => '<span class="chip ' + (pagado(f) ? "pub" : "acc") + '">' + (compra ? (pagado(f) ? "Pagado" : "Por pagar") : (pagado(f) ? "Recibido" : "Por recibir")) + "</span>";
+  const colEstado = { n: "Estado", t: true, h: f => chipEstado(f.fecha, /compra/i.test(f.concepto || "")), csv: f => pagado(f.fecha) ? (/compra/i.test(f.concepto || "") ? "Pagado" : "Recibido") : (/compra/i.test(f.concepto || "") ? "Por pagar" : "Por recibir") };
+  // Cupones de una operación separados en recibidos y por recibir (filas: compra, cupones..., venta)
+  function kpiCupones(total, filas) {
+    const rec = filas.slice(1, -1).filter(f => pagado(f.fecha)).reduce((a, f) => a + f.valor, 0);
+    const sub = rec <= 0 ? "Todos por recibir (a hoy)" : Math.abs(total - rec) < 1 ? "Todos ya recibidos (a hoy)" : "Recibidos " + fPesos(rec, 0) + " · por recibir " + fPesos(total - rec, 0);
+    return kpi("Cupones de la operación", fPesos(total), sub);
+  }
 
   // =============================================================
   // CÁLCULOS POR CALCULADORA (devuelven el modelo de la vista)
@@ -554,7 +554,7 @@
     const kp = [
       kpi("Precio sucio", fN(r.precioSucioTruncado, 3), "Exacto: " + fN(r.precioSucio, 6), { prin: true }),
       kpi("Precio limpio", fN(r.precioLimpio, 3), r.clasificacion),
-      kpi("Interés corrido", fN(r.interesCorrido, 6), "Por cada 100 de nominal"),
+      kpi("Cupón corrido", fN(r.interesCorrido, 6), "Por cada 100 de nominal"),
       kpi("Valor de giro", fPesos(giro), compacto(giro) + " de pesos")
     ];
     if (curva) kp.push(kpi("TIR equivalente", fPct(y, 4), "Tasa única que da el mismo precio"));
@@ -566,7 +566,7 @@
     const filas = r.fechas.map((f, i) => ({ fecha: f, dias: r.dias[i], t: r.t[i], tasa: r.tasas ? r.tasas[i] : y, flujo: r.flujos[i], vp: r.vp[i] }));
     const tf = tabla(idF, "Flujos por cada 100 de nominal", [
       { n: "Fecha", k: "fecha", f: fF, t: true, esFecha: true }, { n: "Días", k: "dias", f: x => fN(x, 0) }, { n: "t (años)", k: "t", f: x => fN(x, 4) },
-      { n: curva ? "Tasa curva + spread" : "Tasa", k: "tasa", f: x => fPct(x, 4) }, { n: "Flujo", k: "flujo", f: x => fN(x, 6) }, { n: "Valor presente", k: "vp", f: x => fN(x, 6) }], filas);
+      { n: curva ? "Tasa curva + spread" : "Tasa", k: "tasa", f: x => fPct(x, 4) }, { n: "Flujo", k: "flujo", f: x => fN(x, 6) }, { n: "Valor presente", k: "vp", f: x => fN(x, 6) }, colEstado], filas);
     const valorarEn = (d, s) => M.precioTasaFija(Object.assign({ tasaMercado: curva ? 0.1 : y + s / 1e4, fechaNegociacion: d, curvaCC: curva ? S.cc : null, spreadPb: spr + s }, bono));
     return {
       kpis: kp,
@@ -596,14 +596,14 @@
 
   function tablaOperacion(id, filas, extras) {
     return tabla(id, "Flujos de la operación en pesos", [{ n: "Concepto", k: "concepto", t: true }, { n: "Fecha", k: "fecha", f: fF, t: true, esFecha: true }]
-      .concat(extras || [], [{ n: "Valor", k: "valor", f: x => fPesos(x, 0) }]), filas);
+      .concat(extras || [], [{ n: "Valor", k: "valor", f: x => fPesos(x, 0) }, colEstado]), filas);
   }
-  function kpisOperacion(tir, r, etiquetaTir, sub) {
+  function kpisOperacion(tir, r, etiquetaTir, sub, filas) {
     return [
       kpi(etiquetaTir || "TIR de la operación", fPct(tir, 4), sub || "Efectiva anual", { prin: true }),
       kpi("Valor de giro (compra)", fPesos(r.giroCompra), compacto(r.giroCompra) + " de pesos"),
       kpi(r.alVencimiento ? "Pago al vencimiento" : "Valor de la venta", fPesos(r.valorVenta), compacto(r.valorVenta) + " de pesos"),
-      kpi("Cupones recibidos", fPesos(r.cuponesPesos), compacto(r.cuponesPesos)),
+      filas ? kpiCupones(r.cuponesPesos, filas) : kpi("Cupones de la operación", fPesos(r.cuponesPesos), compacto(r.cuponesPesos)),
       kpi("Pérdidas y ganancias", fPesos(r.pygPesos), compacto(r.pygPesos), { cls: r.pygPesos >= 0 ? "pos" : "neg" })
     ];
   }
@@ -620,7 +620,7 @@
     const id = "op-tf";
     const avisos = [];
     if (r.mensajeTir) avisos.push({ tipo: "err", html: esc(r.mensajeTir) });
-    const kp = kpisOperacion(r.tir, r);
+    const kp = kpisOperacion(r.tir, r, null, null, filas);
     let posicion = null;
     const b = intentoObj(() => M.precioTasaFija(Object.assign({ tasaMercado: 0.1, fechaNegociacion: v.fechaCompra }, bono)));
     if (b) {
@@ -655,11 +655,11 @@
     const filas = r.fechas.map((f, i) => ({ fecha: f, dias: r.dias[i], flujo: r.flujos[i], vp: r.vp[i], flujoUVR: r.flujos[i] / 100 * r.nominalUVR }));
     const tf = tabla(idF, "Flujos (por 100 y de la posición en UVR)", [
       { n: "Fecha", k: "fecha", f: fF, t: true, esFecha: true }, { n: "Días", k: "dias", f: x => fN(x, 0) },
-      { n: "Flujo por 100", k: "flujo", f: x => fN(x, 6) }, { n: "Valor presente", k: "vp", f: x => fN(x, 6) }, { n: "Flujo posición", k: "flujoUVR", f: x => fUVR(x) }], filas);
+      { n: "Flujo por 100", k: "flujo", f: x => fN(x, 6) }, { n: "Valor presente", k: "vp", f: x => fN(x, 6) }, { n: "Flujo posición", k: "flujoUVR", f: x => fUVR(x) }, colEstado], filas);
     return {
       kpis: [
         kpi("Precio sucio", fN(r.precioSucioTruncado, 3), "Exacto: " + fN(r.precioSucio, 6), { prin: true }),
-        kpi("Precio limpio", fN(r.precioLimpio, 3), r.clasificacion + " · IC " + fN(r.interesCorrido, 6)),
+        kpi("Precio limpio", fN(r.precioLimpio, 3), r.clasificacion + " · cupón corrido " + fN(r.interesCorrido, 6)),
         kpi("UVR del día", fN(r.uvr, 4), fF(fc)),
         kpi("Valor de giro en pesos", fPesos(r.valorGiro), compacto(r.valorGiro) + " de pesos"),
         kpi("Valor de giro en UVR", fUVR(r.valorGiroUVR), "Nominal: " + fUVR(r.nominalUVR))
@@ -698,7 +698,7 @@
       serieUVR: S.uvr, serieIPC: S.ipc, nominal: req(v, "nominal", k), nominalEn: v.nominalEn, diasTir: v.diasTir }, bono));
     const filas = r.tabla.map(x => ({ concepto: x.concepto, fecha: x.fecha, uvr: x.uvr, valorUVR: x.valorUVR, valor: x.valorPesos }));
     const id = "op-uvr";
-    const kp = kpisOperacion(r.tirPesos, r, "TIR en pesos", v.tipo === "real" ? "Con la UVR publicada" : "Con la UVR proyectada");
+    const kp = kpisOperacion(r.tirPesos, r, "TIR en pesos", v.tipo === "real" ? "Con la UVR publicada" : "Con la UVR proyectada", filas);
     kp.splice(1, 0, kpi("TIR en UVR", fPct(r.tirUVR, 4), "Sin el efecto de la inflación"));
     const avisos = [];
     if (v.tipo === "estimada") avisos.push({ tipo: "info", html: "La UVR después de la compra se proyecta con el IPC vigente a la compra: <b>" + fPct(r.inflacionSupuesta, 2) + "</b> anual." });
@@ -736,14 +736,14 @@
     const tf = tabla(id, "Flujos por cada 100 de nominal", [
       { n: "Fecha", k: "fecha", f: fF, t: true, esFecha: true }, { n: "Días", k: "dias", f: x => fN(x, 0) },
       { n: "IPC usado", k: "ipc", f: x => fPct(x, 2) }, { n: "Dato del", k: "fechaIpc", f: fF, esFecha: true },
-      { n: "Tasa cupón", k: "tasa", f: x => fPct(x, 4) }, { n: "Flujo", k: "flujo", f: x => fN(x, 6) }, { n: "Valor presente", k: "vp", f: x => fN(x, 6) }], filas);
+      { n: "Tasa cupón", k: "tasa", f: x => fPct(x, 4) }, { n: "Flujo", k: "flujo", f: x => fN(x, 6) }, { n: "Valor presente", k: "vp", f: x => fN(x, 6) }, colEstado], filas);
     const porSpread = v.tipoTasa === "spread_ipc";
     const serieCompra = { fechas: S.ipc.fechas.filter(d => d <= fc), inflacion: S.ipc.inflacion.filter((x, i) => S.ipc.fechas[i] <= fc) };
     return {
       kpis: [
         kpi("Precio sucio", fN(r.precioSucioTruncado, 3), "Exacto: " + fN(r.precioSucio, 6), { prin: true }),
         kpi("Precio limpio", fN(r.precioLimpio, 3), r.clasificacion),
-        kpi("Interés corrido", fN(r.interesCorrido, 6), "Por cada 100 de nominal"),
+        kpi("Cupón corrido", fN(r.interesCorrido, 6), "Por cada 100 de nominal"),
         kpi("Valor de giro", fPesos(r.valorGiro), compacto(r.valorGiro) + " de pesos"),
         kpi("Tasa de descuento", fPct(r.tasaDescuento, 4), "IPC vigente " + fPct(r.ipcNegociacion.valor, 2) + " (" + fFcorta(r.ipcNegociacion.fecha) + ")")
       ].concat(tirVI != null ? [kpi("TIR al vencimiento", fPct(tirVI, 4), "Estimada: el IPC vigente no cambia")] : [], [kpiProx(prox)]),
@@ -801,7 +801,7 @@
     const avisos = [];
     if (r.mensajeTir) avisos.push({ tipo: "err", html: esc(r.mensajeTir) });
     if (v.tipo === "estimada") avisos.push({ tipo: "info", html: r.conPronostico ? "IPC conocido hasta la compra y, después del último dato, el pronóstico cargado (" + esc(S.origen.pron) + ")." : "Solo se usa el IPC conocido a la fecha de compra: los cupones siguientes repiten el IPC vigente." });
-    const rc = riesgoCompraIPC(v, r), kp = kpisOperacion(r.tir, r, "TIR de la operación", (v.tipo === "real" ? "Real" : "Estimada") + " · efectiva anual");
+    const rc = riesgoCompraIPC(v, r), kp = kpisOperacion(r.tir, r, "TIR de la operación", (v.tipo === "real" ? "Real" : "Estimada") + " · efectiva anual", filas);
     let posicion = null;
     if (r.cupones.length) kp.push(kpiProx({ fecha: r.cupones[0].fecha, texto: fPesos(r.cupones[0].monto / 100 * monto, 0) + " · con IPC de " + fPct(r.cupones[0].ipc, 2) }));
     else if (rc.b) kp.push(kpiProx({ fecha: rc.b.filas[0].fecha, texto: fPesos(rc.b.filas[0].cupon / 100 * monto, 0) + " · con IPC de " + fPct(rc.b.filas[0].ipc, 2) }));
@@ -858,7 +858,7 @@
     const id = "op-ibr";
     const tabs = [{ id: "flujos", n: "Flujos", html: conTabla(id, tabla(id, "Flujos de la operación en pesos", [
       { n: "Concepto", k: "concepto", t: true }, { n: "Fecha", k: "fecha", f: fF, t: true, esFecha: true }, { n: "IBR", k: "ibr", f: x => x == null ? "" : fPct(x, 4) },
-      { n: "Fuente", k: "fuente", h: f => chipFuente(f.fuente), t: true }, { n: "Dato del", k: "fechaDato", f: x => x == null ? "" : fF(x), esFecha: true }, { n: "Valor", k: "valor", f: x => fPesos(x, 0) }], filas)) }];
+      { n: "Fuente", k: "fuente", h: f => chipFuente(f.fuente), t: true }, { n: "Dato del", k: "fechaDato", f: x => x == null ? "" : fF(x), esFecha: true }, { n: "Valor", k: "valor", f: x => fPesos(x, 0) }, colEstado], filas)) }];
     if (r.valoracion) tabs.push({ id: "valc", n: "Valoración de compra", html: conTabla("valc-ibr", tablaValoracion("valc-ibr", "Valoración a la compra (por 100)", r.valoracion)) });
     if (r.valoracionVenta) tabs.push({ id: "valv", n: "Valoración de venta", html: conTabla("valv-ibr", tablaValoracion("valv-ibr", "Valoración a la venta (por 100)", r.valoracionVenta)) });
     let rg = null;
@@ -886,7 +886,7 @@
         kpi("Valor de giro (compra)", fPesos(r.giroCompra), compacto(r.giroCompra) + " de pesos"),
         r.alVencimiento ? kpi("Al vencimiento", "Se mantiene", "Recibe el 100 % más el último cupón") :
           kpi("Valor de la venta", fPesos(r.valorVenta), "Precio " + fN(r.precioVenta, 3) + " · limpio " + fN(r.limpioVenta, 3)),
-        kpi("Cupones recibidos", fPesos(r.cuponesPesos), compacto(r.cuponesPesos)),
+        kpiCupones(r.cuponesPesos, filas),
         kpi("Pérdidas y ganancias", fPesos(r.pygPesos), compacto(r.pygPesos), { cls: r.pygPesos >= 0 ? "pos" : "neg" })
       ].concat(tirVtoIBR != null ? [kpi("TIR al vencimiento", fPct(tirVtoIBR, 4), "Si no vendes y mantienes el bono")] : [], prox ? [kpiProx(prox)] : []),
       avisos, graf: graficoFlujos(filas), grafs: [graficoCurvaFR()], tabs,
@@ -1024,7 +1024,7 @@
     const idT = "esc-" + def.calc;
     tabla(idT, "Escenarios de precio por senda y plazo", [
       { n: "Plazo (días)", k: "h" }, { n: "Fecha de venta", k: "fecha", esFecha: true }, { n: "Senda (pb)", k: "s" }, { n: def.etiquetaTasa, k: "tasa" },
-      { n: "Precio sucio", k: "precio" }, { n: "Precio limpio", k: "limpio" }, { n: "Valor de la venta", k: "valorVenta" }, { n: "Cupones recibidos", k: "cupones" },
+      { n: "Precio sucio", k: "precio" }, { n: "Precio limpio", k: "limpio" }, { n: "Valor de la venta", k: "valorVenta" }, { n: "Cupones hasta la venta", k: "cupones" },
       { n: "P&G", k: "pyg" }, { n: "TIR de la operación", k: "tir" }], E.puntos);
     const grad = (a, b) => "linear-gradient(90deg," + colorSenda(a) + "," + colorSenda(b) + ")";
     return '<div class="bloque"><div class="bloque-c"><div><h3>Precio del bono en cada escenario</h3><div class="sub">Cada línea es una senda: la tasa de mercado ' +
@@ -1071,8 +1071,8 @@
       esc(fN(p.pyg / p.giro * 100, 2)) + " % de lo invertido</div></div>" + mini("TIR de la operación", fPct(p.tir, 4), "Efectiva anual") + mini("Precio sucio de venta", fN(p.precio, 3), "Limpio: " + fN(p.limpio, 3)) + "</div>";
     h += '<div><h4>La venta</h4><div class="dl">' + fila("Fecha de venta", esc(fF(p.fecha)) + " <small>(" + p.h + " días después)</small>") +
       fila(esc(d.etiquetaTasa) + " ese día", esc(fPct(p.tasa, 4)) + (isFinite(d.tasaBase) ? " <small>(a la compra: " + esc(fPct(d.tasaBase, 4)) + ")</small>" : "")) +
-      (p.extra || []).map(x => fila(esc(x[0]), esc(x[1]))).join("") + fila("Interés corrido", esc(fN(p.ic, 6))) + fila("Precio limpio", esc(fN(p.limpio, 3))) + fila("Valor de la venta", esc(fPesos(p.valorVenta, 0))) + "</div></div>";
-    h += '<div><h4>El resultado</h4><div class="dl">' + fila("Valor de giro de la compra", esc(fPesos(p.giro, 0))) + fila("Cupones recibidos", esc(fPesos(p.cupones, 0)) + " <small>(" + p.nCup + (p.nCup === 1 ? " cupón" : " cupones") + ")</small>") +
+      (p.extra || []).map(x => fila(esc(x[0]), esc(x[1]))).join("") + fila("Cupón corrido", esc(fN(p.ic, 6))) + fila("Precio limpio", esc(fN(p.limpio, 3))) + fila("Valor de la venta", esc(fPesos(p.valorVenta, 0))) + "</div></div>";
+    h += '<div><h4>El resultado</h4><div class="dl">' + fila("Valor de giro de la compra", esc(fPesos(p.giro, 0))) + fila("Cupones cobrados hasta la venta", esc(fPesos(p.cupones, 0)) + " <small>(" + p.nCup + (p.nCup === 1 ? " cupón" : " cupones") + ")</small>") +
       fila("Pérdidas y ganancias", color(p.pyg)) + (base && p.s !== 0 ? fila("Si las tasas no cambiaran, a la misma fecha", esc(fPesos(base.pyg, 0))) + fila("Efecto del movimiento de tasas", color(p.pyg - base.pyg)) : "") +
       (rg ? fila("Duración modificada ese día", esc(fN(rg.dmod, 4))) + fila("DV01 de la posición ese día", esc(rg.dv01)) : "") + "</div></div>";
     const misma = ESC.puntos.filter(q => q.s === p.s);
@@ -1217,6 +1217,7 @@
     if (b.id === "btn-guia" || b.dataset.guia !== undefined) return guia.iniciar();
     if (b.id === "cerrar-aviso") { lsSet("rf_aviso_guia", "1"); $("#aviso-guia").hidden = true; return; }
     if (b.dataset.trmvivo !== undefined) return trmEnVivo(true);
+    if (b.dataset.act) { lsSet("rf_actualidad", b.dataset.act === "ocultar" ? "oculta" : ""); pintarActualidad(); return; }
   });
   const form = () => $("#formulario");
   document.addEventListener("input", e => {
@@ -1438,13 +1439,50 @@
     const ind = todosIndicadores();
     const local = location.protocol === "file:";
     const notas = (MERC && MERC.noticias) || [];
-    const grupo = amb => notas.filter(n => n.ambito === amb).map(n => '<a class="noticia" href="' + esc(n.url) + '" target="_blank" rel="noopener"><span class="noticia-t">' + esc(n.titulo) +
-      '</span><span class="noticia-m">' + esc(n.fuente) + " · " + esc(fF(M.aDia(n.fecha))) + "</span></a>").join("") || '<p class="nota">Sin noticias por ahora.</p>';
+    const grupo = amb => notas.filter(n => n.ambito === amb).map(n => htmlNoticia(Object.assign({}, n, { ambito: "" }), false)).join("") || '<p class="nota">Sin noticias por ahora.</p>';
     return '<div><h4>Indicadores</h4>' + ind.map(x => '<div class="ind"><span class="ind-n">' + esc(x.nombre) + '</span><span class="ind-v">' + esc(textoInd(x)) + '</span><span class="ind-d">' +
       esc((x.detalle || "") + (x.fecha ? " · " + fF(M.aDia(x.fecha)) : "")) + (x.url ? ' · <a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.fuente) + "</a>" : x.fuente ? " · " + esc(x.fuente) : "") + "</span></div>").join("") +
       '<p class="nota">Actualizado el ' + esc(fF(M.aDia(MERC.actualizado || M.aTexto(hoy)))) + ". " + (local ? "En esta copia local puedes traer la TRM en vivo desde datos.gov.co." : /github\.io$/.test(location.hostname) ? "Se actualiza automáticamente dos veces al día." : "") + "</p>" +
       (local ? '<div style="margin-top:8px"><button class="btn mini" data-trmvivo>Traer TRM en vivo</button></div>' : "") +
-      "</div>" + htmlDeudaPublica() + '<div><h4>Noticias de Colombia</h4>' + grupo("Colombia") + '</div><div><h4>Noticias del mundo</h4>' + grupo("Mundo") + "</div>";
+      "</div>" + '<div><h4>Agenda</h4>' + (proximos(12).map(htmlEvento).join("") || '<p class="nota">No hay fechas cargadas.</p>') + '<p class="nota">' + esc((window.AGENDA && window.AGENDA.nota) || "") + "</p></div>" +
+      '<div><h4>Noticias de Colombia</h4>' + grupo("Colombia") + '</div><div><h4>Noticias del mundo</h4>' + grupo("Mundo") + "</div>" + htmlDeudaPublica();
+  }
+  // ---------- Noticias con su efecto y agenda ----------
+  // El tema se reconoce por palabras del titular; el texto es el efecto típico sobre la renta fija.
+  const TEMAS = [
+    { re: /reserva federal|\bfed\b|powell|fomc|banco central europeo|\bbce\b/i, tema: "Tasas internacionales", afecta: "TES y dólar", txt: "Tasas más altas afuera suelen subir las tasas de los TES y fortalecer el dólar; si bajan, ocurre lo contrario." },
+    { re: /banco de la rep|banrep|emisor|junta directiva|pol[ií]tica monetaria|tasas? de inter[eé]s|recorte de tasas|alza de tasas/i, tema: "Tasas en Colombia", afecta: "IBR y precio de los TES", txt: "Si el Banco de la República baja tasas, el IBR cae y los bonos de tasa fija suben de precio; si las sube, pasa lo contrario." },
+    { re: /inflaci[oó]n|\bipc\b|costo de vida|precios al consumidor|estanflaci/i, tema: "Inflación", afecta: "Bonos IPC y UVR", txt: "Más inflación sube los cupones de los bonos IPC y la UVR, pero empuja las tasas de mercado al alza." },
+    { re: /\btes\b|deuda|fiscal|d[eé]ficit|hacienda|calificaci|presupuesto|bonos del tesoro|treasur|rendimientos/i, tema: "Deuda pública", afecta: "TES", txt: "Más riesgo fiscal exige tasas más altas a los TES, así que sus precios bajan." },
+    { re: /d[oó]lar|\btrm\b|peso colombiano|divisa|tasa de cambio|\beuro\b/i, tema: "Dólar", afecta: "TES en manos de extranjeros", txt: "Un peso débil puede llevar a los inversionistas extranjeros a vender TES y subir sus tasas." },
+    { re: /petr[oó]leo|crudo|brent|\bwti\b|opep/i, tema: "Petróleo", afecta: "Peso y finanzas públicas", txt: "El petróleo más caro suele fortalecer el peso y los ingresos del Gobierno, lo que alivia a los TES." },
+    { re: /desempleo|empleo|n[oó]mina|laboral|salario m[ií]nimo/i, tema: "Empleo y salarios", afecta: "Expectativas de tasas", txt: "Un mercado laboral débil abre espacio para bajar tasas; salarios que suben mucho presionan la inflación." },
+    { re: /bolsa|acciones|wall street|s&p|nasdaq|mercados/i, tema: "Mercados", afecta: "Apetito por riesgo", txt: "Cuando los inversionistas huyen del riesgo suelen comprar bonos de gobiernos sólidos." }
+  ];
+  const temaDe = t => TEMAS.find(x => x.re.test(t)) || { tema: "Economía", afecta: "Contexto general", txt: "" };
+  function htmlNoticia(n, corta) {
+    const t = temaDe(n.titulo);
+    return '<a class="noticia verde" href="' + esc(n.url) + '" target="_blank" rel="noopener"><span class="noticia-t">' + esc(n.titulo) + '</span><span class="noticia-m">' +
+      esc(n.fuente) + " · " + esc(fF(M.aDia(n.fecha))) + (n.ambito ? " · " + esc(n.ambito) : "") + '</span><span class="efecto"><span class="chip verde">Afecta: ' + esc(t.afecta) + "</span>" +
+      (t.txt && !corta ? '<span class="efecto-t">' + esc(t.txt) + "</span>" : "") + "</span></a>";
+  }
+  const AG = (window.AGENDA && window.AGENDA.eventos) || [];
+  const proximos = n => AG.map(e => Object.assign({ d: M.aDia(e.fecha) }, e)).filter(e => e.d >= hoy).sort((a, b) => a.d - b.d).slice(0, n);
+  const ETQ_AG = { banrep: "Banco de la República", fed: "Reserva Federal", ipc: "DANE" };
+  function htmlEvento(e) {
+    const dd = e.d - hoy, p = M.ymd(e.d), falta = dd === 0 ? "Hoy" : dd === 1 ? "Mañana" : "En " + dd + " días";
+    return '<a class="evento ev-' + esc(e.tipo) + '" href="' + esc(e.url) + '" target="_blank" rel="noopener"><span class="ev-f"><b>' + p[2] + "</b>" + MESES[p[1] - 1] + "</span><span class=\"ev-x\"><span class=\"ev-t\">" +
+      esc(e.titulo) + '</span><span class="ev-d">' + esc(falta + " · " + (ETQ_AG[e.tipo] || "") + (e.detalle ? " · " + e.detalle : "")) + "</span></span></a>";
+  }
+  function pintarActualidad() {
+    const A = $("#actualidad"); if (!A) return;
+    const oculta = lsGet("rf_actualidad") === "oculta";
+    const notas = ((MERC && MERC.noticias) || []).slice().sort((a, b) => (a.fecha < b.fecha) - (a.fecha > b.fecha)).slice(0, 4);
+    const ev = proximos(3);
+    A.innerHTML = '<div class="act-c"><h2>Noticias y agenda</h2><div class="act-b">' + (oculta ? "" : '<button class="btn mini" data-abrir="mercado">Ver todo</button>') +
+      '<button class="btn mini" data-act="' + (oculta ? "mostrar" : "ocultar") + '">' + (oculta ? "Mostrar" : "Ocultar") + "</button></div></div>" +
+      (oculta ? "" : '<div class="act-g"><div class="act-n">' + (notas.map(n => htmlNoticia(n, false)).join("") || '<p class="nota">Sin noticias por ahora.</p>') + '</div><div class="act-a"><h4>Próximas fechas clave</h4>' +
+        (ev.map(htmlEvento).join("") || '<p class="nota">No hay fechas cargadas.</p>') + "</div></div>");
   }
   // Deuda pública local: tasas cero cupón de los TES que publica el Banco de la República
   function htmlDeudaPublica() {
@@ -1557,6 +1595,8 @@
     curvas(wb) {
       const out = [];
       wb.SheetNames.forEach(nombre => {
+        const enc = (filasHoja(wb.Sheets[nombre])[0] || []).join(" ");
+        if (/ipc|inflaci|uvr|condicion/i.test(nombre + " " + enc)) return;     // no es una curva de IBR
         const fs = filasValidas(wb.Sheets[nombre], 2).map(x => ({ f: x.f, v: celdaNum(x.r[1]) })).filter(x => isFinite(x.v) && x.f > 10957);
         if (!fs.length) return;
         const div = mediana(fs.map(x => x.v)) > 1 ? 100 : 1;
@@ -1648,7 +1688,7 @@
   function arrancar() {
     const h = desdeHash();
     if (h) { ST.calc = h[0]; if (h[1]) ST.modo[h[0]] = h[1]; }
-    pintarCinta();
+    pintarCinta(); pintarActualidad();
     if (ST.calc === "port") irA("port"); else { pintarNav(); pintarForm(); calcular(); }
     if (lsGet("rf_aviso_guia") === "1") $("#aviso-guia").hidden = true;
     window.addEventListener("hashchange", () => { const x = desdeHash(); if (x && (x[0] !== ST.calc || (x[1] && x[1] !== ST.modo[x[0]]))) irA(x[0], x[1]); });
@@ -1669,7 +1709,7 @@
         const d = snap.data();
         if (d && Array.isArray(d.indicadores)) {
           MERC = { actualizado: d.actualizado || MERC.actualizado, indicadores: d.indicadores, noticias: Array.isArray(d.noticias) ? d.noticias : MERC.noticias, tes: d.tes || MERC.tes };
-          pintarCinta(); if (PANEL === "mercado") abrirPanel("mercado");
+          pintarCinta(); pintarActualidad(); if (PANEL === "mercado") abrirPanel("mercado");
         }
       }, () => { /* se queda con los datos incluidos */ });
     } catch (e) { /* sin base: datos incluidos */ }
