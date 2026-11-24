@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-23",
+ "actualizado": "2026-11-24",
  "indicadores": [
   {
    "id": "trm",
@@ -16,7 +16,7 @@
    "nombre": "Tasa BanRep",
    "valor": 12.25,
    "unidad": "pct",
-   "fecha": "2026-11-23",
+   "fecha": "2026-11-24",
    "detalle": "Tasa de política monetaria vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/59/tasas_interes_politica_monetaria"
@@ -75,15 +75,50 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3505.49,
+   "valor": 3504.99,
    "unidad": "cop",
    "fecha": "2026-11-23",
-   "detalle": "Precio del dólar en el mercado (último dato); −0,43 frente a la TRM",
+   "detalle": "Precio del dólar en el mercado (último dato); −0,93 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
+  {
+   "titulo": "Nuevo atentado en Colombia: artefacto explota cerca de la Gobernación del Meta",
+   "fuente": "Bloomberg Línea",
+   "fecha": "2026-11-24",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbTFLYlVkakFQSTZyMmhKLS1yYXhrTjg2ekV3UHgxQjlVaEpGOW5VdFpvbm9CdldLeTZxQ1VXRTFyZ1ktVld3S2VhVElLUUpuSnZfcW5UeWxMdTJ1WU5ORFU4UXdMR2RYNlAzbzRpMFk2NG52MXFiVHRqQVF3UDUzYnZIOFdveUJDR2xwZGtyUFdZeVZDSVVuQlJYYW9zVU1JMGNfSXBxaEVCNWxJcG1FSnpaTFQ5VWRuencwNmlPTFNvd3VnRVhYQWU4bGrSAeABQVVfeXFMTTQydTN5T0toLW15MXRJVk45TGU0cFM4dGM3Rjg4N21XYjRKWnllaVhITWdXcmlTS3oyUWtLQ19kbDdWQUhrTkxrazlpOGVzcmlQWk0wU0lEOTBQM3R4UXk1akxHOEZud0JtNmlZZzYwd2pmUEFqSkpCVGdpTm9lSDZ3R3N3YVdqaU1sS0prTVlaR0l2ZUlHYmNFRXJ6aGlxOXFMT1doV1RsTWZpY1lSSE8zVlphVUpwTnZhRXFiNC1nUXN2aG5TaENVUjhzMEFCZVJBTFdYOFdzczhlaUpSazk?oc=5"
+  },
+  {
+   "titulo": "Las tres razones que tienen al dólar cortándole cada vez más distancia al peso en el cierre del año",
+   "fuente": "El Tiempo",
+   "fecha": "2026-11-24",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQT1ZfMklHNkx2YjhXNENEZ2JRay1ZTFc3cDhiZVAxQmZpSWpJdkZ6QTFLUXZ1QlpjRE5vWlhhR3h5MnRhSmdoR1hURTl5RnZSWklCdnFDTkJBcDg1eHM1cDBQVVViQlNNRHlYS3ZxVnAyTkFoRkFpSzhuNW1BTUdsTndsdFZDMVY0dEZFNEFFNk4yNnQzV080QWdqcUZpWjZDeGJCUm94eTBJSGxySF9VWW5Gb2R1cW1UUFZuWS1WYVdZOTdncEZnUmhxNnpvQ3g4QjNWQzMydW1ZYlZtM3FoaXBneEU4NkYzeVptaUhlcUhBV1FSbmfSAfYBQVVfeXFMUE9WXzJJRzZMdmI4VzRDRGdiUWstWUxXN3A4YmVQMUJmaUlqSXZGekExS1F2dUJaY0ROb1pYYUd4eTJ0YUpnaEdYVEU5eUZ2UlpJQnZxQ05CQXA4NXhzNXAwUFVVYkJTTUR5WEt2cVZwMk5BaEZBaUs4bjVtQU1HbE53bHRWQzFWNHRGRTRBRTZOMjZ0M1dPNEFnanFGaVo2Q3hiQlJveHkwSUhsckhfVVluRm9kdXFtVFBWblktVmFXWTk3Z3BGZ1JocTZ6b0N4OEIzVkMzMnVtWWJWbTNxaGlwZ3hFODZGM3labWlIZXFIQVdRUm5n?oc=5"
+  },
+  {
+   "titulo": "Colombianos pueden invertir en deuda pública desde $60.000: así funciona y cómo hacerlo desde el celular",
+   "fuente": "Portafolio.co",
+   "fecha": "2026-11-24",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNR2lpX3VzMllDa2hrQURVaHBELVRmM3A3dVY4Uk9FdHc3U1JzTk1jWHBTYW9GYS15TElRM2l4VEJYNVQ4dmZZeHp2aWxiTXgxT2hQXzU0V2ZXeHFUaXhmeTBGR2FDa09pNURjaC16N0FrTTFtcmRPSTY2bXd3Y0VhaV9FWG9ZVDBzVHEtQm5LS20za2paYm9fcC04UjYzQTdPcG9sVFAxVHJBQnBleWhldDdZWGhEUDA4bEhHLVY3UnpEQUpJaW5CNUs5Vk11MUxlRkQtY3pabHN3VUp2ZDN6dFFR0gHiAUFVX3lxTE1HaWlfdXMyWUNraGtBRFVocEQtVGYzcDd1VjhST0V0dzdTUnNOTWNYcFNhb0ZhLXlMSVEzaXhUQlg1VDh2Zll4enZpbGJNeDFPaFBfNTRXZld4cVRpeGZ5MEZHYUNrT2k1RGNoLXo3QWtNMW1yZE9JNjZtd3djRWFpX0VYb1lUMHNUcS1CbktLbTNralpib19wLThSNjNBN09wb2xUUDFUckFCcGV5aGV0N1lYaERQMDhsSEctVjdSekRBSklpbkI1SzlWTXUxTGVGRC1jelpsc3dVSnZkM3p0UVE?oc=5"
+  },
+  {
+   "titulo": "Salario mínimo de 2027 podría elevar en más de $150.000 la mesada de cerca de 1,4 millones de pensionados si se confirma este aumento",
+   "fuente": "Infobae",
+   "fecha": "2026-11-24",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNNnhhUjQyVzNTeEp2anFRZlJjcm9ZR09IVjZ5Qy1LdTJOeEoxQ0xpMU9oeFJMS3hlbHkyVWVFbnFZSGhVZlc4T01xRGwyMkJROGJzallHQ0R2QlFFOUNZTU9vNW1zcnVDZ0NtMmExNm1tcjRuanU1U1NOdUdrS3V4NlFqdENkMk5abHlsYTQyQkdEdm1ldkxxaTdxM0s5SmdDNy1EdHNPbFlPVFlaeno5bTdsV2w3cW8xWUQ4YlNTRF91UmhHTHpSTkdSYjVsMVpabjd3dFlzcUtydlYwdWlhMm15RnRZVkRCRGU3WW1kY1NyVndJWnk2b2JDb9IBlgJBVV95cUxPX3lkb0NIcHdULWVxWnBPTFFQclhBdUZ3QzFiVS1WTVd0X09yVWFBeHVMNUluZGFKLTAxQWNZR2dnaTNhMHY0S0gyYXdSNzhMVlNubG9jSHZOUUxVMkRxS2k3UTFjOTdLWFhCSEc4cVVlZnBUTEhBTjhFU25QR3htS3B1M0VfYjZCcklubmV2RlkxN2hjWGh4UWRiaTJzMlBBb2lmbTNLMjFpTXRoRDc5RExHQkQtQUNzQUVDV244UUZXQzRnSE5aWGNYY2FCZW9fX2MzUWs4LUZsTExvLU9GSHo5MUpGZmU3dkQ4MURMbVV1ZjQydzhLQnBNWXFzLTJHT3g3TFlpYk5rYnJOQ3RCdmk2U183Zw?oc=5"
+  },
+  {
+   "titulo": "Dólar hoy en Colombia: la tasa de cambio tuvo una fuerte subida al cierre del 23 de noviembre y ya se cotiza por encima de los $3.500",
+   "fuente": "Infobae",
+   "fecha": "2026-11-23",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNkNwRE1PbDI4X1ItRnRXYXZzb25OVmpxODVZRjdOd19WeDZNSnhKcEhWel9pZ1lZc1FBWDJjOG1GeUw5MjNGTU1YdERCMFY5SjFQWm9QdXozQ2MxZi01eExtZ3FRRHBhdUktY01KMl9aSDFXdFNOY2M2NTVXcVRsaFU4WjlMWUdhTnlyY0ZRbHVYUlR2ZEkxRFVxVUtuYktSUVE0TU5LS1gzUVXSAcYBQVVfeXFMUDV6bHpHcGEtUnJoWFM3R194d2ZKYjhPaVJnNnpNNk1nT1pWVDgybFRJNGNISXh5SzBnMWhMaHlxTWdiUTc4d2FIcUdQSVlwQVBiU0RjSFFxRkRKc2NBREQ1ZFdDWWZESGE3aTVFNEhNNWRJdDBmX2s2bzBfQkdiWkRBdWlJdVRtVi1ONjdWWGZpejRSNUpjQ2JWVDRzNGQ4TzY4VmxJcXFZUm1FVm90dnV5QUR3RUJ3MHlEQlE1YVJlMXhTc2FB?oc=5"
+  },
   {
    "titulo": "El dólar pasó los COP$3.500 antes del Black Friday y así sabrá si todavía le conviene comprar en Amazon",
    "fuente": "Bloomberg Línea",
@@ -92,81 +127,46 @@
    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQY2F2aXFXem1IaV82MDBFQzVwYVJDVVpSYVVCc05SeUVmZm1mTVpEQ0tJMTdxX09MXzM1R1lnRDFNRmhZaEExMnBnbzN4OVljVUNnVGY5OGFJZjAxM094WWdiMWhEcXVyclpIWE5zemFvQm1TNVF4aGduYmhsOTM3em9xYUV4d1M2WmZyX3g3NzdaNy03Q2RqR3FwbEc3NVNLX1ZwQ3RYdjRqRG1kWTdUWmZKaE52RzE1bmoxeWJPdGlUSm9QNS1SNlVPMWJ4d09mTndPVXBrZnZtWkNYZnN2alk0Nm5pS0YtSWlDNtIBgAJBVV95cUxPNXdGVjhWZ3MtR3JUeG5MNTVZd3A5SFhIMUhRVTVTY1JtbjR3ZDBCdDd3VXUyajRjRkFxdjlxaGxyTFQ0dVZtc1JUYjlMbG9mTGFMSmNmV2R2WFNiQVpKQjQ2akV6MldQOUhkXy1RWG5ZUXhZd0FYWkZiYmItdThGUzAycHVtTnJ5RmdYRjhrWi1kejVod3U4cGpCSWNjekptRG5aVTVETEkyV2V0MEtzdkdnT3FQSXRoMHhiSTZ6ajRtaXF6WUdLOTY2YURsZWJrbklvekprMS1ubHNKeFdMLURpN2M5cmdkVnJQZTV2Q2NSME9qTVlEM0FQMTRvQTlF?oc=5"
   },
   {
-   "titulo": "Aumento del salario mínimo de 2027 debería rondar esta cifra de un dígito: empresa de Sarmiento Angulo hizo esta propuesta para evitar subida de precios",
-   "fuente": "Infobae",
-   "fecha": "2026-11-23",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQNG9SY1ZRSlVnN1c1SzJZOWFZMGhVMmppUWNVdXA4MEF4QzllYVJLQVQ3NFBnYUJYdGtDRnRuM0Izcm9Xa2daUF9JY0hGdUVHcU1VWGZ6Rm8tVUtLZnE3emc1aFhVR0REOGZLZFZ3YXhuQkpQV01GRGppQkFoa1UyWndBWnBtcXVwQnlQNGdNc3ZhV1RJVndkakNCVGxSaHBpXzU5cGVTb25hRkNDT3pKZ3VRMmpqR0dQTXBHMENDY3ZXVEZ3emVXTzBVbkdDeVZGWU5ycnFKT09UeGMzeEktbHB1UHJpSTlHYjlHQTY4am1nRVRubGZVZVBxVkpfdG9ZeFQ0MDNUY3EtYXRTZ3p4V2JnN1NsSWZTT3VUUnlKTVhNd9IBvAJBVV95cUxPOGF3RHpiSW92UUJhMHJHaEREaDZGWHhHR1VETjkwZG5HaTdEN190MEZDczl6WkJzTW05dUlMNkJCZklIeVN6TGVyQjBHblk0M2poVlNGWURwbnZaWTUzNVRYYkdIZ2w3V29wenU2STF6VUNzbC1xZ3VEbElvVXNMQ29HRzZ1RWFTbUFyM2tCeU1BNFRuN25VUzVJc1poNzYxTURWM0oyVURjZXlRY3MwcDBKM3RJUE11VUJoNW5waS1ySExGaUhFcmEtTktncTBTOWJKN2dMelN6eGZWbmlKMU1nelk4cDJVZGNrVHJzbzc5c3VMY2dGNklmUWI2azV2QlJNODZxc05yRFhqWGtaNDEteE5TSmtTMERVNTc5MUJlUnZ6dE51Tm9zSGRObXg5bHNsb0xSWVg2X2Y3?oc=5"
+   "titulo": "El alivio del precio del petróleo da oxígeno a las aerolíneas: el sector sube un 13% en noviembre",
+   "fuente": "El Economista",
+   "fecha": "2026-11-24",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPSEczRjdpYUxfYUZ2SG9ka0dvS1ZlelY4bU1ENkRHUDd0UC1peDR0amp2LVBDQ1ZWbFN1WEp4N25VRlFZLWZ3UXg2Z09sYWFvUXZERWZ1X3AtSmY3bDAtZ09TcUFHV2NHYVZRbnlvQ3BOTXpMTGZIN3ZRSzFEQUp3VFdzZlREcDhBWmZ2Zm9HMmNRYl9uR2tGb2tldVN4LUFnLTFOclJtR3N1QTV0R2g1aU9Pbzh1bWZmLWJmUDViT3hhOGpZRnpxdkdoWFpCM2M4akIwbVhzVGJ2YW9YZFJTS3VFTEpJcC13b3BsY3BDZUdzWnR1bVdneVlxdW5ybW1SbThhU9IB7wFBVV95cUxQekhiZENKZVJBazBHb0JpOGVpUkRmWm56WXZYQnBoTXhDcWRmM0R2Qnh3b21GQjZ6SER2ZzFtdnJqcmZHTEthWG8yRVp1TURhbTJPdF9LeUN0ZTBYYm5nbDBwT0hzRmo5RGY2NF9FTl9CX0tiVDJEd19EOEdSc1hCMUVORjE0WDVyY3U5WXVmTFFoMzh0ZVhuRUNBeDRZbm9MU0dmaVBjT0NYREJWOTNlQk42S2docm5QX21XTjFDeTM4TEFRTHN2ZU1OaGx3OUtGb1o2dUJKdzdldXE1Z2htbk9vWkZEZmhDTjJPRGFjNA?oc=5"
   },
   {
-   "titulo": "Con JP Morgan a la cabeza, extranjeros se abalanzan sobre deuda colombiana",
+   "titulo": "“Aumento de tasas del BCE de diciembre podría no ser suficiente”",
+   "fuente": "El Economista",
+   "fecha": "2026-11-24",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOOHpMUHR1WFNpNUZFN3ZjNm9NSUFIT2tkcG5pRXVHQWttbThRUzhBdC03SGRrbW45ZFpfQlFTRzZoYjdLZTIwTWc3RnFCRV95LV8yS3Brc3RvVEhaZWNKUGM2THNsZzFYTmZOSDlrRFdUeHpPZ3BOdVRtUUZJLVd1SDNZVEo0cU00eWZTd3RXaVQ4dk11NDRUQTdKb3pMXzdyNXfSAacBQVVfeXFMUHM0Y2ExWGZXSXcya1FnWEFwOTc4VUtEdTVna0kwQk00ZXZNcGJHdVRxUl9EOVN3bHk3eGVJWHp4bVVwTHA4ZEw0UENOOUlpMHRqM3IyUWlWZzRnWW5XU09BUmxKN3JKMy1GNjJnWEZEcXpoQjBCVnhhR2VKYW9MU3RGZElCelhqc1JIcXFPNnh6N3ItN05WdEVyTWhYdUU0dzNpMXU3Q1U?oc=5"
+  },
+  {
+   "titulo": "El oro se recuperó después de la fuerte caída semanal",
+   "fuente": "El Economista",
+   "fecha": "2026-11-24",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcDhOVkF2RmZLekE5U1VvS1plVEFGMmw0OTlPeUF1TTNQNWJfRmVmX3Q2Mm8zY3RlaWFtMzd2VUZ6SGNlRWV2OUROZWFrSUk2Tm5Halk1VXdyZTFfdlFZQjBkVENBck1rWjdaSEtsNHhUR0R3N2NZZ0QxQWNGeVlmYUt0UlpLc0NMdTZ2UDlZYVoyVzRZN3gwZ2tIRdIBoAFBVV95cUxNMTY3RU9lRXhGNEY4anRIQ3JwVnozNE9kWXl3MFRyY2JESEJERk1wb3FrT1dEWnVTMmd2bk1wczY5eURHNW9Uc1FlUFFZTlJBcFJVWTVHTXlSa2pkWUltSENwUV9jUE9wN1FxUEVpMTlsTlR5RkRoX2JvbndXa2VncG9VbWE3dlBlRGQwWHhlR3ZGanZMeVRBR25Ha1R0RGwt?oc=5"
+  },
+  {
+   "titulo": "Acciones asiáticas repuntan tras el regreso de Jensen Huang a Nvidia y el fuerte avance de Wall Street",
    "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-23",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMWswNHBrR2YwSWNtX04ybnZmV2ZTaGNEUHJFRDBvNmdsTDRZeC1fN2dMT1Ffd1VFT2V6U1I3MEFDbkxDSUZHemhPb2JBMm1RUU1JaWVPcHEyR2xXSmpmRUs0Q29OcXBWVmNVTWx5SU4xUHpJVW5adUlxZWZvdlhzcE5YYUYxTXdoaTlWZ0M2TDBUWl9lYl9SeGRFMzkyRFJWaXlEQUhRdTlVckZxTkZ4SkFGTTg1R1pjRVY1QllBZ1Fvdk5ZTk9V0gHbAUFVX3lxTE01MUktS29yVjFURk81cmdCZUdTN3dkMDNWblVGWVZDdTZZX1pPR09Cc250Ti1GaVBQc0JBYUwzenZQeWMtaDRWYjd0YXRIUmE3OS1kR2V6UEVHWks3MExTRE5zVHVveG5lYkJ1UTdYUWNZejVyTDhLSmxyOWNjUlZQSlBhcWpNMTBaRjZpamE0dUtDbDZzMXpnVm9GMm5LLUpaRHNTLWdmODF4TWZ3UVJtTklkUzZYLVJZTnRYVVQ1cllCTnZNekdEWExtMVdoVkFrZUZ3MFFSdGNZTQ?oc=5"
+   "fecha": "2026-11-24",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZ0NqaEVGcTJrVXNQbWJ2T2RyRVBPZEx2aHZORWp1QVN5c3NfY0hBdEw4dDdKOTdXb2tPUkxCSkpQZXMxRS1sX0VaYjYweE90TjBjMzJ3Um14V3hQOGZydEhwa1BFZmY1Uk9LMUpHUVJ0M29hOU1ycnpIRHpjN0k5bDRQSzg3eExfemZJdlpybHc3Q0tWX0doNTNkVnlKbXZxOE10U1YzSWhqMVJ1QTgxTnRvN0lBZUdNZ25JaGpiZGZHcEZDLVFYTG9wdTRQdkZWX2VDWmJaeEctYWfSAe8BQVVfeXFMUG9YNUwwNXVaT1IzREtCTW5yV0ZRUk1xaVA0QU95VE5JQTZmb3FHMXZQWU40WExHWFpsNi1yT1huclEtMVg3ZkUtNEIzMWRveTF1b2dZaERHU3NOUVk2Q1hDLXFWU2xmc0s4X21xQnJZYnBZZU5xaUVwOUZGVjN3UGpPM3dIR0ZjcXYtQkNETzRDeGd0WUVhWkpKNklmVnFBem95cEZWOUJiMlM0dnVTX1kxWnJldjhHR2UwZXlQWmpjVElub0ZrLVNYVk1URU9lWGg1XzFsRFdVS1h6ZGhJUTE1RTIwY1ctTTk0VjdSN3c?oc=5"
   },
   {
-   "titulo": "Banqueros ven ajuste fiscal como condición para que baje la tasa de interés en 2027 y se reactive el crédito",
-   "fuente": "Valora Analitik",
-   "fecha": "2026-11-23",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16Nm1FVXFjeUZFMXVPOG5MVThGdEsyMU96czd6WWFjc3QxMlVuY3E1enlhMGxXaG1QdUhaOFB1RWdwOE1FckEtSV9sZHB1NDVmVTc2eWxSanNadDlrWmJIRW1tMGlib0g2RTNpaVlCUlZmNkdVZ0tCR9IBfkFVX3lxTE1ZdHU4aFJLaG1sdkpEMnNfRWVzY2l6ZWFpcmljOUhMZDVIeTRYRFUwSWFGc1NWOTZ3QjhSRVV5cnFUV09DR2dUdTlvVUEyQzk0N05yODdKcmRDaGM0bnNXU296ajBDbUwtWjl0aUZyRVFnME1yZGI0ckFLYTBrZw?oc=5"
-  },
-  {
-   "titulo": "Dólar hoy en Colombia: cotización de cierre del 23 de noviembre",
-   "fuente": "Infobae",
-   "fecha": "2026-11-23",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNkNwRE1PbDI4X1ItRnRXYXZzb25OVmpxODVZRjdOd19WeDZNSnhKcEhWel9pZ1lZc1FBWDJjOG1GeUw5MjNGTU1YdERCMFY5SjFQWm9QdXozQ2MxZi01eExtZ3FRRHBhdUktY01KMl9aSDFXdFNOY2M2NTVXcVRsaFU4WjlMWUdhTnlyY0ZRbHVYUlR2ZEkxRFVxVUtuYktSUVE0TU5LS1gzUVXSAcYBQVVfeXFMUDV6bHpHcGEtUnJoWFM3R194d2ZKYjhPaVJnNnpNNk1nT1pWVDgybFRJNGNISXh5SzBnMWhMaHlxTWdiUTc4d2FIcUdQSVlwQVBiU0RjSFFxRkRKc2NBREQ1ZFdDWWZESGE3aTVFNEhNNWRJdDBmX2s2bzBfQkdiWkRBdWlJdVRtVi1ONjdWWGZpejRSNUpjQ2JWVDRzNGQ4TzY4VmxJcXFZUm1FVm90dnV5QUR3RUJ3MHlEQlE1YVJlMXhTc2FB?oc=5"
-  },
-  {
-   "titulo": "Dólar en Colombia cierra con nueva alza y se acerca a la barrera de $3.550, en medio de repunte global de la",
-   "fuente": "Valora Analitik",
-   "fecha": "2026-11-23",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNaHZYMzRMMFJTSVozUVJqZ2tlc0dSSWVaR2xtOGRrZGVtZ01OdHB6b0U2aHNnbXZZdnFPaWp5ekJudlB4WVNOSl9vRDdCQUtRYWU1MWtNd3lfWXZRY0RBNkh4cEZGNlYzc05FeDRSLWE1WXMzS2NRLVRBV0o0bWdpUWtKbHRfdXJTNEJhSldlMF8xSFkxVm16TV96RmYxUlRnUXZoZHZmM0FUa0pFTGoyLWUyYllsYkVGNHRENEdOUGgwYUY5bUtsU2hKRUVJbUV1ckx5THZZMFRrbmxjcUHSAeMBQVVfeXFMTXVVYU5lTENxMGlxYWxPWDdIQlRTZEs1V0tiX3dBOFB0X2RMbHFrbUtFbjFoMDQ0bnk2SjVjdnZrR3ZjWDFMR2wyNVBKem1xWXZzSkRkYjZZLTEzVzlIbVRCbTVlWTZLRUNaOXZIWlF3LXVhcUJDRTdkM2JBWjQ0Y1ZOWWQtVFlKcFhNRlo2eVIwMUxON1FiV2Y0VEFtdVhPZ2duN1BsZFQ2LVJ6ZnNCX1EweEc2ODlQWVZQcWx5alBreHhVcjJtLUxWS1JaRkRZVXN6VkRYa1d3R0xDZVlrOEN4VVE?oc=5"
-  },
-  {
-   "titulo": "Bolsa canadiense sube mientras Wall Street repunta con regreso de Huang a Nvidia",
-   "fuente": "Investing.com México - Finanzas, Bolsa y Forex",
+   "titulo": "Los precios del petróleo bajan ante la perspectiva de una sobreoferta",
+   "fuente": "El Economista",
    "fecha": "2026-11-23",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOendCZDZ6SFdTSW5samRiRi13cUJRS2gzUlNsU3A4RW5idFFVX182eXYzX0VwSzhVcVpBZEtlYnNpVS1kaENEZm1EZV9ZakVQd0w3eHhHc19rNmxWUmVBMDBuQ2ppbDM1R1U5OVZtWXVDblVBcXUwMHZ1aFA2MTNJUFJpVG5CcmQtZzljc2l1NFRialpKX200SmhFWFdaN0IwRTdfdUpOeGVKVlRoV19OTWF2WHY1eEgzS01SQQ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMWFmakg2MEZnVHlDdTZmREs1LTZyS3pRS0FvT3RZcHhJM1FrNFZJQWdoNUppajFaSEwyaXcycDd6N0dmclpmd3FxdmhwdzF1Rl9EUHRZTUl4Q2NZWTA1M0pnOEdiN01Jckk4ZHVlekxJOFJXT090bkR2UWVSYWQzd2QtaEhuT29ORTlhc09TU0s4QTdWVG0zQm9KaEpZSkp0R2VlTWl4aHdFeldR0gGyAUFVX3lxTE5BRm9vaHZheHBmckZYS3lxVmd0VC1kMVk4eE1yMGY1b1kyT2YtbXRVSUxJSkRmS2ZJNDhrQm1NSnRiTjRQTmJZdHhreWZFOHZnZ0E2MUpTU29nUndlUjN3RUNEMmxmbjRmTzBVZndaTGJkeE9pa3ZzaXFFZlhKUGFMazdHVWs5ZEY0dFlLUVBxTTJsTktQOWVPVjlQa1lJS2xERElyVG1GYkItOHA4Ny1hTHc?oc=5"
   },
   {
    "titulo": "Citi detecta señales de alerta en Wall Street similares a las de la burbuja puntocom",
    "fuente": "Bloomberg Línea",
    "fecha": "2026-11-23",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOX0ZQcU9zckx0TnFSeGpmVlRUSUYxNXNlOGx3UHQ0VFJkUUNPeVdiNEQ1dWZCSTRlb2dTZFl4dmF6cVlkekZNSkdIdlQxY1ZEQVA0MjZOVXdhNlBNclFTZThrbnZaakNBLXZOVU5hZk44Z25PVXVCWTJYRXFaNGNGN1E4dEplQW9NUVNIeVhDX29aSUlEMW5PUWNtZFkxekU3NDdxZ1U0VkE4aTV3My1UV2dDMmg2TDJUb3NfVG5SV2s2TzA?oc=5"
-  },
-  {
-   "titulo": "Wall Street se dispara y Nvidia impulsa un rally que no se veía desde abril de 2025",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-23",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPcWMzUTBkUUtKejZ0UzBFMzlIaUhLZ3N3MnloMkRaUXpJVHJYVHlCd1JHbmEtOFVpd2lMdGFaZVVncmVHLTZxUTk1Z3JmUHpZdE04YThEWnhnSV9rLUM2RzlmZkJoRWtvODhaQkZNVkNSNzlHN3FmSjVyemlWR2dWVjNuLVBPRlc5bDFfMlZqSWx5QkN1aVBQMEIwRVRoLWFOTlVjUTVkSDdiMHpZQ0cxZFlMOGVINFNmTWc3MWE1c2xXWG42cGRCWUZQUXJFaFdxajFBSDQyTEU2VWdX0gHwAUFVX3lxTFBXRS1TUU1GUjNQTi1tM2hrQkdIa0Z0REJZRkpPYXoxWjhOdjBHVmhHRDdWejNibENHbTRNR1RyZ1ZYMDNPSm95ZTdKbW11YXVaZmRaZ3ZYaG1zNldpdmxfeGczdmphSkVOaVZ1QzJrZVFCeDhibG92RGo2bGVoNUZhbHk4eG1PdERWLTdzdzdNeW5HWTVvMFZzWnU5cHFOblNHclZ5MDF3ZEI4aVg5RGhsWGxRbGJSR1h5QVJVeFZsZEx4TmMwUmtSbHlHWWtjbkhBRWFUeUdPbjk2R3dOZzJZVjlQRmtDdFhPY0ViM2w0aw?oc=5"
-  },
-  {
-   "titulo": "Petróleo abre la semana a la baja mientras la atención se centra en flujos de Oriente Medio",
-   "fuente": "El Economista",
-   "fecha": "2026-11-23",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNUFOVlJIVDB5MmZvZlpxeWhLMXV1UEg4cG42SnVZdElSNEpVamx1R1hUSS1FQWZBREljdHpGSFdUNGREeThCZFJjMC11NHZvMUhUSzh6b0x6eFc2bWwzaGU2Z3FKczVhYVpsWDd1VjBKZ0xjdVVVQnJKalVDUlZHVzh6MDNLRS1wVDc5VW9tT0d1MmxJLUpPc3RJckhNZXRoTy03ME1HTU5DN1p0RmwzenF2Z3ltSW5iSWdvZVlTMVVHd9IBxwFBVV95cUxQUG91LTRnWERqNjFxUmhFeVZUTzBvdW1lM2p4Wl8wdlpJRllsV3VHZWNKOHJmSWgwdVZ0UTU0OU9hRVJDa1pRWjFXaFg2ekdjY2dab2JIVXhMcU5nZ2FGcG4zV1FJSEFRLXR5LTZySjBNRGc1YVBiMUotbUg5WUlWYUUwaXBaT1M0cE5hU18tUldpNlUwV1c4NXZneWVWZHlIOVhmU3NQQWtJRVhLZzZZQVNQS3lfZUFxU3hHZTlTUnV3VW1rWGlj?oc=5"
-  },
-  {
-   "titulo": "Premercado | Wall Street se recupera y centra atención en publicación de PCE esta semana: petróleo cae",
-   "fuente": "Valora Analitik",
-   "fecha": "2026-11-23",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOSm5ESHpZcWlKYjQ5Qm5ta0pFSHZaSlRVOGJPYjVJdTNPVmxBOWxmTGk5dnNXX1Y1TXBNYndCV3IxTEtlOU1qNkhDSXJPY05rWndfbGFpQk93Ny1GZXhKeDlxVURDWVFPXzgxNE5vbUdLUlFfRjFnam9fcXNuNG1ZNE05bFR5MVAwS0MzaFBZdTRPWEVFNC1jS2d3dW9namdxNFA1dm1fRkstd3RzXy1MTm9pM25yNDZ3SHVMQ1laQ3NfMV9uTXUxZXJpa9IB0AFBVV95cUxPVklOU0dxc09kMWp0Nklhb2NSZkZpbk01bnZiWDNCUVZ4Uk9tUHhhdkR2aXlRRzBETDk3QlR6SlFNVlVmdWF5LWpCdU56aUFIWHJYQ2puLXRrbVQ3XzRXdFlSU0k5MXNCMHFScXozaUJjeGJ4MXlXakZjR094WlVZM1FhWXJXb0dxblFLQ3IybXV6MnpFU1RLN3ptYW9RejFLNU44Y05pdWdIY0VsOTdpRHV0ZFNYcnM1U19IY2x1UFFTYkFGc2JwVjU5dmtNWExn?oc=5"
-  },
-  {
-   "titulo": "El petróleo se adentra en un nuevo ciclo marcado por grandes superávits: \"Sobrará crudo en el mercado hasta finales de la década\"",
-   "fuente": "El Economista",
-   "fecha": "2026-11-23",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxQU25fMGhBVmZjZGlVcExjNllwb3Y2WWhrd1BTNFZyU2VldXJiaTlGRV9MUVQxeGF4V2tEdHF4YU9KRFJXWElfb1RBUHVDOE90WVdHMnViZmVUcnhJMTZHUmxWcTI0VGQzMnEwRFFUaDQ4YnNlU2pKTFFyd1NwYnQwN1NLMHpOSTRFeTNYUHVpdm9UNmlPbjlRQks0ZWxFbVJ2endIdGY2eU4xN0JVQUhJeFU1cVlyTFFNTTN5aEtQV2FMTFB4RzhYMHQxNGdMZExVQWpzOW9adnlYOW1tT211NjQzVVdfNEFld1ZGbm5PU2FvbE1BbzRCU2hSaFBVaDdJMDVxODMtUGU5RjhiZGlhQkhxYl9UMFFrejQ5MmFnTXd3R2l4cjVScks2bWwtZ9IBmAJBVV95cUxOMVJIVVV0MWFuYnhDMHhqS2N5S3BJQjVFWjkwekh4eTVselNWZ3VkSTNQQUl5ejYybUVJMVBHQVFxYjJ4MHQ4OWhDcjYxaDU2VERjWTFUakZteDVPR3dNRXJ4ekdNMFRlOUFLeXdJUFo2N1J5dkg1a1JLY1Zma2wtR1F3QnFmNlo5TXV2ajFva19ZelBlUjV4ZnRtMG1ZZXVKeHN5TDdyeUNuT0E4akVHbzJKcHZlSS1DaGVZMjdBWFZSMFJRdUxfWU1sVVd0Ui1xUmVXQnVobjFtWEp5SzJ3bGZ5cU5paF9odkFxck02eTdKVmNSMTJZMFJGcU9TV2l0Q0NuV0szejM4VDRHRlF5RmhRUkhzSGda?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOX0ZQcU9zckx0TnFSeGpmVlRUSUYxNXNlOGx3UHQ0VFJkUUNPeVdiNEQ1dWZCSTRlb2dTZFl4dmF6cVlkekZNSkdIdlQxY1ZEQVA0MjZOVXdhNlBNclFTZThrbnZaakNBLXZOVU5hZk44Z25PVXVCWTJYRXFaNGNGN1E4dEplQW9NUVNIeVhDX29aSUlEMW5PUWNtZFkxekU3NDdxZ1U0VkE4aTV3My1UV2dDMmg2TDJUb3NfVG5SV2s2TzDSAdcBQVVfeXFMTlNyN2dPWndJTEJmc2h5TmtDeGRscldwYl9mb0VFSlFWVjk0Tm5jcVB1aEcwSFlZRjRZeGNHN3lNY01rS3VjbWpuT1JBYXlsXzN3bnlMOTA2dUsxQUdibG9nZkxaOWgxUTFRakdlbFNhc2plQno0cEM2RFViOFEzdHZfSmRTY3FQa0p0UkFxUXFzVGlFMFFsZDNCZ3g5X19NWWRoSnRKMWxONjV6TklXZFREWDhERWY4am0ycThLTHpSVENncGdKb3d2ZWNkdlF6amZRTzZiUTQ?oc=5"
   }
  ],
  "tes": {
