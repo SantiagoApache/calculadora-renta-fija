@@ -503,14 +503,17 @@
     op = op || {};
     const u = op.uvr;
     const dvPos = u ? fUVR(rg.dv01Pesos) : fPesos(rg.dv01Pesos, 0);
+    // Valor de giro en pesos sobre el que se calcula el DV01 (se muestra la cuenta completa)
+    const giroR = op.giro != null ? op.giro : (rg.dv01 ? rg.precioActual * rg.dv01Pesos / rg.dv01 : NaN);
+    const dvR = rg.modificadaTrunc / 1e4 * giroR;
     let html = '<div class="tarjeta-b"><div class="mini-g">' +
       mini("Duración de Macaulay", fN(rg.macaulay, 4) + " años") +
-      mini("Duración modificada", fN(rg.modificada, 4), "Truncada: " + fN(rg.modificadaTrunc, 3)) +
+      mini("Duración modificada", fN(rg.modificada, 6), "Truncada a 3 decimales: " + fN(rg.modificadaTrunc, 3)) +
       mini("Convexidad", fN(rg.convexidad, 4)) +
       mini("DV01 de la posición", dvPos, u ? "En pesos: " + fPesos(op.dv01PesosRegla, 0) : "Por 100: " + fN(rg.dv01, 6)) +
       "</div>" +
-      '<p class="nota">DV01 = duración modificada truncada a 3 decimales ÷ 10.000 × valor de giro: lo que cambia el valor de la posición por cada punto básico. ' +
-      "Los movimientos de la tasa de −400 a +400 pb están en la pestaña Escenarios.</p></div>";
+      '<p class="nota formula">DV01 = duración modificada truncada ÷ 10.000 × valor de giro = <b class="num">' + esc(fN(rg.modificadaTrunc, 3) + " ÷ 10.000 × " + fPesos(giroR, 0) + " = " + fPesos(dvR, 0)) +
+      "</b>. Es lo que cambia el valor de la posición por cada punto básico. Los movimientos de −400 a +400 pb están en la pestaña Escenarios.</p></div>";
     return html;
   }
   const mini = (l, v, s) => '<div class="mini"><div class="kpi-l">' + esc(l) + '</div><div class="kpi-v">' + esc(v) + "</div>" + (s ? '<div class="kpi-s">' + esc(s) + "</div>" : "") + "</div>";
@@ -668,7 +671,7 @@
       avisos: tirVto ? [{ tipo: "info", html: "La TIR en pesos al vencimiento es una estimación: proyecta la UVR con el IPC vigente a la negociación (" + fPct(tirVto.inflacionSupuesta, 2) + " anual)." }] : [],
       graf: graficoPrecioTasa({ flujos: r.flujos, t: r.t, tasa, precioActual: r.precioSucioTruncado, dmod: rg.modificada, conv: rg.convexidad }),
       tabs: [{ id: "flujos", n: "Flujos", html: conTabla(idF, tf) },
-             { id: "riesgo", n: "Riesgo", html: bloqueRiesgo(rg, { uvr: true, uvrPesos: r.uvr, dv01PesosRegla: dvPesos, etiquetaTasa: "Tasa UVR" }) }],
+             { id: "riesgo", n: "Riesgo", html: bloqueRiesgo(rg, { uvr: true, uvrPesos: r.uvr, dv01PesosRegla: dvPesos, etiquetaTasa: "Tasa UVR", giro: r.valorGiro }) }],
       marcaTES: { x: r.t[r.t.length - 1], y: tasa, texto: "Este bono UVR: " + fPct(tasa, 2) },
       posicion: { form: k, v: Object.assign({}, v) },
       resumen: { tipo: "UVR", bono: "Cupón " + fPct(cupon, 2) + " · vence " + fF(ve), compra: fc, nominal: corta(r.nominalUVR) + " UVR", precio: r.precioSucioTruncado, giro: r.valorGiro,
@@ -1085,7 +1088,7 @@
     $("#modal-t").textContent = titulo; $("#modal-s").textContent = sub; $("#modal-b").innerHTML = html;
     $("#modal").hidden = false; $("#modal [data-cerrar-modal]").focus();
   }
-  const cerrarModal = () => { $("#modal").hidden = true; };
+  const cerrarModal = () => { $("#modal").hidden = true; $("#modal .modal-c").classList.remove("ancho"); };
   $("#modal").addEventListener("click", e => { if (e.target.id === "modal" || e.target.closest("[data-cerrar-modal]")) cerrarModal(); });
   (function () {
     const R = $("#resultados");
@@ -1108,6 +1111,7 @@
   let ULTIMO = null, PEST = [];
   function calcular() {
     if (ST.calc === "port") { pintarPortafolio(); return; }
+    if (ST.calc === "graficos") { pintarGraficosMercado(); return; }
     const md = modoActual(), clave = ST.calc === "ibr" ? "ibr_" + md.id : md.form;
     const v = ST.v[md.form];
     let vista;
@@ -1159,6 +1163,11 @@
   function pintarNav() {
     $("#nav-calcs").innerHTML = Object.keys(CALCS).map(k => '<button class="calc-b" data-calc="' + k + '" aria-pressed="' + (ST.calc === k) + '">' + esc(CALCS[k].nombre) + "<small>" + esc(CALCS[k].corto) + "</small></button>").join("") +
       '<button class="calc-b port" id="btn-port" data-calc="port" aria-pressed="' + (ST.calc === "port") + '"><span>Portafolio' + (PORT.pos.length ? '<span class="cuenta">' + PORT.pos.length + "</span>" : "") + "</span><small>Posiciones y carry</small></button>";
+    const bg = $("#btn-graf"); if (bg) bg.setAttribute("aria-pressed", ST.calc === "graficos");
+    if (ST.calc === "graficos") {
+      $("#cab").innerHTML = "<div><h1>Gráficos de mercado</h1><p>Curvas de rendimiento de los TES, inflación implícita, IBR por plazos y la evolución de las tasas, para tener el mercado a la mano.</p></div>";
+      return;
+    }
     if (ST.calc === "port") {
       $("#cab").innerHTML = "<div><h1>Portafolio</h1><p>Las compras que has guardado desde las calculadoras, con el valor total, la TIR, la duración, el DV01, los próximos cupones y el carry neto.</p></div>";
       return;
@@ -1167,21 +1176,23 @@
     $("#cab").innerHTML = '<div><h1>' + esc(c.nombre) + " · " + esc(md.nombre) + "</h1><p>" + esc(md.desc) + '</p></div><div class="seg submodos" id="submodos" role="group" aria-label="Modo">' +
       c.modos.map(m => '<button data-modo="' + m.id + '" aria-pressed="' + (m.id === md.id) + '">' + esc(m.nombre) + "</button>").join("") + "</div>";
   }
+  const ESPECIAL = { port: "#portafolio", graficos: "#graficos" };
   function irA(calc, modo) {
     ST.calc = calc;
-    const esPort = calc === "port";
-    $("#zona-calc").hidden = esPort; $("#portafolio").hidden = !esPort;
-    if (!esPort && modo) ST.modo[calc] = modo;
-    pintarNav();
-    if (esPort) pintarPortafolio();
+    const esp = ESPECIAL[calc];
+    $("#zona-calc").hidden = !!esp; $("#portafolio").hidden = calc !== "port"; $("#graficos").hidden = calc !== "graficos";
+    if (!esp && modo) ST.modo[calc] = modo;
+    pintarNav(); cerrarPanel();
+    if (calc === "port") pintarPortafolio();
+    else if (calc === "graficos") pintarGraficosMercado();
     else { pintarForm(); delete $("#resultados").dataset.ok; calcular(); }
-    const h = esPort ? "#port" : "#" + calc + "-" + ST.modo[calc];
+    const h = esp ? "#" + calc : "#" + calc + "-" + ST.modo[calc];
     if (location.hash !== h) { try { history.replaceState(null, "", h); } catch (e) { location.hash = h; } }
-    if (esPort) window.scrollTo(0, 0);
+    if (esp) window.scrollTo(0, 0);
   }
   function desdeHash() {
     const m = (location.hash || "").replace("#", "").split("-");
-    if (m[0] === "port") return ["port", null];
+    if (ESPECIAL[m[0]]) return [m[0], null];
     if (CALCS[m[0]]) { const md = CALCS[m[0]].modos.find(x => x.id === m[1]); return [m[0], md ? md.id : null]; }
     return null;
   }
@@ -1217,6 +1228,7 @@
     if (b.id === "btn-guia" || b.dataset.guia !== undefined) return guia.iniciar();
     if (b.id === "cerrar-aviso") { lsSet("rf_aviso_guia", "1"); $("#aviso-guia").hidden = true; return; }
     if (b.dataset.trmvivo !== undefined) return trmEnVivo(true);
+    if (b.dataset.noticias !== undefined) { cerrarPanel(); abrirNoticias(); return; }
     if (b.dataset.act) { lsSet("rf_actualidad", b.dataset.act === "ocultar" ? "oculta" : ""); pintarActualidad(); return; }
   });
   const form = () => $("#formulario");
@@ -1444,8 +1456,7 @@
       esc((x.detalle || "") + (x.fecha ? " · " + fF(M.aDia(x.fecha)) : "")) + (x.url ? ' · <a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.fuente) + "</a>" : x.fuente ? " · " + esc(x.fuente) : "") + "</span></div>").join("") +
       '<p class="nota">Actualizado el ' + esc(fF(M.aDia(MERC.actualizado || M.aTexto(hoy)))) + ". " + (local ? "En esta copia local puedes traer la TRM en vivo desde datos.gov.co." : /github\.io$/.test(location.hostname) ? "Se actualiza automáticamente dos veces al día." : "") + "</p>" +
       (local ? '<div style="margin-top:8px"><button class="btn mini" data-trmvivo>Traer TRM en vivo</button></div>' : "") +
-      "</div>" + '<div><h4>Agenda</h4>' + (proximos(12).map(htmlEvento).join("") || '<p class="nota">No hay fechas cargadas.</p>') + '<p class="nota">' + esc((window.AGENDA && window.AGENDA.nota) || "") + "</p></div>" +
-      '<div><h4>Noticias de Colombia</h4>' + grupo("Colombia") + '</div><div><h4>Noticias del mundo</h4>' + grupo("Mundo") + "</div>" + htmlDeudaPublica();
+      "</div>" + htmlDeudaPublica() + '<div class="fila-b" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" data-noticias>Noticias y agenda</button><button class="btn" data-calc="graficos">Gráficos de mercado</button></div>';
   }
   // ---------- Noticias con su efecto y agenda ----------
   // El tema se reconoce por palabras del titular; el texto es el efecto típico sobre la renta fija.
@@ -1477,13 +1488,122 @@
   function pintarActualidad() {
     const A = $("#actualidad"); if (!A) return;
     const oculta = lsGet("rf_actualidad") === "oculta";
-    const notas = ((MERC && MERC.noticias) || []).slice().sort((a, b) => (a.fecha < b.fecha) - (a.fecha > b.fecha)).slice(0, 4);
-    const ev = proximos(3);
-    A.innerHTML = '<div class="act-c"><h2>Noticias y agenda</h2><div class="act-b">' + (oculta ? "" : '<button class="btn mini" data-abrir="mercado">Ver todo</button>') +
+    const todas = ((MERC && MERC.noticias) || []).slice().sort((a, b) => (a.fecha < b.fecha) - (a.fecha > b.fecha));
+    const de = amb => todas.filter(n => n.ambito === amb).slice(0, 3);
+    const fila = (amb, et) => { const ns = de(amb); return ns.length ? '<div class="act-fila"><span class="act-et">' + et + '</span><div class="act-n">' + ns.map(n => htmlNoticia(Object.assign({}, n, { ambito: "" }), false)).join("") + "</div></div>" : ""; };
+    A.innerHTML = '<div class="act-c"><h2>Noticias y agenda</h2><div class="act-b">' + (oculta ? "" : '<button class="btn mini" data-noticias>Ver todo</button>') +
       '<button class="btn mini" data-act="' + (oculta ? "mostrar" : "ocultar") + '">' + (oculta ? "Mostrar" : "Ocultar") + "</button></div></div>" +
-      (oculta ? "" : '<div class="act-g"><div class="act-n">' + (notas.map(n => htmlNoticia(n, false)).join("") || '<p class="nota">Sin noticias por ahora.</p>') + '</div><div class="act-a"><h4>Próximas fechas clave</h4>' +
-        (ev.map(htmlEvento).join("") || '<p class="nota">No hay fechas cargadas.</p>') + "</div></div>");
+      (oculta ? "" : '<div class="act-g"><div class="act-col">' + (fila("Colombia", "Colombia") + fila("Mundo", "Mundo") || '<p class="nota">Sin noticias por ahora.</p>') + '</div><div class="act-a"><h4>Próximas fechas clave</h4>' +
+        (proximos(4).map(htmlEvento).join("") || '<p class="nota">No hay fechas cargadas.</p>') + "</div></div>");
   }
+  // =============================================================
+  // GRÁFICOS DE MERCADO (sección propia, junto a Mercado)
+  // =============================================================
+  // Gráfico de líneas genérico: series [{nombre, color, pts [[x,y]], w, d, puntos, etiqueta}]
+  function lineas(o) {
+    const todas = [].concat(...o.series.map(s => s.pts)).filter(p => isFinite(p[0]) && isFinite(p[1]));
+    if (!todas.length) return '<p class="nota">Sin datos.</p>';
+    const xs = todas.map(p => p[0]), ys = todas.map(p => p[1]).concat(o.yExtra || []);
+    let x0 = o.x0 != null ? o.x0 : Math.min.apply(null, xs), x1 = o.x1 != null ? o.x1 : Math.max.apply(null, xs);
+    let ymin = Math.min.apply(null, ys), ymax = Math.max.apply(null, ys);
+    const pad = (ymax - ymin) * 0.12 || Math.abs(ymax) * 0.05 || 1; ymin -= pad; ymax += pad;
+    const tx = o.tx || (x => x), { sx: sx0, sy } = marco(tx(x0), tx(x1), ymin, ymax), sx = x => sx0(tx(x));
+    let s = ejes(o.xticks || ticks(x0, x1, 6), ticks(ymin, ymax, 5), sx, sy, o.xfmt || (x => fN(x, 0)), o.yfmt || (y => fN(y, 1)));
+    (o.bandas || []).forEach(b => { s += '<rect x="' + ML + '" width="' + (W - ML - MR) + '" y="' + sy(b[1]) + '" height="' + (sy(b[0]) - sy(b[1])) + '" fill="' + b[2] + '"/>'; });
+    o.series.forEach(se => {
+      const pts = se.pts.filter(p => isFinite(p[0]) && isFinite(p[1]));
+      if (!pts.length) return;
+      s += '<path d="' + pts.map((p, i) => (i ? "L" : "M") + sx(p[0]).toFixed(1) + " " + sy(p[1]).toFixed(1)).join(" ") + '" fill="none" stroke="' + se.color + '" stroke-width="' + (se.w || 2.2) + '"' +
+        (se.d ? ' stroke-dasharray="' + se.d + '"' : "") + ' stroke-linejoin="round"/>';
+      if (se.puntos) pts.forEach(p => {
+        s += '<circle cx="' + sx(p[0]) + '" cy="' + sy(p[1]) + '" r="3.6" fill="' + se.color + '" stroke="var(--panel)" stroke-width="1.5"><title>' + esc(se.nombre + ": " + (o.yfmt || (y => fN(y, 2)))(p[1])) + "</title></circle>";
+        if (se.etiqueta) s += '<text x="' + sx(p[0]) + '" y="' + (sy(p[1]) + (se.etiqueta === "abajo" ? 17 : -9)) + '" text-anchor="middle" style="fill:' + se.color + '">' + esc(fN(p[1], 2)) + "</text>";
+      });
+      if (se.final) { const u = pts[pts.length - 1]; s += '<text x="' + (sx(u[0]) - 4) + '" y="' + (sy(u[1]) - 8) + '" text-anchor="end" style="fill:' + se.color + '">' + esc(se.final(u[1])) + "</text>"; }
+    });
+    return '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(o.aria || "Gráfico") + '">' + s + "</svg>";
+  }
+  const ultimoNoNulo = (arr, fechas) => { for (let i = arr.length - 1; i >= 0; i--) if (arr[i] != null && isFinite(arr[i])) return [fechas[i], arr[i]]; return null; };
+  const ticksFechas = (x0, x1, n) => { const out = [], paso = (x1 - x0) / n; for (let i = 0; i <= n; i++) out.push(Math.round(x0 + paso * i)); return out; };
+  function graficosMercado() {
+    const T = MERC && MERC.tes, out = [];
+    // 1. Curvas de rendimiento: TES pesos, TES UVR, inflación implícita e IBR por plazos
+    const b = S.ibr, n = b.fechas.length;
+    const ibrPl = [["overnight", 1 / 365], ["m1", 1 / 12], ["m3", 0.25], ["m6", 0.5], ["m12", 1]].map(([c, x]) => { const u = ultimoNoNulo(b[c], b.fechas); return u ? [x, u[1], u[0]] : null; }).filter(Boolean);
+    const series = [];
+    if (T && Array.isArray(T.pesos)) {
+      const X = T.plazos || [1, 5, 10];
+      series.push({ nombre: "TES en pesos", color: "var(--accent)", pts: X.map((x, i) => [x, T.pesos[i]]), puntos: true, etiqueta: "arriba", w: 2.6 });
+      if (T.mes) series.push({ nombre: "TES en pesos hace un mes", color: "var(--accent)", pts: X.map((x, i) => [x, T.mes.pesos[i]]), d: "5 4", w: 1.2 });
+      series.push({ nombre: "TES en UVR", color: "var(--warn)", pts: X.map((x, i) => [x, T.uvr[i]]), puntos: true, etiqueta: "arriba", w: 2.6 });
+      series.push({ nombre: "Inflación implícita (IPC)", color: "var(--pos)", pts: X.map((x, i) => [x, ((1 + T.pesos[i] / 100) / (1 + T.uvr[i] / 100) - 1) * 100]), puntos: true, etiqueta: "abajo", w: 2.2 });
+    }
+    if (ibrPl.length) series.push({ nombre: "IBR por plazo", color: "var(--accent-2)", pts: ibrPl.map(p => [p[0], p[1]]), puntos: true, etiqueta: "abajo", w: 2.2, d: "1 0" });
+    if (series.length) {
+      const lab = { [1 / 12]: "1 m", 0.25: "3 m", 0.5: "6 m", 1: "1 a", 5: "5 a", 10: "10 a" };
+      out.push({ titulo: "Curvas de rendimiento",
+        sub: "Tasa según el plazo. TES (cero cupón) del " + (T ? fF(M.aDia(T.fecha)) : "—") + "; IBR del " + (ibrPl.length ? fF(ibrPl[0][2]) : "—") + ". La inflación implícita sale de (1 + TES pesos) ÷ (1 + TES UVR) − 1: es la inflación que el mercado está cobrando para cada plazo. El eje del plazo está comprimido para que se vean los plazos cortos.",
+        leyenda: series.filter(s => !s.d || s.d === "1 0").map(s => [s.color, s.nombre]).concat(T && T.mes ? [["var(--dim)", "Punteada: TES en pesos hace un mes"]] : []),
+        svg: lineas({ series, x0: 0, x1: 10.4, tx: Math.sqrt, xticks: [1 / 12, 0.25, 0.5, 1, 5, 10], xfmt: x => lab[x] || fN(x, 0), yfmt: y => fN(y, 1) + "%", aria: "Curvas de rendimiento de TES, inflación implícita e IBR" }) });
+    }
+    // 2. TES en el último año
+    if (T && T.historia && T.historia.length > 3) {
+      const h = T.historia.map(r => [M.aDia(r[0]), r[1], r[2], r[3]]), x0 = h[0][0], x1 = h[h.length - 1][0];
+      const ser = [["TES 1 año", 1, "var(--accent-2)"], ["TES 5 años", 2, "var(--accent)"], ["TES 10 años", 3, "var(--warn)"]].map(([nm, k, c]) => ({ nombre: nm, color: c, pts: h.map(r => [r[0], r[k]]), w: k === 3 ? 2.4 : 1.8, final: y => fN(y, 2) + "%" }));
+      out.push({ titulo: "TES en pesos: último año", sub: "Tasas cero cupón semanales, Banco de la República. Si las líneas se juntan, la curva se aplana.", leyenda: ser.map(s => [s.color, s.nombre]),
+        svg: lineas({ series: ser, xticks: ticksFechas(x0, x1, 5), xfmt: fFcorta, yfmt: y => fN(y, 1) + "%", aria: "TES en pesos en el último año" }) });
+      const pend = h.map(r => [r[0], (r[3] - r[1]) * 100]);
+      out.push({ titulo: "Pendiente de la curva (10 años − 1 año)", sub: "En puntos básicos. Positiva: el mercado pide más por prestar a largo plazo; si cae, la curva se aplana.", leyenda: [["var(--pos)", "Pendiente"]],
+        svg: lineas({ series: [{ nombre: "Pendiente", color: "var(--pos)", pts: pend, final: y => fN(y, 0) + " pb" }], yExtra: [0], xticks: ticksFechas(x0, x1, 5), xfmt: fFcorta, yfmt: y => fN(y, 0) + " pb", aria: "Pendiente de la curva de TES" }) });
+    }
+    // 3. IBR en los dos últimos años
+    if (n > 30) {
+      const desde = b.fechas[n - 1] - 730, idx = b.fechas.map((f, i) => i).filter(i => b.fechas[i] >= desde);
+      const pick = c => idx.filter((i, k) => k % 3 === 0 || k === idx.length - 1).map(i => [b.fechas[i], b[c][i]]).filter(p => p[1] != null);
+      const ser = [{ nombre: "IBR overnight", color: "var(--accent)", pts: pick("overnight"), w: 2.2, final: y => fN(y, 2) + "%" }, { nombre: "IBR 3 meses", color: "var(--accent-2)", pts: pick("m3"), w: 1.5 }, { nombre: "IBR 12 meses", color: "var(--warn)", pts: pick("m12"), w: 1.5 }];
+      out.push({ titulo: "IBR: últimos dos años", sub: "Tasa nominal anual. El overnight sigue de cerca la tasa del Banco de la República; los plazos largos anticipan lo que el mercado espera.", leyenda: ser.map(s => [s.color, s.nombre]),
+        svg: lineas({ series: ser, xticks: ticksFechas(b.fechas[idx[0]], b.fechas[n - 1], 5), xfmt: fFcorta, yfmt: y => fN(y, 1) + "%", aria: "IBR en los últimos dos años" }) });
+    }
+    // 4. Inflación frente a la meta
+    const ip = S.ipc, m = ip.fechas.length;
+    if (m > 12) {
+      const k0 = Math.max(0, m - 48), pts = ip.fechas.slice(k0).map((f, i) => [f, ip.inflacion[k0 + i]]);
+      out.push({ titulo: "Inflación anual frente a la meta", sub: "IPC total anual. La franja es el rango de la meta del Banco de la República (3 % ± 1 punto).", leyenda: [["var(--pos)", "IPC anual"], ["rgba(57,201,138,.25)", "Meta 2 % – 4 %"]],
+        svg: lineas({ series: [{ nombre: "IPC anual", color: "var(--pos)", pts, w: 2.4, final: y => fN(y, 2) + "%" }], bandas: [[2, 4, "rgba(57,201,138,.10)"]], yExtra: [2, 4], xticks: ticksFechas(pts[0][0], pts[pts.length - 1][0], 5), xfmt: fFcorta, yfmt: y => fN(y, 1) + "%", aria: "Inflación anual frente a la meta" }) });
+    }
+    // 5. IBR que espera el mercado (curva FR más reciente)
+    const cs = (S.curvas || []).filter(c => c.fechas.length > 1);
+    if (cs.length) {
+      const c = cs[cs.length - 1], lim = c.fechas[0] + 365 * 5, k = Math.max(1, Math.ceil(c.fechas.length / 400));
+      const pts = c.fechas.map((f, i) => [f, c.tasas[i] * 100]).filter((p, i) => p[0] <= lim && (i % k === 0));
+      out.push({ titulo: "IBR esperado: próximos cinco años", sub: "Curva " + c.nombre + ". Es el IBR nominal que el mercado descuenta para cada fecha futura; con ella se proyectan los cupones IBR.", leyenda: [["var(--accent-2)", c.nombre]],
+        svg: lineas({ series: [{ nombre: c.nombre, color: "var(--accent-2)", pts, w: 2.2 }], xticks: ticksFechas(pts[0][0], pts[pts.length - 1][0], 5), xfmt: fFcorta, yfmt: y => fN(y, 1) + "%", aria: "IBR esperado según la curva FR" }) });
+    }
+    // 6. UVR en el último año
+    const u = S.uvr, nu = u.fechas.length;
+    if (nu > 30) {
+      const fin = u.fechas[nu - 1], ini = fin - 400, pts = [];
+      u.fechas.forEach((f, i) => { if (f >= ini && (i % 3 === 0 || i === nu - 1)) pts.push([f, u.valores[i]]); });
+      out.push({ titulo: "UVR", sub: "Valor diario, incluidos los días que el Banco de la República ya publicó hacia adelante (hasta el " + fF(fin) + ").", leyenda: [["var(--warn)", "UVR"]],
+        svg: lineas({ series: [{ nombre: "UVR", color: "var(--warn)", pts, w: 2.2, final: y => fN(y, 2) }], xticks: ticksFechas(pts[0][0], fin, 5), xfmt: fFcorta, yfmt: y => fN(y, 0), aria: "UVR diaria" }) });
+    }
+    return out;
+  }
+  function pintarGraficosMercado() {
+    const G = $("#graficos"), gs = graficosMercado();
+    G.innerHTML = gs.length ? '<div class="graf-g">' + gs.map(g => '<section class="tarjeta' + (g.ancho ? " ancho" : "") + '">' + bloqueGrafico(g) + "</section>").join("") + "</div>" :
+      '<div class="tarjeta vacio"><h3>Sin datos de mercado</h3><p>Los gráficos aparecen cuando las bases tienen datos.</p></div>';
+  }
+  // Ventana con todas las noticias y la agenda
+  function abrirNoticias() {
+    const notas = ((MERC && MERC.noticias) || []).slice().sort((a, b) => (a.fecha < b.fecha) - (a.fecha > b.fecha));
+    const grupo = amb => notas.filter(x => x.ambito === amb).map(x => htmlNoticia(Object.assign({}, x, { ambito: "" }), false)).join("") || '<p class="nota">Sin noticias por ahora.</p>';
+    abrirModal("Noticias y agenda", "Actualizado el " + fF(M.aDia(MERC.actualizado || M.aTexto(hoy))) + ". Toca un titular para leer la noticia completa.",
+      '<div class="not-g"><div><h4>Colombia</h4>' + grupo("Colombia") + '</div><div><h4>Mundo</h4>' + grupo("Mundo") + '</div><div class="not-ag"><h4>Agenda</h4>' +
+      (proximos(14).map(htmlEvento).join("") || '<p class="nota">No hay fechas cargadas.</p>') + '<p class="nota">' + esc((window.AGENDA && window.AGENDA.nota) || "") + "</p></div></div>");
+    $("#modal .modal-c").classList.add("ancho");
+  }
+
   // Deuda pública local: tasas cero cupón de los TES que publica el Banco de la República
   function htmlDeudaPublica() {
     const T = MERC && MERC.tes;
@@ -1494,7 +1614,7 @@
     const ba = T.bidask ? '<div class="ind"><span class="ind-n">Bid-ask spread de los TES</span><span class="ind-v">' + esc(fN(T.bidask.pesos, 2)) + " · " + esc(fN(T.bidask.uvr, 2)) + '</span><span class="ind-d">Pesos · UVR. Diferencia entre las puntas de compra y de venta: entre más baja, más líquido el mercado · ' +
       esc(fF(M.aDia(T.bidask.fecha))) + ' · <a href="' + esc(T.bidask.url) + '" target="_blank" rel="noopener">Banco de la República</a></span></div>' : "";
     return '<div><h4>Deuda pública local (TES)</h4><div class="tabla-w"><table><thead><tr><th class="t">Tasa cero cupón</th><th>TES en pesos</th><th>TES en UVR</th></tr></thead><tbody>' + filas + "</tbody></table></div>" +
-      '<p class="nota">Datos del ' + esc(fF(M.aDia(T.fecha))) + (T.mes ? "; en pequeño, el cambio frente al " + esc(fF(M.aDia(T.mes.fecha))) : "") + '. Fuente: <a href="' + esc(T.url) + '" target="_blank" rel="noopener">Banco de la República</a>. La curva se ve en la pestaña Gráficos de cada calculadora.</p>' + ba + "</div>";
+      '<p class="nota">Datos del ' + esc(fF(M.aDia(T.fecha))) + (T.mes ? "; en pequeño, el cambio frente al " + esc(fF(M.aDia(T.mes.fecha))) : "") + '. Fuente: <a href="' + esc(T.url) + '" target="_blank" rel="noopener">Banco de la República</a>. La curva completa está en Gráficos de mercado.</p>' + ba + "</div>";
   }
   async function trmEnVivo(avisar) {
     try {
@@ -1651,7 +1771,7 @@
   ];
   const guia = {
     activo: false, i: 0,
-    iniciar() { cerrarPanel(); cerrarModal(); if (ST.calc === "port") irA("tf"); this.activo = true; this.i = 0; $("#foco").hidden = false; $("#guia").hidden = false; this.mostrar(); },
+    iniciar() { cerrarPanel(); cerrarModal(); if (ESPECIAL[ST.calc]) irA("tf"); this.activo = true; this.i = 0; $("#foco").hidden = false; $("#guia").hidden = false; this.mostrar(); },
     fin() { this.activo = false; $("#foco").hidden = true; $("#guia").hidden = true; lsSet("rf_aviso_guia", "1"); const a = $("#aviso-guia"); if (a) a.hidden = true; },
     mostrar() {
       const p = PASOS[this.i], el = $(p.sel);
@@ -1689,7 +1809,7 @@
     const h = desdeHash();
     if (h) { ST.calc = h[0]; if (h[1]) ST.modo[h[0]] = h[1]; }
     pintarCinta(); pintarActualidad();
-    if (ST.calc === "port") irA("port"); else { pintarNav(); pintarForm(); calcular(); }
+    if (ESPECIAL[ST.calc]) irA(ST.calc); else { pintarNav(); pintarForm(); calcular(); }
     if (lsGet("rf_aviso_guia") === "1") $("#aviso-guia").hidden = true;
     window.addEventListener("hashchange", () => { const x = desdeHash(); if (x && (x[0] !== ST.calc || (x[1] && x[1] !== ST.modo[x[0]]))) irA(x[0], x[1]); });
     if (location.protocol === "file:") trmEnVivo(false);
@@ -1699,7 +1819,7 @@
     if (!window.claude || typeof window.claude.use !== "function") return;
     try {
       NS_DESCARGAS = await window.claude.use("downloads");
-      if (!NS_DESCARGAS) { DESCARGAS = false; if (ST.calc === "port") pintarPortafolio(); else if (ULTIMO) pintarResultados(ULTIMO); }
+      if (!NS_DESCARGAS) { DESCARGAS = false; if (ST.calc === "port") pintarPortafolio(); else if (!ESPECIAL[ST.calc] && ULTIMO) pintarResultados(ULTIMO); }
     } catch (e) { DESCARGAS = false; }
     try {
       const db = await window.claude.use("db");
@@ -1709,7 +1829,7 @@
         const d = snap.data();
         if (d && Array.isArray(d.indicadores)) {
           MERC = { actualizado: d.actualizado || MERC.actualizado, indicadores: d.indicadores, noticias: Array.isArray(d.noticias) ? d.noticias : MERC.noticias, tes: d.tes || MERC.tes };
-          pintarCinta(); pintarActualidad(); if (PANEL === "mercado") abrirPanel("mercado");
+          pintarCinta(); pintarActualidad(); if (PANEL === "mercado") abrirPanel("mercado"); if (ST.calc === "graficos") pintarGraficosMercado();
         }
       }, () => { /* se queda con los datos incluidos */ });
     } catch (e) { /* sin base: datos incluidos */ }
