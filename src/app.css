@@ -344,3 +344,11 @@ th { border-bottom-color: var(--neon); }
 .formula b { color: var(--fg); font-weight: 500; }
 .comp-f { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 260px)); gap: 10px 14px; }
 .grupo.copiar { background: rgba(64, 140, 255, .05); }
+/* Gráficos interactivos (mismo recuadro que el de escenarios) */
+.gi-wrap { position: relative; }
+.gi-wrap svg { cursor: crosshair; touch-action: pan-y; }
+.gi-cur { pointer-events: none; }
+.esc-tip i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+.esc-tip div span:first-child { white-space: nowrap; }
+.gi-tip { width: max-content; max-width: 320px; }
+.esc-tip div span:last-child { white-space: nowrap; }

@@ -500,6 +500,17 @@
     };
   }
 
+  // Cupón real (spread sobre la UVR) con el que un bono UVR que se emite hoy a la par
+  // y se mantiene al vencimiento rinde la TIR en pesos objetivo. La UVR futura se
+  // proyecta con el IPC vigente a la emisión o con la senda de IPC estimado.
+  function spreadObjetivoUVR(o) {
+    const r = c => rentabilidadUVR({ emision: o.emision, vencimiento: o.vencimiento, periodo: o.periodo, tasaCupon: c, tipo: "estimada",
+      fechaCompra: o.emision, fechaVenta: o.vencimiento, modoCompra: "precio", precioCompra: 100, modoVenta: "precio", precioVenta: 100,
+      serieUVR: o.serieUVR, serieIPC: o.serieIPC, senda: o.senda || null, nominal: o.nominal, nominalEn: o.nominalEn || "pesos", diasTir: o.diasTir });
+    const c = raiz(x => r(x).tirPesos - o.tir, -0.2, 0.6, 1e-12);
+    return Object.assign({ tasaCupon: c }, isFinite(c) ? r(c) : {});
+  }
+
   // ---------------------------------------------------------------
   // IBR: festivos de Colombia, regla de la tasa aplicable
   // ---------------------------------------------------------------
@@ -719,7 +730,7 @@
   const Motor = {
     aDia, aTexto, ymd, sumarMeses, finDeMes, dias365, dias30360, truncar, redondear, tirOperacion, raiz,
     calendario, tablaFlujos, interesCorrido, precioTasaFija, tasaCC, operacionTasaFija, riesgo,
-    ipcVigente, precioIPC, rentabilidadIPC, seriePronostico, sendaEn, construirSenda, spreadObjetivoIPC, spreadObjetivoIBR,
+    ipcVigente, precioIPC, rentabilidadIPC, seriePronostico, sendaEn, construirSenda, spreadObjetivoIPC, spreadObjetivoIBR, spreadObjetivoUVR,
     uvrEnFecha, precioUVR, uvrProyectada, rentabilidadUVR,
     festivos, esHabil, fechaIbrAplicable, ibrReal, ibrCurva, rentabilidadIBR, sendaTirIBR
   };

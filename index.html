@@ -355,6 +355,14 @@ th { border-bottom-color: var(--neon); }
 .formula b { color: var(--fg); font-weight: 500; }
 .comp-f { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 260px)); gap: 10px 14px; }
 .grupo.copiar { background: rgba(64, 140, 255, .05); }
+/* Gráficos interactivos (mismo recuadro que el de escenarios) */
+.gi-wrap { position: relative; }
+.gi-wrap svg { cursor: crosshair; touch-action: pan-y; }
+.gi-cur { pointer-events: none; }
+.esc-tip i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+.esc-tip div span:first-child { white-space: nowrap; }
+.gi-tip { width: max-content; max-width: 320px; }
+.esc-tip div span:last-child { white-space: nowrap; }
 
 </style>
 </head>
@@ -911,6 +919,17 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
     };
   }
 
+  // Cupón real (spread sobre la UVR) con el que un bono UVR que se emite hoy a la par
+  // y se mantiene al vencimiento rinde la TIR en pesos objetivo. La UVR futura se
+  // proyecta con el IPC vigente a la emisión o con la senda de IPC estimado.
+  function spreadObjetivoUVR(o) {
+    const r = c => rentabilidadUVR({ emision: o.emision, vencimiento: o.vencimiento, periodo: o.periodo, tasaCupon: c, tipo: "estimada",
+      fechaCompra: o.emision, fechaVenta: o.vencimiento, modoCompra: "precio", precioCompra: 100, modoVenta: "precio", precioVenta: 100,
+      serieUVR: o.serieUVR, serieIPC: o.serieIPC, senda: o.senda || null, nominal: o.nominal, nominalEn: o.nominalEn || "pesos", diasTir: o.diasTir });
+    const c = raiz(x => r(x).tirPesos - o.tir, -0.2, 0.6, 1e-12);
+    return Object.assign({ tasaCupon: c }, isFinite(c) ? r(c) : {});
+  }
+
   // ---------------------------------------------------------------
   // IBR: festivos de Colombia, regla de la tasa aplicable
   // ---------------------------------------------------------------
@@ -1130,7 +1149,7 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
   const Motor = {
     aDia, aTexto, ymd, sumarMeses, finDeMes, dias365, dias30360, truncar, redondear, tirOperacion, raiz,
     calendario, tablaFlujos, interesCorrido, precioTasaFija, tasaCC, operacionTasaFija, riesgo,
-    ipcVigente, precioIPC, rentabilidadIPC, seriePronostico, sendaEn, construirSenda, spreadObjetivoIPC, spreadObjetivoIBR,
+    ipcVigente, precioIPC, rentabilidadIPC, seriePronostico, sendaEn, construirSenda, spreadObjetivoIPC, spreadObjetivoIBR, spreadObjetivoUVR,
     uvrEnFecha, precioUVR, uvrProyectada, rentabilidadUVR,
     festivos, esHabil, fechaIbrAplicable, ibrReal, ibrCurva, rentabilidadIBR, sendaTirIBR
   };
@@ -1247,7 +1266,8 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
       nombre: "UVR", corto: "TES en unidades UVR",
       modos: [
         { id: "valorar", nombre: "Valorar", form: "uvr_valorar", desc: "Precio del TES UVR, valor de giro en pesos y en UVR con la UVR del día, y su riesgo en ambas unidades." },
-        { id: "rent", nombre: "Rentabilidad", form: "uvr_rent", desc: "TIR de la operación en pesos y en UVR. La estimada proyecta la UVR con el IPC vigente a la compra o con la senda de IPC estimado; la real usa la UVR publicada." }
+        { id: "rent", nombre: "Rentabilidad", form: "uvr_rent", desc: "TIR de la operación en pesos y en UVR. La estimada proyecta la UVR con el IPC vigente a la compra o con la senda de IPC estimado; la real usa la UVR publicada." },
+        { id: "spread", nombre: "Spread por TIR", form: "uvr_spread", desc: "Cupón sobre la UVR (UVR + spread) con el que un bono que se emite hoy a la par rinde la TIR en pesos que quieres, proyectando la UVR con el IPC vigente o con la senda de IPC estimado." }
       ]
     },
     ipc: {
@@ -1336,6 +1356,17 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
       { t: "Monto", c: [
         { id: "nominalEn", l: "Nominal expresado en", tipo: "seg", op: [["pesos", "Pesos"], ["uvr", "UVR"]], v: "pesos", ancho: true },
         { id: "nominal", l: "Valor nominal", tipo: "dinero", v: "10.000.000.000", ancho: true, unidad: v => v.nominalEn === "uvr" ? "UVR" : "$" },
+        { id: "diasTir", l: "Días para la TIR", tipo: "sel", op: [["reales", "Reales (como TIR.NO.PER)"], ["sin_feb29", "365 sin 29 de feb."]], v: "reales", ancho: true }] }
+    ],
+    uvr_spread: [
+      { t: "Bono que se emite", c: [
+        { id: "emision", l: "Emisión", tipo: "fecha", v: "2026-11-18" },
+        { id: "vencimiento", l: "Vencimiento", tipo: "fecha", v: "2028-05-18" },
+        { id: "periodo", l: "Pago del cupón", tipo: "sel", op: PER, v: "1" }] },
+      { t: "Objetivo", c: [
+        { id: "tir", l: "TIR en pesos que quieres", tipo: "pct", v: "13", suf: "% EA" },
+        { id: "nominal", l: "Valor nominal en pesos", tipo: "dinero", v: "10.000.000.000" },
+        { id: "proyUVR", l: "Proyección de la UVR", tipo: "seg", op: [["senda", "Senda de IPC estimado"], ["vigente", "IPC vigente fijo"]], v: "senda", ancho: true },
         { id: "diasTir", l: "Días para la TIR", tipo: "sel", op: [["reales", "Reales (como TIR.NO.PER)"], ["sin_feb29", "365 sin 29 de feb."]], v: "reales", ancho: true }] }
     ],
     ipc_valorar: [
@@ -1531,6 +1562,60 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
     xs.forEach(x => { s += '<text x="' + sx(x) + '" y="' + (H - MB + 18) + '" text-anchor="middle">' + esc(fx(x)) + "</text>"; });
     return s;
   }
+  // ---------------------------------------------------------------
+  // Gráficos interactivos: cada gráfico guarda sus columnas y, al pasar el cursor
+  // (o tocar en el celular), se marca la columna más cercana con una guía, los
+  // puntos resaltados y un recuadro con los valores.
+  // cols: [{x (px del lienzo), titulo, filas: [{nombre, valor, color?, y?}], banda?: {x, w}, ytip?, nota?}]
+  // ---------------------------------------------------------------
+  const GI = new Map(); let giN = 0;
+  function interactivo(svg, cols, o) {
+    o = o || {};
+    cols = (cols || []).filter(c => c && isFinite(c.x));
+    if (!cols.length) return svg;
+    const id = "gi" + (++giN);
+    GI.set(id, { cols: cols.sort((a, b) => a.x - b.x), w: o.w || W, h: o.h || H, top: o.top != null ? o.top : MT, bottom: o.bottom != null ? o.bottom : H - MB, nota: o.nota || "" });
+    if (GI.size > 80) GI.delete(GI.keys().next().value);
+    return '<div class="gi-wrap" data-gi="' + id + '">' + svg.replace("<svg ", '<svg class="gi" ').replace(/<\/svg>\s*$/, '<g class="gi-cur"></g></svg>') + '<div class="esc-tip gi-tip" hidden></div></div>';
+  }
+  function giMostrar(wrap, e) {
+    const d = GI.get(wrap.dataset.gi), svg = wrap.querySelector("svg"); if (!d || !svg) return;
+    const r = svg.getBoundingClientRect(), x = (e.clientX - r.left) / r.width * d.w;
+    let lo = 0, hi = d.cols.length - 1;
+    while (hi - lo > 1) { const m = (lo + hi) >> 1; if (d.cols[m].x < x) lo = m; else hi = m; }
+    const c = Math.abs(d.cols[lo].x - x) <= Math.abs(d.cols[hi].x - x) ? d.cols[lo] : d.cols[hi];
+    let g = c.banda ? '<rect x="' + c.banda.x + '" width="' + c.banda.w + '" y="' + d.top + '" height="' + (d.bottom - d.top) + '" fill="var(--accent)" opacity=".13" rx="3"/>' :
+      '<line x1="' + c.x + '" x2="' + c.x + '" y1="' + d.top + '" y2="' + d.bottom + '" stroke="var(--accent-2)" stroke-width="1" stroke-dasharray="3 3" opacity=".85"/>';
+    c.filas.forEach(f => { if (f.y != null && isFinite(f.y)) g += '<circle cx="' + c.x + '" cy="' + f.y + '" r="5.5" fill="var(--bg)" stroke="' + (f.color || "var(--fg)") + '" stroke-width="2.5"/>'; });
+    svg.querySelector(".gi-cur").innerHTML = g;
+    const tip = wrap.querySelector(".gi-tip"), nota = c.nota || d.nota;
+    tip.innerHTML = "<b>" + esc(c.titulo) + "</b>" + c.filas.map(f => "<div><span>" + (f.color ? '<i style="background:' + f.color + '"></i>' : "") + esc(f.nombre) + "</span><span>" + esc(f.valor) + "</span></div>").join("") +
+      (nota ? "<em>" + esc(nota) + "</em>" : "");
+    const ys = c.filas.map(f => f.y).filter(y => y != null && isFinite(y));
+    const cy = c.ytip != null ? c.ytip : ys.length ? Math.min.apply(null, ys) : (d.top + d.bottom) / 2;
+    tip.style.left = (c.x / d.w * 100) + "%"; tip.style.top = (cy / d.h * 100) + "%";
+    tip.className = "esc-tip gi-tip" + (c.x < d.w * 0.24 ? " der" : c.x > d.w * 0.76 ? " izq" : cy < d.h * 0.42 ? " abajo" : "");
+    tip.hidden = false;
+  }
+  function giOcultar(wrap) {
+    const g = wrap.querySelector(".gi-cur"), t = wrap.querySelector(".gi-tip");
+    if (g) g.innerHTML = ""; if (t) t.hidden = true;
+  }
+  let giActivo = null;
+  const giMover = e => {
+    const w = e.target && e.target.closest ? e.target.closest(".gi-wrap") : null;
+    if (giActivo && giActivo !== w) giOcultar(giActivo);
+    giActivo = w; if (w) giMostrar(w, e);
+  };
+  document.addEventListener("pointermove", giMover);
+  document.addEventListener("pointerdown", giMover);
+  // Busca en una serie ordenada por x el punto más cercano a x
+  function cercano(pts, x) {
+    let lo = 0, hi = pts.length - 1;
+    if (hi < 0) return null;
+    while (hi - lo > 1) { const m = (lo + hi) >> 1; if (pts[m][0] < x) lo = m; else hi = m; }
+    return Math.abs(pts[lo][0] - x) <= Math.abs(pts[hi][0] - x) ? pts[lo] : pts[hi];
+  }
   const ruta = (pts, sx, sy) => pts.map((p, i) => (i ? "L" : "M") + sx(p[0]).toFixed(1) + " " + sy(p[1]).toFixed(1)).join(" ");
 
   // Curva precio–tasa: exacta, aproximación por duración y por duración + convexidad
@@ -1555,7 +1640,16 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
       '<path d="' + ruta(ex, sx, sy) + '" fill="none" stroke="var(--accent)" stroke-width="2.5"/>' +
       '<circle cx="' + sx(y0) + '" cy="' + sy(P0) + '" r="5" fill="var(--accent-2)" stroke="var(--bg)" stroke-width="2"/>' +
       '<text x="' + (sx(y0) + 9) + '" y="' + (sy(P0) - 9) + '" style="fill:var(--fg)">' + esc(fN(P0, 3) + " @ " + fN(y0 * 100, 3) + "%") + "</text></svg>";
-    return { titulo: "Precio frente a la tasa", sub: "Movimientos de ±400 pb" + (o.tasas ? " sobre toda la curva" : ""), svg,
+    const cols = ex.map((p, i) => {
+      const pb = Math.round((p[0] - y0) * 1e4);
+      return { x: sx(p[0]), titulo: (pb === 0 ? "Tasa de hoy · " : fPb(pb) + " · ") + fPct(p[0], 3), filas: [
+        { nombre: "Precio exacto", valor: fN(p[1], 3), color: "var(--accent)", y: sy(p[1]) },
+        { nombre: "Solo duración", valor: fN(dur[i][1], 3), color: "var(--dim)", y: sy(dur[i][1]) },
+        { nombre: "Duración + convexidad", valor: fN(dc[i][1], 3), color: "var(--warn)", y: sy(dc[i][1]) },
+        { nombre: "Cambio del precio", valor: (p[1] >= P0 ? "+" : "−") + fN(Math.abs(p[1] / P0 - 1) * 100, 2) + " %" },
+        { nombre: "Error de la duración", valor: fN(dur[i][1] - p[1], 3) }] };
+    });
+    return { titulo: "Precio frente a la tasa", sub: "Movimientos de ±400 pb" + (o.tasas ? " sobre toda la curva" : "") + ". Pasa el cursor para ver el precio en cada tasa.", svg: interactivo(svg, cols),
       leyenda: [["var(--accent)", "Precio exacto"], ["var(--dim)", "Solo duración"], ["var(--warn)", "Duración + convexidad"]] };
   }
   // Barras de flujos de una operación (en pesos), en un solo gráfico. Cuando los
@@ -1588,12 +1682,19 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
     filas.forEach((f, i) => {
       const y1 = sy(Math.max(0, f.valor)), y2 = sy(Math.min(0, f.valor));
       const col = f.valor < 0 ? "var(--neg)" : (i === n - 1 ? "var(--accent-2)" : "var(--accent)");
-      s += '<rect x="' + (sx(i) - bw / 2) + '" y="' + y1 + '" width="' + bw + '" height="' + Math.max(1, y2 - y1) + '" fill="' + col + '" rx="2"><title>' + esc(f.concepto + " · " + fF(f.fecha) + " · " + fPesos(f.valor)) + "</title></rect>";
+      s += '<rect x="' + (sx(i) - bw / 2) + '" y="' + y1 + '" width="' + bw + '" height="' + Math.max(1, y2 - y1) + '" fill="' + col + '" rx="2"/>';
       if (i % cadaN === 0 || i === n - 1) s += '<text x="' + sx(i) + '" y="' + (H - MB + 18) + '" text-anchor="middle">' + esc(fFcorta(f.fecha)) + "</text>";
     });
     s += '<line x1="' + ML + '" x2="' + (W - MR) + '" y1="' + sy(0) + '" y2="' + sy(0) + '" stroke="var(--muted)"/>';
+    let acum = 0;
+    const cols = filas.map((f, i) => {
+      acum += f.valor;
+      return { x: sx(i), banda: { x: sx(i) - bw / 2 - 4, w: bw + 8 }, ytip: sy(Math.max(0, f.valor)), titulo: f.concepto,
+        filas: [{ nombre: "Fecha", valor: fF(f.fecha) }, { nombre: "Flujo", valor: fPesos(f.valor, 0), color: f.valor < 0 ? "var(--neg)" : (i === n - 1 ? "var(--accent-2)" : "var(--accent)") }]
+          .concat(f.extra || [], i > 0 ? [{ nombre: "Acumulado", valor: fPesos(acum, 0) }] : []) };
+    });
     return { titulo: titulo || "Flujos de la operación", sub: "En pesos" + (comprimir ? ", con el eje comprimido para que se vean los cupones" : "") + "; pasa el cursor sobre cada barra",
-      svg: '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Flujos de caja">' + s + "</svg>",
+      svg: interactivo('<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Flujos de caja">' + s + "</svg>", cols),
       leyenda: [["var(--neg)", "Compra"], ["var(--accent)", "Cupones"], ["var(--accent-2)", "Venta o vencimiento"]] };
   }
   function compactoCorto(v) {
@@ -1634,8 +1735,12 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
       s += '<rect x="' + (sx(m.x) - 5) + '" y="' + (sy(m.y) - 5) + '" width="10" height="10" transform="rotate(45 ' + sx(m.x) + " " + sy(m.y) + ')" fill="var(--fg)" stroke="var(--panel)" stroke-width="2"/>' +
         '<text x="' + (sx(m.x) + (der ? -12 : 12)) + '" y="' + (sy(m.y) + 4) + '" text-anchor="' + (der ? "end" : "start") + '" style="fill:var(--fg)">' + esc(m.texto) + "</text>";
     }
+    const nomL = ["TES en pesos", "TES en UVR", "TES en pesos hace un mes", "TES en UVR hace un mes"];
+    const cols = X.map((x, i) => ({ x: sx(x), titulo: x + (x === 1 ? " año" : " años"), filas: lineas.map((l, j) => ({ nombre: nomL[j], valor: l.v[i] != null && isFinite(l.v[i]) ? fN(l.v[i], 3) + " %" : "—",
+      color: l.c, y: l.v[i] != null && isFinite(l.v[i]) ? sy(l.v[i]) : null })).concat(isFinite(T.pesos[i]) && isFinite(T.uvr[i]) ? [{ nombre: "Inflación implícita", valor: fN(((1 + T.pesos[i] / 100) / (1 + T.uvr[i] / 100) - 1) * 100, 3) + " %" }] : []) }));
+    if (m) cols.push({ x: sx(m.x), titulo: "El bono que estás valorando", filas: [{ nombre: "Plazo", valor: fN(m.x, 2) + " años" }, { nombre: "Tasa", valor: fN(m.y, 3) + " %", color: "var(--fg)", y: sy(m.y) }] });
     return {
-      titulo: "Curva de los TES", svg: '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Curva de tasas cero cupón de los TES">' + s + "</svg>",
+      titulo: "Curva de los TES", svg: interactivo('<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Curva de tasas cero cupón de los TES">' + s + "</svg>", cols),
       sub: "Tasas cero cupón a 1, 5 y 10 años del " + fF(M.aDia(T.fecha)) + ", Banco de la República." + (T.mes ? " Punteada: " + fF(M.aDia(T.mes.fecha)) + "." : ""),
       leyenda: [["var(--accent)", "TES en pesos"], ["var(--warn)", "TES en UVR"]].concat(m ? [["var(--fg)", "El bono que estás valorando"]] : [])
     };
@@ -1660,8 +1765,17 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
       c.fechas.forEach((f, j) => { if (j % k === 0 || j === c.fechas.length - 1) pts.push([f, c.tasas[j]]); });
       s += '<path d="' + ruta(pts, sx, sy) + '" fill="none" stroke="' + colores[i % 5] + '" stroke-width="' + (i === cs.length - 1 ? 2.4 : 1.5) + '"/>';
     });
+    const cols = [], idx = cs.map(c => c.fechas.map((d, j) => [d, j]));
+    for (let k = 0; k <= 180; k++) {
+      const f = Math.round(x0 + (x1 - x0) * k / 180);
+      cols.push({ x: sx(f), titulo: fF(f), filas: cs.map((c, i) => {
+        if (f < c.fechas[0] || f > c.fechas[c.fechas.length - 1]) return { nombre: c.nombre, valor: "—", color: colores[i % 5] };
+        const p = cercano(idx[i], f), t = c.tasas[p[1]];
+        return { nombre: c.nombre, valor: fN(t * 100, 3) + " %", color: colores[i % 5], y: sy(t) };
+      }) });
+    }
     return {
-      titulo: "Curvas FR del IBR", svg: '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Curvas FR del IBR">' + s + "</svg>",
+      titulo: "Curvas FR del IBR", svg: interactivo('<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Curvas FR del IBR">' + s + "</svg>", cols),
       sub: "IBR nominal anual que el mercado espera para cada fecha futura, según cada curva cargada.",
       leyenda: cs.map((c, i) => [colores[i % 5], c.nombre])
     };
@@ -2112,6 +2226,10 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
         '<text x="' + (W - MR - 4) + '" y="' + (sy(s.tirVencimiento) - 6) + '" text-anchor="end" style="fill:var(--pos)">Mantener ' + esc(fPct(s.tirVencimiento, 2)) + "</text>";
       if (elegida) svg += '<circle cx="' + sx(elegida.fecha) + '" cy="' + sy(elegida["t" + j0]) + '" r="5" fill="var(--accent-2)" stroke="var(--bg)" stroke-width="2"/>';
       svg = '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="TIR según la fecha de venta">' + svg + "</svg>";
+      svg = interactivo(svg, filas.map(f => ({ x: sx(f.fecha), titulo: "Vender el " + fF(f.fecha) + (elegida && f.fecha === elegida.fecha ? " (tu venta)" : ""),
+        filas: s.pasos.map((p, j) => ({ nombre: p === 0 ? "TIR" : "TIR " + fPb(p), valor: fPct(f["t" + j], 3), color: colores[j % 5], y: isFinite(f["t" + j]) ? sy(f["t" + j]) : null }))
+          .concat(isFinite(s.tirVencimiento) ? [{ nombre: "Mantener al vencimiento", valor: fPct(s.tirVencimiento, 3), color: "var(--pos)", y: sy(s.tirVencimiento) }] : [],
+            [{ nombre: "Precio de venta", valor: fN(f.precio, 3) }]) })));
     }
     const base = s.modo === "tasa" ? "spread de " + fPct(s.valorBase, 3) + " NA" : "TIR de " + fPct(s.valorBase, 3) + " EA";
     return {
@@ -2309,6 +2427,39 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
       tabs: [{ id: "flujos", n: "Flujos", html: conTabla(id, t) }]
     };
   };
+  CALC.uvr_spread = v => {
+    const k = "uvr_spread", tir = req(v, "tir", k), nominal = req(v, "nominal", k), conSenda = v.proyUVR === "senda";
+    const em = req(v, "emision", k), ve = req(v, "vencimiento", k);
+    const ultUVR = S.uvr.fechas[S.uvr.fechas.length - 1];
+    if (M.aDia(em) > ultUVR) { const e = new Error("La UVR publicada llega al " + fF(ultUVR) + ": la emisión debe ser en esa fecha o antes."); e.esValidacion = true; throw e; }
+    const r = M.spreadObjetivoUVR({ emision: em, vencimiento: ve, periodo: +v.periodo, tir, serieUVR: S.uvr, serieIPC: S.ipc, senda: conSenda ? S.senda : null, nominal, nominalEn: "pesos", diasTir: v.diasTir });
+    if (!isFinite(r.tasaCupon)) { const e = new Error("No hay un cupón entre −20 % y 60 % sobre la UVR que dé esa TIR."); e.esValidacion = true; throw e; }
+    const ultConocida = Math.min(ultUVR, M.aDia(em));
+    // El último cupón y el capital se pagan el mismo día: van en una sola fila
+    const tb = r.tabla.slice(), nT = tb.length;
+    if (nT > 2 && tb[nT - 2].fecha === tb[nT - 1].fecha) tb.splice(nT - 2, 2, Object.assign({}, tb[nT - 1], { valorUVR: tb[nT - 2].valorUVR + tb[nT - 1].valorUVR, valorPesos: tb[nT - 2].valorPesos + tb[nT - 1].valorPesos }));
+    const filas = tb.map((x, i) => ({ concepto: i === 0 ? "Emisión (compra a la par)" : i === tb.length - 1 ? "Cupón y capital" : "Cupón " + i, fecha: x.fecha, uvr: x.uvr,
+      proy: x.fecha > ultConocida, valorUVR: x.valorUVR, valor: x.valorPesos }));
+    const inflImp = (1 + tir) / (1 + r.tirUVR) - 1, años = (M.aDia(ve) - M.aDia(em)) / 365, crecUVR = Math.pow(r.uvrVenta / r.uvrCompra, 1 / años) - 1;
+    const id = "spread-uvr";
+    const t = tabla(id, "Flujos proyectados en UVR y en pesos", [
+      { n: "Concepto", k: "concepto", t: true }, { n: "Fecha", k: "fecha", f: fF, t: true, esFecha: true },
+      { n: "UVR", k: "uvr", h: f => esc(fN(f.uvr, 4)) + (f.proy ? ' <span class="chip est">Proyectada</span>' : ' <span class="chip pub">Publicada</span>'), csv: f => f.uvr },
+      { n: "Flujo en UVR", k: "valorUVR", f: x => fN(x, 2) }, { n: "Flujo en pesos", k: "valor", f: x => fPesos(x, 0) }], filas);
+    return {
+      kpis: [
+        kpi("Spread facial", "UVR + " + fPct(r.tasaCupon, 4), "Cupón efectivo anual sobre la UVR, pagadero " + PER.find(p => p[0] === v.periodo)[1].toLowerCase(), { prin: true }),
+        kpi("TIR en pesos", fPct(r.tirPesos, 4), "Objetivo: " + fPct(tir, 2)),
+        kpi("TIR en UVR", fPct(r.tirUVR, 4), "Lo que rinde sin la inflación"),
+        kpi("Inflación que se supone", fPct(crecUVR, 4), "Crecimiento anual de la UVR proyectada; implícita: " + fPct(inflImp, 2))
+      ],
+      avisos: [{ tipo: "info", html: (conSenda ? "La UVR después del " + fF(ultConocida) + " se proyecta con la variación mensual de la senda de IPC (" + esc(S.origen.senda) + ")." :
+        "La UVR después del " + fF(ultConocida) + " se proyecta con el IPC vigente a la emisión: <b>" + fPct(r.inflacionSupuesta, 2) + "</b> anual.") +
+        " El bono se compra a la par (precio 100) en la emisión y se mantiene al vencimiento; el cupón es el que hace que la TIR en pesos sea la que pediste." }],
+      graf: graficoFlujos(filas.map(f => ({ concepto: f.concepto, fecha: f.fecha, valor: f.valor }))),
+      tabs: [{ id: "flujos", n: "Flujos", html: conTabla(id, t) }]
+    };
+  };
   CALC.ipc_spread = v => {
     const k = "ipc_spread", per = +v.periodo, tir = req(v, "tir", k), monto = req(v, "monto", k), conSenda = v.ipcFuturo === "senda";
     const r = M.spreadObjetivoIPC({ emision: req(v, "emision", k), vencimiento: req(v, "vencimiento", k), periodo: per, modoIPC: v.modoIPC, tir, serie: S.ipc, senda: conSenda ? S.senda : null, montoPesos: monto });
@@ -2337,7 +2488,7 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
   // AUTORRELLENO: traer los datos faciales de otro bono
   // =============================================================
   const FACIALES = ["emision", "vencimiento", "periodo", "tasaCupon", "spread", "modoIPC", "tenor"];
-  const NOMBRE_FORM = { tf_valorar: "Tasa Fija · Valorar", tf_operacion: "Tasa Fija · Comprar y vender", uvr_valorar: "UVR · Valorar", uvr_rent: "UVR · Rentabilidad",
+  const NOMBRE_FORM = { tf_valorar: "Tasa Fija · Valorar", tf_operacion: "Tasa Fija · Comprar y vender", uvr_valorar: "UVR · Valorar", uvr_rent: "UVR · Rentabilidad", uvr_spread: "UVR · Spread por TIR",
     ipc_valorar: "IPC · Valorar", ipc_rent: "IPC · Rentabilidad", ipc_spread: "IPC · Spread por TIR", ibr: "IBR · Rentabilidad", ibr_spread: "IBR · Spread por TIR" };
   function htmlCopiar(k) {
     const otros = Object.keys(FORMS).filter(f => f !== k && FACIALES.some(id => campoDef(k, id) && campoDef(f, id)));
@@ -2810,12 +2961,21 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
       s += '<path d="' + pts.map((p, i) => (i ? "L" : "M") + sx(p[0]).toFixed(1) + " " + sy(p[1]).toFixed(1)).join(" ") + '" fill="none" stroke="' + se.color + '" stroke-width="' + (se.w || 2.2) + '"' +
         (se.d ? ' stroke-dasharray="' + se.d + '"' : "") + ' stroke-linejoin="round"/>';
       if (se.puntos) pts.forEach(p => {
-        s += '<circle cx="' + sx(p[0]) + '" cy="' + sy(p[1]) + '" r="3.6" fill="' + se.color + '" stroke="var(--panel)" stroke-width="1.5"><title>' + esc(se.nombre + ": " + (o.yfmt || (y => fN(y, 2)))(p[1])) + "</title></circle>";
+        s += '<circle cx="' + sx(p[0]) + '" cy="' + sy(p[1]) + '" r="3.6" fill="' + se.color + '" stroke="var(--panel)" stroke-width="1.5"/>';
         if (se.etiqueta) s += '<text x="' + sx(p[0]) + '" y="' + (sy(p[1]) + (se.etiqueta === "abajo" ? 17 : -9)) + '" text-anchor="middle" style="fill:' + se.color + '">' + esc(fN(p[1], 2)) + "</text>";
       });
       if (se.final) { const u = pts[pts.length - 1]; s += '<text x="' + (sx(u[0]) - 4) + '" y="' + (sy(u[1]) - 8) + '" text-anchor="end" style="fill:' + se.color + '">' + esc(se.final(u[1])) + "</text>"; }
     });
-    return '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(o.aria || "Gráfico") + '">' + s + "</svg>";
+    // Columnas para el cursor: cada x distinta; en cada una, las series que tienen un punto ahí
+    const ser = o.series.map(se => ({ se, pts: se.pts.filter(p => isFinite(p[0]) && isFinite(p[1])).sort((a, b) => a[0] - b[0]) })).filter(z => z.pts.length);
+    let ux = Array.from(new Set([].concat(...ser.map(z => z.pts.map(p => p[0]))))).sort((a, b) => a - b);
+    if (ux.length > 360) { const k = Math.ceil(ux.length / 360); ux = ux.filter((x, i) => i % k === 0 || i === ux.length - 1); }
+    const vf = o.vfmt || o.yfmt || (y => fN(y, 2)), tf = o.tfmt || o.xfmt || (x => fN(x, 2));
+    const cols = ux.map(x => ({ x: sx(x), titulo: tf(x), filas: ser.map(z => {
+      const p = cercano(z.pts, x);
+      return p && Math.abs(sx(p[0]) - sx(x)) <= 3 ? { nombre: z.se.nombre, valor: vf(p[1]), color: z.se.color, y: sy(p[1]) } : null;
+    }).filter(Boolean) })).filter(c => c.filas.length);
+    return interactivo('<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(o.aria || "Gráfico") + '">' + s + "</svg>", cols);
   }
   const ultimoNoNulo = (arr, fechas) => { for (let i = arr.length - 1; i >= 0; i--) if (arr[i] != null && isFinite(arr[i])) return [fechas[i], arr[i]]; return null; };
   const ticksFechas = (x0, x1, n) => { const out = [], paso = (x1 - x0) / n; for (let i = 0; i <= n; i++) out.push(Math.round(x0 + paso * i)); return out; };
@@ -2838,17 +2998,18 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
       out.push({ titulo: "Curvas de rendimiento",
         sub: "Tasa según el plazo. TES (cero cupón) del " + (T ? fF(M.aDia(T.fecha)) : "—") + "; IBR del " + (ibrPl.length ? fF(ibrPl[0][2]) : "—") + ". La inflación implícita sale de (1 + TES pesos) ÷ (1 + TES UVR) − 1: es la inflación que el mercado está cobrando para cada plazo. El eje del plazo está comprimido para que se vean los plazos cortos.",
         leyenda: series.filter(s => !s.d || s.d === "1 0").map(s => [s.color, s.nombre]).concat(T && T.mes ? [["var(--dim)", "Punteada: TES en pesos hace un mes"]] : []),
-        svg: lineas({ series, x0: 0, x1: 10.4, tx: Math.sqrt, xticks: [1 / 12, 0.25, 0.5, 1, 5, 10], xfmt: x => lab[x] || fN(x, 0), yfmt: y => fN(y, 1) + "%", aria: "Curvas de rendimiento de TES, inflación implícita e IBR" }) });
+        svg: lineas({ series, x0: 0, x1: 10.4, tx: Math.sqrt, xticks: [1 / 12, 0.25, 0.5, 1, 5, 10], xfmt: x => lab[x] || fN(x, 0), yfmt: y => fN(y, 1) + "%", vfmt: y => fN(y, 3) + " %",
+          tfmt: x => x < 0.01 ? "Overnight" : x < 0.99 ? Math.round(x * 12) + (Math.round(x * 12) === 1 ? " mes" : " meses") : fN(x, 0) + (Math.round(x) === 1 ? " año" : " años"), aria: "Curvas de rendimiento de TES, inflación implícita e IBR" }) });
     }
     // 2. TES en el último año
     if (T && T.historia && T.historia.length > 3) {
       const h = T.historia.map(r => [M.aDia(r[0]), r[1], r[2], r[3]]), x0 = h[0][0], x1 = h[h.length - 1][0];
       const ser = [["TES 1 año", 1, "var(--accent-2)"], ["TES 5 años", 2, "var(--accent)"], ["TES 10 años", 3, "var(--warn)"]].map(([nm, k, c]) => ({ nombre: nm, color: c, pts: h.map(r => [r[0], r[k]]), w: k === 3 ? 2.4 : 1.8, final: y => fN(y, 2) + "%" }));
       out.push({ titulo: "TES en pesos: último año", sub: "Tasas cero cupón semanales, Banco de la República. Si las líneas se juntan, la curva se aplana.", leyenda: ser.map(s => [s.color, s.nombre]),
-        svg: lineas({ series: ser, xticks: ticksFechas(x0, x1, 5), xfmt: fFcorta, yfmt: y => fN(y, 1) + "%", aria: "TES en pesos en el último año" }) });
+        svg: lineas({ series: ser, xticks: ticksFechas(x0, x1, 5), xfmt: fFcorta, tfmt: fF, yfmt: y => fN(y, 1) + "%", vfmt: y => fN(y, 3) + " %", aria: "TES en pesos en el último año" }) });
       const pend = h.map(r => [r[0], (r[3] - r[1]) * 100]);
       out.push({ titulo: "Pendiente de la curva (10 años − 1 año)", sub: "En puntos básicos. Positiva: el mercado pide más por prestar a largo plazo; si cae, la curva se aplana.", leyenda: [["var(--pos)", "Pendiente"]],
-        svg: lineas({ series: [{ nombre: "Pendiente", color: "var(--pos)", pts: pend, final: y => fN(y, 0) + " pb" }], yExtra: [0], xticks: ticksFechas(x0, x1, 5), xfmt: fFcorta, yfmt: y => fN(y, 0) + " pb", aria: "Pendiente de la curva de TES" }) });
+        svg: lineas({ series: [{ nombre: "Pendiente", color: "var(--pos)", pts: pend, final: y => fN(y, 0) + " pb" }], yExtra: [0], xticks: ticksFechas(x0, x1, 5), xfmt: fFcorta, tfmt: fF, yfmt: y => fN(y, 0) + " pb", vfmt: y => fN(y, 1) + " pb", aria: "Pendiente de la curva de TES" }) });
     }
     // 3. IBR en los dos últimos años
     if (n > 30) {
@@ -2856,14 +3017,14 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
       const pick = c => idx.filter((i, k) => k % 3 === 0 || k === idx.length - 1).map(i => [b.fechas[i], b[c][i]]).filter(p => p[1] != null);
       const ser = [{ nombre: "IBR overnight", color: "var(--accent)", pts: pick("overnight"), w: 2.2, final: y => fN(y, 2) + "%" }, { nombre: "IBR 3 meses", color: "var(--accent-2)", pts: pick("m3"), w: 1.5 }, { nombre: "IBR 12 meses", color: "var(--warn)", pts: pick("m12"), w: 1.5 }];
       out.push({ titulo: "IBR: últimos dos años", sub: "Tasa nominal anual. El overnight sigue de cerca la tasa del Banco de la República; los plazos largos anticipan lo que el mercado espera.", leyenda: ser.map(s => [s.color, s.nombre]),
-        svg: lineas({ series: ser, xticks: ticksFechas(b.fechas[idx[0]], b.fechas[n - 1], 5), xfmt: fFcorta, yfmt: y => fN(y, 1) + "%", aria: "IBR en los últimos dos años" }) });
+        svg: lineas({ series: ser, xticks: ticksFechas(b.fechas[idx[0]], b.fechas[n - 1], 5), xfmt: fFcorta, tfmt: fF, yfmt: y => fN(y, 1) + "%", vfmt: y => fN(y, 3) + " %", aria: "IBR en los últimos dos años" }) });
     }
     // 4. Inflación frente a la meta
     const ip = S.ipc, m = ip.fechas.length;
     if (m > 12) {
       const k0 = Math.max(0, m - 48), pts = ip.fechas.slice(k0).map((f, i) => [f, ip.inflacion[k0 + i]]);
       out.push({ titulo: "Inflación anual frente a la meta", sub: "IPC total anual. La franja es el rango de la meta del Banco de la República (3 % ± 1 punto).", leyenda: [["var(--pos)", "IPC anual"], ["rgba(57,201,138,.25)", "Meta 2 % – 4 %"]],
-        svg: lineas({ series: [{ nombre: "IPC anual", color: "var(--pos)", pts, w: 2.4, final: y => fN(y, 2) + "%" }], bandas: [[2, 4, "rgba(57,201,138,.10)"]], yExtra: [2, 4], xticks: ticksFechas(pts[0][0], pts[pts.length - 1][0], 5), xfmt: fFcorta, yfmt: y => fN(y, 1) + "%", aria: "Inflación anual frente a la meta" }) });
+        svg: lineas({ series: [{ nombre: "IPC anual", color: "var(--pos)", pts, w: 2.4, final: y => fN(y, 2) + "%" }], bandas: [[2, 4, "rgba(57,201,138,.10)"]], yExtra: [2, 4], xticks: ticksFechas(pts[0][0], pts[pts.length - 1][0], 5), xfmt: fFcorta, tfmt: fF, yfmt: y => fN(y, 1) + "%", vfmt: y => fN(y, 3) + " %", aria: "Inflación anual frente a la meta" }) });
     }
     // 5. IBR que espera el mercado (curva FR más reciente)
     const cs = (S.curvas || []).filter(c => c.fechas.length > 1);
@@ -2871,7 +3032,7 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
       const c = cs[cs.length - 1], lim = c.fechas[0] + 365 * 5, k = Math.max(1, Math.ceil(c.fechas.length / 400));
       const pts = c.fechas.map((f, i) => [f, c.tasas[i] * 100]).filter((p, i) => p[0] <= lim && (i % k === 0));
       out.push({ titulo: "IBR esperado: próximos cinco años", sub: "Curva " + c.nombre + ". Es el IBR nominal que el mercado descuenta para cada fecha futura; con ella se proyectan los cupones IBR.", leyenda: [["var(--accent-2)", c.nombre]],
-        svg: lineas({ series: [{ nombre: c.nombre, color: "var(--accent-2)", pts, w: 2.2 }], xticks: ticksFechas(pts[0][0], pts[pts.length - 1][0], 5), xfmt: fFcorta, yfmt: y => fN(y, 1) + "%", aria: "IBR esperado según la curva FR" }) });
+        svg: lineas({ series: [{ nombre: c.nombre, color: "var(--accent-2)", pts, w: 2.2 }], xticks: ticksFechas(pts[0][0], pts[pts.length - 1][0], 5), xfmt: fFcorta, tfmt: fF, yfmt: y => fN(y, 1) + "%", vfmt: y => fN(y, 3) + " %", aria: "IBR esperado según la curva FR" }) });
     }
     // 6. UVR en el último año
     const u = S.uvr, nu = u.fechas.length;
@@ -2879,7 +3040,7 @@ window.AGENDA={"nota":"Fechas oficiales del Banco de la República, la Reserva F
       const fin = u.fechas[nu - 1], ini = fin - 400, pts = [];
       u.fechas.forEach((f, i) => { if (f >= ini && (i % 3 === 0 || i === nu - 1)) pts.push([f, u.valores[i]]); });
       out.push({ titulo: "UVR", sub: "Valor diario, incluidos los días que el Banco de la República ya publicó hacia adelante (hasta el " + fF(fin) + ").", leyenda: [["var(--warn)", "UVR"]],
-        svg: lineas({ series: [{ nombre: "UVR", color: "var(--warn)", pts, w: 2.2, final: y => fN(y, 2) }], xticks: ticksFechas(pts[0][0], fin, 5), xfmt: fFcorta, yfmt: y => fN(y, 0), aria: "UVR diaria" }) });
+        svg: lineas({ series: [{ nombre: "UVR", color: "var(--warn)", pts, w: 2.2, final: y => fN(y, 2) }], xticks: ticksFechas(pts[0][0], fin, 5), xfmt: fFcorta, tfmt: fF, yfmt: y => fN(y, 0), vfmt: y => fN(y, 4), aria: "UVR diaria" }) });
     }
     return out;
   }

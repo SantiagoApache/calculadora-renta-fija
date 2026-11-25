@@ -3,11 +3,13 @@
 Calculadora de bonos colombianos de renta fija. Tiene cuatro calculadoras y un portafolio:
 
 - **Tasa Fija (TES):** valoración con TIR o con curva cero cupón + spread, y rentabilidad de compra y venta.
-- **UVR:** precio, valor de giro en pesos y en UVR, y TIR en pesos y en UVR (estimada o real).
+- **UVR:** precio, valor de giro en pesos y en UVR, TIR en pesos y en UVR (estimada o real) y spread sobre la UVR para una TIR en pesos objetivo.
 - **IPC:** bonos IPC + spread, valoración con IPC vigente o con senda de IPC estimado, rentabilidad estimada o real y spread para una TIR objetivo.
 - **IBR:** bonos IBR + spread, rentabilidad proyectada o real, venta antes del vencimiento, sendas de TIR y spread para una TIR objetivo.
 - **Portafolio:** las compras guardadas desde las calculadoras, con valor total, TIR, duración, DV01, próximos cupones, carry neto (con o sin fondos prestados) y comparación de TIR al vencimiento y vendiendo antes.
 - **Gráficos de mercado:** curvas de TES en pesos y UVR, inflación implícita, IBR por plazo y la evolución de tasas e inflación.
+
+Todos los gráficos son interactivos: al pasar el cursor (o tocar en el celular) muestran los valores de cada punto.
 
 Cada calculadora muestra el próximo cupón y organiza el detalle en pestañas:
 
