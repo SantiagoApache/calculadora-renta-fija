@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-24",
+ "actualizado": "2026-11-25",
  "indicadores": [
   {
    "id": "trm",
    "nombre": "TRM",
-   "valor": 3505.92,
+   "valor": 3592.03,
    "unidad": "cop",
-   "fecha": "2026-11-24",
+   "fecha": "2026-11-25",
    "detalle": "Tasa Representativa del Mercado vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/1/tasa_cambio_peso_colombiano_trm_dolar_usd"
@@ -16,7 +16,7 @@
    "nombre": "Tasa BanRep",
    "valor": 12.25,
    "unidad": "pct",
-   "fecha": "2026-11-24",
+   "fecha": "2026-11-25",
    "detalle": "Tasa de política monetaria vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/59/tasas_interes_politica_monetaria"
@@ -75,63 +75,70 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3602.49,
+   "valor": 3606.99,
    "unidad": "cop",
    "fecha": "2026-11-24",
-   "detalle": "Precio del dólar en el mercado (último dato); +96,57 frente a la TRM",
+   "detalle": "Precio del dólar en el mercado (último dato); +14,96 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
   {
-   "titulo": "Minhacienda pide que se apruebe adición presupuestal para pagar Colombia Mayor",
-   "fuente": "El Espectador",
-   "fecha": "2026-11-24",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMDZEenZIcjRfM0hjck9jWTUzd2F4TWlkQmk0bW9jUzVqalRjMkFzdTFHMkg3d09YRjR5ZGQ1aWxUcXBFS0dubTAwMkFiLVB6Yl9CRlU5TTgzVnJtVm1WUlVSZW9JdjlCR1BoY1F2ZkVGQWdEN1RfVHNzVmJ0bnBtdzdYVmNna1QwMnpBcWVWcWI2ejY5SWxZT2Z6MGhudXg2d0RwUEppdEtyWWEtTnNzd2laRlhNV0lH0gHMAUFVX3lxTE5ySnZGQ1BiV04zZmxEbGk4T2g3Q19tZEJEaXFEZkVFT2x3TFc0enphTFdHTzYway1CNDBHMWdLSTJieUFTNDhwQThQSWpnZWxOMzhyOGRiczMxR1FoblNMOGVmM3JTOENBR2N0ZnhsWUltbWlNWUdwb2c4Q19xdXBtT0lvWkVMZ0ktM19PWHdPbmJ3R3VzSlhXTGlnV1B2Y0lUZENRd2xZT0dYWkhORjZFTUotWE9OYnJfMm5scnJCSkZ1U0JHMElPVlNudQ?oc=5"
-  },
-  {
-   "titulo": "Salario mínimo 2027: cuánto subiría la mesada de los pensionados en Colombia si se confirma el alza",
+   "titulo": "No solo es el dólar, el riesgo país de Colombia también se dispara: ¿fin de la luna de miel?",
    "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-24",
+   "fecha": "2026-11-25",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQUXJlZ051Xzdwa3hOekJHMF9TTWlXWUxjdnpUVWVoYUE4ajl2dWwwMHc3WEpkaE9NZVdPNVF0MDZiRm1maUs1YnNnaU94Q3o1c3dpYjF3OWJrV0U5RXBpT0hpYjJpR3NkV3lkd1JzZ0ZuaHhySEtUQzdGTUZZanp0M0VCaGlyMWViWDlsWGRpbk14R0FOaXdYMkZNcG15Q3FYMjVfWm5IQTl1TlhkcDRCMmZvTGM0dFpVaUw2U2k3Y1JiS2pXRTB2TzN1eTRuVUJFREJ6LVprbF9ncWpnZHcxaUlSSTlJdlNq0gH8AUFVX3lxTFByR3UzcjctUjdnNTcyOVNoMjVNblMxNGhXaDFyZzhXRjdGZXlaWVlBUGpMWHN1eFlRUjlfdVI0WG55TmJ6XzZmV19UVjdBYjFqVVBxdDFBQTh3aG03emwwbnFSQjlJRm43TzY0RnpLZ3JNQzBuVXdZNWxYUFlkNmVDaUNLOG16RTM3bzhKRklNZ3VHTzRXakdEa0VkdHJXM292eFBKb3dSX1p3Rlk0bk5wbWhmWUo0TTRNQ3FNcE5BMjBRMkdlamthdjRIdjNiamkwbV83Ym9Rb251VFdaSHlzZkNVaV9sT3lBeDY2X1o5OHRFTTNDRkpMbEZMYw?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMy13ZUFmQmVMb2FhdEpZWkxSd3JOd1NQRVBhQS1VMFZCYmc1cENzQVc5ell4MGxfMnVMaUpoS2JZbWhwSVpaY0Z2TWhUZVpoSjFsUFB4TkVpTE9fYUtqR05hN2thRDUzNkxoai1nTnRGaUtDTGhKWms3QXZKbGpkUHRQUFdfNkozcGJmc1lMM3VVbjF0ZEg2d01laWVpSTFDWC0xS1pDUENpTjNWMTdVN1FvRlVNa0gtcnJDalBSaWs1Ti1SblU2ddIB3AFBVV95cUxObTF4LUdycE1EUThCSTlvOXgzYWE2RVViZ19IcGRvc08wOHkyU29TZHVfVk4td00wdGRVS3NVMThvRHM4UWNUWUc2emVrRW5ibXZmQURxY1ZxenJhdTViT1ZncHd5R0JTYk9VZ0xrdERlOHFhQWRKSU9pdXdlVFFqMm9mRFNNcHZWN1dORlc5ZmY5dmZUV3ljODRXZm9adlVlb2F2aU5lVzJidVlwOXFCTDF6QU1yY3pLQU5hdVdwN3F6eFZYRkZsMUJzajczNnNIZmIxdjdMaGdnaURX?oc=5"
   },
   {
-   "titulo": "Dólar en Colombia hoy, martes 24 de noviembre: conozca cuál es la cotización oficial de la divisa y cuánto ha variado en lo corrido del mes",
-   "fuente": "El Tiempo",
-   "fecha": "2026-11-24",
+   "titulo": "Banco de la República proyecta que la reducción de las tasas de interés tomará menos tiempo si se aprueba el",
+   "fuente": "Valora Analitik",
+   "fecha": "2026-11-25",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPMWwxWllGY0dncXA1QVlZZXJnRU1IM3ViSlRKU2o2aEZhRWRrTGZmVms1Skd5M3FHSnVaeEs2UGtBWndTQV83Z3J4LS1ETlIxbHJ5ZlQtMGZNbnZnei12NWF1ZHoxb0lQcDNkSzdROEp6R3Q0YlB3UHh1YzJROVJOM1BpcmtYTmVpa3ZDUVpIMUxqcDk2ZWhhUHl1WUw3WXpGYks3T1BxSUwtYkNQRlEzTGdfc3pPQnBFdkZKakR5ODFBdU5SV3BkX3p3RzFNSE4yOWNEQm1Gb0VwRHdwTTJuRUxFNEtyRjg3NUVvNUlUWmRCZEtsMHZfLTZadTBGZTIycjNIR25pNmVHUkc5VENrRFJFNHZaOHdablN5eXI2QlhaZ03SAagCQVVfeXFMUDM2ZEw0VWpqYTA5WGNRbFBiZ1VVdWdxcGVoT29DWTN0S0FpU2U5SEN5b21IMnJaZV84RUNLa21sWERsNFFQNnNaOXBoWUROaElLVnkzbTQ2dnlIU2JOeks5MlhTM0xZa0VWRWZ6RkRtOU04ZXB2M283Z0thYU00ZTBpUkpvemI2WmxEeHg1a2hOeHBwejIteTJHcWRvdWJ0bmZneTlqcmJqbUhyZGs5MGh5T0NhVHVPLThLOGJTaUtlRGptNmoyYWFyQkV5c0NrVDRlaDlPNTJJZlVWZ0xySkwxdWM5N0JOSlZSQ1dJZ1VEbDk0WUMtR3VvZG9oZHVET09RUDhQSG1RV1hPZWh0ZlVoQlpHbUExOEkwME5SeU1QanQtUy02dFg?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQa1NXckEyMEhNeUtLLTdDdG85YVp2cU1ZNjNRX2NPOUdwQWxoR0lRbHBCUEpFSWZsQUNQZTZ3N29obzlDRWsxc1NVUjhLQWNOLUQyWkwydnlwZEZCa21tT0g4c1Nmamg0YlFHRmxkQnhURUJnTUJyazN2Ry1fbjB3SnE3eHhaRHMyNnRmbWRRWVJoVXJqeW9jdmZ1U0ZKUGtvVzJIc01ZSzN0bWNJOWgzTVUwRUstcnl0TF9WVE1FZzFHVDdVOHQ2WmY1TURsb3VMRzBLQlJWRHEtak5iSThEdmVZODcwaUVhU1HSAe8BQVVfeXFMTUZsM3BkM0ZQN1FadVZkR1E0Q2U3aFR3cF9jS1dYOVdBa091SlJoOVd6elFtcmRMeDBVdzk0NUgwZHJCVjBzZGozQ0RoTXhGOEZkS053VktvTDhBVGtFREZiT0pyN1g0QzJRdTVZUWxBVGxrVlc2SmxTQVFfTTU4ZGhQazgySzA1NkhaWnZDbXVxTEJRM0JSTWxpbFVOa08zSnJ1cFZYUVVQeEhMNG1KT2pNem5ZZEVlREdLVVpVV0ljeHVyNkVaU2lGWl9uTnVGQ1E0b3BvVkhDM0QzWDNUbkdPQmFXM3BEQUJ1UlVUeFk?oc=5"
   },
   {
-   "titulo": "Pagos de Colombia Mayor en diciembre dependerán de medida urgente que pidió el Gobierno al Congreso: “Petro no presupuestó ese hueco”",
+   "titulo": "Se aprobó en segundo debate adición presupuestal de $3,8 billones para Colombia Mayor y el Fondo Milagro",
+   "fuente": "Revista Semana",
+   "fecha": "2026-11-25",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOcEZxcFlOTmZQcFYtVWZCVXFDUUw5QWxLVXJkamVDS25DOVptLTdNT3c3S3o4SDJReVdiUTdGdXVDcXpTczh3U0o0RXFVd1Y5U1RSS0FEcXNLdThuemNrNF9zNEdSekd4dDIxNFpRQ2NMdVc3MnM4OHc5azllODJmeXhYU2FaX3BoS3RZaEg1dTFDNkk4U0dEQTdWa0tJMlJjbEplQ1dHR3dtblNIUEpXVnBnaVg3dDlXQVloNTFXbzNVN2JnUjZiN2I2dGFnQUZ4dmdVZWwwUTM0VTN5TTNyS1NqQTFKQjhVVkRPZU1jTk45Rmk5SjNkZdIB_gFBVV95cUxQX1hscUlmam94VFFXRl9pcXlTQk43a004MjNXRVd2ZGk5VGxDYjRlbDV1S1ZJN0xoYU8zclFfQm9LUVlYRkRoQU1XZ1czOXFqakd3bE4xUXhXaGRSNFN3cTJmeTR2R1ZaVmIwVElYdGVxUnJDekxQa3dxaFB1U3NqX0pJbnU5VEp0VFFCTzBQeXBzVFRfazF1dUN3c284OHdfNU85b3BnZHkwdzZOQUhJbzdxejVUazJtc2wzV2FTX3g3Y3hvNGZIZm1mWnEydUpTUHRmaTNnc3BXYmtUTWxJNVFNX0s3ODFJX3FsRVlCQmFFejhTRnFKZzlnVjExdw?oc=5"
+  },
+  {
+   "titulo": "Senado aprobó adición presupuestal de $3,8 billones: estos son los programas que recibirán recursos",
+   "fuente": "Portafolio.co",
+   "fecha": "2026-11-25",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNZkI0YlJOTWJ1RktGb1BEeWk2UjBjVTd1V0ZCcklIaVJvaVBHR0x4TmFFM01PY2VaSXBUTXZGRmlSVDFweXZzcWxBdHlnWWhBVGVWNHBSc3BhUXNKUmxqanhOUElaa0VTWXVySjYzRVJtWE5BTlNzMjhKVXFPLXE1MDZ3d2kxak5BcERjUkFxb0t1YnJpNEVTTWd6c1hxSWpaUmlWQWZ6bmd4bE4wbVJRbGdpMXFxcjBTbHpvZEtsNzB3TG5peW00OHN2Ulc3NkN5M3BvbGlWekdUczFUNGFVOW1B0gHnAUFVX3lxTFBaSmMybHlQZEljbEt2ZldpWVRtblVaV1l4anp6MFVvVmNzamhnenZsNGpoelRiQ1ZQb0QtQkpHRndzX0ItZE1QUUx1WDBiVUVEUUQ3NkNlc2JSNGxzdlFIdERpeUQ1R0ZibFMwUmJXQ3pwNzhTUVBPcWFmTmRWWnhLYXlPbm5xZVZZa05rMzVEOUx0Sms0OHlsVmozT015cVpyRjNTcEl5eGFkUFpmTjRFdUJ2a1RmRG9GY3VjUUJubTMyN0tzYWV1alljazhnRnBMVTdzV2VkZVJLVWFNN0NQMU8yODZ4cw?oc=5"
+  },
+  {
+   "titulo": "Bogotá propone presupuesto de $42,6 billones para 2027: movilidad y educación recibirían los mayores recursos",
    "fuente": "Infobae",
-   "fecha": "2026-11-24",
+   "fecha": "2026-11-25",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQR0RvWUwtOUk2Ym96SEJrOTAyWGpNRVNScWNrZGx6TVhOakVac0VhWFV5VVVKeUFHd3lXMnU5NmRHOThqenlTZXNSZjQ5MmlBNjZINm0wSzN2blhiaEUwZDdaN2JFQVI3X0lIRVR3MUJqTlhUVXA5dTR3N3lwaktUUkFISlVDemM1cHNTb1VQZmNjMEV1d1ZaZmhiVHUtXzA1Y3Z3Q0R0TDJ1TzJpYmFMS2d0M3V0Q0NQTERFbUVIYjBULWlsRzRmWEVwZUtaRTVoektyTGJBamRaNC1mQ2d6WUM4UEpQWEZtUEVkampYQUNxTWVWcUFwTTZodjNNdV9fck01amR30gGgAkFVX3lxTE9UQ21RNmd3RkJMUWRmS240UXAtMnR5alVxaWVrOWhpQlBHa3JEaE1DaUU5aE02NXRTRFNhYjhLU19KMVNZZzRjX3B0d3JWWWFLRzJHRmhEc3I3T1E2RWxWNnNVejVNXzZoX1B3TGltOXNJYUtLZENDZlRIQ3NyRkxwckwtS0piUFc0aDNieFdqMGFXaUxkU1Q5SkpEVURxY1RDcHZsS3BwS1pDY2xHNW9NRXJWREN3d3ZsYUpLTHQ5M1NZVXktTDJOa01xeXlTTmJVRDd6Qy0xeFZDU1FPZVQ3SWZXYkt4QXZ3YWhxRE5FYmhvdXlJLWp1dF9nNTlySkk0cWlrYllQWDk0dnd4QzZIUHR5c2w0YnZKdUJpRkpKVA?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQc2JYMWc0dlJSOFF3Mm9IT2g5eWpNN1QzUzVpZEZxbGNvMFdSSTYtb1Zvc0UzWV9uVDhDZWdrYzFaZnFTeEFLQXBnTWtINVdvNWFHSjRjSUZVM1VSZkRyR0lJSnBYVnZBUDRFZWpROWtYNnRHTE1JUG5XNWRncnNFLURiS0lULWtHUXNGUVdZdEtLX2pJc1lrTkRzc1B6ZG5ZWEZVaGVsSEtSTV96SkNtZFZ6blJWTklkakFTa2RKUGxOMjlDbG5NN2FMSkhtcG1MNnpEQmFuenAtT2dRMWxQa3MyY3NpUdIBgAJBVV95cUxPdXpMVnFJcHBDYVJXQTBBT3Q3bnhGbDNaQnRYaFVJSTM2Qjh5U0hPanhzWE1vWmgtalU3bm9SWi1fVEpsWHBScFQyZUZzd3dNajBRS0FQX1dxLXpJY25mMFh0Vi1QQVpta3NVNnYxU0lybURQMjdrSkpEYW9oUkRlMVhSY1BJMGNPR3JGU1dnYllCUGpKUjR1Q180cHp0ZUNlSUhPeTdoZ2lKRHhldVlQRVJUeWxJTnAxTjdGZktCZ21HdnVfdkdibFVQVmJkYUtUTkoybkhhcE10RFA2V3JzZ2lLMTN3Mkcta3ptYzNjU1R0OWRwUmFpbEREM0FDb0Q0?oc=5"
   },
   {
-   "titulo": "Dólar hoy en Colombia sigue subiendo y cerró el día por encima de $ 3.600; ¿por qué se disparó?",
-   "fuente": "Pulzo",
-   "fecha": "2026-11-24",
+   "titulo": "MinHacienda elimina las colocaciones privadas de deuda y proyecta una drástica reducción de títulos a corto",
+   "fuente": "Valora Analitik",
+   "fecha": "2026-11-25",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbzJqcGhBWDAxdmk3eXRVOTZlZUlyYnlIUm9NMjBNRzVuNXFybFlNcXhXNlRmZEFIV3RERmVpN25wbXZxYUNESjFLRDZ0TTJfdDNiOVJ5cVlLT28xUGt3MF90LURYV0RqenBnTnAzNHplbF9BNkRxZk5FMVZ4bG1Xb0xMNlY3c2hkc3l0UWtTVTVNSDI5MGxNSmNObm5oWlhLZW9F?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNalZNdm5rczZVT3ZhZzNDYVRpZ3BoS0w3WGdvNjNBUzh1TFFZWWJuY3ZSdVJvekt1WFU3cjBiSm1UUFJ6czRIV2psbWJOenBaRGhzZkZVQjZGUDZNWnBKYldVT19qMEUzMDhKazIzeWFneHB4bi1IMENHdXU1NXQ4Um5RcVlPeUh5VTZWNVloM25kc3pVdHVxeHZSei05Y3JZTnMyOTN6WDBBTnVhakJTakE1ZVlIaVo1aTNyRFotUldFdTE1UVl2TXNPTi1SeTlLOGJSaUdJSmNsUFZYeFHSAeMBQVVfeXFMTWtFcC1sMFVLcnVHR3pfUVppbmVMaVFYVE8tS1ljc19fclFoZW91MlpMdlJvUVl3eWprb201bWZyVTR1d2U2Nnh2alc4RlVfYUZmWl96bVpQUGg0TWRLUG1JQ1hJZU5oUUdJck5lMFplSkVqRFd1d2dVbGtTT0ktSmVUWk9OT0U3NzgxZndYRWk2ckpDLWU3UkZydThlNDRFNks2ZWRrRU9US21iWUowVkJJZml4STJfSTZkMy1xT3RKVjV3VXo1NDhaY0JLX29ibHRSR1RTNlNncGZKYWpWdzZwMkE?oc=5"
   },
   {
-   "titulo": "Dólar se disparó y superó los $3.600: ¿Por qué el peso colombiano es la moneda que más cae? | El Colombiano",
-   "fuente": "El Colombiano",
-   "fecha": "2026-11-24",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZGJEVWtVTE9XWm92YUl1NGhTellGQUlSanYya2RNVVRnQ005dWYta3FPa3d5eEhwS2lWZUJBUThzSnZTMHpNLTJJT25KMzMtM0dqT0xBZlhkemtlN3RmWlVXQ2h4OUlLUlZwV3M2Zy1PZjVrTGtlUGdJQVZYLTV1enhOQjJmM1ZnaHJQNDhfaDNTRFg3cWJN0gGcAUFVX3lxTE9scEFlREh4XzdtRVY5LVRURUduTXNhTHBsVlJCWS1tektZM1lZZ0hvall5bEhodEpGeEtQdTFjMVR4b0tFUUdkRTF1YUp6NThRZG05SThuY1hHLWNqbjZudFhoNkRWeVhtWnp1b1pjSnB2VDNidHEtRzlnM0N5N0JHRVRtUUM5b0pPQ2tqV251Qk5iQ2p4azFtMDJCdQ?oc=5"
-  },
-  {
-   "titulo": "Anthropic pierde el envión de su histórico debut en Wall Street y sus acciones caen por debajo del precio de salida a bolsa",
-   "fuente": "Forbes Argentina",
-   "fecha": "2026-11-24",
+   "titulo": "Orientación de la política del BCE es clara para diciembre",
+   "fuente": "El Economista",
+   "fecha": "2026-11-25",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQaUZ4dDJNbU02Z0F4LTMtcTZyc2JSVkNoNWhadXhYUW9Ic3VqQWNfaS1fc2t2VDFTMUJEa0NMWmpWOHl0S3BLYldvQ2RXbVVrZEo5elNvc0VFblV1ZUxSSDR3eTV5V3JVSjAtX2VxMTV4a3FQc0VrZjloM20tLWFWcDlxdkFSS21lN3AtaXdjQ0hodk96Nm5ZYmZySkFjSDZxWmxVTnI5UGdvdUh0TlNRRmNjZlVjTE5PYUhKQ095LS1tUVVmWTVfU0xwUDlodEdRYUhNVmNEVGZaQ0ZQZFHSAeMBQVVfeXFMUGNjaWxPaVEtZnRRXzRrRnJEc09malhWUDZpd2lSelQtLUIxeHpSa2ZnRGpYa19aVGZLdlFtQlVtVTRQSVowZmJET0pvZkpWRFZaUHFkX0ZFOXB5TjYwM29QOUVKQ3hyNFBsWWk4U0pqYUQ2U2FzZkZVaEVab0lERWExbUNFR2Q0Zlhoa1FFZW1ZSWlFOW52eDlCVWVXZFlmMTlFRkJDSUgyaUlqVWI2OVRqQ1ZJOG5JeHoxYU1WV0VmZU92Nk5CclJaRjJhMEZpbGthV3l4VkJ5SEFxdVd0OFVESTA?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZjUtcU1OamtKYmpoQlBRYnY3dXRnOEhUb2hFVWs0Sk1pTmRiSHBIclUxaU50YjFlSHFQYjBXNHlwMVpWTEk1MEtwUUlKMF9TWDN5a0NnVFlJRm9UNHY2NEJ6NU9qLXJQSFRfTExhNHFLb01kd2RJRUVCUXU0Z09BbGhGQTJkRGRxNkl6SmdNNFZaY1FLWlZrSTZzeWpTc3ktc1ZYWXNlZF9FdXU1Y1hz0gG0AUFVX3lxTFBTNFpoZjV0VXpJYUR4Rk8zSmIxaGdkekZET0xKcUJxQ1diWkpJcVMwejY5U0hTYTAtSV9vRjRYUUZhbEVyUU8waUNGOU5YejU3YXJiblJoYVNwR2FZZDlPREx3TWFYN2RXZVdEb2xqRUM5dHNuYkotTDdoaDAtaWZ0VkMydmxsSjVsQVYwWG4tazgxOXFZVHpXbWxzSzhYSnFvOWVRZzVVYjdRMTdCSFJaZ1M4Vw?oc=5"
+  },
+  {
+   "titulo": "Fortaleza del dólar y tono de la Fed afectan a metales preciosos",
+   "fuente": "El Economista",
+   "fecha": "2026-11-25",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORE1Na3pydjJrWUY1WFV2ZW92WTZQVW40emtsV01VUjdISHhYY2dsdTNaN2gtMzJBZjRfamhQMXNrVzVkYm5hWVJ6MzdxaHlhYzc0WEFwUWhYbXBTQjlHanFiU3ZHVjBfOW1UbV9HaEY3QXYweWUzUC03SnBRQnFSNlhwcmhmLXNUb0QtLVh0UFV4Ymh4UVIxYVU5NWs4VVhzS1JvLVpORFdZNEhmZ2FaRnlxenRoOXfSAbcBQVVfeXFMTkRNTWt6cnYya1lGNVhVdmVvdlk2UFVuNHprbFdNVVI3SEh4WGNnbHUzWjdoLTMyQWY0X2poUDFza1c1ZGJuYVlSejM3cWh5YWM3NFhBcFFoWG1wU0I5R2pxYlN2R1YwXzltVG1fR2hGN0F2MHllM1AtN0pwUUJxUjZYcHJoZi1zVG9ELS1YdFBVeGJoeFFSMWFVOTVrOFVYc0tSby1aTkRXWTRIZmdhWkZ5cXp0aDl3?oc=5"
   },
   {
    "titulo": "BCE subirá tasas en diciembre, pero el camino futuro es incierto",
@@ -141,32 +148,25 @@
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWVJlZ01rRVlaY184TWV4S1dEYjBua212R2FHTDM4MlA5YXJfSWYzd1B6RDc2UVJTVld5eHlDWmFXbkFDWm5QM0htWWRaYjBBMnE3Z3VkbmtsRnhmMEpTZEY5T01NbXR5aHoxc29CMVBtWi1NV29lXzJraXpnX3ZTemVUTTNzNVFlOUNjODhJemNjWHpyMGFLTFRCN19leDcwVDlNeEpGclZrWkI2QkxuNjJvdks?oc=5"
   },
   {
+   "titulo": "Nvidia se desplomó casi 6% y arrastró a los principales indicadores del mercado financiero estadounidense",
+   "fuente": "Infobae",
+   "fecha": "2026-11-24",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNQUJ3Sl91T2JDdnptMDUwMEhZMXhrNkdBVW1hRWZOcDRSZUlPSkdXVDJuRTFoLXVlMG5kZnp6OGVlSktaczgwdEpqSlRRN041WXZ3cnF4MlVBNlBuNjBJSXpLSGZmbnIwM0tia21fT0lBSkVGNENqdEpqZVZ0ckE1SXBkVktscjNMSkxMbmQ0b1lSbHNUZmVWaWlaakowRDU2NzlDYjBpRGtscDBnZEhKMkUta0ViM3o3SWd5ZG9LQjFzdFVzcF96aHliRGF6RlY3LVFwaXM4YnAwcXlHNk1uZjB6N1JteHZ1TDRn0gGGAkFVX3lxTE9QZV8wbU5GRnJXRmxsd1NuNWdfRXVvUHo0TzZtX2IwdXNqeVFYaEpGRC1HbFVjSjJ0dklyZjlpM2FGNXgzVWl3aTBJQWpuZFhFdWQ1aExlTVc5ODBxcG5abHRsRTJHQmllTmVmTmlRc2FqTGtGaWFGSTQyQ3B6QTZhMGFYa3hYTG5kRm83OGJVN2pKQWIzMlFBcGhONEhVSXBrT1hzSHNBSjY5eWc5LWNFV1RPa0ZrR2FjWmdrZVBUVVptdmtnTHNmN003cl9tWkU4UEIwS3lLZzJSMGJwS2JsQ0dabldyUlNtUUFfN0RUNVJuMTRnRzVaS2lNUHVEcnlmd09VZ3c?oc=5"
+  },
+  {
+   "titulo": "Anthropic pierde el envión de su histórico debut en Wall Street y sus acciones caen por debajo del precio de salida a bolsa",
+   "fuente": "Forbes Argentina",
+   "fecha": "2026-11-24",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQaUZ4dDJNbU02Z0F4LTMtcTZyc2JSVkNoNWhadXhYUW9Ic3VqQWNfaS1fc2t2VDFTMUJEa0NMWmpWOHl0S3BLYldvQ2RXbVVrZEo5elNvc0VFblV1ZUxSSDR3eTV5V3JVSjAtX2VxMTV4a3FQc0VrZjloM20tLWFWcDlxdkFSS21lN3AtaXdjQ0hodk96Nm5ZYmZySkFjSDZxWmxVTnI5UGdvdUh0TlNRRmNjZlVjTE5PYUhKQ095LS1tUVVmWTVfU0xwUDlodEdRYUhNVmNEVGZaQ0ZQZFHSAeMBQVVfeXFMUGNjaWxPaVEtZnRRXzRrRnJEc09malhWUDZpd2lSelQtLUIxeHpSa2ZnRGpYa19aVGZLdlFtQlVtVTRQSVowZmJET0pvZkpWRFZaUHFkX0ZFOXB5TjYwM29QOUVKQ3hyNFBsWWk4U0pqYUQ2U2FzZkZVaEVab0lERWExbUNFR2Q0Zlhoa1FFZW1ZSWlFOW52eDlCVWVXZFlmMTlFRkJDSUgyaUlqVWI2OVRqQ1ZJOG5JeHoxYU1WV0VmZU92Nk5CclJaRjJhMEZpbGthV3l4VkJ5SEFxdVd0OFVESTA?oc=5"
+  },
+  {
    "titulo": "Petróleo argentino, precios chilenos: la paradoja de pagar el costo de oportunidad global",
    "fuente": "El Diario de la República",
    "fecha": "2026-11-24",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPMmZ0SjBNU21KNTc0WDdiZl84bTBpb013WVN5bVkzZExPWnFYRXl3T2NENXUzWFE2ZzZzVUZ1VUtEWFVMZGhmbjF2UWNZYnhtT3RIblQwOW5lM05DazhPa1ZzekZqQVpSMEkwLXQ0dTgwZTNaa2FRYm5QRURIdFR2Z1pUVE84ZlF2dGxoZ19aZVhKa1JNUHFscFM1MFkxb1VtekFGRjN2RWJhUUw1dEFVdnJ2UWFadW9mY3cwUHZhLTViMFl6eXhKbFd1b3I5eVNjaTEyRW50VDNtdnFaZF9zVnBTYw?oc=5"
-  },
-  {
-   "titulo": "El alivio del precio del petróleo da oxígeno a las aerolíneas: el sector sube un 13% en noviembre",
-   "fuente": "El Economista",
-   "fecha": "2026-11-24",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPSEczRjdpYUxfYUZ2SG9ka0dvS1ZlelY4bU1ENkRHUDd0UC1peDR0amp2LVBDQ1ZWbFN1WEp4N25VRlFZLWZ3UXg2Z09sYWFvUXZERWZ1X3AtSmY3bDAtZ09TcUFHV2NHYVZRbnlvQ3BOTXpMTGZIN3ZRSzFEQUp3VFdzZlREcDhBWmZ2Zm9HMmNRYl9uR2tGb2tldVN4LUFnLTFOclJtR3N1QTV0R2g1aU9Pbzh1bWZmLWJmUDViT3hhOGpZRnpxdkdoWFpCM2M4akIwbVhzVGJ2YW9YZFJTS3VFTEpJcC13b3BsY3BDZUdzWnR1bVdneVlxdW5ybW1SbThhU9IB7wFBVV95cUxQekhiZENKZVJBazBHb0JpOGVpUkRmWm56WXZYQnBoTXhDcWRmM0R2Qnh3b21GQjZ6SER2ZzFtdnJqcmZHTEthWG8yRVp1TURhbTJPdF9LeUN0ZTBYYm5nbDBwT0hzRmo5RGY2NF9FTl9CX0tiVDJEd19EOEdSc1hCMUVORjE0WDVyY3U5WXVmTFFoMzh0ZVhuRUNBeDRZbm9MU0dmaVBjT0NYREJWOTNlQk42S2docm5QX21XTjFDeTM4TEFRTHN2ZU1OaGx3OUtGb1o2dUJKdzdldXE1Z2htbk9vWkZEZmhDTjJPRGFjNA?oc=5"
-  },
-  {
-   "titulo": "“Aumento de tasas del BCE de diciembre podría no ser suficiente”",
-   "fuente": "El Economista",
-   "fecha": "2026-11-24",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOOHpMUHR1WFNpNUZFN3ZjNm9NSUFIT2tkcG5pRXVHQWttbThRUzhBdC03SGRrbW45ZFpfQlFTRzZoYjdLZTIwTWc3RnFCRV95LV8yS3Brc3RvVEhaZWNKUGM2THNsZzFYTmZOSDlrRFdUeHpPZ3BOdVRtUUZJLVd1SDNZVEo0cU00eWZTd3RXaVQ4dk11NDRUQTdKb3pMXzdyNXfSAacBQVVfeXFMUHM0Y2ExWGZXSXcya1FnWEFwOTc4VUtEdTVna0kwQk00ZXZNcGJHdVRxUl9EOVN3bHk3eGVJWHp4bVVwTHA4ZEw0UENOOUlpMHRqM3IyUWlWZzRnWW5XU09BUmxKN3JKMy1GNjJnWEZEcXpoQjBCVnhhR2VKYW9MU3RGZElCelhqc1JIcXFPNnh6N3ItN05WdEVyTWhYdUU0dzNpMXU3Q1U?oc=5"
-  },
-  {
-   "titulo": "El oro se recuperó después de la fuerte caída semanal",
-   "fuente": "El Economista",
-   "fecha": "2026-11-24",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcDhOVkF2RmZLekE5U1VvS1plVEFGMmw0OTlPeUF1TTNQNWJfRmVmX3Q2Mm8zY3RlaWFtMzd2VUZ6SGNlRWV2OUROZWFrSUk2Tm5Halk1VXdyZTFfdlFZQjBkVENBck1rWjdaSEtsNHhUR0R3N2NZZ0QxQWNGeVlmYUt0UlpLc0NMdTZ2UDlZYVoyVzRZN3gwZ2tIRdIBoAFBVV95cUxNMTY3RU9lRXhGNEY4anRIQ3JwVnozNE9kWXl3MFRyY2JESEJERk1wb3FrT1dEWnVTMmd2bk1wczY5eURHNW9Uc1FlUFFZTlJBcFJVWTVHTXlSa2pkWUltSENwUV9jUE9wN1FxUEVpMTlsTlR5RkRoX2JvbndXa2VncG9VbWE3dlBlRGQwWHhlR3ZGanZMeVRBR25Ha1R0RGwt?oc=5"
   }
  ],
  "tes": {
