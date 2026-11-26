@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-25",
+ "actualizado": "2026-11-26",
  "indicadores": [
   {
    "id": "trm",
    "nombre": "TRM",
-   "valor": 3592.03,
+   "valor": 3630.89,
    "unidad": "cop",
-   "fecha": "2026-11-25",
+   "fecha": "2026-11-27",
    "detalle": "Tasa Representativa del Mercado vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/1/tasa_cambio_peso_colombiano_trm_dolar_usd"
@@ -16,7 +16,7 @@
    "nombre": "Tasa BanRep",
    "valor": 12.25,
    "unidad": "pct",
-   "fecha": "2026-11-25",
+   "fecha": "2026-11-26",
    "detalle": "Tasa de política monetaria vigente",
    "fuente": "Banco de la República",
    "url": "https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/59/tasas_interes_politica_monetaria"
@@ -75,56 +75,91 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3546.49,
+   "valor": 3553.49,
    "unidad": "cop",
    "fecha": "2026-11-25",
-   "detalle": "Precio del dólar en el mercado (último dato); −45,54 frente a la TRM",
+   "detalle": "Precio del dólar en el mercado (último dato); −77,40 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
   {
-   "titulo": "Precio del dólar hoy en Colombia: cotización de cierre del 25 de noviembre",
+   "titulo": "Gobierno frena plan de Gustavo Petro: Colombia no ingresará al nuevo banco de países Brics",
+   "fuente": "Revista Semana",
+   "fecha": "2026-11-26",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOU2RnTWFmYkN6Nm1nREtvd2lHU29JOGd6R2V5aXI5ODdoVGZvOFlTV3JjTVFBZ25RWlJGaEpWb0NKSjdKMWRQM0p1NXhqbEt2TkNHYWJBN3pwYlEybVhBNXUxb2M4VFZHYWxwV0ZtTHJXYmtNbF9JQmJDSlktMWhldHAwOUNCeFZfNXA0S2FXcHlaWF9USXFHM0UzY2hQdnVUdHc0VzUzV1UyeWt5b0J5QUQzUGg4QmsxMVNOcURMbXIzX1dTTUZNRnQ5VFZlMkNQRG1uTNIB2gFBVV95cUxQXzNrT2dTVDFvQ0l6VFhod2VaVHhtaUpBSkFmTzdJOUE4eUlBN0Y4dmtDTVBKa2ZCZEt6c0xBUGFTQkh5U2RNS1hDVmhZMWVyNnJmOUItVlN1NHItdjVFeU04akhza1M3azRKLUxIQkxUZ2tFUlRPbG50ZTZzR1ZaWGFWNW5lTlRRYVJ1bjJ5U0d1WTB6ZzZwcnRxYjgyVGhvN0tWeVpITkw4VmE0NFRIRk5ReDZTTV9DTkV3ZktLbXZHQ2JTdmFJVXU3Sl9vSTdGU2RlR1VrVnVudw?oc=5"
+  },
+  {
+   "titulo": "Salario mínimo de 2027: el procurador Gregorio Eljach propuso fijarlo cada cinco años y pidió que no vayan a “estrangular al que produce trabajo”",
    "fuente": "Infobae",
-   "fecha": "2026-11-25",
+   "fecha": "2026-11-26",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNUg1enFjYjU4T3pPUWhOWFZkTWg3SWlmNWxYdnE4R1pheGszbndYdTB3S3F2NHdUZHJCU1QxdGx4ZVRvM0tBWXJIRUxxTkRxODBfM2lJeXpueHhhdGV1d0pZWmtCQUZhZkxfN3hFTEZDMUFTZzU4TEtBQmFWTzc0WkFFcFJHbHdnLWVVdEdKRnNjYkZkUmlBdnZZODl3MWFkSlQzcUpxc29fQVpPR1BXQXNhRlZLRFJMTGfSAdQBQVVfeXFMTzJ3YTlNZFh5c21RcTBOWWlnRkdTWW84bGh3QU5TMllDekhFcWx3azU5bjYxSEcwQ0xkNTg3ekdabmppRXVwcG40alhQa1BEZjFfNWo0TklYSGJsTDhhTjByTnFfd3dmTDNPMzg2S2JJaUhycUM2eldKZFJJSXVkWmVZRGtFaTBIbEY3VEo4VVZDVlJKSnJmM0dEX0RDb1pZME80OWtha1ZYM0hWREVvX2RzaTZ1ckxCV2tmMnNXUk5lSnBDTzZMbGNwV29FN0lJVk9yV2E?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQSHBlUjhsaGFwRkZhcmhKMnh1ay1Tekh3U0laaWM3X1NYXzlaS1FQZy1Ic29aQUZvaVpvTV9ETEJfcDlCSjBtR3N3djN5UE95WWZnUlNmdHNoYzhyVEdfOERVbmJtNzBzYzBQMEJYQWhFbUcyeEFadHZaZHV4bW9wU3l1T3FSYXJFeFU2UjRBNm1kZUc3UVh4NEV4MEMxSVZJWmZWMmhvSFVTZkpYYzVrMFVDNDR5U1dpOTZjbGVOdUtJVlBnbHFYVkFzVUhBcXl3Y2hGbjdHOWdiRDNJZVVTYXQ1bGpzejUtR0NyMGttWEJ6N3M3N3UwTzZvemk3bVdlUy1JNXpPM3R6RjRGMHk4dVpLbGpPZ9IBsAJBVV95cUxObWZPYmpMVEVxSXBYQ1c2WHVXNUt6SHhSMzBtRlViSWhDaXhKSmZYUDhXSG9yVDdjaEp5enAzbGNwd053SGJRUlVvZk0zQ3pxbDRBZVB0c2d2eklQc25EcUtvdk9CeVJSREo3WWdBUThUd3VScHVNQ2V4ZlZnTmlJajQ2VXdfWWF1QVg0dWhkRUpzb05Tc3NuX3R6MGhwX0s1YlJNY0VUVG5YTlJBbGNCamFWNTNwYWFqSF9TTFg4RnF1VnZsdHM5ZFMtdXpKaEZXMDVCdlhNZjV2NTRpNTVRRjBCWFJHenZFRG9WMjEtTzFMQ3d3akFnZlBqS1FnQVNXcjA2YWRCek1vQTVXNHlHcHFURG1wWGkybjBpajZYbE9nQ0pBNndnWmY0c0dKTGFY?oc=5"
   },
   {
-   "titulo": "Dólar hoy en Colombia sufrió fuerte caída, luego de jornadas subiendo; coqueteó con $ 3.700",
-   "fuente": "Pulzo",
-   "fecha": "2026-11-25",
+   "titulo": "¿Por qué subió tan rápido el dólar en Colombia? Lo que explica el salto a casi COP 3.600",
+   "fuente": "El Espectador",
+   "fecha": "2026-11-26",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOYW1uQkFGWDd4LTdubkhIVEVHZnlfNzJkOWZkN0ttQXdyOFgwZ3VJTGt3alBQYUJVN0hRaXRrWmozYVUtU3FiZ0R4akhlUFpuUXFfOWQ3Y004RGNKQnlxVE5idHBxQjVOUXVLYWZ4NWJLeG80U0hjUEl5c0ZhWTFkSnhKa01EeGFMdlp6VlVPazBMZ0ZnV0lyT29RMUxrMVF5eVdyYjBoQdIBrAFBVV95cUxPRGZjd05EVTB1Z1U0dHRoNXB2R0hCTEZzYklkTDdwSVh4S0R4TDFpSGJkd010OWxRYm14aHRWbnhpemQzcFJnd1VPbWJQS1dLQWJsSG81MXJ4MUxGMEdMeWZTamlqeFZWaklneGcwVlgySTVtZjk0T3ZwdTRvekMtLVBJSkt1ZVhjNng0ZWZWSDJfVGtaTm8yU0pCREluRHJhVFJhU3dqRWh6OXdT?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdFhjcW96bHRIR0Z1VXd6c3hIM3lYSGlqVWVvdE9XeHNCdUFXTmpRQmRmWElFd3V5dmQzNnoyaF92TXJZMENEQnNFRlpsY20tWW41ZGlIYVNaYnZCS3NtaEV0MTJSb2I2OWZWeFBEdmQ1SDJpXzZLUUJLbDBRM0NBTTFlV1NBbHd1UkRDeUR1aE92Q2lqWWtQSFhKTncwQ0RudlozRmNQT0NySFRtNjlpaDBQenRhaUxkQUhjSjBIbnB3OHfSAdcBQVVfeXFMTVhyRmFCY0tDRTVOSkcyM2hFZTRDNm9EMHdCcnRwRFM1Y3lqVTBoSUJnbndidnlNZmY0cDc3aTBZSjJUSlZ1WFJHNzJpemZZcTVCMGxuRUNsa1Jqd3ZPak9jY0l4bmNfOUc4VkI2QXJxNlIwMjRNVDhDb2Q2ZUh1OV9ZMWZqc2tIVmhvekpqX2lvOVYzZGZ5VWUzZWdHUHR5R0l2UG1kWDJ6MU9OSjFlQl81X2VQT09Wbktuc3BmYWk0d0lKZGJ4YTBBT2VUVWpmS05rYWhQWm8?oc=5"
   },
   {
-   "titulo": "Dólar en Colombia podría superar los COP$4.000: qué tendría que pasar y qué riesgos tiene comprar ahora",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-25",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQYTNMQ1g4UzdfUFpmNzR4UW1qSWt3b0pxVkY3OEZtaWR5NGZIWGJ2X0NYb3daX1BYQTFRLVhsSjRjMFVQSEJNYXQwZm1NTEI0THNFTkFGbktnQkRKSUtvTXNOREVDdlZfY2dTNWI1RUxxeGk0QXpReGpCeWlkMjRTWGUyYklHMnRMQllKUWlyTmxOQ0h5Qzl6c2ZCUDZTYVg2T0R0U3FDWGN4Z2EwcDFkSDA3Tkc4SHBwSlc4ak5NMEdOWnJvUC1WV1NWR2NhaHNwanpOLTZEUXlZakVGT0N3MGl5TnB2QnJFejVZ0gH_AUFVX3lxTFA0WDFyLVRubHEzcTBXTnRqdTc5czJXZWpTZ1FLekxfTklVX2gtT3ZpcEg3aDhqMjhDUEJaWkFSOTgzb1puNEx4WHZ2N3J4UUZaenBtaWJzejhiRlExUnAyZ2VjUk5qYVJNclRQZU9GeEhDOE1vZlJYT20zSVhqcmhCUktsSWJ2eWVxOWhYR0pDZy1MMlk4Q3ROdnJDcTN0d2M5NTUyOWY5eTBqWUFEVkJrT0loX2JoQTNnNGtER1RpS1BFUk9FRzdHT0FQMDBsQ3pjaW1ma3VyUmhEdDJJQWttcXo2Rm55bEVvQVRHYWkyWmtQdk5IUHo0RWdnOGNBSQ?oc=5"
-  },
-  {
-   "titulo": "Salario mínimo de 2027: inversionistas apuestan por un alza de entre 8 % y 9 %; rondaría los $1,9 millones",
-   "fuente": "Infobae",
-   "fecha": "2026-11-25",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQQTRLU1Y2R1dGcklOeHRkNzRfRV9ybGc3cXo5dEt2eWxlWTkyaGRGMmo3WWhjVHdvMFJ0Z2pIdGVwUFZVZGxGazhiV1NDTEZSMEdtZzYxcWh1akk2MHNiTk15V1J3dHN6WEFsRDZSelRDbzNHcFVtMlZWeHpYY0ZCcXFWX3NRZHBFWC1XWU01c1ZvcjlLbHBzTzl0N1RHcGhsa3pUZm1yTUQybEJzdG1BN09fM19JVklCY3ZwVTJSYkVVTVFnbnotMG9pakxrUFNDVEhvV1NZVVk0RWPSAfYBQVVfeXFMUFV6QlpQUjlTZFFkbjViazdQdElXNHNMY2Rudm95TWZRUkFiSWQ4TUdmS2ZYZWNqNWhvckppWGlaY0lqSTlDZmFMLW1CeUNhM1dreC1LaWtUV0c1Qk00ZHZyUTBMU2ZzZDdualN0LVdYYm1GYWp5YjZQSGgxLWdJQ0VRbUpUTUQ0TkNhSnBSVUZTZmJXOUZFNV9LLVRGVjkxdlV5NWMxcmNTazBxbjhtaGNYb3c4aVNmT0hFMTE4N1AxRzVTUTdRSFJDOGpvTy1Bc0s1WVlGVEp3MHpmd2VIRlFKU2RLaVBOOGpjRTR5RWM4aTM3MHJn?oc=5"
-  },
-  {
-   "titulo": "Dólar más barato: la moneda cierra la jornada del miércoles 25 de noviembre con tendencia a la baja",
+   "titulo": "Gobierno consigue recursos para tapar huecos presupuestales y financiar la reconstrucción tras el terremoto",
    "fuente": "Revista Semana",
    "fecha": "2026-11-25",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPMDRQVk12dmNLdFZKVkZRYnNQd21VQ25kcjlldmdPLUlJek5IQWRCbXYxc3RRdFp2OVRYaGNpZzUxcW4wWk8zN180c2hQdGl6LTVqUklSR0dtSm9yUEozT1J1S2dTREVieFdFR3NWUTR0ektHUEdCT2gtMFMwT2JrVFdGSVdINE5OeHl1OThlMGJzbW9JVHJpc20yUmNNbUpxVjlYejdFamdxMUZtcXZ4LXduUmZldVFGX3VqcVBHOHc5QkNxZmdZZkduT3ZFUmllbWpQNVRvQU4wb3lDdjEtRFhB0gHnAUFVX3lxTE9iNmVFNEs2TFZsUVJRTnI4TlU4WWtLUE5SbUwzMDNYM1RXSEZMV3paNG9NV2NCZFhmVjdvRXdZbjRrSVhKbENCeVcxdlRoRklSallpUTdWWmNaVEdZNmpIY05yb1NqMFRoLUN0QVJTN1dlVjlBV2JFQ0JPT1BCWHY5dmFIN25wRTZFZk13Wm01VVNQT0xSbERHM3BPdXBZc3FpZG1kN3I4VUM3V0xyZEVXVzlkM2ZnSEVRN1BDTkRUUHRKbEpKV2FhVnFNU0FtM214SFROcVJKYk84VlhSS3B3QjNja2VVVQ?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPbk95OTlsN0VhaHQ2WEFmdXlqQ0hFaGR0eVlxSkMyRVFocTdSM1BPQlpoMEduNnVleEV6QnhDWDVRRHhwdTlLdmltRW5jazVOYlk1cGxOVXNrbjBWQ1hqSzl3NzlWODR0WlVZZXJ1dWN0bWpMZmtsUHl5NkRwMXFJNmZ3UGhqSmQtYUgtY01UTmtXTk9aVU5wYWhCWllxM2hRemZJNGhjYW1IRWZNZlRpRGVkazFIS0U1LXg5bm82RHc4aTM0Wkh4MUROcTBLM3ZwT0wyM3Vaaks3UWlselhpVko3MXhoa0prNTdfSmx0d3NEX29Gblg5MnZfanhGUGJaaG0zQdIBhAJBVV95cUxPbk95OTlsN0VhaHQ2WEFmdXlqQ0hFaGR0eVlxSkMyRVFocTdSM1BPQlpoMEduNnVleEV6QnhDWDVRRHhwdTlLdmltRW5jazVOYlk1cGxOVXNrbjBWQ1hqSzl3NzlWODR0WlVZZXJ1dWN0bWpMZmtsUHl5NkRwMXFJNmZ3UGhqSmQtYUgtY01UTmtXTk9aVU5wYWhCWllxM2hRemZJNGhjYW1IRWZNZlRpRGVkazFIS0U1LXg5bm82RHc4aTM0Wkh4MUROcTBLM3ZwT0wyM3Vaaks3UWlselhpVko3MXhoa0prNTdfSmx0d3NEX29Gblg5MnZfanhGUGJaaG0zQQ?oc=5"
   },
   {
-   "titulo": "Dólar hoy en Colombia apunta a $ 3.700 y sube casi $ 200 pesos esta semana: ojo a problemas de caja",
-   "fuente": "Pulzo",
+   "titulo": "Dólar en Colombia rompe pronósticos y se acerca a los $3.700",
+   "fuente": "El Colombiano",
    "fecha": "2026-11-25",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWFZldXVjQkVYeUJ5SThVbThFbW9YM2UwU3ZNSUFjaVJERlFKbzNyR0UwWE1ZTkw4MFZHXzJ4bHY3OXdmeElac2Z2RkZXVDhkVmFSLTNpUHZZTlozalJCNTd6dHVqbWd4czdrbnZ4eUJndlhHR1hvRmpTN3FJSUplNW55UnZPVnVZYXNHYWJjcTY4MXFEQTZKVGhOeFoyMGgybG5HZg?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNU2pmdDF0U3kzWGMzQUhHN19LeUZKQWl2V2s3dHBqa2hpNjA0RVlIU19QRWp4SExkdFBDMmR4b1ZOZTFDbG1uOUxGLUFFUkxkdmFhOWNDZGp6Y3hqdUM0YTRXN2U1MTB4LTJtSk04aXVMd1RKS0hpZkNjVm9xcWFKeFo5emlNSWJfczJzSzFLSkFWSkhTZDJ2Ujh2VUpwc2pNRlFQbklXTTZma0E?oc=5"
+  },
+  {
+   "titulo": "Por qué se disparó el precio del dólar en Colombia, según los analistas: podría superar los $3.700",
+   "fuente": "Infobae",
+   "fecha": "2026-11-25",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcUtCcUJMYjdRRUJlX0hFM0d4dWxqdUhwY0J3VmQ2ZTFrLU02ZkZKQkZrNDAtTFA5YnZLRktCSkRWdXVRLUhYSGxXXzJQdHRLNVNCOVlIaUEzMldvU2lxSHkwR05wbVgyaV9Fbll2WXM0R3htY0hpVXNMWDVQd0wxc08ySFdnMDdydWwwMWRBMnhkLWdOdmN0VXdxU1NUb214ZTZmcHFrX2lKMlB1bHotdlV1Y0Y1eDMzRlZCRnM2eGVqY2ZPOElJ0gHiAUFVX3lxTE9PalphT2c4WVl6VmJHR0R1TGM3ZU5rSHlfU0R5SG9YQmNoQ3ZBTW9kM1lOLVM0TU9FM280MWlXcVB1ZVBUanJuSV8tS0s3T1F0S1NFM3BKeDQweXJQZER4YU0yaEJkRWlDc1lmSi1VV3kxV2RwS18zYWszbndkbHdldVl4ZUxqdnNPaWk0N1pJNEllX0FDa1gtR2Y5YUYtTkFWVlpfS0ZjOUh3OTkxVm5hTWM1Q0NUOFgyYzZiV3pqUWZodkVObldpTUgzcXAxUlJEZUptUG5EaHh1NkxLaTEtRWc?oc=5"
+  },
+  {
+   "titulo": "La rentabilidad de los bonos chinos toca mínimos históricos ante las dudas sobre la IA",
+   "fuente": "Infobae",
+   "fecha": "2026-11-26",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPak5mN0tXc1dnUXlkWnlhWEZMM2pxQ25rZmxaVzY0MHBxc192NDdYUmFoVnVjWnc2N0s2aEltbGZRUlM0MXVhRThYbjVXY3RJUDVSamJ0NzJUYmtRT0lfQmdXVzIyWWVPYm9rMW9xLU1lTHk1TEQxcUJaTlJxUW5Kb0VlYVl1NmpySUVmVk9kTEdoRU1odEQ3aWZkUW9ieGk3UlVzZUtLS254aUdld1hUSjhlWUZhc0I3a2hma1JzRUxBYjFvazFsWkc1TS1OMFNmTzZHTS130gHwAUFVX3lxTFAtTEZzT0xTQkhlMGRZVmQ2cktENG15RXA0ZTJjaThHcnNscC11aW9GSWVicEVYbzFkclNGR2c4UW5Oc0Z3SEg5ZGFhRWpRX1JpWUZLaXhOUnZIc3BXZFd2YTNva3BxSGJCa2JFNTJocGN3LXJGa3BqYzB6UmtrWUM4eDk5bmdPYjFnQ1hDdFBKeTBjM0xOT1NHMVEwOVcyNG5sbFVLSWhEdWp0VU9wU3k1YnVFSXpqbHI5akFGTTUxUnVnLUpCZURzWTRqMVFVbS1mYlc5Sjhka0RjanU3MGJpS2VDOURQUEVkbzdyV3hEWA?oc=5"
+  },
+  {
+   "titulo": "Una empresa argentina cumplió diez años en Wall Street y remarcó el potencial de la Argentina",
+   "fuente": "Infobae",
+   "fecha": "2026-11-26",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQN1JCc3dGN2VlYUNoSV9sMkpNbHgycnpmT2k5dGcyelV5NnNqZTlKUHNSUk41c0RmQm1POV96RHpDY0xUTDZZMFJabDZXR1RQWXN6TmNoQUZ0NFZtU2dKaGtNSnZoZzhNVDVZYmRLN2JsZDQ5eVpKMUFDbFVxeDBZbXhHbXoybXVmNVQ1TFlvSHhwZHRWZGhWX2tmT2RQZk9TQnB4N1E0VmdVU1Z3N0VWeU5tbkQyM2NqQTVSQUQtcjVrbVluVGtQUEtHSDFPc3FJcVdj0gHuAUFVX3lxTE8yeUgxdEFPaXQ4eDlINlVFRmJSTUM1eG9ta0NXaDdoQTN0ejlEalVCZnRfS1lBMk8xWjhXWjI2VlpNb01rdGJfZFk5MXFJZW5mcGdvaUY1WVJ3YlhONTVaZU9kakhLNnpjX0laUjVJT3hETjM5NkFpT3k4QVd2UE8tYzBOOE04d3FpeU5VaWYzdWVmX2V6WHh1RGhxN1B6dzZ2QW5UaGNIQ1VDMkl5Y1VHbzgtU2JwWWVxM2RoWmI0alJGYkNKRFAtM2t5aHhXUzBvVkMwLUl3RXVaZS1rb0VXLUJqa0ZqWXVfMzNsMEE?oc=5"
+  },
+  {
+   "titulo": "Oro cae a mínimo de más de un año por persistente inflación en EU • Mercados",
+   "fuente": "Forbes México",
+   "fecha": "2026-11-25",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPN241X2xvSHQzUkZUVjM3VEZNV09iWDgxQ3Bwdl96cEk4azBTczk1ZjFtZnZwYy0xUU5BTlQxMzVyRlRFSnhZZlVvbmtMUlNLeXhYME1QMTA0V1ZHZW02aURIT0xCaHlMZVFpY3ZUbHM5Z2JxYUJXSktLRDkwdUQwMjZNaE5TeVYxaExXTE55YmZJZw?oc=5"
+  },
+  {
+   "titulo": "Precios del petróleo suben impulsados por resurgimiento de tensión militar en Oriente Medio",
+   "fuente": "El Economista",
+   "fecha": "2026-11-25",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUE5CTl9jQTdqS1VFQjhXX0dzWmFMeENoOGtiVWlSYll5WENNYWlIN3RQOXZJS2E3UHRuSC14TngwWnVZN1pIRnV5YVZ6UU5oU2NZUlpremFIWXFyeVdEOHdoWE1fbjRQUGdzazdSNEVjUlNnWnluUWFqdUNiVjBKQ21WNE1mSDkzVmhCOWtwU29TRE80MTZEcG5UX0xMT2VqOGlHd3pQMllNb0xRR2tDbVJfVlpxaV8xMGJRUVZ6WHdhRTFBVVY2M21JWXhhbG54cU94Y2pR0gHbAUFVX3lxTE1WV3BnckxhZE9SeHVDYjdJakg0QkFuNUNVdnl4dEkzSE1mMmU1SE43SWxjd2tLR1ctWWwtS2JhcHJiQm93WWRPSmJHWE5ETld3cW04dGk1TTNuZTcybGxMaGtjOHRlSlBCM2ZXX3RyMnJpY1B2R051ZEIydUZQUElMZkxpQUFmeXVPWklPRVVySmR0SGs2SXRJMVR2RmdxMTh2MVBrQU9UcWNNY05Lb19TaENSUkJHRlZjT0paOTdlNmZvTy02NTE2WndsVTNBT1JVWGNIdnQzbnMzbw?oc=5"
+  },
+  {
+   "titulo": "¿Por qué sube el dólar en Perú? Billete verde se aprecia más del 3% en 2026 y se acerca a S/3,50",
+   "fuente": "Bloomberg Línea",
+   "fecha": "2026-11-25",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSklUZnd6WkotNXM4NEdhOV9ZVnhFTkhKcmxLSy1xcjR0ZFU0TW9YUGQ0dGRpZl90OE5fY2RYSDY5M29PeVBFT3NUaUx4VU12QXJreEZneHFPcXNuWTNFR3lTT3JBSFF6bldDUjJ3UGFxZmVsWGlpRTZHS0Q0emdabnNYdTdLZV9kajZPa01vaExQTGZ1US1UaDZvSjFRNzdPWE4yZ3BUb3dGd0FITWFMVnRPNDJfUkZ3eWdRRmpJdktwaENNQWhaOHJHd2FNaGNqUW9hQTNrSm1KZ0RkNEFhMGRSUnBjRHo0T3dWZFFn0gHuAUFVX3lxTFBKSVRmd3paSi01czg0R2E5X1lWeEVOSEpybEtLLXFyNHRkVTRNb1hQZDR0ZGlmX3Q4Tl9jZFhINjkzb095UEVPc1RpTHhVTXZBcmt4Rmd4cU9xc25ZM0VHeVNPckFIUXpuV0NSMndQYXFmZWxYaWlFNkdLRDR6Z1puc1h1N0tlX2RqNk9rTW9oTFBMZnVRLVRoNm9KMVE3N09YTjJncFRvd0Z3QUhNYUxWdE80Ml9SRnd5Z1FGakl2S3BoQ01BaFo4ckd3YU1oY2pRb2FBM2tKbUpnRGQ0QWEwZFJScGNEejRPd1ZkUWc?oc=5"
   },
   {
    "titulo": "Bolsa de Colombia supera a Wall Street en rentabilidad, ¿cuánto más podría subir en 2026?",
@@ -132,41 +167,6 @@
    "fecha": "2026-11-25",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNkp6ckFsQWpvNWkxaDBCbFExLUpzaHdVX3RXdlctUWRITWlDMG9tVFhXMEhmOUo2dUROLURkZmhEZGJpRU5kUEtKRmxPajl1SW1aOFFGNzBsUlNFR2FOeUszNzNPT3NDRFFCMDBCcXJ5ZGtadEpPMVpMRUFoVGJXZ2YtbVprVmtUVlB4RFBVTVc3cjJPQ1BzS0F3OGFWNjV4ck5FbTRxSFNxMHQ0OS1UYWVHWEp2bm44NUV4MHhqWGYtQW1oNDhuVUhnQUlJQkhEZG5iRnlzQ2jSAewBQVVfeXFMUHNTNkJUYXRMMjR0el9JbUxMQmxFNGhpcmNIM0V6SnR1aVFXLWk1RDhHT0VzbllybmdILXpBMDhwMGdaRXB1XzVCZUEwdlJfU1ZQVUVKbnlCc1hhOUlPYmE5MDFncE9tbmVBZ0FXTTVkbE5YdXdnZXFEd09FMUppT2RkMDFZaVFoZjZWMUtEWWR6SWVSNW5nWWNYS21KWGF6ZDVURkhVTEw4c3ZteW5hZXQ4c1NPb3Y2aXUwZWVBWXl6ZncwbUlKYWtxTEJYeldWazNvM1lkd1E0QVNSYkxKclBSYUZFcVUwU0hERU8?oc=5"
-  },
-  {
-   "titulo": "Más crecimiento y más inflación en EEUU: el PIB subió a 4,3% y los precios igualan su máximo de tres años",
-   "fuente": "Infobae",
-   "fecha": "2026-11-25",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQZkFxbFVOYXdSQ2l1T3g4MzVrd2REbFRKeHZVZXJaVXBremRYZW5Qb2g4bGlTUEhaZUtacFkwWkVYRXN1WmtEX0luSWt5OWdKbms0bWZtSjBDWjQxb1ZhRnE0TFRuamlzN0VvQ3cxZTQxZE5FbXRFSWtINko1YnRrZllyZEhxRDkwYzk1QWNYTHFKSnQydVoxS1BvWHhYNWdEU1Itc3BjRDU0UXRCbWw3UXNPZHJZbHJNRkpvOU80WUh0d293YWpHVG1ONml3Mm5QOHJPRU9EazZCUnRw0gH3AUFVX3lxTE45cTFZREdrNGljMXU1aTVlSzJsYWFwVmp5RmI5ZDNJdWl0R0M4ZlpFR2YxekFPTzJqRU5ybWk1UGxUbUVteVcwNnZwMHJJNGtLNTRsanBSY0s2R1ZTaFVzTE5MRThiMml3N08tYklmUTZEREpyaGRMWGgtWmdFWGtwMkQzb0VrVzdtMUVIdkN6Z3NqMUFTMkY2MXlGeG9YallVVlBFMC1aVzZkcnBqaFhlYU05Y0JiczJzRXEzZldWOE9WbGRlZERzREpuem1yT092RWJlOG53TlBJeEhxRUJxY0VVUFFhREV0Zko3RldPaXBBMnZpS2s?oc=5"
-  },
-  {
-   "titulo": "Precios del petróleo retroceden más de 1% ante expectativas de exceso de suministro",
-   "fuente": "El Economista",
-   "fecha": "2026-11-25",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQeWFzOUVfN2MxRnA1VEotTmtSbW9Mc2NPbmstcFltQ3RIUEhGb1hHR01WQ19Ga3l6X3ROaV9lUWlIVVFIMjNXc0pnR2ZoNlZGdVYwcmhZRENtWEE4ZmxzR210cnJ1bmM5LWh5M1ppcFBkcWpYOTk1enVielBmRlJCa1MyclFWMUJxS3FBSFA0YmlfdkxVaHNKa0FJYktaWTRhZVoteVBTcF94NW1jVjU4RnhfZ3IxaGNWQ2xKSnFtMNIBxAFBVV95cUxPNDR5dy1HNldRNUFvcW1HWUdOc2VfQ1F0LXRoUUgwVm92TDcyd2JNQ0VQbDlMRnZLMElDLTg2WDl3R0RWQjZKenI1RF94aHRDSVRueFplVTRiNnhSZzE1S0pOemtUbzhDYWwxSUZKV1AzMklVREZnM1Ntb0R0X0lIQWN3WjZlSGIwZjFiSUlTTXRfZFF2Q2ZZY0kySm05cXBBY29sSlVmSU82cnNhWWlma0p1WHN1SHN5Ukl4M2xrWC13eWla?oc=5"
-  },
-  {
-   "titulo": "Deutsche Bank prevé que el petróleo Brent caiga 20 dólares más por barril: \"El exceso de oferta de crudo se está reestableciendo contra todo pronóstico\"",
-   "fuente": "El Economista",
-   "fecha": "2026-11-25",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxOZlcwMmxiQWx4bHdIazZVZDNuaVNyVVpQUU5td2NJdkI0NUdkajR6UDJJZmN4NlZDMVo5STdZM2s4dkxCaFBSTlFkX083QzlYNUxQNnBsTDJnWGpCaEJTZGZWcTB1cjBDcTBmbFcwUmtYTWZ0S2Q1MW5sTWJlUUJIbFBleU9PVW5ieF9ybl9jNUZtVFVPX1FUdENiR21RYjJSenVieF9PcHRBYnp6T3UzMUpON1RuLTROem00Q2Q0VmF3WWIyZ2s2WmZYMndnd3BYLWEtSFVlRU9RRW1qczhwam1lU3ptUnlxaHM2UDVNSGxCNGtGRDhtUjJlVmR4QjBKZ1Q1a0x1WlVza2pEY1Y5VjJKVS0tdWFtX2YzbUVQSUVZT19XV1ppYTJWQjVPLVFsX3JiMjc5enRDVzJleUdjYjVVQkVGZE9oekZhX9IBtwJBVV95cUxOVHpWWWNwaHYxdUxxdmFqd2diZW9oZ2JJa1RsLWxsQ041X1IyUkRhUFpLNDhEQlZ1YlA5Z2gxbUY0TUE3WF9IZmxWMGxUSWlOUl9udU9fNXA4YjA1SHdVTHY4aFdMLU5DTVcwam9ncXZvc0s3OHZzcVd3eDZZRTFjbmsteVBEN0otQm8zMFFGOXhITTBCZ19fYVB0RUJ6d3dXNzRsVTVwQlNONUVLV19ZU28xNWVUZXFoUmZHYjNNYTdfd09tNE5xZV9iNENkc3R6SS05NERKOEJzUmNIYVdlME9GSW5rdldyRFpyRklrZk1XVjZxMDNUTFhWLV9RUmRGUTR4ZWpRdk9UblJxUnRJbEIzM0pHRGoySHk2VFB6bWVDd1BLOUpsSmI1eXdhRGoyUDFTcGFscw?oc=5"
-  },
-  {
-   "titulo": "La Bolsa de Taiwán modera sus caídas y cede un 4,8 % al cierre, lastrada por Wall Street",
-   "fuente": "Infobae",
-   "fecha": "2026-11-25",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUm1xd01RbktCMFRxSmJPU1lrd0VjLXVPNEl2bzgyazgxMW4yNVRXYlRMaE1CalJYUTVnc2U4ajBzQ2ZDR0tBdjRoWWVUaVdROE9NV2JJYnI1NTcxTE0yOWF3WDV6SlNrNG5RSmtILWhFcHBValhRalJjZ2U3SVBtQ1RxN0FlZUpxYU5zRFNWeF8yWkFTUkVsNV9ic2lqaTBaMml4djQydThyY1Z2dE1rSWQyblRFU0RzOWs2bVZwWHNTVjgyWDhWZVFRSVFPMnBoWkpN0gHuAUFVX3lxTE53UTF6TEQwZUp6TlN2bkdpeFFSV2tEamFLZkVsYm1wU0lZR3FTc09tWW9CRl93WHJkcl9aRHBJb2FLQ0UwY1R4eVZDV3l3N0wxNU5QT3poUkhzdXd5LXl0OHVmQzQzenV5bm15eHY1anQtcXBTUVlYOHcxWVRzQUYwNlZjT0tFRkwtWHBUOFp0cGFDSU1GNUN2dTY4ckJhY0tndmZMM2dVc2d1ZDZCVTFLeHQwTTY2N2JweUZEOFBPQWFWSmN4Tng3c19IZWRGckx2eURTUTRHTU5qY24yRHAxanRHQXJmOUs5M01JTXc?oc=5"
-  },
-  {
-   "titulo": "BCE subirá tasas en diciembre, pero el camino futuro es incierto",
-   "fuente": "Investing.com México - Finanzas, Bolsa y Forex",
-   "fecha": "2026-11-24",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWVJlZ01rRVlaY184TWV4S1dEYjBua212R2FHTDM4MlA5YXJfSWYzd1B6RDc2UVJTVld5eHlDWmFXbkFDWm5QM0htWWRaYjBBMnE3Z3VkbmtsRnhmMEpTZEY5T01NbXR5aHoxc29CMVBtWi1NV29lXzJraXpnX3ZTemVUTTNzNVFlOUNjODhJemNjWHpyMGFLTFRCN19leDcwVDlNeEpGclZrWkI2QkxuNjJvdks?oc=5"
   }
  ],
  "tes": {
