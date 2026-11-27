@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-26",
+ "actualizado": "2026-11-27",
  "indicadores": [
   {
    "id": "trm",
@@ -75,10 +75,10 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3542.49,
+   "valor": 3547.19,
    "unidad": "cop",
    "fecha": "2026-11-26",
-   "detalle": "Precio del dólar en el mercado (último dato); −88,40 frente a la TRM",
+   "detalle": "Precio del dólar en el mercado (último dato); −83,70 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
