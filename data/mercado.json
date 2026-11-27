@@ -26,7 +26,7 @@
    "nombre": "Tasa Fed",
    "valor": 3.875,
    "unidad": "rango",
-   "fecha": "2026-11-26",
+   "fecha": "2026-11-27",
    "detalle": "Rango objetivo de fondos federales",
    "fuente": "FRED (Fed de San Luis)",
    "url": "https://fred.stlouisfed.org/series/DFEDTARU",
@@ -75,98 +75,98 @@
   {
    "id": "usdcop",
    "nombre": "USD/COP spot",
-   "valor": 3547.19,
+   "valor": 3486.52,
    "unidad": "cop",
-   "fecha": "2026-11-26",
-   "detalle": "Precio del dólar en el mercado (último dato); −83,70 frente a la TRM",
+   "fecha": "2026-11-27",
+   "detalle": "Precio del dólar en el mercado (último dato); −144,37 frente a la TRM",
    "fuente": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/COP=X/"
   }
  ],
  "noticias": [
   {
-   "titulo": "Precio del dólar hoy en Colombia: cotización de cierre del 26 de noviembre",
-   "fuente": "Infobae",
-   "fecha": "2026-11-26",
+   "titulo": "Dólar en Colombia vuelve a bajar de los $3.500: Cierra semana con importante caída",
+   "fuente": "Valora Analitik",
+   "fecha": "2026-11-27",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTjFBdVJuWDdUUXlCZkhYSXRYSi1tUHkyYlUzV3VwUlR5WmdsODlqX1JYQlJjdWtKdk52VUdkSFAxQzZDUlhWUVhJS0NKcmxRZEM2RkhPUGQ5a3l6ZDlobFJ4LUxRY0pjdEJ1aThPT0ZiUzBOb2JhanVaeHRibC1wU3g2REx4WnFrUW5OZk5odW50NW1SdnY2QzBBTExRY1ZNc2VTWEh1VGotU05WNlc2NEdCSmJwMS1hbEHSAdQBQVVfeXFMT3NYM1d1QWVMTzBacmw5T2h0SUQ5WjJvU2lqRllsc3FnbmdpdVh5WUpEc1dfRG1KWHExS291TS1jYlFCN3U1WEN1RGxKQ0YzbEV3cjJubUk5NmNPR1Q0MzRPUlZUVkhqX196TzdrWEFSRlNRcFlKRkZwb1VRZ0k3YlNPVk5FVHI3V1N5c3BZUFlwX1hyOXVnalJaaUVFMlJzb3JKWE5sdkM1SnpqSEs2UXVUVjB0LWhpQ3BRWlFkYUhteGhTR05PdzBqMHZXQVpmWndFVTg?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM0hsVlhULUU3VjFIUEVETDQ4TzFuMWpEQ2pqeGY3SWJpVHlNTFFDcU81VVRCQlNfcDZXVE1kWWJBbUhrQy1SVTJqSkJvV25jSktSXzZGcVc5NUxTWWpHb3VLQ3k0cWxCcnJzSWdoREU1d1pFWmNickhjUEZzaEdhWFBYTTNVT21qYVFFTTVqV1ZiaWZUdkJNSWRVR1hHbDFzNHVUc3JDUXg2VkM5SHJacXFn0gG3AUFVX3lxTFBhdGFVa2dBVTQzdkQwRy0tb1VDVFRGbXZJdDZJUkFYbE1vTG5WdXdISW12cHJvWE5LWjNqSEpvYnVOX1BhY0JfZHFhbWZUck5MTVVsR0pXT0UzdlNyNjdQbXRZZkVzSGdJRV82T0hiUGpUVnAwdTgwemVzd2ZNZFJfSHVWM3gzZFFMTUowZ0pYcjZpSXVzUFItRTduYWZyUWdvUHZqd0N2MXpvZHdtY2pGV1c3NHBBUQ?oc=5"
   },
   {
-   "titulo": "Así arrancará la mesa de concertación para la negociación del salario mínimo en Colombia: Banco de la República reveló importante cifra",
-   "fuente": "Infobae",
-   "fecha": "2026-11-26",
+   "titulo": "Precio del dólar hoy en Colombia: así cerró la divisa este 27 de noviembre",
+   "fuente": "El Espectador",
+   "fecha": "2026-11-27",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQU2w1Qmk1dDFhVVJvcE5DaXpzWWdJVGhtem1zRkdQcW9GTFNJRU11T3B0djh5RlNIUnRSaUJ2RVlkU1JLTG5rbDFZcUh3NW56TlZ0dTliZE1UaVN0bXIwbU56UFAxR1dtRTF3N00wdmlRTDZGdXdEMXA2TzQ2clFEOUU0a1dicU1zczRwMDd0VGFyNnI1dGIwSGtzeXZ4cko3ZGNkbkxOcGJUbG95TWpBdUpVMlR3WUxWNld0WmFhSmoxNWtvaHBCVW1ielhNSGRscVV6bHB4M3JLbWZqQ2JCTUpYNVFZVEN6Ti1ZOTdHMkktbE15dVZTeWU3OXBQSTBOMnNIeHNZWm91RlHSAaYCQVVfeXFMUDVJRXQ3MzFuSFo4VEhTdWg0NTROU1R3YXhiX2JjWER3N1ZjT01OOEg1UzVIZmVzcTBTVGhJcnR0QkhEcmw4cXpaSXU4c3VKYW9tQzk1SVgzUTZSSjdVSUtEbkluaDM3czBYMEZvQnlSekYxRTBVOTNDZXhfZmZ1RDVFeHlaYmxta2lOc2VLSnJPQ3RqYzhvNS1teGdvYTJ4UzJHZ05Jdm5oelBuZVhKOEFuT1QtS21wQnVrX2ExVHEzclN6c2ZwM0h2MUxFbURYM2VkY0ZmQ0tnaXFpTVc0bXRoZGhYNFVrc0ZWRTVxZFNnbFNaWUFSQWVvXzlOZEdrVjhRSXpTWmhSYVRKVG9ZZzhPOEsta3A0TE54a19BWlBQZkE1UEFB?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNX0NUWERPTWxOZVIzT24zUWZHd0t2ZE43bnhMdWowQjhuN3JtbC1jSVRPNEpqc1JvLU0tWmY1RW1PUDBlRmo0bEVra3ZQRU1oRzZFUW0yTUFmdFhaMkhGODJ1SGJ5bERkTmJuM3ROMV9Xc0YzRDRuUHlEZUZocUplX2hVN0o4OXk1UzFIcFV0ZmFyX1l6Q0hCSkZnaTlwbThiek9DMmVPRUhnUllQZXVaVFpXd0tVS051NjNqdm1PbjhybUJpbC11a9IB3AFBVV95cUxQRWJUR20tN3NBTWhpQlc1NGNmRGtSZzVEWnBrb0lCMm9yemViUkd6SjcyVkpVLWJvTm9Dd1c0U05aSERtdmRwUDZPeFY1S2k2OWliRGVmRjNPd3pCZVpqOGUzOC1qbzI2Ukp6aFpiV01mcWljMlRFZnI5Q1U3RVVEYllsMEp5Y2NnVWtuc2hsMDVTTHVkakF6WlZBMS1GNzY1enZsdllXSzBlM2poWmFxZTVPU2hSZ1U3U29uWi1xa09WUldMYjRBUzV1eGVMZ1NXZUpCaHF4STdVS0Jm?oc=5"
   },
   {
-   "titulo": "Precio del dólar en picada: la moneda cierra 119 pesos más barata en la modalidad Next Day",
+   "titulo": "Caída de 132 pesos en el precio del dólar; la moneda cerró más barata la jornada",
    "fuente": "Revista Semana",
-   "fecha": "2026-11-26",
+   "fecha": "2026-11-27",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQeGxtUlJnb3VOUTF1c1Y1Y0JIS1RIbWxTOTdJek9xR0VOMG1rckFRY2VxNGNNQkdpRXlGUUFIX3A5aWpHOGJuT00wcTZYZlVJUnIxcGVNQ2lUTnRjR0RtaXExOE5Va1dhUWpMclViT2x3UUoyMXM0cDhBZXZRaDgzTWF4N0RySHdaYWdrcDVFRGFMNkJ0eTlhaUE1UTc5U3R4U0xkQlNVVTFDQmFLaXJxaWFKc3J2V2hzZ3dhU1FKdmR3TDJSX0QzVUhFNE85aG45MVcyNDcxeHQwS09INWplaEF0XzR5MnfSAewBQVVfeXFMTVdKaXJvMzlRYnpFMU9lTGxCVzgzdEExWlpmNm9hWmMzc1lNTEIxS1ZHS0hUc3Y2NDhhdE1zLTNjeTk5djNGMU5FTFlIR1pXZWxsNlpRWnlSNWNiaVNKNnVXel9oZUY4cF9yaVMyQVRoejlzc3k4UGVtREcyMkVveElHbXFod04yYmZtSmZySHBmTmI3SjhKWHRlaUFJZXJoS0FlZjNvbjRwWkNXaHpxRHBaZTdRcmp2dmVpdG9GSFpNOWtkcE5FSzBMUElSMURPV3pqQnhNRWlhU3o2Rzg0Vy1uWmxWVmQ2aHUzUDk?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQmQzNkl0WFc5ejdDdEFfeW9zUF9rdUNxRFAwS1VYLTFEZkR6aHRUS25tWVFuMzlBSUY4VkcyS1ctdWk4SGtScGlxMDlJMGo4Q1AwNnVNa0ZlNnRPRUtreTN2SDdkRlpyR2p5Ym9QbEt0c281d2RjRGs4V1pobWpST0Z6dUtmU3dGMjBpSHpwdEZRVW5DbThxb3ZINkFQaE9Icy02d3lsbU5JZURjTHQ2MXEyUV9tdHpNeHRzcWxMWFNDNHkydmhDYmJtTk9RMTV0bDAyZ1Ywdk0xd9IB3wFBVV95cUxNNFRLYk1NcWF0VWJjbUt2eEV2bDFCRThZbmE3NHFVN01oUlJfNnVhdWp5M1hTcnRJZGZKbjdjVHluN2JNcGxrcmt5Y0JyUExvZFlrMkZqQmRHaldlN1VwRDBNejQ4LXRzOFo5SFhZeUhrdlNMdW4zNGlkRTN1bGhvOGN0U2oyTlo3Qk14ZW9wOWRteEh2XzV6Qzk4UVUyb1NrZXI2OVpkaEpFcUtCNGxtdVpWRTJTMkQ3MkdtZl9fVzZ5dUdnNVJPVXVBUUM3OW5oM2dkSTI2d21nLU5WVDE4?oc=5"
   },
   {
-   "titulo": "Vivienda nueva bajó de precio en Colombia pero la usada se encareció: esto dice el informe del Banco de la República",
-   "fuente": "Infobae",
-   "fecha": "2026-11-26",
+   "titulo": "Banco Central reduce Tasa de Política Monetaria al cierre del año para dinamizar economía",
+   "fuente": "Periódico La República (Costa Rica)",
+   "fecha": "2026-11-27",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOQnJyNHd1X3Z4d2pMQ2VrNFh3YU8xZThnNkR3QzY4MDR2YlBZTTBKVUpzVzJ1SkxHcFgwSW5rWUM5d2xjaHBHV1BHSTg1anFHQXNTQlNQbWI0RDlhMHJLZm5wQWR0WDlBdjZrdzFvRnNNckJ2WEVjX1lVYmtlcHFhOXNNbF9vdVpwSDhVcF9QSjlBYlBvUzZfNm16TTM1MGcwSnhJcHhMY21SR2N0b2RMY0ZsMEhxU0hORHBvLUF4T0h5YlFFTGhySHF3a0NZUFV3R05OUVdxZXpaVEpyWGs0YTV4N1RxaVhmM245b2VubDRkZ9IBjAJBVV95cUxNajJGQ1RYc2xtbEhRQVgxVFpmdXdMZVBBYVQxa0p1bkExby1yS2pqV3JjUWlMb3RlVXpfbWtXd3czTnVvY3FNc3R6NmpveXZmSVlBa25Rb3NfeWpkbUlVUzI4VVpFNl9fMkg5UEgzTzdROGZJTnZPMTZCUUF0b21DajhhU05aWEJETjA4UGdtelpjblVhNTAwb1M3SkJ3N0RhbVl5NV9GSFdpSTdzbjUzem1OTjA3U0UxdFE5enhWdFh0eFBmT0w3NzRONkZqUGo0Ull0TjdVVEwtWjJqZDV1SFpyX2hMejZyb3B4VkZ2VlpramVaMFFVMnpUbDVQNktza3RhSVFRWVFZX3NK?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYm8ya0Fsc0U5YW9RY1A4MGtya0toczZqRjNDQS16ZU02N21NNWt5Qlc3QWtZVmhxTzFOajMzeDE1WE5qeDhCSHhNa3R5RGhJX0ViSEJLZW1aV0xOZEhDcGo0TDdOb3ZYclNJOHh2dXlOWnpmS0NZX3B0RFZ5QU1FWW9GU1hhVlVoVy1oZzgwd2Jib1ZxalJLd3dEVmFHSndVQ09NYy1QTk5SemhBNGlUSlZsamoyOEQwYjcxNm1hSWVwaFNEeXc?oc=5"
   },
   {
-   "titulo": "Empresarios revelaron qué piensan de la negociación del salario mínimo para el 2017: “Vi una buena voluntad”",
-   "fuente": "Infobae",
-   "fecha": "2026-11-26",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcFctNm1POXFFUWFkVzUxQXJaUEhvVXp4Z2ZNbW16MkxZZnhCcDBBRnZhR1AyODdZMlRTUmNnZ1FrNWNqaXhXSWdISHUzMGxjb2VNXzJ0NVh5SmlDZkpHelhtNkpyYi16YzBHUjNmbEN0czFucmd4eFpJX3k3X2tTeFhjX1FxWW5UZ1NYODlKZF9WLWplbmszMUJMaGcwMGhqQjRNVXpIa0lnZFhjeHRPYmlVcEgxWlV0Y3BPVWFHSmdOQzdqX1FheUdzd1pTaFBRZkR3blhrX3ZRSGVvRXdPQkFKYnHSAf8BQVVfeXFMTWtaek5TTmtKOWpJb01pZGY0eFBrT2Y0STVQSDF4TVRzeTl0VVJVV2J3MVNvb1lWbUR6bFhqWmV3YklqVm03eDZMdnBwZ1BpT000eWtIR0VCbE5pdGlfdjFPVkVTT216cWhXa2R6d2tyTExMd2hSckt2RUpxRWd4OElzZnpBUUNNRWRtdEtQQk13aWVJMmRvcVU1NkR5MExrV3RkOVJXbndfekFTbXFxN3dncXFsVVZKelRnSXB5ZHAwalFxQlFmS1k3TFU5NThlMVYtWVY5VFA2WUpmZTNiWGtNMmhXa2ZIOXNIVFd2U29ndnhVMmlIOUVpcFQzUDhV?oc=5"
-  },
-  {
-   "titulo": "El ránking de los gigantes financieros internacionales que más compran deuda de Colombia: extranjeros se volcaron a comprar TES en octubre",
-   "fuente": "El Tiempo",
-   "fecha": "2026-11-26",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNVnpwMGVyZ29kMnM4Zl91QVJRRmlHLUlnbUROSjI4SWRKTHlPemY4a3FqWHlzaFFaVTBkd2h6Tm1GdXVRMVEzdkdsbzU0cW5zbDRwWFVlb0NCNlNnVXBlLW1uZ3QtcGpSeDJsakxYYkVaaVpOT1gtME5qT1ozZ2RCMVJaMDF1OGQ4NUQ2dVBxWnFZeUlScFBJRVNJNkNXZkFfRDdfbUpmWUxBSU0wWTRzMllnLV93RFloOEt4aXNJLTlYeEhrU1IyUDZZamRMSG9NSGJGZzZEbWs4emVWemFCTzRzejlKZlloblotVS1jNWJzRjVSRWNLVGxQb19OM0w4bzdlTGUwYlozRWxDTERONWxjd1FkM2c?oc=5"
-  },
-  {
-   "titulo": "La Bolsa sube un 2,26 % y recupera los 19.000 puntos con Wall Street cerrado por festivo",
-   "fuente": "Infobae",
-   "fecha": "2026-11-26",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdmZ0dXdLUGhIeVQ0NkRRS3VVYWFwSkhLeWI0Zl81Qkg4QUJ1c2QyNWp2Ri1DVUJMRzloSm1NMVA2M1VCNmhweW5UOGRXNHpMSWhMc3J0Y3gyXy1Ha1dyTF9odEw5TkJWRWQ3RVFqZXRwd0w3OVhva0VuaTRZbmNoRXNsVTk5b0lWRVVhU01KUFVQZklwSHozRXhNcC1nUmN1SFhRc1FDWXZaNHVfcDhBbHlrdzlTd3pobnZ1ZUFxSkk1ZFRyOEVXUndZVlR2NzlhUnfSAewBQVVfeXFMTUx4UHNNVGoydWF1Qm1iUC1fZml1VHkxVEVMOGNiVjJpYlJUUGltQ2VObzYyLWxWRnQ4UjBXWERZalVNWTBOSUNSb3oyeWszM1JqdFA4VW9hWDRHc2Jvc2lQNUlIRjk3VE5aVkhYVzF3TFQ0QlIyeVlUaTBPU3o0SHc3cTdFcTdkdzd3WkhkTmQyS3lqemhsUkNHLWM1ZUNnX3B6YzYyYjVGeXhjX1d5Mmg3cjZ4TFg4TVlxdS1vOFBlYW9pelJ6RDNwN3Z6c1lDNWE4aklicFl2d1BEYnlsWlk4SldWM1N3c2FZTlk?oc=5"
-  },
-  {
-   "titulo": "Miembros del BCE prevén más ajustes ante peores perspectivas de inflación",
-   "fuente": "Bloomberg.com",
-   "fecha": "2026-11-26",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOQTV6MVZBZTFvM2ZvcVhHTVRpZmgtNGZKNWJIMERpeHMzUE9qdzdTdWR1RU03V2NSbU1YMXdrT1QtaG10NDhtdHdpV1BETktGMlphUTR1Yy1neklsRlVIMXJrWkJkb3oyZWhfQzQtb3N4aVNyMHhuUDdBN1FRRnJZNXF3SHc5SWpiZ1pfSFFJekt1VXRDb1BzemxCanVRa19BTm5reHdlU3E3WnJWdEZNdFkwX2lIUllrT0lGdE80Zzgxdw?oc=5"
-  },
-  {
-   "titulo": "Bolsas globales y el bitcoin avanzan con Wall Street cerrado por el Día de Acción de Gracias",
+   "titulo": "Después de la tormenta en el dólar, vuelve la calma al peso colombiano",
    "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-26",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVU5PYzl6UFgzSFZmZ0I4RWoyN0kxZl9rVTZzdEYwSXYxeTdxUjJZalhyRExYd3d0NnE3TjFYYjl2TEh1N0NWcUg4dGo5N195cHZDaWFPdmxlS3ZaY1o0RHZNTWQxMnFBZTZQWm9rdUNYRE9pSl9JZk5ydm1BMDV3NWJ0MDRFdzd0QlZhVWlGUjJPdEllMWVNV0cxMnU0US1YRTVUQ2w0X1NzSm44dUxlOGtDUVJxVEhuc1ItSkxrRlNDWWg1b2t3REx2V2ZTd9IB4gFBVV95cUxNMEJ0S21LUFB6WllqTncwY2ZqckdGOTFieGFtMGNPX0ZDOVlfTUxCTk85ak1McmFua01xd045T3JHSjBiZjJDTGV1VnQ3RkJWTVNHeGxaSGhybmltbTRSMDU4R0ZDTTY0TFZvNWVaYWktbWhzNFpaVXFqZlowS0Y3cmJsNXNLVUkzaGw5ZFlmaEJZbXlXRERfSG1fTnVQVDZ3Xy1rci1ZNF83eTRfNzU3ZzNDcTFnOGllOHZFQnA2Y3JFQ0xNb0xLdmNoWFJ6YjBndDd5ZVJQSTJJZlREQVhtS2JR?oc=5"
+   "fecha": "2026-11-27",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWkFXX0NvanhRVmxyWFFmcGk3aV9WcEQ1eWtZS3lqZFFFOHpidEVHOEFnTXRDMnhvWmFvODRjYmQ1OFRKTEUyR0hVZ1RrbWtMZ3dEemVQbFNtVl9mb2o5c09lRVVuWDV4LXZlWTlIMTNOak9YZmF3Q3ZoM3pRMHlyT3ZxMjF6ZXNBUmFSNzJtbGV5N1RXbG44QXlPNERZS1E0UXluemJwZ1ZlTXRMaWxqNXlNMU9CVXhqR1czeDAxdEpJQdIB1gFBVV95cUxOemdZVUZGRVFkdzcyV1BtZDlvekVOLUxrNjNOR05wY3ZuWUxUX3ByejB0eklLMVg1bk0zd2RmcFlweHBzYVROLUhFZWFDQ2YyaDcwX1RkX3ByOTRoOW1XVk5YUG15aUpZeTMxSzFTSW5RVmhPN2RSQW02Q0s4OU5lMmpMYUxMRjlUX3d0dG9reUJCcFFmenp4R3JxNVlSYkVNWU8tYU1rWGdiaFJ4b01XdFNIYW0tQ1BCWmJKLVRwMnUtTHN0cDhRN1VZSTVJVUpDenNueF9R?oc=5"
   },
   {
-   "titulo": "Actas del BCE revelan que muchos miembros apoyarían alza de tasas en octubre",
-   "fuente": "Investing.com México - Finanzas, Bolsa y Forex",
-   "fecha": "2026-11-26",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRmFKWGhVUmFHckFuRG9oN1hfYXQ0SDFZR1Z3ZW9vMzRyMHhRblVEM0VvekNQTXRwTU9WTnpMSFhmaDRJSjhrS1JaTVlVZU1NX0xUM0pzS1RaQVlQSkowWjBOdFhZTHVUZUF5NDdTSDJRVjNMYUV2eWwyTWRqQ0J3eGlySEpIUGN6YkJzVVcwckhObDZfSTFyUGlYNzNMQWEtTllENGRqSDcwV0Uwc01NQmRqakc5OUhZY0lTRkxCNWktdTNEdFE?oc=5"
+   "titulo": "Dólar abrió hoy “viernes negro” en $3.502 y quedó $128 por debajo de la TRM: ¿qué explica la caída? | El Colombiano",
+   "fuente": "El Colombiano",
+   "fecha": "2026-11-27",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX0VzSW1wYzJ4YUhMWUVPZGF1SVVHRjJQdjhjWlgxcFdETHNxT1VnYXNsdXZfM2FvRmNUS0J5WC1vY203YU1sYktMcGp0RzFyRnBhRlFRLUZSc1NzbVJsX3liQnV2Rm5kRjZ5WlpEbVpzNkI3eUJDQjhHVTM5M0h0RG9iYjc4WnlURjVRMFpGQ0JZV1NySE1tZ3Mza2NEWG40SHVpY1dvek7SAa4BQVVfeXFMTXZpNjczdFdsSTIyQ19oV2QtU05ZNWhoYkJTZFVDU1NLcXBBU2p0bVNwUENjS3ZlVG56VWQwM0QyTjFsT2pGY0tXRHdRenoxWVM4cUpOUGt0a2VOWVk5MnlsTldVaXFuMzNfd3BVTkNsTU9heUxub0dPbWZ5WHR6MTlNbGQxN2JpWmdQYTIwZE9tWWgwWmlzN29sWm1Ud2VUZjVGWTZwdC0yM2pIUWxR?oc=5"
   },
   {
-   "titulo": "La marea de petróleo en Oriente Medio arrastra las tensiones y el flujo de crudo en Ormuz engorda con intensidad en noviembre",
+   "titulo": "Wall Street rebota ante el empuje tecnológico y el Dow Jones firma su mejor semana desde 2022",
    "fuente": "El Economista",
-   "fecha": "2026-11-26",
+   "fecha": "2026-11-27",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPOGpLb18tZU1PTXl4Q1dNcmJUc2M0bWVEYUllVF9BeFZTdjdKaW9WdmZLOEZhZWhFcTFRZEEzVFZyRWdUS2dzSXBBN1RfbHBQVW14enNha2NYaW8tLW9JSWlDeXktdFFEc2pIR1FGaUVrOGlmR1JoMk15TTAzd1ViZXI1TTdZS2kwTll2OVA2NVk5S0pxeURkOVBnWElXZWVmcFIyRmJodXdhYUVqRWF3R2xGcWY2RWVuYXJjeFNlM25rVy1wRDRxMnVyRDllUDlDZ1Jsd2FiTnhVeVp2QjkzZ2dRVWNaNFJwQ01iSlNCeF9UNmtjdzd5azR3YjM0MXVmQ0RfejBoeEh5d3lEcVRPeU9aTjlPbmNzWTVuLVpaQUVHNEZQdl9pY3RXNXXSAZcCQVVfeXFMTjgyRi1oVmk5VWQyaG9ZVm9sTzk1NVAtWmFocmY4bC0zUDNOMThNLVpjbi1KTlRfXzN1c1BlRmtjUGEzZjNGTEZnQW5yeDVlQk9pd2dzMnZnMkJfMGItSGVLRmVlZHlYMGtSZE9YSzc3TDVsV0ZLZDNxU09TRXNaRUJiRVVoaTc0eDM5NUlJLVNrb0FwcE50UjRHakI4b0FVTVQzNmkxR04ya0dCdEY1bS11U0VmVWVjb1ZOZVlSOVVwcDZITUhLNEFBYjRzR2FuUDJ1Rm9lWEMwa1VqdzFrVFdqTUpuUFR5WVVNMktFazlPN3AtbWZ0WUJzS1NOelI3TDRJcVFaSzNXWlVUY3FCVUExZHh5UF9n?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQRTI2MWZQYXBIZnNRQWxab3haZkplR1kySTNrNHdvUzNLWVFLTWxWVGJsZmhVamZxZ3dvdW83TkFNWFp0WDM1aGtKNl82aHRWUll3cEFCbmRvd2lOeWNJWUZfLWNHb25HRmF3UUY4LWF5djZLcWVfQ0ZQYlhlMjB0YXVONDhqTTFvQnV6SGYzSnU0V01KSXFaY3hSN0IzZk9IWlFsci1Udlo2Z0xxUERPLXc0MFQzQlZCbWxSeGgtdzJCcjBNck1pQnBKTGQ0WmRvZ20xUjl6UzBVWW9lUnFnWjgxVF94RzNUc2YtWDVESjNOZDZ1aEoxam5XQmtwQdIB6AFBVV95cUxNTVNsSWhTUWlfT1NYWGVaTmlOY2VKUnVNWDE2SGQ2NEk5MFJocVVTUVRuWGl3YlBsU19BaEJNMkMweHViaFNleXFMVGJFRUhVOFZlOV9QX3l3RnlNUFVyM3pNVnRBM1lZOE1MaG1xS2hBRGkyMTd2aVM3aVNwbTVVaDQyZDJ1M1VkU3hrS1RmZy1YbzJ2YkJiRXB5dVpHUnljRVNTNFVsTHJqZFcybHRNUncyRm1KbEVNaEg3eUQ0ZmNwTy1DWXZsdndEQ2poN2xCZ2ZVblhuZFFDOEZXSDlvT3V4djdwSklD?oc=5"
   },
   {
-   "titulo": "La bolsa de valores de EEUU modificará sus horarios por Acción de Gracias: qué días cerrará y cuándo retomará las operaciones",
-   "fuente": "Infobae",
-   "fecha": "2026-11-26",
+   "titulo": "Wall Street cierra al alza tras una semana agitada: ¿cómo le fue a la IA?",
+   "fuente": "El Espectador",
+   "fecha": "2026-11-27",
    "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPbVRlcVZfT2h5bTU5TVZ1czhfbzVyZm5veUVNOHRZdVZLYl9fZEVZaE1lRDVtazVXYVpzVktCWnBIcl84Skh0T0xHWlhjWWFoeGpDbEczWGdCVWJuLWVud2czd0R4RVF6QXJjcEJJU0JmbW9aWWFTMU1lamZPVlJjYmFQYmg4S0NIUnc3cTdFTm1HUkplWF9PRkZsQUFGekJMM3h2RHFUd0NsMHJ0U2NPMEhBNHlXSGNCUWowVFNOX3RORUwtWWk5c2tRODZfcFBDdkgyTDdhQW5tOUo4VjdrSl9lX2h4LXRqeTNzM2xrblphd2wyWUh6MTFubmpNOHJCeDVmcWJR0gGgAkFVX3lxTE5pWjV5RkpRbW5QZ0x6bWFRcHZjektRQnlHZFZwamhxekJVRF9JMTZTY1p3eGV4eFFPekpWSlYzWXZxZ0doSkN1OTNBWlJzeHpZRFJMYTUyOS1tVGVKenJzSGV4VmJNYmN2NE5VWklUSHYySldMMWVkOVNqSUM1VUJteU5NNTluWTAtNDU0Vm5aMEx5VW85NUZfSWpFTkdLZ05aWlpOcTY3VkdRYXJONEZ5cjUxbGpBT3BldEtSWmc5Rk9iWkpkWTlCRnFxUXk4b1M1S0loQVdwY25WR0dDaC1XMzJnc0x4UC1ocUJEVThza2ZXelZtMUwwbHpEd3pSSjZDeXpHQm5zQ2hleEVoLTRfeXNUU1FwMVpSN1pOMEk5dg?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX2ctamQyWG9tLWZEMzBweVVjR2R5anR1Z0haQU1TSElrNnBMYVZyMjI2dXBiQmRzWDEwSG9CMUQ4UUJUd1dFRDd3TE1ocGZISXNDbXQxM19vYklJZEwyU1BubmpkUVBiZE1hWUw5R1hTNURBQUlQLTVxNU52QXZLMzd3TDZFczVSLXdaaWJ1NzN1T3BDU2NhNDNhOGNKby1id3VUUk9YSGQ0NDJ5YVFISU1VZ3VjMmFQRFdBVkFnbFPSAdQBQVVfeXFMUEpGTEFaS1NIeWxwcG96MVJDTTNoU1BVZWROZ19FUEZoVHhILWxnTVE5bXhBSjlfT3c1LUFkWXdmUEFnV180NFFMVEFHRzZ0TEZKb3g4ZmZfZExtNnFvWERkT2s0YWg3N3hZWlVuVUxOWEFaa19KVk92UllfUGhWN0l6d3MwREZWNU5SQkNBaEVrMEE5TWctQ0tpM2E1N3FuQmJYYlNVckxLUk5xanBkb1NWNVhheW5aTHN4cGhTMnRyS3pZV3V5NVZwUWRuT3VUQWlNaHY?oc=5"
+  },
+  {
+   "titulo": "¡Ofertas de ganancias! Wall Street abre con expectativa positiva por Black Friday: ¿Cuánto avanza HOY?",
+   "fuente": "El Financiero",
+   "fecha": "2026-11-27",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZEhEM2Zxc21mR0NRX0draDUwYkxKek84Y2VhOU1Qci1FRkRyUlRUUzFYaXp6UlFGNU1obVIwcGlSZ200QnFyUHVfTkk1MjVoX3lOeE9KSjhBRUNXOUJKYU03eTBlZzBSR0VtaDdQaEl0Q0twYnFWdklGOEZ3MDRLQU9DVG4xNGRPcEdBZ2E2Znc5LTVhczNKR2ZqLUI?oc=5"
+  },
+  {
+   "titulo": "Alzas de tasas del BCE insuficientes para alcanzar meta de inflación del 2%",
+   "fuente": "Investing.com México - Finanzas, Bolsa y Forex",
+   "fecha": "2026-11-27",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYnMyS1dOVFdSNW51NXVUQUZnTFYzTTU1T1ZON0FRYkpTcDV4YnFPaVJXT3plWmlVZ0RwRnlWUC0xTUlmaU96Zmo0TW1qUC1vNjVQczRtS2R2YmxCVEZfaktST3dycHFlRW5uNFZGYmpBbjdxbktpMktoMFRwX3NYTW5TYmRjbkttSXROMjZvN0o2LUlXV2FJNVZQSW52c2psRWpFYlo4LXJ4ZGFxMGtndmZjcGVwTWxkUm9UQ2pvckZvVUE?oc=5"
+  },
+  {
+   "titulo": "Consumidores de la eurozona aumentan considerablemente sus expectativas de inflación: BCE",
+   "fuente": "El Economista",
+   "fecha": "2026-11-27",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPeENwUldnQkN0M003d3Z6M2V3VmRDWWpMdVJJSXdBV21icDZrWGFjWTV5Z19UWGRoSGN3TVNseWtiS3diLWxTQ1ptNzVQVG5IRVJiN3J2TzhodU1HOXJ0TmtSMlFrMVFiYjVYcU5DNmFCLTRaZ0daSF92eUZudHRONER6eGRMRFgtb1RfWFgwTTA2VFdkZVFmN2hjNWNNMXBPbGNtNzNqaXk2Rl8zbEVuYmxqR3U1M016MFZxVEltTWVxUnlKTTNqLTM2QWstdWotODIw0gHYAUFVX3lxTE0xZGVEeU5Ha000RVFBV2ZlMVhJZzNja2VkNHRmLUpvT2dSdnEyN1dtY01pRmhUZU9oN01GSDVxME5OQU1maWxCekRDc005d19VaU53V05nWHF3Ry13a1VrcFJsLVVjVDBjQlhobF9CSjRJTWRZWHE3SEU2S2NiVVF2a0M1My1pU2xSdGJjbXQzRlE0UnNxZTYwZzRsN21rN0hHWXlxdlR1M1AxQWcyeU9kMzVHX3c0S09UZjZBMTcxY1N0cEJNbld4UWMzSGtRcjhwaS1pT3ZRYQ?oc=5"
+  },
+  {
+   "titulo": "La bolsa hoy: IBEX 35, Euro Dólar, petróleo, geopolítica y Wall Street",
+   "fuente": "Investing.com España",
+   "fecha": "2026-11-27",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcmhLZjlpbl9TU0x0Q2NEbjZIQ3pJSy1lMGxRSExaOGZrM1pZNnlfdGhNNUVZNGI5eEkwQVM5UkZRSU11dXBrOExfam5adkRJUllFVWZ4U0VjMzZfbk54TVdNczdxcjRpWXlreWc1NjRoVzF1Nk1ncDZlYnhHTUgxVS1xcUF4M1RPYnZITy1xQlJsbVVnQ2ZzOTY2SGEyUTR2Q1NwRnE3c0MteUswclpfaGhaMUIyYTMwWVFjOVJXSQ?oc=5"
   }
  ],
  "tes": {
