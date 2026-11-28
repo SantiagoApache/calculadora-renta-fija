@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27",
+ "actualizado": "2026-11-28",
  "indicadores": [
   {
    "id": "trm",
@@ -26,7 +26,7 @@
    "nombre": "Tasa Fed",
    "valor": 3.875,
    "unidad": "rango",
-   "fecha": "2026-11-27",
+   "fecha": "2026-11-28",
    "detalle": "Rango objetivo de fondos federales",
    "fuente": "FRED (Fed de San Luis)",
    "url": "https://fred.stlouisfed.org/series/DFEDTARU",
@@ -85,46 +85,60 @@
  ],
  "noticias": [
   {
-   "titulo": "Dólar va en subida desde agosto, pero ¿alcanza ese repunte para que los sectores exportadores golpeados este año puedan recuperarse?",
-   "fuente": "El Tiempo",
-   "fecha": "2026-11-28",
-   "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPaHlWb3hxZWJsSnRYQkp3aUViWWhIMEQ3WGV1c01GdlFfbXI4UlVqVExQdUZ3eEdWbmxsV3BOZjVNVXRtS0p0cVhhb1M1bE5HdkJ6UVZ0N09ndDRKTl9WZXQ2TlJHVk5EbUhmY0tFcG5XLXgwMklPSWEyUVBBSmFjdXdMMDJvYXU1VmhhTmlYQ0t0Vy1rYml0c1NyNW9pRURDbWs5VHdHbHFzSHJjTjZydEpLckc0VDB3YTZQaHJDQVl0Z0E2RHJpaFRXMlVZV2pxSG1UZGt4OTVfWFl1VFhnamM5WDFCSlZqalBrdk5FUkNpU2RFeld5azU4RUwtTllP0gGGAkFVX3lxTFAyLTVCVFVEN1FubHJ0ZWZ3dkp1T0FaemN5eXdHc0xrRUNYQktCSU02U0tQX2IwUjlOaFRiWmlTMnp3b0UySWh6cU5SNnM1aklLUlVHb2xocjlVTUFVOThEMWxsWHRhWG40ekVwTDZBVnZoUE0wdEFIMl9hNXJuYVhZczU1X2c1UlVwX213UFVleTNoNUVxZW41ZW9KZGdnUzNNckxvZGtVS3R1LU50YTNjQVkxUHBFUGhRMnhsUnZKWTNQMENWa0g5Z3g1dDJQUzFsR0VLTDdja3hsc0R5czJ1R3Q3SWtsY2RLRldhYTg2aW9kOUtLb0d5eHlTSEtfRjgyYkFqcXc?oc=5"
-  },
-  {
-   "titulo": "Ministerio de Hacienda oficializó a los nuevos presidentes para el Banco Agrario y FiduPrevisora: quiénes son",
+   "titulo": "Fedelonjas estima que el aumento máximo de los arriendos podría llegar a 7% en 2027",
    "fuente": "Infobae",
    "fecha": "2026-11-28",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPQ1VING1ISGJJU2JhSjdsOGtBZkVzcTM0OUZTSTBXY1VfTXFERVhLdTNXbGVEbDF6dTVES1Y0WEFtN3RIYUpqamtTem5oNGFLcW9iMUR4VTl2R0Q2aUQxVXQ2X2R3NDlOc0RYcGNlTVFCUXBmazZscjZQWE5oR1VKOWVfM3k0RzBnQVhLZk9KLUZNR2pVcC0xZHRkeTlzRmp5alNYZGZDRXpxNXNrNlhPRUNwWVdwSUdQMUZIaTNvSFhfYzVzdWxXX09GNFJWZ0NMMm1Ha1RkWW82a1FlMTBIXy1WdzNpVEt10gGDAkFVX3lxTE02WmZodTV2bkxhWklXUEZDZy1wNDdweGF3ZmFPa25XQ2Z2QmtOM25ENkNTaTAwYmotSXkyenlmOV9kMTZqVUFtOXdTVWl3TElfdGdBUGtPajVoWFp4dkE2X3MwQ0h5M2tlWndPdmhsb09uSmtXNTNMNGdQTnJ4UFhLeFYxQ0lvNGM1SEpOMkt2ejlmMTd0aThCZ2hCVEZtWXFaSzVUWTJQZkctZW9XUk9oZkhWZXM3YlVka2IyNGVVeUZkZnkyczZOQWhHQkRZcGkta2diMDdHdWVVUG82enBabXloMzkySUFJWDF2ME1BbnRNbVZoWm8xSnZOakc1QVV1ZTg?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPVzdZY0hQZHNXX0RJM0dNclJGVXJNY3FlS294dkp2Z3FSSGFoUWRSWHRxbzhLa3JORm9pUWRGeDhSUkpXaWdEcTVnT2ZkVDIza2h3LWJjMzdad1ZEQlZCR1kxWmd3VUEwTG10UVdIN0t6RkwzRGZwU3ZUd2VSbXNRekE1elBLSWhtWTlyLVVBT3pZandtZU9rcG5TMndDVFktSTRaSlhOS1BRM2RzUkppUnMzVXZJWlk5dGhKNjRRSGVnTC1TTmfSAeABQVVfeXFMTzR5TzZWa2pYT0RCbno0V1VtXzVmZ3U1RFlYcGpyYlU4QzVFRkUySTdQc3NBdGZRUEhRZmkyb0J0Q1JUenR1SHZ2dWxZbTFYTU8wQU52RWRnYnJxaTd0S2hMbjJQN1NlcHNfUkE2dE1xcnlBZFhYRTJaUE0zVjRmT2tudTRkVHVQejhsRjliZ1E5MnRKeGxXb3BCYWxUc1htQTBCS3liY1N5TmNBdlYtbzJSZVlpTFI2Uzk0dkV2OUR1dW94UXgwYlE3cTNXejVnX21Yb19EemNmSWJZaHJWTEw?oc=5"
   },
   {
-   "titulo": "Banco Central reduce Tasa de Política Monetaria al cierre del año para dinamizar economía",
-   "fuente": "Periódico La República (Costa Rica)",
+   "titulo": "Dólar en Colombia: ¿cómo cerraría noviembre y por qué podría acercarse a los $3.800?",
+   "fuente": "La FM",
    "fecha": "2026-11-28",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYm8ya0Fsc0U5YW9RY1A4MGtya0toczZqRjNDQS16ZU02N21NNWt5Qlc3QWtZVmhxTzFOajMzeDE1WE5qeDhCSHhNa3R5RGhJX0ViSEJLZW1aV0xOZEhDcGo0TDdOb3ZYclNJOHh2dXlOWnpmS0NZX3B0RFZ5QU1FWW9GU1hhVlVoVy1oZzgwd2Jib1ZxalJLd3dEVmFHSndVQ09NYy1QTk5SemhBNGlUSlZsamoyOEQwYjcxNm1hSWVwaFNEeXc?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcUJ4SG9EUk54Tnp3anJKZUpRQks0RHFTcHRRSGJYSko2ZnlCbzBZMEs4VllIZERLNS1OSkk5Q2Q2SXhWV0JMWkRQeU5CVjhrdWhUWndKRG9oLUN1czcyaHdiWmkxSHNFQzdObGFqOENlNkZoTEhad1l6TjJGWWNubzhUV2lOWlh4RzJCQVF3aUlfZ3dyc3pLcWdR0gGaAUFVX3lxTE53NGNTWW9FanVpbzA0UnQzZWhrWkZlYU01LWRHU1FGanhIazAwenJCSkxJeEY2OXA4ckdLb0NKdm0xd29ZNFVSX21oV2luMnNLa201SWp2Q28tTndza0pTcUJ6UXRZMERtN3hUNnFZaTItcTdxbGVLS0x3WnlUcjRUeHUyYzBaSHpmUUpNSjJ6MU9nc1ExbDNUTXc?oc=5"
   },
   {
-   "titulo": "Colombia firmará acuerdo comercial con El Salvador el 16 de diciembre",
-   "fuente": "Caracol Radio",
-   "fecha": "2026-11-27",
+   "titulo": "Repunte del precio del dólar desde agosto da un alivio limitado a los exportadores colombianos: “No resuelve los problemas”",
+   "fuente": "Infobae",
+   "fecha": "2026-11-28",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPa0VPRWwxalNBYUxfTl8zV2JEMFdCRnpwUzJLVHdEX24zcVZBc3dRUWg1UE5xTnFmclRZbzNnU3BscGJicHhuUWFZOFJFRElFV3RwZVNBT0xOMy1ETHdfYm5GWW9vQnRnUlowQktPQ0JBQTFLOHZXU2VSYk5xbWJRZXkxZWZEel8zbk4tcmhQLWR3SUdKc0xpRGtiVTFiSzMtWENDSkZCTdIBuwFBVV95cUxNYkhMMzFaLWp3TE44NjhQdVo4UjliampKLUp2UFllTnduWm1mQmdDWmJpSEhyalZNLXVKQWF3bWpqekw5aXBXZ2ZNU0FIclZqM1NyTS1KdVpMUm1tUXNROFQ5c3N2NEdNdWV1aVhjeko5M3NhcWpMTjlFcTNQVy1mVEhUQklIV3lhMnp3WUJVTXFiZzVtR2g1aXNWMTlXQmNVZ0Y2RnYyd3ZNcWFoWEN5Rld1VUFiS2VKaVNv?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWjc5NFFVZ0xWempvMy14SW00dkhTMEc3MjNQVUF5bGRVS3J6NlE5ZUtLVWt2TXlLbXJicndQaGdfQUdGSV9yZUM5Y1R1LW0yQWtSblNCaG0zLWstZndjczlTejBUSi1QcXhpRE5NZ2hLTWZWalcxSHdPbTdLLVlNM2QwLXUzS2JCQWJ6N3JnRnhYQXlkNl9sNzZwVzAwYkVpQUtkbnAyVUxuY0YxZjlRb3JZYk12T3A1TUNoNHNmZ181Wl9kVEluNUFaN05QRXRVcW5QX2xGVXBGVnB5eFVHZUpLNE5kMjFCcXhUM3FScXpvXzhoVVBYatIBkwJBVV95cUxOb2hjYVRVX2hNRVlJbllsVWlTN1UxZnpoSFZhZHZrRHYzcHpRUUFodFI4ejJJeUhlMXcyd1dNLTNBUVVzcG5BcU5JaG5yQlpxczlSMFotQXd2Rl9ueDlTc2toenVwRjZJMG9GZlNxb3o1eWVSRldvT2Jya2x0NGdiNV9VanRqQUZmblJfQVd0VzhTVk14X293Q054Sl9NbDZoRTZXWm9ubnRxbm1VUmxrQTEzN2FYSm5kbUc0Q0lZR0F4aUY5R1FIYXFjRkZOMGR6M2ZHc2lTb09JdjNydmtfdno3ajY4WXRhUXZtZXNMRFBWdlhxSmxUQ1lXQURhVGY2MmhjMDgxYWZnSVhmQjg1LUVEUQ?oc=5"
   },
   {
-   "titulo": "Gerente del Banco de la República revela qué hace falta para que las tasas vuelvan a bajar en Colombia",
-   "fuente": "Valora Analitik",
-   "fecha": "2026-11-27",
+   "titulo": "Dólar en Colombia: la semana más volátil del año deja la TRM en $3.498,46",
+   "fuente": "Portafolio.co",
+   "fecha": "2026-11-28",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZW5ib0YwYXppa1U3Sm1wSHI4ZC1xUWhuVHZrZVFmUjZhSmNQUWg2dEZxSmExalNqaTVqUWF3bWttdzFyczNyOEVjd2dLa29GVUIybl9FdGVjUW5DVXJNY0FWemZ6ZDFOTm1hcEt3RjZ2YXdoSzJod2taNVhuajRHdXZTMm56T3NmcUJKRXd4TnQyS3U5TDEtX0E5eWpTTmFyNjVTWnNoR1EyVmRTcGR2YzdBeFZ3ZFo4VHpuQWRGZGNPNXloTFR0YVNKeWE0OFHSAdQBQVVfeXFMTXdWNGpSOFU2a2dDOWNjcGFtX3JPLWVWR3lEWTMzdUMwcWFGZXg1eUtzZkloQTRRNi1NelhFOGJqREV1dmtGTFc5ZXUxdzdOZjZYRXJJczF2ZHNWOWYtTzVveG5vWkM0Yl9BTExaQ1llME1qZmo5TnlYWm16VVlzb19BbENZc2t3UFBCLVhuSGQyTkM4Vmp2RnlGMHZDOVNaY2t4YmNQYjB6U2YzLWpzQmIwWDlMWEtCck1fVDlhODZmMTVDdFBPdVB4MExUTTVIMVhNeFA?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbmNjUWlwYi1oX1hjQ2ZyUWJ5U1lMQW10Wl9yLVlaUEtYazJqdjJwME5FSnBMcUpfYmIwUTFQTVlQcGtJdUdFcXEzeUdWYzNfSUloLW5OeDNyakctWDVtTGs5ZlRiVGNiWTlLWl84T25uS3VmaHNMT3BLYUs5TEE0Mks0ZDFtenpGWV9YT0hvNEFOTDZmTWlFSXdRNVpKa19pRXhVb1lLdnZfaHlFVlpV0gG0AUFVX3lxTFBmWElJV0lUdEw1TV9kWUtJbi16c3ZJU1J6UW1iY0hNTkRBd2dHRXdXSXBvaGpReDBhd05BaHN6ZDQ0RnZfNFZlRlc2TjBGQ2ZSS0duNTZrLVZtQkxjQ0cxT1U0ZEk3OWtoODJNY1lmTjdqYkNxWE1BMHpxY1NBbEhvZENfcVZGVlBBaUZqdDFOODR3TGd2Qk90N0VKTlBUVUhiMzVfUTdESVBtdV9fMjlTWnJMUw?oc=5"
   },
   {
-   "titulo": "¿Dólar llegará a los COP$3.000? Cayó a COP$3.488 y explican si es buen momento para comprar",
-   "fuente": "Bloomberg Línea",
-   "fecha": "2026-11-27",
+   "titulo": "El dólar volvió a bajar de 3.500 tras rozar los 3.700 pesos: ¿qué pasó y qué se espera para la semana que llega?",
+   "fuente": "El Tiempo",
+   "fecha": "2026-11-28",
    "ambito": "Colombia",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRmpJX014RlRjNktwNUlsU2tQNmNUcmRGQkNmVVBLMHdkbTRDdjQ0Sml3bndIcXBSRUJlYjlmQlJ1SHNFSWdCUHNyRVBPbm5rcms3WllSaWVlUTBjNkRqWDlBYWZiVVFzNnN3TVkybEItSXYtbmJuLTVienFvY1FzdzMxYWtKZUkyLXE5VlJ0MF9Ba3FDeEhNa3NOa0lyYjUxbk45YWxMd0JMNkcwTkswT3JqUFRCeUd2NUp5d0NQd2x2NVRYcVZRSExPWlV1azNZQ1Nlclc2ONIB6wFBVV95cUxPeENXVmZIOGxEY05zdmFDdnVfV1lqc1lkQ0d5MnF5SGZMSXBnV1hLZG85ai1TNDNoUy1BRnVnU1VlSlJ3cnVvUmVaQnhFSW1xVEgxYmlmMGpVTkdNMWtkYjlmSkhVYVJoWFBiLWxXMG9PN1RUYWZ5ZjhPT2wyUXNCMUszMlRjZ3VoRFIyNlZYSGVLcGJOSUVsQ1d6Ukp6RGh5Y2c4Ry01VXl1cWtZVjFTTEEwX0hlNVZaaVdPWkduX1BJOFU0bVVnY2xEUndNOWtTRlNxRTl6ZDB4cS0yalVZSkxpaWxsdGNwYWUw?oc=5"
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPc19TckhSZkNZTG1keURSMjR3cElJZVZSNjY0bW1kUFRQUUxGSFhMNXRBOEFJQ0dGOUMtTXItcjZINk5raERGaTBOU2hyZVAtMUY4b0ZTUGdJc2hwZ3gwUkhlUjZxVk1fQzlESWlkSFVIc1l5U1Q1bGFPTVdicTM5YkVGaGJuUnp1czFFWXBVeEdIb3pHTEwwaEtzQmJoTHNjSnFXTkR2TXV3VXd6UDJEWHp2SjR3eF8tLUoxT09MQkdEaXN3bm4zaHRLM2VuZ1NLVzBKNnpOUXE2OXJqNWZnZWx0ZnJtQnRBTW9wSjdlUDBEbzV1cWxYc19rTTJPUdIBgwJBVV95cUxOdVVXeWRMUlRPZGFUb0ItUllKeElaclpBUVdZczlsRW1vWUNWdzlsZ0RkbDJKUHV4NmhBb0oyUWdKMmRINXFBZHR3ZC1oM1pXNHZRMnNTVm91bUw4M0s3MUVDUWI3UGM3UHR2eER4SEUzaW4yZXRHZjRObVNEdmJzWGZIUlAtRkxERmk0cExrdzcxXzcyOFk5WWpBMFM4ODRMekQwa0FyYVZ4ckRqVUtGTXVPdHplSnZhUTZ5bFdPMGRLV2cycnphbjZfR3dRZm9HMkc2VVEwM3dRblV5MzhIZ1B0U0Y0RnJQRVlNZEc3MUFKZktPSWNfWXRnd1RDcTJUc2Jj?oc=5"
+  },
+  {
+   "titulo": "Dólar en Colombia: ¿cuánto le cuesta de más viajar al exterior o hacer compras? Los que ganan y los que pierden con el aumento de la cotización",
+   "fuente": "El Tiempo",
+   "fecha": "2026-11-28",
+   "ambito": "Colombia",
+   "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxQQnFSZi1nVkh1Nzg5UzVYeUF6dmhBOXc2cmJ6LXk1NDNtaDF6RUMydHhGYkpHYS1PZU5WRHJFQjcwWmlCOXJXT1h3dEpHYmZBTHMxa1Jabnk1b3FmdjZaVkNMVDNyck9tMkpVV0Y0cnlVVzlYSmxsbGxkZXNCRkFJeTdJRVVWeFlzUzVrZFhuQndCQnQ1TE14UGgzRkFtbUN6MGF6d05yemFOMjB1cFFnZTNZWDJpZHVFRGtmcFZ3UEhoVy1iZ0FIZzZmZkZ4UG8wVGxETUJTV3pPNDAwUGY3Z0Jnd0lZSTRFckNJTnpiU2tubWcteFpEQm85WU1MbDJjelp1ZHNqTVRlbTRCc0Q3cmxGRklsa05qWHRHVXo5YW5Obk9JYTBXVE9R0gGvAkFVX3lxTE56S0VaWXJIR1M4aUhmQ3NLSjNHSWhsaHNiWGNDWm5oMjYweGpuVElBc09KNVZsRzFRdUVVbHpJWFJULU9mNUZQSEN6d0x0Y3pWRkpIank2V29IOEpmRjEyczJNMlJ3QWEyb0NONEtxZ0lmeEdHUUtiQkNjUnhwOE9UNG5VbEU2XzJtb2plejJKY0Jha2VFTDhXTEt1cmM4X2xCSzlsQWZIczl0U1poVHI5NGR4eE9rbWlHcDU3dGNkYmdlbUdCeG5UQXp3bTZsLU9mdGlxSUZZUFJvSjF2WW5DZ0RNT2VLdzh3N3dXWUM2a3ZIbDFQVGE2N0NNY2lEVndYazZoMkxIbXlVMUxwa0FDWW0talBMWVo3MEUyazVJaUg0OUpfYWdpQmNidUE1OA?oc=5"
+  },
+  {
+   "titulo": "¿Wall Street enfrenta la parábola del 'Pavo' con las empresas de Inteligencia Artificial?",
+   "fuente": "Portafolio.co",
+   "fecha": "2026-11-28",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQS3lpN3ZTWkJiMFJmRm9NY1o1ekc3ZU5vNS01NjFRMlhISVZWbnhtUVNnTmVXbU5MN3N3MkVHbnZfM0JPMlVvQUJMWTlHUjlhbE1ZcFgySWdIM3YtS2Nrc3BKWFQ2M2FHR2tPZFZGSU9mZVZQbUh4TGVaXzFaTWRwWFZTenNEWmo4QWdZU3czcE9KTkJIenRKSkFlMHo0V0hKZUtQOUhmSFFuQ1BBdk10UFZXa2hlclViZ3NGbnJscEQxcFFRYy1BenVqSkzSAdIBQVVfeXFMTjdyUWQ4dkxoNFB4WGh3MFpJcnRFWmV6Ty02WWlqbU5aLU5HQTVlSjc0b2FFNXYxMzllWHVpM0lrOTVXNEdvVlZOaGdkWE1meU9QYWRaTDhHV1cyMzZYM2N0Z3V4eTZMeXFycEZFNUtwbVVFZHI4Q3Q0OVIxRnVqRUdVbVFWWDBPMk8zbk8wOGlOendLODhHekVCT2VKZHBzLU5iQjkyWXpzNkE2LUx4TE5OZjRCbWxyU2gwODdUamZYZ2ZVVzMzNFA4TXhSeWtkMVVB?oc=5"
+  },
+  {
+   "titulo": "La revancha del dólar: de los mínimos del año a un repunte que inquieta al mercado",
+   "fuente": "Revista Semana",
+   "fecha": "2026-11-28",
+   "ambito": "Mundo",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQRFVSMHBwZjFwa1lKSktoaGZ6LUh5TU5DSUZTMmo0MmVqUTcxSEJjVGJCVG5maU03ZnZrRm9vaG1WY1Q3eXFZQ0lFSW9peUNlVTZRanBhaDhzR0JLdERiak42TTZrS3FRbW1CY0NVcjJfazdCaHYtWmpERm5FMjdYTzFSdjhDemJtSV9JNnhLNUdHRk1Iem5WM3h5OEtfbzYzMmxrS3VLNDR6YmhiNkFXTGdjek1VTFlqYkhFbGlYeG56eE5vU0RHZzk0LVdzSTdwSzFmcVkwZUZMeGswakHSAeMBQVVfeXFMT0lIZUY3T0NhdWp2Q25mRmZ5dFRXa3kzOUpUd2VNMWVfcWd0SndtTnpWejBiY1pNTFg0MldTU2JnWGM4X0J6VjI1RVd6Zjdod3RvZ19TVWVpOFhlbWw0Zy1EX0N5OFFNeERzWVVUR05EY3JMZXZnRWRPZ01tYnVTa1FFcXVWWDlZSjhQSFpMQ3RHLW9NNjV3eWc2S01zcWkza3pvZzZrT1hSNzdUcnk3ZjN1QnlPcUVVM2p1RnN3c1VSQ3NuTEFDOUxnLTV3NHQxaVBhWUN0MXJ6bDNxVUJ2ZmJMN2s?oc=5"
   },
   {
    "titulo": "Funcionarios del BCE señalan más alzas de tasas ante inflación elevada",
@@ -153,20 +167,6 @@
    "fecha": "2026-11-27",
    "ambito": "Mundo",
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRXh0Si1lTlBEN0E2Ylh4aUNoVGY5VldYdGlFVEl3ekdod0Nuc2tveGFtOEx2bEk3dEJKcXpPTDZUbFpmZmZjUXc4QkIxNTNQY3NjNkVnRDdudlc1VGhRQnJzYzhqbHE0Vm1KTDBQUmdmb0NtWk42VlViU2Naem9HdFVGSjlWdWVkMmwwbmFpT3Njd0ZFSTlOYjFPMklvMk5scmRFQVFkUEJKdXVJQ181aWlhNW1KUmljQlpNV1ByZXFMOFnSAcgBQVVfeXFMTWxENTlxRjI3SWZBTHV0NTE3MVBlclNkYnNCSE5zR2VaeGdiVmlKejJBZVdKQ19MbzNCTFBQMHFfWnZOYkUwSHB0TW9xeWZtNjE0cVJlWUgySlVDa1drc0hfcU5oeDRRN0Izd05vc3EyVURDeWhqQmg5SDdiQU9xbXpfNG9ZSUp2R3N6M1BaSmFmamwtQ0VBRXFjajhrdnBHVkYyelBvNWplR0FfOW9VUHNELXlSQW5vMHpWdU04TndTVDJMeE1IYks?oc=5"
-  },
-  {
-   "titulo": "El español Hernández de Cos llega al BCE con la inflación de eurozona en 4% y la economía de Francia bajo presión",
-   "fuente": "Forbes Argentina",
-   "fecha": "2026-11-27",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaFN1Qkc0RzNyb0F5b0F1N3ZjRUdkUHNsSFRzQTZpN3pSY3B4X21lZnlJMnV5c0FoQzBFRGVqb18tWkpCRldxSHhSam5jYTlkSlRiMDFibWJNcjc2Uk82Q2RzRERYRlREOWZfQkprdDFkMHk1Yi1XS0RIZ1pRTGVudG1DMi1yeElhTVlnVGZrVVVfVUEwTzhTV2hDam9CdWpuV0hDZ2xEMmpxNi1uQThKUlh5THZ3MFRhc2R0d0N2TlFoRlk40gHKAUFVX3lxTE04V3VodmF6clNTZE1hRU1CVGl5ZThwbDdQaENCUVZzYkoyckVUckdmZlV2Qk55SWtiRWpFSGV1UHdSMHFGUFhSR1Z5bFhGVnh6Z0kxckZJb1BhVDNTcF91cXR0TDhnU3FMTzRSOEppTFNuY1dzdzluMjdtM1NqYjhycnFlX1Q0Z2lEa1lsa3JUTllxc29VelM1UGFfdFg3RGdldlprMnFpUHh5ZWJZVEo0MnI2eTlNZnlNaGhVeEV0ZWNHcDNudzIwclE?oc=5"
-  },
-  {
-   "titulo": "Cautela con el 'Black Friday' de Wall Street",
-   "fuente": "El Economista",
-   "fecha": "2026-11-27",
-   "ambito": "Mundo",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN3ExMU9IWFlpLTJkejk5MlJ5dFVnMEwzTXNhcHBEQnNtTk9McENnamVMbG1taGlfS3YybU1xX2ZjTHZhQWYwTDMzamt5bEhON1MwNVNtU1hDczZJdUJvLXVNWWx5QWQ1cm9uTVRxTmdyQ1NrakdKdkNZbGRWY2dDSktEaktJWWhDeGp3dktSZUJ5WkFKMUFraXp2WjdVeTBnVER0bjJJaENuWTTSAZYBQVVfeXFMT1JUajFBMFVvVUYxa3hWLTJybjY5OGJVdmVVRDdPTlh3QzZVbjZjd3lfVDV2STZRY1VpdTd5dGR5Ynl6bHJlUW1NRW00dExEczY3cUdKZjFIMzBvZXhFemtHNWVPdGlIX2FZS0hQdTdMMXVXd2hKcmV4ME5vaFRfbmI0eXdPd001N2lZcEJOSW1kOGZzM0pn?oc=5"
   }
  ],
  "tes": {
